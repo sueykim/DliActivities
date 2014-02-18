@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<content target_language="Italian" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
+    
+    <set>
+        <crossword_size>
+            <columns>13</columns>
+            <rows>10</rows>
+        </crossword_size>
+        <tl_dir>ltr</tl_dir>
+        <keyword  completed="true">
+            <tl_word>
+                <tl_text>esplosione</tl_text>
+                <tl_word_cordinates>
+                    A1:e, A2:s, A3:p, A4:l, A5:o, A6:s, A7:i, A8:o, A9:n, A10:e  
+                </tl_word_cordinates>
+            </tl_word>   
+            <en_word>one</en_word>
+            <tl_media>
+                <media_type>audio</media_type>
+                <media_file>1.mp3</media_file>
+            </tl_media>
+            <clue>
+                <clue_list>
+                    <list_position>
+                        <list_direction>Down</list_direction>
+                        <list_direction_no>1</list_direction_no>
+                    </list_position>
+                </clue_list>
+                <en_clue><![CDATA[1 esplosione deffinition of tl keyword . 1 deffinition of tl keyword ]]></en_clue>
+                <tl_media>
+                    <media_type>video</media_type>
+                    <media_file>rain.flv</media_file>
+                </tl_media>
+               <hint_1><![CDATA[1 this is text for hint 1 ]]></hint_1>
+               <hint_2><![CDATA[1 this is text for hint 2 ]]></hint_2>
+                <feedback><![CDATA[1 explanation of keyword use and instructions to select the next clue ]]></feedback>
+            </clue>
+        </keyword>
+        <keyword>
+            <tl_word>
+                <tl_text>attacco</tl_text>
+                <tl_word_cordinates>
+                    E1:a, E2:t, E3:t, E4:a, E5:c, E6:c, E7:o
+                </tl_word_cordinates>
+            </tl_word>   
+               <en_word>two</en_word>
+            <tl_media>
+                <media_type>audio</media_type>
+                <media_file>2.mp3</media_file>
+            </tl_media>
+            <clue>
+                <clue_list>
+                    <list_position>
+                        <list_direction>Down</list_direction>
+                        <list_direction_no>2</list_direction_no>
+                    </list_position>
+                </clue_list>
+                <en_clue><![CDATA[2 attacco deffinition of tl keyword ]]></en_clue>
+                <tl_media>
+                    <media_type>audio</media_type>
+                    <media_file>3.mp3</media_file>
+                </tl_media>
+                <hint_1><![CDATA[2 this is text for hint 1 ]]></hint_1>
+                <hint_2><![CDATA[2 this is text for hint 2 ]]></hint_2>
+                <feedback><![CDATA[2 explanation of keyword use and instructions to select the next clue ]]></feedback>
+            </clue>
+        </keyword>
+        <keyword >
+            <tl_word>
+                <tl_text>granata</tl_text>
+                <tl_word_cordinates>
+                    C1:g, D1:r, E1:a, F1:n, G1:a, H1:t, I1:a 
+                </tl_word_cordinates>
+            </tl_word>   
+            <en_word>three</en_word>
+            <tl_media>
+                <media_type>audio</media_type>
+                <media_file>3.mp3</media_file>
+            </tl_media>
+            <clue>
+                <clue_list>
+                    <list_position>
+                        <list_direction>Across</list_direction>
+                        <list_direction_no>1</list_direction_no>
+                    </list_position>
+                </clue_list>
+                <en_clue><![CDATA[3 granata deffinition of tl keyword ]]></en_clue>
+                <tl_media>
+                    <media_type>video</media_type>
+                    <media_file>red.flv</media_file>
+                </tl_media>
+                <hint_1><![CDATA[3 this is text for hint 1 ]]></hint_1>
+                <hint_2><![CDATA[3 this is text for hint 2 ]]></hint_2>
+                <feedback><![CDATA[3 explanation of keyword use and instructions to select the next clue ]]></feedback>
+            </clue>
+        </keyword>
+        <keyword completed="true">
+            <tl_word>
+                <tl_text>battaglia</tl_text>
+                <tl_word_cordinates>
+                    C3:b, D3:a, E3:t, F3:t, G3:a, H3:g, I3:l, J3:i, K3:a
+                </tl_word_cordinates>
+            </tl_word>   
+            <en_word>four</en_word>
+            <tl_media>
+                <media_type>audio</media_type>
+                <media_file>4.mp3</media_file>
+            </tl_media>
+            <clue>
+                <clue_list>
+                    <list_position>
+                        <list_direction>Across</list_direction>
+                        <list_direction_no>2</list_direction_no>
+                    </list_position>
+                </clue_list>
+                <en_clue><![CDATA[4 battaglia deffinition of tl keyword ]]></en_clue>
+                <tl_media>
+                    <media_type>video</media_type>
+                    <media_file>rice.flv</media_file>
+                </tl_media>
+                <hint_1><![CDATA[4 this is text for hint 1 ]]></hint_1>
+                <hint_2><![CDATA[4 this is text for hint 2 ]]></hint_2>
+                <feedback><![CDATA[4 explanation of keyword use and instructions to select the next clue ]]></feedback>
+            </clue>
+        </keyword>
+        <keyword completed="true">
+            <tl_word>
+                <tl_text>forza aerea</tl_text>
+                <tl_word_cordinates>
+                    D7:f, E7:o, F7:r, G7:z, H7:a, I7:a, J7:e, K7:r, L7:e, M7:a  
+                </tl_word_cordinates>
+            </tl_word>   
+            <en_word>five</en_word>
+            <tl_media>
+                <media_type>audio</media_type>
+                <media_file>5.mp3</media_file>
+            </tl_media>
+            <clue>
+                <clue_list>
+                    <list_position>
+                        <list_direction>Across</list_direction>
+                        <list_direction_no>3</list_direction_no>
+                    </list_position>
+                </clue_list>
+                <en_clue><![CDATA[5 forza aerea deffinition of tl keyword ]]></en_clue>
+                <tl_media>
+                    <media_type>video</media_type>
+                    <media_file>river.flv</media_file>
+                </tl_media>
+                <hint_1><![CDATA[5 this is text for hint 1 ]]></hint_1>
+                <hint_2><![CDATA[5 this is text for hint 2 ]]></hint_2>
+                <feedback><![CDATA[5 explanation of keyword use and instructions to select the next clue ]]></feedback>
+            </clue>
+        </keyword>
+        <keyword completed="true">
+            <tl_word>
+                <tl_text>pace</tl_text>
+                <tl_word_cordinates>
+                    H6:p, H7:a, H8:c, H9:e  
+                </tl_word_cordinates>
+            </tl_word>   
+            <en_word>six</en_word>
+            <tl_media>
+                <media_type>audio</media_type>
+                <media_file>6.mp3</media_file>
+            </tl_media>
+            <clue>
+                <clue_list>
+                    <list_position>
+                        <list_direction>Down</list_direction>
+                        <list_direction_no>3</list_direction_no>
+                    </list_position>
+                </clue_list>
+                <en_clue><![CDATA[6 pace deffinition of tl keyword ]]></en_clue>
+                <tl_media>
+                    <media_type>video</media_type>
+                    <media_file>road.flv</media_file>
+                </tl_media>
+                <hint_1><![CDATA[6 this is text for hint 1 ]]></hint_1>
+                <hint_2><![CDATA[6 this is text for hint 2 ]]></hint_2>
+                <feedback><![CDATA[6 explanation of keyword use and instructions to select the next clue ]]></feedback>
+            </clue>
+        </keyword>
+    </set>
+    <set>
+        <crossword_size>
+            <columns>2</columns>
+            <rows>2</rows>
+        </crossword_size>
+        <tl_dir>ltr</tl_dir>
+        <keyword>
+            <tl_word>
+                <tl_text>at</tl_text>
+                <tl_word_cordinates>
+                    A1:a, A2:t
+                </tl_word_cordinates>
+            </tl_word>   
+               <en_word>at</en_word>
+            <tl_media>
+                <media_type>audio</media_type>
+                <media_file>1.mp3</media_file>
+            </tl_media>
+            <clue>
+                <clue_list>
+                    <list_position>
+                        <list_direction>Down</list_direction>
+                        <list_direction_no>1</list_direction_no>
+                    </list_position>
+                </clue_list>
+                <en_clue><![CDATA[ deffinition of tl keyword ]]></en_clue>
+                <tl_media>
+                    <media_type>audio</media_type>
+                    <media_file>1.mp3</media_file>
+                </tl_media>
+                <hint_1><![CDATA[ this is text for hint 1 ]]></hint_1>
+                <hint_2><![CDATA[ this is text for hint 2 ]]></hint_2>
+                <feedback><![CDATA[ explanation of keyword use and instructions to select the next clue ]]></feedback>
+            </clue>
+        </keyword>
+        <keyword>
+            <tl_word>
+                <tl_text>ta</tl_text>
+                <tl_word_cordinates>
+                    A2:t, B2:a 
+                </tl_word_cordinates>
+            </tl_word>   
+            <en_word>ta</en_word>
+            <tl_media>
+                <media_type>video</media_type>
+                <media_file>red.flv</media_file>
+            </tl_media>
+            <clue>
+                <clue_list>
+                    <list_position>
+                        <list_direction>Across</list_direction>
+                        <list_direction_no>1</list_direction_no>
+                    </list_position>
+                </clue_list>
+                <en_clue><![CDATA[ deffinition of tl keyword ]]></en_clue>
+                <tl_media>
+                    <media_type>video</media_type>
+                    <media_file>rain.flv</media_file>
+                </tl_media>
+                <hint_1><![CDATA[ this is text for hint 1 ]]></hint_1>
+                <hint_2><![CDATA[ this is text for hint 2 ]]></hint_2>
+                <feedback><![CDATA[ explanation of keyword use and instructions to select the next clue ]]></feedback>
+            </clue>
+        </keyword>
+    </set>
+    <set>
+        <crossword_size>
+            <columns>13</columns>
+            <rows>10</rows>
+        </crossword_size>
+        <tl_dir>ltr</tl_dir>
+        <keyword  completed="true">
+            <tl_word>
+                <tl_text>esplosione</tl_text>
+                <tl_word_cordinates>
+                    A1:e, A2:s, A3:p, A4:l, A5:o, A6:s, A7:i, A8:o, A9:n, A10:e  
+                </tl_word_cordinates>
+            </tl_word>   
+            <en_word>one</en_word>
+            <tl_media>
+                <media_type>audio</media_type>
+                <media_file>1.mp3</media_file>
+            </tl_media>
+            <clue>
+                <clue_list>
+                    <list_position>
+                        <list_direction>Down</list_direction>
+                        <list_direction_no>1</list_direction_no>
+                    </list_position>
+                </clue_list>
+                <en_clue><![CDATA[1 esplosione deffinition of tl keyword . 1 deffinition of tl keyword ]]></en_clue>
+                <tl_media>
+                    <media_type>video</media_type>
+                    <media_file>rice.flv</media_file>
+                </tl_media>
+               <hint_1><![CDATA[1 this is text for hint 1 ]]></hint_1>
+               <hint_2><![CDATA[1 this is text for hint 2 ]]></hint_2>
+                <feedback><![CDATA[1 explanation of keyword use and instructions to select the next clue ]]></feedback>
+            </clue>
+        </keyword>
+        <keyword>
+            <tl_word>
+                <tl_text>attacco</tl_text>
+                <tl_word_cordinates>
+                    E1:a, E2:t, E3:t, E4:a, E5:c, E6:c, E7:o
+                </tl_word_cordinates>
+            </tl_word>   
+               <en_word>two</en_word>
+            <tl_media>
+                <media_type>audio</media_type>
+                <media_file>2.mp3</media_file>
+            </tl_media>
+            <clue>
+                <clue_list>
+                    <list_position>
+                        <list_direction>Down</list_direction>
+                        <list_direction_no>2</list_direction_no>
+                    </list_position>
+                </clue_list>
+                <en_clue><![CDATA[2 attacco deffinition of tl keyword ]]></en_clue>
+                <tl_media>
+                    <media_type>audio</media_type>
+                    <media_file>3.mp3</media_file>
+                </tl_media>
+                <hint_1><![CDATA[2 this is text for hint 1 ]]></hint_1>
+                <hint_2><![CDATA[2 this is text for hint 2 ]]></hint_2>
+                <feedback><![CDATA[2 explanation of keyword use and instructions to select the next clue ]]></feedback>
+            </clue>
+        </keyword>
+        <keyword >
+            <tl_word>
+                <tl_text>granata</tl_text>
+                <tl_word_cordinates>
+                    C1:g, D1:r, E1:a, F1:n, G1:a, H1:t, I1:a 
+                </tl_word_cordinates>
+            </tl_word>   
+            <en_word>three</en_word>
+            <tl_media>
+                <media_type>audio</media_type>
+                <media_file>3.mp3</media_file>
+            </tl_media>
+            <clue>
+                <clue_list>
+                    <list_position>
+                        <list_direction>Across</list_direction>
+                        <list_direction_no>1</list_direction_no>
+                    </list_position>
+                </clue_list>
+                <en_clue><![CDATA[3 granata deffinition of tl keyword ]]></en_clue>
+                <tl_media>
+                    <media_type>video</media_type>
+                    <media_file>rice.flv</media_file>
+                </tl_media>
+                <hint_1><![CDATA[3 this is text for hint 1 ]]></hint_1>
+                <hint_2><![CDATA[3 this is text for hint 2 ]]></hint_2>
+                <feedback><![CDATA[3 explanation of keyword use and instructions to select the next clue ]]></feedback>
+            </clue>
+        </keyword>
+        <keyword completed="true">
+            <tl_word>
+                <tl_text>battaglia</tl_text>
+                <tl_word_cordinates>
+                    C3:b, D3:a, E3:t, F3:t, G3:a, H3:g, I3:l, J3:i, K3:a
+                </tl_word_cordinates>
+            </tl_word>   
+            <en_word>four</en_word>
+            <tl_media>
+                <media_type>audio</media_type>
+                <media_file>4.mp3</media_file>
+            </tl_media>
+            <clue>
+                <clue_list>
+                    <list_position>
+                        <list_direction>Across</list_direction>
+                        <list_direction_no>2</list_direction_no>
+                    </list_position>
+                </clue_list>
+                <en_clue><![CDATA[4 battaglia deffinition of tl keyword ]]></en_clue>
+                <tl_media>
+                    <media_type>video</media_type>
+                    <media_file>river.flv</media_file>
+                </tl_media>
+                <hint_1><![CDATA[4 this is text for hint 1 ]]></hint_1>
+                <hint_2><![CDATA[4 this is text for hint 2 ]]></hint_2>
+                <feedback><![CDATA[4 explanation of keyword use and instructions to select the next clue ]]></feedback>
+            </clue>
+        </keyword>
+        <keyword completed="true">
+            <tl_word>
+                <tl_text>forza aerea</tl_text>
+                <tl_word_cordinates>
+                    D7:f, E7:o, F7:r, G7:z, H7:a, I7:a, J7:e, K7:r, L7:e, M7:a  
+                </tl_word_cordinates>
+            </tl_word>   
+            <en_word>five</en_word>
+            <tl_media>
+                <media_type>audio</media_type>
+                <media_file>5.mp3</media_file>
+            </tl_media>
+            <clue>
+                <clue_list>
+                    <list_position>
+                        <list_direction>Across</list_direction>
+                        <list_direction_no>3</list_direction_no>
+                    </list_position>
+                </clue_list>
+                <en_clue><![CDATA[5 forza aerea deffinition of tl keyword ]]></en_clue>
+                <tl_media>
+                    <media_type>video</media_type>
+                    <media_file>road.flv</media_file>
+                </tl_media>
+                <hint_1><![CDATA[5 this is text for hint 1 ]]></hint_1>
+                <hint_2><![CDATA[5 this is text for hint 2 ]]></hint_2>
+                <feedback><![CDATA[5 explanation of keyword use and instructions to select the next clue ]]></feedback>
+            </clue>
+        </keyword>
+        <keyword completed="true">
+            <tl_word>
+                <tl_text>pace</tl_text>
+                <tl_word_cordinates>
+                    H6:p, H7:a, H8:c, H9:e  
+                </tl_word_cordinates>
+            </tl_word>   
+            <en_word>six</en_word>
+            <tl_media>
+                <media_type>audio</media_type>
+                <media_file>6.mp3</media_file>
+            </tl_media>
+            <clue>
+                <clue_list>
+                    <list_position>
+                        <list_direction>Down</list_direction>
+                        <list_direction_no>3</list_direction_no>
+                    </list_position>
+                </clue_list>
+                <en_clue><![CDATA[6 pace deffinition of tl keyword ]]></en_clue>
+                <tl_media>
+                    <media_type>video</media_type>
+                    <media_file>rain.flv</media_file>
+                </tl_media>
+                <hint_1><![CDATA[6 this is text for hint 1 ]]></hint_1>
+                <hint_2><![CDATA[6 this is text for hint 2 ]]></hint_2>
+                <feedback><![CDATA[6 explanation of keyword use and instructions to select the next clue ]]></feedback>
+            </clue>
+        </keyword>
+    </set>
+</content>

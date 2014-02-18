@@ -1,0 +1,109 @@
+#main{
+	font-family: Arial, Helvetica, sans-serif;
+}
+#letters{
+	top:10px;
+	left:30px;
+	height:40px;
+	position:absolute;
+}
+.ltrBtn{
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 10px 10px 10px 10px;
+	border: 1px #ccc solid;
+	background-color:#eee;
+	width: 30px;
+	height:30px;
+	padding: 5px;
+	text-align: center;
+	position: relative;
+	margin:5px;
+	float:left;
+	cursor:pointer;
+}
+.hilite{
+	background-color:#000088; /*#C8DFEE;*/
+}
+#upperContainer{
+	top:70px;
+	left:30px;
+	height:50px;
+	width: 580px;
+	position:absolute;
+	border-bottom: #ccc solid 1px;
+}
+.audBtn{
+	position: relative;
+	height: 30px;
+	width: 30px;
+}
+.enSentence{
+	width:520px;
+	height:47px;
+	font-size:14px;
+}
+#tlSentence{
+	position:absolute;
+	top:150px;
+	left:40px;
+	font-size:40px;
+	width:550px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+
+}
+.hiddenLetter
+  {
+  color: #FFFFEE;
+  background-color: #FFFFEE;
+  text-decoration: none;
+  border:#ccc solid 1px;
+  cursor:pointer;
+  -moz-user-select: none;
+ -webkit-user-select: none;
+
+  }	
+#feedback {
+    top: 190px;
+}
+
+.displayNone{
+	display: none;
+}
+
+.itemCompleted{
+	border: 3px solid darkGrey;
+	background-color: darkGrey;
+}
+
+.itemNotCompleted{
+	border: 3px solid lightGrey;
+	background-color: lightGrey;
+}
+#showwrong{
+	position:absolute;
+	left:40px;
+	top:373px;
+	z-index:6;
+	
+}
+#setText {
+	left:0px;
+	font-size: 16px;
+}
+#setDiv {
+	width: 50px;
+	text-align: center;
+}
+#clickGuard{
+	height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    opacity: .1;
+    background-color: #ffffff;
+	display: none;
+}

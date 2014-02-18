@@ -1,0 +1,258 @@
+#videoStage{
+    background-color: grey;
+    height: 180px;
+    position: absolute;
+    width: 240px;
+    top: 8px;
+}
+
+#feedbackTextContainer{
+    height: 286px;
+    
+    overflow: auto;
+    width: 201px;
+    margin-bottom: 10px;
+}
+
+video{
+    background-color: black;
+    width: 280px;
+    height: 211px;
+}
+
+#rightPane{
+    margin-left: 245px;
+    
+    position: relative;
+}
+
+#setDiv {
+    cursor: default;
+    height: 30px;
+    left: 477px;
+    position: relative;
+    top: 5px;
+    width: 115px;
+    z-index: 0;
+}
+
+#setTitle {
+    background-image: url("../../common/img/bg_btn_set.png") !important;
+    border-bottom-left-radius: 4px;
+    border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+    border-top-left-radius: 4px;
+    float: left;
+    font-size: 14px;
+    margin-left: 0;
+    padding-left: 6px;
+    padding-top: 7px;
+}
+
+.selText{
+    margin-left: 14px;
+    
+    margin-top: 6px;
+    color: #6B6B6B;
+    width: 446px;
+    float: left;
+}
+
+#setText {
+    border-radius: 0 4px 4px 0;
+    bottom: auto;
+    font-size: 14px;
+    height: 20px;
+    left: 0;
+    padding-right: 7px;
+    padding-top: 7px;
+    position: relative;
+    top: 0;
+    width: 29px;
+}
+
+body{
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+#selections{
+    margin-left: 7px;
+	
+}
+
+#selections > div:hover{
+    background-color: #C5C5C5;
+}
+
+#selections > div{
+    border: 1px solid grey;
+    
+    border-radius: 4px;
+    margin-bottom: 6px;
+    height: 32px;
+    width: 579px;
+    background-color: #ECEBEB;
+    cursor: pointer;
+}
+
+#selections > div[selected] > .submitBtn{
+    display: block;
+}
+
+#selections > div[selected]{
+    background-color: silver;
+}
+
+#clickGuard {
+    background-color: grey;
+    display: none;
+    height: 353px;
+    left: 0px;
+    opacity: .3;
+    position: absolute;
+    top: 0px;
+    width: 595px;
+    z-index: 166;
+}
+
+#sel1{
+	
+}
+
+#sel2{
+	
+}
+
+#sel3{
+	
+}
+
+#feedback {
+    -moz-user-select: none;
+    background: url("../../common/img/bg_dropbubble_50.png") repeat-x scroll center bottom #F5F5F5;
+    border: 1px solid #BDBDBD;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 2px 4px #BDBDBD;
+    display: block;
+    margin: 0 0 0 7px;
+    min-height: 328px;
+    padding: 11px;;
+    width: 203px;
+    z-index: 1000;
+    position: inherit;
+    float: left;
+    margin-top: 0px;
+    max-height: 328px;
+}
+#feedbackHeader {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 0px;
+    cursor: default;
+}
+#feedbackText {
+    cursor: default;
+}
+
+#feedbackBtn:hover{
+    background-color: #D6D6D6;
+    
+}
+
+#feedbackBtn {
+    width: 103px;
+    height: 30px;
+    margin-left: 96px;
+    color: #505050;
+    cursor: pointer;
+}
+
+.bootstrapLabel {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #F5F5F5;
+    background-image: linear-gradient(to bottom, #FFFFFF, #E6E6E6);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+    border-image: none;
+    border-radius: 0 0 0 0;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+    cursor: default;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-left: -1px;
+    padding: 4px 12px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+}
+
+#container_setDiv {
+    background-color: transparent;
+    cursor: default;
+    height: 40px;
+    left: 0;
+    margin: 10px;
+    position: relative;
+    top: 0;
+    width: 898px;
+    clear: both;
+}
+
+iframe{
+    background-color: lightgrey;
+    width: 294px;
+    
+    height: 228px;
+    border: 0px;
+}
+
+#playBtnVideo {
+    left: 6px;
+    position: absolute;
+    top: 151px;
+}
+
+.playSelBtn:hover{
+    background-image: url("../../common/Library/images/playBtn_s2.png");
+}
+
+.playSelBtn{
+    background-image: url("../../common/Library/images/playBtn_s1.png");
+	
+    width: 25px;
+    height: 25px;
+    background-size: 25px 25px;
+    float: left;
+    margin-top: 4px;
+    margin-left: 8px;
+}
+
+.submitBtn:hover{
+    background-color: #838383;
+}
+
+.submitBtn{
+    float: left;
+    display: none;
+    background-color: #555555;
+    border-radius: 4px;
+    margin-top: 2px;
+    height: 28px;
+    width: 76px;
+}
+
+.submitText{
+    color: white;
+	
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 13.4px;
+    font-weight: bold;
+}

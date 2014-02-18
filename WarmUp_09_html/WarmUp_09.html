@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		
+		<title>WarmUp 9 HTML</title>
+		
+		<script src="../common/js/AC_OETags.js"></script>
+
+		<script src="../common/js/xml2json.js"></script>
+		<script src="../common/js/dli_activity.js"></script>
+		
+		<link type="text/css" href="../common/css/smoothness/jquery-ui-1.8.20.custom.css" rel="stylesheet" />
+		<script type="text/javascript" src="../common/js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="../common/js/jquery-ui-1.8.20.custom.min.js"></script>
+		<script type="text/javascript" src="../common/js/jquery.ui.touch-punch.js"></script>
+		
+		<script src="../common/js/dli_util.js"></script>
+		<script src="../common/js/dli_audio.js"></script>
+		<script src="../common/js/dli_video.js"></script>
+		
+		<script src="WarmUp_09.js"></script>
+	</head>
+	<body>
+		<noscript>Activity cannot load. No Javascript support detected.</noscript>
+		
+		<div id="flashAudioPlayerDiv"></div>
+		<div id="htmlAudioPlayerDiv"></div>
+		<div id="embeddedAudioPlayerDiv"></div>
+		
+		<div id="main" class="roundCorners">
+			<div id="stage" class="roundCorners">
+				<img id="stageImg" class="roundCorners" src="sampleData/png/1.png">
+				
+				<div id="imgBlocks_container">
+					<div id="block1" class="block"
+						onmousedown="blockClicked(1)">
+						<div class="blockText">i</div>
+					</div>
+					<div id="block2" class="block"
+						onmousedown="blockClicked(2)">
+						<div class="blockText">b</div>
+					</div>
+					<div id="block3" class="block"
+						onmousedown="blockClicked(3)">
+						<div class="blockText">v</div>
+					</div>
+					<div id="block4" class="block"
+						onmousedown="blockClicked(4)">
+						<div class="blockText">d</div>
+					</div>
+					<div id="block5" class="block"
+						onmousedown="blockClicked(5)">
+						<div class="blockText">e</div>
+					</div>
+					<div id="block6" class="block"
+						onmousedown="blockClicked(6)">
+						<div class="blockText">f</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div id="input_container" class="roundCorners">
+				<div id="missingLetters_container">
+					<div class="missingLetter">m</div>
+					<div class="missingLetter">w</div>
+					<div class="missingLetter">W</div>
+					<div class="missingLetter">M</div>
+					<div class="missingLetter">j</div>
+					<div class="missingLetter">g</div>
+					<div class="missingLetter">I</div>
+				</div>
+								
+				<input id="input" />
+				
+				<div id="submitBtn" class="roundCorners"
+					onMouseDown="submitClicked()"
+					onMouseUp="submitUp()"
+					onMouseOut="submitOut()"
+					onMouseOver="submitOver()"
+					>Submit</div>
+				
+				<div id="keyboardContainer" class="roundCorners"></div>
+				
+				<div id="englishWord"></div>
+				
+				<div id="playBtnDiv"> 
+					<a href="javascript:;" onMouseOut="MM_swapImage('playBtn_s1','','../common/Library/images/playBtn_s1.png',1)" 
+						onMouseDown="MM_swapImage('playBtn_s1','','../common/Library/images/playBtn_s3.png',1);playAudio();"
+						onMouseUp="MM_swapImage('playBtn_s1','','../common/Library/images/playBtn_s2.png',1)" 
+				        onMouseOver="MM_swapImage('playBtn_s1','','../common/Library/images/playBtn_s2.png',1)" > 
+          				<img  id="playBtn_s1" src="../common/Library/images/playBtn_s1.png" border="0">
+    				</a> 
+    			</div>
+				
+				<div id="stageClickGuard"></div>
+			</div>
+
+			<div id="statusBar"  class="roundCorners">
+				<div class="roundCorners" id="setDiv">
+					<span id="setText">1/3</span>
+				</div>
+				
+				<div id="correctBubble" class="roundCorners hidden">
+					Correct
+				</div>
+				
+				<div id="incorrectBubble" class="roundCorners hidden">
+					<div id="incorrectBubbleX" class="roundCorners">X</div>
+					Incorrect
+				</div>
+				
+				<div id="nextDiv"> 
+					<a id="nextBtnLink" href="javascript:;" onMouseOut="MM_swapImage('nextBtn_s1','','../common/Library/images/nextBtn_s1.png',1)" 
+						onMouseDown="MM_swapImage('nextBtn_s1','','../common/Library/images/nextBtn_s3.png',1);nextClick();"
+						onMouseUp="MM_swapImage('nextBtn_s1','','../common/Library/images/nextBtn_s2.png',1)" 
+				        onMouseOver="MM_swapImage('nextBtn_s1','','../common/Library/images/nextBtn_s2.png',1)" > 
+			          	<img  id="nextBtn_s1" src="../common/Library/images/nextBtn_s1.png" border="0">
+			    	</a>
+			    	<img id="nextBtnClickGuard" src="../common/Library/images/nextBtn_s3.png" border="0">
+			    </div>
+			    
+			    <div id="prevDiv"> 
+			    	<a  id="prevBtnLink"  href="javascript:;" onMouseOut="MM_swapImage('prevBtn_s1','','../common/Library/images/prevBtn_s1.png',1)" 
+						onMouseDown="MM_swapImage('prevBtn_s1','','../common/Library/images/prevBtn_s3.png',1);prevClick();"
+						onMouseUp="MM_swapImage('prevBtn_s1','','../common/Library/images/prevBtn_s2.png',1)" 
+				        onMouseOver="MM_swapImage('prevBtn_s1','','../common/Library/images/prevBtn_s2.png',1)" > 
+			          <img  id="prevBtn_s1" src="../common/Library/images/prevBtn_s1.png" border="0">
+			    	</a>
+			    	<img id="prevBtnClickGuard" src="../common/Library/images/prevBtn_s3.png" border="0">
+				</div>				
+			</div>
+		
+		
+		<div id="clickGuard"></div>
+		
+		<div id="feedback" >
+			<h2 id="feedbackHeader">Set completed</h2>
+			<p id="feedbackText">Set completed text</p>
+			<button id="feedbackBtn" onclick="{closeFeedback();}">Ok</button>
+		</div>
+		
+		<div id="snippets" class="hidden">
+			<div id="block_snip">
+				<div id="block_subId" class="block"
+					onmousedown="blockClicked(_subId)">
+					<div class="blockText">_subLetter</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

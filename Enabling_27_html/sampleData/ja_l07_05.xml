@@ -1,0 +1,94 @@
+<content>
+	 <colors>
+	    <color source="icon_paint_red.png"   audio="ja_l07_a5_01.mp3" dir="ltr" icon="red"><![CDATA[ あか]]></color>
+	    <color source="icon_paint_blue.png"  audio="ja_l07_a5_03.mp3" dir="ltr" icon="blue"><![CDATA[ あお]]></color>
+	    <color source="icon_paint_green.png"  audio="ja_l07_a5_05.mp3" dir="ltr" icon="green"><![CDATA[ みどり ]]></color>
+	    <color source="icon_paint_white.png"  audio="ja_l07_a5_02.mp3" dir="ltr" icon="white"><![CDATA[ しろ ]]></color>
+	    <color source="icon_paint_yellow.png"  audio="ja_l07_a5_04.mp3" dir="ltr" icon="yellow"><![CDATA[きいろ ]]></color>
+	    <color source="icon_paint_brown.png"  audio="6.mp3" dir="ltr" icon="brown"><![CDATA[ brown6 ]]></color>
+	    <color source="icon_paint_black.png" labelColor="#ffffff" audio="ja_l07_a5_06.mp3" dir="ltr" icon="black"><![CDATA[ くろ ]]></color>
+	    <color source="icon_paint_orange.png"  audio="8.mp3" dir="ltr" icon="orange"><![CDATA[ orange8 ]]></color>
+	 </colors> 
+ 
+ 
+    <set audio="ja_l07_a2_02.mp3">
+        <label dir="ltr"><![CDATA[ 日本 ]]></label>
+        <outline source="flag_japan_outline.png"></outline>
+        <background source="flag_japan_background.png"></background>
+        <maps>
+            <map name="img1Map">
+                <icon>red</icon>
+                <image source="flag_japan_red.png"></image>
+            </map>
+            <map name="img2Map">
+                <icon>white</icon>
+                <image source="flag_japan_white.png"></image>
+            </map>
+            <map name="img3Map">
+                <icon>green</icon>
+            </map>
+            <map name="img4Map">
+                <icon>yellow</icon>
+            </map>
+            <map name="img5Map">
+                <icon>black</icon>
+            </map>
+        </maps>
+    </set>
+    <set  audio="ja_l07_a5_03.png">
+        <label dir="ltr"><![CDATA[ 中国 ]]></label>
+        <outline source="flag_china_outline.png"></outline>
+        <background source="flag_china_background.png"></background>
+        <maps>
+            <map name="img1Map" >
+                <icon>red</icon>
+                <image source="flag_china_red.png"></image>
+            </map>
+            <map name="img2Map">
+                <icon>yellow</icon>
+                <image source="flag_china_yellow.png"></image>
+            </map>
+            <map name="img3Map" >
+                <icon>white</icon>
+            </map>
+            <map name="img4Map">
+                <icon>green</icon>
+            </map>
+            <map name="img5Map">
+                <icon>blue</icon>
+            </map>
+            <map name="img6Map">
+                <icon>black</icon>
+            </map>
+        </maps>
+    </set>
+    <set audio="ja_l07_a2_06.mp3">
+        <label dir="ltr"><![CDATA[ 韓国 ]]></label>
+        <outline source="flag_southkorea_outline.png"></outline>
+        <background source="flag_southkorea_background.png"></background>
+        <maps>
+            <map name="img1Map" >
+                <icon>red</icon>
+                <image source="flag_southkorea_red.png"></image>
+            </map>
+            <map name="img2Map" completed="true">
+                <icon>blue</icon>
+                <image source="flag_southkorea_blue.png"></image>
+            </map>
+            <map name="img3Map">
+                <icon>white</icon>
+                <image source="flag_southkorea_white.png"></image>
+            </map>
+            <map name="img4Map">
+                <icon>black</icon>
+                <image source="flag_southkorea_black.png"></image>
+            </map>
+            <map name="img5Map">
+                <icon>green</icon>
+            </map>
+            <map name="img6Map">
+                <icon>orange</icon>
+            </map>
+        </maps>
+    </set>
+</content>

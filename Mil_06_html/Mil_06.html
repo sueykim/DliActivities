@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<title>Military 06</title>
+
+		<script src="../common/js/AC_OETags.js"></script>
+
+		<script src="../common/js/xml2json.js"></script>
+		<script src="../common/js/dli_activity.js"></script>
+
+		<link href="../common/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+
+		<link type="text/css" href="../common/css/smoothness/jquery-ui-1.8.20.custom.css" rel="stylesheet" />
+		<script type="text/javascript" src="../common/js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="../common/js/jquery-ui-1.8.20.custom.min.js"></script>
+		<script type="text/javascript" src="../common/js/jquery.ui.touch-punch.js"></script>
+
+		<script src="../common/js/jquery.mCustomScrollbar.js"></script>
+		<script src="../common/js/dli_util.js"></script>
+		<script src="../common/js/dli_audio.js"></script>
+		<script src="../common/js/dli_video.js"></script>
+
+		<script src="Mil_06.js"></script>
+
+	</head>
+
+	<body ontouchstart>
+		<div id="flashAudioPlayerDiv"></div>
+		<div id="htmlAudioPlayerDiv"></div>
+		<div id="embeddedAudioPlayerDiv"></div>
+
+		<h3 class="activity_hd">Military 06</h3>
+		<div class="activity_description">
+			Recognize the sounds then key them into the phone.
+			Recognize the sounds then key them into the phone.
+			Recognize the sounds then key them into the phone.
+			Recognize the sounds then key them into the phone.
+			Recognize the sounds then key them into the phone.
+			Recognize the sounds then key them into the phone.
+			Recognize the sounds then key them into the phone.
+			Recognize the sounds then key them into the phone.
+		</div>
+		<div id="main">
+			<div id="feedback" >
+				<div id="feedbackTextContainer">
+					<h2 id="feedbackHeader"></h2>
+					<p id="feedbackText"></p>
+				</div>
+				<button id="feedbackBtn" style="display: none;" onclick="{closeFeedback();}">Ok</button>
+			</div>
+			<div id="rightPane">
+				<div id="vids">
+					<iframe ></iframe>
+					<iframe ></iframe>
+				</div>
+				<div id="selections">
+					<div id="sel1" onclick="selectItem(1)">
+						<div class="playSelBtn" onclick="playSelBtn(1)"></div>
+						<div class="selText">Sel1</div>
+						<div class="submitBtn" onclick="submit(1)">
+							<div class="submitText">SUBMIT</div>
+						</div>
+					</div>
+					<div id="sel2" onclick="selectItem(2)">
+						<div class="playSelBtn" onclick="playSelBtn(2)"></div>
+						<div class="selText">Sel2</div>
+						<div class="submitBtn" onclick="submit(2)">
+							<div class="submitText">SUBMIT</div>
+						</div>
+					</div>
+					<div id="sel3" onclick="selectItem(3)">
+						<div class="playSelBtn" onclick="playSelBtn(3)"></div>
+						<div class="selText">Sel3</div>
+						<div class="submitBtn" onclick="submit(3)">
+							<div class="submitText">SUBMIT</div>
+						</div>
+					</div>
+				</div>
+				
+				<div id="clickGuard" ></div>
+				
+				<div id="container_setDiv" class="roundCorners btn-group noSelect">
+					<div id="setDiv" class="roundCorners">
+						<div id="setTitle" class="bootstrapLabel btn_set noSelect">
+							SET:
+						</div>
+						<span id="setText" class="bootstrapLabel btn_set_value noSelect"></span>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</body>
+</html>

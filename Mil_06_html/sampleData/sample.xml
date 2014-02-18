@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hs:content xmlns:hs="http://www.dliflc.edu/products/headstart" target_language="Baluchi">
+	<hs:set>
+		<hs:stml_media>rain.flv</hs:stml_media>
+		<hs:stml_en>What's your name?</hs:stml_en>
+		<hs:correct_response_media>red.flv</hs:correct_response_media>
+		<hs:correct_response_en>My name is John.</hs:correct_response_en>
+		<hs:d_1_media>rice.flv</hs:d_1_media>
+		<hs:d_1_en>Good-bye.</hs:d_1_en>
+		<hs:d_2_media>river.flv</hs:d_2_media>
+		<hs:d_2_en>Hello. (formal greeting)</hs:d_2_en>
+	</hs:set>
+	<hs:set>
+		<hs:stml_media>road.flv</hs:stml_media>
+		<hs:stml_en>How are you?</hs:stml_en>
+		<hs:correct_response_media>rain.flv</hs:correct_response_media>
+		<hs:correct_response_en>I'm fine, thanks, and you?</hs:correct_response_en>
+		<hs:d_1_media>red.flv</hs:d_1_media>
+		<hs:d_1_en>See you tomorrow.</hs:d_1_en>
+		<hs:d_2_media>rice.flv</hs:d_2_media>
+		<hs:d_2_en>Welcome.</hs:d_2_en>
+	</hs:set>
+	<hs:set>
+		<hs:stml_media>river.flv</hs:stml_media>
+		<hs:stml_en>Hello. (formal greeting)</hs:stml_en>
+		<hs:correct_response_media>road.flv</hs:correct_response_media>
+		<hs:correct_response_en>Hello. (informal greeting)</hs:correct_response_en>
+		<hs:d_1_media>rain.flv</hs:d_1_media>
+		<hs:d_1_en>See you later.</hs:d_1_en>
+		<hs:d_2_media>red.flv</hs:d_2_media>
+		<hs:d_2_en>See you tomorrow.</hs:d_2_en>
+	</hs:set>
+	<hs:set>
+		<hs:stml_media>rice.flv</hs:stml_media>
+		<hs:stml_en>How is your health?</hs:stml_en>
+		<hs:correct_response_media>river.flv</hs:correct_response_media>
+		<hs:correct_response_en>I'm fine, thanks, and you?</hs:correct_response_en>
+		<hs:d_1_media>road.flv</hs:d_1_media>
+		<hs:d_1_en>Nice to meet you.</hs:d_1_en>
+		<hs:d_2_media>rain.flv</hs:d_2_media>
+		<hs:d_2_en>See you tomorrow.</hs:d_2_en>
+	</hs:set>
+	<hs:set>
+		<hs:stml_media>red.flv</hs:stml_media>
+		<hs:stml_en>Good-bye.</hs:stml_en>
+		<hs:correct_response_media>rice.flv</hs:correct_response_media>
+		<hs:correct_response_en>See you later.</hs:correct_response_en>
+		<hs:d_1_media>river.flv</hs:d_1_media>
+		<hs:d_1_en>Good morning.</hs:d_1_en>
+		<hs:d_2_media>road.flv</hs:d_2_media>
+		<hs:d_2_en>Welcome.</hs:d_2_en>
+	</hs:set>
+</hs:content>

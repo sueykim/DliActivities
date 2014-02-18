@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content target_language="Spanish" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
+    <section>
+    	<whole_img>wholeImage.png</whole_img>
+    	<tl_dir>ltr</tl_dir>
+    	<item>
+        	<tl_word>TL word 1</tl_word>
+        	<en_word>EN word 1</en_word>
+        	<audio>1.mp3</audio>
+        	<hint><![CDATA[  hint1 ]]></hint>
+        	<feedback><![CDATA[  feedback1 ]]></feedback>
+			<image>ad_mix_num_puzzle1.png</image>
+    	</item>
+        <item>
+            <tl_word>TL word 2</tl_word>
+            <en_word>EN word 2</en_word>
+            <audio>2.mp3</audio>
+            <hint><![CDATA[   hint2]]></hint>
+            <feedback><![CDATA[   feedback2 ]]></feedback>
+			<image>ad_mix_num_puzzle2.png</image>
+        </item>
+        <item>
+            <tl_word>TL word 3</tl_word>
+            <en_word>EN word 3</en_word>
+            <audio>3.mp3</audio>
+            <hint><![CDATA[  hint3 ]]></hint>
+            <feedback><![CDATA[ feedback3  ]]></feedback>
+			<image>ad_mix_num_puzzle3.png</image>
+        </item>
+        <item>
+            <tl_word>TL word 4</tl_word>
+            <en_word>EN word 4</en_word>
+            <audio>4.mp3</audio>
+            <hint><![CDATA[ tl hint4  ]]></hint>
+            <feedback><![CDATA[ tl feedback4 ]]></feedback>
+			<image>ad_mix_num_puzzle4.png</image>
+        </item>
+        <item>
+            <tl_word>TL word 5</tl_word>
+            <en_word>EN word 5</en_word>
+            <audio>5.mp3</audio>
+            <hint><![CDATA[ hint5  ]]></hint>
+            <feedback><![CDATA[ feedback5 ]]></feedback>
+			<image>ad_mix_num_puzzle5.png</image>
+        </item>
+    </section>
+    <section>
+    	<whole_img>wholeImage2.png</whole_img>
+    	<tl_dir>ltr</tl_dir>
+    	<item>
+        	<tl_word>TL word 11</tl_word>
+        	<en_word>EN word 11</en_word>
+        	<audio>11.mp3</audio>
+        	<hint><![CDATA[  hint11 ]]></hint>
+        	<feedback><![CDATA[  feedback11 ]]></feedback>
+			<image>ad_mix_num_puzzle11.png</image>
+    	</item>
+        <item>
+            <tl_word>TL word 12</tl_word>
+            <en_word>EN word 12</en_word>
+            <audio>12.mp3</audio>
+            <hint><![CDATA[   hint12]]></hint>
+            <feedback><![CDATA[   feedback12 ]]></feedback>
+			<image>ad_mix_num_puzzle12.png</image>
+        </item>
+        <item>
+            <tl_word>TL word 13</tl_word>
+            <en_word>EN word 13</en_word>
+            <audio>13.mp3</audio>
+            <hint><![CDATA[  hint13 ]]></hint>
+            <feedback><![CDATA[ feedback13  ]]></feedback>
+			<image>ad_mix_num_puzzle13.png</image>
+        </item>
+        <item>
+            <tl_word>TL word 14</tl_word>
+            <en_word>EN word 14</en_word>
+            <audio>14.mp3</audio>
+            <hint><![CDATA[ tl hint14  ]]></hint>
+            <feedback><![CDATA[ tl feedback14 ]]></feedback>
+			<image>ad_mix_num_puzzle14.png</image>
+        </item>
+        <item>
+            <tl_word>TL word 15</tl_word>
+            <en_word>EN word 15</en_word>
+            <audio>15.mp3</audio>
+            <hint><![CDATA[ hint15  ]]></hint>
+            <feedback><![CDATA[ feedback15 ]]></feedback>
+			<image>ad_mix_num_puzzle15.png</image>
+        </item>
+    </section>
+</content>

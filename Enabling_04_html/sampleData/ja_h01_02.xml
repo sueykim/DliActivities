@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<content target_language="Japanese" hw="true">
+  <item>
+      <image>ja_h01_a2_01.png</image>
+      <lang_tl_phrase_text dir="ltr">oyasuminasai</lang_tl_phrase_text>
+      <lang_tl_phrase_audio>ja_h01_a2_01.mp3</lang_tl_phrase_audio>
+      <lang_en_phrase_text>Good night.</lang_en_phrase_text>
+      <lang_tl_word_text dir="ltr">o||y||a||s||u||m||i||n||a||s||a||i</lang_tl_word_text>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <global_hint><![CDATA[Expression used at night. ]]></global_hint>
+      <hint letter_order="4" missing_letter="s"><![CDATA[The correct letter is <b>s.</b>]]></hint>
+      <hint letter_order="5" missing_letter="u"><![CDATA[The correct letter is <b>u.</b>]]></hint>
+      <feedback><![CDATA[<b>Oyasuminasai</b> means <i>good night</i> and it is mostly used before going to bed.]]></feedback>
+    </item>
+  <item>
+      <image>ja_h01_a2_02.png</image>
+      <lang_tl_phrase_text dir="ltr">ogenki||desu||ka. </lang_tl_phrase_text>
+      <lang_tl_phrase_audio>ja_h01_a2_02.mp3</lang_tl_phrase_audio>
+      <lang_en_phrase_text>How are you doing? </lang_en_phrase_text>
+      <lang_tl_word_text dir="ltr">o||g||e||n||k||i</lang_tl_word_text>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <global_hint><![CDATA[Expression used when inquiring about a person's health.]]></global_hint>
+      <hint letter_order="4" missing_letter="n"><![CDATA[The correct letter is <b>n.</b>]]></hint>
+      <feedback><![CDATA[<b>Ogenki desu ka</b> literally means <i>Have you been doing well?</i> This expression is used upon greeting someone and inquiring about his/her health. ]]></feedback>
+    </item>
+  <item>
+      <image>ja_h01_a2_03.png</image>
+      <lang_tl_phrase_text dir="ltr">jaa,||mata||ashita||.</lang_tl_phrase_text>
+      <lang_tl_phrase_audio>ja_h01_a2_03.mp3</lang_tl_phrase_audio>
+      <lang_en_phrase_text>Well, see you tomorrow. </lang_en_phrase_text>
+      <lang_tl_word_text dir="ltr">a||s||h||i||t||a</lang_tl_word_text>
+      <lang_tl_word_order>3</lang_tl_word_order>
+      <global_hint><![CDATA[Expression used when taking leave of someone that we will see again soon. ]]></global_hint>
+      <hint letter_order="1" missing_letter="a"><![CDATA[The correct letter is <b>a.</b>]]></hint>
+      <hint letter_order="2" missing_letter="s"><![CDATA[The correct letter is <b>s.</b>]]></hint>
+      <hint letter_order="3" missing_letter="h"><![CDATA[The correct letter is <b>h.</b>]]></hint>
+      <hint letter_order="4" missing_letter="i"><![CDATA[The correct letter is <b>i.</b>]]></hint>
+      <feedback><![CDATA[<b>Jaa, mata ashita</b> means <i>Well, see you tomorrow.</i> <b>Ashita</b> means <i>tomorrow.</i>]]></feedback>
+    </item>
+  <item>
+      <image>ja_h01_a2_04.png</image>
+      <lang_tl_phrase_text dir="ltr">otsukaresama</lang_tl_phrase_text>
+      <lang_tl_phrase_audio>ja_h01_a2_04.mp3</lang_tl_phrase_audio>
+      <lang_en_phrase_text>Thank you for your hard work.</lang_en_phrase_text>
+      <lang_tl_word_text dir="ltr">o||t||s||u||k||a||r||e||s||a||m||a</lang_tl_word_text>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <global_hint><![CDATA[Expression used by coworkers at the end of a work day. ]]></global_hint>
+      <hint letter_order="2" missing_letter="t"><![CDATA[The correct letter is <b>t.</b>]]></hint>
+      <hint letter_order="3" missing_letter="s"><![CDATA[The correct letter is <b>s.</b>]]></hint>
+      <hint letter_order="4" missing_letter="u"><![CDATA[The correct letter is <b>u.</b>]]></hint>
+      <feedback><![CDATA[<b>Otsukaresama</b> means <i>Thank you for your hard work</i> and it is used in a office setting.]]></feedback>
+    </item>
+  <item>
+      <image>ja_h01_a2_05.png</image>
+      <lang_tl_phrase_text dir="ltr">sumimasen</lang_tl_phrase_text>
+      <lang_tl_phrase_audio>ja_h01_a2_05.mp3</lang_tl_phrase_audio>
+      <lang_en_phrase_text>Excuse me.</lang_en_phrase_text>
+      <lang_tl_word_text dir="ltr">s||u||m||i||m||a||s||e||n</lang_tl_word_text>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <global_hint><![CDATA[Expression used when apologizing formally. ]]></global_hint>
+      <hint letter_order="3" missing_letter="m"><![CDATA[The correct letter is <b>m.</b>]]></hint>
+      <hint letter_order="7" missing_letter="s"><![CDATA[The correct letter is <b>s.</b>]]></hint>
+      <hint letter_order="9" missing_letter="n"><![CDATA[The correct letter is <b>n.</b>]]></hint>
+      <feedback><![CDATA[<b>Sumimasen</b> means <i>excuse me</i> and it is more formal than <b>Gomen nasai.</b> When apologizing to one's supervisor the expression <b>sumimasen</b> it generally used. ]]></feedback>
+    </item>
+  <item>
+      <image>ja_h01_a2_06.png</image>
+      <lang_tl_phrase_text dir="ltr">okagesamade</lang_tl_phrase_text>
+      <lang_tl_phrase_audio>ja_h01_a2_06.mp3</lang_tl_phrase_audio>
+      <lang_en_phrase_text>Thank you for your concern.</lang_en_phrase_text>
+      <lang_tl_word_text dir="ltr">o||k||a||g||e||s||a||m||a||d||e</lang_tl_word_text>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <global_hint><![CDATA[Expression used when replying to a concerned inquiry. ]]></global_hint>
+      <hint letter_order="2" missing_letter="k"><![CDATA[The correct letter is <b>ka.</b>]]></hint>
+      <hint letter_order="3" missing_letter="a"><![CDATA[The correct letter is <b>a.</b>]]></hint>
+      <hint letter_order="4" missing_letter="g"><![CDATA[The correct letter is <b>g.</b>]]></hint>
+      <hint letter_order="5" missing_letter="e"><![CDATA[The correct letter is <b>e.</b>]]></hint>
+      <feedback><![CDATA[<b>Okagesamade</b> means <i>Thank you for your concern.</i> Okagesamade can be used when one announced good news in answer to someone's inquiry.]]></feedback>
+    </item>
+  <item>
+      <image>ja_h01_a2_07.png</image>
+      <lang_tl_phrase_text dir="ltr">arigatoo||gozaimasu||.</lang_tl_phrase_text>
+      <lang_tl_phrase_audio>ja_h01_a2_07.mp3</lang_tl_phrase_audio>
+      <lang_en_phrase_text>Thank you very much. </lang_en_phrase_text>
+      <lang_tl_word_text dir="ltr">a||r||i||g||a||t||o||o</lang_tl_word_text>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <global_hint><![CDATA[Expression used when showing gratitude.]]></global_hint>
+      <hint letter_order="2" missing_letter="r"><![CDATA[The correct letter is <b>ri.</b>]]></hint>
+      <hint letter_order="3" missing_letter="i"><![CDATA[The correct letter is <b>i.</b>]]></hint>
+      <feedback><![CDATA[<b>Arigatoo gozaimasu</b> means <i>Thank you very much.</i> This is a formal expression used when thanking someone.]]></feedback>
+    </item>
+  <item>
+      <image>ja_h01_a2_08.png</image>
+      <lang_tl_phrase_text dir="ltr">shitsurei||shimasu.</lang_tl_phrase_text>
+      <lang_tl_phrase_audio>ja_h01_a2_08.mp3</lang_tl_phrase_audio>
+      <lang_en_phrase_text>Excuse me for a moment. </lang_en_phrase_text>
+      <lang_tl_word_text dir="ltr">s||h||i||t||s||u||r||e||i</lang_tl_word_text>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <global_hint><![CDATA[Expression used when apologizing. ]]></global_hint>
+      <hint letter_order="1" missing_letter="s"><![CDATA[The correct letter is <b>s.</b>]]></hint>
+      <hint letter_order="2" missing_letter="h"><![CDATA[The correct letter is <b>h.</b>]]></hint>
+      <hint letter_order="3" missing_letter="i"><![CDATA[The correct letter is <b>i.</b>]]></hint>
+      <hint letter_order="7" missing_letter="r"><![CDATA[The correct letter is <b>r.</b>]]></hint>
+      <hint letter_order="8" missing_letter="e"><![CDATA[The correct letter is <b>e.</b>]]></hint>
+      <feedback><![CDATA[<b>Shitsurei shimasu</b> means <i>excuse me for a moment</i> and it is used when excusing oneself for being rude/interrupting something.]]></feedback>
+    </item>
+  <item>
+      <image>ja_h01_a2_09.png</image>
+      <lang_tl_phrase_text dir="ltr">konnichiwa.</lang_tl_phrase_text>
+      <lang_tl_phrase_audio>ja_h01_a2_09.mp3</lang_tl_phrase_audio>
+      <lang_en_phrase_text>Good morning.</lang_en_phrase_text>
+      <lang_tl_word_text dir="ltr">k||o||n||n||i||c||h||i||w||a</lang_tl_word_text>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <global_hint><![CDATA[Greeting used in before noon.]]></global_hint>
+      <hint letter_order="9" missing_letter="w"><![CDATA[The correct letter is <b>w.</b>]]></hint>
+      <hint letter_order="10" missing_letter="a"><![CDATA[The correct letter is <b>a.</b>]]></hint>
+      <feedback><![CDATA[<b>Kon'nichiwa</b> means <i>good morning.</i>]]></feedback>
+    </item>
+  <item>
+      <image>ja_h01_a2_10.png</image>
+      <lang_tl_phrase_text dir="ltr">wakarimasen</lang_tl_phrase_text>
+      <lang_tl_phrase_audio>ja_h01_a2_10.mp3</lang_tl_phrase_audio>
+      <lang_en_phrase_text>I do not understand.</lang_en_phrase_text>
+      <lang_tl_word_text dir="ltr">w||a||k||a||r||i||m||a||s||e||n</lang_tl_word_text>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <global_hint><![CDATA[Listen to the end of the audio. ]]></global_hint>
+      <hint letter_order="1" missing_letter="w"><![CDATA[The correct letter is <b>w.</b>]]></hint>
+      <hint letter_order="2" missing_letter="a"><![CDATA[The correct letter is <b>a.</b>]]></hint>
+      <feedback><![CDATA[<b>Wakarimasen</b> is the present negative form of the verb <b>wakaru</b> meaning <i>to understand.</i>]]></feedback>
+    </item>
+  <item>
+      <image>ja_h01_a2_11.png</image>
+      <lang_tl_phrase_text dir="ltr">yonde||kudasai</lang_tl_phrase_text>
+      <lang_tl_phrase_audio>ja_h01_a2_11.mp3</lang_tl_phrase_audio>
+      <lang_en_phrase_text>Please, read.</lang_en_phrase_text>
+      <lang_tl_word_text dir="ltr">y||o||n||d||e</lang_tl_word_text>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <global_hint><![CDATA[Listen to the first word carefully. ]]></global_hint>
+      <hint letter_order="1" missing_letter="y"><![CDATA[The correct letter is <b>y.</b>]]></hint>
+      <hint letter_order="2" missing_letter="o"><![CDATA[The correct letter is <b>o.</b>]]></hint>
+      <feedback><![CDATA[<b>Yonde kudasai</b> means <i>Please, read.</i> <b>Yonde</b> is the <b>-te</b> form of the verb <b>yomu</b> meaning <i>to read.</i>]]></feedback>
+    </item>
+  <item>
+      <image>ja_h01_a2_12.png</image>
+      <lang_tl_phrase_text dir="ltr">dekimashita||ka</lang_tl_phrase_text>
+      <lang_tl_phrase_audio>ja_h01_a2_12.mp3</lang_tl_phrase_audio>
+      <lang_en_phrase_text>Did you do it?</lang_en_phrase_text>
+      <lang_tl_word_text dir="ltr">d||e||k||i||m||a||s||h||i||t||a</lang_tl_word_text>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <global_hint><![CDATA[Listen to the beginning of the audio carefully. ]]></global_hint>
+      <hint letter_order="1" missing_letter="d"><![CDATA[The correct letter is <b>d.</b>]]></hint>
+      <hint letter_order="2" missing_letter="e"><![CDATA[The correct letter is <b>e.</b>]]></hint>
+      <feedback><![CDATA[<b>Dekimashita ka</b> means<i> Did you do it?</i> <b>Dekimashita</b> is the past formal form of the verb <i>dekiru</i> meaning <i>to be able to.</i>]]></feedback>
+    </item>
+  <item>
+      <image>ja_h01_a2_13.png</image>
+      <lang_tl_phrase_text dir="ltr">doo||itashimashite</lang_tl_phrase_text>
+      <lang_tl_phrase_audio>ja_h01_a2_13.mp3</lang_tl_phrase_audio>
+      <lang_en_phrase_text>You are welcome.</lang_en_phrase_text>
+      <lang_tl_word_text dir="ltr">d||o||o</lang_tl_word_text>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <global_hint><![CDATA[Expression used in a reply to a thank you. ]]></global_hint>
+      <hint letter_order="1" missing_letter="d"><![CDATA[The correct letter is <b>d.</b>]]></hint>
+      <hint letter_order="2" missing_letter="o"><![CDATA[The correct letter is <b>o.</b>]]></hint>
+      <feedback><![CDATA[<b>Doo itashimashite</b> means <i>you are welcome.</i>]]></feedback>
+    </item>
+  <item>
+      <image>ja_h01_a2_14.png</image>
+      <lang_tl_phrase_text dir="ltr">onegaishimasu</lang_tl_phrase_text>
+      <lang_tl_phrase_audio>ja_h01_a2_14.mp3</lang_tl_phrase_audio>
+      <lang_en_phrase_text>I request of you. </lang_en_phrase_text>
+      <lang_tl_word_text dir="ltr">o||n||e||g||a||i||s||h||i||m||a||s||u</lang_tl_word_text>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <global_hint><![CDATA[Expression used when requesting something from someone. ]]></global_hint>
+      <hint letter_order="2" missing_letter="n"><![CDATA[The correct letter is <b>n.</b>]]></hint>
+      <hint letter_order="3" missing_letter="e"><![CDATA[The correct letter is <b>e.</b>]]></hint>
+      <feedback><![CDATA[<b>Onegaishimasu</b> means <i>I request of you</i> or <i>please.</i>]]></feedback>
+    </item>
+  <item>
+      <image>ja_h01_a2_15.png</image>
+      <lang_tl_phrase_text dir="ltr">moo||ichido||itte||kudasai</lang_tl_phrase_text>
+      <lang_tl_phrase_audio>ja_h01_a2_15.mp3</lang_tl_phrase_audio>
+      <lang_en_phrase_text>Please, say it one more time. </lang_en_phrase_text>
+      <lang_tl_word_text dir="ltr">i||t||t||e</lang_tl_word_text>
+      <lang_tl_word_order>3</lang_tl_word_order>
+      <global_hint><![CDATA[Expression used in the imperative form. ]]></global_hint>
+      <hint letter_order="3" missing_letter="t"><![CDATA[The correct letter is <b>t.</b>]]></hint>
+      <hint letter_order="4" missing_letter="e"><![CDATA[The correct letter is <b>e.</b>]]></hint>
+      <feedback><![CDATA[<b>Moo ichido itte kudasai</b> means<i> Please say it one more time.</i>]]></feedback>
+    </item>
+
+</content>

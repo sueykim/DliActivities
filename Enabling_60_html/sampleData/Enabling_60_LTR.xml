@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content target_language="French" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
+     <set>
+             <item>
+               <image name="image1.png"/>
+               <caption dir="ltr">on</caption>
+               <audio name="1.mp3"/>
+               <hint1 dir="ltr">First Hint for Item1</hint1>
+               <hint2 dir="ltr">Second Hint for Item1</hint2>
+               <feedback_audio name="11.mp3"/>
+               <feedback_text dir="ltr">Feedback Text for Item1 testing very long testing text testing very long testing text testing very long testing text testing very long testing text testing very long testing text testing very long testing text </feedback_text>
+             </item>
+             <item>
+               <image name="image2.png"/>
+               <caption dir="ltr">tw</caption>
+               <audio name="2.mp3"/>
+               <hint1 dir="ltr">First Hint for Item2 testing very long testing text testing very long testing text testing very long testing text testing very long testing text testing very long testing text testing very long testing text testing very long testing text </hint1>
+               <hint2 dir="ltr">Second Hint for Item2</hint2>
+               <feedback_audio name="12.mp3"/>
+               <feedback_text dir="ltr">Feedback Text for Item2</feedback_text>
+             </item>
+             <item>
+               <image name="image3.png"/>
+               <caption dir="ltr">thr</caption>
+               <audio name="3.mp3"/>
+               <hint1 dir="ltr">First Hint for Item3 testing very long testing text testing very long testing text testing very long testing text testing very long testing text testing very long testing text testing very long testing text testing very long testing text testing very long testing text testing very long testing text </hint1>
+               <hint2 dir="ltr">Second Hint for Item3</hint2>
+               <feedback_audio name="13.mp3"/>
+               <feedback_text dir="ltr">Feedback Text for Item3</feedback_text>
+             </item>
+             <item>
+               <image name="image4.png"/>
+               <caption dir="ltr">fo</caption>
+               <audio name="4.mp3"/>
+               <hint1 dir="ltr">First Hint for Item4</hint1>
+               <hint2 dir="ltr">Second Hint for Item4</hint2>
+               <feedback_audio name="14.mp3"/>
+               <feedback_text dir="ltr">Feedback Text for Item4</feedback_text>
+             </item>
+			 <item>
+               <image name="image5.png"/>
+               <caption dir="ltr">fiv</caption>
+               <audio name="5.mp3"/>
+               <hint1 dir="ltr">First Hint for Item5</hint1>
+               <hint2 dir="ltr">Second Hint for Item5</hint2>
+               <feedback_audio name="15.mp3"/>
+               <feedback_text dir="ltr">Feedback Text for Item5</feedback_text>
+             </item>
+     </set>
+     <set>
+             <item>
+               <image name="image1.png"/>
+               <caption dir="ltr">si</caption>
+               <audio name="6.mp3"/>
+               <hint1 dir="ltr">First Hint for Item6</hint1>
+               <hint2 dir="ltr">Second Hint for Item6</hint2>
+               <feedback_audio name="16.mp3"/>
+               <feedback_text dir="ltr">Feedback Text for Item6</feedback_text>
+             </item>
+             <item>
+               <image name="image2.png"/>
+               <caption dir="ltr">se</caption>
+               <audio name="7.mp3"/>
+               <hint1 dir="ltr">First Hint for Item7</hint1>
+               <hint2 dir="ltr">Second Hint for Item7</hint2>
+               <feedback_audio name="17.mp3"/>
+               <feedback_text dir="ltr">Feedback Text for Item7</feedback_text>
+             </item>
+             <item>
+               <image name="image3.png"/>
+               <caption dir="ltr">eig</caption>
+               <audio name="8.mp3"/>
+               <hint1 dir="ltr">First Hint for Item8</hint1>
+               <hint2 dir="ltr">Second Hint for Item8</hint2>
+               <feedback_audio name="18.mp3"/>
+               <feedback_text dir="ltr">Feedback Text for Item8</feedback_text>
+             </item>
+     </set>
+</content>

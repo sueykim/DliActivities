@@ -1,0 +1,118 @@
+$(document).ready(function() {
+	testVideoSupport();
+	
+	//Default values (for testing)
+	mediaPath = "sampleData/";
+	cssFilename = "styles/VideoCaption.css";
+	xmlFilename = mediaPath + "levantine_VideoCaption_noNamespaces.xml";
+	jsonFilename = mediaPath + "levantine_VideoCaption_noNamespaces.js";
+
+	/*$("#main").mousemove(function(e){
+		if($("#langSelect").hasClass("hidden")){
+			if(e.pageX > 500 && e.pageY < 100 && !langSelectActive){
+				$("#langSelectToggle_container").removeClass("hidden");	
+			}else{
+				$("#langSelectToggle_container").addClass("hidden");	
+			}
+		}
+
+		//for testing
+      	//$('#title').html(e.pageX +', '+ e.pageY);
+   	});*/
+
+	$( "#selectable" ).selectable();
+
+	loadActivity(parseXml);
+}); 
+
+var video;
+
+function mouseMove(){
+	if($("#langSelect").hasClass("hidden")){
+		$("#langSelectToggle_container").addClass("visible");
+		$("#langSelectToggle_container").removeClass("invisible");	
+	}
+}
+
+function mouseOut(){
+	if(!langSelectActive){
+		$("#langSelectToggle_container").addClass("invisible");	
+		$("#langSelectToggle_container").removeClass("visible");
+	}
+}
+
+function parseXml(t_xml){
+	var videoFile = $(xml).find("video_file").text();
+	videoFile =	loadVideoNoPlayYet(mediaPath , videoFile);
+	
+	video = document.getElementById("videoTag");
+	
+	
+	video.addEventListener('timeupdate',timeupdateEvent,false);
+	video.addEventListener('ended',videoEnded,false);
+	
+	$(video).attr("controls", "true");
+	
+	$("#title").html($(xml).find("title").text());
+	
+	$("#tlLang").text($(xml).find("content").attr("target_language"));
+}
+
+var currentActiveSegment = 1;
+
+function timeupdateEvent(){
+	$('#title').html(video.currentTime);
+	
+	currentActiveSegment = 0;
+
+	$(xml).find("segment time_pointer").each(function(){
+	    var timePointer = parseFloat($(this).text());
+	    
+	    if(video.currentTime < timePointer){    
+	        return false;
+	    }else{
+	        currentActiveSegment++;
+	    }
+	});
+
+	$("#caption").html($($(xml).find("segment " + currentLangTagName)[currentActiveSegment - 1]).text());
+}
+
+function videoEnded(){
+	//alert("ended");
+}
+
+var langSelectActive = false;
+var currentLangTagName = "en_script";
+
+function langSelectTogglePressed(){
+	//$("#langSelectToggle_container").addClass("hidden");	
+	$("#langSelect_guard").removeClass("hidden");	
+	$("#langSelect").removeClass("hidden");	
+	langSelectActive = true;
+}
+
+function langPress(value){
+	$("#langSelectToggle_container").addClass("invisible");
+	$("#langSelectToggle_container").removeClass("visible");		
+	switch(value){
+		case 'none':
+			$("#caption_container").addClass("hidden");
+			break;
+		case 'en':
+			currentLangTagName = "en_script";
+			$("#caption_container").removeClass("hidden");	
+			$("#caption").html($($(xml).find("segment " + currentLangTagName)[currentActiveSegment - 1]).text());
+			break;
+		case 'tl':
+			currentLangTagName = "tl_script";
+			$("#caption_container").removeClass("hidden");	
+			$("#caption").html($($(xml).find("segment " + currentLangTagName)[currentActiveSegment - 1]).text());
+			break;
+	}
+	
+	$("#langSelect_guard").addClass("hidden");
+	$("#langSelect").addClass("hidden");
+	
+	langSelectActive = false;
+}

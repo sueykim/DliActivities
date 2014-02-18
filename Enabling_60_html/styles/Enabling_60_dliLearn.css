@@ -1,0 +1,559 @@
+.noSelect{
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+
+  /* No support for these yet, use at own risk */
+  -o-user-select: none;
+  user-select: none;          
+}
+#setTitle, #itemTitle {
+    background-image: url("../../common/img/bg_btn_set.png") !important;
+    border-bottom-left-radius: 4px;
+    border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+    border-top-left-radius: 4px;
+    float: left;
+    font-size: 14px;
+    height: 19px;
+    margin-left: 0;
+    margin-top: 1px;
+    padding-left: 8px;
+    padding-top: 5px;
+}
+#setText {
+    border-radius: 0 4px 4px 0;
+    bottom: auto;
+    font-size: 14px;
+    height: 19px;
+    padding-right: 8px;
+    padding-top: 5px;
+    float: left;
+    top: 1px;
+    width: 29px;
+    margin-left: -6px;
+}
+.btn_set {
+    background-color: #999999;
+    background-image: url("../../common/img/bg_btn_set.png") !important;
+    background-position: center bottom !important;
+    background-repeat: repeat-x !important;
+    color: #FFFFFF;
+    left: 3px;
+    letter-spacing: 2px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.bootstrapLabel {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #F5F5F5;
+    background-image: linear-gradient(to bottom, #FFFFFF, #E6E6E6);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+    border-image: none;
+    border-radius: 0 0 0 0;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+    cursor: default;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-left: -1px;
+    padding: 4px 12px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+}
+#container_setDiv {
+    background-color: transparent;
+    cursor: default;
+    height: 70px;
+    left: 0;
+    margin: 10px;
+    position: relative;
+    top: 440px;
+    width: 964px;
+}
+#setDiv {
+    cursor: default;
+    height: 30px;
+    left: 795px;
+    position: absolute;
+    top: 5px;
+    width: 114px;
+    z-index: 0;
+}
+#id_prev_next_div {
+    width: 180px;
+    left: 717px;
+    position: relative;
+    top: 3px;
+}
+* {
+    -moz-box-sizing: inherit;
+	-webkit-box-sizing: initial;
+	
+    box-sizing: content-box;
+}
+#clickGuard {
+    background-color: grey;
+    display: none;
+    height: 563px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 928px;
+    z-index: 99;
+    min-height: 530px;
+    opacity: .1;
+}
+.activity_description {
+    display: block;
+    font-family: inherit;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-top: -19px;
+    max-width: 910px;
+}
+.activity_hd {
+    color: grey;
+    display: block;
+    font-family: inherit;
+    font-size: 22px;
+    margin-top: -2px;
+}
+html body {
+    width: 910px;
+    background-color: #F5F5F5;
+    color: #444444;
+    font-family: Arial,Helvetica,sans-serif;
+    letter-spacing: 2px;
+    line-height: 20px;
+    position: absolute;
+}
+.roundCorners {
+    border-radius: 0 0 0 0;
+}
+.divBtn {
+    background-image: url("../../common/img/bg_dropbubble_50.png");
+    background-repeat: repeat-x;
+    border: thin solid #BDBDBD;
+    box-shadow: 1px 1px 4px #BDBDBD;
+    float: left;
+    font-size: 16px;
+    height: 40px;
+    margin: 13px 2px 2px 19px;
+    width: 180px;
+}
+#feedback {
+    -moz-user-select: none;
+    background: url("../../common/img/bg_dropbubble_50.png") repeat-x scroll center bottom #F5F5F5;
+    border: 1px solid #BDBDBD;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 2px 4px #BDBDBD;
+    display: block;
+    height: 482px;
+    left: 596px;
+    margin-left: 10px;
+    max-height: 482px;
+    min-height: 253px;
+    padding: 12px;
+    top: 0;
+    width: 237px;
+    z-index: 1003;
+}
+#feedbackHeader {
+    min-height: 39px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 0px;
+}
+#feedbackText {
+    margin-top: -4px;
+    top: 54px;
+    min-height: 156px;
+}
+#feedbackBtn {
+    bottom: 10px;
+    position: absolute;
+    height: 24px;
+    width: 81px;
+    right: 10px;
+}
+
+
+#main {
+    -moz-user-select: none;
+	-webkit-user-select: none;
+    height: 508px;
+    position: relative;
+    width: 600px;
+}
+
+.hidden {
+    display: none;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+#statusBar {
+    top: 607px;
+    width: 910px;
+    clear: both;
+    position: absolute;
+    margin-bottom: 50px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+#setLabel {
+    -moz-user-select: none;
+    bottom: 0;
+    cursor: default;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 17px;
+    left: 6px;
+    position: relative;
+    right: 0;
+    text-align: center;
+    top: 6px;
+}
+#setDiv {
+    background-color: transparent;
+    left: 601px;
+    position: absolute;
+    right: 69px;
+    width: 110px;
+}
+#nextDiv {
+    position: absolute;
+    left: 871px;
+    top: 7px;
+}
+#nextBtnLink {
+    position: absolute;
+    top: 0;
+}
+#nextBtn_s1 {
+}
+#nextBtnClickGuard {
+    position: absolute;
+}
+#prevDiv {
+    left: 832px;
+    position: absolute;
+    top: 7px;
+}
+#prevBtnLink {
+    position: absolute;
+    top: 0;
+}
+#prevBtn_s1 {
+}
+#prevBtnClickGuard {
+    position: absolute;
+}
+
+
+.btn-group > .btn:first-child {
+	border-bottom-left-radius: 4px;
+	border-top-left-radius: 4px;
+	margin-left: 0px;
+	margin-right: -9px;
+}
+.btn-group > .btn:last-child {
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.btn {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #A2A2A2;
+	border-image: none;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+	background-color: #FFFFFF;
+	background-image: url("../../common/img/bg_btn.png"); /* ---- point to the root folder/img/ ----- */
+	background-position: center bottom;
+	background-repeat: repeat-x;
+	color: #444444;
+	text-shadow: 1px 1px 1px #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 0;
+	padding: 4px 12px;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	vertical-align: middle;
+}
+
+#feedbackButtonImgContainer{
+    margin-right: 12px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 102px;
+}
+#feedbackButtonImgContainer > img{
+	margin-top: 5px;
+}
+
+#keyboardContainer {
+    left: 15px;
+    padding-left: 8px;
+    top: 320px;
+    opacity: 0.975;
+    box-shadow: 0 1px 0 0 #FFFFFF, 0 5px 11px 2px rgba(119, 119, 119, 0.4) inset;
+    border-radius: 3px 3px 3px 3px;
+    border: thin solid #B8B8B8;
+    background-image: url("../../common/img/bg_grip_pattern.png");
+    margin-bottom: 3px;
+    margin-left: -4px;
+    height: 165px;
+    padding-top: 10px;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    width: 567px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#keyboard > div {
+    background: url("../../common/img/bg_dropbubble_50.png") repeat-x scroll center bottom #F5F5F5;
+    border: 1px solid lightgray;
+    border-radius: 3px 3px 3px 3px;
+    cursor: pointer;
+    float: left;
+    font-size: 18px;
+    height: 34px;
+    margin: 2px;
+    padding-top: 12px;
+    text-align: center;
+}
+#keyboard > .letter{
+	width: 45px;
+}
+#keyboard > div:hover{
+	border:1px solid grey;
+}
+
+#card_wrapper{
+    position: relative;
+    display: table;
+	
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card{
+    width: 107px;
+    margin: 5px;
+    float: left;
+}
+
+.card_img{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    margin: 3px 3px 7px 3px;
+}
+
+.card_connect{
+    display: none;
+    height: 75px;
+    opacity: 0;
+    background-color: black;
+    width: 7px;
+    margin-left: 50px;
+}
+
+.card_text{
+    text-align: center;
+    position: absolute;
+    
+    top: 45px;
+    font-size: 38px;
+    width: 100px;
+}
+
+.card_word{
+    cursor: pointer;
+    border: 1px solid black;
+    position: relative;
+    margin: 3px;
+    width: 100px;
+    
+    height: 100px;
+    background-color: lightgray;
+    opacity: .7;
+}
+
+.card_playBtn{
+    position: absolute;
+    display:none;
+    width: 25px;
+    height: 25px;
+}
+
+.card_input{
+    display: none;
+    border: 1px solid gray;
+    background-color: white;
+    
+    height: 49px;
+    width: 89px;
+    margin: 5px;
+    position: absolute;
+    top: 33px;
+    cursor: text;
+}
+
+.selected_card_text{
+    top: 10px;
+    font-size: 17px;
+    text-align: left;
+    left: 5px;
+}
+
+.selected_card_word{
+    opacity: 1;
+    
+}
+
+.selected_card_input{
+    display: block; 
+}
+
+.input_letter{
+    display: inline-block;
+    
+}
+
+.input_letter_error{
+    color:red;
+}
+
+.visible{
+    display:block;
+}
+
+.card_playBtn_wrapper img{
+    width: 100%;
+    
+}
+
+#finished_card_container{
+    z-index: 100;
+    position: absolute;
+    
+    top: 196px;
+    left: 96px;
+}
+
+#finished_card_container > div{
+    width: 200px;
+    display: inline-block;
+    
+    height: 200px;
+}
+
+.card_img img{
+    width: 100%;
+    
+}
+
+#finished_card_container .card_text{
+    font-size: 104px;
+    
+    margin-left: 43px;
+    margin-top: 50px;
+}
+
+#finished_card_container .card_word{
+    opacity: 1;
+}
+
+#finished_card_container .card_playBtn{
+    width: 51px;
+    
+}
+
+#main[phase='completed'] .card .card_connect{
+    opacity: 1;
+    display: block;
+}
+
+#main[phase='2'] .card_connect{
+    opacity: 0;
+    display: block;
+}
+
+#main[phase='2'] .card:not([completed='true']) .card_connect{
+    opacity: 0;
+    display: block;
+}
+
+#main[phase='2'] .card[completed='true'] .card_connect{
+    opacity: 1;
+    display: block;
+}
+
+#main[phase='2'] .card[completed='true'] .card_word,
+#main[phase='2'] .card[completed='true'] .card_img{
+    background-color: black;
+    opacity: .7;
+    color: white;
+}
+
+.card[completed="true"] .card_word,
+.card[completed="true"] .card_img img{
+    cursor:default;
+    opacity:.7;
+}
+
+#main[phase="completed"] .card_word,
+#main[phase="completed"] .card_img img{
+    opacity:1;
+}
+
+#main[phase="2"] .card .card_word,
+#main[phase="2"] .card .card_img img{
+    opacity: .7;
+
+}
+
+#main[phase="2"] .card:not([completed='true']) .card_word[active='true'],
+#main[phase="2"] .card:not([completed='true']) .card_img img[active='true']{
+    opacity:1;
+
+}
+
+#main[phase="2"] .card:not([completed='true']) .card_img{
+    cursor:pointer;
+}
+
+#main:not([phase='1']) #card_wrapper{
+    top:105px;
+}
+
+#main:not([phase='1']) #keyboardContainer{
+    display:none;
+}
+
+#main:not([phase="1"]) .card_playBtn{
+    display: block;
+}

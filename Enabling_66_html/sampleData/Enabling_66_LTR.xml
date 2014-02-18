@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content  target_language="Dari" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
+  <set>
+     <image_A>speakerA.png</image_A>
+     <image_B>speakerB.png</image_B>
+     <desc_audio>1.mp3</desc_audio>
+     <conv_audio>11.mp3</conv_audio>
+	 <use_en_tab>false</use_en_tab>
+     <sentences>
+       <tl_speakerA dir="ltr"><![CDATA["speakerA" utterance, in Target in Language? really really really long text to test wrapping "speakerA" utterance, in Target in Language? really really really long text to test wrapping ]]></tl_speakerA>
+       <en_speakerA>speakerA utterance in English language long long long long to test wrapping wrapping wrapping. speakerA utterance in English language long long long long to test wrapping wrapping wrapping. v</en_speakerA>
+       <tl_speakerB dir="ltr"><![CDATA[speakerB "Target" Language.]]></tl_speakerB>
+       <en_speakerB>speakerB English language</en_speakerB>
+     </sentences>
+     <hints>
+          <hint_A><![CDATA[Person A's utterance is incorrect S/he is talking about X]]></hint_A>
+          <hint_B><![CDATA[PersoN B's utterance is incorrect S/he is talking about Y]]></hint_B>
+          <hint_AB><![CDATA[Both person A's and B's utterance are incorrect Person A is talking about X, and person B about Y.]]></hint_AB>
+     </hints>
+  </set>
+  <set>
+     <image_A>speakerA_2.png</image_A>
+     <image_B>speakerB_2.png</image_B>
+     <desc_audio>2.mp3</desc_audio>
+     <conv_audio>12.mp3</conv_audio>
+	 <use_en_tab>true</use_en_tab>
+     <sentences>
+       <tl_speakerA dir="ltr"><![CDATA[speakerA_utterance_2 in TL]]></tl_speakerA>
+       <en_speakerA>speakerA_utterance_2 in EN</en_speakerA>
+       <tl_speakerB dir="ltr"><![CDATA[speakerB_utterance_2 in TL]]></tl_speakerB>
+       <en_speakerB>speakerB_utterance_2 in EN</en_speakerB>
+     </sentences>
+     <hints>
+          <hint_A><![CDATA[Person A's utterance is incorrect S/he is talking about X]]></hint_A>
+          <hint_B><![CDATA[PersoN B's utterance is incorrect S/he is talking about Y]]></hint_B>
+          <hint_AB><![CDATA[Both person A's and B's utterance are incorrect Person A is talking about X, and person B about Y.]]></hint_AB>
+     </hints>
+  </set>
+</content>

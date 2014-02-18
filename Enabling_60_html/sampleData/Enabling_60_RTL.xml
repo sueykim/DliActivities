@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hs:content target_language="Arabic" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
+     <hs:set>
+             <hs:item>
+               <hs:image name="image1.png"/>
+               <hs:caption dir="rtl">رو</hs:caption>
+               <hs:audio name="audio1.mp3"/>
+               <hs:hint1 dir="ltr">First Hint for Item1</hs:hint1>
+               <hs:hint2 dir="ltr">Second Hint for Item1</hs:hint2>
+               <hs:feedback_audio name="feedback1.mp3"/>
+               <hs:feedback_text dir="ltr">Feedback Text for Item1 testing very long testing text testing very long testing text testing very long testing text testing very long testing text testing very long testing text testing very long testing text </hs:feedback_text>
+             </hs:item>
+             <hs:item>
+               <hs:image name="image2.png"/>
+               <hs:caption dir="rtl">ور</hs:caption>
+               <hs:audio name="audio2.mp3"/>
+               <hs:hint1 dir="ltr">First Hint for Item2 testing very long testing text testing very long testing text testing very long testing text testing very long testing text testing very long testing text testing very long testing text testing very long testing text </hs:hint1>
+               <hs:hint2 dir="ltr">Second Hint for Item2</hs:hint2>
+               <hs:feedback_audio name="feedback2.mp3"/>
+               <hs:feedback_text dir="ltr">Feedback Text for Item2</hs:feedback_text>
+             </hs:item>
+             <hs:item>
+               <hs:image name="image3.png"/>
+               <hs:caption dir="rtl">بن</hs:caption>
+               <hs:audio name="audio3.mp3"/>
+               <hs:hint1 dir="ltr">First Hint for Item3 testing very long testing text testing very long testing text testing very long testing text testing very long testing text testing very long testing text testing very long testing text testing very long testing text testing very long testing text testing very long testing text </hs:hint1>
+               <hs:hint2 dir="rtl">Second Hint for Item3</hs:hint2>
+               <hs:feedback_audio name="feedback3.mp3"/>
+               <hs:feedback_text dir="ltr">Feedback Text for Item3</hs:feedback_text>
+             </hs:item>
+             <hs:item>
+               <hs:image name="image4.png"/>
+               <hs:caption dir="rtl">لغ</hs:caption>
+               <hs:audio name="audio4.mp3"/>
+               <hs:hint1 dir="ltr">First Hint for Item4</hs:hint1>
+               <hs:hint2 dir="ltr">Second Hint for Item4</hs:hint2>
+               <hs:feedback_audio name="feedback4.mp3"/>
+               <hs:feedback_text dir="ltr">Feedback Text for Item4</hs:feedback_text>
+             </hs:item>
+			 <hs:item>
+               <hs:image name="image5.png"/>
+               <hs:caption dir="rtl">ال</hs:caption>
+               <hs:audio name="audio5.mp3"/>
+               <hs:hint1 dir="ltr">First Hint for Item5</hs:hint1>
+               <hs:hint2 dir="ltr">Second Hint for Item5</hs:hint2>
+               <hs:feedback_audio name="feedback5.mp3"/>
+               <hs:feedback_text dir="ltr">Feedback Text for Item5</hs:feedback_text>
+             </hs:item>
+     </hs:set>
+     <hs:set>
+             <hs:item>
+               <hs:image name="image1.png"/>
+               <hs:caption dir="rtl">رو</hs:caption>
+               <hs:audio name="audio1.mp3"/>
+               <hs:hint1 dir="ltr">First Hint for Item1</hs:hint1>
+               <hs:hint2 dir="ltr">Second Hint for Item1</hs:hint2>
+               <hs:feedback_audio name="feedback1.mp3"/>
+               <hs:feedback_text dir="ltr">Feedback Text for Item1</hs:feedback_text>
+             </hs:item>
+             <hs:item>
+               <hs:image name="image2.png"/>
+               <hs:caption dir="rtl">ور</hs:caption>
+               <hs:audio name="audio2.mp3"/>
+               <hs:hint1 dir="ltr">First Hint for Item2</hs:hint1>
+               <hs:hint2 dir="ltr">Second Hint for Item2</hs:hint2>
+               <hs:feedback_audio name="feedback2.mp3"/>
+               <hs:feedback_text dir="ltr">Feedback Text for Item2</hs:feedback_text>
+             </hs:item>
+             <hs:item>
+               <hs:image name="image3.png"/>
+               <hs:caption dir="rtl">بن</hs:caption>
+               <hs:audio name="audio3.mp3"/>
+               <hs:hint1 dir="ltr">First Hint for Item3</hs:hint1>
+               <hs:hint2 dir="ltr">Second Hint for Item3</hs:hint2>
+               <hs:feedback_audio name="feedback3.mp3"/>
+               <hs:feedback_text dir="ltr">Feedback Text for Item3</hs:feedback_text>
+             </hs:item>
+     </hs:set>
+</hs:content>

@@ -1,0 +1,202 @@
+#missingLetter{
+	
+}
+
+#playBtnDiv{
+    position: relative;
+    top: -19px;
+}
+
+#englishWord {
+    background-color: white;
+    border: 1px solid;
+    left: 48px;
+    position: absolute;
+    top: 60px;
+    width: 199px;
+}
+
+
+#main {
+	background-color: lightgray;
+    height: 400px;
+    position: relative;
+    width: 580px;
+   	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+#stage{
+	
+}
+
+#nextBtnClickGuard{
+    display: block;
+    position: absolute;
+    top: 8px;
+}
+
+#prevBtnClickGuard{
+    display: block;
+    position: absolute;
+    top: 8px;
+}
+
+#stageImg {
+    background-color: green;
+    bottom: 85px;
+    left: 15px;
+    position: absolute;
+    width: 267px;
+}
+
+#imgBlocks_container {
+    bottom: -48px;
+    height: 269px;
+    left: 15px;
+    position: relative;
+    width: 268px;
+}
+
+#input_container {
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+
+
+#missingLetters_container {
+    height: 20px;
+    margin-bottom: 32px;
+    margin-left: 0;
+    margin-top: 29px;
+    width: 265px;
+}
+
+#input{
+	
+}
+
+#submitBtn {
+	cursor:default;
+    background-color: grey;
+    left: 184px;
+    margin: 5px;
+    padding: 8px;
+    position: relative;
+    width: 61px;
+    -moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+#correctBubble {
+    background-color: #A0AA5D;
+    color: white;
+    padding: 8px;
+    position: absolute;
+    right: 75px;
+    top: 2px;
+}
+
+#incorrectBubble {
+    background-color: #C05C1D;
+    color: white;
+    padding: 8px;
+    position: absolute;
+    right: 75px;
+    top: 2px;
+}
+
+#incorrectBubbleX {
+    background-color: white;
+    color: #C05C1D;
+    float: left;
+    margin-right: 5px;
+    padding: 1px;
+}
+
+.hidden{
+	display: none;
+}
+
+#keyboardContainer {
+    width: 281px;
+}
+
+
+#statusBar {
+    background-color: grey;
+    bottom: 0;
+    float: left;
+    height: 40px;
+    position: absolute;
+    width: 100%;
+}
+
+#setDiv{
+    left: 6px;
+    float: left;
+}
+
+#setText{
+	
+}
+
+#nextDiv{
+	float: right;
+	margin-top: 7px;
+	margin-right: 7px;
+}
+
+#nextBtnLink{
+	
+}
+
+#nextBtn_s1{
+	
+}
+
+#prevDiv{
+	float: right;
+	margin-top: 7px;
+	margin-right: 5px;
+}
+
+#prevBtnLink{
+	
+}
+
+#prevBtn_s1{
+	
+}
+
+#clickGuard{
+	
+}
+
+.blockText {
+    position: relative;
+    top: 40%;
+}
+
+.block {
+    background-color: grey;
+    border: 1px solid;
+    float: left;
+    height: 87px;
+    opacity: 1; 
+    cursor: pointer;
+    text-align: center;
+    width: 132px;
+}
+
+
+.missingLetter {
+    border-bottom: 3px solid;
+    float: left;
+    height: 20px;
+    margin-right: 5px;
+    padding-left: 2px;
+    text-align: center;
+    width: 18px;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<hs:content xmlns:hs="http://fieldsupport.lingnet.org/products/headstart"
+    xmlns="http://fieldsupport.lingnet.org/products/headstart">
+    <hs:set>
+        <hs:stml_media>rain</hs:stml_media>
+        <hs:correct_response_media>red</hs:correct_response_media>
+        <hs:correct_response_feedback>A Spanish speaker greets you with "Hello" (informal). You selected "Hello" (formal). This is correct.</hs:correct_response_feedback>
+        <hs:d_1_media>river</hs:d_1_media>
+        <hs:d_1_feedback>A Spanish speaker greets you with "Hello" (informal). You selected
+            "Good-bye." This is a correct way to take leave of someone.</hs:d_1_feedback>
+        <hs:d_2_media>rice</hs:d_2_media>
+        <hs:d_2_feedback>A Spanish speaker greets you with "Hello" (informal). You selected "My name is John." This is a correct way to tell someone your name.</hs:d_2_feedback>
+        <hs:additional_feedback>The correct choice is "Hello" (formal).</hs:additional_feedback>
+        <hs:media_type>video</hs:media_type>
+    </hs:set>
+</hs:content>

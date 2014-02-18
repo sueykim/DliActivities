@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<content  target_language="Dari" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
+  <set>
+     <image_A>speakerA.png</image_A>
+     <image_B>speakerB.png</image_B>
+     <desc_audio>exchange_description.mp3</desc_audio>
+     <conv_audio>actual_exchange.mp3</conv_audio>
+	 <use_en_tab>true</use_en_tab>
+     <sentences>
+       <tl_speakerA dir="rtl"><![CDATA[.العبارة الأولى عشوائية]]></tl_speakerA>
+       <en_speakerA>speakerA utterance in English language</en_speakerA>
+       <tl_speakerB dir="rtl"><![CDATA[واحد اثنين ثلاث أربع خمسة]]></tl_speakerB>
+       <en_speakerB>speakerB English language</en_speakerB>
+     </sentences>
+     <hints>
+          <hint_A><![CDATA[Person A's utterance is incorrect S/he is talking about X]]></hint>
+          <hint_B><![CDATA[PersoN B's utterance is incorrect S/he is talking about Y]]></hint>
+          <hint_AB><![CDATA[Both person A's and B's utterance are incorrect Person A is talking about X, and person B about Y.]]></hint>
+     </hints>
+  </set>
+  <set>
+     <image_A>speakerA_2.png</image_A>
+     <image_B>speakerB_2.png</image_B>
+     <desc_audio>exchange_description_2.mp3</desc_audio>
+     <conv_audio>actual_exchange_2.mp3</conv_audio>
+	 <use_en_tab>true</use_en_tab>
+     <sentences>
+       <tl_speakerA dir="rtl"><![CDATA[هذه هي أربع كلمات]]></tl_speakerA>
+       <en_speakerA>speakerA_utterance_2 in EN</en_speakerA>
+       <tl_speakerB dir="rtl"><![CDATA[المتحدث الثاني يقول ان هذا]]></tl_speakerB>
+       <en_speakerB>speakerB_utterance_2 in EN</en_speakerB>
+     </sentences>
+
+     <hints>
+          <hint_A><![CDATA[Person A's utterance is incorrect S/he is talking about X]]></hint>
+          <hint_B><![CDATA[PersoN B's utterance is incorrect S/he is talking about Y]]></hint>
+          <hint_AB><![CDATA[Both person A's and B's utterance are incorrect Person A is talking about X, and person B about Y.]]></hint>
+     </hints>
+  </set>
+</content>

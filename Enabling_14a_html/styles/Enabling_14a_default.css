@@ -1,0 +1,233 @@
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #FFFFFF;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+#tl_phoneNum{
+	background-color: darkgray;
+    display: block;
+    font-size: 60px;
+    left: 320px;
+    position: absolute;
+    top: 20px;
+    width: 250px;	
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	background: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	padding: 10px 0;
+}
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+#apDiv1 {
+	position:absolute;
+	width:35px;
+	height:20px;
+	z-index:2;
+	left: 109px;
+	top: 138px;
+}
+#apDiv2 {
+	position:absolute;
+	width:35px;
+	height:20px;
+	z-index:2;
+	left: 164px;
+	top: 139px;
+}
+#apDiv3 {
+	position:absolute;
+	width:39px;
+	height:15px;
+	z-index:3;
+	left: 220px;
+	top: 140px;
+}
+#apDiv4 {
+	position:absolute;
+	width:35px;
+	height:20px;
+	z-index:3;
+	left: 109px;
+	top: 169px;
+}
+#apDiv5 {
+	position:absolute;
+	width:35px;
+	height:20px;
+	z-index:3;
+	left: 164px;
+	top: 169px;
+}
+#apDiv6 {
+	position:absolute;
+	width:35px;
+	height:20px;
+	z-index:3;
+	left: 220px;
+	top: 167px;
+}
+#apDiv7 {
+	position:absolute;
+	width:35px;
+	height:20px;
+	z-index:3;
+	left: 109px;
+	top: 199px;
+}
+#apDiv8 {
+	position:absolute;
+	width:35px;
+	height:20px;
+	z-index:3;
+	left: 165px;
+	top: 198px;
+}
+#apDiv9 {
+	position:absolute;
+	width:35px;
+	height:20px;
+	z-index:3;
+	left: 220px;
+	top: 197px;
+}
+#apDiv10 {
+	position:absolute;
+	width:35px;
+	height:20px;
+	z-index:3;
+	left: 164px;
+	top: 227px;
+}
+#apDiv11 {
+	position:absolute;
+	width:35px;
+	height:20px;
+	z-index:3;
+	left: 199px;
+	top: 101px;
+}
+#apDiv12 {
+	position:absolute;
+	width:35px;
+	height:20px;
+	z-index:3;
+	left: 96px;
+	top: 101px;
+}
+#apDiv13 {
+	position:absolute;
+	width:145px;
+	height:35px;
+	z-index:4;
+	left: 106px;
+	top: 36px;
+}
+#apDiv14 {
+	position:absolute;
+	width:23px;
+	height:22px;
+	z-index:5;
+	left: 554px;
+	top: 379px;
+}
+#apDiv15 {
+	position:absolute;
+	width:246px;
+	height:42px;
+	z-index:6;
+	left: 325px;
+	top: 293px;
+}
+#apDiv16 {
+	position:absolute;
+	width:42px;
+	height:42px;
+	z-index:7;
+	left: 161px;
+	top: 74px;
+}
+#apDiv17 {
+	position:absolute;
+	width:27px;
+	height:27px;
+	z-index:7;
+	left: 492px;
+	top: 376px;
+}
+#apDiv18 {
+	position:absolute;
+	width:27px;
+	height:27px;
+	z-index:7;
+	left: 460px;
+	top: 376px;
+}
+#setText {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px;
+	padding-left: 3px;
+	top: 2px;
+	left: 0px;
+}
+
+#clickGuard{
+	display:none;
+	height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 6;
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:hs="http://fieldsupport.lingnet.org/products/headstart">
+	<digit english="0" audio="0.mp3">٠</digit>
+	<digit english="1" audio="1.mp3">١</digit>
+	<digit english="2" audio="2.mp3">٢</digit>
+	<digit english="3" audio="3.mp3">٣</digit>
+	<digit english="4" audio="4.mp3">٤</digit>
+	<digit english="5" audio="5.mp3">٥</digit>
+	<digit english="6" audio="6.mp3">٥</digit>
+	<digit english="7" audio="7.mp3">٧</digit>
+	<digit english="8" audio="8.mp3">٨</digit>
+	<digit english="9" audio="9.mp3">٩</digit>
+
+	<item english="1200234" audio="ir_phone_2039989.mp3" />
+	<item english="2039989" audio="ir_phone_2039989.mp3"/>
+	<item english="3212320" audio="ir_phone_3212320.mp3"/>
+	<item english="4016678" audio="ir_phone_4016678.mp3"/>
+	<item english="5530584" audio="ir_phone_5530584.mp3"/>
+	<item english="5554939" audio="ir_phone_5554939.mp3"/>
+	<item english="6236423" audio="ir_phone_6236423.mp3"/>
+	<item english="7781624" audio="ir_phone_7781624.mp3"/>
+	<item english="9980912" audio="ir_phone_9980912.mp3"/>
+</content>

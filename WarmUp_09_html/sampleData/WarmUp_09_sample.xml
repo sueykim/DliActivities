@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content target_language="Dari" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
+	<set>
+	   <image>1.png</image>
+	   <tl_word audio="1.mp3" dir="ltr">one</tl_word>
+	   <en_word>One: a little longer to test the wrap and make sure there is enough room and even more to see if we can get a vertical scroll bar</en_word>
+	</set>
+	<set>
+	   <image>2.png</image>
+	   <tl_word audio="2.mp3" dir="ltr">two</tl_word>
+	   <en_word>Two</en_word>
+	</set>
+	<set>
+	   <image>3.png</image>
+	   <tl_word audio="3.mp3" dir="ltr">three</tl_word>
+	   <en_word>Three</en_word>
+	</set>
+	<set>
+	   <image>4.png</image>
+	   <tl_word audio="4.mp3" dir="rtl">four</tl_word>
+	   <en_word>Four</en_word>
+	</set>
+	<set>
+	   <image>5.png</image>
+	   <tl_word audio="5.mp3" dir="rtl">five</tl_word>
+	   <en_word>Five</en_word>
+	</set>
+	<set>
+	   <image>6.png</image>
+	   <tl_word audio="6.mp3" dir="ltr">sixtesting</tl_word>
+	   <en_word>Six</en_word>
+	</set>
+</content>

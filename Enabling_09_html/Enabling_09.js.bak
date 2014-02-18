@@ -1,0 +1,255 @@
+$(document).ready(function() {
+	$("#feedbackHeader").html("");
+	$("#feedbackText").html("");
+	$('#feedback').show();
+	$("#feedbackBtn").hide();
+	
+	//Default values (for testing)
+	mediaPath = "sampleData/";
+	cssFilename = "styles/Enabling_09_default.css";
+	xmlFilename = mediaPath + "levantine_enabling09_noNamespaces.xml";
+	jsonFilename = mediaPath + "levantine_enabling09_noNamespaces.js";
+	
+	testVideoSupport();
+	
+	//Create Drag Bubble
+	for(var i  = 1; i<7; i++){
+		$('#dragBubble_' + i).draggable({ revert: true });
+	}
+	
+	//Create drop targets	
+	for(var i  = 1; i<6; i++){
+		$( "#dropTarget_" + i ).droppable({
+			hoverClass: "dropTargetHover",
+			drop: dropFunction}); 
+	}
+	
+	loadActivity(parseXml);
+}); 
+
+var numItems;
+var numItemsPerSet = 5;
+function parseXml(t_xml){
+	numItems = $(xml).find("item").length;
+	numSets = Math.ceil(numItems/5);
+	
+	if(numSets == 0){
+		alert("This activity needs more than 5 items to work correctly");
+	}
+	
+	for(var setIndex=0; setIndex < numSets; setIndex++){
+		var distractorItemNum;
+		
+		while(1){
+			distractorItemNum = getRandomNumber (0, numItems - 1);
+		
+			if(distractorItemNum >= (setIndex*numItemsPerSet) &&
+					distractorItemNum < (setIndex*numItemsPerSet) 
+													+ numItemsPerSet){
+			}else{
+				//if the distractor Item Number is not in the current
+				//set then add it to the array and break;
+				distractorIndexArr.push(distractorItemNum);
+				break;
+			}
+		}
+	}
+	//Randomize sets
+	//$(xml).find("item").shuffle()
+	
+	loadSet(0);
+}
+
+var distractorIndexArr = new Array(); 
+ 
+function loadSet(value){
+	currentSet = value;
+	
+	setCompletedShown = false;
+	
+	$(".dragBubbleText").shuffle();
+	
+	$('.dragBubble').draggable( 'enable' );
+
+	updateSetText();
+	
+	$(".dragBubble").css("display", "block");
+	
+	//Load drag bubbles
+	for(var i  = 1; i<6; i++){
+		$('#dragBubbleText_' + i).text(
+				$($(xml).find("lang_en")[(currentSet*numItemsPerSet) + i - 1]).text()
+			);
+	}
+	
+	//Load distractor
+	$('#dragBubbleText_6').text(
+		$($(xml).find("lang_en")[distractorIndexArr[currentSet]]).text()
+	);
+	
+	//Load drop bubbles
+	for(var i  = 1; i<6; i++){
+		$("#dropTarget_" + i).droppable( 'enable' );
+		$("#dropTarget_" + i).removeClass("itemDropped");
+		$("#dropTarget_" + i).addClass("itemNotCompleted");
+		$("#dropTarget_" + i).removeClass("itemCompleted");
+		
+		
+		$('#dropTargetText_' + i).text(
+				$($(xml).find("lang_en")[(currentSet*numItemsPerSet) + i - 1]).text()
+			);
+		$('#dropTargetText_' + i).addClass("displayNone");
+	}
+	
+}
+
+function getRandomNumber (min, max) {
+    return Math.floor(Math.random() * (max + 1 - min) + min);
+}
+
+function playVideo(index){
+	var file_video = $($(xml).find("file_video")[
+					(currentSet*numItemsPerSet) + index - 1]).text();
+	file_video = file_video.substring(0, file_video.lastIndexOf("."));
+	loadVideo(mediaPath, file_video);
+	
+}
+
+function extractLastLetter(value){
+	return value.substr(value.length - 1, value.length);
+}
+
+function dropFunction(event, ui ) {
+	$("#clickGuard").css("display","block");
+
+	var dragText = $(ui.draggable).find(".dragBubbleText").text();
+
+	var dropTargetNumGot = extractLastLetter($(this).attr("id"));
+	
+	var dropTargetNumLookingFor = extractLastLetter(
+							$(ui.draggable.find(".dragBubbleText")[0]).attr("id"));
+	
+	var jItem = $($(xml).find("item")[
+					(currentSet*numItemsPerSet) + (dropTargetNumGot - 1)]);
+	
+	var dropBtnText = jItem.find("lang_en").text();
+	
+	logStudentAnswer(
+		currentSet,	
+		dropBtnText,
+		dragText
+	);
+ 	
+	if(jItem.attr("timesTried") == undefined){
+		jItem.attr("timesTried", 1);
+	}else{
+		jItem.attr("timesTried",
+			parseInt(jItem.attr("timesTried")) + 1
+		);	
+	}
+	
+	logStudentAnswerAttempts(
+		currentSet,
+		jItem.attr("timesTried"));
+	
+	//Play audio
+	var file_video = $($(xml).find("file_video")[
+					(currentSet*numItemsPerSet) + (dropTargetNumGot - 1)]).text();
+	file_video = file_video.substring(0, file_video.lastIndexOf("."));
+	loadVideo(mediaPath, file_video);
+	
+	if(dropTargetNumLookingFor == dropTargetNumGot){
+		$(ui.draggable).css("display", "none");
+		$(this).addClass("itemCompleted");
+		$(this).addClass("itemDropped");
+		$(this).removeClass("itemNotCompleted");
+		
+		$(this).find(".dropTargetText").removeClass("displayNone");
+		
+		showFeedback("correct", 
+			$($(xml).find("feedback_l1")[(currentSet*numItemsPerSet) + (dropTargetNumGot - 1)]).text());
+	}else{
+		showFeedback("incorrect", 
+			$($(xml).find("hint_l1")[(currentSet*numItemsPerSet) + (dropTargetNumGot - 1)]).text());
+	}	
+}
+
+function showFeedback(value, text){
+	//Clear the dialog box
+	$("#feedbackHeader").html("");
+	$("#feedbackText").html("");
+	$("#feedbackBtn").text("OK");
+	$("#feedbackBtn").show();
+	
+	switch(value){
+		case "incorrect":
+			$("#feedbackHeader").html("Incorrect");
+			$("#feedbackText").html(text);
+			break;
+		case "correct":
+			$("#feedbackHeader").html("Correct");
+			$("#feedbackText").html(text);
+			break;
+		case "set_completed":
+			$("#feedbackHeader").html("Set Completed");
+			
+			if(currentSet + 1 != numSets){
+				$("#feedbackBtn").text("Next Set");
+			}
+			break;
+		case "activity_completed":
+			$("#feedbackHeader").html("Activity Completed");
+			$("#feedbackBtn").html("Next Activity");
+			break;
+	}
+	
+	//$('#feedback').show();
+}
+
+function closeFeedback(){
+	$("#feedbackHeader").html("");
+	$("#feedbackText").html("");
+	$("#feedbackBtn").hide();
+
+	$("#clickGuard").css("display","none");
+	
+	checkCompleted();
+	
+	
+	/*$('#feedback').css( {
+	left: '580px',
+	top: '250px',
+	width: 0,
+	height: 0
+	} );*/
+}
+
+var setCompletedShown = false;
+var activityCompletedShown = false;
+
+function checkCompleted(){
+	if(setCompletedShown && !activityCompletedShown){
+		//Check for activity completed
+		loadNextSet();
+	}else if(!setCompletedShown){
+		//Check for set completed
+		if($(".displayNone").length == 0){
+			setCompletedShown = true;
+			showFeedback("set_completed");
+		}
+	}	
+}
+
+function loadNextSet(){
+	if(currentSet + 1 == numSets){
+		activityCompletedShown = true;
+	
+		if(parent.activityCompleted){
+			parent.activityCompleted(1,0);
+		}else{
+			showFeedback("activity_completed");
+		}
+	}else{
+		loadSet(currentSet + 1);
+	}
+}
