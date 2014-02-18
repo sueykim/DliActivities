@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content hw="true" target_language="German" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
+   <set>
+     <keyword>
+        <picture>test1.png</picture>
+        <audio>test1.mp3</audio>
+        <video>test1.flv</video>
+        <tl_word dir="ltr">teacher</tl_word>
+        <en_word>teacher</en_word>	
+        <feedback dir="ltr" info="addition info test1"><![CDATA[setA feedback1]]> </feedback>
+     </keyword>
+     <keyword>
+        <picture>test2.png</picture>
+        <audio>test2.mp3</audio>
+        <video>test2.flv</video>
+        <tl_word dir="ltr">library</tl_word>
+        <en_word>libray</en_word>
+        <feedback dir="ltr" info="addition info test2"><![CDATA[setA feedback2]]> </feedback>
+     </keyword>
+     <keyword>
+        <picture>test3.png</picture>
+        <audio>test3.mp3</audio>
+        <video>test3.flv</video>
+        <tl_word dir="ltr">good man</tl_word>
+        <en_word>good man</en_word>
+        <feedback dir="ltr" info="addition info test3"><![CDATA[setA feedback3]]> </feedback>
+     </keyword>
+   </set>
+   <set>
+     <keyword>
+        <picture>test1.png</picture>
+        <audio>test1.mp3</audio>
+        <video>test1.flv</video>
+        <tl_word dir="rtl">ټیلفون</tl_word>
+        <en_word>teacher</en_word>	
+        <feedback dir="rtl" info="addition info test1"><![CDATA[setA feedback1]]> </feedback>
+     </keyword>
+     <keyword>
+        <picture>test2.png</picture>
+        <audio>test2.mp3</audio>
+        <video>test2.flv</video>
+        <tl_word dir="rtl">ف ک س</tl_word>
+        <en_word>libray</en_word>
+        <feedback dir="rtl" info="addition info test2"><![CDATA[setA feedback2]]> </feedback>
+     </keyword>
+     <keyword>
+        <picture>test3.png</picture>
+        <audio>test3.mp3</audio>
+        <video>test3.flv</video>
+        <tl_word dir="rtl">کمپیوټر</tl_word>
+        <en_word>good man</en_word>
+        <feedback dir="rtl" info="addition info test3"><![CDATA[setA feedback3]]> </feedback>
+     </keyword>
+   </set>
+   <set>
+     <keyword>
+        <picture>test1.png</picture>
+        <audio>test1.mp3</audio>
+        <video>test1.flv</video>
+		<tl_word dir="rtl">رادیو</tl_word>
+        <en_word>automobile</en_word>
+        <feedback dir="rtl" info="addition info test1"><![CDATA[setB feedback1]]> </feedback>
+     </keyword>
+     <keyword>
+        <picture>test2.png</picture>
+        <audio>test2.mp3</audio>
+        <video>test2.flv</video>
+        <tl_word dir="rtl">تلویزیون</tl_word>
+        <en_word>airplane</en_word>
+        <feedback dir="rtl" info="addition info test2"><![CDATA[setB feedback2]]> </feedback>
+     </keyword>
+     <keyword>
+        <picture>test3.png</picture>
+        <audio>test3.mp3</audio>
+        <video>test3.flv</video>
+        <tl_word dir="rtl">فوتوکاپی </tl_word>
+        <en_word>motor cycle</en_word>
+        <feedback dir="rtl" info="addition info test3"><![CDATA[setB feedback3]]> </feedback>
+     </keyword>
+     <keyword>
+        <picture>test1.png</picture>
+        <audio>test1.mp3</audio>
+        <video>test1.flv</video>
+        <tl_word dir="rtl">ماشين</tl_word>
+        <en_word>bycycle</en_word>
+        <feedback dir="rtl" info="addition info test4"><![CDATA[setB feedback4]]> </feedback>
+     </keyword>
+   </set>
+</content>

@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content target_language="Tagalog" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
+  <scenarioTableTitle>Departure/Arrival Day and Time</scenarioTableTitle>
+  <!-- subtitleType may be 'text', 'audio', or 'video' -->
+  <set scenarioTitle="This is the scenario title 1" subtitleType="text" pertinentInfoTitle="Pertinent">
+    <subTitleText>This is the subtitle text for the scenario.  This only shows if 'text' is the type.</subTitleText>
+    <pertinentInfo_en >There is a flight leaving from New York in August.  Click the row that has that flight information</pertinentInfo_en>
+    <pertinentInfo_tl><![CDATA[هناك رحلة مغادرة من نيويورك في اغسطس اب. انقر فوق الصف الذي يحتوي معلومات الطيران]]></pertinentInfo_tl>
+    <hint>This is your hint</hint>
+    <correctFeedback>This is the feedback for a Correct selection</correctFeedback>
+    <incorrectFeedback>The selection you have made is incorrect</incorrectFeedback>
+    <table title="Flight Schedules">
+      <columnHeading>Departure</columnHeading>
+      <columnHeading>Arrival</columnHeading>
+      <columnHeading>Day</columnHeading>
+      <columnHeading>Destination</columnHeading>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[12 أغسطس 04:15]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[أغسطس 25 20:45]]></keyword>
+          <audio>rain.mp3</audio>
+        </column>
+        <column isBlank="yes">
+          <keyword><![CDATA[الأحد]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[لوس أنجلوس]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row correctAnswer="yes">
+        <column isBlank="yes">
+          <keyword><![CDATA[18 يوليو 12:32]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[19 يوليو 02:00]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[يوم الاثنين]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[سان دييغو]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[12 أغسطس 04:15]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[13 أغسطس 14:15]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[الثلاثاء]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="yes">
+          <keyword><![CDATA[كابول]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[12 نوفمبر 04:15]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[12 نوفمبر 04:15]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[الأربعاء]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[نيويورك]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[14 سبتمبر 11:15]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[14 سبتمبر 23:15]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[الأربعاء]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[لوس أنجلوس]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+    </table>
+  </set>
+  <set scenarioTitle="This is the scenario title 2" subtitleType="text" pertinentInfoTitle="Pertinent">
+    <subTitleText>This is the 2nd subtitle text for the scenario.  This only shows if 'text' is the type.</subTitleText>
+    <pertinentInfo_en >This is the ENGLISH pertinent information for this scenario</pertinentInfo_en>
+    <pertinentInfo_tl><![CDATA[This is the TARGET LANGUAGE pertinent information for this scenario]]></pertinentInfo_tl>
+    <hint>This is your hint</hint>
+    <correctFeedback>This is the feedback for a Correct selection</correctFeedback>
+    <incorrectFeedback>The selection you have made is incorrect</incorrectFeedback>
+    <table title="Departure/Arrival Day and Time">
+      <columnHeading>Column 1</columnHeading>
+      <columnHeading>Column 2</columnHeading>
+      <columnHeading>Column 3</columnHeading>
+      <columnHeading>Column 4</columnHeading>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[кафе]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[казино]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[Макдоналдс]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[телефон]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[مكتب رقم ٣٦٧]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[اتصل بزوجتي]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[الساعة الثامنة والنصف صباحا]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row correctAnswer="yes">
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+    </table>
+  </set>
+  <set scenarioTitle="This is the scenario title 3" subtitleType="text" pertinentInfoTitle="Pertinent">
+    <subTitleText>This is the 3rd subtitle text for the scenario.  This only shows if 'text' is the type.</subTitleText>
+    <pertinentInfo_en >This is the ENGLISH pertinent information for this scenario</pertinentInfo_en>
+    <pertinentInfo_tl><![CDATA[This is the TARGET LANGUAGE pertinent information for this scenario]]></pertinentInfo_tl>
+    <hint>This is your hint</hint>
+    <correctFeedback>This is the feedback for a Correct selection</correctFeedback>
+    <incorrectFeedback>The selection you have made is incorrect</incorrectFeedback>
+    <table title="This is the table title">
+      <columnHeading>Column 1</columnHeading>
+      <columnHeading>Column 2</columnHeading>
+      <columnHeading>Column 3</columnHeading>
+      <columnHeading>Column 4</columnHeading>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword a]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword b]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword c]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword d]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword e]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword f]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword g]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword h]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword i]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+      <row correctAnswer="yes">
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+        <column isBlank="no">
+          <keyword><![CDATA[keyword 1]]></keyword>
+          <audio></audio>
+        </column>
+      </row>
+    </table>
+  </set>
+</content>
+

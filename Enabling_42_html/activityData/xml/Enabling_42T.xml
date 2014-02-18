@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content target_language="German" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
+   <set>	 
+   		<image>medium_img.png</image>
+   		<psg audio="whole_passage.mp3">
+   			<![CDATA[ 1.  Whole Passage.  Whole Passage. Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage. <br/>  2.  Whole Passage. Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage. Whole Passage. Whole Passage.  <br/>  3.  Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage. Whole Passage. Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage. Whole Passage. Whole Passage.Whole Passage.  <br/>  4.  Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage. Whole Passage. Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage. Whole Passage. Whole Passage.Whole Passage.Whole Passage.  <br/>  5.  Whole Passage.Whole Passage.Whole Passage.Whole Passage. Whole Passage. Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage. Whole Passage. Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage.  <br/>  6.  Whole Passage.Whole Passage. Whole Passage. Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage. Whole Passage. Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage.<br/>  6.  Whole Passage.Whole Passage. Whole Passage. Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage. Whole Passage. Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage.Whole Passage.]]>
+   		</psg>
+   	    <titleTL dir="ltr">TL title</titleTL>
+   	    <titleEN>EN title</titleEN>
+	  	<seg>
+			<tl_seg dir="ltr" audio="TL_segment_1.mp3" >
+				<![CDATA[ TL segment 1 text.  <font color='#0000FF'>Words</font> are <i>emphasized</i> by <b>SME input</b>.]]>
+		   	</tl_seg>
+	   	   	<en_seg><![CDATA[ segment1 EN translation ]]></en_seg>
+	   	   	<tl_seg_ans dir="ltr" audio="TL_segment_ans_1.mp3" >
+	   			<![CDATA[ TL segment answer/summary 1 text ]]>
+	   	   	</tl_seg_ans>
+		   	<reason dir="ltr">
+			   	<![CDATA[  English synopsis, key phrases in the TL segment 1 and the grammar notes ]]>
+		   	</reason>
+	   	</seg>
+   		<seg>
+   			<tl_seg dir="ltr" audio="TL_segment_2.mp3" >
+   				<![CDATA[ TL segment 2 text ]]>
+   			</tl_seg>
+   			<en_seg><![CDATA[ segment2 EN translation ]]></en_seg>
+   			<tl_seg_ans dir="ltr" audio="TL_segment_ans_2.mp3" >
+   				<![CDATA[ TL segment answer/summary 2 text ]]>
+   			</tl_seg_ans>
+   			<reason dir="ltr">
+   				<![CDATA[  English synopsis, key phrases in the TL segment 2 and the grammar notes]]>
+   			</reason>
+   		</seg>
+   		<seg>
+   			<tl_seg dir="ltr" audio="TL_segment_3.mp3" >
+   				<![CDATA[ TL segment 3 text ]]>
+   			</tl_seg>
+   			<en_seg><![CDATA[ segment3 EN translation ]]></en_seg>
+   			<tl_seg_ans dir="ltr" audio="TL_segment_ans_3.mp3" >
+   				<![CDATA[ TL segment answer/summary 3 text ]]>
+   			</tl_seg_ans>
+   			<reason dir="ltr">
+   				<![CDATA[  English synopsis, key phrases in the TL segment 3, and the grammar notes English synopsis, key phrases in the TL segment 1 and the grammar notes English synopsis, key phrases in the TL segment 1 and the grammar notes English synopsis, key phrases in the TL segment 1 and the grammar notes]]>
+   			</reason>
+   		</seg>
+   		<seg>
+   			<tl_seg dir="ltr" audio="TL_segment_4.mp3" >
+   				<![CDATA[ TL segment 4 text ]]>
+   			</tl_seg>
+   			<en_seg><![CDATA[ segment4 EN translation ]]></en_seg>
+   			<tl_seg_ans dir="ltr" audio="TL_segment_ans_4.mp3" >
+   				<![CDATA[ TL segment answer/summary 4 text]]>
+   			</tl_seg_ans>
+   			<reason dir="ltr">
+   				<![CDATA[  English synopsis, key phrases in the TL segment 4 and the grammar notes]]>
+   			</reason>
+   		</seg>   
+                		   		<seg>
+   			<tl_seg dir="ltr" audio="TL_segment_4.mp3" >
+   				<![CDATA[ TL segment 4 text ]]>
+   			</tl_seg>
+   			<en_seg><![CDATA[ segment4 EN translation ]]></en_seg>
+   			<tl_seg_ans dir="ltr" audio="TL_segment_ans_4.mp3" >
+   				<![CDATA[ TL segment answer/summary 4 text ]]>
+   			</tl_seg_ans>
+   			<reason dir="ltr">
+   				<![CDATA[  English synopsis, key phrases in the TL segment 4 and the grammar notes]]>
+   			</reason>
+   		</seg>   
+   		   		<seg>
+   			<tl_seg dir="ltr" audio="TL_segment_4.mp3" >
+   				<![CDATA[ TL segment 4 text ]]>
+   			</tl_seg>
+   			<en_seg><![CDATA[ segment4 EN translation ]]></en_seg>
+   			<tl_seg_ans dir="ltr" audio="TL_segment_ans_4.mp3" >
+   				<![CDATA[ TL segment answer/summary 4 text ]]>
+   			</tl_seg_ans>
+   			<reason dir="ltr">
+   				<![CDATA[  English synopsis, key phrases in the TL segment 4 and the grammar notes]]>
+   			</reason>
+   		</seg>   
+   		   		<seg>
+   			<tl_seg dir="ltr" audio="TL_segment_4.mp3" >
+   				<![CDATA[ TL segment 4 text ]]>
+   			</tl_seg>
+   			<en_seg><![CDATA[ segment4 EN translation ]]></en_seg>
+   			<tl_seg_ans dir="ltr" audio="TL_segment_ans_4.mp3" >
+   				<![CDATA[ TL segment answer/summary 4 text ]]>
+   			</tl_seg_ans>
+   			<reason dir="ltr">
+   				<![CDATA[  English synopsis, key phrases in the TL segment 4 and the grammar notes English synopsis, key phrases in the TL segment 4 and the grammar notes English synopsis, key phrases in the TL segment 4 and the grammar notes ]]>
+   			</reason>
+   		</seg>
+   	</set>
+</content>

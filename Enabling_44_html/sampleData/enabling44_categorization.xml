@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content target_language="German">
+	<step>
+	 	<source type="video"> <!-- type can be "video" "audio" or "text"-->
+		  <video length="10">red.m4v</video>
+		  <audio length="0"></audio>
+		  <text dir="ltr"><![CDATA[  ]]></text>
+		</source> 
+		<category title="Veggies" audio="description1.mp3">
+			<word>
+				<tl_word dir="ltr" time_pointer="1">Carrot</tl_word>
+				<en_word>en phrase 1</en_word>
+			</word>
+			<word>
+				<tl_word dir="ltr" time_pointer="2">Onion</tl_word>
+				<en_word>en phrase 2</en_word>
+			</word>
+			<word>
+				<tl_word dir="ltr" time_pointer="3">Mushroom</tl_word>
+				<en_word>en phrase 3</en_word>
+			</word>
+		</category>
+		<category title="Colors" audio="description2.mp3">
+			<word>
+				<tl_word dir="ltr" time_pointer="4">Green</tl_word>
+				<en_word>en phrase 4</en_word>
+			</word>
+			<word>
+				<tl_word dir="ltr" time_pointer="5">Blue</tl_word>
+				<en_word>en phrase 5</en_word>
+			</word>
+		</category>
+		<category title="Temperature" audio="description3.mp3">
+			<word>
+				<tl_word dir="ltr" time_pointer="6">Hot</tl_word>
+				<en_word>en phrase 6</en_word>
+			</word>
+			<word>
+				<tl_word dir="ltr" time_pointer="7">Cold</tl_word>
+				<en_word>en phrase 7</en_word>
+			</word>
+			<word>
+				<tl_word dir="ltr" time_pointer="8">Warm</tl_word>
+				<en_word>en phrase 8</en_word>
+			</word>
+		</category>
+		<hint><![CDATA[it might contain the TL phrases. This hint is for the incorrect answers.]]></hint>
+		<feedback><![CDATA[it could be text which contains both EN and TL. Or audio.mp3/video.flv. This feedback will appear when the user got everything right]]></feedback>
+	</step>
+	<step>
+	 	<source type="video"> <!-- type can be "video" "audio" or "text"-->
+		  <video length="10">test.m4v</video>
+		  <audio></audio>
+		  <text dir="ltr"><![CDATA[  ]]></text>
+		</source> 
+		<category title="Fruits" audio="description1.mp3">
+			<word>
+				<tl_word dir="ltr" time_pointer="1">apple</tl_word>
+				<en_word>en phrase 1</en_word>
+			</word>
+			<word>
+				<tl_word dir="ltr" time_pointer="5">pink grapefruit</tl_word>
+				<en_word>en phrase 2</en_word>
+			</word>
+			<word>
+				<tl_word dir="ltr" time_pointer="8">lime</tl_word>
+				<en_word>en phrase 3</en_word>
+			</word>
+		</category>
+		<category title="category2 title" audio="description2.mp3">
+			<word>
+				<tl_word dir="ltr" time_pointer="7">tl phrase 4</tl_word>
+				<en_word>en phrase 4</en_word>
+			</word>
+			<word>
+				<tl_word dir="ltr" time_pointer="2">tl phrase 5</tl_word>
+				<en_word>en phrase 5</en_word>
+			</word>
+		</category>
+		<category title="category3 title" audio="description3.mp3">
+			<word>
+				<tl_word dir="ltr" time_pointer="4">tl phrase 6</tl_word>
+				<en_word>en phrase 6</en_word>
+			</word>
+			<word>
+				<tl_word dir="ltr" time_pointer="6">tl phrase 7</tl_word>
+				<en_word>en phrase 7</en_word>
+			</word>
+			<word>
+				<tl_word dir="ltr" time_pointer="3">tl phrase 8</tl_word>
+				<en_word>en phrase 8</en_word>
+			</word>
+		</category>
+		<hint><![CDATA[it might contain the TL phrases. This hint is for the incorrect answers.]]></hint>
+		<feedback><![CDATA[it could be text which contains both EN and TL. Or audio.mp3/video.flv. This feedback will appear when the user got everything right]]></feedback>
+	</step>
+</content>

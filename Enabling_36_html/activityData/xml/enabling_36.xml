@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  note that we have four options to setting for it as following: auido only, text only, audio and text, video only  --> 
+<content target_language="MSA" hw="true" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart" rtl="true" options="text only">
+<title>Instructions |&#160;</title>
+<instruction> Read the entire passage below. Click on bold words to see english translation. Checks boxes of applicable summary statements...and leaves boxes of the statements that do not apply to the passage empty. Remember that you can have three times to try to submit your answers each set.</instruction>
+  <set>
+      <note dir="ltr"><![CDATA[<b>Dubai International Airport</b> مطار دبي الدولي‎ is a major aviation hub in the Middle East.]]></note>
+      <image>ad_tunnel4.png</image>
+      <tl_txt dir="rtl"><![CDATA[للوصول إلى مطار دبي قادماً من الشارقة، خذ طريق<br/> الاتحاد لأن نفق المطار مزدحم عادة. أما في جهة<br/> .أبو ظبي فخذ جسر القرهود]]></tl_txt>
+      <first_hint><![CDATA[These are directions.]]></first_hint>
+      <second_hint><![CDATA[How to get to a place coming from two different cities in UAE.]]></second_hint>
+    <statment>
+      <txt crrt="false"><![CDATA[To get to the airport use the metro.]]></txt>
+      <intermediate_fdbk><![CDATA[In these directions, the metro is not mentioned.]]></intermediate_fdbk>
+      <terminal_fdbk><![CDATA[Although there is a metro to the airport, it is not mentioned in this passage.]]></terminal_fdbk>
+    </statment>
+    <statment>
+      <txt crrt="true"><![CDATA[Take the Garhoud Bridge to get to the airport.]]></txt>
+      <intermediate_fdbk><![CDATA[<b>Dubai International Airport</b> مطار دبي الدولي‎ is a major aviation hub in the Middle East.]]></intermediate_fdbk>
+      <terminal_fdbk><![CDATA[Dubai International Airport is situated in the Al Garhoud district, 4 km (2.5 mi) southeast of Dubai.]]></terminal_fdbk>
+    </statment>
+    <statment>
+      <txt crrt="true"><![CDATA[Avoid the tunnel because of the traffic jam.]]></txt>
+      <intermediate_fdbk><![CDATA[There are often traffic jams at the airport tunnel.]]></intermediate_fdbk>
+      <terminal_fdbk><![CDATA[During rush hour, it is best to avoid the tunnel.]]></terminal_fdbk>
+    </statment>
+  </set>
+  <set>
+      <note dir="ltr"><![CDATA[Because of its rapid growth and the relatively high average income of its population, Abu Dhabi has become a large, thriving metropolis.]]></note>
+      <image>ad_abudhabi4.png</image>
+    <tl_txt dir="rtl"><![CDATA[أبو ظبي هي عاصمة دولة الإمارات وهي مدينة حديثة<br/> فيها مركز تجاري نشيط مُحاط بأحياء سكنية غير<br/> .مزدحمة]]></tl_txt>
+      <first_hint><![CDATA[The city plays an important role in the economy of the country.]]></first_hint>
+      <second_hint><![CDATA[The city plays an important role in the government. ]]></second_hint>
+    <statment>
+      <txt crrt="true"><![CDATA[Abu Dhabi is the capital of UAE.]]></txt>
+      <intermediate_fdbk><![CDATA[Today Abu Dhabi is the country's center of political activities, and a major cultural, commercial center. ]]></intermediate_fdbk>
+      <terminal_fdbk><![CDATA[One of the world's largest producers of oil, Abu Dhabi has actively attempted to diversify its economy in recent years.]]></terminal_fdbk>
+    </statment>
+    <statment>
+      <txt crrt="false"><![CDATA[The city is strictly for business and lacks residential areas.]]></txt>
+      <intermediate_fdbk><![CDATA[The population density of Abu Dhabi varies, with high residential population densities in central downtown.]]></intermediate_fdbk>
+      <terminal_fdbk><![CDATA[In the suburbs of Abu Dhabi the population density is low.]]></terminal_fdbk>
+    </statment>
+    <statment>
+      <txt crrt="true"><![CDATA[Abu Dhabi has a vibrant commercial center. ]]></txt>
+      <intermediate_fdbk><![CDATA[Abu Dhabi is home to important financial institutions such as the Abu Dhabi Securities Exchange. ]]></intermediate_fdbk>
+      <terminal_fdbk><![CDATA[The Central Bank of the United Arab Emirates and the corporate headquarters of many companies are located in Abu Dhabi. ]]></terminal_fdbk>
+    </statment>
+  </set>
+  <set>
+      <note dir="ltr"><![CDATA[There are boats that will take you on a scenic one-hour trip from the Abra embarkation to the Maktoum Bridge; you'll see many of the city's historic, modern landmarks.]]></note>
+      <image>ad_dubaicreek4.png</image>
+      <tl_txt dir="rtl"><![CDATA[لعبور الخور، خذ قوارب بسيطة تسمى العبرات فهي <br/> تؤمن رحلة قصيرة. تجنب تصوير مراكز الشرطة<br/> والشوارع التي فيها قصور الشيوخ والمباني<br/> .الرسمية]]></tl_txt>
+      <first_hint><![CDATA[Dubai Creek is a natural seawater inlet cutting into the heart of the city.]]></first_hint>
+      <second_hint><![CDATA[On an enjoyable boat ride to Al-Maktoum Bridge, you can see the grand trading port.]]></second_hint>
+    <statment>
+      <txt crrt="true"><![CDATA[To cross the creek, catch one of the small boats.]]></txt>
+      <intermediate_fdbk><![CDATA[Dubai Creek is a natural seawater inlet cutting into the heart of the city.]]></intermediate_fdbk>
+      <terminal_fdbk><![CDATA[The large number of colorful, traditional Arab /dhows/ and /abrat/ (motorized boat taxis) makes the creek an interesting scenic spot.]]></terminal_fdbk>
+    </statment>
+    <statment>
+      <txt crrt="true"><![CDATA[Do not take pictures of the police stations.]]></txt>
+      <intermediate_fdbk><![CDATA[Avoid taking pictures of government buildings, including police stations.]]></intermediate_fdbk>
+      <terminal_fdbk><![CDATA[Avoid photographing Muslim women, docks, airports, telecommunication equipment, and military and industrial installations.]]></terminal_fdbk>
+    </statment>
+    <statment>
+      <txt crrt="false"><![CDATA[The palaces are open to the public.]]></txt>
+      <intermediate_fdbk><![CDATA[Most palaces of the royal family are private residences not open to the public.]]></intermediate_fdbk>
+      <terminal_fdbk><![CDATA[Sheikh Saeed al-Maktoum House is open for visitors.]]></terminal_fdbk>
+    </statment>
+  </set>
+  <set>
+      <note dir="ltr"><![CDATA[Dubai Islamic Bank opened a branch in Dubai Mall as well as in the Big Market.]]></note>
+      <image>ad_mall4.png</image>
+      <tl_txt dir="rtl"><![CDATA[افتتح مصرف دبي الإسلامي فرعاً في المُجمع <br/> التجاري ،دبي مول، ويوجد فرع أيضا في <br/> السوق الكبير، وهو مركز تجاري مهم في <br/> .دبي]]></tl_txt>
+      <first_hint><![CDATA[Dubai Islamic Bank opened a branch in Dubai Mall.]]></first_hint>
+      <second_hint><![CDATA[There is also a branch in the Big Market, which is an important trading center in Dubai.]]></second_hint>
+    <statment>
+      <txt crrt="false"><![CDATA[The only branch in Dubai of the Islamic branch is in Dubai Mall.]]></txt>
+      <intermediate_fdbk><![CDATA[Dubai Islamic Bank (DIB) was established in 1975, and  currently operates 62 branches in the UAE.]]></intermediate_fdbk>
+      <terminal_fdbk><![CDATA[DIB has established DIB Pakistan Limited, which has a network of 75 branches across Pakistan.]]></terminal_fdbk>
+    </statment>
+    <statment>
+      <txt crrt="true"><![CDATA[The Big Market is an important shopping center.]]></txt>
+      <intermediate_fdbk><![CDATA[/Souk/ or /Souq/, an Arabic word that means <b>the market place,</b> are traditional Arabian markets selling a variety of goods.]]></intermediate_fdbk>
+      <terminal_fdbk><![CDATA[/Souks/ in Dubai are traditional markets selling a variety of goods ranging from gold and diamond jewelry to spices, textiles, perfumes, and even fish, fruits and vegetables.]]></terminal_fdbk>
+    </statment>
+  </set>
+  <set>
+      <note dir="ltr"><![CDATA[The Grand Mosque is home to Dubai's tallest minaret, where the muezzin calls the people to prayer. Non-Muslims are not permitted inside the mosque.]]></note>
+      <image>ad_mosque4.png</image>
+      <tl_txt dir="rtl"><![CDATA[يقع جامع دبي الكبير قرب طريق علي بن أبي طالب<br/> في بر دبي. بجانب الجامع يوجد متحف غني<br/> .بالآثار، كما يوجد أيضا قرية صيد اللؤلؤ]]></tl_txt>
+      <first_hint><![CDATA[The text is about three main attractions in Dubai.]]></first_hint>
+      <second_hint><![CDATA[The text describes the location of the Grand Mosque.]]></second_hint>
+    <statment>
+      <txt crrt="false"><![CDATA[The Grand Mosque is located next to the university.]]></txt>
+      <intermediate_fdbk><![CDATA[The new Grand Mosque's sand-colored walls and wooden shutters blend with the surrounding old quarter of Bur Dubai.]]></intermediate_fdbk>
+      <terminal_fdbk><![CDATA[The Grand Mosque has 45 small domes and nine large ones boasting stained glass panels, making it a distinguished landmark and important place of worship.]]></terminal_fdbk>
+    </statment>
+    <statment>
+      <txt crrt="true"><![CDATA[Next to the mosque is a pearl-diving fishing village.]]></txt>
+      <intermediate_fdbk><![CDATA[Pearl diving was a lucrative profession in the United Arab Emirates and was tightly woven into the UAE culture.]]></intermediate_fdbk>
+      <terminal_fdbk><![CDATA[The Diving Village is part of the Heritage Village Complex in Dubai. It recreates a traditional maritime village.]]></terminal_fdbk>
+    </statment>
+    <statment>
+      <txt crrt="true"><![CDATA[A museum rich in historical artcrafts is located next to the mosque.]]></txt>
+      <intermediate_fdbk><![CDATA[There are several museums in Dubai with one very close to the mosque.]]></intermediate_fdbk>
+      <terminal_fdbk><![CDATA[Dubai Museum, the Middle East Museum of Modern Art, Sheikh Saeed al-Maktoum House and the Salsali private museum are all located in Dubai.]]></terminal_fdbk>
+    </statment>
+  </set>
+
+</content>

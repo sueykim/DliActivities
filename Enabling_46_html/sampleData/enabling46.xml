@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content target_language="German">
+	<step audio="messageIntro.mp3" title_en="You have 3 new messages and one saved message">
+		<message tabTitle="Message 1" title_en="First message..." audio="mother.mp3">
+			<callItem type="who" audioHint="mother_hint.mp3" caption="Who Called">
+				<correctAnswer>Your mother</correctAnswer>
+				<correctAnswer>You momma</correctAnswer>
+				<correctAnswer>Momma</correctAnswer>
+				<distractor>Your Brother</distractor>
+				<distractor>Your Uncle</distractor>
+				<feedback>This is feedback saying 'your momma called'</feedback>
+			</callItem>
+			<callItem type="time" audioHint="uncle_hint.mp3" caption="What time">
+				<correctAnswer>02:15</correctAnswer>
+				<distractor>15:15</distractor>
+				<distractor>12:00</distractor>
+				<feedback>This is feedback saying 'Momma called at 02:15'</feedback>
+			</callItem>
+			<callItem type="day" audioHint="doctor_hint.mp3" caption="What day">
+				<correctAnswer>Tuesday</correctAnswer>
+				<correctAnswer>Tues</correctAnswer>
+				<correctAnswer>Tue</correctAnswer>
+				<distractor>Thursday</distractor>
+				<distractor>Saturday</distractor>
+				<feedback>This is feedback saying 'Momma called on Tuesday'</feedback>
+			</callItem>
+			<callItem type="message" audioHint="mother_hint.mp3" caption="Message">
+				<correctAnswer>This is the text of what the message said.  You should compare your answer to what you are reading here.</correctAnswer>
+			</callItem>
+		</message>
+		<message tabTitle="Message 2" title_en="Second message..." audio="uncle.mp3">
+			<callItem type="who" audioHint="uncle_hint.mp3" caption="Who Called">
+				<correctAnswer>Uncle Henry</correctAnswer>
+				<correctAnswer>Henry</correctAnswer>
+				<correctAnswer>Henery</correctAnswer>
+				<distractor>The garbage man</distractor>
+				<distractor>Your mother</distractor>
+				<feedback>This is feedback saying 'Uncle Henry Called'</feedback>
+			</callItem>
+			<callItem type="time" audioHint="mother_hint.mp3" caption="What time">
+				<correctAnswer>16:15</correctAnswer>
+				<distractor>15:15</distractor>
+				<distractor>12:00</distractor>
+				<feedback>This is feedback saying 'Uncle Henry called at 16:15'</feedback>
+			</callItem>
+			<callItem type="day" audioHint="doctor_hint.mp3" caption="What day">
+				<correctAnswer>Friday</correctAnswer>
+				<correctAnswer>Fri</correctAnswer>
+				<distractor>Thursday</distractor>
+				<distractor>Saturday</distractor>
+				<feedback>This is feedback saying 'Uncle Henry called on Friday'</feedback>
+			</callItem>
+			<callItem type="message" audioHint="uncle_hint.mp3" caption="Message">
+				<correctAnswer>This is the text of what the message said.  You should compare your answer to what you are reading here.</correctAnswer>
+			</callItem>
+		</message>
+		<message tabTitle="Message 3" title_en="Third message..." audio="doctor.mp3">
+			<callItem type="who" audioHint="doctor_hint.mp3" caption="Who Called">
+				<correctAnswer>Doctor Dover</correctAnswer>
+				<correctAnswer>Doctor</correctAnswer>
+				<distractor>The garbage man</distractor>
+				<distractor>Your mother</distractor>
+				<feedback>This is feedback saying 'your doctor called'</feedback>
+			</callItem>
+			<callItem type="time" audioHint="doctor_hint.mp3" caption="What time">
+				<correctAnswer>20:15</correctAnswer>
+				<distractor>15:15</distractor>
+				<distractor>12:00</distractor>
+				<feedback>This is feedback saying 'Your doctor called at 20:15'</feedback>
+			</callItem>
+			<callItem type="day" audioHint="doctor_hint.mp3" caption="What day">
+				<correctAnswer>Saturday</correctAnswer>
+				<correctAnswer>Sat</correctAnswer>
+				<distractor>Thursday</distractor>
+				<distractor>Sunday</distractor>
+				<feedback>This is feedback saying 'Your doctor called on Tuesday'</feedback>
+			</callItem>
+			<callItem type="message" audioHint="doctor_hint.mp3" caption="Message">
+				<correctAnswer>This is the text of what the message said.  You should compare your answer to what you are reading here.</correctAnswer>
+			</callItem>
+		</message>
+		<hint><![CDATA[it might contain the TL phrases. This hint is for the incorrect answers.]]></hint>
+		<feedback><![CDATA[it could be text which contains both EN and TL. Or audio.mp3/video.flv. This feedback will appear when the user got everything right]]></feedback>
+	</step>
+	<step audio="messageIntro.mp3" title_en="You have 3 new messages and one saved message">
+		<message tabTitle="Message One" title_en="1st message..." audio="mother.mp3">
+			<callItem type="who" audioHint="mother_hint.mp3" caption="Who Called">
+				<correctAnswer>Your mother</correctAnswer>
+				<correctAnswer>You momma</correctAnswer>
+				<correctAnswer>Momma</correctAnswer>
+				<distractor>Your Brother</distractor>
+				<distractor>Your Uncle</distractor>
+				<feedback>This is feedback saying 'your momma called'</feedback>
+			</callItem>
+			<callItem type="time" audioHint="mother_hint.mp3" caption="What time">
+				<correctAnswer>02:15</correctAnswer>
+				<distractor>15:15</distractor>
+				<distractor>12:00</distractor>
+				<feedback>This is feedback saying 'Momma called at 02:15'</feedback>
+			</callItem>
+			<callItem type="day" audioHint="mother_hint.mp3" caption="What day">
+				<correctAnswer>Tuesday</correctAnswer>
+				<correctAnswer>Tues</correctAnswer>
+				<correctAnswer>Tue</correctAnswer>
+				<distractor>Thursday</distractor>
+				<distractor>Saturday</distractor>
+				<feedback>This is feedback saying 'Momma called on Tuesday'</feedback>
+			</callItem>
+			<callItem type="message" audioHint="mother_hint.mp3" caption="Message">
+				<correctAnswer>This is the text of what the message said.  You should compare your answer to what you are reading here.</correctAnswer>
+			</callItem>
+		</message>
+		<message tabTitle="Message Two" title_en="2nd message..." audio="uncle.mp3">
+			<callItem type="who" audioHint="uncle_hint.mp3" caption="Who Called">
+				<correctAnswer>Uncle Henry</correctAnswer>
+				<correctAnswer>Henry</correctAnswer>
+				<correctAnswer>Henery</correctAnswer>
+				<distractor>The garbage man</distractor>
+				<distractor>Your mother</distractor>
+				<feedback>This is feedback saying 'Uncle Henry Called'</feedback>
+			</callItem>
+			<callItem type="time" audioHint="uncle_hint.mp3" caption="What time">
+				<correctAnswer>16:15</correctAnswer>
+				<distractor>15:15</distractor>
+				<distractor>12:00</distractor>
+				<feedback>This is feedback saying 'Uncle Henry called at 16:15'</feedback>
+			</callItem>
+			<callItem type="day" audioHint="uncle_hint.mp3" caption="What day">
+				<correctAnswer>Friday</correctAnswer>
+				<correctAnswer>Fri</correctAnswer>
+				<distractor>Thursday</distractor>
+				<distractor>Saturday</distractor>
+				<feedback>This is feedback saying 'Uncle Henry called on Friday'</feedback>
+			</callItem>
+			<callItem type="message" audioHint="uncle_hint.mp3" caption="Message">
+				<correctAnswer>This is the text of what the message said.  You should compare your answer to what you are reading here.</correctAnswer>
+			</callItem>
+		</message>
+		<message tabTitle="Message Three" title_en="3rd message..." audio="doctor.mp3">
+			<callItem type="who" audioHint="doctor_hint.mp3" caption="Who Called">
+				<correctAnswer>Doctor Dover</correctAnswer>
+				<correctAnswer>Doctor</correctAnswer>
+				<distractor>The garbage man</distractor>
+				<distractor>Your mother</distractor>
+				<feedback>This is feedback saying 'your doctor called'</feedback>
+			</callItem>
+			<callItem type="time" audioHint="doctor_hint.mp3" caption="What time">
+				<correctAnswer>20:15</correctAnswer>
+				<distractor>15:15</distractor>
+				<distractor>12:00</distractor>
+				<feedback>This is feedback saying 'Your doctor called at 20:15'</feedback>
+			</callItem>
+			<callItem type="day" audioHint="doctor_hint.mp3" caption="What day">
+				<correctAnswer>Saturday</correctAnswer>
+				<correctAnswer>Sat</correctAnswer>
+				<distractor>Thursday</distractor>
+				<distractor>Sunday</distractor>
+				<feedback>This is feedback saying 'Your doctor called on Tuesday'</feedback>
+			</callItem>
+			<callItem type="message" audioHint="doctor_hint.mp3" caption="Message">
+				<correctAnswer>This is the text of what the message said.  You should compare your answer to what you are reading here.</correctAnswer>
+			</callItem>
+		</message>
+		<hint><![CDATA[it might contain the TL phrases. This hint is for the incorrect answers.]]></hint>
+		<feedback><![CDATA[it could be text which contains both EN and TL. Or audio.mp3/video.flv. This feedback will appear when the user got everything right]]></feedback>
+	</step>
+</content>

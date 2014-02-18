@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content target_language="German" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
+   <set>
+     <item>
+		<video>bs_t01_wr_bus</video>
+        <en_word>bus</en_word>
+     </item>
+     <item>
+		<video>bs_t01_wr_radio</video>
+        <en_word>radio</en_word>
+     </item>
+     <item>
+		<video>bs_t01_wr_steak</video>
+        <en_word>steak</en_word>
+     </item>
+     <item>
+		<video>bs_t03_wr_thankyou</video>
+        <en_word>thank you</en_word>
+     </item>
+	      <item>
+		<video>bs_t01_wr_bus</video>
+        <en_word>bus</en_word>
+     </item>
+     <item>
+		<video>bs_t01_wr_radio</video>
+        <en_word>radio</en_word>
+     </item>
+     <item>
+		<video>bs_t01_wr_steak</video>
+        <en_word>steak</en_word>
+     </item>
+     <item>
+		<video>bs_t03_wr_thankyou</video>
+        <en_word>thank you</en_word>
+     </item>
+	      <item>
+		<video>bs_t01_wr_bus</video>
+        <en_word>bus</en_word>
+     </item>
+     <item>
+		<video>bs_t01_wr_radio</video>
+        <en_word>radio</en_word>
+     </item>
+     <item>
+		<video>bs_t01_wr_steak</video>
+        <en_word>steak</en_word>
+     </item>
+     <item>
+		<video>bs_t03_wr_thankyou</video>
+        <en_word>thank you</en_word>
+     </item>
+   </set>
+</content>

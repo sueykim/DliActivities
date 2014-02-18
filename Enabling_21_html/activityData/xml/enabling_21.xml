@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content target_language="Japanese">
+  <family-tree frame-image="family01.png">
+    <family-member position="1">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">my grandfather</en_name>
+      <tl_name dir="ltr">そふ</tl_name>
+      <image_color>ja_l10_a2_01.png</image_color>
+     <image_gray>ja_l10_a2_01g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with そ.]]></hint>
+      <audio_key>ja_l10_a2_01.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="2">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">my grandmother</en_name>
+      <tl_name dir="ltr">そぼ</tl_name>
+      <image_color>ja_l10_a2_02.png</image_color>
+     <image_gray>ja_l10_a2_02g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with そ.]]></hint>
+      <audio_key>ja_l10_a2_02mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="3">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">my mother</en_name>
+      <tl_name dir="ltr">はは</tl_name>
+      <image_color>ja_l10_a2_04.png</image_color>
+     <image_gray>ja_l10_a2_04g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with は.]]></hint>
+      <audio_key>ja_l10_a2_04.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="4">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">my father</en_name>
+      <tl_name dir="ltr">ちち</tl_name>
+      <image_color>ja_l10_a2_03.png</image_color>
+     <image_gray>ja_l10_a2_03g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with ち.]]></hint>
+      <audio_key>ja_l10_a2_03.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="5">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">my uncle</en_name>
+      <tl_name dir="ltr">おじ</tl_name>
+      <image_color>ja_l10_a2_05.png</image_color>
+     <image_gray>ja_l10_a2_05g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with お.]]></hint>
+      <audio_key>ja_l10_a2_05.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="6">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">my aunt</en_name>
+      <tl_name dir="ltr">おば</tl_name>
+      <image_color>ja_l10_a2_06.png</image_color>
+     <image_gray>ja_l10_a2_06g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with お.]]></hint>
+      <audio_key>ja_l10_a2_06.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="7">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">my older sister</en_name>
+      <tl_name dir="ltr">あね</tl_name>
+      <image_color>ja_l10_a2_08.png</image_color>
+     <image_gray>ja_l10_a2_08g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with あ.]]></hint>
+      <audio_key>ja_l10_a2_08.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="8">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">my older brother</en_name>
+      <tl_name dir="ltr">あに</tl_name>
+      <image_color>ja_l10_a2_07.png</image_color>
+     <image_gray>ja_l10_a2_07g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with あ.]]></hint>
+      <audio_key>ja_l10_a2_07.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="9">
+      <member_type> me</member_type>
+      <en_name dir="ltr">me</en_name>
+      <tl_name dir="ltr">わたし</tl_name>
+      <image_color>ja_l10_a2_09.png</image_color>
+    </family-member>
+  </family-tree>
+  <family-tree frame-image="family02.png">
+    <family-member position="1">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">my mother</en_name>
+      <tl_name dir="ltr">はは</tl_name>
+      <image_color>ja_l10_a2_04.png</image_color>
+     <image_gray>ja_l10_a2_04g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with は.]]></hint>
+      <audio_key>ja_l10_a2_04.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="2">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">my father</en_name>
+      <tl_name dir="ltr">ちち</tl_name>
+      <image_color>ja_l10_a2_03.png</image_color>
+     <image_gray>ja_l10_a2_03g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with ち.]]></hint>
+      <audio_key>ja_l10_a2_03.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="3">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">my wife</en_name>
+      <tl_name dir="ltr">つま・かない</tl_name>
+      <image_color>ja_l10_a2_12.png</image_color>
+     <image_gray>ja_l10_a2_12g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with つ.]]></hint>
+      <audio_key>ja_l10_a2_12.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="4">
+      <member_type> me</member_type>
+      <en_name dir="ltr">me</en_name>
+      <tl_name dir="ltr">わたし</tl_name>
+      <image_color>ja_l10_a2_09.png</image_color>
+    </family-member>
+    <family-member position="5">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">my younger brother</en_name>
+      <tl_name dir="ltr">おとうと</tl_name>
+      <image_color>ja_l10_a2_10.png</image_color>
+     <image_gray>ja_l10_a2_10g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with お.]]></hint>
+      <audio_key>ja_l10_a2_10.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="6">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">sister-in-law</en_name>
+      <tl_name dir="ltr"></tl_name>
+      <image_color></image_color>
+     <image_gray></image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with (TL letter)]]></hint>
+      <audio_key></audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="7">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">my son</en_name>
+      <tl_name dir="ltr">むすこ</tl_name>
+      <image_color>ja_l10_a2_13.png</image_color>
+     <image_gray>ja_l10_a2_13g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with む.]]></hint>
+      <audio_key>ja_l10_a2_13.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="8">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">my daughter</en_name>
+      <tl_name dir="ltr">むすめ</tl_name>
+      <image_color>ja_l10_a2_14.png</image_color>
+     <image_gray>ja_l10_a2_14g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with む.]]></hint>
+      <audio_key>ja_l10_a2_14.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="9">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">My nephew</en_name>
+      <tl_name dir="ltr">おい</tl_name>
+      <image_color>ja_l10_a2_15.png</image_color>
+     <image_gray>ja_l10_a2_15g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with お.]]></hint>
+      <audio_key>ja_l10_a2_15.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="10">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">My niece</en_name>
+      <tl_name dir="ltr">めい</tl_name>
+      <image_color>ja_l10_a2_16.png</image_color>
+     <image_gray>ja_l10_a2_16g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with め.]]></hint>
+      <audio_key>ja_l10_a2_16.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+  </family-tree>
+  <family-tree frame-image="family01.png">
+    <family-member position="1">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">Tom’s grandfather</en_name>
+      <tl_name dir="ltr">おじいさん</tl_name>
+      <image_color>ja_l10_a2_17.png</image_color>
+     <image_gray>ja_l10_a2_17g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with お.]]></hint>
+      <audio_key>ja_l10_a2_17.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="2">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">Tom’s grandmother</en_name>
+      <tl_name dir="ltr">おばあさん</tl_name>
+      <image_color>ja_l10_a2_18.png</image_color>
+     <image_gray>ja_l10_a2_18g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with お.]]></hint>
+      <audio_key>ja_l10_a2_18.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="3">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">Tom’s mother</en_name>
+      <tl_name dir="ltr">おかあさん</tl_name>
+      <image_color>ja_l10_a2_20.png</image_color>
+     <image_gray>ja_l10_a2_20g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with お.]]></hint>
+      <audio_key>ja_l10_a2_20.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="4">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">Tom’s father</en_name>
+      <tl_name dir="ltr">おとうさん</tl_name>
+      <image_color>ja_l10_a2_19.png</image_color>
+     <image_gray>ja_l10_a2_19g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with お.]]></hint>
+      <audio_key>ja_l10_a2_19.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="5">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">Tom’s uncle</en_name>
+      <tl_name dir="ltr">おじさん</tl_name>
+      <image_color>ja_l10_a2_21.png</image_color>
+     <image_gray>ja_l10_a2_21g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with お.]]></hint>
+      <audio_key>ja_l10_a2_21.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="6">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">Tom’s aunt</en_name>
+      <tl_name dir="ltr">おばさん</tl_name>
+      <image_color>ja_l10_a2_22.png</image_color>
+     <image_gray>ja_l10_a2_22g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with お.]]></hint>
+      <audio_key>ja_l10_a2_22.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="7">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">Tom’s older sister</en_name>
+      <tl_name dir="ltr">おねえさん</tl_name>
+      <image_color>ja_l10_a2_24.png</image_color>
+     <image_gray>ja_l10_a2_24g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with お.]]></hint>
+      <audio_key>ja_l10_a2_24.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="8">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">Tom’s older brother</en_name>
+      <tl_name dir="ltr">おにいさん</tl_name>
+      <image_color>ja_l10_a2_23.png</image_color>
+     <image_gray>ja_l10_a2_23g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with お.]]></hint>
+      <audio_key>ja_l10_a2_23.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="9">
+      <member_type> me</member_type>
+      <en_name dir="ltr">Tom</en_name>
+      <tl_name dir="ltr">トムさん</tl_name>
+      <image_color>ja_l10_a2_30.png</image_color>
+    </family-member>
+  </family-tree>
+  <family-tree frame-image="family02.png">
+    <family-member position="1">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">Tom’s mother</en_name>
+      <tl_name dir="ltr">おかあさん</tl_name>
+      <image_color>ja_l10_a2_20.png</image_color>
+     <image_gray>ja_l10_a2_20g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with お.]]></hint>
+      <audio_key>ja_l10_a2_20.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="2">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">Tom’s father</en_name>
+      <tl_name dir="ltr">おとうさん</tl_name>
+      <image_color>ja_l10_a2_19.png</image_color>
+     <image_gray>ja_l10_a2_19g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with お.]]></hint>
+      <audio_key>ja_l10_a2_19.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="3">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">Tom’s wife</en_name>
+      <tl_name dir="ltr">おくさん</tl_name>
+      <image_color>ja_l10_a2_27.png</image_color>
+     <image_gray>ja_l10_a2_27g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with お.]]></hint>
+      <audio_key>ja_l10_a2_27.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="4">
+      <member_type> me</member_type>
+      <en_name dir="ltr">Tom</en_name>
+      <tl_name dir="ltr">トムさん</tl_name>
+      <image_color>ja_l10_a2_30.png</image_color>
+    </family-member>
+    <family-member position="5">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">Tom’s younger brother</en_name>
+      <tl_name dir="ltr">おとうとさん</tl_name>
+      <image_color>ja_l10_a2_25.png</image_color>
+     <image_gray>ja_l10_a2_25g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with お.]]></hint>
+      <audio_key>ja_l10_a2_25.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="6">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">sister-in-law</en_name>
+      <tl_name dir="ltr"></tl_name>
+      <image_color></image_color>
+     <image_gray></image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with (TL character)]]></hint>
+      <audio_key></audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="7">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">Tom’s son</en_name>
+      <tl_name dir="ltr">むすこさん</tl_name>
+      <image_color>ja_l10_a2_28.png</image_color>
+     <image_gray>ja_l10_a2_28g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with む.]]></hint>
+      <audio_key>ja_l10_a2_28.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="8">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">Tom’s daughter</en_name>
+      <tl_name dir="ltr">むすめさん</tl_name>
+      <image_color>ja_l10_a2_29.png</image_color>
+     <image_gray>ja_l10_a2_29g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with む.]]></hint>
+      <audio_key>ja_l10_a2_29.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="9">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">Tom’s nephew</en_name>
+      <tl_name dir="ltr">おいごさん</tl_name>
+      <image_color>ja_l10_a2_31.png</image_color>
+     <image_gray>ja_l10_a2_31g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with お.]]></hint>
+      <audio_key>ja_l10_a2_31.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+    <family-member position="10">
+      <member_type> unknown_member</member_type>
+      <en_name dir="ltr">Tom’s niece</en_name>
+      <tl_name dir="ltr">めいごさん</tl_name>
+      <image_color>ja_l10_a2_32.png</image_color>
+     <image_gray>ja_l10_a2_32g.png</image_gray>
+      <hint dir="ltr"><![CDATA[This word starts with め.]]></hint>
+      <audio_key>ja_l10_a2_32.mp3</audio_key>
+      <en_phrase dir="ltr"></en_phrase>
+      <tl_phrase dir="ltr"></tl_phrase>
+      <audio_phrase></audio_phrase>
+    </family-member>
+  </family-tree>
+
+</content>

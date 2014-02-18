@@ -1,0 +1,388 @@
+
+
+
+@font-face {
+    font-family: 'FuturaMedium';
+    src:url('../../../css/futura-medium-webfont.eot');
+	src: url('../../../css/futura-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../../css/futura-medium-webfont.woff') format('woff'),
+         url('../../../css/futura-medium-webfont.ttf') format('truetype'),
+         url('../../../css/futura-medium-webfont.svg#FuturaMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('../../../css/futura_bold-webfont.eot');
+    src: url('../../../css/futura_bold-webfont.eot?#iefix') format('eot'),
+         url('../../../css/futura_bold-webfont.woff') format('woff'),
+         url('../../../css/futura_bold-webfont.ttf') format('truetype'),
+         url('../../../css/futura_bold-webfont.svg#webfontrIGithyc') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#enable22Div {
+	position:relative;
+	margin:10px auto 0px auto;
+	padding:0px;
+	width:890px;
+	background-color:#f5f5f5;
+	text-shadow: 0px 1px 0px #fff;
+	font-family: 'FuturaMedium';
+	letter-spacing:2px;
+
+}
+
+#topPanel{
+	position:relative;
+	margin: 10px 0px 10px 0px;
+	width:890px;
+	min-height:675px;
+	background: #f5f5f5; /* Old browsers */
+background: -moz-linear-gradient(top,  #f5f5f5 0%, #f5f5f5 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#f5f5f5)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f5f5f5 0%,#f5f5f5 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f5f5f5 0%,#f5f5f5 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f5f5f5 0%,#f5f5f5 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #f5f5f5 0%,#f5f5f5 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f5f5f5',GradientType=0 ); /* IE6-9 */
+-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	/*border:1px solid #cecece;*/
+	/*box-shadow: 1px 1px 2px #cecece;*/
+    -moz-box-shadow: 0px 1px 2px #cecece;
+    -webkit-box-shadow: 0px 1px 2px #cecece;
+	 font-family: 'FuturaMedium';
+}
+#titlePanel {
+	position:relative;
+	margin: 10px 0px 20px 0px;
+	width:890px;
+}
+
+#title {
+	position:relative;
+	margin: 15px 0px 5px 10px;
+	width:915px;
+	font-family: 'FuturaMedium';
+	font-size:22px;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 2px #fff;
+	color:#969696;
+}
+#instruction {
+position:relative;
+	width:915px;
+	font-family: 'FuturaMedium';
+	margin:0px 0px 10px 10px;
+	padding:0px;
+	font-size:12px;
+	color:#989898;
+	letter-spacing:2px;
+}
+#contentPanel {
+	position:relative;
+	width:915px;
+	min-height:293px;
+	margin: 0px 0px 10px 0px;
+	font-family: 'FuturaMedium';
+	padding:0px;
+	font-size:12px;
+	color:#989898;
+	letter-spacing:2px;
+	clear:both;
+	
+}
+
+#dragPanel {
+	position:relative;
+	float:left;
+	width:398px;
+	min-height:293px;
+	font-family: 'FuturaMedium';
+	margin:-5px 13px 10px 8px;
+	padding:0px;
+	font-size:12px;
+	color:#989898;
+	letter-spacing:2px;
+	
+	}
+#dropPanel {
+	position:relative;
+	width:454px;
+	min-height:293px;
+	float:left;
+	font-family: 'FuturaMedium';
+	margin:0px;
+	padding:0px;
+	font-size:12px;
+	color:#989898;
+	letter-spacing:2px;
+	border:1px solid #cecece;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 42%, #f7f7f7 68%, #f1f1f1 78%, #efefef 88%, #ebebeb 92%, #eaeaea 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(42%,#ffffff), color-stop(68%,#f7f7f7), color-stop(78%,#f1f1f1), color-stop(88%,#efefef), color-stop(92%,#ebebeb), color-stop(100%,#eaeaea)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 42%,#f7f7f7 68%,#f1f1f1 78%,#efefef 88%,#ebebeb 92%,#eaeaea 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 42%,#f7f7f7 68%,#f1f1f1 78%,#efefef 88%,#ebebeb 92%,#eaeaea 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#ffffff 42%,#f7f7f7 68%,#f1f1f1 78%,#efefef 88%,#ebebeb 92%,#eaeaea 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 42%,#f7f7f7 68%,#f1f1f1 78%,#efefef 88%,#ebebeb 92%,#eaeaea 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 ); /* IE6-9 */
+
+	}
+	#dropContentArea {
+		position:relative;
+		width:424px;
+	height:263px;
+	font-family: 'FuturaMedium';
+	margin:15px;
+	padding:0px;
+	font-size:14px;
+	display:block;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+		}
+#videoFeedBackPanel{
+	position:relative;
+	width:890px;
+	height:280px;
+	font-family: 'FuturaMedium';
+	margin: 0px 0px 10px 0px;
+	padding:0px;
+	font-size:12px;
+	color:#989898;
+	letter-spacing:2px;
+	clear:both;
+	
+	
+}
+#videoPanel {
+	position:relative;
+	float:left;
+	width:320px;
+	height:280px;
+	margin:0px 13px 10px 15px;
+	padding:0px;
+	
+	}
+	
+	#videoDiv{
+	position:relative;
+	width:320px;
+	height:240px;
+	border:1px solid #cecece;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	
+	}
+		#videoControl{
+	position:relative;
+	width:320px;
+	margin:8px 0px 0px 0px;
+	padding:0px;
+	}
+	
+#feedbackPanel  {
+	position:relative;
+	width:527px;
+	height:275px;
+	float:left;
+	font-family: 'FuturaMedium';
+	margin:0px;
+	padding:0px;
+	font-size:12px;
+	color:#989898;
+	letter-spacing:2px;
+	border:1px solid #cecece;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 42%, #f7f7f7 68%, #f1f1f1 78%, #efefef 88%, #ebebeb 92%, #eaeaea 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(42%,#ffffff), color-stop(68%,#f7f7f7), color-stop(78%,#f1f1f1), color-stop(88%,#efefef), color-stop(92%,#ebebeb), color-stop(100%,#eaeaea)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 42%,#f7f7f7 68%,#f1f1f1 78%,#efefef 88%,#ebebeb 92%,#eaeaea 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 42%,#f7f7f7 68%,#f1f1f1 78%,#efefef 88%,#ebebeb 92%,#eaeaea 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#ffffff 42%,#f7f7f7 68%,#f1f1f1 78%,#efefef 88%,#ebebeb 92%,#eaeaea 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 42%,#f7f7f7 68%,#f1f1f1 78%,#efefef 88%,#ebebeb 92%,#eaeaea 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 ); /* IE6-9 */
+
+	}
+#feedback {
+	position:relative;
+	width:522px;
+	height:245px;
+	margin:15px;
+	padding:0px;
+	font-family: 'FuturaMedium';
+	font-size:14px;
+	color:#757575;
+    background-clip: padding-box;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+ -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: 0 0px 20px rgba(0, 0, 0, 0.3);
+-webkit-box-shadow: 0 0px 20px rgba(0, 0, 0, 0.3);
+box-shadow: 0 0px 20px rgba(0, 0, 0, 0.3);
+    outline: medium none;
+	background: #fcfcfc; /* Old browsers */
+background: -moz-linear-gradient(top,  #fcfcfc 0%, #fcfcfc 26%, #f3f3f3 54%, #f4f4f4 57%, #f2f2f2 58%, #eeeeee 71%, #efefef 74%, #ededed 75%, #e9e9e9 88%, #eaeaea 91%, #e6e6e6 98%, #e7e7e7 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(26%,#fcfcfc), color-stop(54%,#f3f3f3), color-stop(57%,#f4f4f4), color-stop(58%,#f2f2f2), color-stop(71%,#eeeeee), color-stop(74%,#efefef), color-stop(75%,#ededed), color-stop(88%,#e9e9e9), color-stop(91%,#eaeaea), color-stop(98%,#e6e6e6), color-stop(100%,#e7e7e7)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #fcfcfc 0%,#fcfcfc 26%,#f3f3f3 54%,#f4f4f4 57%,#f2f2f2 58%,#eeeeee 71%,#efefef 74%,#ededed 75%,#e9e9e9 88%,#eaeaea 91%,#e6e6e6 98%,#e7e7e7 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #fcfcfc 0%,#fcfcfc 26%,#f3f3f3 54%,#f4f4f4 57%,#f2f2f2 58%,#eeeeee 71%,#efefef 74%,#ededed 75%,#e9e9e9 88%,#eaeaea 91%,#e6e6e6 98%,#e7e7e7 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #fcfcfc 0%,#fcfcfc 26%,#f3f3f3 54%,#f4f4f4 57%,#f2f2f2 58%,#eeeeee 71%,#efefef 74%,#ededed 75%,#e9e9e9 88%,#eaeaea 91%,#e6e6e6 98%,#e7e7e7 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #fcfcfc 0%,#fcfcfc 26%,#f3f3f3 54%,#f4f4f4 57%,#f2f2f2 58%,#eeeeee 71%,#efefef 74%,#ededed 75%,#e9e9e9 88%,#eaeaea 91%,#e6e6e6 98%,#e7e7e7 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#e7e7e7',GradientType=0 ); /* IE6-9 */
+
+}
+	#playBtn {
+		float:left;
+		background-color:#999;
+	border: 0;
+	color: #EEE;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	padding:2px 5px 3px 5px;
+	margin:0px 15px 0px 0px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	letter-spacing:1px;
+}
+#stopBtn {
+	float:left;
+	background-color:#999;
+	border: 0;
+	color: #EEE;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	margin:0px 25px 0px 0px;
+	padding:2px 5px 3px 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	letter-spacing:1px;
+}
+#seekLine {
+	position:relative;
+	float:left;
+	background-image:url(../images/seekLine.png);
+	width:180px;
+	height:3px;
+		margin:10px 0px 0px 0px;
+		padding:0px;
+	
+	
+}
+#seekbar {
+	position:relative;
+	background-image:url(../images/seekBar.png);
+	width:10px;
+	height:17px;
+	left:-10px;
+	top:-10px;
+	z-index:10;
+	
+}
+
+.dragBubble{
+	position:relative;
+	width:190px;
+	height:45px;
+	float:left;
+	font-family: 'FuturaMedium';
+	font-size:14px;
+	color:#757575;
+	text-align:center;
+	margin:5px 0px 0px 8px;
+	padding-top:10px;
+	background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #f4f4f4 50%, #ebebeb 76%, #e7e7e7 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f4f4f4), color-stop(76%,#ebebeb), color-stop(100%,#e7e7e7)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#f4f4f4 50%,#ebebeb 76%,#e7e7e7 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#f4f4f4 50%,#ebebeb 76%,#e7e7e7 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#f4f4f4 50%,#ebebeb 76%,#e7e7e7 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 0%,#f4f4f4 50%,#ebebeb 76%,#e7e7e7 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7e7e7',GradientType=0 ); /* IE6-9 */
+cursor:pointer;
+
+}
+#imageVideoAudio {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:320px;
+	height:240px;
+	border:1px solid #cecece;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+}
+.dropBubble {
+	font-family: 'FuturaMedium';
+	font-size:16px;
+	color:#757575;
+	float:left;
+	margin:0px 10px 0px 0px;
+	visibility:hidden;
+	vertical-align: text-bottom;
+
+}
+.targetSentence {
+	width:449px;
+	margin:0px 0px 5px 0px;
+	padding:0px
+	display:block;
+	clear:both;
+	
+	
+}
+.englishSentence {
+	margin:10px 0px 10px 0px;
+	width:449px;
+	display:block;
+	font-family: 'FuturaMedium';
+	font-size:12px;
+	color:#0a5d43;
+	visibility:hidden;
+	clear:both;
+}
+.corrected{
+	font-family: 'FuturaMedium';
+	font-size:16px;
+	color:#0a5d43;
+	font-weight:bold;
+}
+.inCorrect {
+	font-family: 'FuturaMedium';
+	font-size:16px;
+	color:#F00;
+}
+#videoPlayer {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:318px;
+	height:238px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	background-color:#f5f5f5;
+}
+#audioPlayer {
+	position:absolute;
+	top:0px;
+	left:0px;
+}

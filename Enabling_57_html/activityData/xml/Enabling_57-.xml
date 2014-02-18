@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content target_language="Dari" dir="rtl" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
+  <title>
+    <english>Departures</english>
+    <trans>پرواز ها</trans>
+  </title>
+  <set id="0" audio="pg_06_plane_kabul.mp3">
+    <english>Kabul</english>
+    <translation audio="pg_03_kabul.mp3">کابل</translation>
+    <time_english>4:00 a.m.</time_english>
+    <time_tl hour="۴" min="٠٠"  audio="pg_06_04-00.mp3">صبح</time_tl>
+    <q>What is the departure time of the plane to Kabul?</q>
+    <filler airline="صبح1" flight="1کابل" gate="1پرو"/>
+    <hint dir="ltr"><![CDATA[item0 hint text for incorrect answer]]></hint>
+    <feedback dir="ltr"><![CDATA[item0 feedback for the correct answer and final item0 feedback for the correct answer and final item0 feedback for the correct answer and final item0 feedback for the correct answer and final item0 feedback for the correct answer and final item0 feedback for the correct answer and final item0 feedback for the correct answer and final ]]></feedback>
+  </set>
+  <set id="1" audio="pg_06_plane_mazar-e_sharif.mp3">
+    <english>Mazar-e Sharif</english>
+    <translation audio="pg_03_mazar-eSharif.mp3">مزار شریف</translation>
+    <time_english>2:30 p.m.</time_english>
+    <time_tl hour="٢" min="٣٠"  audio="pg_06_02-30.mp3">شب</time_tl>
+    <q>What is the departure time of the plane to Mazar-e Sharif?</q>
+    <filler airline="2صبح" flight="کابل2" gate="پرو2"/>
+    <hint dir="ltr"><![CDATA[item1 hint text for incorrect answer]]></hint>
+    <feedback dir="ltr"><![CDATA[item1 feedback for the correct answer and final]]></feedback>
+  </set>
+  <set id="2" audio="pg_06_plane_tehran.mp3">
+    <english>Tehran</english>
+    <translation audio="pg_06_tehran.mp3">تهران</translation>
+    <time_english>3:45 a.m.</time_english>
+    <time_tl hour="٣" min="۴۵"  audio="pg_06_03-45.mp3">صبح</time_tl>
+    <q>What is the departure time of the plane to Tehran?</q>
+    <filler airline="صبح3" flight="2210" gate="D10"/>
+    <hint dir="ltr"><![CDATA[item2 hint <font color="#ff00000">text</font> for <b>incorrect</b> answer]]></hint>
+    <feedback dir="ltr"><![CDATA[item2 feedback for the correct answer and final]]></feedback>
+  </set>
+  <set id="3" audio="pg_06_plane_islamabad.mp3">
+    <english>Islamabad</english>
+    <translation audio="pg_06_islamabad.mp3">اسلام اباد</translation>
+    <time_english>3:30 p.m.</time_english>
+    <time_tl hour="٣" min="٣٠"  audio="pg_06_03-30.mp3">شب</time_tl>
+    <q>What is the departure time of the plane to Islamabad?</q>
+    <filler airline="4صبح" flight="827" gate="A15"/>
+    <hint dir="ltr"><![CDATA[item3 hint text for incorrect answer]]></hint>
+    <feedback dir="ltr"><![CDATA[item3 feedback for the correct answer and final]]></feedback>
+  </set>
+  <set id="4" audio="">
+    <english>Jalalabad</english>
+    <translation audio="pg_03_jalalabad.mp3">جلال آباد</translation>
+    <time_english>11:15 a.m.</time_english>
+    <time_tl hour="١١" min="١۵"  audio="pg_06_11-15.mp3">صبح</time_tl>
+    <q>What is the departure time of the plane to Jalalabad?</q>
+    <filler airline="صبح5" flight="103" gate="B1"/>
+    <hint dir="ltr"><![CDATA[item4 hint text for incorrect answer]]></hint>
+    <feedback dir="ltr"><![CDATA[item4 feedback for the correct answer and final]]></feedback>
+  </set>
+  <set id="5" audio="">
+    <english>Kandahar</english>
+    <translation audio="pg_03_kandahar.mp3">قندهار</translation>
+    <time_english>10:30 a.m.</time_english>
+    <time_tl hour="١٠" min="٣٠"  audio="pg_06_10-30.mp3">صبح</time_tl>
+    <q>item 5 question?</q>
+    <filler airline="صبح6" flight="241" gate="C11"/>
+    <hint dir="ltr"><![CDATA[item5 hint text for incorrect answer]]></hint>
+    <feedback dir="ltr"><![CDATA[item5 feedback for the correct answer and final]]></feedback>
+  </set>
+  <set id="6" audio="">
+    <english>Samangan</english>
+    <translation audio="pg_03_samangan.mp3">سمنگان</translation>
+    <time_english>8:30 a.m.</time_english>
+    <time_tl hour="٨" min="٣٠"  audio="pg_06_08-30.mp3">صبح</time_tl>
+    <q>Item 6 question?</q>
+    <filler airline="7صبح" flight="442" gate="A9"/>
+    <hint dir="ltr"><![CDATA[item6 hint text for incorrect answer]]></hint>
+    <feedback dir="ltr"><![CDATA[item6 feedback for the correct answer and final]]></feedback>
+  </set>
+  <set id="8" audio="">
+    <english>Kunduz</english>
+    <translation audio="pg_03_kunduz.mp3">قندز</translation>
+    <time_english>4:15 p.m.</time_english>
+    <time_tl hour="۴" min="١۵"  audio="pg_06_04-15.mp3">شب</time_tl>
+    <q>question 8?</q>
+    <filler airline="صبح8" flight="1122" gate="C2"/>
+    <hint dir="ltr">Item 8 question?<![CDATA[item7 hint text for incorrect answer]]></hint>
+    <feedback dir="ltr"><![CDATA[item7 feedback for the correct answer and final item7 feedback for the correct answer and final item7 feedback for the correct answer and final item7 feedback for the correct answer and final item7 feedback for the correct answer and final item7 feedback for the correct answer and final item7 feedback for the correct answer and final item7 feedback for the correct answer and final item7 feedback for the correct answer and final item7 feedback for the correct answer and final ]]></feedback>
+  </set>
+  <set id="9" audio="">
+    <english>Kunduz</english>
+    <translation audio="pg_03_kunduz.mp3">قندز</translation>
+    <time_english>4:15 p.m.</time_english>
+    <time_tl hour="۴" min="١۵"  audio="pg_06_04-15.mp3">شب</time_tl>
+    <q>question 9?</q>
+    <filler airline="9صبح" flight="1122" gate="C2"/>
+    <hint dir="ltr">Item 9 question?<![CDATA[item7 hint text for incorrect answer]]></hint>
+    <feedback dir="ltr"><![CDATA[item7 feedback for the correct answer and final]]></feedback>
+  </set>
+  <set id="10" audio="">
+    <english>Kunduz</english>
+    <translation audio="pg_03_kunduz.mp3">قندز</translation>
+    <time_english>4:15 p.m.</time_english>
+    <time_tl hour="۴" min="١۵"  audio="pg_06_04-15.mp3">شب</time_tl>
+    <q>question 10?</q>
+    <filler airline="0صبح" flight="1122" gate="C2"/>
+    <hint dir="ltr">Item 10 question?<![CDATA[item7 hint text for incorrect answer]]></hint>
+    <feedback dir="ltr"><![CDATA[item10 feedback for the correct answer and final]]></feedback>
+  </set>
+  <set id="0" audio="pg_06_plane_kabul.mp3">
+    <english>Kabul</english>
+    <translation audio="pg_03_kabul.mp3">کابل</translation>
+    <time_english>4:00 a.m.</time_english>
+    <time_tl hour="۴" min="٠٠"  audio="pg_06_04-00.mp3">صبح</time_tl>
+    <q>What is the departure time of the plane to Kabul?</q>
+    <filler airline="1صبح" flight="1207" gate="D12"/>
+    <hint dir="ltr"><![CDATA[item0 hint text for incorrect answer]]></hint>
+    <feedback dir="ltr"><![CDATA[item0 feedback for the correct answer and final item0 feedback for the correct answer and final item0 feedback for the correct answer and final item0 feedback for the correct answer and final item0 feedback for the correct answer and final item0 feedback for the correct answer and final item0 feedback for the correct answer and final ]]></feedback>
+  </set>
+  <set id="1" audio="pg_06_plane_mazar-e_sharif.mp3">
+    <english>Mazar-e Sharif</english>
+    <translation audio="pg_03_mazar-eSharif.mp3">مزار شریف</translation>
+    <time_english>2:30 p.m.</time_english>
+    <time_tl hour="٢" min="٣٠"  audio="pg_06_02-30.mp3">شب</time_tl>
+    <q>What is the departure time of the plane to Mazar-e Sharif?</q>
+    <filler airline="صبح2" flight="409" gate="B11"/>
+    <hint dir="ltr"><![CDATA[item1 hint text for incorrect answer]]></hint>
+    <feedback dir="ltr"><![CDATA[item1 feedback for the correct answer and final]]></feedback>
+  </set>
+  <set id="2" audio="pg_06_plane_tehran.mp3">
+    <english>Tehran</english>
+    <translation audio="pg_06_tehran.mp3">تهران</translation>
+    <time_english>3:45 a.m.</time_english>
+    <time_tl hour="٣" min="۴۵"  audio="pg_06_03-45.mp3">صبح</time_tl>
+    <q>What is the departure time of the plane to Tehran?</q>
+    <filler airline="صبح3" flight="2210" gate="D10"/>
+    <hint dir="ltr"><![CDATA[item2 hint <font color="#ff00000">text</font> for <b>incorrect</b> answer]]></hint>
+    <feedback dir="ltr"><![CDATA[item2 feedback for the correct answer and final]]></feedback>
+  </set>
+  <set id="3" audio="pg_06_plane_islamabad.mp3">
+    <english>Islamabad</english>
+    <translation audio="pg_06_islamabad.mp3">اسلام اباد</translation>
+    <time_english>3:30 p.m.</time_english>
+    <time_tl hour="٣" min="٣٠"  audio="pg_06_03-30.mp3">شب</time_tl>
+    <q>What is the departure time of the plane to Islamabad?</q>
+    <filler airline="4صبح" flight="827" gate="A15"/>
+    <hint dir="ltr"><![CDATA[item3 hint text for incorrect answer]]></hint>
+    <feedback dir="ltr"><![CDATA[item3 feedback for the correct answer and final]]></feedback>
+  </set>
+  <set id="4" audio="">
+    <english>Jalalabad</english>
+    <translation audio="pg_03_jalalabad.mp3">جلال آباد</translation>
+    <time_english>11:15 a.m.</time_english>
+    <time_tl hour="١١" min="١۵"  audio="pg_06_11-15.mp3">صبح</time_tl>
+    <q>What is the departure time of the plane to Jalalabad?</q>
+    <filler airline="5صبح" flight="103" gate="B1"/>
+    <hint dir="ltr"><![CDATA[item4 hint text for incorrect answer]]></hint>
+    <feedback dir="ltr"><![CDATA[item4 feedback for the correct answer and final]]></feedback>
+  </set>
+</content>

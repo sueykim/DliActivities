@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content target_language="German" hw="true" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
+	<family-tree frame-image="family01.png">
+		<family-member position='1'>
+			<member_type>unknown_member</member_type>
+			<en_name dir="ltr">EN Dan Grandfather</en_name>
+			<tl_name dir="ltr">TL Dan Grandfather</tl_name>
+			<hint dir="ltr">Dan Grandfather Hint</hint>
+			<image_color>face_10_om.png</image_color>
+			<image_gray>face_10_om_grey.png</image_gray>
+			<audio_key>grandfather_key.mp3</audio_key>
+			<audio_phrase>grandfather.mp3</audio_phrase>
+			<en_phrase dir="ltr">EN Dan Grandfather Phrase</en_phrase>
+			<tl_phrase dir="ltr">TL Dan Grandfather Phrase</tl_phrase>
+		</family-member>
+		<family-member position='2'>
+			<member_type>distractor</member_type>
+			<hint dir="ltr">Grandmother Hint</hint>
+			<en_name dir="ltr">EN Grandmother</en_name>
+			<tl_name dir="ltr">TL Grandmother</tl_name>
+			<image_color>face_09_ow.png</image_color>
+			<image_gray>face_09_ow_grey.png</image_gray>
+			<audio_key>grandmother_key.mp3</audio_key>
+		</family-member>
+		<family-member position='3'>
+			<member_type>unknown_member</member_type>
+			<en_name dir="ltr">EN Mother</en_name>
+			<tl_name dir="ltr">TL Mother</tl_name>
+			<hint dir="ltr">Mother Hint</hint>
+			<image_color>face_08_yw.png</image_color>
+			<image_gray>face_08_yw_grey.png</image_gray>
+			<audio_key>mother_key.mp3</audio_key>
+			<audio_phrase>mother.mp3</audio_phrase>
+			<en_phrase dir="ltr">EN Mother Phrase</en_phrase>
+			<tl_phrase dir="ltr">TL Mother Phrase</tl_phrase>
+		</family-member>
+		<family-member position='4'>
+			<member_type>known_member</member_type>
+			<en_name dir="ltr">EN Father</en_name>
+			<tl_name dir="ltr">TL Father</tl_name>
+			<image_color>face_07_mm.png</image_color>
+			<image_gray>face_07_mm_grey.png</image_gray>
+		</family-member>
+		<family-member position='5'>
+			<member_type>unknown_member</member_type>
+			<en_name dir="ltr">EN Uncle</en_name>
+			<tl_name dir="ltr">TL Uncle</tl_name>
+			<hint dir="ltr">Uncle Hint</hint>
+			<image_color>face_05_mm.png</image_color>
+			<image_gray>face_05_mm_grey.png</image_gray>
+			<audio_key>uncle_key.mp3</audio_key>
+			<audio_phrase>uncle.mp3</audio_phrase>
+			<en_phrase dir="ltr">EN Uncle Phrase</en_phrase>
+			<tl_phrase dir="ltr">TL Uncle Phrase</tl_phrase>
+		</family-member>
+		<family-member position='6'>
+			<member_type>unknown_member</member_type>
+			<en_name dir="ltr">EN Aunt</en_name>
+			<tl_name dir="ltr">TL Aunt</tl_name>
+			<hint dir="ltr">Aunt Hint</hint>
+			<image_color>face_06_mw.png</image_color>
+			<image_gray>face_06_mw_grey.png</image_gray>
+			<audio_key>aunt_key.mp3</audio_key>
+			<audio_phrase>aunt.mp3</audio_phrase>
+			<en_phrase dir="ltr">EN Aunt Phrase</en_phrase>
+			<tl_phrase dir="ltr">TL Aunt Phrase</tl_phrase>
+		</family-member>
+		<family-member position='7'>
+			<member_type>known_member</member_type>
+			<en_name dir="ltr">EN Older Sister</en_name>
+			<tl_name dir="ltr">TL Older Sister</tl_name>
+			<image_color>face_04_yw.png</image_color>
+			<image_gray>face_04_yw_grey.png</image_gray>
+		</family-member>
+		<family-member position='8'>
+			<member_type>unknown_member</member_type>
+			<en_name dir="ltr">EN Older Brother</en_name>
+			<tl_name dir="ltr">TL Older Brother</tl_name>
+			<hint dir="ltr">Older Brother Hint</hint>
+			<image_color>face_01_mm.png</image_color>
+			<image_gray>face_01_mm_grey.png</image_gray>
+			<audio_key>older_brother_key.mp3</audio_key>
+			<audio_phrase>older_brother.mp3</audio_phrase>
+			<en_phrase dir="ltr">EN Older Brother Phrase</en_phrase>
+			<tl_phrase dir="ltr">TL Older Brother Phrase</tl_phrase>
+		</family-member>
+		<family-member position='9'>
+			<member_type>me</member_type>
+			<en_name dir="ltr">EN Me</en_name>
+			<tl_name dir="ltr">TL Me</tl_name>
+			<image_color>face_02_yw.png</image_color>
+		</family-member>
+	</family-tree>
+
+	<family-tree frame-image="family02.png">
+		<family-member position='1'>
+			<member_type>unknown_member</member_type>
+			<en_name dir="ltr">EN Mother</en_name>
+			<tl_name dir="ltr">TL Mother</tl_name>
+			<hint dir="ltr">Mother Hint</hint>
+			<image_color>face_08_yw.png</image_color>
+			<image_gray>face_08_yw_grey.png</image_gray>
+			<audio_key>mother_key.mp3</audio_key>
+			<audio_phrase>mother.mp3</audio_phrase>
+			<en_phrase dir="ltr">EN Mother Phrase</en_phrase>
+			<tl_phrase dir="ltr">TL Mother Phrase</tl_phrase>
+		</family-member>
+		<family-member position='2'>
+			<member_type>distractor</member_type>
+			<hint dir="ltr">EN Father Hint</hint>
+			<en_name dir="ltr">EN Father</en_name>
+			<tl_name dir="ltr">TL Father</tl_name>
+			<image_color>face_01_ym.png</image_color>
+			<image_gray>face_01_ym_grey.png</image_gray>
+			<audio_key>father_key.mp3</audio_key>
+		</family-member>
+		<family-member position='3'>
+			<member_type>unknown_member</member_type>
+			<en_name dir="ltr">EN Wife</en_name>
+			<tl_name dir="ltr">TL Wife</tl_name>
+			<hint dir="ltr">Wife Hint</hint>
+			<image_color>face_06_mw.png</image_color>
+			<image_gray>face_06_mw_grey.png</image_gray>
+			<audio_key>wife_key.mp3</audio_key>
+			<audio_phrase>wife.mp3</audio_phrase>
+			<en_phrase dir="ltr">EN Wife Phrase</en_phrase>
+			<tl_phrase dir="ltr">TL Wife Phrase</tl_phrase>
+		</family-member>
+		<family-member position='4'>
+			<member_type>me</member_type>
+			<en_name dir="ltr">EN Me</en_name>
+			<tl_name dir="ltr">TL Me</tl_name>
+			<image_color>face_01_mm.png</image_color>
+		</family-member>
+		<family-member position='5'>
+			<member_type>unknown_member</member_type>
+			<en_name dir="ltr">EN Younger Brother</en_name>
+			<tl_name dir="ltr">TL Younger Brother</tl_name>
+			<hint dir="ltr">Younger Brother Hint</hint>
+			<image_color>face_05_mm.png</image_color>
+			<image_gray>face_05_mm_grey.png</image_gray>
+			<audio_key>younger_brother_key.mp3</audio_key>
+			<audio_phrase>younger_brother.mp3</audio_phrase>
+			<en_phrase dir="ltr">EN Younger Brother Phrase</en_phrase>
+			<tl_phrase dir="ltr">TL Younger Brother Phrase</tl_phrase>
+		</family-member>
+		<family-member position='6'>
+			<member_type>unknown_member</member_type>
+			<en_name dir="ltr">EN Sister In-Law</en_name>
+			<tl_name dir="ltr">TL Sister In-Law</tl_name>
+			<hint dir="ltr">Sister In-Law Hint</hint>
+			<image_color>face_04_yw.png</image_color>
+			<image_gray>face_04_yw_grey.png</image_gray>
+			<audio_key>sister_in_law_key.mp3</audio_key>
+			<audio_phrase>sister_in_law.mp3</audio_phrase>
+			<en_phrase dir="ltr">EN Sister In-Law Phrase</en_phrase>
+			<tl_phrase dir="ltr">TL Sister In-Law Phrase</tl_phrase>
+		</family-member>
+		<family-member position='7'>
+			<member_type>known_member</member_type>
+			<en_name dir="ltr">EN Son</en_name>
+			<tl_name dir="ltr">TL Son</tl_name>
+			<image_color>face_07_mm.png</image_color>
+			<image_gray>face_07_mm_grey.png</image_gray>
+		</family-member>
+		<family-member position='8'>
+			<member_type>unknown_member</member_type>
+			<en_name dir="ltr">EN Dautghter</en_name>
+			<tl_name dir="ltr">TL Dautghter</tl_name>
+			<hint dir="ltr">Dautghter Hint</hint>
+			<image_color>face_02_yw.png</image_color>
+			<image_gray>face_02_yw_grey.png</image_gray>
+			<audio_key>daughter_key.mp3</audio_key>
+			<audio_phrase>daughter.mp3</audio_phrase>
+			<en_phrase dir="ltr">EN Dautghter Phrase</en_phrase>
+			<tl_phrase dir="ltr">TL Dautghter Phrase</tl_phrase>
+		</family-member>
+		<family-member position='9'>
+			<member_type>known_member</member_type>
+			<en_name dir="ltr">EN Nephew</en_name>
+			<tl_name dir="ltr">TL Nephew</tl_name>
+			<image_color>face_10_om.png</image_color>
+			<image_gray>face_10_om_grey.png</image_gray>
+		</family-member>
+		<family-member position='10'>
+			<member_type>unknown_member</member_type>
+			<en_name dir="ltr">EN Niece</en_name>
+			<tl_name dir="ltr">TL Niece</tl_name>
+			<hint dir="ltr">Niece Hint</hint>
+			<image_color>face_09_ow.png</image_color>
+			<image_gray>face_09_ow_grey.png</image_gray>
+			<audio_key>niece_key.mp3</audio_key>
+			<audio_phrase>niece.mp3</audio_phrase>
+			<en_phrase dir="ltr">EN Niece Phrase</en_phrase>
+			<tl_phrase dir="ltr">TL Niece Phrase</tl_phrase>
+		</family-member>
+	</family-tree>
+
+	<family-tree frame-image="family03.png">
+		<family-member position='1'>
+			<member_type>me</member_type>
+			<en_name dir="ltr">EN Me</en_name>
+			<tl_name dir="ltr">TL Me</tl_name>
+			<image_color>face_02_yw.png</image_color>
+		</family-member>
+		<family-member position='2'>
+			<member_type>unknown_member</member_type>
+			<en_name dir="ltr">EN Husband</en_name>
+			<tl_name dir="ltr">TL Husband</tl_name>
+			<hint dir="ltr">Husband Hint</hint>
+			<image_color>face_01_ym.png</image_color>
+			<image_gray>face_01_ym_grey.png</image_gray>
+			<audio_key>husband_key.mp3</audio_key>
+			<audio_phrase>husband.mp3</audio_phrase>
+			<en_phrase dir="ltr">EN Husband Phrase</en_phrase>
+			<tl_phrase dir="ltr">TL Husband Phrase</tl_phrase>
+		</family-member>
+		<family-member position='3'>
+			<member_type>unknown_member</member_type>
+			<en_name dir="ltr">EN Dautghter</en_name>
+			<tl_name dir="ltr">TL Dautghter</tl_name>
+			<hint dir="ltr">Dautghter Hint</hint>
+			<image_color>face_04_yw.png</image_color>
+			<image_gray>face_04_yw_grey.png</image_gray>
+			<audio_key>daughter_key.mp3</audio_key>
+			<audio_phrase>daughter.mp3</audio_phrase>
+			<en_phrase dir="ltr">EN Dautghter Phrase</en_phrase>
+			<tl_phrase dir="ltr">TL Dautghter Phrase</tl_phrase>
+		</family-member>
+		<family-member position='4'>
+			<member_type>known_member</member_type>
+			<en_name dir="ltr">EN Son</en_name>
+			<tl_name dir="ltr">TL Son</tl_name>
+			<image_color>face_05_mm.png</image_color>
+			<image_gray>face_05_mm_grey.png</image_gray>
+		</family-member>
+		<family-member position='5'>
+			<member_type>unknown_member</member_type>
+			<en_name dir="ltr">EN Dautghter In-Law</en_name>
+			<tl_name dir="ltr">TL Dautghter In-Law</tl_name>
+			<hint dir="ltr">Dautghter In-Law Hint</hint>
+			<image_color>face_06_mw.png</image_color>
+			<image_gray>face_06_mw_grey.png</image_gray>
+			<audio_key>daughter_in_law_key.mp3</audio_key>
+			<audio_phrase>daughter_in_law.mp3</audio_phrase>
+			<en_phrase dir="ltr">EN Dautghter In-Law Phrase</en_phrase>
+			<tl_phrase dir="ltr">TL Dautghter In-Law Phrase</tl_phrase>
+		</family-member>
+		<family-member position='6'>
+			<member_type>unknown_member</member_type>
+			<en_name dir="ltr">EN Grandson</en_name>
+			<tl_name dir="ltr">TL Grandson</tl_name>
+			<hint dir="ltr">Grandson Hint</hint>
+			<image_color>face_07_mm.png</image_color>
+			<image_gray>face_07_mm_grey.png</image_gray>
+			<audio_key>grandson_key.mp3</audio_key>
+			<audio_phrase>grandson.mp3</audio_phrase>
+			<en_phrase dir="ltr">EN Grandson Phrase</en_phrase>
+			<tl_phrase dir="ltr">TL Grandson Phrase</tl_phrase>
+		</family-member>
+		<family-member position='7'>
+			<member_type>distractor</member_type>
+			<en_name dir="ltr">EN Granddaughter</en_name>
+			<tl_name dir="ltr">TL Granddaughter</tl_name>
+			<image_color>face_08_yw.png</image_color>
+			<image_gray>face_08_yw_grey.png</image_gray>
+			<audio_key>granddaughter_key.mp3</audio_key>
+		</family-member>
+		<family-member position='8'>
+			<member_type>known_member</member_type>
+			<en_name dir="ltr">EN Baby</en_name>
+			<tl_name dir="ltr">TL Baby</tl_name>
+			<image_color>face_10_om.png</image_color>
+			<image_gray>face_10_om_grey.png</image_gray>
+		</family-member>
+	</family-tree>
+</content>

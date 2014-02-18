@@ -1,0 +1,117 @@
+#mainContent
+{
+	height: 365px;
+	background-color: #CFD7D9;
+	margin-left: 18px;
+	width: 577px;
+}
+
+#mainContent #leftPane
+{
+	background-color: #CFD7D9;
+	width:427px;
+}
+
+#mainContent #rightPane
+{
+	background-color: #C4822F;
+	width:140px;
+	padding-left: 10px;
+	min-height: 365px;
+}
+
+#mainContent #title
+{
+	background-color: gray;
+	width: 600px;
+}
+
+#mainContent .title
+{
+	color: black;
+	font-weight: bold;
+}
+
+#mainContent .subTitle
+{
+	color: white;
+}
+
+.headerRow, .headerItem
+{
+	background-color: #591C57;
+	color: #F4F6FC;
+}
+
+.tableRow, .rowItem
+{
+	background-color: #CFD7D9;
+	color: #4E4A4F;
+	min-height: 20px;
+	padding-top: 4px;
+	font-size: 14px;
+
+}
+
+.headerItem, .rowItem
+{
+	float: left;
+	width: 105px;
+}
+
+.playBtn
+{
+	width:15px;
+}
+
+.keywordEditBox
+{
+	width: 80px;	
+	height: 11px;
+}
+
+#actionDiv
+{
+	background-color: #CFD7D9;
+}
+
+#translateDiv a, #hintDiv a
+{
+	color: #3D5677;	
+}
+
+#translateDiv
+{
+	float:left;
+}
+
+#hintDiv
+{
+	float:right;
+	padding-right: 10px;	
+}
+
+.keywordToggle
+{
+	display:none;
+}
+
+.rowBorderCorrect
+{
+	border: 1px solid blue;
+}
+
+.rowBorderWrong
+{
+	border: 1px solid red;
+}
+
+#feedBackStatus
+{
+	float: left;
+	margin-left: 15px;
+	margin-top: 7px;
+	font-size: 22px;
+	display: none;
+}
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content target_language="Spanish">
+
+  <set>
+ <image></image>
+ <psg audio="qb_l10_a4_fulltext.mp3"><![CDATA[Mañana, mi esposo y yo vamos a contratar nuestros teléfonos celulares y el internet con la compañía Movistar. A mi esposo le gusta mucho la tecnología. Le gusta escribir correos electrónicos y enviar mensajes de texto a sus amigos y familiares en el extranjero. También le gusta colgar fotos en Facebook.
+
+No me sorprende que le guste tanto la tecnología porque tiene una licenciatura en ciencias de la computación. Yo soy más tradicional y todavía me gusta escribirles cartas a mis amigos. Normalmente, voy al correo una vez por mes para comprar estampillas y postales.
+
+Este sábado, le quiero enviar un paquete a Raúl, mi hermano menor, que se acaba de mudar a Lima con su familia. Lo voy a llamar para que me dé su domicilio nuevo. Si no contesta le voy a dejar un mensaje.
+
+En el paquete, voy a poner su traje café y su certificado de matrimonio con el sello de la municipalidad. Él necesita este documento para presentar una solicitud de trabajo en la universidad “San Ignacio de Loyola.”
+]]></psg>
+ <titleTL dir="ltr"></titleTL>
+ <titleEN>Keeping in Touch</titleEN>
+    <seg>
+      <tl_seg dir="ltr" audio="qb_l10_a4_1.mp3"><![CDATA[Mañana, mi esposo y yo vamos a contratar nuestros teléfonos celulares y el internet con la compañía Movistar. A mi esposo le gusta mucho la tecnología. Le gusta escribir correos electrónicos y enviar mensajes de texto a sus amigos y familiares en el extranjero. También le gusta colgar fotos en Facebook.]]></tl_seg>
+      <en_seg><![CDATA[Tomorrow, my husband and I are going to connect our cell phones and Internet with the Movistar company. My husband is very technological. He likes writing emails and sending text messages to his friends and relatives abroad. He also likes to post pictures on Facebook.]]></en_seg>
+      <tl_seg_ans  dir="ltr"  audio=""><![CDATA[These people are getting new cell phones and internet hooked up tomorrow. The husband likes technology and often sends his friends and family emails and text messages.]]></tl_seg_ans>
+      <reason dir="ltr"><![CDATA[Remember that a summary is not a word for word translation.“Le gusta escribir correos electrónicos y enviar mensajes de texto a sus amigos y familiares en el extranjero” means “He likes writing emails and sending text messages to his friends and relatives abroad."<br /><br /><div dir="ltr"></div><br />]]></reason>
+    </seg>
+    <seg>
+      <tl_seg dir="ltr" audio="qb_l10_a4_2.mp3"><![CDATA[No me sorprende que le guste tanto la tecnología porque tiene una licenciatura en ciencias de la computación. Yo soy más tradicional y todavía me gusta escribirles cartas a mis amigos. Normalmente, voy al correo una vez por mes para comprar estampillas y postales.]]></tl_seg>
+      <en_seg><![CDATA[It doesn’t surprise me that he likes technology so much technological because he has a computer science degree. I am more traditional. I like writing letters to friends. Normally, I go to the post office to buy stamps and postcards.]]></en_seg>
+      <tl_seg_ans  dir="ltr"  audio=""><![CDATA[The wife is more traditional. She often goes to the post office for stamps and postcards to send to her friends.]]></tl_seg_ans>
+      <reason dir="ltr"><![CDATA[Focus on keywords in the paragraph. “A mí me gusta escribirles cartas,” means “I like writing letters,” and “voy al correo para comprar estampillas y postales” means “I go to the post office to buy stamps and postcards.”<br /><br /><div dir="ltr"></div><br />]]></reason>
+    </seg>
+    <seg>
+      <tl_seg dir="ltr" audio="qb_l10_a4_3.mp3"><![CDATA[Este sábado, le quiero enviar un paquete a Raúl, mi hermano menor, que se acaba de mudar a Lima con su familia. Lo voy a llamar para que me dé su domicilio nuevo. Si no contesta le voy a dejar un mensaje.]]></tl_seg>
+      <en_seg><![CDATA[This Saturday, I want to send a package to Raul, my younger brother, who has just moved to Lima with his family. I'll call him to get his new address. If he doesn’t answer, I will leave a voice message.]]></en_seg>
+      <tl_seg_ans  dir="ltr"  audio=""><![CDATA[She wants to mail her younger brother a package. He recently moved to Lima so she will call him to get his new address.]]></tl_seg_ans>
+      <reason dir="ltr"><![CDATA[Look for keywords and important details. “Le quiero enviar un paquete a Raúl, mi hermano menor, que se acaba de mudar a Lima con su familia.,” means “I want to send a package to Raul, my younger brother, who has just moved to Lima with his family.<br /><br /><div dir="ltr"></div><br />]]></reason>
+    </seg>
+    <seg>
+      <tl_seg dir="ltr" audio="qb_l10_a4_4.mp3"><![CDATA[En el paquete, voy a poner su traje café y su certificado de matrimonio con el sello de la municipalidad. Él necesita este documento para presentar una solicitud de trabajo en la universidad “San Ignacio de Loyola.”]]></tl_seg>
+      <en_seg><![CDATA[In the package, I will put his brown suit and his marriage certificate with the municipality stamp. He needs this document to apply for a job at the university San Ignacio de Loyola.]]></en_seg>
+      <tl_seg_ans  dir="ltr"  audio=""><![CDATA[The package will include his brown suit and official stamped copy of his marriage certificate.]]></tl_seg_ans>
+      <reason dir="ltr"><![CDATA[A summary is not a direct translation. “En el paquete, voy a poner su traje café y su certificado de matrimonio con el sello de la municipalidad,” means “In the package, I will put his brown suit and his marriage certificate with the municipality stamp.”<br /><br /><div dir="ltr"></div><br />]]></reason>
+    </seg>
+  </set>
+
+
+</content>

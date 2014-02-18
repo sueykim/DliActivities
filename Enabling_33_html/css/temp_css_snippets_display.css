@@ -1,0 +1,112 @@
+html, body {
+	background-image:none;
+	background-color:#f5f5f5;
+	margin:0;
+}
+
+#activity_wrapper {
+	height:700px;		/*  Change as needed-- Variable will have to be passed up to main framework */
+	width:910px;
+	margin-top:-5px;
+	/*margin-right: -12px;*/
+	 
+}
+
+.margin_15 {
+	margin: 15px;
+}
+
+
+.test_div {  	/* DIV FOR TESTING STYLES */
+	width: 175px;
+	height: 220px;
+}
+
+.radios { /* TEMP */
+	width: 200px;
+	float: left;
+}
+.checks { /* TEMP */
+	width: 200px;
+	margin-left:-22px;
+	float: left;
+}
+
+
+#setText {
+	text-align: center;
+	left: 6px;
+	right: 0px;
+	top: 6px;
+	bottom: 0px;
+}
+
+
+#container_setDiv{
+    height: 100px;
+	padding:5px;
+    width: 150px;
+}
+
+#setDiv {
+	height: 30px;
+	width: 40px;
+	position: relative;
+}
+
+#debugPanel {
+    
+}
+
+#feedback {
+    left: 569px;
+    max-height: 150px;
+    min-height: 150px;
+    padding: 15px;
+    position: relative;
+    top: 238px;
+    width: 320px;
+    z-index: 100;
+}
+
+
+/* ---------- BEGIN Play Btn Large ------------ */
+.playBtn {
+	/*width: 55px;
+	height: 55px;*/
+}
+
+
+/* ---------- BEGIN Video Container ------------ */
+#videoContainer {
+	
+}
+
+/* ----------BEGIN DROP TARGETS ------------ */
+.ui-droppable {
+	height:40px; 	/*  TEMP HEIGHT FOR DISPLAY */
+	width: 150px;	/*  TEMP WIDTH FOR DISPLAY */
+}
+
+.dropTargetText {
+	
+}
+
+.droppable {	
+	height:40px; 	/*  TEMP HEIGHT FOR DISPLAY */
+	width: 150px;	/*  TEMP WIDTH FOR DISPLAY */
+}
+
+
+/* ----------BEGIN DRAG BUBBLES ------------ */
+
+.dragBubble {
+	height:40px; 	/*  TEMP HEIGHT FOR DISPLAY */
+	width: 150px;	/*  TEMP WIDTH FOR DISPLAY */
+}
+
+.dragBubble:hover {
+
+}
+
+/* ----------END DRAG BUBBLES ------------ */

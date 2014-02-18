@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content target_language="Japanese">
+  <section>
+      <enColor>#BBBBBB</enColor> 
+      <media_sel>video</media_sel>
+      <image></image>
+      <audio></audio>
+      <video>ja_l05_a5_01.mp4</video>
+ <tl_sentences> 
+ <!--<tl_sentence dir="ltr">はじめまして。かわむら です。北海道 出身 です。</tl_sentence>-->
+   <tl_sentence dir="ltr"><![CDATA[はじめまして。||かわむら&nbsp;||です。||北((ほっ))海((かい))道((どう))&nbsp;||出身&nbsp;||です。]]></tl_sentence>
+ </tl_sentences> 
+ <en_sentences> 
+ <en_sentence dir="">Nice to meet you. I'm Kawamura.  I am from Hokkaido.</en_sentence>
+ </en_sentences>
+    <item>
+      <tl_word posit="3,6" dir="ltr" >日((に))です</tl_word>
+      <feedback dir="ltr"><![CDATA[Listen to the Japanese verb to be.]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="5" dir="ltr" >しゅっしん</tl_word>
+      <feedback dir="ltr"><![CDATA[Listen to the word that indicates “hometown”.]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="4" dir="ltr" >ほっかいどう</tl_word>
+      <feedback dir="ltr"><![CDATA[Listen to the name of the speaker’s hometown.]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="1" dir="ltr" >はじめまして</tl_word>
+      <feedback dir="ltr"><![CDATA[Listen to the greeting used when meeting someone for the first time.]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="2" dir="ltr" >かわむら</tl_word>
+      <feedback dir="ltr"><![CDATA[Listen to the name of the speaker.]]></feedback>
+    </item>
+    <distractor>
+      <dist_word dir="ltr">日((に))きむら</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">こんにちは</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">よろしく</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr"></dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr"></dist_word>
+    </distractor>
+  </section>
+  <section>
+      <enColor>#BBBBBB</enColor> 
+      <media_sel>video</media_sel>
+      <image></image>
+      <audio></audio>
+      <video>ja_l05_a5_02.mp4</video>
+ <tl_sentences> 
+ <!--<tl_sentence dir="ltr">陸軍の井上少佐です。よろしくお願いします。</tl_sentence>-->
+   <tl_sentence dir="ltr">陸軍||の||井上||少佐||です。||よろしくお願いします。 よろしくお願いします。</tl_sentence>
+ <tl_sentence dir="ltr">陸軍||の||井上||少佐||です。||よろしくお願いします。</tl_sentence>
+ </tl_sentences> 
+ <en_sentences> 
+ <en_sentence dir="">I’m Major Inoue of the Army.  Nice to meet you.</en_sentence>
+ <en_sentence dir="">I’m Major Inoue of the Army.  Nice to meet you.</en_sentence>
+ </en_sentences>
+    <item>
+      <tl_word posit="4" dir="ltr" >しょうさ</tl_word>
+      <feedback dir="ltr"><![CDATA[Listen to the military rank.]]></feedback>
+    </item>
+    <!--<item>
+      <tl_word posit="" dir="ltr" ></tl_word>
+      <feedback dir="ltr"><![CDATA[]]></feedback>
+    </item>-->
+    <item>
+      <tl_word posit="3" dir="ltr" >いのうえ</tl_word>
+      <feedback dir="ltr"><![CDATA[Listen to the name of the speaker.]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="1" dir="ltr" >りくぐん</tl_word>
+      <feedback dir="ltr"><![CDATA[Listen to the military affiliation.]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="5" dir="ltr" >です</tl_word>
+      <feedback dir="ltr"><![CDATA[Listen to the Japanese verb to be.]]></feedback>
+    </item>
+    <distractor>
+      <dist_word dir="ltr">よろしく</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">します</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">ちゅうさ</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">おねがい</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">かいぐん</dist_word>
+    </distractor>
+  </section>
+  <!-- 
+  <section>
+      <enColor>#BBBBBB</enColor> 
+      <media_sel>video</media_sel>
+      <image></image>
+      <audio></audio>
+      <video>ja_l05_a5_03.mp4</video>
+ <tl_sentences> 
+ <tl_sentence dir="ltr">京都大学の中田です。日本語専門です。</tl_sentence>
+ </tl_sentences> 
+ <en_sentences> 
+ <en_sentence dir="">I’m Nakata from Kyoto University.  My field  is Japanese.</en_sentence>
+ </en_sentences>
+    <item>
+      <tl_word posit="1" dir="ltr" >きょうと</tl_word>
+      <feedback dir="ltr"><![CDATA[Listen to the name of the city.]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="6" dir="ltr" >にほんご</tl_word>
+      <feedback dir="ltr"><![CDATA[Listen to the name of the language.]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="" dir="ltr" ></tl_word>
+      <feedback dir="ltr"><![CDATA[]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="3" dir="ltr" >の</tl_word>
+      <feedback dir="ltr"><![CDATA[Listen to the connective particle meaning “of” or “from”]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="2" dir="ltr" >だいがく</tl_word>
+      <feedback dir="ltr"><![CDATA[Listen to the name of the academic institution.]]></feedback>
+    </item>
+    <distractor>
+      <dist_word dir="ltr">とうきょう</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">たなか</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr"></dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr"></dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr"></dist_word>
+    </distractor>
+  </section>
+  <section>
+      <enColor>#BBBBBB</enColor> 
+      <media_sel>video</media_sel>
+      <image></image>
+      <audio></audio>
+      <video>ja_l05_a5_04.mp4</video>
+ <tl_sentences> 
+ <tl_sentence dir="ltr">空軍の木村大佐です。神戸出身です。</tl_sentence>
+ </tl_sentences> 
+ <en_sentences> 
+ <en_sentence dir="">I’m Colonel Kimura of the Air Force.  I’m from Kobe.</en_sentence>
+ </en_sentences>
+    <item>
+      <tl_word posit="6" dir="ltr" >こうべ</tl_word>
+      <feedback dir="ltr"><![CDATA[Listen to the name of the city.]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="2" dir="ltr" >の</tl_word>
+      <feedback dir="ltr"><![CDATA[Listen to the connective particle meaning “of” or “from”.]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="5,8" dir="ltr" >です</tl_word>
+      <feedback dir="ltr"><![CDATA[Listen to the Japanese verb to be.]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="4" dir="ltr" >たいさ</tl_word>
+      <feedback dir="ltr"><![CDATA[Listen to the military rank.]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="1" dir="ltr" >くうぐん</tl_word>
+      <feedback dir="ltr"><![CDATA[Listen to the military affiliation.]]></feedback>
+    </item>
+    <distractor>
+      <dist_word dir="ltr">たいい</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">りくぐん</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr"></dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr"></dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr"></dist_word>
+    </distractor>
+  </section>
+  <section>
+      <enColor>#BBBBBB</enColor> 
+      <media_sel>video</media_sel>
+      <image></image>
+      <audio></audio>
+      <video>ja_l05_a5_05.mp4</video>
+ <tl_sentences> 
+ <tl_sentence dir="ltr">こんにちは。東芝の小山です。どうぞよろしく。</tl_sentence>
+ </tl_sentences> 
+ <en_sentences> 
+ <en_sentence dir="">Goof afternoon.  I’m Koyama from Toshiba Co.  Nice to meet you.</en_sentence>
+ </en_sentences>
+    <item>
+      <tl_word posit="1" dir="ltr" >こんにちは。</tl_word>
+      <feedback dir="ltr"><![CDATA[Listen to the greeting.]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="4" dir="ltr" >こやま</tl_word>
+      <feedback dir="ltr"><![CDATA[Listen to the name of the speaker.]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="6" dir="ltr" >どうぞ</tl_word>
+      <feedback dir="ltr"><![CDATA[Listen to the word meaning “please”.]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="3" dir="ltr" >の</tl_word>
+      <feedback dir="ltr"><![CDATA[Listen to the connective particle meaning “of” or “from”.]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="2" dir="ltr" >とうしば</tl_word>
+      <feedback dir="ltr"><![CDATA[Listen to the name of the Japanese company.]]></feedback>
+    </item>
+    <distractor>
+      <dist_word dir="ltr">こんばんは。</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">おねがい</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">とよた</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr"></dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr"></dist_word>
+    </distractor>
+  </section>
+  -->
+
+</content>

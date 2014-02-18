@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content hw="true" target_language="Japanese">
+  <title>
+    <english>Departures</english>
+    <trans dir="ltr">Departures</trans>
+  </title>
+  <set id="0" audio="ja_l09_a5_65.mp3">
+    <english><![CDATA[Guam]]></english>
+    <translation dir="rtl" audio="ja_l09_a5_01.mp3"><![CDATA[グアム]]></translation>
+    <time_english><![CDATA[09:25]]></time_english>
+    <time_tl dir="rtl" hour="九時" min="二十五分" audio="ja_l09_a5_32.mp3"><![CDATA[九時 二十五分]]></time_tl>
+    <q><![CDATA[What time does the flight to Guam depart?]]></q>
+    <filler airline="JAW" flight="JW941" gate="C05" />
+    <hint><![CDATA[グアム means Guam.]]></hint>
+    <feedback><![CDATA[]]></feedback>
+  </set>
+  <set id="1" audio="ja_l09_a5_66.mp3">
+    <english><![CDATA[Singapore]]></english>
+    <translation dir="rtl" audio="ja_l09_a5_20.mp3"><![CDATA[シンガポール]]></translation>
+    <time_english><![CDATA[10:50]]></time_english>
+    <time_tl dir="rtl" hour="十時" min="五十分" audio="ja_l09_a5_33.mp3"><![CDATA[十時 五十分]]></time_tl>
+    <q><![CDATA[What time does the flight to Singapore depart?]]></q>
+    <filler airline="JAW" flight="JW719" gate="C58" />
+    <hint><![CDATA[シンガポール means Singapore.]]></hint>
+    <feedback><![CDATA[]]></feedback>
+  </set>
+  <set id="2" audio="ja_l09_a5_67.mp3">
+    <english><![CDATA[Sydney]]></english>
+    <translation dir="rtl" audio="ja_l09_a5_02.mp3"><![CDATA[シドニー]]></translation>
+    <time_english><![CDATA[19:50]]></time_english>
+    <time_tl dir="rtl" hour="十九時" min="五十分" audio="ja_l09_a5_34.mp3"><![CDATA[十九時 五十分]]></time_tl>
+    <q><![CDATA[What time does the flight to Sydney depart?]]></q>
+    <filler airline="JAW" flight="JW077" gate="C22" />
+    <hint><![CDATA[シドニー means Sydney.]]></hint>
+    <feedback><![CDATA[]]></feedback>
+  </set>
+  <set id="3" audio="ja_l09_a5_68.mp3">
+    <english><![CDATA[Honolulu]]></english>
+    <translation dir="rtl" audio="ja_l09_a5_03.mp3"><![CDATA[ホノルル]]></translation>
+    <time_english><![CDATA[20:15]]></time_english>
+    <time_tl dir="rtl" hour="二十時" min="十五分" audio="ja_l09_a5_35.mp3"><![CDATA[二十時 十五分]]></time_tl>
+    <q><![CDATA[When does the flight to Honolulu depart?]]></q>
+    <filler airline="JAW" flight="JW076" gate="C37" />
+    <hint><![CDATA[ホノルル means Honolulu.]]></hint>
+    <feedback><![CDATA[]]></feedback>
+  </set>
+  <set id="4" audio="ja_l09_a5_69.mp3">
+    <english><![CDATA[Moscow]]></english>
+    <translation dir="rtl" audio="ja_l09_a5_04.mp3"><![CDATA[モスクワ]]></translation>
+    <time_english><![CDATA[10:45]]></time_english>
+    <time_tl dir="rtl" hour="十時" min="四十五分" audio="ja_l09_a5_36.mp3"><![CDATA[十時 四十五分]]></time_tl>
+    <q><![CDATA[When does the flight to Moscow depart?]]></q>
+    <filler airline="NAL" flight="NL441" gate="A08" />
+    <hint><![CDATA[モスクワ means Moscow.]]></hint>
+    <feedback><![CDATA[]]></feedback>
+  </set>
+  <set id="5" audio="ja_l09_a5_70.mp3">
+    <english><![CDATA[Paris]]></english>
+    <translation dir="rtl" audio="ja_l09_a5_05.mp3"><![CDATA[パリ]]></translation>
+    <time_english><![CDATA[11:05]]></time_english>
+    <time_tl dir="rtl" hour="十一時" min="五分" audio="ja_l09_a5_37.mp3"><![CDATA[十一時 五分]]></time_tl>
+    <q><![CDATA[What time does the flight to Paris depart?]]></q>
+    <filler airline="NAL" flight="NL405" gate="A45" />
+    <hint><![CDATA[パリ means Paris.]]></hint>
+    <feedback><![CDATA[]]></feedback>
+  </set>
+  <set id="7" audio="ja_l09_a5_72.mp3">
+    <english><![CDATA[Helsinki]]></english>
+    <translation dir="rtl" audio="ja_l09_a5_07.mp3"><![CDATA[ヘルシンキ]]></translation>
+    <time_english><![CDATA[12:25]]></time_english>
+    <time_tl dir="rtl" hour="十二時" min="二十五分" audio="ja_l09_a5_40.mp3"><![CDATA[十二時 二十五分]]></time_tl>
+    <q><![CDATA[What time does the flight to Helsinki depart?]]></q>
+    <filler airline="NAL" flight="NL413" gate="A27" />
+    <hint><![CDATA[ヘルシンキ means Helsinki.]]></hint>
+    <feedback><![CDATA[]]></feedback>
+  </set>
+<!--  <set id="8" audio="ja_l09_a5_73.mp3">
+    <english><![CDATA[Frankfurt]]></english>
+    <translation dir="rtl" audio="ja_l09_a5_08.mp3"><![CDATA[フランクフルト]]></translation>
+    <time_english><![CDATA[12:30]]></time_english>
+    <time_tl dir="rtl" hour="" min="" audio="ja_l09_a5_39.mp3"><![CDATA[]]></time_tl>
+    <q><![CDATA[What time does the flight to Frankfurt depart?]]></q>
+    <filler airline="NAL" flight="NL407" gate="A36" />
+    <hint><![CDATA[フランクフルト means Frankfurt.]]></hint>
+    <feedback><![CDATA[]]></feedback>
+  </set>
+  <set id="9" audio="ja_l09_a5_74.mp3">
+    <english><![CDATA[Dubai]]></english>
+    <translation dir="rtl" audio="ja_l09_a5_09.mp3"><![CDATA[ドバイ]]></translation>
+    <time_english><![CDATA[12:00]]></time_english>
+    <time_tl dir="rtl" hour="" min="" audio="ja_l09_a5_46.mp3"><![CDATA[]]></time_tl>
+    <q><![CDATA[What time does the flight to Dubai depart?]]></q>
+    <filler airline="DAL" flight="NL5095" gate="A02" />
+    <hint><![CDATA[ドバイ means Dubai.]]></hint>
+    <feedback><![CDATA[]]></feedback>
+  </set>
+  <set id="10" audio="ja_l09_a5_75.mp3">
+    <english><![CDATA[San Francisco]]></english>
+    <translation dir="rtl" audio="ja_l09_a5_10.mp3	"><![CDATA[サンフランシスコ]]></translation>
+    <time_english><![CDATA[00:05]]></time_english>
+    <time_tl dir="rtl" hour="" min="" audio="ja_l09_a5_42.mp3"><![CDATA[]]></time_tl>
+    <q><![CDATA[What time does the flight to San Francisco depart?]]></q>
+    <filler airline="AMC" flight="AC002" gate="D26" />
+    <hint><![CDATA[サンフランシスコ means San Francisco.]]></hint>
+    <feedback><![CDATA[]]></feedback>
+  </set>
+  <set id="11" audio="ja_l09_a5_76.mp3">
+    <english><![CDATA[Chicago]]></english>
+    <translation dir="rtl" audio="ja_l09_a5_11.mp3	"><![CDATA[シカゴ]]></translation>
+    <time_english><![CDATA[11:00]]></time_english>
+    <time_tl dir="rtl" hour="" min="" audio="ja_l09_a5_43.mp3"><![CDATA[]]></time_tl>
+    <q><![CDATA[What time does the flight to Chicago depart?]]></q>
+    <filler airline="AMC" flight="AC413" gate="D23" />
+    <hint><![CDATA[シカゴ means Chicago.]]></hint>
+    <feedback><![CDATA[]]></feedback>
+  </set>
+  <set id="12" audio="ja_l09_a5_77.mp3">
+    <english><![CDATA[New York]]></english>
+    <translation dir="rtl" audio="ja_l09_a5_12.mp3	"><![CDATA[ニューヨーク]]></translation>
+    <time_english><![CDATA[11:10]]></time_english>
+    <time_tl dir="rtl" hour="" min="" audio="ja_l09_a5_44.mp3"><![CDATA[]]></time_tl>
+    <q><![CDATA[What time does the flight to New York depart?]]></q>
+    <filler airline="UTD" flight="UD008" gate="D18" />
+    <hint><![CDATA[ニューヨーク means New York.]]></hint>
+    <feedback><![CDATA[]]></feedback>
+  </set>
+  <set id="13" audio="ja_l09_a5_78.mp3">
+    <english><![CDATA[Boston]]></english>
+    <translation dir="rtl" audio="ja_l09_a5_13.mp3"><![CDATA[ボストン]]></translation>
+    <time_english><![CDATA[11:40]]></time_english>
+    <time_tl dir="rtl" hour="" min="" audio="ja_l09_a5_45.mp3"><![CDATA[]]></time_tl>
+    <q><![CDATA[What time does the flight to Boston depart?]]></q>
+    <filler airline="SWT" flight="ST5095" gate="D07" />
+    <hint><![CDATA[ボストン means Boston.]]></hint>
+    <feedback><![CDATA[]]></feedback>
+  </set>
+  <set id="14" audio="ja_l09_a5_79.mp3">
+    <english><![CDATA[Dallas]]></english>
+    <translation dir="rtl" audio="ja_l09_a5_14.mp3"><![CDATA[ダラス]]></translation>
+    <time_english><![CDATA[12:00]]></time_english>
+    <time_tl dir="rtl" hour="" min="" audio="ja_l09_a5_46.mp3"><![CDATA[]]></time_tl>
+    <q><![CDATA[What time does the flight to Dallas depart?]]></q>
+    <filler airline="UTD" flight="UD407" gate="D43" />
+    <hint><![CDATA[ダラス means Dallas.]]></hint>
+    <feedback><![CDATA[]]></feedback>
+  </set>
+  <set id="15" audio="ja_l09_a5_80.mp3">
+    <english><![CDATA[Los Angeles]]></english>
+    <translation dir="rtl" audio="ja_l09_a5_15.mp3"><![CDATA[ロサンジェルス]]></translation>
+    <time_english><![CDATA[17:10]]></time_english>
+    <time_tl dir="rtl" hour="" min="" audio="ja_l09_a5_47.mp3"><![CDATA[]]></time_tl>
+    <q><![CDATA[What time does the flight to Los Angeles depart?]]></q>
+    <filler airline="SKY" flight="SY62" gate="D26" />
+    <hint><![CDATA[ロサンジェルス means Los Angeles.]]></hint>
+    <feedback><![CDATA[]]></feedback>
+  </set>
+  <set id="16" audio="ja_l09_a5_81.mp3">
+    <english><![CDATA[San Diego]]></english>
+    <translation dir="rtl" audio="ja_l09_a5_16.mp3	"><![CDATA[サンディエゴ]]></translation>
+    <time_english><![CDATA[17:10]]></time_english>
+    <time_tl dir="rtl" hour="" min="" audio="ja_l09_a5_47.mp3"><![CDATA[]]></time_tl>
+    <q><![CDATA[What time does the flight to San Diego depart?]]></q>
+    <filler airline="DLA" flight="DA7016" gate="D03" />
+    <hint><![CDATA[サンディエゴ means San Diego.]]></hint>
+    <feedback><![CDATA[]]></feedback>
+  </set>
+  <set id="17" audio="ja_l09_a5_82.mp3">
+    <english><![CDATA[Vancouver]]></english>
+    <translation dir="rtl" audio="ja_l09_a5_17.mp3"><![CDATA[バンクーバー]]></translation>
+    <time_english><![CDATA[18:05]]></time_english>
+    <time_tl dir="rtl" hour="" min="" audio="ja_l09_a5_48.mp3"><![CDATA[]]></time_tl>
+    <q><![CDATA[What time does the flight to Vancouver depart?]]></q>
+    <filler airline="ALS" flight="AS401" gate="D31" />
+    <hint><![CDATA[バンクーバー means Vancouver.]]></hint>
+    <feedback><![CDATA[]]></feedback>
+  </set> -->
+
+</content>

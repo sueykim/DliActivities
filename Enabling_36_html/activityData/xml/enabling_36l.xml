@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content target_language="Test" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart" rtl="false" options="video only">
+<title>Enabling 36 | Reading Comprehension</title>
+<instruction>Read the entire passage below. Click on bold words to see english translation. Check all statements that...checks boxes of applicable summary statements and leaves boxes of the statements that do not apply to the passage empty. Remember that you can have three times to check your answers.</instruction>
+	<set>
+		<note dir="ltr"> <![CDATA[cultural or linguistic note if needed]]></note>
+		<image>set_1_img.png</image>
+		  <video>artillery.flv</video>
+	  <audio>artillery.mp3</audio>
+		<tl_txt dir="ltr"><![CDATA[Ella es una mujer <a href='event:red'><b>rubia</b></a> y lleva un <a href='event:uniform'><b>uniforme</b></a> militar.]]></tl_txt>
+		<first_hint>
+			<![CDATA[  english appropriate hints for first incorrect response for this set ]]>
+		</first_hint>
+		<second_hint>
+			<![CDATA[  english appropriate general hints for second incorrect response for this set ]]>
+		</second_hint>
+		<statment>
+			<txt crrt="false"><![CDATA[English statment 1]]></txt>
+			<intermediate_fdbk><![CDATA[feedback for second wrong for this item ]]></intermediate_fdbk>
+			<terminal_fdbk><![CDATA[feedback Justification for why this statement doesn't apply ]]></terminal_fdbk>
+		</statment>
+		<statment>
+			<txt  crrt="false"><![CDATA[English statment 2]]></txt>
+			<intermediate_fdbk><![CDATA[feedback for second wrong for this item ]]></intermediate_fdbk>
+			<terminal_fdbk><![CDATA[feedback Justification for why this statement doesn't apply ]]></terminal_fdbk>
+		</statment>
+		<statment>
+			<txt crrt="true"><![CDATA[English statment 3]]></txt>
+			<intermediate_fdbk><![CDATA[feedback for second wrong for this item ]]></intermediate_fdbk>
+			<terminal_fdbk><![CDATA[feedback Justification for this statement apply ]]></terminal_fdbk>
+		</statment>
+		<statment>
+			<txt crrt="true"><![CDATA[English statment 4]]></txt>
+			<intermediate_fdbk><![CDATA[feedback for second wrong for this item ]]></intermediate_fdbk>
+			<terminal_fdbk><![CDATA[feedback Justification for this statement apply ]]></terminal_fdbk>
+		</statment>
+		<statment>
+			<txt  crrt="false"><![CDATA[English statment 5]]></txt>
+			<intermediate_fdbk><![CDATA[feedback for second wrong for this item ]]></intermediate_fdbk>
+			<terminal_fdbk><![CDATA[feedback Justification for why this statement doesn't apply ]]></terminal_fdbk>
+		</statment>
+		<statment>
+			<txt  crrt="false"><![CDATA[English statment 6]]></txt>
+			<intermediate_fdbk><![CDATA[feedback for second wrong for this item ]]></intermediate_fdbk>
+			<terminal_fdbk><![CDATA[feedback Justification for why this statement doesn't apply ]]></terminal_fdbk>
+		</statment>
+	</set>
+	<set>
+		<note dir="ltr"> <![CDATA[cultural or linguistic note if needed]]></note>
+		<image>set_2_img.png</image>
+		<video>bomb.flv</video>
+	  <audio>bomb.mp3</audio>
+		<tl_txt dir="ltr"><![CDATA[Ella es una mujer <a href='event:red'><b>rubia</b></a> y lleva un <a href='event:uniform'><b>uniforme</b></a> militar.]]></tl_txt>
+		<first_hint>
+			<![CDATA[  english appropriate hints for first incorrect response for this set ]]>
+		</first_hint>
+		<second_hint>
+			<![CDATA[  english appropriate general hints for second incorrect response for this set ]]>
+		</second_hint>
+		<statment>
+			<txt crrt="true"><![CDATA[English statment 1]]></txt>
+			<intermediate_fdbk><![CDATA[feedback for second wrong for this item ]]></intermediate_fdbk>
+			<terminal_fdbk><![CDATA[feedback Justification for this statement apply  ]]></terminal_fdbk>
+		</statment>
+		<statment>
+			<txt  crrt="false"><![CDATA[English statment 2]]></txt>
+			<intermediate_fdbk><![CDATA[feedback for second wrong for this item ]]></intermediate_fdbk>
+			<terminal_fdbk><![CDATA[feedback Justification for this statement doesn't not apply answer]]></terminal_fdbk>
+		</statment>
+		<statment>
+			<txt crrt="true"><![CDATA[English statment 3]]></txt>
+			<intermediate_fdbk><![CDATA[feedback for second wrong for this item ]]></intermediate_fdbk>
+			<terminal_fdbk><![CDATA[feedback Justification for this statement apply ]]></terminal_fdbk>
+		</statment>
+		<statment>
+			<txt crrt="true"><![CDATA[English statment 4]]></txt>
+			<intermediate_fdbk><![CDATA[feedback for second wrong for this item ]]></intermediate_fdbk>
+			<terminal_fdbk><![CDATA[feedback Justification for this statement apply ]]></terminal_fdbk>
+		</statment>
+		<statment>
+			<txt  crrt="false"><![CDATA[English statment 5]]></txt>
+			<intermediate_fdbk><![CDATA[feedback for second wrong for this item ]]></intermediate_fdbk>
+			<terminal_fdbk><![CDATA[feedback Justification for this statement doesn't not apply answer]]></terminal_fdbk>
+		</statment>
+		<statment>
+			<txt  crrt="false"><![CDATA[English statment 6]]></txt>
+			<intermediate_fdbk><![CDATA[feedback for second wrong for this item ]]></intermediate_fdbk>
+			<terminal_fdbk><![CDATA[feedback Justification for this statement doesn't not apply answer]]></terminal_fdbk>
+		</statment>
+	</set>
+</content>

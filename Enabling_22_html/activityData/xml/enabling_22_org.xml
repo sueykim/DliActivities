@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content hw="true" target_language="Japanese">
+  <section>
+      <enColor>#BBBBBB</enColor> 
+      <media_sel>video</media_sel>
+      <image>ja_l01_a5_01.png</image>
+      <audio>ja_l01_a5_01.mp3</audio>
+      <video>ja_l01_a5_01.mp4</video>
+ <tl_sentences> 
+ <tl_sentence dir="ltr">Sensei, shitsumon ga arimasu. </tl_sentence>
+ </tl_sentences> 
+ <en_sentences> 
+ <en_sentence dir="">Teacher, I have a question.</en_sentence>
+ </en_sentences>
+    <item>
+      <tl_word posit="1" dir="ltr" >sensei</tl_word>
+      <feedback dir="ltr"><![CDATA[<b>Sensei</b> means <i>teacher</i> or <i>master.</i> This title can be used in conjunction with a proper name.]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="2" dir="ltr" >shitsumon</tl_word>
+      <feedback dir="ltr"><![CDATA[<b>Shitsumon</b> means <i>question.</i> ]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="3" dir="ltr" >ga</tl_word>
+      <feedback dir="ltr"><![CDATA[The particle <b>ga</b> in this sentence is to emphasize the subject <i>question.</i>]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="4" dir="ltr" >arimasu</tl_word>
+      <feedback dir="ltr"><![CDATA[<b>Arimasu</b> is the present polite form of the verb <b>aru</b> meaning <i>to have</i> or <i>to exist.</i>]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="" dir="ltr" ></tl_word>
+      <feedback dir="ltr"><![CDATA[]]></feedback>
+    </item>
+       <distractor>
+      <dist_word dir="ltr">gakusei</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">sumimasen</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">shitsurei</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">shimasu</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr"></dist_word>
+    </distractor>
+  </section>
+  <section>
+      <enColor>#BBBBBB</enColor> 
+      <media_sel>video</media_sel>
+      <image>ja_l01_a5_02.png</image>
+      <audio>ja_l01_a5_02.mp3</audio>
+      <video>ja_l01_a5_02.mp4</video>
+ <tl_sentences> 
+ <tl_sentence dir="ltr">Jaa, mata raishuu. </tl_sentence>
+ <tl_sentence dir="ltr">Shitsurei shimasu.</tl_sentence>
+ </tl_sentences> 
+ <en_sentences> 
+ <en_sentence dir="">See you next week. </en_sentence>
+ <en_sentence dir="">With your permission.</en_sentence>
+ </en_sentences>
+    <item>
+      <tl_word posit="1" dir="ltr" >jaa</tl_word>
+      <feedback dir="ltr"><![CDATA[<b>Jaa</b> means <i>well</i> and it is used when a person is about to take leave of someone. ]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="2" dir="ltr" >mata</tl_word>
+      <feedback dir="ltr"><![CDATA[]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="3" dir="ltr" >raishuu</tl_word>
+      <feedback dir="ltr"><![CDATA[<b>Raishuu</b> means <i>next week.</i> ]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="4" dir="ltr" >shitsurei</tl_word>
+      <feedback dir="ltr"><![CDATA[<b>Shitsurei</b> means <i>excuse me.</i>]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="5" dir="ltr" >shimasu</tl_word>
+      <feedback dir="ltr"><![CDATA[<b>Shimasu</b> is the present polite form of the verb <b>suru</b> meaning <i>to do.</i>]]></feedback>
+    </item>
+    <distractor>
+      <dist_word dir="ltr">ashita</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">shitsumon</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">hai</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr"></dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr"></dist_word>
+    </distractor>
+  </section>
+  <section>
+      <enColor>#BBBBBB</enColor> 
+      <media_sel>video</media_sel>
+      <image>ja_l01_a5_04.png</image>
+      <audio>ja_l01_a5_04.mp3</audio>
+      <video>ja_l01_a5_04.mp4</video>
+ <tl_sentences> 
+ <tl_sentence dir="ltr">Moo sukoshi yukkuri itte kudasai.</tl_sentence>
+ </tl_sentences> 
+ <en_sentences> 
+ <en_sentence dir="">Could you say it a little slower, please.</en_sentence>
+ </en_sentences>
+    <item>
+      <tl_word posit="1" dir="ltr" >moo</tl_word>
+      <feedback dir="ltr"><![CDATA[]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="2" dir="ltr" >sukoshi</tl_word>
+      <feedback dir="ltr"><![CDATA[<b>Sukoshi</b> means <i>a little.</i>]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="3" dir="ltr" >yukkuri</tl_word>
+      <feedback dir="ltr"><![CDATA[<b>Yukkuri</b> means <i>slowly.</i>]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="4" dir="ltr" >itte</tl_word>
+      <feedback dir="ltr"><![CDATA[<b>Itte</b> is the <b>-te</b> form of the verb <b>iu</b> meaning <i>to say.</i>]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="5" dir="ltr" >kudasai </tl_word>
+      <feedback dir="ltr"><![CDATA[<b>Kudasai</b> means <i>please</i> and it also used to express a request.]]></feedback>
+    </item>
+    <distractor>
+      <dist_word dir="ltr">mada</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">desu</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">chotto</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">matte</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">genki</dist_word>
+    </distractor>
+  </section>
+  <section>
+      <enColor>#BBBBBB</enColor> 
+      <media_sel>video</media_sel>
+    <image>ja_l01_a5_05.png</image>
+      <audio></audio>
+      <video>ja_l01_a5_05.mp4</video>
+ <tl_sentences> 
+ <tl_sentence dir="ltr">Hai, okagesama de genki desu.</tl_sentence>
+ </tl_sentences> 
+ <en_sentences> 
+ <en_sentence dir="">Yes, thank you, I am doing fine. </en_sentence>
+ </en_sentences>
+    <item>
+      <tl_word posit="1" dir="ltr" >hai</tl_word>
+      <feedback dir="ltr"><![CDATA[<b>Hai</b> means <i>yes</i> and the <i>h</i> is pronounced the same way as the English <i>h.</i> ]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="2" dir="ltr" >okagesama</tl_word>
+      <feedback dir="ltr"><![CDATA[<b>Okagesama</b> means <i>I am feeling well (thanks to you).</i> One's well being is due to God and others, including the person who one is talking to.]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="3" dir="ltr" >de</tl_word>
+      <feedback dir="ltr"><![CDATA[<b>De</b> is a particle that belongs to the expression <b>Okagesama.</b>]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="4" dir="ltr" >genki</tl_word>
+      <feedback dir="ltr"><![CDATA[<b>Genki</b> means <i>health</i> or <i>energy.</i> When asking others about their well being one should use the honorific <b>o,</b> a mark of respect, as in <b>ogenki.</b>]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="5" dir="ltr" >desu</tl_word>
+      <feedback dir="ltr"><![CDATA[<b>Desu</b> means <i>to be</i> or <i>is.</i>]]></feedback>
+    </item>
+    <distractor>
+      <dist_word dir="ltr">gakusei</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">shimasu</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">sukoshi</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">mata</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">ga</dist_word>
+    </distractor>
+  </section>
+  <section>
+      <enColor>#BBBBBB</enColor> 
+      <media_sel>video</media_sel>
+    <image>ja_l01_a5_06.png</image>
+      <audio></audio>
+      <video>ja_l01_a5_06.mp4</video>
+ <tl_sentences> 
+ <tl_sentence dir="ltr">Iie, mada desu. </tl_sentence>
+ <tl_sentence dir="ltr">Chotto matte kudasai.</tl_sentence>
+ </tl_sentences> 
+ <en_sentences> 
+ <en_sentence dir="">No, not yet. </en_sentence>
+ <en_sentence dir="">Wait a moment please.</en_sentence>
+ </en_sentences>
+    <item>
+      <tl_word posit="1" dir="ltr" >iie</tl_word>
+      <feedback dir="ltr"><![CDATA[<b>Iie</b> means <i>no.</i> ]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="2" dir="ltr" >mada</tl_word>
+      <feedback dir="ltr"><![CDATA[<b>Mada</b> means <i>not yet</i> and it is usually used verbs in their negative form. ]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="3" dir="ltr" >desu</tl_word>
+      <feedback dir="ltr"><![CDATA[<b>Desu</b> means <i>to be</i> or <i>is.</i>]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="4" dir="ltr" >chotto</tl_word>
+      <feedback dir="ltr"><![CDATA[<b>Chotto</b> means <i>a little.</i>]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="5" dir="ltr" >matte</tl_word>
+      <feedback dir="ltr"><![CDATA[<b>Matte</b> is the <b>-te</b> form of the verb <b>matsu</b> meaning <i>to wait.</i>]]></feedback>
+    </item>
+    <item>
+      <tl_word posit="6" dir="ltr" >kudasai</tl_word>
+      <feedback dir="ltr"><![CDATA[<b>Kudasai</b> means <i>please</i> and it also used to express a request.]]></feedback>
+    </item>
+    <distractor>
+      <dist_word dir="ltr">ashita</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">hai</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">mata</dist_word>
+    </distractor>
+    <distractor>
+      <dist_word dir="ltr">itte</dist_word>
+    </distractor>
+  </section>
+
+</content>

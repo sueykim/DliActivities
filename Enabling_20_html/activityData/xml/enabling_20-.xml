@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content target_language="MSA" hw="true" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart" rtl="true" lessonLevel="low">
+<title>Enabling20 | Gathering Information from Notes</title>
+<instruction>Read the question. Look through each note to find information. Then select answers to match with the information... and then submit it. You have two times to submit your answers.</instruction>
+    <questions>
+      <question> 
+       <phrase dir="ltr"><![CDATA[When will the interior designer be called?]]></phrase>
+       <tl_answer dir="rtl"><![CDATA[يوم الأربعاء الساعة ١٠ صباحا]]></tl_answer>
+       <en_answer dir="ltr"><![CDATA[On Wednesday at 10 a.m.]]></en_answer>
+       <hint dir="ltr"><![CDATA[The word أربعاء means <b>Wednesday.</b>]]></hint>
+      <feedback><![CDATA[This is a reminder to call the interior designer at 10 a.m on Wednesday.]]></feedback>
+      <distractor>On Wednesday at 10 p.m.</distractor>
+      <distractor>On Thursday at 1 p.m.</distractor>
+      <distractor>On Monday at 10 a.m.</distractor>
+      </question>  
+      <question> 
+       <phrase dir="ltr"><![CDATA[When is lunch with the manager?]]></phrase>
+       <tl_answer dir="rtl"><![CDATA[اليوم الساعة ٢ بعد الظهر ]]></tl_answer>
+       <en_answer dir="ltr"><![CDATA[Today at two in the afternoon.]]></en_answer>
+       <hint  dir="ltr"><![CDATA[The word يوم means <b>day.</b>]]></hint>
+      <feedback><![CDATA[This is a reminder for lunch this afternoon at 2 p.m. with the branch chief at Mira Mar restaurant. ]]></feedback>
+      <distractor>Today at twelve noon.</distractor>
+      <distractor>Tomorrow at twelve noon.</distractor>
+      <distractor>Next week at two in the afternoon.</distractor>
+      </question>  
+      <question> 
+       <phrase dir="ltr"><![CDATA[Where is the meeting place?]]></phrase>
+       <tl_answer dir="rtl"><![CDATA[مكتب رقم ٣٦٧]]></tl_answer>
+       <en_answer dir="ltr"><![CDATA[Office #367.]]></en_answer>
+       <hint dir="ltr"><![CDATA[مكتب means <b>office.</b>]]></hint>
+      <feedback><![CDATA[This is a reminder to meet with the employees at 3 p.m. in office #367.]]></feedback>
+      <distractor>Office #376.</distractor>
+      <distractor>Office #276.</distractor>
+      <distractor>Office #176.</distractor>
+      </question>  
+      <question> 
+       <phrase dir="ltr"><![CDATA[What is the last item on the list?]]></phrase>
+       <tl_answer dir="rtl"><![CDATA[اتصل بزوجتي]]></tl_answer>
+       <en_answer dir="ltr"><![CDATA[Call my wife.]]></en_answer>
+       <hint dir="ltr"><![CDATA[اتصل means <b>call.</b>]]></hint>
+      <feedback><![CDATA[This is a to-do list which includes calling the driver, the secretary and his wife.]]></feedback>
+      <distractor>Call my mother.</distractor>
+      <distractor>Call my son.</distractor>
+      <distractor>Call my father.</distractor>
+      </question>  
+      <question> 
+       <phrase dir="ltr"><![CDATA[When did Mr. El-Mahdy call?]]></phrase>
+       <tl_answer dir="rtl"><![CDATA[الساعة الثامنة والنصف صباحا]]></tl_answer>
+       <en_answer dir="ltr"><![CDATA[At 8:30 a.m.]]></en_answer>
+       <hint dir="ltr"><![CDATA[ساعة means <b>hour.</b>]]></hint>
+      <feedback><![CDATA[A phone call from Mr. Mohamed Al-Mahdy at 8:30 a.m. ]]></feedback>
+      <distractor>At 8:30 p.m.</distractor>
+      <distractor>At 3:30 p.m.</distractor>
+      <distractor>At 7:30 a.m.</distractor>
+      </question> 
+	   
+    </questions>
+	
+    <notes>
+      <note> 
+      <note_image>ad_wednesday_interior.png</note_image> 
+      <comment  dir="rtl">يوم الأربعاء الساعة ١٠ صباحا
+</comment>    
+      <x_position></x_position> 
+      <y_position></y_position> 
+      </note> 
+      <note> 
+      <note_image>ad_lunch_with_manager.png</note_image> 
+      <comment dir="rtl">اليوم الساعة ٢ بعد الظهر  </comment>    
+      <x_position></x_position> 
+      <y_position></y_position> 
+      </note> 
+      <note> 
+      <note_image>ad_meeting_employees.png</note_image> 
+      <comment  dir="rtl">مكتب رقم ٣٦٧</comment>    
+      <x_position></x_position> 
+      <y_position></y_position> 
+      </note> 
+      <note> 
+      <note_image>ad_to_do_list.png</note_image> 
+      <comment  dir="rtl">اتصل بزوجتي</comment>    
+      <x_position></x_position> 
+      <y_position></y_position> 
+      </note> 
+      <note> 
+      <note_image>ad_phone_message.png</note_image> 
+      <comment  dir="rtl">الساعة الثامنة والنصف صباحا</comment>    
+      <x_position></x_position> 
+      <y_position></y_position> 
+      </note> 
+    </notes>
+
+</content>

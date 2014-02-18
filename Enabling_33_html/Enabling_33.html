@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>Enabling 33 HTML</title>
+		
+		<script src="../common/js/AC_OETags.js"></script>
+		<script src="../common/js/xml2json.js"></script>
+		<script src="../common/js/dli_activity.js"></script>
+		<link type="text/css" href="../common/css/smoothness/jquery-ui-1.8.20.custom.css" rel="stylesheet" />
+		<script type="text/javascript" src="../common/js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="../common/js/jquery-ui-1.8.20.custom.min.js"></script>
+		<script type="text/javascript" src="../common/js/jquery.ui.touch-punch.js"></script>
+                <script src="js/jquery.mCustomScrollbar.js"></script>
+
+		<script src="../common/js/dli_util.js"></script>
+		<script src="../common/js/dli_audio.js"></script>
+		<script src="../common/js/dli_video.js"></script>
+		<!-- <script src="//ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script>-->
+		<script src="js/enabling_33.js"></script>
+        
+        <!-- CSS -->
+       
+      	<link href="../../css/dlilearn_custom.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+        <link href="../common/css/dlilearn_activities.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/font-awesome.min.css">
+        <link href="../../css/bootstrap.css" rel="stylesheet">
+          <link href="../common/css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+	</head>
+    <body>
+        <div id="activity_wrapper">
+          <h3 class="activity_hd"></h3>
+          <div class="activity_description"></div>
+
+          
+          <div id="main">
+                <noscript>Activity cannot load. No Javascript support detected.</noscript>
+                <div id="flashAudioPlayerDiv"></div>
+                <div id="htmlAudioPlayerDiv"></div>
+                <div id="embeddedAudioPlayerDiv"></div>
+                
+                <div id="videoContainer"  class=""></div>
+
+			<div id="playBtn" class="rollover"></div>
+
+                    <div id="contentEn" class="content mCS-dark-thick"></div>
+
+                    <div id="writing_area" class="concave">
+						<div id="sketch">
+							<canvas id="paint"></canvas>
+						</div>
+                    </div>
+					
+                    <div id="brushHolder">
+                    	
+                    	<div id="brushSelection">Pen Selection
+                            <div id="brushXsm" class="brushButton"></div>
+                            <div id="brushSm" class="brushButton"></div>
+                            <div id="brushMd" class="brushButton"></div>
+                            <div id="brushLg" class="brushButton"></div>
+                        </div>
+                        <div id="erase" class="dragBubble">Erase</div>
+                    </div>
+
+                </div>
+        
+                <div id="feedback" class="feedback_right"><h2 id="feedbackHeader">Directions</h2>
+      <p id="feedbackText">This is what you need to do.... yadda, yadda, yadda... etc etc.</p>
+      <button id="feedbackBtn" class="btn pull-right" onclick="{closeFeedback();}">Ok</button>
+    </div>
+    
+   <!-- <div id="container_setDiv" class="roundCorners pull-right">Set: 
+    	<div id="setDiv" class="roundCorners pull-right"><span id="setText">1/2</span></div>
+  	</div>-->
+        </div>
+	</body>
+</html>

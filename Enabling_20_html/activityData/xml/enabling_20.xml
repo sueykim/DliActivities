@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content target_language="Spanish">
+    <questions>
+      <question> 
+       <question dir="ltr"><![CDATA[Why should people use the stairs?]]></question>
+       <tl_answer dir="ltr"><![CDATA[]]></tl_answer>
+       <en_answer dir="ltr"><![CDATA[Because the elevator doesn't work.]]></en_answer>
+       <hint dir="ltr"><![CDATA[El ascensor means elevator.]]></hint>
+      <feedback><![CDATA[Por favor use la escalera. El ascensor no funciona  means “Please use the stairs. The elevator doesn’t work.”]]></feedback>
+      <distractor>To get exercise</distractor>
+      <distractor>Because the elevator is very small</distractor>
+      <distractor>Because the elevator doesn’t have air conditioning</distractor>
+      </question>  
+      <question> 
+       <question dir="ltr"><![CDATA[Where is there water on the floor?]]></question>
+       <tl_answer dir="ltr"><![CDATA[]]></tl_answer>
+       <en_answer dir="ltr"><![CDATA[There is water on the floor of the kitchen and bathroom. ]]></en_answer>
+       <hint dir="ltr"><![CDATA[Piso means floor.]]></hint>
+      <feedback><![CDATA[¡Cuidado, que hay agua en el piso de la cocina y el cuarto de baño. No sé de dónde sale! means "Watch out! There is water on the floor of the kitchen and bathroom. I do not know where it is coming from!"]]></feedback>
+      <distractor>There is water on the floor of the dining room and garage.</distractor>
+      <distractor>There is water on the floor of the kitchen and balcony.</distractor>
+      <distractor>There is water on the floor of the bathroom and patio.</distractor>
+      </question>  
+      <question> 
+       <question dir="ltr"><![CDATA[What rooms need to be painted?]]></question>
+       <tl_answer dir="ltr"><![CDATA[]]></tl_answer>
+       <en_answer dir="ltr"><![CDATA[The basement and dining room need a coat of paint.]]></en_answer>
+       <hint dir="ltr"><![CDATA[Necesitan una mano de pintura means "need a coat of paint".]]></hint>
+      <feedback><![CDATA[Se necesita un pintor&#58; mi sótano y mi comedor necesitan una mano de pintura. Llame al 01-553-0984 means "painter wanted&#58; my basement and my dining room need a coat of paint. Call 01-553-0984."]]></feedback>
+      <distractor>the bathroom and kitchen</distractor>
+      <distractor>the balcony and living room</distractor>
+      <distractor>the dining room and garage</distractor>
+      </question>  
+      <question> 
+       <question dir="ltr"><![CDATA[What is for sale?]]></question>
+       <tl_answer dir="ltr"><![CDATA[]]></tl_answer>
+       <en_answer dir="ltr"><![CDATA[A chair and a bed]]></en_answer>
+       <hint dir="ltr"><![CDATA[Para venta means "for sale".]]></hint>
+      <feedback><![CDATA[Para venta&#58; Una silla y una cama. Mi teléfono es 01-590-3421 means "for sale&#58; a chair and a bed. My telephone is 01-590-3421."]]></feedback>
+      <distractor>A table and china cabinet</distractor>
+      <distractor>A mirror and a stove</distractor>
+      <distractor>A chair and a table</distractor>
+      </question>  
+      <question> 
+       <question dir="ltr"><![CDATA[Why should students eat in the mess hall?]]></question>
+       <tl_answer dir="ltr"><![CDATA[]]></tl_answer>
+       <en_answer dir="ltr"><![CDATA[Because the stove doesn't work]]></en_answer>
+       <hint dir="ltr"><![CDATA[The keyword in the first sentence can have two meanings.]]></hint>
+      <feedback><![CDATA[La cocina no funciona. Por favor coma en el comedor means "The stove doesn't work. Please eat in the mess hall (dining room)."]]></feedback>
+      <distractor>Because the electricity is out</distractor>
+      <distractor>Because the dishwasher doesn't work</distractor>
+      <distractor>Because the microwave doesn't work</distractor>
+      </question>  
+    </questions>
+    <notes>
+      <note> 
+      <note_image>qb_l04_a5_elevator_note_small.png</note_image> 
+      <comment dir="ltr">Por favor use la escalera. El ascensor no funciona. </comment>    
+      <x_position>10</x_position> 
+      <y_position>10</y_position> 
+      </note> 
+      <note> 
+      <note_image>qb_l04_a5_wetfloor_note_small.png</note_image> 
+      <comment dir="ltr">¡Cuidado! que hay agua en el piso de la cocina y el cuarto de baño. No sé de dónde sale!</comment>    
+      <x_position>150</x_position> 
+      <y_position>120</y_position> 
+      </note> 
+      <note> 
+      <note_image>qb_l04_a5_painter_note_small.png</note_image> 
+      <comment dir="ltr">Se necesita un pintor&#58; mi sótano y mi comedor necesitan una mano de pintura. Llame al 01-553-0984.</comment>    
+      <x_position>250</x_position> 
+      <y_position>200</y_position> 
+      </note> 
+      <note> 
+      <note_image>qb_l04_a5_forsale_note_small.png</note_image> 
+      <comment dir="ltr">Para venta&#58; Una silla y una cama. Mi teléfono es 01-590-3421.</comment>    
+      <x_position>75</x_position> 
+      <y_position>210</y_position> 
+      </note> 
+      <note> 
+      <note_image>qb_l04_a5_stove_note_small.png</note_image> 
+      <comment dir="ltr">La cocina no funciona. Por favor coma en el comedor.</comment>    
+      <x_position>300</x_position> 
+      <y_position>115</y_position> 
+      </note> 
+    </notes>
+
+</content>
