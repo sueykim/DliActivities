@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		
+		<title>SVG drag test</title>
+		
+		<link type="text/css" href="../../common/css/smoothness/jquery-ui-1.8.20.custom.css" rel="stylesheet" />
+		<script type="text/javascript" src="../../common/js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="../../common/js/jquery-ui-1.8.20.custom.min.js"></script>
+		<script type="text/javascript" src="../../common/js/jquery.ui.touch-punch.js"></script>
+
+		<script>
+			var jLine;
+			$(document).ready(function() {
+				jLine = $("line");
+				
+				$('rect')
+				  .draggable()
+				  .bind('mousedown', function(event, ui){
+				    // bring target to front
+				    $(event.target.parentElement).append( event.target );
+				  })
+				  .bind('drag', function(event, ui){
+				    // update coordinates manually, since top/left style props don't work on SVG
+				    event.target.setAttribute('x', ui.position.left);
+				    event.target.setAttribute('y', ui.position.top);
+				  	
+				  	jLine.attr("x2", ui.position.left);
+				  	jLine.attr("y2", ui.position.top);
+				  });	
+			});		
+		</script>
+
+	</head>
+	<body>
+		<body>
+		    <svg >
+		    	<rect x='60' y='30' width='100' height='50'
+		    		fill="#ccc"/>
+		    	<line x1="0" x2="300" y1="0" y2="300" stroke="black"/>
+		    </svg>
+		</body>
+	</body>
+</html>
+
