@@ -13,13 +13,6 @@ var numSets;
 var keyboardHtml;
 var params;
 
-function getPassedParameters()
-{
-	mediaPath = getURL_Parameter("mediaPath");
-	xmlPath   = getURL_Parameter("xmlPath");
-	return mediaPath != 'undefined';
-}
-
 function generateHtmlForFurigana(phrase){
     var output = "";
     var phraseParts = phrase.match(/(\[\[.*?\]\]|[^\[]*)/g)
@@ -126,6 +119,27 @@ function loadActivity(t_activityLoadCallback){
 	//Json filename params
 	if(params["keyboardFilename"] != null){
 		keyboardFilename = params["keyboardFilename"];		
+	}
+	
+	//Handle for homework
+	if(params["xmlPath"] != null){
+		xmlPath = params["xmlPath"]
+		var xmlPath2 = xmlPath.split("/");
+		var activityID = params['activity'];
+
+		if (activityID.length < 2 ) {
+			activityID =+ "0" + activityID;
+		}
+		
+		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
+		//to get the keyboard
+		var lang_name_short = params['language'];
+		var langName = {ja:'japanese', sp:'spanish', ad:'msa'};
+		var lang_name_long = langName.ja;
+		keyboardFilename = '../common/keyboards/' + lang_name_long + '_keyboard.js';
+
+		$('.activity_hd').html('');
+		$('.activity_description').html('');
 	}
 	
 	loadActivityData(null, null, t_activityLoadCallback);

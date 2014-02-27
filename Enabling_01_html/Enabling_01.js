@@ -17,34 +17,13 @@ $(document).ready(function() {
 			hoverClass: "dropTargetHover",
 			drop: dropFunction}); 
 	}
-	loadjscssfile("../common/css/activityDefault.css", "css");
-	if ( getPassedParameters() == false){
+
 	//Default values (for testing)
 	mediaPath = "sampleData/";
+	cssFilename = "styles/Enabling_01_default.css";
 	xmlFilename = mediaPath + "levantine_enabling01_noNamespaces.xml";
 	jsonFilename = mediaPath + "levantine_enabling01_noNamespaces.js";
-	}
-	else {
-		// For performance - homework
-		var xmlPath2 = xmlPath.split("/");
-		var activityID = getURL_Parameter('activity');
 
-		if (activityID.length < 2 ) {
-			activityID =+ "0" + activityID;
-		}
-	
-		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
-		//to get the keyboard
-		var lang_name_short = getURL_Parameter('language');
-		var langName = {ja:'japanese', sp:'spanish', ad:'msa'};
-		var lang_name_long = langName.ja;
-		keyboardFilename = '../common/keyboards/' + lang_name_long + '_keyboard.js';
-
-		$('.activity_hd').html('');
-		$('.activity_description').html('');
-	}
-	
-	cssFilename = "styles/enabling_01_dlilearn.css";
 	loadActivity(parseXml);
 	
 	if(params["debug"] != null){
@@ -68,10 +47,10 @@ var isJapanese = false;
 function setState(value){
 	switch(value){
 		case "2":
-/*			$(".activity_description").text("Leason 2: Click the play button. " +
+			$(".activity_description").text("Leason 2: Click the play button. " +
 				"Listen to the audio. Select the image that corresponds to " + 
 				"the target language.");
-*/		
+		
 			if(cssFilename_state2 != ""){
 				loadjscssfile(cssFilename_state2, "css");
 			}
@@ -133,8 +112,7 @@ function setState(value){
 						
 						if(index == state2CurrentSetIndex + 1){
 							state2FeedbackType = "correct";
-							showFeedback("correct", feedbackStr);
-							//showFeedback("correct", jItem.find("feedback_l2").text());
+							showFeedback("correct", jItem.find("feedback_l2").text());
 						}else{
 							state2FeedbackType = "incorrect";
 							switch(state2NumberIncorrectTries){
@@ -150,9 +128,7 @@ function setState(value){
 									state2FeedbackType = "auto_correct";
 									showFeedback("incorrect", 
 											"Incorrect. The correct answer is: " + 
-											feedbackStr);
-										//	jItem.find("feedback_l2").text());
-
+											jItem.find("feedback_l2").text());
 									break;
 							}
 						}

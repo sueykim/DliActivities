@@ -6,34 +6,13 @@ $(document).ready(function() {
 	$('#feedback').hide();
 	$("#feedbackBtn").hide();
 
-	if ( getPassedParameters() == false){
-		//Default values (for testing)
+
 	mediaPath = "sampleData/";
 	xmlFilename = "sampleData/enabling04_noNamespaces.xml";
 	jsonFilename = "sampleData/enabling04_noNamespaces.js";
 	keyboardFilename = "sampleData/test_keyboard.js";
-	}
-	else{
-		// For performance - homework
-		var xmlPath2 = xmlPath.split("/");
-		var activityID = getURL_Parameter('activity');
-	
-		if (activityID.length < 2 ) {
-			activityID =+ "0" + activityID;
-		}
-		
-		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
-		
-		var lang_name_short = getURL_Parameter('language');
-		var langName = {ja:'japanese', sp:'spanish', ad:'msa'};
-		var lang_name_long = langName.ja;
-		//keyboardFilename = '../common/keyboards/' + lang_name_long + '_keyboard.js';
-		
-		$(".activity_hd").html('');
-		$(".activity_description").html('');		
-		
-	}
 	cssFilename = "styles/enabling_04_dlilearn.css";
+		
 	loadActivity(parseXml);
 
 	if(params["debug"] != null){

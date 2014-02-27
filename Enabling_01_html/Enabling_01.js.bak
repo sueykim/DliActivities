@@ -17,13 +17,13 @@ $(document).ready(function() {
 			hoverClass: "dropTargetHover",
 			drop: dropFunction}); 
 	}
-	
+
 	//Default values (for testing)
 	mediaPath = "sampleData/";
 	cssFilename = "styles/Enabling_01_default.css";
 	xmlFilename = mediaPath + "levantine_enabling01_noNamespaces.xml";
 	jsonFilename = mediaPath + "levantine_enabling01_noNamespaces.js";
-	
+
 	loadActivity(parseXml);
 	
 	if(params["debug"] != null){
@@ -36,6 +36,13 @@ $(document).ready(function() {
 }); 
 
 var cssFilename_state2 = "styles/Enabling_01_dliLearn_state2.css";
+
+// For homework
+var homeworkStatus;
+var answerAttemptsNum = 0;
+
+// To display ruby tag
+var isJapanese = false;
 
 function setState(value){
 	switch(value){
@@ -73,7 +80,7 @@ function setState(value){
 			$(".dropTarget").click(
 				function (){
 					if(!disableHover){
-						$("#clickGuard").css("display","block");
+//						$("#clickGuard").css("display","block");
 						disableHover = true;
 						
 						var index = extractLastNumber($(this).find("img").attr("id"));
@@ -81,7 +88,7 @@ function setState(value){
 						var jItem = $($(xml).find("item")
 										[(state2CurrentSet * numDropTargets) + state2CurrentSetIndex]);
 										
-						$("#playBtnText").text(jItem.find("phrase_tl").text());
+						//$("#playBtnText").text(jItem.find("phrase_tl").text());
 						
 						//Logging section
 						var itemIndex = jItem.attr("origIndex");
@@ -105,7 +112,8 @@ function setState(value){
 						
 						if(index == state2CurrentSetIndex + 1){
 							state2FeedbackType = "correct";
-							showFeedback("correct", jItem.find("feedback_l2").text());
+							showFeedback("correct", feedbackStr);
+							//showFeedback("correct", jItem.find("feedback_l2").text());
 						}else{
 							state2FeedbackType = "incorrect";
 							switch(state2NumberIncorrectTries){
@@ -121,7 +129,9 @@ function setState(value){
 									state2FeedbackType = "auto_correct";
 									showFeedback("incorrect", 
 											"Incorrect. The correct answer is: " + 
-											jItem.find("feedback_l2").text());
+											feedbackStr);
+										//	jItem.find("feedback_l2").text());
+
 									break;
 							}
 						}
@@ -194,12 +204,11 @@ var numDropTargets = 6;
 function parseXml(t_xml){
 	numSets = $(xml).find("item").length / numDropTargets;
 	
-	//Tag items (for logging)
-	$(xml).find("section").each(function(){
-		$(this).find("item").each(function(i){
-							$(this).attr("origIndex", i);
-						})
-	})
+	// true for homework and undefined for regular
+	homeworkStatus = $(xml).find("content").attr("hw");
+	
+	// To display ruby tag
+	isJapanese = $(xml).find("content").attr("target_language") == "Japanese";
 	
 	//Randomize sets
 	$(xml).find("section").each(function(){
@@ -238,10 +247,14 @@ function loadSet(value){
 	
 	//Load drag bubble answers
 	for(var i  = 0; i< numDropTargets; i++){
-		var txt = $(jSection.find("phrase_tl")[
+		var txt = $(jSection.find("lang_tl")[
 					(currentSet * numDropTargets) + i]).text();
 		txt = txt.replace(/[|][|]/g, " ");
-		$('#dragBubbleText_' + (i + 1)).text(txt);
+		
+		// To display ruby tag
+		txt = displayRubyTag(txt);
+		//$('#dragBubbleText_' + (i + 1)).text(txt);
+		$('#dragBubbleText_' + (i + 1)).html(txt);
 	}
 	
 	//Load six more answers from the previous or next set
@@ -256,10 +269,13 @@ function loadSet(value){
 	
 	//Load the drag bubble text
 	for(var i  = 0; i< numDropTargets; i++){
-		var txt = $(jSection.find("phrase_tl")[
+		var txt = $(jSection.find("lang_tl")[
 					(distractorSet * numDropTargets) + i]).text();
 		txt = txt.replace(/[|][|]/g, " ");
-		$('#dragBubbleText_' + (i + numDropTargets + 1)).text(txt);
+		// To display ruby tag
+		txt = displayRubyTag(txt);
+		//$('#dragBubbleText_' + (i + numDropTargets + 1)).text(txt);
+		$('#dragBubbleText_' + (i + numDropTargets + 1)).html(txt);
 	}
 	
 	//If a drag bubble doesn't have text then hide it
@@ -280,8 +296,11 @@ function loadSet(value){
 		$("#dropTarget_" + (i + 1)).droppable( 'enable' );
 		
 		if(showAnswers){
-			$('#dropTargetText_' + (i + 1)).text(
-				$(jSection.find("phrase_tl")[itemIndex]).text());			
+			//$('#dropTargetText_' + (i + 1)).text(
+			//	$(jSection.find("phrase_tl")[itemIndex]).text());	
+			// To display ruby tag
+			$('#dropTargetText_' + (i + 1)).html(
+				$(jSection.find("lang_tl")[itemIndex]).html());					
 		}else{
 			$('#dropTargetText_' + (i + 1)).text("");			
 		}
@@ -299,7 +318,7 @@ function loadSet(value){
 var numDragBubblesInSet;
 
 function dropFunction(event, ui ) {
-	$("#clickGuard").css("display","block");
+	//$("#clickGuard").css("display","block");
 	
 	var dropTargetNum = extractLastNumber($(this).attr("id"));
 	
@@ -341,8 +360,12 @@ function dropFunction(event, ui ) {
 		$(this).droppable( 'disable' );
 		
 		$("#dragBubble_" + dragBubbleNum).css("display", "none");
+		
+		//$("#dropTargetText_" + dropTargetNum).
+		//		text($("#dragBubbleText_" + dragTextNum).text());
+		// To display ruby tag
 		$("#dropTargetText_" + dropTargetNum).
-				text($("#dragBubbleText_" + dragTextNum).text());
+				html($("#dragBubbleText_" + dragTextNum).html());		
 		
 		showFeedback("correct", $(jSection.find("feedback_l1")
 						[((currentSet * numDropTargets) + dropTargetNum - 1)]).text());
@@ -352,20 +375,29 @@ function dropFunction(event, ui ) {
 	}	
 }
 
-function showFeedback(value, text){
+function showFeedback(value, textInput){
 	//Clear the dialog box
 	$("#feedbackHeader").html("");
 	$("#feedbackText").html("");
 	$("#feedbackBtn").text("OK");
 	$("#feedbackBtn").show();
 	
+	var text = "";
+	if (!isJapanese) {
+		text = textInput;
+	}
+	else {
+		// To display ruby tag
+		text = displayRubyTag(textInput);
+	}
+	
 	switch(value){
 		case "incorrect":
-			$("#feedbackHeader").html("Incorrect");
+			$("#feedbackHeader").html('<img src="../common/img/feedback_incorrect.png">');
 			$("#feedbackText").html(text);
 			break;
 		case "correct":
-			$("#feedbackHeader").html("Correct");
+			$("#feedbackHeader").html('<img src="../common/img/feedback_correct.png">');
 			$("#feedbackText").html(text);
 			break;
 		case "set_completed":
@@ -380,7 +412,7 @@ function showFeedback(value, text){
 			$("#feedbackBtn").html("Next Activity");
 			break;
 	}
-	
+	$("#clickGuard").css("display","block");
 	$('#feedback').show();
 	
 	/*$('#feedback').animate( {
@@ -447,6 +479,11 @@ function handleFeedbackClosed(){
 			setCompletedShown = true;
 			showFeedback("set_completed");
 		}
+		
+		// For homework
+		if (homeworkStatus) {
+			checkAnswers();
+		}
 	}	
 }
 
@@ -492,5 +529,34 @@ function handleFeedbackClosed2(){
 				loadState2CurrentSetIndex();
 				break;
 		}
+		
+		// For homework
+		if (homeworkStatus) {
+			checkAnswers();
+		}
 	}			
+	}			
+
+// For homework
+function checkAnswers(){
+	var questionID = "";
+	var answer = "";
+	var context = "";
+	var answerAttempts = "";
+
+	answerAttemptsNum++;
+
+	questionID = parseInt(currentState.toString() + currentSet.toString());
+	answer = "--";
+	context = "--";
+	answerAttempts = answerAttemptsNum.toString();
+	
+	// To see attempts - temp
+	//$("#feedbackText").html("Homework//answerAttempts: " + answerAttempts);
+	
+	// To pass logs
+	logStudentAnswer(questionID, answer, context);
+	logStudentAnswerAttempts(questionID, answerAttempts);
+	
+	//$('#feedbackText').show();
 }
