@@ -12,12 +12,6 @@ var numSets;
 
 var keyboardHtml;
 var params;
-var localPath = "";
-if (window.location.protocol.indexOf("file") >= 0)
-{
-	localPath = window.location.href.substr(0, window.location.href.indexOf("templates")-1);
-}
-
 
 String.prototype.format = function () {
     var s = this;
@@ -38,7 +32,6 @@ function pad(number, length)
 	return str;
 }
 
-
 function getActivityXMLFilename(language, lesson, activity, activityType)
 {
 	var lessonPadded = pad(lesson, 2);
@@ -51,45 +44,6 @@ function getPassedParameters()
 	mediaPath = getURL_Parameter("mediaPath");
 	xmlPath   = getURL_Parameter("xmlPath");
 	return mediaPath != 'undefined';
-}
-
-function generateHtmlForFurigana(phrase){
-    var output = "";
-    var phraseParts = phrase.match(/(\[\[.*?\]\]|[^\[]*)/g)
-    
-    var jFuriganaElement = $("<root><div class='furigana_container'>" + 
-                                    "<div class='furigana_div'></div>" + 
-                                    "<div class='kanji_div'></div>" + 
-                              "</div></root>");
-    var jClonedFuriganaElement;
-    
-    $(phraseParts).each(function(i,v){
-        if(v.length == 0){
-            return;
-        }
-        
-        jClonedFuriganaElement = jFuriganaElement.clone();
-        
-        if(v.match(/^\[\[/)){
-        //We have a furigana block
-            //Trim brackets
-            v = v.substring(2, v.length -2)
-            
-            var sectionParts = v.match(/(\(\(.*?\)\)|[^(]*)/g);
-            //var sectionParts = /([(][(])(.*)([)][)])/g.exec(v)    
-        
-            jClonedFuriganaElement.find(".furigana_div").text
-                (sectionParts[1].substring(2, sectionParts[1].length -2));
-            jClonedFuriganaElement.find(".kanji_div").text(sectionParts[0]);
-        }else{
-            //No furigana found
-            jClonedFuriganaElement.find(".kanji_div").text(v);
-        }
-        
-        output += jClonedFuriganaElement.html();
-    });
-    
-    return output;
 }
 
 function getURL_Parameter(param) {
@@ -120,28 +74,16 @@ function loadActivity(t_activityLoadCallback){
 	
 	//Grab params
 	params = getParams(window.location.href);
-
-	if(params["debug"] != null){
-		$("body").attr("debug", "true")
-		loadjscssfile("../common/js/firebug-lite-1_2.js", "js");
-		loadjscssfile("../common/css/debug.css", "css");
-	}
-
 	//Load default css file
-	if(params["activityCSS"] != null){
+/*	if(params["activityCSS"] != null){
 		loadjscssfile(params["activityCSS"], "css");
 	}else{
 		loadjscssfile("../common/css/activityDefault.css", "css");
 	}
-	
+*/
 	//Load mediaPath
 	if(params["mediaPath"] != null){
 		mediaPath = params["mediaPath"];
-	}
-	
-	//Load mediaPath
-	if(params["mediaPath2"] != null){
-		mediaPath = params["mediaPath2"];
 	}
 	
 	//Load css
@@ -163,29 +105,6 @@ function loadActivity(t_activityLoadCallback){
 	//Json filename params
 	if(params["keyboardFilename"] != null){
 		keyboardFilename = params["keyboardFilename"];		
-	}
-	
-	//Handle for homework
-	/* */
-	if(params["xmlPath"] != null){
-		xmlPath = params["xmlPath"]
-		var xmlPath2 = xmlPath.split("/");
-		var activityID = params['activity'];
-
-		if (activityID.length < 2 ) {
-			activityID =+ "0" + activityID;
-		}
-		
-		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
-		//to get the keyboard
-		/* */
-		var lang_name_short = params['language'];
-		var langName = {ja:'japanese', sp:'spanish', ad:'msa'};
-		var lang_name_long = langName.ja;
-		keyboardFilename = '../common/keyboards/' + lang_name_long + '_keyboard.js';
-
-		$('.activity_hd').html('');
-		$('.activity_description').html('');
 	}
 	
 	loadActivityData(null, null, t_activityLoadCallback);
@@ -215,14 +134,10 @@ function loadActivityData(t_xmlFilename, t_jsonFilename, t_activityDataLoadCallb
 		}
 	}else{
 		//Load xml
-		//xmlFilename = localPath + xmlFilename;
-		//mediaPath = localPath + mediaPath;
-		
 		$.ajax({
 		    type: "GET",
 		    url: xmlFilename,
 		    dataType: "xml",
-			async: false,
 		    success: handleXml,
 		    error: ajaxErrorFunc
 		});
@@ -230,33 +145,18 @@ function loadActivityData(t_xmlFilename, t_jsonFilename, t_activityDataLoadCallb
 }
 
 
-function displayRubyTag(textInput){
-	return textInput
-}
 
 
 function handleXml(t_xml)
 {
-	var fileText
-	
-	if(t_xml.xml != undefined){
-		//alert("using t_xml.xml")
-		fileText = t_xml.xml
-	}else{
-		fileText = new XMLSerializer().serializeToString(t_xml);
-	}
-	
-	//todo fix 
-	fileText = stripNamespace(fileText)
-	
-	xml = $.parseXML(fileText);
+	xml = t_xml;
 	
 	if(keyboardFilename.length > 0){
 		loadjscssfile(keyboardFilename, 'js',jsonKeyboardLoaded);
 	}
 	
 	if(activityDataLoadCallback){
-		activityDataLoadCallback(xml);
+		activityDataLoadCallback(t_xml);
 	}
 }
 
@@ -297,10 +197,7 @@ function jsonLoaded(){
 	var X2JSinst = new X2JS();
 	
 	//jsonData should be defined in the json file we just loaded
-	var fileText = new XMLSerializer().serializeToString(
-										X2JSinst.json2xml(jsonData))
-	fileText = fileText.replace(/<(\/?)([^:>\s]*:)?([^>]+)>/g, "<$1$3>")
-	xmlFromJson = $.parseXML(fileText)
+	var xmlFromJson = X2JSinst.json2xml(jsonData);
 	
 	handleXml(xmlFromJson);	
 }
@@ -395,7 +292,6 @@ function updateNavButtons(){
 function logStudentAnswer(questionID, answer, context) 
 {
 	//if (typeof parent.framework == 'undefined') return; // not running under framework
-	
 	var student = getURL_Parameter('student');
 	var language = getURL_Parameter('language');
 	var lessonID = getURL_Parameter('lesson');
@@ -417,24 +313,19 @@ function logStudentAnswer(questionID, answer, context)
 	template += '}]';	
 	
 	var answerString = template.format(language, student, lessonID, activityID, questionID, answer, context, activityType);
-	
-	if(parent.framework && parent.framework.logStudentAnswer != undefined){
+	if(parent.framework){
 		parent.framework.logStudentAnswer(answerString);
 	}
-	
 	// To see logs - temp
-	//$("#feedbackText").text("<br><br>" + "Start sending log." + "<br><br>");
-	//$("#feedbackText").append("logStudentAnswer: " + "<br>"+ answerString.toString());
-
+	$("#feedbackText").append("<br><br>" + "Start sending log." + "<br><br>");
+	$("#feedbackText").append("logStudentAnswer: " + "<br>"+ answerString.toString());
 	if(getURL_Parameter('logMode') == "test"){
-		alert(answerString.toString());
+		alert($("#feedbackText").text());
 	}
 }
-
 function logStudentAnswerAttempts(questionID, attemptCount)
 {
 	//if (typeof parent.framework == 'undefined') return; // not running under framework
-	
 	var template = '[';
 	template += '{';
 	template += '"language": "{0}",';
@@ -453,17 +344,14 @@ function logStudentAnswerAttempts(questionID, attemptCount)
 	var activityType = getURL_Parameter('activityType');
 
 	var answerString = template.format(language, student, lessonID, activityID, questionID, attemptCount, activityType);
-	
-	if(parent.framework && parent.framework.logStudentAnswerAttempts != undefined){
+	if(parent.framework){
 		parent.framework.logStudentAnswerAttempts(answerString);	
 	}
-	
 	// To see logs - temp
-	//$("#feedbackText").text("<br><br>logStudentAnswerAttempts: " + "<br>"+ answerString.toString());
-	//$("#feedbackText").append("<br><br>Done sending log.");
-	
+	$("#feedbackText").append("<br><br>logStudentAnswerAttempts: " + "<br>"+ answerString.toString());
+	$("#feedbackText").append("<br><br>Done sending log.");
 	if(getURL_Parameter('logMode') == "test"){
-		alert(answerString.toString());	
+		alert($("#feedbackText").text());	
 	}
 }
 

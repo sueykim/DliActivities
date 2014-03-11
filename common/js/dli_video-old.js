@@ -67,6 +67,17 @@ function loadVideoNoPlayYet(path, videoName){
 				}
 
 				break;
+			case 'webm':
+				loadHTMLVideo("videoContainer", path, videoName, ["webm"]);
+
+				if(!document.getElementById("videoTag").play){
+					alert(".webm video not supported");
+				}else{
+					//document.getElementById("videoTag").play();
+					document.getElementById("videoTag").load();
+				}
+
+				break;
 			default:
 				alert("Video formate " + forceVidType + " not known");
 
@@ -77,7 +88,7 @@ function loadVideoNoPlayYet(path, videoName){
 		loadFlashVideo("videoContainer", path, videoName);
 	}else if(videoTagSupported){
 		//HTML Video
-		loadHTMLVideo("videoContainer", path, videoName, ["mp4","ogv","ogg","m4v"]);
+		loadHTMLVideo("videoContainer", path, videoName, ["ogg", "mp4","ogv","m4v","webm"]);
 		//document.getElementById("videoTag").play();
 		document.getElementById("videoTag").load();
 	}else if(flashSupported){
@@ -139,6 +150,17 @@ function loadVideo(path, videoName){
 				}
 
 				break;
+			case 'webm':
+				loadHTMLVideo("videoContainer", path, videoName, ["webm"]);
+
+				if(!document.getElementById("videoTag").play){
+					alert(".webm video not supported");
+				}else{
+					//document.getElementById("videoTag").play();
+					document.getElementById("videoTag").load();
+				}
+
+				break;
 			default:
 				alert("Video formate " + forceVidType + " not known");	
 				
@@ -149,7 +171,7 @@ function loadVideo(path, videoName){
 		loadFlashVideo("videoContainer", path, videoName);
 	}else if(videoTagSupported){
 		//HTML Video 
-		loadHTMLVideo("videoContainer", path, videoName, ["mp4","ogv","ogg","m4v"]);
+		loadHTMLVideo("videoContainer", path, videoName, ["ogg", "mp4","ogv","m4v","webm"]);
 		document.getElementById("videoTag").play();
 	}else if(flashSupported){
 		//Flash Video
@@ -166,6 +188,10 @@ var videoFormats = {
 							ext:"ogv",
 							type:"video/ogg"
 						},
+						mpg:{
+							ext:"mpg",
+							type:"video/mpg"
+						},
 						m4v:{
 							ext:"m4v",
 							type:"video/mp4"
@@ -177,7 +203,11 @@ var videoFormats = {
 						mp4:{
 							ext:"mp4",
 							type:"video/mp4"
-						} 
+						},
+						webm:{
+							ext:"webm",
+							type:"video/webm"
+						}  
 					};
 
 function loadHTMLVideo(containerTagId, mediaPath, videoName, formatsArr){
@@ -188,7 +218,7 @@ function loadHTMLVideo(containerTagId, mediaPath, videoName, formatsArr){
 							videoName + '.' + videoFormats[formatsArr[i]].ext + '" type="' + videoFormats[formatsArr[i]].type + 
 							'"> ';
 	}
-
+	
 	videoTag = videoTag + '</video>';
 	
 	$("#" + containerTagId).html(videoTag);	

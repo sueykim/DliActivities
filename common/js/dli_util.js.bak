@@ -452,24 +452,3 @@ if (!String.prototype.format) {
     });
   };
 }
-
-function displayRubyTag(textInput) {
-	var initialText = "";
-	var newtext = "";
-		
-	if (typeof textInput !== 'undefined') {
-		initialText = textInput;
-	}
-	
-	function applyRubyTag(match, p1){
-		if (p1) {
-			return ("<ruby>" + p1[0] + "<rp>(</rp><rt>");
-		}
-		else
-		{
-			return ("</rt><rp>)</rp></ruby>");
-		}
-	};
-	newText = initialText.replace(/(.\u0028{2})|(\u0029{2})/g, applyRubyTag);
-	return newText;
-}

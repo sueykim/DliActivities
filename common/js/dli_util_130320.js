@@ -14,17 +14,8 @@ function shuffleArray( myArray ) {
 }
 
 function removeFileExt(filename){
-	//return /([\w]+)([.][\w]+$)/.exec(filename)[1];
-	if(/(.*)([.].+$)/.exec(filename) != undefined){
-		return /(.*)([.].+$)/.exec(filename)[1]
-	}else{
-		return filename;
-	}
+	return /([\w]+)([.][\w]+$)/.exec(filename)[1];
 }
-
-jQuery.fn.outerHTML = function() {
-  return jQuery('<div />').append(this.eq(0).clone()).html();
-};
 
 function loadjscssfile(filename, filetype, callback){
  if (filetype=="js"){ //if filename is a external JavaScript file
@@ -46,37 +37,6 @@ function loadjscssfile(filename, filetype, callback){
   
   document.getElementsByTagName("head")[0].appendChild(fileref)
  }
-}
-
-var loadXmlOrJsonFilename = "";
-var loadXmlOrJsonCallback;
-function loadXmlOrJson(filename, callback){
-	loadXmlOrJsonCallback = callback
-	loadXmlOrJsonFilename = removeFileExt(filename) + ".xml"
-	
-	$.ajax({
-	    type: "GET",
-	    url: loadXmlOrJsonFilename,
-	    dataType: "xml",
-	    success: loadXmlOrJson_xmlSuccess,
-	    error: loadXmlOrJson_error
-	})
-}
-
-function loadXmlOrJson_xmlSuccess(t_xml){
-	xml = t_xml
-	
-	loadXmlOrJsonCallback(t_xml)
-}
-
-function loadXmlOrJson_error(jqXHR, textStatus, errorThrown){
-	loadjscssfile(removeFileExt(loadXmlOrJsonFilename) + ".js", 'js',loadXmlOrJsonCallback)
-}
-
-function stripNamespace(fileText){
-	//Strip out commented out xml as well
-	fileText = fileText.replace(/(<!--)(.*)?(-->)/g, "")
-	return fileText.replace(/<(\/?)([^:>\s]*:)?([^>]+)>/g, "<$1$3>")
 }
 
 function getParams(url, ignoreArray) {
@@ -113,12 +73,7 @@ function getParams(url, ignoreArray) {
     }
 
     return params;
-}
-
-function capitaliseFirstLetter(string)
-{
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
+}		
 
 /**
  * jQuery.fn.sortElements
@@ -392,84 +347,3 @@ function MM_swapImage() { //v3.0
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
 
-/*function logStudentAnswer(questionID, answer, context) 
-{
-	var student = getURL_Parameter('student');
-	var language = getURL_Parameter('language');
-	var lessonID = getURL_Parameter('lesson');
-	var activityID = getURL_Parameter('activity');
-	var activityType = getURL_Parameter('activityType');
-
-	if (language == 'undefined' || lessonID == 'undefined' || activityID == 'undefined' || activityType == 'undefined' ) return;
-
-	var template = '[';
-	template += '{';
-	template += '"language": "{0}",';
-	template += '"studentID": "{1}",';
-	template += '"lessonID": "{2}",';
-	template += '"activityID": "{3}",';
-	template += '"questionID": "{4}",';
-	template += '"Answer": "{5}",';
-	template += '"questionContext": "{6}",';
-	template += '"ActivityType": "{7}"';
-	template += '}]';	
-	
-	var answerString = template.format(language, student, lessonID, activityID, questionID, answer, context, activityType);
-	parent.framework.logStudentAnswer(answerString);
-}
-
-function logStudentAnswerAttempts(questionID, attemptCount)
-{
-	var template = '[';
-	template += '{';
-	template += '"language": "{0}",';
-	template += '"studentID": "{1}",';
-	template += '"lessonID": "{2}",';
-	template += '"activityID": "{3}",';
-	template += '"questionID": "{4}",';
-	template += '"Attempts": "{5}",';
-	template += '"activityType": "{6}",';
-	template += '}]';
-
-	var student = getURL_Parameter('student');
-	var language = getURL_Parameter('language');
-	var lessonID = getURL_Parameter('lesson');
-	var activityID = getURL_Parameter('activity');
-	var activityType = getURL_Parameter('activityType');
-
-	var answerString = template.format(language, student, lessonID, activityID, questionID, attemptCount, activityType);
-	parent.framework.logStudentAnswerAttempts(answerString);	
-}*/
-
-if (!String.prototype.format) {
-  String.prototype.format = function() {
-    var args = arguments;
-    return this.replace(/{(\d+)}/g, function(match, number) { 
-      return typeof args[number] != 'undefined'
-        ? args[number]
-        : match
-      ;
-    });
-  };
-}
-
-function displayRubyTag(textInput) {
-	var initialText = "";
-	var newtext = "";
-		
-	if (typeof textInput !== 'undefined') {
-		initialText = textInput;
-	}
-	
-	function applyRubyTag(match, p1){
-		if (p1) {
-			return ("<ruby>" + p1[0] + "<rp>(</rp><rt>");
-		}
-		else
-		{
-			return ("</rt><rp>)</rp></ruby>");
-		}
-	};
-	newText = initialText.replace(/(.\u0028{2})|(\u0029{2})/g, applyRubyTag);
-	return newText;
-}

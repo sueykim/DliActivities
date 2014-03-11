@@ -77,19 +77,19 @@ html, body {
 
 
 .convex {
-	border: solid thin #b8b8b8 !important;
+	border: solid thin #b8b8b8;
 	border-radius: 3px;
-	-webkit-box-shadow:  0px 2px 4px 0px rgba(00, 00, 00, .20) !important;
-    box-shadow:  0px 2px 4px 0px rgba(00, 00, 00, .20) !important;
+	-webkit-box-shadow:  1px 0 0 rgba(255, 255, 255, 0.85) inset, -1px 0 0 rgba(255, 255, 255, 0.85) inset, 0 -1px 0 rgba(255, 255, 255, 0.85) inset, 0 1px 3px rgba(0, 0, 0, 0.15) !important;
+    box-shadow:  1px 0 0 rgba(255, 255, 255, 0.85) inset, -1px 0 0 rgba(255, 255, 255, 0.85) inset, 0 -1px 0 rgba(255, 255, 255, 0.85) inset, 0 1px 3px rgba(0, 0, 0, 0.15) !important;
 	padding: 5px;
 	
-	background: #fcfcfc !important; /* Old browsers */
-	background: -moz-linear-gradient(top,  #fcfcfc 0%, #fcfcfc 25%, #e6e6e6 100%) !important; /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(25%,#fcfcfc), color-stop(100%,#e6e6e6)) !important; /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #fcfcfc 0%,#fcfcfc 25%,#e6e6e6 100%) !important; /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #fcfcfc 0%,#fcfcfc 25%,#e6e6e6 100%) !important; /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #fcfcfc 0%,#fcfcfc 25%,#e6e6e6 100%) !important; /* IE10+ */
-	background: linear-gradient(to bottom,  #fcfcfc 0%,#fcfcfc 25%,#e6e6e6 100%) !important; /* W3C */
+	background: #fcfcfc; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fcfcfc 0%, #fcfcfc 25%, #e6e6e6 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(25%,#fcfcfc), color-stop(100%,#e6e6e6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fcfcfc 0%,#fcfcfc 25%,#e6e6e6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fcfcfc 0%,#fcfcfc 25%,#e6e6e6 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fcfcfc 0%,#fcfcfc 25%,#e6e6e6 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fcfcfc 0%,#fcfcfc 25%,#e6e6e6 100%); /* W3C */
 	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#e6e6e6',GradientType=0 );  IE6-8 */
 	
 }

@@ -14,7 +14,7 @@ function loadVideoNoPlayYet(path, videoName, activityName){
 	 loadVideo(path, videoName, activityName, false);
 }
 
-function loadVideo(path, videoName, activityName, play, gloss){
+function loadVideo(path, videoName, activityName, play){
 	if(play == undefined){
 		play = true;
 	}
@@ -128,13 +128,12 @@ function loadVideo(path, videoName, activityName, play, gloss){
 
 				break;
 			case 'html':
-				loadHTMLVideo("videoContainer", path, videoName, ["ogv", "mp4","ogg","m4v","webm"]);
+				loadHTMLVideo("videoContainer", path, videoName, ["ogg", "mp4","ogv","m4v","webm"]);
 				
 				if(play){
 					if(!document.getElementById("videoTag").play){
 						alert("HTML video not supported");
 					}else{
-                                                alert('html player')
 						//document.getElementById("videoTag").play();
 						document.getElementById("videoTag").play();
 					}
@@ -156,9 +155,9 @@ function loadVideo(path, videoName, activityName, play, gloss){
 		//Override for Android
 		loadFlashVideo("videoContainer", flashVideoPath, videoName);
 	}else if(videoTagSupported){
-          ////alert('videoTagSupported_a')
 		//HTML Video 
-		loadHTMLVideo("videoContainer", path, videoName, ["ogv", "mp4","ogg","m4v","webm"], gloss);
+		loadHTMLVideo("videoContainer", path, videoName, ["ogg", "mp4","ogv","m4v","webm"]);
+		
 		if(play){
 			if(!document.getElementById("videoTag").play){
 				alert("No HTML video type supported");
@@ -168,7 +167,6 @@ function loadVideo(path, videoName, activityName, play, gloss){
 		}else{if(!document.getElementById("videoTag").load){
 				alert("No HTML video type supported");
 			}else{
-                          ////alert('videoTagSupported_b')
 				document.getElementById("videoTag").load();
 			}
 		}
@@ -209,10 +207,7 @@ var videoFormats = {
 						}  
 					};
 
-function loadHTMLVideo(containerTagId, mediaPath, videoName, formatsArr, gloss){
-        if(gloss == true)
-        	var videoTag = 	'<video id="videoTag" controls="controls" width="280" height="212"> ';
-        else
+function loadHTMLVideo(containerTagId, mediaPath, videoName, formatsArr){
 	var videoTag = 	'<video id="videoTag"> ';
 	
 	for(var i=0; i< formatsArr.length; i++){
@@ -222,7 +217,7 @@ function loadHTMLVideo(containerTagId, mediaPath, videoName, formatsArr, gloss){
 	}
 	
 	videoTag = videoTag + '</video>';
-            //// alert(videoTag)
+	
 	$("#" + containerTagId).html(videoTag);	
 }
 

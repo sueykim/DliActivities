@@ -89,6 +89,7 @@ function loadVideoNoPlayYet(path, videoName){
 function loadVideo(path, videoName){
 	if(forceVidType.length > 0){
 		//Video override present
+		alert('hi frrom loadVideo.')
 		switch(forceVidType){
 			case "flash":
 				if(!flashSupported){
