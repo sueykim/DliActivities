@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<hs:content target_language="Italian" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
+    <hs:set>
+        <hs:letter_grid columns="7" rows="7">
+            <hs:row>ق س ل ك ت ا ب ب ل ص</hs:row>
+            <hs:row>ل ض م ث م ل ع م و م</hs:row>
+            <hs:row>م ش ه س ت ق ك ر س ي</hs:row>
+            <hs:row>ق ظ ن ب ج ل ب ت ه ث</hs:row>
+            <hs:row>ف ز و و ح ي خ ج ت ص</hs:row>
+            <hs:row>ب ن ت ر خ ث ق ب ا ط</hs:row>
+            <hs:row>ج ط ق ة ح ت د ذ ض ش</hs:row>
+            <hs:row>غ ع م د ر س ة ز ر س</hs:row>
+            <hs:row>ر ة ح خ ة ب ل ا ط د</hs:row>
+            <hs:row>ص ق ف ر ص ة ف و ث ت</hs:row>
+        </hs:letter_grid>
+        <hs:tl_dir>rtl</hs:tl_dir>
+        <hs:keyword>
+            <hs:tl_word>
+                <hs:tl_text >قلم</hs:tl_text>
+                <hs:tl_word_coordinates>
+                    A1, A2, A3  
+                </hs:tl_word_coordinates>
+            </hs:tl_word>   
+            <hs:en_word>1. row 1 downward:</hs:en_word>
+            <hs:tl_media>
+                <hs:media_type>audio</hs:media_type>
+                <hs:media_file>artillery.mp3</hs:media_file>
+            </hs:tl_media>
+            <hs:clue>
+                <hs:clue_list>
+                    <hs:list_position>
+                        <hs:hint1_text>backward</hs:hint1_text>
+                        <hs:first_position>J1</hs:first_position>
+                    </hs:list_position>
+                </hs:clue_list>
+                <hs:feedback_text><![CDATA[row 1 downward: قلم - this is <b>text for feedback artillery</b> 1testing really long test text testing really long test text testing really long test text 2testing really long test text testing really long test text testing 3really long test text testing really long test text testing 4really long test text testing really long test text testing really long test text testing really long test text 5testing really long test text testing really long 6test text testing really long test text ]]></hs:feedback_text>
+                <hs:feedback>
+                    <hs:media_type>video</hs:media_type>
+                    <hs:media_file>artillery.flv</hs:media_file>                    
+                </hs:feedback>
+            </hs:clue>
+        </hs:keyword>
+        <hs:keyword>
+            <hs:tl_word>
+                <hs:tl_text >كتاب</hs:tl_text>
+                <hs:tl_word_coordinates>
+                    G1, F1, E1, D1 
+                </hs:tl_word_coordinates>
+            </hs:tl_word>   
+            <hs:en_word>2. row 1 forward: - bomb</hs:en_word>
+            <hs:tl_media>
+                <hs:media_type>audio</hs:media_type>
+                <hs:media_file>bomb.mp3</hs:media_file>
+            </hs:tl_media>
+            <hs:clue>
+                <hs:clue_list>
+                    <hs:list_position>
+                        <hs:hint1_text>forward</hs:hint1_text>
+                        <hs:first_position>G1</hs:first_position>
+                    </hs:list_position>
+                </hs:clue_list>
+                <hs:feedback_text><![CDATA[row 1 forward:كتاب - this is text for feedback bomb ]]></hs:feedback_text>
+                <hs:feedback>
+                    <hs:media_type>image</hs:media_type>
+                    <hs:media_file>test1.jpg</hs:media_file>                    
+                </hs:feedback>
+            </hs:clue>
+        </hs:keyword>
+        <hs:keyword>
+            <hs:tl_word>
+                <hs:tl_text >معلم</hs:tl_text>
+                <hs:tl_word_coordinates>
+                    C2, D2, E2, F2  
+                </hs:tl_word_coordinates>
+            </hs:tl_word>   
+            <hs:en_word>3. row 2  backward:</hs:en_word>
+            <hs:tl_media>
+                <hs:media_type>audio</hs:media_type>
+                <hs:media_file>rocket.mp3</hs:media_file>
+            </hs:tl_media>
+            <hs:clue>
+                <hs:clue_list>
+                    <hs:list_position>
+                        <hs:hint1_text>backward</hs:hint1_text>
+                        <hs:first_position>C2</hs:first_position>
+                    </hs:list_position>
+                </hs:clue_list>
+                <hs:feedback_text><![CDATA[ this is text for feedback rocket ]]></hs:feedback_text>
+                <hs:feedback>
+                    <hs:media_type>video</hs:media_type>
+                    <hs:media_file>rocket.flv</hs:media_file>                    
+                </hs:feedback>
+            </hs:clue>
+        </hs:keyword>
+        <hs:keyword>
+            <hs:tl_word>
+                <hs:tl_text >سبورة</hs:tl_text>
+                <hs:tl_word_coordinates>
+                    G3, G4, G5, G6, G7  
+                </hs:tl_word_coordinates>
+            </hs:tl_word>   
+            <hs:en_word>4. row 3 downward:</hs:en_word>
+            <hs:tl_media>
+                <hs:media_type>audio</hs:media_type>
+                <hs:media_file>knife.mp3</hs:media_file>
+            </hs:tl_media>
+            <hs:clue>
+                <hs:clue_list>
+                    <hs:list_position>
+                        <hs:hint1_text>downward</hs:hint1_text>
+                        <hs:first_position>G3</hs:first_position>
+                    </hs:list_position>
+                </hs:clue_list>
+                <hs:feedback_text><![CDATA[ this is text for feedback knife ]]></hs:feedback_text>
+                <hs:feedback>
+                    <hs:media_type>image</hs:media_type>
+                    <hs:media_file>test1.jpg</hs:media_file>                    
+                </hs:feedback>
+            </hs:clue>
+        </hs:keyword>
+        <hs:keyword>
+            <hs:tl_word>
+                <hs:tl_text >كرسي</hs:tl_text>
+                <hs:tl_word_coordinates>
+                    D3, C3, B3, A3  
+                </hs:tl_word_coordinates>
+            </hs:tl_word>   
+            <hs:en_word>5. row 3 forward:</hs:en_word>
+            <hs:tl_media>
+                <hs:media_type>audio</hs:media_type>
+                <hs:media_file>missile.mp3</hs:media_file>
+            </hs:tl_media>
+            <hs:clue>
+                <hs:clue_list>
+                    <hs:list_position>
+                        <hs:hint1_text>forward</hs:hint1_text>
+                        <hs:first_position>D3</hs:first_position>
+                    </hs:list_position>
+                </hs:clue_list>
+                <hs:feedback_text><![CDATA[ this is text for feedback missile ]]></hs:feedback_text>
+                <hs:feedback>
+                    <hs:media_type>video</hs:media_type>
+                    <hs:media_file>missile.flv</hs:media_file>                    
+                </hs:feedback>
+            </hs:clue>
+        </hs:keyword>
+    </hs:set>
+    <hs:set>
+        <hs:letter_grid columns="10" rows="10">
+            <hs:row>ق س ل ك ت ا ب ب ل ص</hs:row>
+            <hs:row>ل ض م ث م ل ع م و م</hs:row>
+            <hs:row>م ش ه س ت ق ك ر س ي</hs:row>
+            <hs:row>ق ظ ن ب ج ل ب ت ه ث</hs:row>
+            <hs:row>ف ز و و ح ي خ ج ت ص</hs:row>
+            <hs:row>ب ن ت ر خ ث ق ب ا ط</hs:row>
+            <hs:row>ج ط ق ة ح ت د ذ ض ش</hs:row>
+            <hs:row>غ ع م د ر س ة ز ر س</hs:row>
+            <hs:row>ر ة ح خ ة ب ل ا ط د</hs:row>
+            <hs:row>ص ق ف ر ص ة ف و ث ت</hs:row>
+        </hs:letter_grid>
+        <hs:tl_dir>rtl</hs:tl_dir>
+        <hs:keyword>
+            <hs:tl_word>
+                <hs:tl_text >حي</hs:tl_text>
+                <hs:tl_word_coordinates>
+                    F5, E5  
+                </hs:tl_word_coordinates>
+            </hs:tl_word>   
+            <hs:en_word>6. row 5 forward:</hs:en_word>
+            <hs:tl_media>
+                <hs:media_type>audio</hs:media_type>
+                <hs:media_file>artillery.mp3</hs:media_file>
+            </hs:tl_media>
+            <hs:clue>
+                <hs:clue_list>
+                    <hs:list_position>
+                        <hs:hint1_text>forward</hs:hint1_text>
+                        <hs:first_position>F5</hs:first_position>
+                    </hs:list_position>
+                </hs:clue_list>
+               <hs:feedback_text><![CDATA[ this is text for feedback artillery ]]></hs:feedback_text>
+                <hs:feedback>
+                    <hs:media_type>image</hs:media_type>
+                    <hs:media_file>test1.jpg</hs:media_file>                    
+                </hs:feedback>
+            </hs:clue>
+        </hs:keyword>
+        <hs:keyword>
+            <hs:tl_word>
+                <hs:tl_text >بنت</hs:tl_text>
+                <hs:tl_word_coordinates>
+                    J6, I6, H6  
+                </hs:tl_word_coordinates>
+            </hs:tl_word>   
+            <hs:en_word>7. row 6 forward:</hs:en_word>
+            <hs:tl_media>
+                <hs:media_type>audio</hs:media_type>
+                <hs:media_file>bomb.mp3</hs:media_file>
+            </hs:tl_media>
+            <hs:clue>
+                <hs:clue_list>
+                    <hs:list_position>
+                        <hs:hint1_text>forward</hs:hint1_text>
+                        <hs:first_position>J6</hs:first_position>
+                    </hs:list_position>
+                </hs:clue_list>
+                <hs:feedback_text><![CDATA[ this is text for feedback bomb ]]></hs:feedback_text>
+                <hs:feedback>
+                    <hs:media_type>video</hs:media_type>
+                    <hs:media_file>bomb.flv</hs:media_file>                    
+                </hs:feedback>
+            </hs:clue>
+        </hs:keyword>
+        <hs:keyword>
+            <hs:tl_word>
+                <hs:tl_text >طابق</hs:tl_text>
+                <hs:tl_word_coordinates>
+                    D6, C6, B6, A6  
+                </hs:tl_word_coordinates>
+            </hs:tl_word>   
+            <hs:en_word>8. row 6 backward:</hs:en_word>
+            <hs:tl_media>
+                <hs:media_type>audio</hs:media_type>
+                <hs:media_file>rocket.mp3</hs:media_file>
+            </hs:tl_media>
+            <hs:clue>
+                <hs:clue_list>
+                    <hs:list_position>
+                        <hs:hint1_text>backward</hs:hint1_text>
+                        <hs:first_position>D6</hs:first_position>
+                    </hs:list_position>
+                </hs:clue_list>
+                <hs:feedback_text><![CDATA[ this is text for feedback rocket ]]></hs:feedback_text>
+                <hs:feedback>
+                    <hs:media_type>image</hs:media_type>
+                    <hs:media_file>test1.jpg</hs:media_file>                    
+                </hs:feedback>
+            </hs:clue>
+        </hs:keyword>
+        <hs:keyword>
+            <hs:tl_word>
+                <hs:tl_text >مدرسة</hs:tl_text>
+                <hs:tl_word_coordinates>
+                    H8, G8, F8, E8, D8  
+                </hs:tl_word_coordinates>
+            </hs:tl_word>   
+            <hs:en_word>9. row 8 forward:</hs:en_word>
+            <hs:tl_media>
+                <hs:media_type>audio</hs:media_type>
+                <hs:media_file>knife.mp3</hs:media_file>
+            </hs:tl_media>
+            <hs:clue>
+                <hs:clue_list>
+                    <hs:list_position>
+                        <hs:hint1_text>forward</hs:hint1_text>
+                        <hs:first_position>H8</hs:first_position>
+                    </hs:list_position>
+                </hs:clue_list>
+                <hs:feedback_text><![CDATA[ this is text for feedback knife ]]></hs:feedback_text>
+                <hs:feedback>
+                    <hs:media_type>video</hs:media_type>
+                    <hs:media_file>knife.flv</hs:media_file>                    
+                </hs:feedback>
+            </hs:clue>
+        </hs:keyword>
+        <hs:keyword>
+            <hs:tl_word>
+                <hs:tl_text >طالبة</hs:tl_text>
+                <hs:tl_word_coordinates>
+                    F9, E9, D9, C9, B9 
+                </hs:tl_word_coordinates>
+            </hs:tl_word>                     
+            <hs:en_word>10. row 9 backward:</hs:en_word>
+            <hs:tl_media>
+                <hs:media_type>audio</hs:media_type>
+                <hs:media_file>missile.mp3</hs:media_file>
+            </hs:tl_media>
+            <hs:clue>
+                <hs:clue_list>
+                    <hs:list_position>
+                        <hs:hint1_text>upward</hs:hint1_text>
+                        <hs:first_position>F9</hs:first_position>
+                    </hs:list_position>
+                </hs:clue_list>
+                <hs:feedback_text><![CDATA[ this is text for feedback missile ]]></hs:feedback_text>
+                <hs:feedback>
+                    <hs:media_type>video</hs:media_type>
+                    <hs:media_file>missile.flv</hs:media_file>                    
+                </hs:feedback>
+            </hs:clue>
+        </hs:keyword>
+    </hs:set>
+</hs:content>

@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<!-- <script type="text/javascript" src="../common/js/firebug-lite-1_2.js"></script> -->
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<title>Enabling 29 HTML</title> <script src="../common/js/AC_OETags.js"></script>
+
+	<script src="../common/js/xml2json.js"></script>
+	<script src="../common/js/dli_activity.js"></script>
+
+	<link type="text/css"
+		href="../common/css/smoothness/jquery-ui-1.8.20.custom.css"
+		rel="stylesheet" />
+	<script type="text/javascript" src="../common/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript"
+		src="../common/js/jquery-ui-1.8.20.custom.min.js"></script>
+	<script type="text/javascript"
+		src="../common/js/jquery.ui.touch-punch.js"></script>
+
+	<script src="../common/js/dli_util.js"></script>
+	<script src="../common/js/dli_audio.js"></script>
+	<script src="../common/js/dli_video.js"></script>
+
+	<script src="Enabling_29.js"></script>
+</head>
+<body onmouseup="bodyMouseUp()" state_feedback="false" state_all_words_finished="false" 
+		state_clickGuard="false" state_letter_grid_key="false">
+	<div id="flashAudioPlayerDiv"></div>
+	<div id="htmlAudioPlayerDiv"></div>
+	<div id="embeddedAudioPlayerDiv"></div>
+
+	<h3 class="activity_hd noSelect">Enabling 29</h3>
+	<div class="activity_description noSelect">The activity description</div>
+
+	<div id="main">
+		<div id="feedback">
+			<div id="feedbackTextContainer">
+				<h2 id="feedbackHeader"></h2>
+				<p id="feedbackText">		
+				</p>
+				<div id="videoContainer"  class="roundCorners"></div>	
+			</div>
+			<div id="feedbackBtn" onclick="{closeFeedback();}">Ok</div>
+		</div>
+		<div id="letterGridContainer">
+			<div id="letterGridLetters">
+				<div id="letterGrid"  
+						onmouseup="letterGridMouseUp()"
+						ontouchend='letterGridMouseUp()' 
+					>
+				</div>
+				<div id="letterGridClickGuard"></div>
+			</div>
+			<div id="letterGridSubContainer">
+				<div id="letterGridSubContainerClickGuard"></div>
+				<div id="keyboardContainer" class="roundCorners"></div>
+				<div id="letterGridKey">
+					<div id="wordFinderContainer">
+						<div id="wordFinderKey"></div>
+						<div id="wordFinderText" class="noSelect">Word Finder</div>
+					</div>
+					<div id="highlightText" class="noSelect">(Highlight Tool)</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="rightContainer"></div>
+
+		<div id="stageClickGuard"></div>
+
+		<div id="container_setDiv" class="roundCorners btn-group noSelect">
+			<div id="setDiv" class="roundCorners">
+				<div id="setTitle" class="bootstrapLabel btn_set noSelect">
+					SET:</div>
+				<span id="setText" class="bootstrapLabel btn_set_value noSelect">1/3</span>
+			</div>
+
+			<div id="pageBtns">
+				<div id="prevDiv">
+					<div id="prevBtnLink" href="javascript:;" onMouseDown="prevClick();">
+						Prev </div>
+				</div>
+				<div id="nextDiv">
+					<div id="nextBtnLink" href="javascript:;" onMouseDown="nextClick();">
+						Next </div>
+				</div>
+
+
+			</div>
+
+		</div>
+	</div>
+
+	<div id="snippets" class="hidden">
+		<div id="feedbackContent_snippet">
+			<div id="feedbackContent">
+				<div id="feedbackContentText">
+				</div>
+				<div id="feedbackContentMedia">
+				</div>
+			</div>
+		</div>
+		<div id="wordContainer_snippet">
+			<div class="wordContainer">
+				<div class="playWordBtn" onclick="playBtnClicked(this)"></div>
+				<div class="wordTextContainer noSelect">
+					<div class="wordText"></div>
+					<div class="wordLetters">
+					</div>
+				</div>
+				
+				<div class="wordHelp noSelect" onclick="wordHelpClicked(this)">?</div>
+			</div>
+		</div>
+		<div id="letter_snippet">
+			<div class='letterGridLetter noSelect' 
+					onmousemove='letterGridLetterMove(this)'
+					onmousedown='letterGridLetterDown(this)'
+					ontouchmove='handleTouchMove(event)'
+					ontouchstart='handleTouchStart(event)' 
+				>
+			</div>
+		</div>
+		<div id="letterGridRow_snippet">
+			<div class='letterGridRow'></div>
+		</div>
+	</div>
+</body>
+</html>

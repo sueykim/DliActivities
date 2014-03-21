@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<hs:content target_language="Hausa" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
+  <hs:set>
+    <hs:letter_grid columns="10" rows="10">
+      <hs:row>A L J E R I Y A L O</hs:row>
+      <hs:row>S S E K T K Y V I G</hs:row>
+      <hs:row>O T A U A I T V B N</hs:row>
+      <hs:row>L O B M R E M L I A</hs:row>
+      <hs:row>H I A E A D J O R W</hs:row>
+      <hs:row>J R J Q B L Q R I K</hs:row>
+      <hs:row>U A C H A D I Y Y T</hs:row>
+      <hs:row>N J M S X P Z Y A Y</hs:row>
+      <hs:row>O K O R O M H K A X</hs:row>
+      <hs:row>F U K P D Z G G H T</hs:row>
+    </hs:letter_grid>
+    <hs:tl_dir>ltr</hs:tl_dir>
+    <hs:keyword>
+      <hs:tl_word>
+        <hs:tl_text>NAJERIYA</hs:tl_text>
+        <hs:tl_word_coordinates>H1,G2,F3,E4,D5,C6,B7,A8</hs:tl_word_coordinates>
+      </hs:tl_word>
+      <hs:en_word>Nigeria</hs:en_word>
+      <hs:tl_media>
+        <hs:media_type>audio</hs:media_type>
+        <hs:media_file>artillery.mp3</hs:media_file>
+      </hs:tl_media>
+      <hs:clue>
+        <hs:clue_list>
+          <hs:list_position>
+            <hs:hint1_text><![CDATA[north-east]]></hs:hint1_text>
+            <hs:first_position>H1</hs:first_position>
+          </hs:list_position>
+        </hs:clue_list>
+        <hs:feedback_text><![CDATA[Nigeria became independent on October 1, 1960.]]></hs:feedback_text>
+        <hs:feedback>
+          <hs:media_type>audio</hs:media_type>
+          <hs:media_file>artillery.mp3</hs:media_file>
+        </hs:feedback>
+      </hs:clue>
+    </hs:keyword>
+    <hs:keyword>
+      <hs:tl_word>
+        <hs:tl_text>KAMARU</hs:tl_text>
+        <hs:tl_word_coordinates>B6,C5,D4,E3,F2,G1</hs:tl_word_coordinates>
+      </hs:tl_word>
+      <hs:en_word>Cameroon</hs:en_word>
+      <hs:tl_media>
+        <hs:media_type>audio</hs:media_type>
+        <hs:media_file>artillery.mp3</hs:media_file>
+      </hs:tl_media>
+      <hs:clue>
+        <hs:clue_list>
+          <hs:list_position>
+            <hs:hint1_text><![CDATA[south-west]]></hs:hint1_text>
+            <hs:first_position>B6</hs:first_position>
+          </hs:list_position>
+        </hs:clue_list>
+        <hs:feedback_text><![CDATA[French Cameroon became independent in 1960 as the Republic of Cameroon.]]></hs:feedback_text>
+        <hs:feedback>
+          <hs:media_type>audio</hs:media_type>
+          <hs:media_file>artillery.mp3</hs:media_file>
+        </hs:feedback>
+      </hs:clue>
+    </hs:keyword>
+    <hs:keyword>
+      <hs:tl_word>
+        <hs:tl_text>CHADI</hs:tl_text>
+        <hs:tl_word_coordinates>G3,G4,G5,G6,G7</hs:tl_word_coordinates>
+      </hs:tl_word>
+      <hs:en_word>Chad</hs:en_word>
+      <hs:tl_media>
+        <hs:media_type>audio</hs:media_type>
+        <hs:media_file>artillery.mp3</hs:media_file>
+      </hs:tl_media>
+      <hs:clue>
+        <hs:clue_list>
+          <hs:list_position>
+            <hs:hint1_text><![CDATA[east]]></hs:hint1_text>
+            <hs:first_position>G3</hs:first_position>
+          </hs:list_position>
+        </hs:clue_list>
+        <hs:feedback_text><![CDATA[Conventional long form: Republic of Chad.]]></hs:feedback_text>
+        <hs:feedback>
+          <hs:media_type>audio</hs:media_type>
+          <hs:media_file>artillery.mp3</hs:media_file>
+        </hs:feedback>
+      </hs:clue>
+    </hs:keyword>
+    <hs:keyword>
+      <hs:tl_word>
+        <hs:tl_text>ALJERIYA</hs:tl_text>
+        <hs:tl_word_coordinates>A1,A2,A3,A4,A5,A6,A7,A8</hs:tl_word_coordinates>
+      </hs:tl_word>
+      <hs:en_word>Algeria</hs:en_word>
+      <hs:tl_media>
+        <hs:media_type>audio</hs:media_type>
+        <hs:media_file>artillery.mp3</hs:media_file>
+      </hs:tl_media>
+      <hs:clue>
+        <hs:clue_list>
+          <hs:list_position>
+            <hs:hint1_text><![CDATA[east]]></hs:hint1_text>
+            <hs:first_position>A1</hs:first_position>
+          </hs:list_position>
+        </hs:clue_list>
+        <hs:feedback_text><![CDATA[After more than a century of rule by France, Algerians achieved independence in 1962.]]></hs:feedback_text>
+        <hs:feedback>
+          <hs:media_type>audio</hs:media_type>
+          <hs:media_file>artillery.mp3</hs:media_file>
+        </hs:feedback>
+      </hs:clue>
+    </hs:keyword>
+    <hs:keyword>
+      <hs:tl_word>
+        <hs:tl_text>MOROKO</hs:tl_text>
+        <hs:tl_word_coordinates>I6,I5,I4,I3,I2,I1</hs:tl_word_coordinates>
+      </hs:tl_word>
+      <hs:en_word>Morocco</hs:en_word>
+      <hs:tl_media>
+        <hs:media_type>audio</hs:media_type>
+        <hs:media_file>artillery.mp3</hs:media_file>
+      </hs:tl_media>
+      <hs:clue>
+        <hs:clue_list>
+          <hs:list_position>
+            <hs:hint1_text><![CDATA[west]]></hs:hint1_text>
+            <hs:first_position>I6</hs:first_position>
+          </hs:list_position>
+        </hs:clue_list>
+        <hs:feedback_text><![CDATA[A protracted independence struggle with France ended successfully in 1956. ]]></hs:feedback_text>
+        <hs:feedback>
+          <hs:media_type>audio</hs:media_type>
+          <hs:media_file>artillery.mp3</hs:media_file>
+        </hs:feedback>
+      </hs:clue>
+    </hs:keyword>
+    <hs:keyword>
+      <hs:tl_word>
+        <hs:tl_text>KWANGO</hs:tl_text>
+        <hs:tl_word_coordinates>F10,E10,D10,C10,B10,A10</hs:tl_word_coordinates>
+      </hs:tl_word>
+      <hs:en_word>Congo</hs:en_word>
+      <hs:tl_media>
+        <hs:media_type>audio</hs:media_type>
+        <hs:media_file>artillery.mp3</hs:media_file>
+      </hs:tl_media>
+      <hs:clue>
+        <hs:clue_list>
+          <hs:list_position>
+            <hs:hint1_text><![CDATA[north]]></hs:hint1_text>
+            <hs:first_position>F10</hs:first_position>
+          </hs:list_position>
+        </hs:clue_list>
+        <hs:feedback_text><![CDATA[Established as a Belgian colony in 1908, the then-Republic of the Congo gained its independence in 1960.]]></hs:feedback_text>
+        <hs:feedback>
+          <hs:media_type>audio</hs:media_type>
+          <hs:media_file>artillery.mp3</hs:media_file>
+        </hs:feedback>
+      </hs:clue>
+    </hs:keyword>
+    <hs:keyword>
+      <hs:tl_word>
+        <hs:tl_text>JIBUTI</hs:tl_text>
+        <hs:tl_word_coordinates>F1,E2,B3,C4,B5,A6</hs:tl_word_coordinates>
+      </hs:tl_word>
+      <hs:en_word>Djibouti</hs:en_word>
+      <hs:tl_media>
+        <hs:media_type>audio</hs:media_type>
+        <hs:media_file>artillery.mp3</hs:media_file>
+      </hs:tl_media>
+      <hs:clue>
+        <hs:clue_list>
+          <hs:list_position>
+            <hs:hint1_text><![CDATA[north-east]]></hs:hint1_text>
+            <hs:first_position>F1</hs:first_position>
+          </hs:list_position>
+        </hs:clue_list>
+        <hs:feedback_text><![CDATA[The French Territory of the Afars and the Issas became Djibouti in 1977.]]></hs:feedback_text>
+        <hs:feedback>
+          <hs:media_type>audio</hs:media_type>
+          <hs:media_file>artillery.mp3</hs:media_file>
+        </hs:feedback>
+      </hs:clue>
+    </hs:keyword>
+    <hs:keyword>
+      <hs:tl_word>
+        <hs:tl_text>SAMALIYA</hs:tl_text>
+        <hs:tl_word_coordinates>B2</hs:tl_word_coordinates>
+      </hs:tl_word>
+      <hs:en_word>Somalia</hs:en_word>
+      <hs:tl_media>
+        <hs:media_type>audio</hs:media_type>
+        <hs:media_file>artillery.mp3</hs:media_file>
+      </hs:tl_media>
+      <hs:clue>
+        <hs:clue_list>
+          <hs:list_position>
+            <hs:hint1_text><![CDATA[south-east]]></hs:hint1_text>
+            <hs:first_position>B2,C3,D4,E5,F6,G7,H8,I9</hs:first_position>
+          </hs:list_position>
+        </hs:clue_list>
+        <hs:feedback_text><![CDATA[The country is located in Eastern Africa, bordering the Gulf of Aden and the Indian Ocean, east of Ethiopia.]]></hs:feedback_text>
+        <hs:feedback>
+          <hs:media_type>audio</hs:media_type>
+          <hs:media_file>artillery.mp3</hs:media_file>
+        </hs:feedback>
+      </hs:clue>
+    </hs:keyword>
+    <hs:keyword>
+      <hs:tl_word>
+        <hs:tl_text>LIBIRIYA</hs:tl_text>
+        <hs:tl_word_coordinates>A9,B9,C9,D9,E9,F9,G9,H9</hs:tl_word_coordinates>
+      </hs:tl_word>
+      <hs:en_word>Liberia</hs:en_word>
+      <hs:tl_media>
+        <hs:media_type>audio</hs:media_type>
+        <hs:media_file>artillery.mp3</hs:media_file>
+      </hs:tl_media>
+      <hs:clue>
+        <hs:clue_list>
+          <hs:list_position>
+            <hs:hint1_text><![CDATA[south]]></hs:hint1_text>
+            <hs:first_position>A9</hs:first_position>
+          </hs:list_position>
+        </hs:clue_list>
+        <hs:feedback_text><![CDATA[Settlement of freed slaves from the US in what is today Liberia began in 1822; by 1847, the Americo-Liberians were able to establish a republic.]]></hs:feedback_text>
+        <hs:feedback>
+          <hs:media_type>audio</hs:media_type>
+          <hs:media_file>artillery.mp3</hs:media_file>
+        </hs:feedback>
+      </hs:clue>
+    </hs:keyword>
+  </hs:set>
+
+</hs:content>

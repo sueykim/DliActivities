@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<hs:content target_language="Italian" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
+    <hs:set>
+        <hs:letter_grid columns="8" rows="8">
+            <hs:row>E J P K M W D V</hs:row>
+            <hs:row>F A R O C K E T</hs:row>
+            <hs:row>S F I C M R T T</hs:row>
+            <hs:row>I Q F R O O Y D</hs:row>
+            <hs:row>L D L B A X R T</hs:row>
+            <hs:row>M P E Q A M S T</hs:row>
+            <hs:row>N O N A C I B R</hs:row>
+            <hs:row>Z I B J P C C U</hs:row>
+        </hs:letter_grid>
+        <hs:tl_dir>ltr</hs:tl_dir>
+        <hs:keyword>
+            <hs:tl_word>
+                <hs:tl_text >kocrbq</hs:tl_text>
+                <hs:tl_word_coordinates>
+                    D1, D2, D3, D4, D5, D6  
+                </hs:tl_word_coordinates>
+            </hs:tl_word>   
+            <hs:en_word>artillery</hs:en_word>
+            <hs:tl_media>
+                <hs:media_type>audio</hs:media_type>
+                <hs:media_file>artillery.mp3</hs:media_file>
+            </hs:tl_media>
+            <hs:clue>
+                <hs:clue_list>
+                    <hs:list_position>
+                        <hs:hint1_text>kocrbq</hs:hint1_text>
+                        <hs:first_position>D1</hs:first_position>
+                    </hs:list_position>
+                </hs:clue_list>
+               <hs:feedback_text><![CDATA[ kocrbq this is <b>text for feedback artillery</b> testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text ]]></hs:feedback_text>
+                <hs:feedback>
+                    <hs:media_type>video</hs:media_type>
+                    <hs:media_file>artillery.flv</hs:media_file>                    
+                </hs:feedback>
+            </hs:clue>
+        </hs:keyword>
+        <hs:keyword>
+            <hs:tl_word>
+                <hs:tl_text >rocket</hs:tl_text>
+                <hs:tl_word_coordinates>
+                    C2:R, D2:O, E2:C, F2:K, G2:E, H2:T  
+                </hs:tl_word_coordinates>
+            </hs:tl_word>   
+            <hs:en_word>rocket</hs:en_word>
+            <hs:tl_media>
+                <hs:media_type>audio</hs:media_type>
+                <hs:media_file>rocket.mp3</hs:media_file>
+            </hs:tl_media>
+            <hs:clue>
+                <hs:clue_list>
+                    <hs:list_position>
+                        <hs:hint1_text>forward</hs:hint1_text>
+                        <hs:first_position>C2</hs:first_position>
+                    </hs:list_position>
+                </hs:clue_list>
+                <hs:feedback_text><![CDATA[ this is text for feedback rocket ]]></hs:feedback_text>
+                <hs:feedback>
+                    <hs:media_type>video</hs:media_type>
+                    <hs:media_file>rocket.flv</hs:media_file>                    
+                </hs:feedback>
+            </hs:clue>
+        </hs:keyword>
+        <hs:keyword>
+            <hs:tl_word>
+                <hs:tl_text >frooy</hs:tl_text>
+                <hs:tl_word_coordinates>
+                    C4, D4, E4, F4, G4  
+                </hs:tl_word_coordinates>
+            </hs:tl_word>   
+            <hs:en_word>frooy</hs:en_word>
+            <hs:tl_media>
+                <hs:media_type>audio</hs:media_type>
+                <hs:media_file>artillery.mp3</hs:media_file>
+            </hs:tl_media>
+            <hs:clue>
+                <hs:clue_list>
+                    <hs:list_position>
+                        <hs:hint1_text>frooy</hs:hint1_text>
+                        <hs:first_position>C4</hs:first_position>
+                    </hs:list_position>
+                </hs:clue_list>
+               <hs:feedback_text><![CDATA[ frooy this is <b>text for feedback artillery</b> testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text ]]></hs:feedback_text>
+                <hs:feedback>
+                    <hs:media_type>video</hs:media_type>
+                    <hs:media_file>artillery.flv</hs:media_file>                    
+                </hs:feedback>
+            </hs:clue>
+        </hs:keyword>
+        <hs:keyword>
+            <hs:tl_word>
+                <hs:tl_text >pomort</hs:tl_text>
+                <hs:tl_word_coordinates>
+                    C1, D2, E3, F4, G5, H6  
+                </hs:tl_word_coordinates>
+            </hs:tl_word>   
+            <hs:en_word>artillery</hs:en_word>
+            <hs:tl_media>
+                <hs:media_type>audio</hs:media_type>
+                <hs:media_file>artillery.mp3</hs:media_file>
+            </hs:tl_media>
+            <hs:clue>
+                <hs:clue_list>
+                    <hs:list_position>
+                        <hs:hint1_text>pomort</hs:hint1_text>
+                        <hs:first_position>C1</hs:first_position>
+                    </hs:list_position>
+                </hs:clue_list>
+               <hs:feedback_text><![CDATA[pomort this is <b>text for feedback artillery</b> testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text ]]></hs:feedback_text>
+                <hs:feedback>
+                    <hs:media_type>video</hs:media_type>
+                    <hs:media_file>artillery.flv</hs:media_file>                    
+                </hs:feedback>
+            </hs:clue>
+        </hs:keyword>
+        <hs:keyword>
+            <hs:tl_word>
+                <hs:tl_text >oebore</hs:tl_text>
+                <hs:tl_word_coordinates>
+                    B7, C6, D5, E4, F3, G2  
+                </hs:tl_word_coordinates>
+            </hs:tl_word>   
+            <hs:en_word>artillery</hs:en_word>
+            <hs:tl_media>
+                <hs:media_type>audio</hs:media_type>
+                <hs:media_file>artillery.mp3</hs:media_file>
+            </hs:tl_media>
+            <hs:clue>
+                <hs:clue_list>
+                    <hs:list_position>
+                        <hs:hint1_text>backward</hs:hint1_text>
+                        <hs:first_position>B7</hs:first_position>
+                    </hs:list_position>
+                </hs:clue_list>
+               <hs:feedback_text><![CDATA[oebore this is <b>text for feedback artillery</b> testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text ]]></hs:feedback_text>
+                <hs:feedback>
+                    <hs:media_type>video</hs:media_type>
+                    <hs:media_file>artillery.flv</hs:media_file>                    
+                </hs:feedback>
+            </hs:clue>
+        </hs:keyword>
+    </hs:set>
+ 
+</hs:content>
