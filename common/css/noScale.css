@@ -1,6 +1,4 @@
 html > body{
-	overflow-x: auto;
-	overflow-y: auto;
 	-webkit-transform: scale(1, 1);
 	-moz-transform: scale(1, 1); 
 	-webkit-transform: scale(1, 1); 

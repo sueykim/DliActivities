@@ -96,7 +96,6 @@
    * @param {Object} event The document's touchmove event
    */
   mouseProto._touchMove = function (event) {
-
     // Ignore event if not handled
     if (!touchHandled) {
       return;

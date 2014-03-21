@@ -114,9 +114,6 @@ function getURL_Parameter(param) {
     return 'undefined';
 }
 
-//For homework
-var homeworkStatus = false;
-
 function loadActivity(t_activityLoadCallback){
 	//Load default css file
 	//loadjscssfile("../common/css/activityDefault.css", "css");
@@ -126,12 +123,8 @@ function loadActivity(t_activityLoadCallback){
 
 	if(params["debug"] != null){
 		$("body").attr("debug", "true")
-		//loadjscssfile("../common/js/firebug-lite-1_2.js", "js");
+		loadjscssfile("../common/js/firebug-lite-1_2.js", "js");
 		loadjscssfile("../common/css/debug.css", "css");
-	}
-	
-	if(params["noScale"] != null){
-		loadjscssfile("../common/css/noScale.css", "css");
 	}
 
 	//Load default css file
@@ -139,10 +132,6 @@ function loadActivity(t_activityLoadCallback){
 		loadjscssfile(params["activityCSS"], "css");
 	}else{
 		loadjscssfile("../common/css/activityDefault.css", "css");
-	}
-	
-	if(params["homeworkStatus"] != null){
-		homeworkStatus = params["homeworkStatus"]
 	}
 	
 	//Load mediaPath
@@ -226,14 +215,10 @@ function loadActivityData(t_xmlFilename, t_jsonFilename, t_activityDataLoadCallb
 		}
 	}else{
 		//Load xml
-		//xmlFilename = localPath + xmlFilename;
-		//mediaPath = localPath + mediaPath;
-		
 		$.ajax({
 		    type: "GET",
 		    url: xmlFilename,
 		    dataType: "xml",
-			async: false,
 		    success: handleXml,
 		    error: ajaxErrorFunc
 		});

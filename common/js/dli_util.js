@@ -473,3 +473,26 @@ function displayRubyTag(textInput) {
 	newText = initialText.replace(/(.\u0028{2})|(\u0029{2})/g, applyRubyTag);
 	return newText;
 }
+
+function letterToNumbers(string) {
+    string = string.toUpperCase();
+    var letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', sum = 0, i;
+    for (i = 0; i < string.length; i++) {
+        sum += Math.pow(letters.length, i) * (letters.indexOf(string.substr(((i + 1) * -1), 1)) + 1);
+    }
+    return sum;
+}
+
+function viewportCoordinateToDocumentCoordinate(x,y) {
+  var coord = new Object();
+  coord.x = x + window.pageXOffset;
+  coord.y = y + window.pageYOffset;
+  return coord;
+}
+
+function documentCoordinateToViewportCoordinate(x,y) {
+  var coord = new Object();
+  coord.x = x - window.pageXOffset;
+  coord.y = y - window.pageYOffset;
+  return coord;
+}
