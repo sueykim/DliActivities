@@ -1,4 +1,4 @@
-body{
+/*body{
 	overflow-x: hidden;
 	overflow-y: hidden;
 	-webkit-transform: scale(0.89, 0.89);
@@ -12,7 +12,7 @@ body{
 	-o-transform-origin: top left;
 	-ms-transform-origin: top left;
 	transform-origin: top left;*/
-}
+}*/
 
 body:not([debug="true"]) #firebugIconDiv{
 	display: none; 
