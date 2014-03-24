@@ -14,36 +14,12 @@ $(document).ready(function() {
 	}
     
     forceVidType = "html";
-    
-    if ( getPassedParameters() == false){
-    //Default values (for testing)
+
 	mediaPath = "sampleData/";
 	xmlFilename = "sampleData/Enabling_23_sample.xml";
 	jsonFilename = "sampleData/Enabling_23_sample.js";
-	//keyboardFilename = "sampleData/keyboard.js";
-	}
-    else {
-		// For performance - homework
-		var xmlPath2 = xmlPath.split("/");
-		var activityID = getURL_Parameter('activity');
-	
-		if (activityID.length < 2 ) {
-			activityID =+ "0" + activityID;
-		}
-		
-		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
-		//to get the keyboard
-/*		var lang_name_short = getURL_Parameter('language');
-		var langName = {ja:'japanese', sp:'spanish', ad:'msa'};
-		var lang_name_long = langName.ja;
-		keyboardFilename = '../common/keyboards/' + lang_name_long + '_keyboard.js';
-*/
-		$('.activity_hd').html('');
-		$('.activity_description').html('');
-	}
-
-	
 	cssFilename = "styles/enabling_23_dlilearn.css";
+	
 	loadActivity(parseXml);
 });
 
