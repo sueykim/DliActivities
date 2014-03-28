@@ -1,0 +1,15 @@
+body{
+	overflow-x: hidden;
+	overflow-y: hidden;
+	-webkit-transform: scale(0.89, 0.89);
+	-moz-transform: scale(0.89, 0.89); 
+	-webkit-transform: scale(0.89, 0.89); 
+	-o-transform: scale(0.89, 0.89);
+	-ms-transform: scale(0.89, 0.89);
+	transform: scale(0.89, 0.89); 
+	-moz-transform-origin: top left;
+	-webkit-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	transform-origin: top left;
+}

@@ -130,8 +130,8 @@ function loadActivity(t_activityLoadCallback){
 		loadjscssfile("../common/css/debug.css", "css");
 	}
 	
-	if(params["noScale"] != null){
-		loadjscssfile("../common/css/noScale.css", "css");
+	if(params["scale"] != null){
+		loadjscssfile("../common/css/scale.css", "css");
 	}
 
 	//Load default css file

@@ -6,30 +6,14 @@ $(document).ready(function() {
 	$( "#phrase_tabs" ).tabs();
 	
 	loadjscssfile("../common/css/activityDefault.css", "css");
-	if ( getPassedParameters() == false){
-		//Default values (for testing)
-		mediaPath = "sampleData/";
-		xmlFilename = mediaPath + "Mil_01_sampleData.xml";
-		jsonFilename = mediaPath + "Mil_01_sampleData.js";
-	}
-	else {
-		// For performance - homework
-		var xmlPath2 = xmlPath.split("/");
-		var activityID = getURL_Parameter('activity');
 	
-		if (activityID.length < 2 ) {
-			activityID =+ "0" + activityID;
-		}
-	
-		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
-		$('.activity_hd').html('');
-	}
+	//Default values (for testing)
+	mediaPath = "sampleData/";
+	xmlFilename = mediaPath + "Mil_01_sampleData.xml";
+	jsonFilename = mediaPath + "Mil_01_sampleData.js";
 	cssFilename = "styles/Mil_01_dlilearn.css";
-	loadActivity(parseXml);
 	
-	/*if(params["debug"] != null){
-		showAnswers = true;
-	}*/
+	loadActivity(parseXml);
 	
 	$( "#engSelectable" ).selectable({selected: listItemSelected});
 	$( "#transliSelectable" ).selectable({selected: listItemSelected});
