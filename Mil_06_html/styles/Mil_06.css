@@ -27,6 +27,7 @@ video{
 }
 
 #setDiv {
+	background-color: transparent;
     cursor: default;
     height: 30px;
     left: 477px;

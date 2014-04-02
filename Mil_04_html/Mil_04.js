@@ -4,27 +4,14 @@ $(document).ready(function() {
 	$('#feedback').hide();
 	
 	//Default values (for testing)
-	if ( getPassedParameters() == false){
-		mediaPath = "sampleData/";
+	mediaPath = "sampleData/";
 	//	cssFilename = "styles/enabling_11_default.css";
-		cssFilename = "styles/mil_04_dlilearn.css";
-		xmlFilename = mediaPath + "gm_02_01_01_01.xml";
-		jsonFilename = mediaPath + "gm_02_01_01_01.js";
-	}
-	else {
-		// For performance - homework
-		var xmlPath2 = xmlPath.split("/");
-		var activityID = getURL_Parameter('activity');
-	
-		if (activityID.length < 2 ) {
-			activityID =+ "0" + activityID;
-		}
-		
-		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
-		$('.activity_hd').html('');
-	}
-	loadjscssfile("../common/css/activityDefault.css", "css");
 	cssFilename = "styles/mil_04_dlilearn.css";
+	xmlFilename = mediaPath + "gm_02_01_01_01.xml";
+	jsonFilename = mediaPath + "gm_02_01_01_01.js";
+	
+	//loadjscssfile("../common/css/activityDefault.css", "css");
+	
 	//alert(xmlFilename)
 	testVideoSupport();	
 	loadActivity(parseXml);

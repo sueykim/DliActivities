@@ -4,27 +4,12 @@ $(document).ready(function() {
 	$('#feedback').show();
 	$("#feedbackBtn").hide();
 	
-	if ( getPassedParameters() == false){
-		//Default values (for testing)
-		mediaPath = "sampleData/";		
-		xmlFilename = mediaPath + "gm_02_01_01_01.xml";
-		jsonFilename = mediaPath + "gm_02_01_01_01.js";
-	}
-	else {
-		// For performance - homework
-		var xmlPath2 = xmlPath.split("/");
-		var activityID = getURL_Parameter('activity');
-	
-		if (activityID.length < 2 ) {
-			activityID =+ "0" + activityID;
-		}
-		
-		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
-		
-		$('.activity_hd').html('');
-		$('.activity_description').html('');
-	}
+	//Default values (for testing)
+	mediaPath = "sampleData/";		
+	xmlFilename = mediaPath + "gm_02_01_01_01.xml";
+	jsonFilename = mediaPath + "gm_02_01_01_01.js";
 	cssFilename = "styles/mil_02_dlilearn.css";
+
 	testVideoSupport();
 	
 	//Create Drag Bubble

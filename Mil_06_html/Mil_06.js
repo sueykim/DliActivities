@@ -74,12 +74,13 @@ var attemptCount = 1;
 
 function checkActivityCompleted(){
 	if(completedFeedbackShown){
-		$("#clickGuard").css("display","block");
 		return;
 	}
 
 	if(currentSet + 1 == numSets){
 		completedFeedbackShown = true;
+		
+		$("#clickGuard").css("display","block");
 		
 		//Check to see if we're in a container (such as Gateway)
 		if(parent.activityCompleted){
