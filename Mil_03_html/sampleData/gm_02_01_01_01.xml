@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<content target_language="German" tl="true">
+
+    <item>
+      <file_video>gm0001_ams.flv</file_video>
+      <lang_en>Hello. (formal)Hello. (formal)Hello. (formal)Hello. (formal)Hello. (formal)Hello. (formal)Hello. (formal)Hello. (formal)Hello. (formal)Hello. (formal)Hello. (formal)Hello. (formal)</lang_en>
+      <lang_tl dir="ltr">Guten Tag.Guten Tag.Guten Tag.Guten Tag.Guten Tag.Guten Tag.Guten Tag.Guten Tag.Guten Tag.Guten Tag.Guten Tag.Guten Tag.Guten Tag.Guten Tag.</lang_tl>
+      <lang_trans>gooten taag</lang_trans>
+      <feedback>"Guten Tag" (literally, Good day) is used often and works well with people you don't know or don't know very well.</feedback>
+    </item>
+    <item>
+      <file_video>gm0002_gms.flv</file_video>
+      <lang_en>Hello. (informal)</lang_en>
+      <lang_tl dir="ltr">Hallo.</lang_tl>
+      <lang_trans>haalo</lang_trans>
+      <feedback>"Hallo" is a preferred greeting among young adults who wish to be casual.</feedback>
+    </item>
+    <item>
+      <file_video>gm0003_gms.flv</file_video>
+      <lang_en>Good morning.</lang_en>
+      <lang_tl dir="ltr">Guten Morgen.</lang_tl>
+      <lang_trans>gooten morgen</lang_trans>
+      <feedback>"Guten Morgen" is a standard greeting. Use it until shortly before lunchtime.</feedback>
+    </item>
+    <item>
+      <file_video>gm0004_ams.flv</file_video>
+      <lang_en>How are you? (informal)</lang_en>
+      <lang_tl dir="ltr">Wie gehts?</lang_tl>
+      <lang_trans>vee geyts?</lang_trans>
+      <feedback>"Wie gehts?" (How's it going?) is a rather generic question, but don't be surprised if Germans give a detailed answer when asked this question.</feedback>
+    </item>
+    <item>
+      <file_video>gm0005_gms.flv</file_video>
+      <lang_en>Good evening.</lang_en>
+      <lang_tl dir="ltr">Guten Abend.</lang_tl>
+      <lang_trans>gooten aabent</lang_trans>
+      <feedback>"Guten Abend" is used anytime after 6:00 p.m.</feedback>
+    </item>
+    <item>
+      <file_video>gm0006_ams.flv</file_video>
+      <lang_en>How are you? (formal)</lang_en>
+      <lang_tl dir="ltr">Wie geht es Ihnen?</lang_tl>
+      <lang_trans>vee geyt es eenen?</lang_trans>
+      <feedback>This is used with people who you would address as "Herr" (Mr.) or "Frau" (Mrs.)</feedback>
+    </item>
+    <item>
+      <file_video>gm0007_gms.flv</file_video>
+      <lang_en>I'm fine, thanks, and you?</lang_en>
+      <lang_tl dir="ltr">Mir geht es gut, danke, und wie geht es Ihnen?</lang_tl>
+      <lang_trans>meer geyt es goot, daanka, unt vee geyt es eenen?</lang_trans>
+      <feedback>This is a typical answer to someone you know but who is not a friend.</feedback>
+    </item>
+    <item>
+      <file_video>gm0008_gms.flv</file_video>
+      <lang_en>Fine, thank you. </lang_en>
+      <lang_tl dir="ltr">Danke, gut.</lang_tl>
+      <lang_trans>daanka, goot</lang_trans>
+      <feedback>Short and simple - you can't go wrong with this answer.</feedback>
+    </item>
+    <item>
+      <file_video>gm0009_gms.flv</file_video>
+      <lang_en>What's your name?</lang_en>
+      <lang_tl dir="ltr">Wie heissen Sie?</lang_tl>
+      <lang_trans>vee haaySen zee?</lang_trans>
+      <feedback>This question is more suitable for an interview than a friendly chat.</feedback>
+    </item>
+    <item>
+      <file_video>gm0010_ams.flv</file_video>
+      <lang_en>My name is John.</lang_en>
+      <lang_tl dir="ltr">Ich heisse John.</lang_tl>
+      <lang_trans>iKh haaySa jaan</lang_trans>
+      <feedback>Introducing yourself by your first name is still considered rather casual by older people and traditionalists but is common among the young.</feedback>
+    </item>
+    <item>
+      <file_video>gm0011_gms.flv</file_video>
+      <lang_en>Nice to meet you.</lang_en>
+      <lang_tl dir="ltr">Angenehm.</lang_tl>
+      <lang_trans>aan-geneym</lang_trans>
+      <feedback>"Angenehm" (Delighted) is a very formal, traditional way of responding when you first meet a stranger.</feedback>
+    </item>
+    <item>
+      <file_video>gm0012_gms.flv</file_video>
+      <lang_en>Welcome.</lang_en>
+      <lang_tl dir="ltr">Willkommen.</lang_tl>
+      <lang_trans>vilkomen</lang_trans>
+      <feedback>"Willkommen" is a friendly greeting to visitors.</feedback>
+    </item>
+    <item>
+      <file_video>gm0013_ams.flv</file_video>
+      <lang_en>Good-bye.</lang_en>
+      <lang_tl dir="ltr">Auf Wiedersehen.</lang_tl>
+      <lang_trans>aawf veederzeyn</lang_trans>
+      <feedback>"Auf Wiedersehen" is a standard way of saying good-bye and appropriate in most social situations.</feedback>
+    </item>
+    <item>
+      <file_video>gm0014_gms.flv</file_video>
+      <lang_en>See you later.</lang_en>
+      <lang_tl dir="ltr">Bis später.</lang_tl>
+      <lang_trans>bis shpaeter</lang_trans>
+      <feedback>This phrase assumes that the speakers will indeed see each other again soon, typically on the same day.</feedback>
+    </item>
+    <item>
+      <file_video>gm0015_gms.flv</file_video>
+      <lang_en>See you tomorrow.</lang_en>
+      <lang_tl dir="ltr">Bis morgen.</lang_tl>
+      <lang_trans>bis morgen</lang_trans>
+      <feedback>This phrase is used when there is a clear understanding that the speakers will see each other the next day.</feedback>
+    </item>
+
+
+</content>
