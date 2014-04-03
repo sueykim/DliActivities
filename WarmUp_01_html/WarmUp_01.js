@@ -7,6 +7,14 @@ $(document).ready(function() {
 	audioInit();
 	$('#feedback').hide();
 
+	//Default values (for testing)
+		
+		mediaPath = "sampleData/";
+		cssFilename = "styles/warmup_01_dlilearn.css";
+		xmlFilename = mediaPath + "warmup01_noNamespaces.xml";
+		jsonFilename = mediaPath + "warmup01_json.js";
+		//keyboardFilename = "../common/keyboards/msa_keyboard.js";
+/*		
 	if ( getPassedParameters() == false){
 		//Default values (for testing)
 		
@@ -34,7 +42,7 @@ $(document).ready(function() {
 
 		$('.activity_hd').html('');
 	}
-
+*/
 //	keyboardFilename = "../common/keyboards/japanese_keyboard.js";
 	loadjscssfile("../common/css/activityDefault.css", "css");
 	cssFilename = "styles/warmup_01_dlilearn.css";
@@ -170,7 +178,7 @@ function loadSet(value){
 	var audStr = '<img  class="playBtnImg" id="playBtn' + theNo + '" onclick="audBtnClicked(' + theNo + ')" src="../common/img/btn_play_small.png" border="0">';
 		$($('.audBtn')[i]).html(audStr);
 	var theImg = $($(xml).find("file_graphic")[theNo]).text();	
-	var imgStr = '<img  class="sm_picture" id="smPic' + theNo + '" src="' + mediaPath + 'png/' + theImg +'" border="0">';	
+	var imgStr = '<img  class="sm_picture" id="smPic' + theNo + '" src="' + mediaPath + 'png/' + theImg +'" border="0" style="width:160px;height:140px;">';	
 	$($('.smImg')[i]).html(imgStr);
 	var tlWordStr = $($(xml).find("lang_tl")[theNo]).text();
 	$($('.tlText')[i]).html(tlWordStr);

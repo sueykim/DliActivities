@@ -7,7 +7,7 @@
     margin-bottom: 20px;
     margin-left: 8px;
     margin-top: -20px;
-	width: 870px;
+	width: 840px;
 }
 .activity_hd {
     color: grey;
@@ -36,20 +36,20 @@ html body {
 #upperContainer{
 	top:0px;
 	left:0px;
-	height:255px;
-	width: 900px;
+	height:245px;
+	width: 850px;
 	position:absolute;
 }
 #lowerContainer{
-	top:260px;
+	top:250px;
 	left:0px;
-	height:300px;
-	width: 900px;
+	height:250px;
+	width: 850px;
 	position:absolute;
 }
 .itemPanal{
-	width:215px;
-	height:250px;
+	width:203px;
+	height:240px;
 	position:relative;
 	float:left;
 	margin-left:5px;
@@ -65,11 +65,11 @@ html body {
     box-shadow: 0 1px 0 0 #FFFFFF, 0 5px 11px 2px rgba(119, 119, 119, 0.4) inset;
     padding: 10px 5px 10px 5px;
 	margin-left: 5px;
-	height: 232px;
+	height: 222px;
 	text-align: center;
     float:left;
     vertical-align: middle;
-    width: 428px;
+    width: 402px;
 	font-size: 22px;
 	overflow: auto;
 }
@@ -94,18 +94,18 @@ html body {
 	width:160px;
 	height:140px;
 	top: 3px;
-	margin-left: -10px;
+	margin-left: -15px;
 	float: left;
 	z-index: 2;
 }
 .tlText{
 	position: relative;
-	width: 200px;
+	width: 190px;
 	height:25px;	
 	font-size: 18px;
 	text-align: center;
 	margin-top:10px;
-	margin-left:8px;
+	margin-left:4px;
 	float: left;
 	-moz-user-select: none;
 	-webkit-user-select: none;
@@ -117,13 +117,13 @@ html body {
 .tlInputfield input{
 	font-size: 18px;
 	width: 180px;
-	margin-top: 20px;
+	margin-top: 15px;
 }
 .doneImg{
 	display: none;
 	position: relative;
 	margin: 20px 5px 0px 5px;
-	width: 200px;
+	width: 180px;
 	text-align: right;
 }
 
@@ -134,13 +134,13 @@ html body {
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 4px #BDBDBD;
     display: block;
-    left: 225px;
-	top: 260px;
-    max-height: 210px;
-    min-height: 210px;
+    left: 215px;
+	top: 250px;
+    max-height: 200px;
+    min-height: 200px;
     padding: 20px;
     position: absolute;
-    width: 400px;
+    width: 370px;
 	position: absolute;
     z-index: 100;
 }
@@ -270,12 +270,12 @@ html body {
 #container_setDiv {
    background-color: transparent;
 	position: absolute;
-	top: 530px;
+	top: 500px;
     cursor: default;
     height: 40px;
-    left: 15px;
+    left: 5px;
     margin: 10px;
-    width: 880px;
+    width: 820px;
 }
 #id_setDiv {
     background-color: transparent;
@@ -284,7 +284,7 @@ html body {
     top: 5px;
     width: 120px;
 	float: left;
-	margin-left: 580px;
+	margin-left: 500px;
 }
 #id_prev_next_div{
 	float: left;

@@ -9,10 +9,15 @@ $(document).ready(function() {
 	$("#feedbackBtn").hide();
 	
 	loadjscssfile("../common/css/activityDefault.css", "css");
-	var statusParameters = getPassedParameters();
-	if (!statusParameters) {
+	
 	//Default values (for testing)
-	mediaPath = "sampleData/";
+		mediaPath = "sampleData/";	
+		xmlFilename = mediaPath + "warmup03_no_namespaces.xml";
+		jsonFilename = mediaPath + "warmup03_no_namespaces.js";
+/*	var statusParameters = getPassedParameters();
+	if (!statusParameters) {
+		//Default values (for testing)
+		mediaPath = "sampleData/";	
 		xmlFilename = mediaPath + "warmup03_no_namespaces.xml";
 		jsonFilename = mediaPath + "warmup03_no_namespaces.js";
 	}
@@ -32,7 +37,7 @@ $(document).ready(function() {
 		$('.activity_description').html('');
 	}
 	
-	
+*/	
 	testVideoSupport();
 	cssFilename = "styles/warmup_03_dliLearn.css";
 	loadActivity(parseXml);
@@ -164,35 +169,10 @@ function rightColDown(value){
 	var labelSel = "#" + value.id + " div";
 	var labelId = $(labelSel).attr("id");
 	var currentRightColLabelIndex = labelId.substr(labelId.length -1, 1);
-	
+
 	$("#div_rightCol" + currentRightColIndex).addClass("divBtnSelected");
 
 	var matchIndex = currentRightColLabelIndex;
-	
-	
-	//Logging
-	logStudentAnswer(
-		currentSet,
-		$("#rightColLabel" + currentLeftColIndex).text(),	
-		//$(labelSel).text(),
-		$(value).find(".rightColBtn").text()
-	);
-	
-	
-	var jItem = $(xml).find("item").eq(
-					currentSet*6 + currentLeftColIndex - 1);
-	
-	if(jItem.attr("timesTried") == undefined){
-		jItem.attr("timesTried", 1);
-	}else{
-		jItem.attr("timesTried",
-			parseInt(jItem.attr("timesTried")) + 1
-		);	
-	}
-	
-	logStudentAnswerAttempts(
-		currentSet,
-		jItem.attr("timesTried"));
 	
 	if(matchIndex == currentLeftColIndex){
 		itemCorrectToggle = true;
@@ -221,11 +201,11 @@ function loadNextSet(){
             	if(parent.activityCompleted){
             		parent.activityCompleted(1,0);
             	}else{
-		showFeedback("activity_completed");
+		  showFeedback("activity_completed");
                   }
 	}else{
-		loadSet(currentSet + 1);
-	}
+	      loadSet(currentSet + 1);
+	        }
 }
 
 function showFeedback(value, textInput){
@@ -263,7 +243,7 @@ function showFeedback(value, textInput){
 			if(currentSet + 1 != numSets){
 				$("#feedbackBtn").text("Next Set");
 			}
-			
+
 			setCompletedShown = true;
 			break;
 		case "activity_completed":
@@ -295,7 +275,7 @@ function closeFeedback(){
 	$("#feedbackHeader").html("");
 	$("#feedbackText").html("");
 	$("#feedbackBtn").hide();
-	
+
 //        $("#div_leftCol" + currentRightColIndex).removeClass("divBtnSelected");
         $("#div_rightCol" + currentRightColIndex).removeClass("divBtnSelected");
         $("#div_rightCol" + currentLeftColIndex).addClass("divBtn");
@@ -312,7 +292,7 @@ function closeFeedback(){
 		//Need this here to prevent this second from being run 
 		//twice (if set completed feedback runs)
 		itemCorrectToggle = false; 
-		
+
 		swapDivs(currentLeftColIndex, currentRightColIndex);
 		$("#div_rightCol" + currentLeftColIndex).removeClass("divBtn");
 		$("#div_rightCol" + currentLeftColIndex).addClass("divBtnDone");  // divBtnSelected
@@ -333,7 +313,7 @@ function closeFeedback(){
 	top: '250px',
 	width: 0,
 	height: 0
-	} );*/
+	} );*/   
 	
 
 	// For homework
