@@ -20,12 +20,12 @@
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 #container_setDiv {
-    top: 505px;
-    width: 889px;
+    top: 535px;
+    width: 810px;
 }
 #setDiv {
-    left: 780px;
-	top: 490px;
+    left: 685px;
+
 }
 .activity_description {
     font-family: inherit;
@@ -53,7 +53,7 @@ html body {
     line-height: 20px;
 }
 .dragBubbleText {
-    left: 9px;
+    left: 5px;
     position: relative;
     top: 5px;
 }
@@ -61,7 +61,7 @@ html body {
     background-color: grey;
     border-radius: 0 0 0 0;
     height: 243px;
-    left: 575px;
+    left: 510px;
     position: absolute;
     top: 30px;
     width: 324px;
@@ -80,8 +80,8 @@ html body {
     height: 242px;
 }
 .playBtn {
-    height: 55px;
-    left: -55px;
+    height: 40px;
+    left: -40px;
     position: absolute;
     top: -3px;
 }
@@ -97,10 +97,10 @@ html body {
     position: relative;
 }
 #dropTargets {
-    left: 10px;
+    left: 1px;
     position: absolute;
     top: 21px;
-    width: 330px;
+    width: 265px;
 }
 #container_setDiv {
     background-color: transparent;
@@ -108,16 +108,16 @@ html body {
 .dropTarget {
     border-radius: 0 0 0 0;
     height: 103px;
-    margin: 10px 0 10px 53px;
+    margin: 10px 0 10px 43px;
     position: relative;
-    width: 229px;
+    width: 220px;
 	text-align: center;
 }
 #dragBubbles {
-    left: 315px;
+    left: 275px;
     position: absolute;
     top: 30px;
-    width: 160px;
+    width: 225px;
 }
 .dragBubble {
     background-color: #F7F7F7;
@@ -130,7 +130,7 @@ html body {
     height: 52px;
     margin-bottom: 27px;
     padding: 2px;
-    width: 234px;
+    width: 220px;
 	text-align: center;
 	cursor: pointer;
 	overflow: auto
@@ -153,7 +153,7 @@ html body {
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 4px #BDBDBD;
     display: block;
-    left: 575px;
+    left: 510px;
     max-height: 260px;
     min-height: 260px;
     padding: 20px;
@@ -185,6 +185,6 @@ html body {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	width: 917px;
-	height: 590px;
+	width: 850px;
+	height: 550px;
 }

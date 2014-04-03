@@ -7,7 +7,7 @@
     margin-bottom: 20px;
     margin-left: 8px;
     margin-top: -20px;
-	width: 890px;
+	width: 830px;
 }
 .activity_hd {
     color: grey;
@@ -34,18 +34,18 @@ html body {
 
 #leftContainer{
 	left:0px;
-	top:10px;
+	top:5px;
 	width:395px;
 	height:360px;
 	position: absolute;
 }
 #firstRow, #secondRow, #thirdRow{
-	width: 540px;
+	width: 510px;
 	height: 160px;
 	border: 0px solid #ccc; 
 }
 .panal{
-	width: 145px;
+	width: 135px;
 	height: 110px;
 	position:relative;
 	margin-right: 10px;
@@ -66,7 +66,7 @@ html body {
 	width: 135px;
 	height: 110px;
 	position: relative;
-	margin: 5px;
+	margin: 5px 0px 0px 0px;
 	color: #eee;
 	font-size: 85px;
 	text-align: center;
@@ -75,19 +75,19 @@ html body {
 	border-radius: 5px 5px 5px 5px;
 }
 .showResult img{
-	padding: 0px 0px 0px 5px;
+	padding: 0px 0px 0px 0px;
 }
 .showResult div{
-	padding: 40px 0px 0px 5px;
+	padding: 30px 0px 0px 0px;
 }
 #rightContainer{
-	left:545px;
+	left:500px;
 	position: absolute;
 }
 #videoContainer0{
     background-color: #999;
     height: 240px;
-    left: 4px;
+    left: 1px;
 	top: 10px;
 	text-align: center;
     position: relative;
@@ -165,13 +165,13 @@ html body {
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 4px #BDBDBD;
     display: block;
-    left: 540px;
+    left: 500px;
     max-height: 160px;
     min-height: 160px;
     padding: 20px;
     position: absolute;
     top: 260px;
-    width: 305px;
+    width: 280px;
 	position: absolute;
     z-index: 100;
 }
@@ -182,13 +182,13 @@ html body {
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 4px #BDBDBD;
     display: block;
-    left: 540px;
+    left: 500px;
     max-height: 160px;
     min-height: 160px;
     padding: 20px;
     position: absolute;
     top: 260px;
-    width: 305px;
+    width: 280px;
 	position: absolute;
 }
 #feedbackBtn {
@@ -209,8 +209,8 @@ html body {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	width: 100%;
-	height: 100%;
+	width: 850px;
+	height: 600px;
 }
 
 
@@ -288,16 +288,16 @@ html body {
     background-color: transparent;
     cursor: default;
     height: 40px;
-    left: 19px;
+    left: 0px;
     margin: 10px;
     top: 460px;
-    width: 898px;
+    width: 810px;
 }
 #setDiv {
     background-color: transparent;
     cursor: default;
     height: 30px;
-    left: 752px;
+    left: 685px;
     position: relative;
     top: 5px;
     width: 115px;
