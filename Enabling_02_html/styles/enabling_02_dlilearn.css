@@ -74,13 +74,13 @@
     margin: 10px;
     position: relative;
     top: 0;
-    width: 880px;
+    width: 840px;
 }
 #setDiv {
     background-color: #F5F5F5;
     cursor: default;
     height: 30px;
-    left: 590px;
+    left: 530px;
     position: relative;
     top: 5px;
     width: 115px;
@@ -90,30 +90,14 @@
     background-color: grey;
     display: none;
     height: 426px;
-    left: 246px;
+    left: 235px;
     opacity: 0.1;
     position: absolute;
     top: -11px;
-    width: 655px;
+    width: 635px;
     z-index: 166;
 }
-.activity_description {
-    display: block;
-    font-family: inherit;
-    font-size: 12px;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    margin-left: 26px;
-    margin-top: -19px;
-}
-.activity_hd {
-    color: grey;
-    display: block;
-    font-family: inherit;
-    font-size: 22px;
-    margin-left: 26px;
-    margin-top: -2px;
-}
+
 html body {
     background-color: #F5F5F5;
     color: #444444;
@@ -151,7 +135,7 @@ html body {
     padding: 20px;
     position: absolute;
     top: 101px;
-    width: 185px;
+    width: 170px;
     z-index: 1000;
 }
 #feedbackHeader {
@@ -226,7 +210,7 @@ html body {
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 4px #BDBDBD;
     height: 401px;
-    left: 260px;
+    left: 235px;
     position: relative;
     width: 623px;
 }
@@ -448,7 +432,7 @@ html body {
     z-index: 7;
 }
 #id_prev_next_div {
-    left: 664px;
+    left: 620px;
     position: relative;
     top: -23px;
 }
@@ -461,7 +445,7 @@ html body {
     height: 80px;
     left: 8px;
     position: absolute;
-    width: 222px;
+    width: 210px;
 }
 #main {
     position: relative;

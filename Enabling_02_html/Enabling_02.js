@@ -16,18 +16,26 @@ $(document).ready(function() {
 	$("#feedbackBtn").hide();
 
 	btnCG_orig = $("#buttonGuard").css("z-index");
-	if ( getPassedParameters() == false){
+	
 	//Default values (for testing)
-	mediaPath = "sampleData/";
+		mediaPath = "sampleData/";
 		cssFilename = "styles/enabling_02_dlilearn.css";
-	xmlFilename = "sampleData/example2.xml";
-	jsonFilename = "sampleData/example2.js";
+		xmlFilename = "sampleData/example2.xml";
+		jsonFilename = "sampleData/example2.js";
+	
+/*	
+	if ( getPassedParameters() == false){
+		//Default values (for testing)
+		mediaPath = "sampleData/";
+		cssFilename = "styles/enabling_02_dlilearn.css";
+		xmlFilename = "sampleData/example2.xml";
+		jsonFilename = "sampleData/example2.js";
 	}
 	else{
 		// For performance - homework
 		var xmlPath2 = xmlPath.split("/");
 		var activityID = getURL_Parameter('activity');
-
+	
 		if (activityID.length < 2 ) {
 			activityID =+ "0" + activityID;
 		}
@@ -35,7 +43,7 @@ $(document).ready(function() {
 		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
 		$(".activity_hd").html('');
 	}
-
+*/
 	cssFilename = "styles/enabling_02_dlilearn.css";
 	loadActivity(parseXml);
 });
@@ -61,24 +69,6 @@ function dropFunction(event, ui ) {
 		DropIncorrectCount = 0;
 	}
 	
-	//Logging
-	var dragTextLookingFor = "";
-	
-	$("[id^='dragBubble_']").each(function(){
-			if($(this).data("dropTargetNum") == dropEnabledNumber){
-				//alert($(this).find(".dragBubbleText").text());
-				dragTextLookingFor = $(this).find(".dragBubbleText").text();
-			}
-	});
-		
-	logStudentAnswer(currentSet + ":" + itemsCompletedCount,	
-			dropEnabledNumber + ":" + dragTextLookingFor,
-			dropTargetNumGot + ":" + 
-				$(ui.draggable).find(".dragBubbleText").text());
-
-	logStudentAnswerAttempts(currentSet + ":" + 
-			itemsCompletedCount, (parseInt(DropIncorrectCount) + 1));	
-
 	if(dropTargetNumGot == dropTargetNumLookingFor
 		 && $(setXml).attr("dropEnabledNumber") == dropTargetNumGot){
 		//correct
@@ -104,7 +94,7 @@ function dropFunction(event, ui ) {
 		if(DropIncorrectCount > 0){
 			//autoplace item
 			showFeedback("incorrect", correctText);
-						
+
 			itemsCompletedCount++;
 			
 			DropIncorrectCount = 0;
@@ -231,7 +221,7 @@ function placeBtn(dragBubbleNum, targetNum){
 		topVal = -120;
 		modVal = dragBubbleNum -3;
 	}
-	
+
 	var leftVal = 0;
 	
 	
@@ -381,7 +371,7 @@ function loadSet(value){
 			
 			// To display ruby tag
 			if (!isJapanese) {
-			$("#dragBubbleText_" + tally).html($(this).text());
+				$("#dragBubbleText_" + tally).html($(this).text());
 			}
 			else {
 				$("#dragBubbleText_" + tally).html(displayRubyTag($(this).text()));
