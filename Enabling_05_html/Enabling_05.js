@@ -28,6 +28,11 @@ $(document).ready(function() {
 		audio_play_file(removeFileExt(file_audio) ,mediaPath );
 	});
 	
+	//Default values (for testing)
+		mediaPath = "sampleData/";			
+		xmlFilename = "sampleData/levantine_enabling05_noNamespaces.xml";
+		jsonFilename = "sampleData/levantine_enabling05_noNamespaces.js";
+/*		
 	if ( getPassedParameters() == false){
 	//Default values (for testing)
 	mediaPath = "sampleData/";
@@ -48,6 +53,7 @@ $(document).ready(function() {
 		$(".activity_description").html('');
 	
 	}
+*/	
 	cssFilename = "styles/Enabling_05_default.css";	
 	cssFilename = "styles/Enabling_05_dliLearn.css";
 	loadActivity(parseXml);

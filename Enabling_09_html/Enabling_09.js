@@ -4,6 +4,11 @@ $(document).ready(function() {
 	$('#feedback').show();
 	$("#feedbackBtn").hide();
 	
+	//Default values (for testing)
+		mediaPath = "sampleData/";		
+		xmlFilename = mediaPath + "levantine_enabling09_noNamespaces.xml";
+		jsonFilename = mediaPath + "levantine_enabling09_noNamespaces.js";
+/*		
 	if ( getPassedParameters() == false){
 	//Default values (for testing)
 	mediaPath = "sampleData/";
@@ -24,6 +29,7 @@ $(document).ready(function() {
 		$('.activity_hd').html('');
 		$('.activity_description').html('');
 	}
+*/	
 	cssFilename = "styles/enabling_09_dlilearn.css";
 	testVideoSupport();
 	
@@ -62,27 +68,6 @@ function parseXml(t_xml){
 	// To display ruby tag
 	isJapanese = $(xml).find("content").attr("target_language") == "Japanese";
 
-	/*if(numSets == 0){
-		alert("This activity needs more than 5 items to work correctly");
-	}
-	
-	for(var setIndex=0; setIndex < numSets; setIndex++){
-		var distractorItemNum;
-		
-		while(1){
-			distractorItemNum = getRandomNumber (0, numItems - 1);
-		
-			if(distractorItemNum >= (setIndex*numItemsPerSet) &&
-					distractorItemNum < (setIndex*numItemsPerSet) 
-													+ numItemsPerSet){
-			}else{
-				//if the distractor Item Number is not in the current
-				//set then add it to the array and break;
-				distractorIndexArr.push(distractorItemNum);
-				break;
-			}
-		}
-	}*/
 	//Randomize sets
 	//$(xml).find("item").shuffle()
 	
@@ -131,18 +116,13 @@ function loadSet(value){
 			);
 		$('#dropTargetText_' + i).addClass("displayNone");
 	}
-	
 }
-
-/*function getRandomNumber (min, max) {
-    return Math.floor(Math.random() * (max + 1 - min) + min);
-}*/
 
 function playVideo(index){
 	var file_video = $($(xml).find("file_video")[
 					(currentSet*numItemsPerSet) + index - 1]).text();
 	file_video = file_video.substring(0, file_video.lastIndexOf("."));
-	alert( file_video );
+	//alert( file_video );
 	loadVideo(mediaPath, file_video);
 	
 }
@@ -154,22 +134,24 @@ function extractLastLetter(value){
 function dropFunction(event, ui ) {
 	$("#clickGuard").css("display","block");
 
-	//var dragText = $(ui.draggable).find(".dragBubbleText").text();
-
 	var dropTargetNumGot = extractLastLetter($(this).attr("id"));
 	
 	var dropTargetNumLookingFor = extractLastLetter(
 							$(ui.draggable.find(".dragBubbleText")[0]).attr("id"));
 	
 	var jItem = $($(xml).find("item")[
-					(currentSet*numItemsPerSet) + (dropTargetNumGot - 1)]);
+					(currentSet*numItemsPerSet) + (dropTargetNumLookingFor - 1)]);
 	
+	var jDragItem = $($(xml).find("item")[
+	  	  				(currentSet*numItemsPerSet) + (dropTargetNumGot - 1)]);
+	  	
 	var dropBtnText = jItem.find("lang_en").text();
+	var dragBtnText = jDragItem.find("lang_en").text();
 	
 	logStudentAnswer(
 		currentSet,	
 		dropBtnText,
-		dragText
+		dragBtnText
 	);
  	
 	if(jItem.attr("timesTried") == undefined){

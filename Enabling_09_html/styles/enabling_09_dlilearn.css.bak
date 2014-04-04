@@ -19,14 +19,14 @@
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 #container_setDiv {
-    top: 475px;
+    top: 505px;
     width: 889px;
 }
 #setDiv {
-    left: 763px;
+    left: 780px;
+	top: 490px;
 }
 .activity_description {
-	display: block;
     font-family: inherit;
     font-size: 12px;
     letter-spacing: 2px;
@@ -39,7 +39,6 @@ h1, h2, h3, h4, h5 {
     line-height: 40px;
 }
 .activity_hd {
-	display: block;
     font-family: inherit;
     font-size: 22px;
     margin-left: 26px;
@@ -55,15 +54,15 @@ html body {
 .dragBubbleText {
     left: 9px;
     position: relative;
-    top: 14px;
+    top: 5px;
 }
 #videoContainer {
     background-color: grey;
     border-radius: 0 0 0 0;
     height: 243px;
-    left: 584px;
+    left: 575px;
     position: absolute;
-    top: 57px;
+    top: 30px;
     width: 324px;
 }
 .displayNone {
@@ -86,13 +85,13 @@ html body {
     top: -3px;
 }
 .dropTargetText {
-    font-size: 18px;
-    left: 14px;
+    font-size: 14px;
+    left: 5px;
     position: relative;
-    top: 9px;
+    top: 4px;
 }
 #dropTargets {
-    left: 25px;
+    left: 10px;
     position: absolute;
     top: 21px;
     width: 330px;
@@ -103,14 +102,15 @@ html body {
 .dropTarget {
     border-radius: 0 0 0 0;
     height: 49px;
-    margin: 37px 0 0 53px;
+    margin: 10px 0 50px 53px;
     position: relative;
     width: 229px;
+	text-align: center;
 }
 #dragBubbles {
-    left: 325px;
+    left: 315px;
     position: absolute;
-    top: 57px;
+    top: 30px;
     width: 160px;
 }
 .dragBubble {
@@ -122,9 +122,11 @@ html body {
     box-shadow: 0 2px 2px #BDBDBD;
     font-size: 14px;
     height: 52px;
-    margin-bottom: 18px;
+    margin-bottom: 27px;
     padding: 2px;
     width: 234px;
+	text-align: center;
+	cursor: pointer;
 }
 .itemDropped {
     background-color: #F7F7F7;
@@ -144,12 +146,12 @@ html body {
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 4px #BDBDBD;
     display: block;
-    left: 584px;
-    max-height: 156px;
-    min-height: 156px;
+    left: 575px;
+    max-height: 195px;
+    min-height: 195px;
     padding: 20px;
     position: absolute;
-    top: 305px;
+    top: 283px;
     width: 326px;
     z-index: 100;
 }
@@ -163,7 +165,12 @@ html body {
     letter-spacing: 2px;
     margin-top: -10px;
 }
-
+#feedbackText {
+    width: 300px;
+    min-height: 90px;
+    max-height: 90px;
+    overflow: auto;
+}
 #clickGuard {
 	display: none;
 	opacity: 0.3;

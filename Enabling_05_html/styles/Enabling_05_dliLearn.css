@@ -51,7 +51,7 @@
     opacity: 0.2;
     position: absolute;
     top: 0;
-    width: 890px;
+    width: 840px;
 	z-index: 10;
 }
 .activity_description {
@@ -116,7 +116,7 @@ html body {
     left: 0px;
     position: absolute;
     top: 10px;
-    width: 253px;
+    width: 243px;
 }
 .playBtn img {
     box-shadow: 0 0 4px 0 lightgray;
@@ -134,10 +134,10 @@ html body {
     width: 49px;
 }
 #dragBubbles {
-    left: 265px;
+    left: 255px;
     position: absolute;
     top: 10px;
-    width: 257px;
+    width: 220px;
 }
 #imageContainer {
     -moz-user-select: none;
@@ -145,9 +145,9 @@ html body {
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 4px #BDBDBD;
     height: 478px;
-    left: 535px;
+    left: 485px;
     position: absolute;
-    top: 20px;
+    top: 18px;
     width: 358px;
 }
 .imageOverlay {
@@ -159,7 +159,7 @@ html body {
     background-color: white;
     cursor: default;
     height: 30px;
-    left: 779px;
+    left: 720px;
     position: relative;
     top: 510px;
     width: 113px;
@@ -205,12 +205,12 @@ html body {
     box-shadow: 0 2px 4px #BDBDBD;
     display: block;
     left: 5px;
-    max-height: 120px;
-    min-height: 120px;
+    max-height: 125px;
+    min-height: 125px;
     padding: 20px;
     position: absolute;
     top: 373px;
-    width: 480px;
+    width: 430px;
     z-index: 100;
 }
 #feedbackBtn {

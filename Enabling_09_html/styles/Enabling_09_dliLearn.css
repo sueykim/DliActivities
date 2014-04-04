@@ -19,12 +19,11 @@
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 #container_setDiv {
-    top: 505px;
-    width: 889px;
+    top: 500px;
+    width: 820px;
 }
 #setDiv {
-    left: 780px;
-	top: 490px;
+    left: 690px;
 }
 .activity_description {
     font-family: inherit;
@@ -52,15 +51,18 @@ html body {
     line-height: 20px;
 }
 .dragBubbleText {
-    left: 9px;
+    left: 3px;
     position: relative;
-    top: 5px;
+    top: 3px;
+	height: 50px;
+	font-size: 13px;
+	overflow: auto;
 }
 #videoContainer {
     background-color: grey;
     border-radius: 0 0 0 0;
     height: 243px;
-    left: 575px;
+    left: 520px;
     position: absolute;
     top: 30px;
     width: 324px;
@@ -85,59 +87,61 @@ html body {
     top: -3px;
 }
 .dropTargetText {
-    font-size: 14px;
-    left: 5px;
+    font-size: 13px;
+    left: 3px;
     position: relative;
-    top: 4px;
+    top: 3px;
+	height: 50px;
+	overflow: auto;
 }
 #dropTargets {
     left: 10px;
     position: absolute;
-    top: 21px;
-    width: 330px;
+    top: 11px;
+    width: 290px;
 }
 #container_setDiv {
     background-color: transparent;
 }
 .dropTarget {
     border-radius: 0 0 0 0;
-    height: 49px;
-    margin: 10px 0 50px 53px;
+    height: 60px;
+    margin: 20px 0 40px 53px;
     position: relative;
-    width: 229px;
+    width: 220px;
 	text-align: center;
 }
 #dragBubbles {
-    left: 315px;
+    left: 290px;
     position: absolute;
     top: 30px;
-    width: 160px;
+    width: 220px;
 }
 .dragBubble {
     background-color: #F7F7F7;
-    background-image: url("../../common/img/bg_dropbubble_50.png");
+    background-image: url("../../common/img/bg_dropbubble_60.png");
     background-repeat: repeat-x;
     border: 1px solid lightgrey;
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 2px #BDBDBD;
     font-size: 14px;
-    height: 52px;
-    margin-bottom: 27px;
+    height: 60px;
+    margin-bottom: 28px;
     padding: 2px;
-    width: 234px;
+    width: 220px;
 	text-align: center;
 	cursor: pointer;
 }
 .itemDropped {
     background-color: #F7F7F7;
-    background-image: url("../../common/img/bg_dropbubble_50.png");
+    background-image: url("../../common/img/bg_dropbubble_60.png");
     background-repeat: repeat-x;
     border: 1px solid lightgrey;
     border-radius: 3px 3px 3px 3px;
-    height: 50px;
-    margin-bottom: 18px;
+    height: 60px;
+    margin-bottom: 40px;
     padding: 2px;
-    width: 234px;
+    width: 220px;
 }
 #feedback {
     -moz-user-select: none;
@@ -146,9 +150,9 @@ html body {
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 4px #BDBDBD;
     display: block;
-    left: 575px;
-    max-height: 195px;
-    min-height: 195px;
+    left: 520px;
+    max-height: 220px;
+    min-height: 220px;
     padding: 20px;
     position: absolute;
     top: 283px;
@@ -167,8 +171,8 @@ html body {
 }
 #feedbackText {
     width: 300px;
-    min-height: 90px;
-    max-height: 90px;
+    min-height: 115px;
+    max-height: 115px;
     overflow: auto;
 }
 #clickGuard {
@@ -178,6 +182,6 @@ html body {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	width: 917px;
+	width: 850px;
 	height: 526px;
 }

@@ -7,7 +7,7 @@
     margin-bottom: 20px;
     margin-left: 8px;
     margin-top: -20px;
-    width: 880px;
+    width: 840px;
 }
 .activity_hd {
     color: grey;
@@ -34,12 +34,13 @@ html body {
 }
 
 #videoContainer{
-    background-color: grey;
+    background-color: #999;
     height: 240px;
-    width: 320px;
-	position: absolute;
-	left: 560px;
+    left: 525px;
 	top: 20px;
+	text-align: center;
+    position: relative;
+    width: 320px;
 }
 
 #clickGuard {
@@ -66,7 +67,7 @@ html body {
     min-height: 120px;
     padding: 20px;
     position: absolute;
-    width: 840px;
+    width: 800px;
 	position: absolute;
     z-index: 100;
 }
@@ -83,7 +84,7 @@ html body {
     min-height: 120px;
     padding: 20px;
     position: absolute;
-    width: 840px;
+    width: 800px;
 	position: absolute;
 }
 #feedbackBtn {
@@ -109,6 +110,7 @@ html body {
 }
 
 .itemCompleted{
+	color: #999999;
 /*	border: 2px solid darkGrey;
 	background-color: darkGrey;*/
 }
@@ -135,9 +137,7 @@ html body {
     position: absolute;
     left: 8px;
 }
-select{
-	height: 38px;
-}
+
 .dropTargetText{
 	font-size: 18px;
 	margin-left: 10px;
@@ -145,7 +145,7 @@ select{
 
 #dropTargets{
 	left: 0px;
-	width: 540px;
+	width: 510px;
 	position: absolute;
 	padding: 5px;
 }
@@ -154,22 +154,6 @@ select{
 	margin: 3px;
 	padding: 2px;
 	height: 45px;
-}
-
-#dragBubbles{
-	left: 363px;
-	width: 160px;
-	position: absolute;
-	top: 191px;
-}
-
-.dragBubble{
-	margin-top: 2px;
-	border: 3px solid lightgrey;
-	background-color: lightgrey;
-	padding: 2px;
-	width: 229px;
-	font-size: 14px;
 }
 
 .roundCorners {
@@ -185,62 +169,18 @@ select{
 .dropdown-menu {
 	background:#DDD;	
 	margin-top:2px;
-	padding:15px;
-	width:90%;
+	padding:25px;
+	width:490px;
 	border-radius: 3px 3px 3px 3px !important;
 	font-size: 16px;
-	padding: 1px;
+	padding: 2px;
 	height: 40px;
+	text-align: center;
 }
-
-option{
-	border-bottom:1px solid #999;
-	margin-bottom:10px;
-	padding-bottom:10px;
-	margin:10px;
-	padding:10px;
-	font-size: 16px;
-}
-
-.dropdown-menu option {
-	border-bottom:1px solid #999;
-	margin-bottom:10px;
-	padding-bottom:10px;
-	margin:10px;
-	padding:10px;
-	font-size: 16px;
-}
-
-option:hover{
-	background-color: #CCC;
-}
-.dropdown-menu option:last-child {
-	border:none;
-	margin:10px;
-	padding:10px;
-}
-
-.dropdown-menu:before {
-  position: absolute;
-  top: -19px;
-  right: 14px;
-  display: inline-block;
-  border-right: 10px solid transparent;
-  border-bottom: 18px solid #ccc;
-  border-left: 10px solid transparent;
-  border-bottom-color: rgba(0, 0, 0, 0.2);
-  content: '';
-}
-
-.dropdown-menu:after {
-  position: absolute;
-  top: -18px;
-  right: 15px;
-  display: inline-block;
-  border-right: 9px solid transparent;
-  border-bottom: 19px solid #DDD;
-  border-left: 9px solid transparent;
-  content: '';
+.dropdown-text{
+	height: 40px;
+	width: 90%;
+	overflow: auto;
 }
 
 .orange_border{
@@ -290,7 +230,7 @@ option:hover{
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 #id_setDiv {
-    left: 780px;
+    left: 720px;
     top: 475px;
     width: 120px;
 	position:absolute;
@@ -320,4 +260,47 @@ option:hover{
     text-align: center;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
     vertical-align: middle;
+}
+
+.playBtnImg{
+	 background-color: transparent;
+
+}
+.playBtnDiv{
+	float: left;
+	
+}
+.css_menu{
+	cursor           : pointer;
+	font-weight      : bold;
+}
+
+.css_menu_def{
+	display          : none;
+}
+
+.css_menu_table{
+	border-collapse  : collapse;
+	border-bottom: 1px solid #999;
+}
+.menuTD{
+	border-bottom: 1px solid #999;
+	width			 : 455px;
+}
+.menuChoice{
+	width: 100%;
+	text-align: center;
+	padding: 5px;
+}
+#id_menu_box{
+	border: 1px solid #BDBDBD;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 2px 4px #BDBDBD;
+	top              : -100px;
+	left             : 0px;
+	position         : absolute;
+	margin           : 0px;
+	padding          : 0px;
+	visibility       : hidden;
+	z-index          :102;
 }
