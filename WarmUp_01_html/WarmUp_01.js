@@ -69,14 +69,14 @@ function parseXml(t_xml){
 		keyboardLayout();
 	}
 	numItems = $(xml).find("item").length;
-	numSets = Math.ceil(numItems/6);
+	numSets = Math.floor(numItems/6);
 	
 	//var romaji_keyboard = $($(xml).find("section")[0]).attr("keyboard");
 	//alert(romaji_keyboard)
 	//if (romaji_keyboard == "romaji") //for Japanese Romaji
 		//keyboardFilename = '../common/keyboards/romaji_keyboard.js';
 	//Randomize sets
-	//$(xml).find("item").shuffle()
+	$(xml).find("item").shuffle()
 	//alert(numSets)
 
 	// true for homework and undefined for regular
@@ -85,7 +85,7 @@ function parseXml(t_xml){
 	isJapanese = $(xml).find("content").attr("target_language") == "Japanese";
 	
 	loadSet(0);
-	for(var i=0;i<numItems; i++){
+	for(var i=0;i<numSets*6; i++){
 		itemCompletedAry.push(0);
 	}
 	//alert (itemCompletedAry);
