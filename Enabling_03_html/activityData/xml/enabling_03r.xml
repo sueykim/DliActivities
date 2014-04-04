@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<content hw="true" target_language="MSA" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart" rtl="true">
+  <session>
+    <item>
+      <lang_tl_phrase_text dir="rtl">لون||الحجاب||أسود</lang_tl_phrase_text>
+      <lang_en_phrase_text>The color of the veil is black.</lang_en_phrase_text>
+      <lang_tl_phrase_audio>ad_t13_s5_session1_1.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="rtl">الحجاب</lang_tl_word_text>
+      <lang_en_word_text>veil</lang_en_word_text>
+      <lang_tl_word_audio>ad_t13_s5_session1_1_word.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>2</lang_tl_word_order>
+      <lang_en_word_order>5</lang_en_word_order>
+      <distractor_1>الشارب</distractor_1>
+      <distractor_2>اللحية</distractor_2>
+      <hint_layer_1><![CDATA[A definite noun that starts with the letter ح]]></hint_layer_1>
+      <feedback_layer_1><![CDATA[The subject of the sentence has two parts: the first is an indefinite word لون and the second is definite الحجاب]]></feedback_layer_1>
+      <feedback_layer_2><![CDATA[The first word لَوْنُ is the subject of the sentence and is paired with /Damma/. The second word  الحِجابِ goes with /kasra/.     ]]></feedback_layer_2>
+      <hint_layer_3><![CDATA[A definite, four-letter word derived from the verb حَجَبَ, meaning <b>to cover.</b>]]></hint_layer_3>
+      <feedback_layer_3><![CDATA[Islamic veils, as well as black gloves, socks and burkas, are commonly imported from Afghanistan and Iran.]]></feedback_layer_3>
+      <file_pdf></file_pdf>
+    </item>
+    <item>
+      <lang_tl_phrase_text dir="rtl">الرجل||له||شارب||رفيع</lang_tl_phrase_text>
+      <lang_en_phrase_text>The officer has a thin mustache.</lang_en_phrase_text>
+      <lang_tl_phrase_audio>ad_t13_s5_session1_2.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="rtl">شارب</lang_tl_word_text>
+      <lang_en_word_text>mustache</lang_en_word_text>
+      <lang_tl_word_audio>ad_t13_s5_session1_2_word.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>3</lang_tl_word_order>
+      <lang_en_word_order>6</lang_en_word_order>
+      <distractor_1>قصير</distractor_1>
+      <distractor_2>طويل</distractor_2>
+      <hint_layer_1><![CDATA[The first letter in the missing word is ش]]></hint_layer_1>
+      <feedback_layer_1><![CDATA[In Arabic, the second word له consists of two parts: ل and ه]]></feedback_layer_1>
+      <feedback_layer_2><![CDATA[شارب رفيع means <b>a thin mustache.</b> رفيع is the masculine form of <b>thin.</b> Its feminine form is رَفيعَة, marked with ة /taa marbouta/.]]></feedback_layer_2>
+      <hint_layer_3><![CDATA[This is a singular noun. Its plural form is شَوارب]]></hint_layer_3>
+      <feedback_layer_3><![CDATA[The legal age for marriage is twenty-one for men, eighteen for women. ]]></feedback_layer_3>
+      <file_pdf></file_pdf>
+    </item>
+    <item>
+      <lang_tl_phrase_text dir="rtl">رأيت||رجلا||يلبس||قميصا||أصفر</lang_tl_phrase_text>
+      <lang_en_phrase_text>I saw a man wearing a yellow shirt.</lang_en_phrase_text>
+      <lang_tl_phrase_audio>ad_t13_s5_session1_3.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="rtl">رجلا</lang_tl_word_text>
+      <lang_en_word_text>man</lang_en_word_text>
+      <lang_tl_word_audio>ad_t13_s5_session1_3_word.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>2</lang_tl_word_order>
+      <lang_en_word_order>4</lang_en_word_order>
+      <distractor_1>بنتا</distractor_1>
+      <distractor_2>امرأة</distractor_2>
+      <hint_layer_1><![CDATA[The first letter is letter in the missing word is ر]]></hint_layer_1>
+      <feedback_layer_1><![CDATA[This is an example of a sentence that starts with a verb. رأيتُ is made of the verb رأى <b>to see</b> and /taa/ <b>(I).</b>]]></feedback_layer_1>
+      <feedback_layer_2><![CDATA[A /burnous/ (a sleeveless coat) is worn by Algerian men. The Algerian traditional dress is one of the most indicative of the North African region. ]]></feedback_layer_2>
+      <hint_layer_3><![CDATA[An indefinite noun acts as an object, with a final /alif/ as a marker.]]></hint_layer_3>
+      <feedback_layer_3><![CDATA[The traditional men's costume of Algeria consists of a /gandoura/, a cloak made of white or brown wool.]]></feedback_layer_3>
+      <file_pdf></file_pdf>
+    </item>
+  </session>
+  <session>
+    <item>
+      <lang_tl_phrase_text dir="rtl">رجل||عجوز||يلبس||جلبابا||أبيض</lang_tl_phrase_text>
+      <lang_en_phrase_text>An old man wearing a white garment.</lang_en_phrase_text>
+      <lang_tl_phrase_audio>ad_t13_s5_session2_1.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="rtl">عجوز</lang_tl_word_text>
+      <lang_en_word_text>old</lang_en_word_text>
+      <lang_tl_word_audio>ad_t13_s5_session2_1_word.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>2</lang_tl_word_order>
+      <lang_en_word_order>2</lang_en_word_order>
+      <distractor_1>أصلع</distractor_1>
+      <distractor_2>وسيم</distractor_2>
+      <hint_layer_1><![CDATA[An adjective that starts with the letter ع]]></hint_layer_1>
+      <feedback_layer_1><![CDATA[رجل عجوز means <b>an old man.</b> عجوز is also used to describe an old woman. ]]></feedback_layer_1>
+      <feedback_layer_2><![CDATA[جلباب أبيض means <b>white garment.</b> جلبلب is traditional dress for Arabs. ]]></feedback_layer_2>
+      <hint_layer_3><![CDATA[A four-letter adjective. Its plural form is عجزة or عجائز]]></hint_layer_3>
+      <feedback_layer_3><![CDATA[In Algeria, men usually wear white /burnous/ in the summer, which may be beautifully embroidered with various designs. ]]></feedback_layer_3>
+      <file_pdf></file_pdf>
+    </item>
+    <item>
+      <lang_tl_phrase_text dir="rtl">شاهدت||امرأة||سمينة</lang_tl_phrase_text>
+      <lang_en_phrase_text>I saw an overweight woman.</lang_en_phrase_text>
+      <lang_tl_phrase_audio>ad_t13_s5_session2_2.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="rtl">سمينة</lang_tl_word_text>
+      <lang_en_word_text>overweight</lang_en_word_text>
+      <lang_tl_word_audio>ad_t13_s5_session2_2_word.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>3</lang_tl_word_order>
+      <lang_en_word_order>4</lang_en_word_order>
+      <distractor_1>عجوز</distractor_1>
+      <distractor_2>نحيلة</distractor_2>
+      <hint_layer_1><![CDATA[A feminine adjective that starts with the letter س]]></hint_layer_1>
+      <feedback_layer_1><![CDATA[امرأة بدينة means <b>an overweight woman.</b> The masculine form of سمينة is سمين  The term /badeen/ is also commonly used in MSA. ]]></feedback_layer_1>
+      <feedback_layer_2><![CDATA[امرأة سمينة is pronounced /imRa-atun sameenah/. The /taa marboutah/ is pronounced as the final letter ت /taa/ when it is followed by another noun.]]></feedback_layer_2>
+      <hint_layer_3><![CDATA[A derivative of the key word is سَمَن, which means <b>butter.</b>]]></hint_layer_3>
+      <feedback_layer_3><![CDATA[A typical woman in Algeria wears a dress known as a /haik/, which is a veil that covers the woman from head to toe.]]></feedback_layer_3>
+      <file_pdf></file_pdf>
+    </item>
+    <item>
+      <lang_tl_phrase_text dir="rtl">أبي||له||لحية||بيضاء</lang_tl_phrase_text>
+      <lang_en_phrase_text>My father has a white beard.</lang_en_phrase_text>
+      <lang_tl_phrase_audio>ad_t13_s5_session2_3.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="rtl">لحية</lang_tl_word_text>
+      <lang_en_word_text>beard</lang_en_word_text>
+      <lang_tl_word_audio>ad_t13_s5_session2_3_word.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>3</lang_tl_word_order>
+      <lang_en_word_order>6</lang_en_word_order>
+      <distractor_1>شارب</distractor_1>
+      <distractor_2>حجاب</distractor_2>
+      <hint_layer_1><![CDATA[A feminine noun used to describe men.]]></hint_layer_1>
+      <feedback_layer_1><![CDATA[لحية بيضاء means <b>a white beard.</b> The color أبيض <b>(white)</b> is used in Arabic to refer to gray hair in English. ]]></feedback_layer_1>
+      <feedback_layer_2><![CDATA[Algeria is known as the Land of the Million Martyrs, a reference to its war of independence from 1954-62.]]></feedback_layer_2>
+      <hint_layer_3><![CDATA[A four-letter noun, that starts with the letter ل]]></hint_layer_3>
+      <feedback_layer_3><![CDATA[In Algeria, the Armed Islamic Group (GIA) conducted a violent campaign of civilian massacres between 1992-98.]]></feedback_layer_3>
+      <file_pdf></file_pdf>
+    </item>
+  </session>
+  <session>
+    <item>
+      <lang_tl_phrase_text dir="rtl">الطبيب||أصلع||وله||لحية||سوداء</lang_tl_phrase_text>
+      <lang_en_phrase_text>The doctor is bald and has a black beard.</lang_en_phrase_text>
+      <lang_tl_phrase_audio>ad_t13_s5_session3_1.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="rtl">أصلع</lang_tl_word_text>
+      <lang_en_word_text>bald</lang_en_word_text>
+      <lang_tl_word_audio>ad_t13_s5_session3_1_word.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>2</lang_tl_word_order>
+      <lang_en_word_order>4</lang_en_word_order>
+      <distractor_1>امرأة</distractor_1>
+      <distractor_2>عجوز</distractor_2>
+      <hint_layer_1><![CDATA[An adjective used mainly to describe men. ]]></hint_layer_1>
+      <feedback_layer_1><![CDATA[French is used in medical school in Algeria as the main subject language. ]]></feedback_layer_1>
+      <feedback_layer_2><![CDATA[The Algerian government provides free undergraduate education to Algerians. It takes students seven years to graduate from medical school. ]]></feedback_layer_2>
+      <hint_layer_3><![CDATA[A four-letter adjective that starts with the letter أ]]></hint_layer_3>
+      <feedback_layer_3><![CDATA[During a 2003 earthquake in northern Algeria in which 2,700 died and 7,000 were injured, Doctors Without Borders provided care.]]></feedback_layer_3>
+      <file_pdf></file_pdf>
+    </item>
+    <item>
+      <lang_tl_phrase_text dir="rtl">رأيت||امرأة||تلبس||نظارة||شمسية</lang_tl_phrase_text>
+      <lang_en_phrase_text>I saw a woman wearing sunglasses.</lang_en_phrase_text>
+      <lang_tl_phrase_audio>ad_t13_s5_session3_2.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="rtl">نظارة</lang_tl_word_text>
+      <lang_en_word_text>sunglasses</lang_en_word_text>
+      <lang_tl_word_audio>ad_t13_s5_session3_2_word.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>4</lang_tl_word_order>
+      <lang_en_word_order>6</lang_en_word_order>
+      <distractor_1>حجاب</distractor_1>
+      <distractor_2>شارب</distractor_2>
+      <hint_layer_1><![CDATA[A singular noun, but its English equivalent is plural.]]></hint_layer_1>
+      <feedback_layer_1><![CDATA[نظّارة comes from the verb نَظّر, which means <b>to make someone see.</b>]]></feedback_layer_1>
+      <feedback_layer_2><![CDATA[نظّارة طبية means <b>prescription glasses.</b> طبية literally means <b>medical.</b>]]></feedback_layer_2>
+      <hint_layer_3><![CDATA[The noun is derived from the verb نَظَرَ ]]></hint_layer_3>
+      <feedback_layer_3><![CDATA[The plural of نظارة  is نَظّارات . Both are used interchangeably in Arabic to refer to <b>glasses.</b>]]></feedback_layer_3>
+      <file_pdf></file_pdf>
+    </item>
+    <item>
+      <lang_tl_phrase_text dir="rtl">بنت||طويلة||دخلت||المكتب</lang_tl_phrase_text>
+      <lang_en_phrase_text>A tall girl entered the office.</lang_en_phrase_text>
+      <lang_tl_phrase_audio>ad_t13_s5_session3_3.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="rtl">طويلة</lang_tl_word_text>
+      <lang_en_word_text>tall</lang_en_word_text>
+      <lang_tl_word_audio>ad_t13_s5_session3_3_word.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>2</lang_tl_word_order>
+      <lang_en_word_order>2</lang_en_word_order>
+      <distractor_1>نظارة</distractor_1>
+      <distractor_2>قصيرة</distractor_2>
+      <hint_layer_1><![CDATA[A feminine adjective that starts with the letter ط]]></hint_layer_1>
+      <feedback_layer_1><![CDATA[بنتٌ طويلةٌ means <b>a tall girl.</b>]]></feedback_layer_1>
+      <feedback_layer_2><![CDATA[During the 1962 Algerian War of Independence, women fought as equals alongside men. ]]></feedback_layer_2>
+      <hint_layer_3><![CDATA[The adjective is derived from the verb طَوَلَ]]></hint_layer_3>
+      <feedback_layer_3><![CDATA[Jamila Bouhired is an Algerian revolutionary who opposed French colonial rule of Algeria. She is regarded as a hero in Algeria. ]]></feedback_layer_3>
+      <file_pdf></file_pdf>
+    </item>
+  </session>
+
+</content>

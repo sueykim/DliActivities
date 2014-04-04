@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content hw="true" target_language="French" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
+  <session>
+    
+    <item>
+      <lang_tl_phrase_text dir="ltr">Ramassez||le||sac-à dos!</lang_tl_phrase_text>
+      <lang_en_phrase_text>Pick up the backpack!</lang_en_phrase_text>
+      <lang_tl_phrase_audio>fr_pick_up_backpack.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="ltr">Ramassez</lang_tl_word_text>
+      <lang_en_word_text>Pick</lang_en_word_text>
+      <lang_tl_word_audio>fr_pick_up.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <lang_en_word_order>1</lang_en_word_order>
+      <distractor_1>Allumez</distractor_1>
+      <distractor_2>Eteignez</distractor_2>
+      <hint_layer_1>This is a way to tell someone to take something by hand.</hint_layer_1>
+      <feedback_layer_1>Ramassez le sac-à-dos! means Pick up the backpack!</feedback_layer_1>
+      <feedback_layer_2>The French "ramassez", is "pick up"in English.</feedback_layer_2>
+      <hint_layer_3>When some one is told to collect or gather something.</hint_layer_3>
+      <feedback_layer_3>The word "ramassez" means "pick up".</feedback_layer_3>
+      <file_pdf>fr_pick_up.pdf</file_pdf>
+    </item>
+    <item>
+      <lang_tl_phrase_text dir="ltr">Parlez||-moi!</lang_tl_phrase_text>
+      <lang_en_phrase_text>Speak to me!</lang_en_phrase_text>
+      <lang_tl_phrase_audio>fr_speak_me.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="ltr">Parlez</lang_tl_word_text>
+      <lang_en_word_text>Speak</lang_en_word_text>
+      <lang_tl_word_audio>fr_speak.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <lang_en_word_order>1</lang_en_word_order>
+      <distractor_1>Ecoutez</distractor_1>
+      <distractor_2>Allumez</distractor_2>
+      <hint_layer_1>This is a way to tell someone to pronounce words.</hint_layer_1>
+      <feedback_layer_1>Parlez-moi! means Speak to me!</feedback_layer_1>
+      <feedback_layer_2>The French "parlez", is "speak" in English.</feedback_layer_2>
+      <hint_layer_3>When some one is told to articulate in an audible voice.</hint_layer_3>
+      <feedback_layer_3>The word "parlez" means "speak".</feedback_layer_3>
+      <file_pdf>fr_speak.pdf</file_pdf>
+    </item>
+    <item>
+      <lang_tl_phrase_text dir="ltr">Ecoutez||-moi!</lang_tl_phrase_text>
+      <lang_en_phrase_text>Listen to me!</lang_en_phrase_text>
+      <lang_tl_phrase_audio>fr_listen_to_me.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="ltr">Ecoutez</lang_tl_word_text>
+      <lang_en_word_text>Listen</lang_en_word_text>
+      <lang_tl_word_audio>fr_listen.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <lang_en_word_order>1</lang_en_word_order>
+      <distractor_1>Venez</distractor_1>
+      <distractor_2>Chargez</distractor_2>
+      <hint_layer_1>This is a way to pay attention to what you are saying.</hint_layer_1>
+      <feedback_layer_1>"Ecoutez-moi!" means "Listen to me!". "Ecoutez", formal imperative of "écouter" regular "–er verb", means "listen". </feedback_layer_1>
+      <feedback_layer_2>You chose "écoutez", which means "listen".</feedback_layer_2>
+      <hint_layer_3>When someone is told to make an effort to hear something.</hint_layer_3>
+      <feedback_layer_3>The word "écoutez" means "listen".</feedback_layer_3>
+      <file_pdf>fr_listen.pdf</file_pdf>
+    </item>
+    
+  </session>
+   <session>
+    <item>
+      <lang_tl_phrase_text dir="ltr">Eteignez||la||radio!</lang_tl_phrase_text>
+      <lang_en_phrase_text>Turn off the radio!</lang_en_phrase_text>
+      <lang_tl_phrase_audio>fr_turn_off_radio.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="ltr">Eteignez</lang_tl_word_text>
+      <lang_en_word_text>Turn</lang_en_word_text>
+      <lang_tl_word_audio>fr_turn_off.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <lang_en_word_order>1</lang_en_word_order>
+      <distractor_1>Allumez</distractor_1>
+      <distractor_2>Ecoutez</distractor_2>
+      <hint_layer_1>This is a way to tell someone to switch off something.</hint_layer_1>
+      <feedback_layer_1>Eteignez la radio! means Turn off the radio!</feedback_layer_1>
+      <feedback_layer_2>The French "éteignez", is "turn off" in English.</feedback_layer_2>
+      <hint_layer_3>When someone is told to stop something function.</hint_layer_3>
+      <feedback_layer_3>The word "éteignez" means "turn off".</feedback_layer_3>
+      <file_pdf>fr_turn_off.pdf</file_pdf>
+    </item>
+    <item>
+      <lang_tl_phrase_text dir="ltr">Chargez||le||camion!</lang_tl_phrase_text>
+      <lang_en_phrase_text>Load the truck!</lang_en_phrase_text>
+      <lang_tl_phrase_audio>fr_load_truck.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="ltr">Chargez</lang_tl_word_text>
+      <lang_en_word_text>Load</lang_en_word_text>
+      <lang_tl_word_audio>fr_load.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <lang_en_word_order>1</lang_en_word_order>
+      <distractor_1>Déchargez</distractor_1>
+      <distractor_2>Ramassez</distractor_2>
+      <hint_layer_1>This is a way to tell someone to place something in a truck.</hint_layer_1>
+      <feedback_layer_1>Chargez le camion! means Load the truck!</feedback_layer_1>
+      <feedback_layer_2>The French "chargez", is "load" in English.</feedback_layer_2>
+      <hint_layer_3>When someone is told to put ammunition into a weapon. </hint_layer_3>
+      <feedback_layer_3>The word "chargez" means "load".</feedback_layer_3>
+      <file_pdf>fr_load.pdf</file_pdf>
+    </item>
+    <item>
+      <lang_tl_phrase_text dir="ltr">Déchargez||le||camion!</lang_tl_phrase_text>
+      <lang_en_phrase_text>Unload the truck!</lang_en_phrase_text>
+      <lang_tl_phrase_audio>fr_unload_truck.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="ltr">Déchargez</lang_tl_word_text>
+      <lang_en_word_text>Unload</lang_en_word_text>
+      <lang_tl_word_audio>fr_unload.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <lang_en_word_order>1</lang_en_word_order>
+      <distractor_1>Chargez</distractor_1>
+      <distractor_2>Eteignez</distractor_2>
+      <hint_layer_1>This is a way to tell someone to remove the cargo from a truck. </hint_layer_1>
+      <feedback_layer_1>Déchargez le camion! means Unload the truck! </feedback_layer_1>
+      <feedback_layer_2>The French "déchargez", is "unload" in English.</feedback_layer_2>
+      <hint_layer_3>When someone is told to discharge.</hint_layer_3>
+      <feedback_layer_3>The word "déchargez" means "unload".</feedback_layer_3>
+      <file_pdf>fr_unload.mp3</file_pdf>
+    </item>
+  </session>
+ <!-- <session>
+    <item>
+      <lang_tl_phrase_text dir="ltr">Ouvrez||la||porte!</lang_tl_phrase_text>
+      <lang_en_phrase_text>Open the door!</lang_en_phrase_text>
+      <lang_tl_phrase_audio>fr_open_door.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="ltr">Ouvrez</lang_tl_word_text>
+      <lang_en_word_text>Open</lang_en_word_text>
+      <lang_tl_word_audio>fr_open.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <lang_en_word_order>1</lang_en_word_order>
+      <distractor_1>Chargez</distractor_1>
+      <distractor_2>Fermez</distractor_2>
+      <hint_layer_1>This is a way to tell someone to create an opening.</hint_layer_1>
+      <feedback_layer_1>Ouvrez la porte! means Open the door!</feedback_layer_1>
+      <feedback_layer_2>The French "ouvrez", is "open" in English.</feedback_layer_2>
+      <hint_layer_3>The word ouvrez means open.</hint_layer_3>
+      <feedback_layer_3>The word "ouvrez" means "open".</feedback_layer_3>
+      <file_pdf>fr_open.pdf</file_pdf>
+    </item>
+    <item>
+      <lang_tl_phrase_text dir="ltr">Fermez||la||fenêtre!</lang_tl_phrase_text>
+      <lang_en_phrase_text>Close the window!</lang_en_phrase_text>
+      <lang_tl_phrase_audio>fr_close_window.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="ltr">Fermez</lang_tl_word_text>
+      <lang_en_word_text>Close</lang_en_word_text>
+      <lang_tl_word_audio>fr_close.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <lang_en_word_order>1</lang_en_word_order>
+      <distractor_1>Ouvrez</distractor_1>
+      <distractor_2>Ramassez</distractor_2>
+      <hint_layer_1>This is the opposite of open.</hint_layer_1>
+      <feedback_layer_1>Fermez la fenêtre! means Close the window!</feedback_layer_1>
+      <feedback_layer_2>The French "fermez", is "close" in English.</feedback_layer_2>
+      <hint_layer_3>When someone is told to obstruct an opening.</hint_layer_3>
+      <feedback_layer_3>The word "fermez" means "close".</feedback_layer_3>
+      <file_pdf>fr_close.pdf</file_pdf>
+    </item>
+    <item>
+      <lang_tl_phrase_text dir="ltr">Allumez||les||lumières!</lang_tl_phrase_text>
+      <lang_en_phrase_text>Turn on the lights!</lang_en_phrase_text>
+      <lang_tl_phrase_audio>fr_turn_on_lights.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="ltr">Allumez</lang_tl_word_text>
+      <lang_en_word_text>Turn on</lang_en_word_text>
+      <lang_tl_word_audio>fr_turn_on.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <lang_en_word_order>1</lang_en_word_order>
+      <distractor_1>Eteignez</distractor_1>
+      <distractor_2>Asseyez</distractor_2>
+      <hint_layer_1>This is a way to tell someone to light a place.</hint_layer_1>
+      <feedback_layer_1>Allumez les lumières! means Turn on the lights!</feedback_layer_1>
+      <feedback_layer_2>The French "allumez", is "turn on" in English.</feedback_layer_2>
+      <hint_layer_3>When someone is told to light a place.</hint_layer_3>
+      <feedback_layer_3>The word "allumez" means "turn on".</feedback_layer_3>
+      <file_pdf>fr_turn_on.pdf</file_pdf>
+    </item>
+  </session>
+  <session>
+    <item>
+      <lang_tl_phrase_text dir="ltr">Asseyez||-vous||sur||la||chaise!</lang_tl_phrase_text>
+      <lang_en_phrase_text>Sit on the chair!</lang_en_phrase_text>
+      <lang_tl_phrase_audio>fr_sit_chair.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="ltr">Asseyez</lang_tl_word_text>
+      <lang_en_word_text>Sit</lang_en_word_text>
+      <lang_tl_word_audio>fr_sit.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <lang_en_word_order>1</lang_en_word_order>
+      <distractor_1>Allumez</distractor_1>
+      <distractor_2>Arrêtez</distractor_2>
+      <hint_layer_1>This is a way to tell someone to take a seat.</hint_layer_1>
+      <feedback_layer_1>Asseyez-vous sur la chaise! means Sit on the chair!</feedback_layer_1>
+      <feedback_layer_2>The French "asseyez-vous", is "sit" in English.</feedback_layer_2>
+      <hint_layer_3>When someone is told to take a seat.</hint_layer_3>
+      <feedback_layer_3>The word "asseyez-vous" means "sit".</feedback_layer_3>
+      <file_pdf></file_pdf>
+    </item>
+    <item>
+      <lang_tl_phrase_text dir="ltr">Tenez-vous||debout||à||côté||du||mur!</lang_tl_phrase_text>
+      <lang_en_phrase_text>Stand near the wall!</lang_en_phrase_text>
+      <lang_tl_phrase_audio>fr_stand_wall.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="ltr">Tenez-vous</lang_tl_word_text>
+      <lang_en_word_text>Stand</lang_en_word_text>
+      <lang_tl_word_audio>fr_stand.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <lang_en_word_order>1</lang_en_word_order>
+      <distractor_1>Ramassez</distractor_1>
+      <distractor_2>Venez</distractor_2>
+      <hint_layer_1>This is a way to order someone to maintain an upright position on the feet.</hint_layer_1>
+      <feedback_layer_1>Tenez-vous debout à côté du mur! means Stand near the wall!</feedback_layer_1>
+      <feedback_layer_2>The French "tenez-vous debout", is stand in English.</feedback_layer_2>
+      <hint_layer_3>When someone is told to maintain an upright position on the feet.</hint_layer_3>
+      <feedback_layer_3>The expression "tenez-vous debout" means "stand".</feedback_layer_3>
+      <file_pdf></file_pdf>
+    </item>
+    <item>
+      <lang_tl_phrase_text dir="ltr">Attendez||à||la||porte!</lang_tl_phrase_text>
+      <lang_en_phrase_text>Wait at the door!</lang_en_phrase_text>
+      <lang_tl_phrase_audio>fr_wait_door.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="ltr">Attendez</lang_tl_word_text>
+      <lang_en_word_text>Wait </lang_en_word_text>
+      <lang_tl_word_audio>fr_wait.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <lang_en_word_order>1</lang_en_word_order>
+      <distractor_1>Arrêtez</distractor_1>
+      <distractor_2>Ecoutez</distractor_2>
+      <hint_layer_1>This is way to tell someone to not go further.</hint_layer_1>
+      <feedback_layer_1>Attendez à la porte! means Wait at the door!</feedback_layer_1>
+      <feedback_layer_2>The French "attendez", is "wait" in English.</feedback_layer_2>
+      <hint_layer_3>When someone is told to remain.</hint_layer_3>
+      <feedback_layer_3>The word "attendez" means "wait".</feedback_layer_3>
+      <file_pdf></file_pdf>
+    </item>
+  </session>
+ <session>
+    <item>
+      <lang_tl_phrase_text dir="ltr">Prenez||la||feuille!</lang_tl_phrase_text>
+      <lang_en_phrase_text>Take the paper!</lang_en_phrase_text>
+      <lang_tl_phrase_audio>fr_take_paper.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="ltr">Prenez</lang_tl_word_text>
+      <lang_en_word_text>Take</lang_en_word_text>
+      <lang_tl_word_audio>fr_take.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <lang_en_word_order>1</lang_en_word_order>
+      <distractor_1>Chargez</distractor_1>
+      <distractor_2>Donnez</distractor_2>
+      <hint_layer_1>This is what you tell someone when you are offering something.</hint_layer_1>
+      <feedback_layer_1>Prenez la feuille! means Take the sheet of paper!</feedback_layer_1>
+      <feedback_layer_2>The French "prenez", is "take" in English.</feedback_layer_2>
+      <hint_layer_3>When someone is told to have something.</hint_layer_3>
+      <feedback_layer_3>The word "prenez" means "take".</feedback_layer_3>
+      <file_pdf></file_pdf>
+    </item>
+    <item>
+      <lang_tl_phrase_text dir="ltr">Donnez||-moi||votre carte d’identité!</lang_tl_phrase_text>
+      <lang_en_phrase_text>Give me your ID!</lang_en_phrase_text>
+      <lang_tl_phrase_audio>fr_give_me_id.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="ltr">Donnez</lang_tl_word_text>
+      <lang_en_word_text>Give</lang_en_word_text>
+      <lang_tl_word_audio>fr_give.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <lang_en_word_order>1</lang_en_word_order>
+      <distractor_1>Ecoutez</distractor_1>
+      <distractor_2>Asseyez</distractor_2>
+      <hint_layer_1>This is a way to order someone to yield possession of something.</hint_layer_1>
+      <feedback_layer_1>Donnez-moi votre carte d’identité! means Give me your ID card!</feedback_layer_1>
+      <feedback_layer_2>The French "donnez", is "give" in Enligh.</feedback_layer_2>
+      <hint_layer_3>When someone is told to yield possession of something.</hint_layer_3>
+      <feedback_layer_3>The word "donnez" means "give".</feedback_layer_3>
+      <file_pdf></file_pdf>
+    </item>
+    <item>
+      <lang_tl_phrase_text dir="ltr">Posez||le||sac-à-dos!</lang_tl_phrase_text>
+      <lang_en_phrase_text>Put down the backpack!</lang_en_phrase_text>
+      <lang_tl_phrase_audio>fr_put_down_backpack.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="ltr">Posez</lang_tl_word_text>
+      <lang_en_word_text>Put</lang_en_word_text>
+      <lang_tl_word_audio>fr_put_down.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <lang_en_word_order>1</lang_en_word_order>
+      <distractor_1>Chargez</distractor_1>
+      <distractor_2>Venez</distractor_2>
+      <hint_layer_1>This is a way to tell someone to place something somewhere. </hint_layer_1>
+      <feedback_layer_1>Posez le sac-à-dos! means Put down the backpack!</feedback_layer_1>
+      <feedback_layer_2>The French "posez", is "put down" in English.</feedback_layer_2>
+      <hint_layer_3>When someone is told to something somewhere.</hint_layer_3>
+      <feedback_layer_3>The word "posez" means "put down".</feedback_layer_3>
+      <file_pdf></file_pdf>
+    </item>
+  </session>
+  <session>
+    <item>
+      <lang_tl_phrase_text dir="ltr">Venez||ici!</lang_tl_phrase_text>
+      <lang_en_phrase_text>Come here!</lang_en_phrase_text>
+      <lang_tl_phrase_audio>fr_come_here.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="ltr">Venez</lang_tl_word_text>
+      <lang_en_word_text>Come</lang_en_word_text>
+      <lang_tl_word_audio>fr_come.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <lang_en_word_order>1</lang_en_word_order>
+      <distractor_1>Fermez</distractor_1>
+      <distractor_2>Donnez</distractor_2>
+      <hint_layer_1>This is a way to tell someone to move in your direction.</hint_layer_1>
+      <feedback_layer_1>Venez ici! means Come here!</feedback_layer_1>
+      <feedback_layer_2>The French "venez", is "come" in English.</feedback_layer_2>
+      <hint_layer_3>When someone is told to move in your direction.</hint_layer_3>
+      <feedback_layer_3>The word "venez" means "come".</feedback_layer_3>
+      <file_pdf></file_pdf>
+    </item>
+    <item>
+      <lang_tl_phrase_text dir="ltr">Allez||-vous-en!</lang_tl_phrase_text>
+      <lang_en_phrase_text>Go away!</lang_en_phrase_text>
+      <lang_tl_phrase_audio>fr_go_away.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="ltr">Allez</lang_tl_word_text>
+      <lang_en_word_text>Go away. </lang_en_word_text>
+      <lang_tl_word_audio>fr_go_away.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <lang_en_word_order>1</lang_en_word_order>
+      <distractor_1>Donnez</distractor_1>
+      <distractor_2>Venez</distractor_2>
+      <hint_layer_1>This is a way to tell someone to move away from you.</hint_layer_1>
+      <feedback_layer_1>Allez-vous-en! means Go away!</feedback_layer_1>
+      <feedback_layer_2>The French "allez-vous-en", is "go away" in English.</feedback_layer_2>
+      <hint_layer_3>When someone is told to move away from you.</hint_layer_3>
+      <feedback_layer_3>The expression "allez-vous-en" means "go away".</feedback_layer_3>
+      <file_pdf></file_pdf>
+    </item>
+    <item>
+      <lang_tl_phrase_text dir="ltr">Arrêtez||de||courir!</lang_tl_phrase_text>
+      <lang_en_phrase_text>Stop running!</lang_en_phrase_text>
+      <lang_tl_phrase_audio>fr_stop_running.mp3</lang_tl_phrase_audio>
+      <lang_tl_word_text dir="ltr">Arrêtez</lang_tl_word_text>
+      <lang_en_word_text>Stop</lang_en_word_text>
+      <lang_tl_word_audio>fr_stop.mp3</lang_tl_word_audio>
+      <lang_tl_word_order>1</lang_tl_word_order>
+      <lang_en_word_order>1</lang_en_word_order>
+      <distractor_1>Chargez</distractor_1>
+      <distractor_2>Ramassez</distractor_2>
+      <hint_layer_1>This is a way to tell someone not to move.</hint_layer_1>
+      <feedback_layer_1>Arrêtez de courir! means Stop running! (literally stop to run). </feedback_layer_1>
+      <feedback_layer_2>The French "arrêtez", is "stop" in English.</feedback_layer_2>
+      <hint_layer_3>When someone is told to not move</hint_layer_3>
+      <feedback_layer_3>The word "arrêtez" means "stop".</feedback_layer_3>
+      <file_pdf></file_pdf>
+    </item>
+  </session>
+  -->
+
+</content>
