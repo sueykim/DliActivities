@@ -1,0 +1,377 @@
+
+.noSelect{
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+
+  /* No support for these yet, use at own risk */
+  -o-user-select: none;
+  user-select: none;          
+}
+#setTitle {
+    background-image: url("../../common/img/bg_btn_set.png") !important;
+    border-bottom-left-radius: 4px;
+    border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+    border-top-left-radius: 4px;
+    float: left;
+    font-size: 14px;
+    margin-left: 0;
+    padding-left: 6px;
+    padding-top: 7px;
+}
+#setText {
+    border-radius: 0 4px 4px 0;
+    bottom: auto;
+    font-size: 14px;
+    height: 20px;
+    left: 0;
+    padding-right: 7px;
+    padding-top: 7px;
+    position: relative;
+    top: 0;
+    width: 29px;
+}
+.btn_set {
+    background-color: #999999;
+    background-image: url("../../common/img/bg_btn_set.png") !important;
+    background-position: center bottom !important;
+    background-repeat: repeat-x !important;
+    color: #FFFFFF;
+    left: 3px;
+    letter-spacing: 2px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.bootstrapLabel {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #F5F5F5;
+    background-image: linear-gradient(to bottom, #FFFFFF, #E6E6E6);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+    border-image: none;
+    border-radius: 0 0 0 0;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    cursor: default;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-left: -1px;
+    padding: 4px 12px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+}
+#container_setDiv {
+   background-color:transparent;
+    cursor: default;
+    height: 40px;
+    left: 659px; /*650px; ------------------------------------*/
+    margin: 10px;
+    top: 599px; /*575px;--------------------------------------*/
+    width: 100px;
+}
+#setDiv {
+    background-color: #F5F5F5;
+    cursor: default;
+    height: 30px;
+    left: 0px;
+    top: 5px;
+    width: 106px;  /*115px;-------------------------------------*/
+    z-index: 0;
+}
+#clickGuard {
+    background-color:  #F8F8F8; /*for IE */
+    display: none;
+    height: 485px;
+    margin-left:15px;
+    margin-top:-20px;
+    opacity: 0.3;
+    width: 745px;
+    z-index:10;
+}
+
+#activityGuard {
+    background-color:  #F8F8F8; /*for IE */
+    display: none;
+    height: 650px;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    top: 0px;
+    width: 850px;
+    z-index:10;
+}
+
+#navGuard {
+    display: none;
+    height: 100px;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    top: 590px;
+    width: 850px;
+    z-index:10;
+}
+
+
+.activity_description {
+    display: block;
+    font-family: inherit;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-left: 26px;
+    margin-top: -19px;
+}
+.activity_hd {
+    color: grey;
+    display: block;
+    font-family: inherit;
+    font-size: 22px;
+    margin-left: 26px;
+    margin-top: -2px;
+}
+html body {
+    background-color: #F5F5F5;
+    color: #444444;
+    font-family: Arial,Helvetica,sans-serif;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+.roundCorners {
+    border-radius: 0 0 0 0;
+}
+
+
+#feedback06 {
+    -moz-user-select: none;
+    background: url("../../common/img/bg_dropbubble_50.png") repeat-x scroll center bottom #F5F5F5;
+    border: 1px solid #BDBDBD;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 2px 4px #BDBDBD;
+    display: block;
+    float: left;
+    margin-left:15px;
+    height:45px;
+    padding: 20px 5px 20px 20px;
+    position: absolute;
+    top: 560px;
+    width: 600px;   /*715px ------------------------------*/
+    z-index: 0;
+}
+#feedbackHeader {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: -13px;
+}
+#feedbackText {
+    margin-top: -23px;
+    height:38px;
+    width:595px;
+}
+#feedbackBtn {
+    bottom: 7px;
+    position: absolute;
+    right: 10px;
+}
+#clickGuard_container {
+    height: 550px;
+    width: 800px;
+}
+
+
+
+#main {
+    height: 600px;
+    margin-left: 10px;
+    width: 800px;
+}
+
+
+#stage {
+    -moz-user-select: none;
+    border: 1px solid #BDBDBD;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 2px 4px #BDBDBD;
+    display: block;
+    float: left;
+    left: 33px;
+    width: 700px;
+    height: 442px;
+    padding: 20px;
+    position: absolute;
+    top: 70px;
+    background-color: #DDDBDB;
+}
+
+#id_prev_next_div {
+	left: 120px;
+	position: absolute;
+	top: 5px;
+	width:165px;
+}
+
+.btn_prev {
+	cursor: pointer;
+	border-radius: 3px 0px 0px 3px;
+	height:23px;
+}
+
+.btn_prev:hover {
+	background-color: rgb(230, 230, 230);
+}
+
+.btn_next:hover {
+	background-color: rgb(230, 230, 230);
+}
+
+.btn_next {
+	cursor: pointer;
+	border-radius: 0px 3px 3px 0px;
+	height:23px;
+	margin-left:-10px;
+}
+
+
+.items {
+       width:740px;
+       height:140px; 
+       margin-top:20px; 
+       background-color: #ececec;
+
+}
+#textA {
+       width:320px;
+       height:40px;
+       border: 1px solid white;
+       float:left;
+       padding: 5px 10px 5px 10px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        background-color: #E8E8E8;
+}
+#textB {
+       width:320px;
+       height:40px;
+       border: 1px solid white;
+       float:left;
+       margin-left:16px;
+       padding: 5px 10px 5px 10px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        background-color: #E8E8E8;
+}
+
+#dropA {
+       width:135px;
+       height:215px;
+       border: 1px solid white;
+       float:left;
+       margin-top: 20px;
+       background-color: #E8E8E8;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+
+}
+#dropB {
+       width:135px;
+       height:215px;
+       border: 1px solid white;
+       float:left;
+       margin-top: 20px;
+       margin-left:16px;
+       background-color: #E8E8E8;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+}
+
+.dropArea {
+  padding-top:80px;
+  text-align: center;
+  vertical-align:middle;
+  
+}
+
+.drop  {
+    height: 28px;
+    width: 35px;
+    background-color:lightgrey;
+    margin-left:50px;
+    margin-top: 5px;
+    text-align:center;
+    padding-top:7px;
+
+}
+
+
+#pic {
+       width:390px;
+       height:295px;
+       float:left;
+       margin-top: 20px;
+       margin-left:16px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+
+}
+
+#dragBtns {
+       width:420px;
+       height:60px;
+       float:left;
+       margin-left:195px;
+       margin-top: 25px;
+       text-align: center;
+       padding-top: 10px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        height:50px;
+}
+
+
+.drag{
+    cursor: pointer;
+    float:right
+    height: 35px;
+    width: 35px;
+    opacity:1;
+
+   }
+
+.audBtns  {
+    height: 35px;
+    width: 35px;
+    float: left;
+    background-color:#C4C4C4;
+    margin-left:15px;
+    padding-top:2px;
+}
+
+#videoContainerx{
+    background-color: grey;
+    height: 240px;
+    width: 320px;
+	position: absolute;
+	left: 560px;
+	top: 20px;
+}
+
+#videoContainer{
+       width:390px;
+       height:295px;
+       float:left;
+       margin-top: 20px;
+       margin-left:16px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+}
+
+#videoTag {
+	width: 390px;
+    height: 295px;
+}
