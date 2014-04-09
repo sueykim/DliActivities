@@ -22,6 +22,11 @@ $(document).ready(function() {
 		hoverClass: "dropTargetHover",
 		drop: dropFunction}); 
 	
+	//Default values (for testing)
+	mediaPath = "sampleData/";		
+	xmlFilename = mediaPath + "Enabling_07_sample.xml";
+	jsonFilename = mediaPath + "Enabling_07_sample.js";
+/*		
 	if ( getPassedParameters() == false){
 	//Default values (for testing)
 	mediaPath = "sampleData/";
@@ -42,6 +47,7 @@ $(document).ready(function() {
 		$(".activity_description").html('');
 	
 	}
+*/	
 	cssFilename = "styles/enabling_07_dlilearn.css";
 	loadActivity(parseXml);
 	
@@ -115,9 +121,9 @@ function positionPlayBtn(index){
 
 function positionPlayBtn2(index){
     //$('#playBtn' + index).removeClass("playBtn");
-    var toppx = index == 0 ? 93 : index == 1 ? 35: -17;
+    var toppx = index == 0 ? 86 : index == 1 ? 30: -23;
     $('#playBtn' + index).animate({
-      left: "+=373",
+      left: "+=330",
       top: "+="+toppx,
     }, 2000, function(){
 

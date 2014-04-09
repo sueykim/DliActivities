@@ -22,13 +22,27 @@ $(document).ready(function() {
 		hoverClass: "dropTargetHover",
 		drop: dropFunction}); 
 	
-	
+	if ( getPassedParameters() == false){
 	//Default values (for testing)
 	mediaPath = "sampleData/";
-	cssFilename = "styles/Enabling_07.css";
 	xmlFilename = mediaPath + "Enabling_07_sample.xml";
 	jsonFilename = mediaPath + "Enabling_07_sample.js";
+	}
+	else{
+		// For performance - homework
+		var xmlPath2 = xmlPath.split("/");
+		var activityID = getURL_Parameter('activity');
 	
+		if (activityID.length < 2 ) {
+			activityID =+ "0" + activityID;
+		}
+		
+		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
+		$(".activity_hd").html('');
+		$(".activity_description").html('');
+	
+	}
+	cssFilename = "styles/enabling_07_dlilearn.css";
 	loadActivity(parseXml);
 	
 	/*if(params["debug"] != null){
@@ -38,8 +52,21 @@ $(document).ready(function() {
 
 var jContent;
 
+// For homework
+var homeworkStatus;
+var answerAttemptsNum = 0;
+
+// To display ruby tag
+var isJapanese = false;
+
 function parseXml(t_xml){
 	xml = t_xml;
+	
+	// true for homework and undefined for regular
+	homeworkStatus = $(xml).find("content").attr("hw");
+	
+	// To display ruby tag
+	isJapanese = $(xml).find("content").attr("target_language") == "Japanese";
 	
 	//Zero out values
 	$(xml).find("section").attr("currentExchangeIndex", "0");
@@ -86,6 +113,17 @@ function positionPlayBtn(index){
     $('#playBtn' + index).addClass("dropPlayBtn" + index);
 }
 
+function positionPlayBtn2(index){
+    //$('#playBtn' + index).removeClass("playBtn");
+    var toppx = index == 0 ? 93 : index == 1 ? 35: -17;
+    $('#playBtn' + index).animate({
+      left: "+=373",
+      top: "+="+toppx,
+    }, 2000, function(){
+
+    });
+//    $('#playBtn' + index).addClass("dropPlayBtn" + index);
+}
 var dragging = false;
 function draggingFunction(){
 	dragging = true;
@@ -144,6 +182,7 @@ function dropFunction(event, ui ){
 	
 		exchangeSolved();
 		showFeedback("correct", $(jItem.find("feedback")).text());
+		$("#caption_2_text").css("display","block"); //not show 2nd text
 	}else{
 		if(parseInt($(jItem).attr("timesIncorrect")) == 1){
 			//Auto solve exchange
@@ -208,7 +247,7 @@ function autoPlaceCorrectBubble(){
 			randomizedPlayBtnsArr[jContent.attr("currentConversationIndex")]
 					[parseInt(jSection.attr("currentExchangeIndex"))]);
 	
-	positionPlayBtn(indexNum);
+	positionPlayBtn2(indexNum);
 	autoPlaceCorrectBubble_ended(); //todo animate this
 }
 
@@ -219,7 +258,7 @@ function autoPlaceCorrectBubble_ended(){
 
 function exchangeSolved(){
 	exchangeSolvedToggle = true;
-	
+	$("#caption_2_text").css("display","block");
 	jSection.attr("numberOfExchangesSolved", 
 		parseInt(jSection.attr("numberOfExchangesSolved")) + 1);
 }
@@ -266,9 +305,19 @@ function loadExchange(value){
 	$("#stageImg").attr("src", mediaPath + "png/" + $(jItem.find("image")).text());
 	
 	//load the captions
-	$("#caption_1_text").text($(jItem.find("tl_prompt_text")).text());
-	$("#caption_2_text").text($(jItem.find("tl_response_text")).text());
+	//$("#caption_1_text").text($(jItem.find("tl_prompt_text")).text());
+	//$("#caption_2_text").text($(jItem.find("tl_response_text")).text());
+	if (!isJapanese) {
+		$("#caption_1_text").html($(jItem.find("tl_prompt_text")).text());
+		$("#caption_2_text").html($(jItem.find("tl_response_text")).text());
+	}
+	else {
+		// To display ruby tag
+		$("#caption_1_text").html(displayRubyTag($(jItem.find("tl_prompt_text")).text()));
+		$("#caption_2_text").html(displayRubyTag($(jItem.find("tl_response_text")).text()));
+	}
 
+	$("#caption_2_text").css("display","none"); //not show at first
 	//load drag bubbles if present
 	if(parseInt(jSection.attr("numberOfExchangesSolved")) > 
 						jSection.attr("currentExchangeIndex")){
@@ -549,7 +598,7 @@ function completed(){
 	}
 }
 
-function showFeedback(value, text){
+function showFeedback(value, textInput){
 	showClickGuard();
 	
 	//Clear the dialog box
@@ -557,6 +606,15 @@ function showFeedback(value, text){
 	$("#feedbackText").html("");
 	$("#feedbackBtn").text("OK");
 	$("#feedbackBtn").show();
+	
+	var text = "";
+	if (!isJapanese) {
+		text = textInput;
+	}
+	else {
+		// To display ruby tag
+		text = displayRubyTag(textInput);
+	}
 	
 	switch(value){
 		case "incorrect":
@@ -578,8 +636,8 @@ function showFeedback(value, text){
 			break;
 		case "activity_completed":
 			$("#feedbackHeader").html("Activity Completed");
-			$("#feedbackBtn").html("Next Activity");
-			$("#feedbackBtn").css("height", "55px");
+			$("#feedbackBtn").html("OK");
+//			$("#feedbackBtn").css("height", "55px");
 			break;
 	}
 	
@@ -624,4 +682,62 @@ function closeFeedback(){
 			exchangeAudioPlay();
 		}
 	}
+	
+	// For homework
+	if (homeworkStatus) {
+		checkAnswers();
+	}
+}
+
+
+function getPassedParameters()
+{
+	mediaPath = getURL_Parameter("mediaPath");
+	xmlPath   = getURL_Parameter("xmlPath");
+	return mediaPath != 'undefined';
+}
+function getURL_Parameter(param) {
+    var urlQuery = location.href.split("?")
+    if (typeof urlQuery == 'undefined')
+        return 'undefined';
+
+    if (urlQuery.length < 2)
+        return 'undefined';
+
+    var urlItems = urlQuery[1].split("&")
+    var paramCount = urlItems.length;
+    for (i = 0; i < paramCount; i++) {
+        paramItem = urlItems[i].split("=");
+        paramName = paramItem[0];
+        paramValue = paramItem[1];
+
+        if (param == paramName) {
+            return paramValue;
+        }
+    }
+    return 'undefined';
+}
+
+// For homework
+function checkAnswers(){
+	var questionID = "";
+	var answer = "";
+	var context = "";
+	var answerAttempts = "";
+
+	answerAttemptsNum++;
+
+	questionID = parseInt(currentSet.toString());
+	answer = "--";
+	context = "--";
+	answerAttempts = answerAttemptsNum.toString();
+	
+	// To see attempts - temp
+	//$("#feedbackText").html("Homework//answerAttempts: " + answerAttemptsNum.toString() + " - " + questionID);
+		
+	// To pass logs
+	logStudentAnswer(questionID, answer, context);
+	logStudentAnswerAttempts(questionID, answerAttempts);
+	
+	//$('#feedbackText').show();
 }

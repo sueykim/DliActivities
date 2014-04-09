@@ -8,6 +8,7 @@
   -o-user-select: none;
   user-select: none;          
 }
+/*
 #setTitle {
     background-image: url("../../common/img/bg_btn_set.png") !important;
     border-bottom-left-radius: 4px;
@@ -43,6 +44,7 @@
     letter-spacing: 2px;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
+*/
 .bootstrapLabel {
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
@@ -69,6 +71,7 @@
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
     vertical-align: middle;
 }
+/*
 #container_setDiv {
     background-color: transparent;
     cursor: default;
@@ -100,6 +103,7 @@
 	-webkit-box-sizing: initial;
 	box-sizing: content-box;
 }
+*/
 #clickGuard {
     background-color: grey;
     display: none;
@@ -108,7 +112,7 @@
     opacity: 0.2;
     position: absolute;
     top: 0;
-    width: 915px;
+    width: 850px;
     z-index: 99;
 }
 .activity_description {
@@ -119,7 +123,7 @@
     margin-bottom: 20px;
     margin-left: 26px;
     margin-top: -19px;
-    max-width: 910px;
+    max-width: 830px;
 }
 .activity_hd {
     color: grey;
@@ -160,11 +164,11 @@ html body {
     display: block;
     left: 0px;
     margin-left: 0px;
-    max-height: 217px;
-    min-height: 217px;
+    max-height: 205px;
+    min-height: 205px;
     padding: 20px;
     position: absolute;
-    width: 202px;
+    width: 212px;
     text-align: left;
     z-index: 1000;
     top: 190px;
@@ -207,7 +211,8 @@ html body {
 #captionBubbles_container {
     height: 157px;
     position: relative;
-    width: 580px;
+	margin-left: 3px;
+    width: 540px;
 }
 
 .captionBubble {
@@ -215,9 +220,9 @@ html body {
   border: 1px solid #c3c3c3;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
     float: left;
-    height: 135px;
-    margin: 12px;
-    width: 264px;
+    height: 141px;
+    margin: 5px;
+    width: 254px;
 }
 
 #setDiv_container {
@@ -228,7 +233,7 @@ html body {
 }
 
 #playBtnVideo{
-    left: 49px;
+    left: 30px;
     position: absolute;
     top: 350px;
     z-index: 9000;
@@ -236,7 +241,7 @@ html body {
 
 #videoTag{
 	height: 392px;
-	margin: 30px 0px 0px 34px;
+	margin: 23px 0px 0px 3px;
 	width: 523px;
     
     
@@ -249,11 +254,11 @@ html body {
     border: 1px solid #BDBDBD;
     background: url("../../common/img/bg_dropbubble_50.png") repeat-x scroll center bottom #F5F5F5;
     top: 0px;
-    left: 60px;
+    left: 50px;
     display: block;
-    height: 450px;
+    height: 437px;
     position: absolute;
-    width: 586px;
+    width: 528px;
 	z-index: 1000;
 }
 
@@ -268,17 +273,17 @@ html body {
 
 #rightBar{
     z-index: auto;
-    left: 655px;
+    left: 590px;
     position: absolute;
     text-align: center;
     top: 0px;
-    width: 242px;
+    width: 252px;
     height: 450px;
 }
 
 #statusBar {
 	padding-left: 0px;
-	width: 95px;
+	width: 50px;
 	height: 450px;
 	position: absolute;
 }
@@ -286,7 +291,7 @@ html body {
 .playBtn {
 	padding-right: 3px;
 	padding-left: 1px;
-	width: 48px;
+	width: 40px;
 	float: left;
 }
 
@@ -299,16 +304,16 @@ html body {
 }
 
 .dropPlayBtn0 {
-    left: 373px;
-    top: 93px;
+    left: 330px;
+    top: 86px;
 }
 .dropPlayBtn1 {
-    left: 373px;
-    top: 35px;
+    left: 330px;
+    top: 30px;
 }
 .dropPlayBtn2 {
-    left: 373px;
-    top: -17px;
+    left: 330px;
+    top: -23px;
 }
 
 #drop {
@@ -322,11 +327,11 @@ html body {
 #stageClickGuard {
 	background-color: grey;
 	opacity: .2;
-	height: 457px;
+	height: 450px;
 	left: 0px;
 	position: absolute;
 	top: 0px;
-	width: 655px;
+	width: 585px;
 }
 
 #conversationTally_container {
@@ -437,21 +442,22 @@ html body {
 }
 
 #stage {
-    height: 450px;
+    height: 437px;
     position: absolute;
-    text-align: center;
-    width: 580px;
+    text-align: left;
+	margin-left: 6px;
+    width: 525px;
 }
 
 #stageImg {
     height: 100%;
     width: 100%;
-    background-color: green;
+/*    background-color: green;*/
     position: relative;
 }
 
 #stage_container{
-    left: 60px;
+    left: 50px;
     position: absolute;
 	
 }
@@ -467,15 +473,14 @@ html body {
   margin-left: -0.75em;
   width: 1.5em;
   height: 1.5em;
-  z-index: 3;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
   background: #fafafa;
-  border: 1px solid #c3c3c3;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  border: 0px solid #c3c3c3;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
   border-top-left-radius: 0;
 }
 

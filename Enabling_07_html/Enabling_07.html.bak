@@ -1,6 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
+		<!--<script type="text/javascript" src="../common/js/firebug-lite-1_2.js"></script>-->
+		
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 		
@@ -29,16 +31,9 @@
 		<div id="htmlAudioPlayerDiv"></div>
 		<div id="embeddedAudioPlayerDiv"></div>
 		
-		<h3 class="activity_hd">Enabling 7</h3>
+		<h3 class="activity_hd"></h3>
 		<div class="activity_description">
-			Read the content in the the first speech bubble then 
-			click on the play icons and drag to the correct response.
-			Read the content in the the first speech bubble then 
-			click on the play icons and drag to the correct response.
-			Read the content in the the first speech bubble then 
-			click on the play icons and drag to the correct response.
-			Read the content in the the first speech bubble then 
-			click on the play icons and drag to the correct response.
+
 		</div>
 		
 		<div id="main_container">
@@ -76,9 +71,13 @@
 					
 					
 					<div id="captionBubbles_container" class="roundCorners">
+					    <div class="main-wrapper">
+
 						<div id="captionBubble0" class="roundCorners captionBubble">
 							<div id="caption_1_text"></div>
 						</div>
+                                                <div class="tooltip" style="left: 15%; top:135px;"></div>
+					    </div>
 						<div id="captionBubble1" class="roundCorners captionBubble">
 							<div id="drop" >
 								<img id="drop_img" src="../common/Library/images/drop_target.png">

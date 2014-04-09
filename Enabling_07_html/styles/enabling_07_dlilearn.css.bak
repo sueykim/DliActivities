@@ -214,7 +214,6 @@ html body {
     background-color: #fafafa;
   border: 1px solid #c3c3c3;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-  z-index;1000;
     float: left;
     height: 135px;
     margin: 12px;
