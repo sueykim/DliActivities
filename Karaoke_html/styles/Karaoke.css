@@ -1,0 +1,194 @@
+body{
+	width: 500px;
+}
+
+#banner_img{
+    width: 500px;
+	
+    height: 100px;
+}
+
+#banner_container{
+    position: relative;
+	
+}
+
+body[state_banner='lyrics'] #banner_img_container{
+	display:none;
+}
+
+#showLyricsBtn{
+	
+}
+
+body[state_banner='image'] #lyrics_container{
+	display:none;
+}
+
+#showImageBtn{
+	
+}
+
+#showImageBtn:hover, #showLyricsBtn:hover{
+    background-color: gray;
+}
+
+#showImageBtn, #showLyricsBtn{
+    position: absolute;
+	
+    background-color: lightgray;
+    padding: 7px;
+    float: left;
+    clear: both;
+    top: 60px;
+    left: 370px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#english_container{
+    background-color: lightcoral;
+	
+    width: 470px;
+    padding: 15px;
+    margin: 10px 0px 4px 0px;
+    border-radius: 7px;
+    min-height: 25px;
+}
+
+#tl_container{
+    background-color: lightblue;
+	
+    width: 470px;
+    padding: 15px;
+    margin: 10px 0px 4px 0px;
+    border-radius: 7px;	
+    font-size: larger;
+    min-height: 25px;
+}
+
+.setBtn:hover{
+    background-image: url(../../common/img/btn_play_on.png);
+    font-size: 25px;
+    padding-top: 11px;
+}
+
+.setBtn{
+    background-image: url(../../common/img/btn_play_off.png);
+	
+    background-repeat: no-repeat;
+    width: 53px;
+    height: 43px;
+    float: left;
+    margin: 2px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    padding-top: 9px;
+    cursor: pointer;
+    font-size: 27px;
+}
+
+#audioControls_container{
+    background-color: lightgreen;
+	
+    float: right;
+    width: 300px;
+    height: 54px;
+}
+
+#snippets{
+	display:none;
+}
+
+#progressBar_container{
+    background-color: blue;
+	width: 288px;
+    height: 10px;
+    margin: 11px 6px 0px 6px;
+}
+
+
+#progressBar{
+    background-color: green;
+    height: 10px;
+    width: 0px;
+}
+
+#audioButtons_container{
+    background-color: red;
+	
+    height: 30px;
+    margin: 3px 0px 0px 100px;
+    width: 84px;
+}
+
+#startOverBtn:hover{
+	background-image:url(../../common/img/btn_arrow_caro_left_on.png);
+}
+
+#playBtn:hover{
+	background-image:url(../../common/img/btn_play_on.png);
+}
+
+#playBtn{
+    background-image: url(../../common/img/btn_play_off.png);
+}
+
+#playBtn[state="playing"]:hover{
+	background-image:url(../../common/img/btn_radio_lrg_on.png);
+}
+
+#playBtn[state="playing"]{
+	background-image:url(../../common/img/btn_radio_lrg_off.png);
+}
+
+#muteBtn:hover{
+	background-image:url(../../common/img/btn_audio_small_b.png);
+}
+
+
+#startOverBtn{
+    background-image: url(../../common/img/btn_arrow_caro_left.png);
+}
+
+
+
+#muteBtn{
+    background-image: url(../../common/img/btn_audio_small.png);
+}
+
+#startOverBtn, #playBtn, #muteBtn{
+    width: 27px;
+    height: 27px;
+    float: left;
+    background-size: 28px;
+}
+
+
+#muteBtn[muted='true']{
+	background-image: url(../../common/img/btn_arrow_down.png);
+}
+
+#lyrics_container{
+    background-color: pink;
+	
+    width: 491px;
+    height: 92px;
+    border-radius: 7px;
+    padding: 12px 1px 2px 7px;
+    overflow: hidden;
+}
+
+#lyrics{
+    background-color: aqua;
+	
+    width: 486px;
+    height: 81px;
+    overflow: auto;
+}
+
+#lyrics > p{
+    margin: 2px;
+    text-align: center;
+}

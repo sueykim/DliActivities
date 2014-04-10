@@ -1,0 +1,191 @@
+<hs:content xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart"
+	target_language="French">
+	<hs:song>
+		<hs:title dir="ltr">Au clair de la lune</hs:title>
+		<hs:file_audio_music>fr_au_clair_de_la_lune_instrumental.mp3
+		</hs:file_audio_music>
+		<hs:file_audio_lyrics>fr_au_clair_de_la_lune_vocals.mp3
+		</hs:file_audio_lyrics>
+		<hs:line>
+			<hs:lang_tl dir="ltr">0-5 Au clair de la lune, mon ami Pierrot,
+			</hs:lang_tl>
+			<hs:timing>1</hs:timing>
+			<hs:feedback>Under the moonlight, my friend Pierrot,</hs:feedback>
+			<hs:image>fr_au_clair_de_la_lune01.png</hs:image>
+		</hs:line>
+		<hs:line>
+			<hs:lang_tl dir="ltr">5-10 Prête-moi ta plume pour écrire un mot.
+			</hs:lang_tl>
+			<hs:timing>6</hs:timing>
+			<hs:feedback>Lend me your pen, so I could write a word.</hs:feedback>
+			<hs:image>fr_au_clair_de_la_lune02.png</hs:image>
+		</hs:line>
+		<hs:line>
+			<hs:lang_tl dir="ltr">10-15 Ma chandelle est morte, je n'ai plus de
+				feu.</hs:lang_tl>
+			<hs:timing>11</hs:timing>
+			<hs:feedback>My candle is out, I've no more light.</hs:feedback>
+			<hs:image>fr_au_clair_de_la_lune03.png</hs:image>
+		</hs:line>
+		<hs:line>
+			<hs:lang_tl dir="ltr">15 Ouvre-moi ta porte, pour l'amour de Dieu.
+			</hs:lang_tl>
+			<hs:timing>16</hs:timing>
+			<hs:feedback>Open your door for me, for the love of God.
+			</hs:feedback>
+			<hs:image>fr_au_clair_de_la_lune04.png</hs:image>
+		</hs:line>
+	</hs:song>
+	<hs:song>
+		<hs:title dir="ltr">Frère Jacques</hs:title>
+		<hs:file_audio_music>fr_frere_jacques_instrumental.mp3
+		</hs:file_audio_music>
+		<hs:file_audio_lyrics>fr_frere_jacques_vocals.mp3
+		</hs:file_audio_lyrics>
+		<hs:line>
+			<hs:lang_tl dir="ltr">0-3 Frère Jacques, Frère Jacques,</hs:lang_tl>
+			<hs:timing>1</hs:timing>
+			<hs:feedback>Brother John, Brother John,</hs:feedback>
+			<hs:image>fr_frere_jacques01.png</hs:image>
+		</hs:line>
+		<hs:line>
+			<hs:lang_tl dir="ltr">3-7 Dormez-vous? Dormez-vous?</hs:lang_tl>
+			<hs:timing>4</hs:timing>
+			<hs:feedback>Are you sleeping? Are you sleeping?</hs:feedback>
+			<hs:image>fr_frere_jacques02.png</hs:image>
+		</hs:line>
+		<hs:line>
+			<hs:lang_tl dir="ltr">7-11 Sonnez les matines. Sonnez les matines.
+			</hs:lang_tl>
+			<hs:timing>8</hs:timing>
+			<hs:feedback>
+				Morning bells are ringing! Morning bells are ringing!
+			</hs:feedback>
+			<hs:image>fr_frere_jacques03.png</hs:image>
+		</hs:line>
+		<hs:line>
+			<hs:lang_tl dir="ltr">11 Ding, dang, dong. Ding, dang, dong.
+			</hs:lang_tl>
+			<hs:timing>12</hs:timing>
+			<hs:feedback>Ding, ding, dong. Ding, ding, dong.</hs:feedback>
+			<hs:image>fr_frere_jacques04.png</hs:image>
+		</hs:line>
+	</hs:song>
+	<hs:song>
+		<hs:title dir="ltr">Sur le pont d'Avignon</hs:title>
+		<hs:file_audio_music>fr_sur_le_pont_avignon_instrumental.mp3
+		</hs:file_audio_music>
+		<hs:file_audio_lyrics>fr_sur_le_pont_avignon_vocals.mp3
+		</hs:file_audio_lyrics>
+		<hs:line>
+			<hs:lang_tl dir="ltr">0-6 Sur le pont d'Avignon, l'on y danse, l'on
+				y danse,</hs:lang_tl>
+			<hs:timing>1</hs:timing>
+			<hs:feedback>
+				On the bridge of Avignon, we all dance there, we all dance there,
+			</hs:feedback>
+			<hs:image>fr_le_pont_o_avignon_01.png</hs:image>
+		</hs:line>
+		<hs:line>
+			<hs:lang_tl dir="ltr">6-12 Sur le pont d'Avignon, l'on y danse tous
+				en rond.</hs:lang_tl>
+			<hs:timing>7</hs:timing>
+			<hs:feedback>
+				On the bridge of Avignon, we all dance there in a ring.
+			</hs:feedback>
+			<hs:image>fr_le_pont_o_avignon_02.png</hs:image>
+		</hs:line>
+		<hs:line>
+			<hs:lang_tl dir="ltr">12-17 Les beaux messieurs font comme ça,
+			</hs:lang_tl>
+			<hs:timing>13</hs:timing>
+			<hs:feedback>The handsome gentlemen do like this,</hs:feedback>
+			<hs:image>fr_le_pont_o_avignon_03.png</hs:image>
+		</hs:line>
+		<hs:line>
+			<hs:lang_tl dir="ltr">17-21 et puis encore comme ça.</hs:lang_tl>
+			<hs:timing>18</hs:timing>
+			<hs:feedback>And then like that.</hs:feedback>
+			<hs:image>fr_le_pont_o_avignon_04.png</hs:image>
+		</hs:line>
+		<hs:line>
+			<hs:lang_tl dir="ltr">21-27 Sur le pont d'Avignon, l'on y danse, l'on
+				y danse,</hs:lang_tl>
+			<hs:timing>22</hs:timing>
+			<hs:feedback>
+				On the bridge of Avignon, we all dance there, we all dance there,
+			</hs:feedback>
+			<hs:image>fr_le_pont_o_avignon_05.png</hs:image>
+		</hs:line>
+		<hs:line>
+			<hs:lang_tl dir="ltr">27-33 Sur le pont d'Avignon, l'on y danse tous
+				en rond.</hs:lang_tl>
+			<hs:timing>28</hs:timing>
+			<hs:feedback>
+				On the bridge of Avignon, we all dance there in a ring.
+			</hs:feedback>
+			<hs:image>fr_le_pont_o_avignon_06.png</hs:image>
+		</hs:line>
+		<hs:line>
+			<hs:lang_tl dir="ltr">33-38 Les belles dames font comme ça,
+			</hs:lang_tl>
+			<hs:timing>34</hs:timing>
+			<hs:feedback>The beautiful ladies do like this,</hs:feedback>
+			<hs:image>fr_le_pont_o_avignon_07.png</hs:image>
+		</hs:line>
+		<hs:line>
+			<hs:lang_tl dir="ltr">38-42 et puis encore comme ça.</hs:lang_tl>
+			<hs:timing>39</hs:timing>
+			<hs:feedback>And then like that.</hs:feedback>
+			<hs:image>fr_le_pont_o_avignon_08.png</hs:image>
+		</hs:line>
+		<hs:line>
+			<hs:lang_tl dir="ltr">42-48 Sur le pont d'Avignon, l'on y danse, l'on
+				y danse,</hs:lang_tl>
+			<hs:timing>43</hs:timing>
+			<hs:feedback>
+				On the bridge of Avignon, we all dance there, we all dance there,
+			</hs:feedback>
+			<hs:image>fr_le_pont_o_avignon_09.png</hs:image>
+		</hs:line>
+		<hs:line>
+			<hs:lang_tl dir="ltr">48-54 Sur le pont d'Avignon, l'on y danse tous
+				en rond.</hs:lang_tl>
+			<hs:timing>49</hs:timing>
+			<hs:feedback>
+				On the bridge of Avignon, we all dance there in a ring.
+			</hs:feedback>
+			<hs:image>fr_le_pont_o_avignon_10.png</hs:image>
+		</hs:line>
+		<hs:line>
+			<hs:lang_tl dir="ltr">54-59 Les militaires font comme ça,</hs:lang_tl>
+			<hs:timing>55</hs:timing>
+			<hs:feedback>The soldiers do like this,</hs:feedback>
+			<hs:image>fr_le_pont_o_avignon_11.png</hs:image>
+		</hs:line>
+		<hs:line>
+			<hs:lang_tl dir="ltr">59-63 et puis encore comme ça.</hs:lang_tl>
+			<hs:timing>60</hs:timing>
+			<hs:feedback>And then like that</hs:feedback>
+			<hs:image>fr_le_pont_o_avignon_12.png</hs:image>
+		</hs:line>
+		<hs:line>
+			<hs:lang_tl dir="ltr">63-69 Sur le pont d'Avignon, l'on y danse, l'on
+				y danse,</hs:lang_tl>
+			<hs:timing>64</hs:timing>
+			<hs:feedback>
+				On the bridge of Avignon, we all dance there, we all dance there
+			</hs:feedback>
+			<hs:image>fr_le_pont_o_avignon_13.png</hs:image>
+		</hs:line>
+		<hs:line>
+			<hs:lang_tl dir="ltr">69-70 Sur le pont d'Avignon, l'on y danse tous
+				en rond.</hs:lang_tl>
+			<hs:timing>70</hs:timing>
+			<hs:feedback>
+				On the bridge of Avignon, we all dance there in a ring.
+			</hs:feedback>
+			<hs:image>fr_le_pont_o_avignon_14.png</hs:image>
+		</hs:line>
+	</hs:song>
+</hs:content>
