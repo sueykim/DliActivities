@@ -21,7 +21,7 @@
     opacity: 0.2;
     position: absolute;
     top: 0;
-    width: 880px;
+    width: 840px;
     z-index: 99;
 }
 
@@ -37,9 +37,9 @@
     font-size: 12px;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    margin-left: 26px;
+    margin-left: 6px;
     margin-top: -19px;
-    max-width: 910px;
+    max-width: 830px;
 }
 .activity_hd {
     color: grey;
@@ -61,23 +61,6 @@ html body {
     border-radius: 0 0 0 0;
 }
 
-#feedback {
-    -moz-user-select: none;
-    background: url("../../common/img/bg_dropbubble_50.png") repeat-x scroll center bottom #F5F5F5;
-    border: 1px solid #BDBDBD;
-    border-radius: 3px 3px 3px 3px;
-    box-shadow: 0 2px 4px #BDBDBD;
-    display: block;
-    left: 0px;
-    margin-left: -4px;
-    max-height: 165px;
-    min-height: 134px;
-    padding: 20px;
-    position: absolute;
-    width: 535px;
-    z-index: 1000;
-    top: 274px;
-}
 #feedbackHeader {
     margin: 1px;
     font-size: 20px;
@@ -98,14 +81,13 @@ html body {
 }
 
 #prevBtnDiv {
-	left: 28px;
+	left: 8px;
     position: absolute;
-    
 	top: 56px;
 }
 
 #nextBtnDiv {
-	left: 803px;
+	left: 793px;
     position: absolute;
     
     top: 56px;
@@ -117,7 +99,7 @@ html body {
     box-shadow: inset 0px 1px 8px grey;
     border: 1px solid lightgray;
     background: url("../../common/img/bg_dropbubble_50.png") repeat-x scroll center bottom #F5F5F5;
-    left: 355px;
+    left: 335px;
     position: absolute;
     top: 7px;
     z-index: 1000;
@@ -140,9 +122,20 @@ html body {
 }
 
 #feedback{
+	-moz-user-select: none;
+    background: url("../../common/img/bg_dropbubble_50.png") repeat-x scroll center bottom #F5F5F5;
+    border: 1px solid #BDBDBD;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 2px 4px #BDBDBD;
+    display: block;
+    margin: 0 0 0 7px;
+    padding: 20px;
+    position: absolute;
+    width: 170px;
 	min-height: 259px;
-	width: 242px;
-	left: 589px;
+	max-height: 259px;
+	width: 210px;
+	left: 575px;
 	z-index: 1002;
 	top: 177px;
 }
@@ -205,9 +198,9 @@ html body {
 }
 
 #carousel1 {
-	width: 880px; 
+	width: 840px; 
     height: 128px;
-	margin-left: 12px;
+	margin-left: 0px;
     overflow: scroll;
 }
 

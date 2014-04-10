@@ -4,7 +4,13 @@ $(document).ready(function() {
 	$('#feedback').hide();
 
 	loadjscssfile("../common/css/activityDefault.css", "css");
+	
 	//Default values (for testing)
+	mediaPath = "sampleData/";
+	xmlFilename = mediaPath + "enabling12_noNamespaces.xml";
+	
+	jsonFilename = mediaPath + "enabling12_json.js";
+/*
 	if ( getPassedParameters() == false){
 		mediaPath = "sampleData/";
 		
@@ -25,6 +31,7 @@ $(document).ready(function() {
 		
                 $('.activity_hd').html('');
 	}
+*/
 	cssFilename = "styles/enabling_12_dlilearn.css";
 	testVideoSupport();
 

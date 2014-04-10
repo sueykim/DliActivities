@@ -13,6 +13,8 @@ $(document).ready(function() {
 	keyboardFilename = "sampleData/test_keyboard.js";
 	cssFilename = "styles/enabling_04_dlilearn.css";
 		
+	$('.activity_hd').html('');
+	$('.activity_description').html('');	
 	loadActivity(parseXml);
 
 	if(params["debug"] != null){

@@ -33,7 +33,7 @@
     margin-bottom: 20px;
     margin-left: 8px;
     margin-top: -20px;
-	width: 890px;
+	width: 840px;
 }
 .activity_hd {
     color: grey;
@@ -150,7 +150,7 @@ html body {
 	position: absolute;
 	font-size: 18px;
 	margin-left: 10px;
-	width:636px;
+	width:595px;
 	height:250px;
 	top: 24px;
 	left: 220px;
@@ -158,15 +158,15 @@ html body {
 .dragContainer{
 	background-color: transparent;
 	height: 75px;
-	width: 620px;
-	margin-left: 8px;
+	width: 580px;
+	margin-left: 4px;
 	border-bottom: solid #999999 1px;
 }
 #choice0{
 	margin-top: 9px;
 }
 #tab_container{
-	width: 635px;
+	width: 595px;
 	border: 1px solid #BDBDBD;
 	margin-left: 230px;
 	height:22px;
@@ -235,16 +235,22 @@ html body {
 	color: #666666;
 }
 #TLtext0, #TLtext1, #TLtext2 {
-	font-size: 16pt;
-	width: 570px;
+	font-size: 14pt;
+	width: 540px;
 	position: relative;
+	padding-left: 5px;
 	float: left;
+	height: 60px;
+	overflow: auto;
 }
 #ENtext0, #ENtext1, #ENtext2{
 	font-size: 12pt;
-	width:570px;
+	width:540px;
 	position: relative;
+	padding-left: 5px;
 	float: left;
+	height: 60px;
+	overflow: auto;
 }
 
 #clickGuard{
@@ -272,7 +278,7 @@ html body {
     padding: 20px;
     position: absolute;
     top: 287px;
-    width: 596px;
+    width: 556px;
     z-index: 100;
 }
 #fb_background{
@@ -288,7 +294,7 @@ html body {
     padding: 20px;
     position: absolute;
     top: 287px;
-    width: 596px;
+    width: 556px;
 }
 #feedbackBtn {
     bottom: 10px;
@@ -384,13 +390,13 @@ html body {
     left: 15px;
     margin: 10px;
     top: 470px;
-    width: 898px;
+    width: 810px;
 }
 #id_setDiv {
     background-color: transparent;
     cursor: default;
     height: 30px;
-    left: 738px;
+    left: 698px;
     position: relative;
     top: 5px;
     width: 115px;
