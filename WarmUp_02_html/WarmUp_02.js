@@ -16,6 +16,7 @@ $(document).ready(function () {
 		xmlFilename = mediaPath + "hs_01_01_02_03_noNamespaces.xml";
 		jsonFilename = mediaPath + "hs_01_01_02_03_noNamespaces.js";
 	}
+	/*
 	else {
 		// For performance - homework
 		var xmlPath2 = xmlPath.split("/");
@@ -28,6 +29,7 @@ $(document).ready(function () {
 		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
 		jsonFilename = xmlFilename.substring(0, xmlFilename.length-3) + "js";
 	}
+	*/
 
 	// To use a keyboard file for a keyboard layout
 	//keyboardFilename = "../common/keyboards/hausa_keyboard.js";
@@ -112,7 +114,7 @@ function parseXml(t_xml) {
 	loadSet(0);
 }
 
-// To use characters from contents for a keybard layout
+// To use characters from contents for a keyboard layout
 function keyboardLayout() {
 	var maxNumberOfLetters = 48;
 	var questionWordCharacters = "";
@@ -123,7 +125,7 @@ function keyboardLayout() {
 	var numberOfDistractors = 0;	
 
 	for (var h=0; h<$(xml).find("lang_tl").length; h++) {
-		// missing_letter_ids should be single number or comma seperated. (e.g. 1 or 1, 2, 3)
+		// missing_letter_ids should be single number or comma separated. (e.g. 1 or 1, 2, 3)
 		var missingLetterIds = $($(xml).find("missing_letter_ids")[h]).text().split(",");
 		
 		questionWordCharacters = $($(xml).find("lang_tl")[h]).text();
@@ -248,6 +250,7 @@ var initialLeft = 580 / 2 - 100 / 2;
 var initialTop = 480 - 100 - 14;
 
 // [tile left, tile top, popup left, popup top]
+/*
 var tileAndPopupLocations = new Array(
 [6, 490, 94, 430], 
 [6, 370, 94, 370], 
@@ -266,6 +269,26 @@ var tileAndPopupLocations = new Array(
 [774, 250, 576, 246], 
 [774, 370, 576, 370], 
 [774, 490, 576, 430]);
+*/
+var tileAndPopupLocations = new Array(
+[6, 450, 94, 390], 
+[6, 340, 94, 340], 
+[6, 230, 94, 226], 
+[6, 120, 94, 118], 
+
+[6, 10, 94, 80], 
+[124, 10, 68, 100], 
+[242, 10, 186, 100], 
+[360, 10, 304, 100], 
+[478, 10, 422, 100], 
+[596, 10, 540, 100], 
+[714, 10, 516, 80], 
+
+[714, 120, 516, 118], 
+[714, 230, 516, 226], 
+[714, 340, 516, 340], 
+[714, 450, 516, 390]);
+
 
 function loadSet(value) {
 	currentSet = value;
@@ -274,7 +297,7 @@ function loadSet(value) {
 	// Load question
 	var questionWord = $($(xml).find("lang_tl")[currentSet]).text();
 
-	// missing_letter_ids should be single number or comma seperated. (e.g. 1 or 1, 2, 3)
+	// missing_letter_ids should be single number or comma separated. (e.g. 1 or 1, 2, 3)
 	var missingLetterIds = $($(xml).find("missing_letter_ids")[currentSet]).text().split(",");
 
 	missingLetterIdsArray = [];

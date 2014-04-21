@@ -25,7 +25,7 @@ $(document).ready(function() {
 		
 		xmlFilename  = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
 		jsonFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  ".js" ;
-		
+
 		$('.activity_hd').html('');
 		$('.activity_description').html('');
 	}
@@ -132,10 +132,12 @@ function loadSet(value){
                $(this).addClass('darkYellow');
 
                var thisImage = $(this).attr('src')
-               var answerImage = thisImage.split("/")[2]
+               var splitNumbers = thisImage.split("/")
+               var lastN = splitNumbers.length -1
+               var answerImage = thisImage.split("/")[lastN]
+
                studentAnswers.splice(currentSet, 1, answerImage);
                css_borders.splice(currentSet, 1, index);
-               alert( answerImage)
                 if (checkAllAnswered())
                      $("#submit").show();
                }
@@ -196,7 +198,6 @@ function getStudentInput(){
    var showCorrAns=[];
    var showStudAns=[];
    for (var i=0; i<numSets; i++){
-     ////alert(studentAnswers[i])
        if( crrtAnswers[i] != 0 &&  studentAnswers[i] != 0 ) {
          showCorrAns.push(crrtAnswers[i].replace(/\.[^/.]+$/, "")) ;
          showStudAns.push(studentAnswers[i].replace(/\.[^/.]+$/, ""));
@@ -223,15 +224,15 @@ function getStudentInput(){
 
 function checkAnswers(){
 
-  
-   var correctItems =0;
+
+   var crrtItems =0;
    for (var i=0; i<numSets; i++){
         if(crrtAnswers[i]==studentAnswers[i])
-            correctItems++
+            crrtItems++
       }
-   var stScore = correctItems/numSets;
+   var stScore = crrtItems/numSets;
 
-   
+
 	var passingScore = $(xml).find("content").attr("passing_score");
 	if(passingScore == undefined || passingScore == NaN)
 			passingScore = .8;
@@ -240,13 +241,14 @@ function checkAnswers(){
 //	alert(stScore)
 	if ( stScore >= passingScore){ 
 		if(parent.activityCompleted){
-			parent.activityCompleted(1,0);
+			parent.activityCompleted(1,0);  
 			}
 		else
 			showFeedback("activity_completed", "Passed!")
 	}
 	else
-		showFeedback("activity_completed", "Failed!")
+		//showFeedback("activity_completed", "Failed!")
+		showFeedback("activity_completed_fail", "You have failed. Please try again.")
 	////activityCompletedShown = true;
 
    $(".image").unbind("click");
@@ -284,6 +286,10 @@ function showFeedback(value, text){
 			break;
 		case "activity_completed":
 			$("#feedbackHeader").html("Activity Completed");
+			$("#feedbackText").html(text);
+			break;
+		case "activity_completed_fail":
+			$("#feedbackHeader").html("Activity Incomplete");
 			$("#feedbackText").html(text);
 			break;
 	}

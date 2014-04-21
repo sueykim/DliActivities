@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hs:content target_language="Cebuano" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart" >
+    <hs:item>
+      <hs:question dir="ltr">In which conversation does the Cebuano speaker say, "Nice to meet you?"</hs:question>
+      <hs:file_video crrt="">vb_02_01_capstone2.flv</hs:file_video>
+      <hs:file_video crrt="true">vb_02_01_capstone1.flv</hs:file_video>
+      <hs:hint dir="ltr"><![CDATA[The soldier states his name in both conversations, but only in one does the Cebuano speaker offer a direct reply to his introduction.]]></hs:hint>
+      <hs:feedback dir="ltr"><![CDATA[Correct. In this conversation, the Cebuano speaker says, <b>Gikalipay ko ang pag-ilaila kanimo.</b> <i>(Nice to meet you.)</i>]]></hs:feedback>
+    </hs:item>
+    <hs:item>
+      <hs:question dir="ltr">In which conversation does the soldier seek an interpreter?</hs:question>
+      <hs:file_video crrt="">vb_02_01_capstone3.flv</hs:file_video>
+      <hs:file_video crrt="true">vb_02_01_capstone5.flv</hs:file_video>
+      <hs:hint dir="ltr"><![CDATA[The Cebuano term for <i>interpreter</i> is <b>taghubad.</b>]]></hs:hint>
+      <hs:feedback dir="ltr"><![CDATA[Correct. In this conversation, the soldier asks, <b>Asa na man ang taghubad?</b> <i>(Where is the interpreter?)</i>]]></hs:feedback>
+    </hs:item>
+    <hs:item>
+      <hs:question dir="ltr">In which conversation does the soldier thank the Cebuano speaker?</hs:question>
+      <hs:file_video crrt="true">vb_02_01_capstone2.flv</hs:file_video>
+      <hs:file_video crrt="">vb_02_01_capstone1.flv</hs:file_video>
+      <hs:hint dir="ltr"><![CDATA[The Cebuano term for <i>Thank you</i> is <b>Salamat.</b>]]></hs:hint>
+      <hs:feedback dir="ltr"><![CDATA[Correct. In this conversation, the soldier says <b>Salamat</b> <i>(Thank you)</i> when the Cebuano speaker asks him into his home.]]></hs:feedback>
+    </hs:item>
+    <hs:item>
+      <hs:question dir="ltr">In which conversation does the soldier say, "Excuse me?"</hs:question>
+      <hs:file_video crrt="true">vb_02_01_capstone1.flv</hs:file_video>
+      <hs:file_video crrt="">vb_02_01_capstone4.flv</hs:file_video>
+      <hs:hint dir="ltr"><![CDATA[In one of these conversations, the soldier says <i>Excuse me</i> when taking leave of the Cebuano speaker.]]></hs:hint>
+      <hs:feedback dir="ltr"><![CDATA[Correct. In this conversation, the soldier says, <b>Pasayloa</b> <i>(Excuse me)</i> before parting ways with the Cebuano speaker.]]></hs:feedback>
+    </hs:item>
+    <hs:item>
+      <hs:question dir="ltr">In which conversation does the soldier ask the same question twice?</hs:question>
+      <hs:file_video crrt="">vb_02_01_capstone5.flv</hs:file_video>
+      <hs:file_video crrt="true">vb_02_01_capstone3.flv</hs:file_video>
+      <hs:hint dir="ltr"><![CDATA[In one of these conversations, the soldier uses the same follow-up question while seeking to identify two individuals.]]></hs:hint>
+      <hs:feedback dir="ltr"><![CDATA[Correct. In this conversation, the soldier asks, <b>Sigurado ka?</b> <i>(Are you sure?)</i> to confirm the Cebuano speaker's statements.]]></hs:feedback>
+    </hs:item>
+
+</hs:content>

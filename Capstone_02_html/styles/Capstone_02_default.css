@@ -29,7 +29,8 @@
 
 html, body {
 	height: auto;
-	width: 910px;
+	/* width: 910px; */
+	width: 860px;
 	font-family: 'FuturaMedium';
 }
 
@@ -37,7 +38,8 @@ html, body {
 	height:554px !important;
 	border: none !important;
 	margin-right: -12px;
-	width:910px; 
+	/* width:910px; */
+	width: 860px;	
 }
 
 .activity_area {
@@ -68,12 +70,14 @@ h1, h2, h3, h4, h5, h6 {
 	background-repeat:no-repeat;
 	margin: 3px 3px 0 0;
 	position: absolute;
-	left:567px;
+	/* left:567px; */
+	left: 517px;
 	border-radius: 30px;
 }
 .videoframe {
 	position: absolute;	
-	left:566px;
+	/* left:566px; */
+	left: 516px;
 	top: 0px;
 }
 
@@ -94,7 +98,8 @@ h1, h2, h3, h4, h5, h6 {
 .playBtnDivStyle{
 	width: 100px;
 	position: absolute;
-	left: 580px;
+	/* left: 580px; */
+	left: 530px;
 	top: 176px;
 }
 
@@ -104,11 +109,20 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 15px;
 	position: relative;
 	top: 250px !important;
-	width: 888px;
+	/* width: 888px; */
+	width: 838px;
 	z-index: 100;
 	margin:0;
 	left: 0px;
 	background-color: #F5F5F5;
+	
+	/* */
+	border: thin solid #BDBDBD;
+    background-image: url('../../common/img/bg_dropbubble_50.png');
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    box-shadow: 0px 2px 4px #BDBDBD;
+    border-radius: 3px;
 }
 
 #feedbackHeader {
@@ -123,7 +137,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #feedbackText {
 	top: -4px;  /* change from -10 to 4 */
-	width: 870px;
+	/* width: 870px; */
+	width: 820px;
 	height: 42px;
 	overflow:auto;
 }
@@ -138,14 +153,16 @@ h1, h2, h3, h4, h5, h6 {
 
 #questionArea{
 	left: 0px;
-	width: 560px;
+	/* width: 560px; */
+	width: 510px;
 	position: absolute;
 	top: 0px;
 }
 
 #question{
 	left: 0px;
-	width: 558px;
+	/* width: 558px; */
+	width: 508px;
 }
 
 .questionItem{
@@ -187,7 +204,8 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 10px;
 	padding-left:20px;
 	padding-right:20px;
-	width: 558px;
+	/* width: 558px; */
+	width: 508px;
 }
 .choice{
 	margin-top: 2px;
@@ -251,7 +269,8 @@ h1, h2, h3, h4, h5, h6 {
 	left: 0;
 	position: absolute;
 	top: 0;
-	width: 890px;
+	/* width: 890px; */
+	width: 840px;
 	height: 480px;
 	z-index: 6;
 	border: solid thin gray;
@@ -265,7 +284,8 @@ h1, h2, h3, h4, h5, h6 {
 	height: 40px;
 	position: absolute;
 	top: 380px;
-	width: 882px !important;
+	/* width: 882px !important; */
+	width: 832px !important;
 	text-align:right;
 	margin-left: 10px;!important;
 	margin-right: -13px !important;
@@ -273,6 +293,11 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight:bold;
 	letter-spacing:2px;
 	padding: 8px 5px 5px 5px !important;
+	
+	/* */
+	background-color: transparent;
+	left: 0px;
+	margin-top: 0px;
 	
 	/*border: solid 1px #969696;*/
 	/*background-image: url(../../../img/bg_activity_frame.png);*/
@@ -295,6 +320,10 @@ h1, h2, h3, h4, h5, h6 {
 	/*box-shadow: 0 1px 2px #BDBDBD, inset 0 1px 0px #FFFFFF;*/  /* AAA TEMP */
 	width: auto !important; /* AAA TEMP */
 	color: #fff;
+	
+	/* */
+	left: 3px;
+	top: 0px;	
 }
 
 #setText {
@@ -335,4 +364,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn_prev {
 	right: -3px !important;
+}
+
+.roundCorners {
+    border-radius: 3px;
 }

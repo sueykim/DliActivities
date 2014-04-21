@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content target_language="German" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
+   <set>
+     <item>
+        <picture>teacher.jpg</picture>
+        <audio>rain.mp3</audio>
+        <tl_word dir="ltr">teacher</tl_word>
+        <en_word>teacher</en_word>
+        <feedback dir="ltr" info="addition info setAkeyword1"><![CDATA[setA feedback1]]></feedback>
+     </item>
+
+     <item>
+        <picture>library.jpg</picture>
+        <audio>red.mp3</audio>
+        <tl_word dir="ltr">library</tl_word>
+        <en_word>library</en_word>
+        <feedback dir="ltr" info="addition info setAkeyword2"><![CDATA[setA feedback2]]> </feedback>
+     </item>
+
+     <item>
+        <picture>goodman.jpg</picture>
+        <audio>rice.mp3</audio>
+        <tl_word dir="ltr">good man</tl_word>
+        <en_word>good man</en_word>
+        <feedback dir="ltr" info="addition info setAkeyword3"><![CDATA[setA feedback3]]> </feedback>
+     </item>
+   </set>
+
+   <set>
+     <item>
+        <picture>automobile.jpg</picture>
+        <audio>river.mp3</audio>
+        <tl_word dir="ltr">automobile</tl_word>
+        <en_word>automobile</en_word>
+        <feedback dir="ltr" info="addition info setBkeyword1"><![CDATA[setB feedback1]]> </feedback>
+     </item>
+
+     <item>
+        <picture>airplane.jpg</picture>
+        <audio>road.mp3</audio>
+        <tl_word dir="ltr">airplane</tl_word>
+        <en_word>airplane</en_word>
+        <feedback dir="ltr" info="addition info setBkeyword2"><![CDATA[setB feedback2]]> </feedback>
+     </item>
+
+     <item>
+        <picture>motorcycle.jpg</picture>
+        <audio>rain.mp3</audio>
+        <tl_word dir="ltr">motorcycle</tl_word>
+        <en_word>motorcycle</en_word>
+        <feedback dir="ltr" info="addition info setBkeyword3"><![CDATA[setB feedback3]]> </feedback>
+     </item>
+     <item>
+        <picture>bicycle.jpg</picture>
+        <audio>library.jpg</audio>
+        <tl_word dir="ltr">bicycle</tl_word>
+        <en_word>bicycle</en_word>
+        <feedback dir="ltr" info="addition info setBkeyword4"><![CDATA[setB feedback4]]> </feedback>
+     </item>
+   </set>
+</content>

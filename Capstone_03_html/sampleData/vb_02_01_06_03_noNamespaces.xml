@@ -4,7 +4,6 @@
       <file_video>vb_02_01_capstone1.flv</file_video>
       <question dir="ltr">Which of the following greetings is used in the conversation?</question>
       <choice dir="ltr" crrt="true">Good morning. - c</choice>
-      <!--<choice dir="ltr" crrt="true">Good morning. - c Which of the following greetings is used in the conversation? Which of the following greetings is used in the conversation?</choice>-->
       <choice dir="ltr" crrt="">Good afternoon.</choice>
       <choice dir="ltr" crrt="">Good afternoon to you, too.</choice>
       <choice dir="ltr" crrt="true">Good morning to you, too. - c</choice>

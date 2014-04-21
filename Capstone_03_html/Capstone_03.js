@@ -24,6 +24,7 @@ $(document).ready(function() {
 		xmlFilename = mediaPath + "vb_02_01_06_03_noNamespaces_hw.xml";
 		jsonFilename = mediaPath + "vb_02_01_06_03_noNamespaces_hw.js";
 	}
+	/*
 	else {
 		// For performance - homework
 		var xmlPath2 = xmlPath.split("/");
@@ -35,6 +36,7 @@ $(document).ready(function() {
 		
 		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
 	}
+	*/
 	
 	// For assessment
 	//xmlFilename = mediaPath + "ad_01_03_05_08_noNamespaces.xml";

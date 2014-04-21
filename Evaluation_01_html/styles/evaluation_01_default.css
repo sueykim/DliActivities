@@ -1,0 +1,114 @@
+#main{
+	font-family: Arial, Helvetica, sans-serif;
+}
+.css_set_div{
+	top: 5px;
+	left: 30px;
+	position: absolute;
+	height: 365px;
+	width: 575px;
+	background-color: #88ffff;
+	display: none;
+}
+.playBtn {
+    width: 30px;
+}
+.playBtnRightDiv{
+	position:relative;
+	float: right;
+	width: 30px;
+	right: 10px;
+	top: 10px;
+}
+.playBtnLeftDiv{
+	position:relative;
+	top:30px;
+	left: 10px;
+}
+.questionText{
+	position:relative;
+	padding: 10px;
+	width: 500px;
+	font-size: 24px;
+}
+.dropTargetArea{
+	background-color: white;
+	position:relative;
+    height: 36px;
+    margin: 0px 10px 0px 10px;
+	text-align: center;
+    width: 165px;
+	font-size: 24px;
+	padding-top: 2px;
+}
+.qWord{
+	position:relative;
+	margin: 5px;
+}
+.dragBubbleText{
+	font-size: 24px;
+	text-align: center;
+	padding-top: 2px;
+	width: 165px;
+}
+
+.dragBubble{
+    background-color: white;
+    float: left;
+    height: 36px;
+    margin: 10px;
+    width: 165px;
+	cursor: pointer;
+}
+.css_choices_area{
+	left: 10px;
+	background-color:lightgray;
+    position: absolute;
+    top: 245px;
+    padding: 5px 0px, 0px, 5px;
+    width: 555px;
+    height: 115px;	
+}
+#id_submitBtn{
+	position:absolute;
+	width: 27px;
+	left: 40px;
+	top:380px;
+	z-index:12;
+	display: none;
+}
+#nextDiv {
+	position:absolute;
+	width:27px;
+	height:27px;
+	z-index:11;
+	left: 492px;
+	top: 380px;
+}
+#prevDiv {
+	position:absolute;
+	width:27px;
+	height:27px;
+	z-index:11;
+	left: 460px;
+	top: 380px;
+}
+
+#setText {
+	left:3px;
+}
+#setDiv{
+	width: 45px;
+	padding-right: 3px;
+}
+#clickGuard{
+	height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    opacity: .1;
+    background-color: #ffffff;
+	display: none;
+}

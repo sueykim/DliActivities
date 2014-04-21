@@ -153,48 +153,35 @@ video{
 }
 #submit  {
 	position:absolute;
-	left: 470px;
-	top: 522px;
+	left: 430px;
+	top: 520px;
 	cursor: pointer;
 	display:none;
 
 }
-#audioBtnx {
-        width: 10%;
-        margin-top: -15px;
-        margin-left: 70px;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-         box-sizing: border-box;
-}
+
 
 #audioBtn {
         margin-top: -15px;
-        margin-left: 30px;
+        margin-left: 0px;
 
 }
 
-#imageDisplayx {
-        width: 90%;
 
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-}
 
 
 #imageDisplay{
 
           margin-top:-38px;
-          margin-left: 180px;
+          margin-left: 140px;
 }
 
 
 
 #activity_wrapper {
     	font-family: 'FuturaMedium';
-    	height:630px;		/*  Change as needed-- Variable will have to be passed up to main framework */
-    	width:910px;
+    	height:560px;		/*  Change as needed-- Variable will have to be passed up to main framework */
+    	width:820px;
     	overflow:hidden;
     	/*border: solid thin #F00;*/
     	padding: 15px;
@@ -211,9 +198,22 @@ video{
 
 
 #container_setDiv {
-        top:15px;
-        left:-55px;
+        top:515px;
+        left:525px;
+        background-color: transparent;
+        width:250px;
 
+}
+#setDiv {
+        position: relative;
+        left:2px;
+        right:1px;
+        top:0px;
+}
+
+#setText {
+        font-size:14px;
+        width:60px;
 }
 
 body {
@@ -236,7 +236,7 @@ body {
 }
 
 #activities {
-       width:880px;
+       width:800px;
 }
 
 #id_feedback {
@@ -248,7 +248,7 @@ body {
         box-shadow: 0 2px 4px #BDBDBD;
         padding: 15px;
         position: relative;
-        left:180px;
+        left:140px;
         top: -485px !important;
         height: 240px;
         width: 645px;

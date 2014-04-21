@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 	// Values from URL parameters or default values for testing
 	var statusParameters = getPassedParameters();
-	if (!statusParameters) {
+	////if (!statusParameters) {
 		mediaPath 	= "sampleData/";
 		xmlPath 	= "sampleData/";
 		
@@ -13,8 +13,8 @@ $(document).ready(function() {
 	        xmlFilename = xmlPath + "Evaluation_07_noNamespaces.xml";
 		//jsonFilename = xmlPath + "vb_02_01_06_01_noNamespaces_hw.js";
 	        jsonFilename = xmlPath + "Evaluation_07_noNamespaces.js";
-	}
-	else {
+	////}
+/*	else {
 		// For performance - homework
 		var xmlPath2 = xmlPath.split("/");
 		var activityID = getURL_Parameter('activity');
@@ -28,7 +28,7 @@ $(document).ready(function() {
 
 		$('.activity_hd').html('');
 		$('.activity_description').html('');
-	}
+	}  */
 
 
 	////mediaPath = "sampleData/";
@@ -242,6 +242,7 @@ function checkAnswers(){
 	if ( stScore >= passingScore){ 
 		if(parent.activityCompleted){
 			parent.activityCompleted(1,0);  
+                        $("#clickGuard").css("display", "inline");
 			}
 		else
 			showFeedback("activity_completed", "Passed!")

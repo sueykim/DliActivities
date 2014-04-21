@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<content target_language="Cebuano" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart" >
+    <item>
+      <file_video>vb_02_01_capstone1.flv</file_video>
+<response dir="ltr" sequen="0">Good morning.</response>
+<response dir="ltr" sequen="1">Good morning to you, too.</response>
+<response dir="ltr" sequen="2">What's your name?</response>
+<response dir="ltr" sequen="3">My name is John.	</response>
+<response dir="ltr" sequen="4">Nice to meet you.	</response>
+<response dir="ltr" sequen="5">See you later.</response>
+      <hint dir="ltr"><![CDATA[The soldier excuses himself before saying <i>Good-bye.</i>]]></hint>
+      <feedback dir="ltr"><![CDATA[Correct. It is polite to say, <b>Gikalipay ko ang pag-ilaila kanimo</b> <i>(Nice to meet you)</i> following an introduction.]]></feedback>
+    </item>
+    <item>
+      <file_video>vb_02_01_capstone2.flv</file_video>
+<response dir="ltr" sequen="0">Good afternoon.</response>
+<response dir="ltr" sequen="1">My name is John.</response>
+<response dir="ltr" sequen="2">May I enter?</response>
+<response dir="ltr" sequen="3">Please wait.</response>
+<response dir="ltr" sequen="4">Please come in.</response>
+<response dir="ltr" sequen="5">Thank you.</response>
+      <hint dir="ltr"><![CDATA[The Cebuano speaker asks the soldier to wait before giving him permission to enter.]]></hint>
+      <feedback dir="ltr"><![CDATA[Correct. <b>Salamat</b> <i>(Thank you)</i> is the standard term for expressing thanks and appreciation.]]></feedback>
+    </item>
+    <item>
+      <file_video>vb_02_01_capstone3.flv</file_video>
+<response dir="ltr" sequen="0">Who is this man?</response>
+<response dir="ltr" sequen="1">I don't know.</response>
+<response dir="ltr" sequen="2">Who is this woman?</response>
+<response dir="ltr" sequen="3">Maria Cabuyog.</response>
+<response dir="ltr" sequen="4">Are you sure?</response>
+<response dir="ltr" sequen="5">Yes.</response>
+      <hint dir="ltr"><![CDATA[The soldier first asks about the identity of the man in question.]]></hint>
+      <feedback dir="ltr"><![CDATA[Correct. <b>O</b> <i>(Yes)</i> is the most commonly used affirmative in Cebuano.]]></feedback>
+    </item>
+    <item>
+      <file_video>vb_02_01_capstone4.flv</file_video>
+<response dir="ltr" sequen="0">Go ahead and eat. Don't be shy.</response>
+<response dir="ltr" sequen="1">Is this chicken or pork?</response>
+<response dir="ltr" sequen="2">This is chicken.</response>
+<response dir="ltr" sequen="3">Would you like some more?</response>
+<response dir="ltr" sequen="4">No, thank you, I am full.</response>
+<response dir="ltr" sequen="5">Thank you, the food was very good.</response>
+      <hint dir="ltr"><![CDATA[The Cebuano speaker identifies the meat before offering the soldier more food.]]></hint>
+      <feedback dir="ltr"><![CDATA[Correct. It is polite for guests to thank their host for a meal: <b>Salamat, lami kaayo ang pagkaon,</b> meaning <i>(Thank you, the food was very good.)</i>]]></feedback>
+    </item>
+    <item>
+      <file_video>vb_02_01_capstone5.flv</file_video>
+<response dir="ltr" sequen="0">Do you speak English?</response>
+<response dir="ltr" sequen="1">I don't speak English.</response>
+<response dir="ltr" sequen="2">What language do you speak?</response>
+<response dir="ltr" sequen="3">I speak Cebuano (Binisaya).</response>
+<response dir="ltr" sequen="4">Where is the interpreter?	</response>
+<response dir="ltr" sequen="5">I don't know.</response>
+      <hint dir="ltr"><![CDATA[The soldier asks for the interpreter after assessing the Cebuano speaker's language abilities.]]></hint>
+      <feedback dir="ltr"><![CDATA[Correct. Many native speakers use the terms <b>Bisaya</b> or <b>Binisaya</b> when referring to Cebuano, especially in regions outside of Cebu.]]></feedback>
+    </item>
+
+</content>

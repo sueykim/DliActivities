@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<hs:content target_language="MSA" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart" rtl="true">
+  <hs:set>
+      <hs:letters dir="rtl">
+      <hs:letter tl_letter="س" />
+      <hs:letter tl_letter="ع" />
+      <hs:letter tl_letter="ي" />
+      <hs:letter tl_letter="ا" />
+      </hs:letters>
+      <hs:phrase>
+         <hs:tl_phrase dir="rtl" >الوضع في سوريا يدعو لمواساة الشعب السوري</hs:tl_phrase>
+         <hs:en_phrase>The situation in Syria calls for comfort of Syrian people </hs:en_phrase>
+      </hs:phrase>
+    </hs:set>
+  <hs:set>
+      <hs:letters dir="rtl">
+      <hs:letter tl_letter="ج" />
+      <hs:letter tl_letter="ب" />
+      <hs:letter tl_letter="ه" />
+      <hs:letter tl_letter="ل" />
+      </hs:letters>
+      <hs:phrase>
+         <hs:tl_phrase dir="rtl" >الجنزوري وجه تهديدا للإخوان المسلمين بحل البرلمان</hs:tl_phrase>
+         <hs:en_phrase>Ganzouri threatens the Muslim Brotherhood to dissolve the parliament </hs:en_phrase>
+      </hs:phrase>
+    </hs:set>
+  <hs:set>
+      <hs:letters dir="rtl">
+      <hs:letter tl_letter="ي" />
+      <hs:letter tl_letter="و" />
+      <hs:letter tl_letter="ن" />
+      <hs:letter tl_letter="ط" />
+      </hs:letters>
+      <hs:phrase>
+         <hs:tl_phrase dir="rtl" >الدين لله والوطن للجميع</hs:tl_phrase>
+         <hs:en_phrase>Religion is for God and the country is for all </hs:en_phrase>
+      </hs:phrase>
+    </hs:set>
+  <hs:set>
+      <hs:letters dir="rtl">
+      <hs:letter tl_letter="س" />
+      <hs:letter tl_letter="ف" />
+      <hs:letter tl_letter="ق" />
+      <hs:letter tl_letter="م" />
+      </hs:letters>
+      <hs:phrase>
+         <hs:tl_phrase dir="rtl" >مرض فيروس سي يمكن الوقاية منه</hs:tl_phrase>
+         <hs:en_phrase>Virus C disease can be prevented </hs:en_phrase>
+      </hs:phrase>
+    </hs:set>
+  <hs:set>
+      <hs:letters dir="rtl">
+      <hs:letter tl_letter="ر" />
+      <hs:letter tl_letter="م" />
+      <hs:letter tl_letter="ك" />
+      <hs:letter tl_letter="ح" />
+      </hs:letters>
+      <hs:phrase>
+         <hs:tl_phrase dir="rtl" >طبق الأكل الصحي...من جامعة هارفارد</hs:tl_phrase>
+         <hs:en_phrase>Plate of healthy food...From Harvard University </hs:en_phrase>
+      </hs:phrase>
+    </hs:set>
+  <hs:set>
+      <hs:letters dir="rtl">
+      <hs:letter tl_letter="ف" />
+      <hs:letter tl_letter="ذ" />
+      <hs:letter tl_letter="ن" />
+      <hs:letter tl_letter="ب" />
+      </hs:letters>
+      <hs:phrase>
+         <hs:tl_phrase dir="rtl" >نقص فيتامين بي 12 أحد أسباب فقدان الذاكرة</hs:tl_phrase>
+         <hs:en_phrase>Lack of vitamin B-12 one of the causes of the loss of memory </hs:en_phrase>
+      </hs:phrase>
+    </hs:set>
+  <hs:set>
+      <hs:letters dir="rtl">
+      <hs:letter tl_letter="ح" />
+      <hs:letter tl_letter="ش" />
+      <hs:letter tl_letter="س" />
+      <hs:letter tl_letter="ج" />
+      </hs:letters>
+      <hs:phrase>
+         <hs:tl_phrase dir="rtl" >الشاطر من سجين إلى مرشح رئاسي</hs:tl_phrase>
+         <hs:en_phrase>Al-Shater from a prisoner to a presidential candidate </hs:en_phrase>
+      </hs:phrase>
+    </hs:set>
+  <hs:set>
+      <hs:letters dir="rtl">
+      <hs:letter tl_letter="ك" />
+      <hs:letter tl_letter="ي" />
+      <hs:letter tl_letter="د" />
+      <hs:letter tl_letter="ل" />
+      </hs:letters>
+      <hs:phrase>
+         <hs:tl_phrase dir="rtl" >نيكول كيدمان تجسد غريس كيلي في فيلم جديد</hs:tl_phrase>
+         <hs:en_phrase>Nicole Kidman embodies Grace Kelly in a new movie </hs:en_phrase>
+      </hs:phrase>
+    </hs:set>
+  <hs:set>
+      <hs:letters dir="rtl">
+      <hs:letter tl_letter="ي" />
+      <hs:letter tl_letter="ن" />
+      <hs:letter tl_letter="ث" />
+      <hs:letter tl_letter="ض" />
+      </hs:letters>
+      <hs:phrase>
+         <hs:tl_phrase dir="rtl" >الوضع الإنساني في اليمن كارثي</hs:tl_phrase>
+         <hs:en_phrase>The humanitarian situation in Yemen is catastrophic. </hs:en_phrase>
+      </hs:phrase>
+    </hs:set>
+  <hs:set>
+      <hs:letters dir="rtl">
+      <hs:letter tl_letter="ر" />
+      <hs:letter tl_letter="و" />
+      <hs:letter tl_letter="ء" />
+      <hs:letter tl_letter="ع" />
+      </hs:letters>
+      <hs:phrase>
+         <hs:tl_phrase dir="rtl" >رئيس لوفتهانزا يتوقع استمرار تراجع الأرباح</hs:tl_phrase>
+         <hs:en_phrase>Chairman of Lufthansa is expecting decline in profits. </hs:en_phrase>
+      </hs:phrase>
+    </hs:set>
+  <hs:set>
+      <hs:letters dir="rtl">
+      <hs:letter tl_letter="ي" />
+      <hs:letter tl_letter="ب" />
+      <hs:letter tl_letter="غ" />
+      <hs:letter tl_letter="ر" />
+      </hs:letters>
+      <hs:phrase>
+         <hs:tl_phrase dir="rtl" >فيلا على ساحل البرتغال مقابل 5 ملايين دولار</hs:tl_phrase>
+         <hs:en_phrase>Villa on the coast of Portugal for $5 million </hs:en_phrase>
+      </hs:phrase>
+    </hs:set>
+  <hs:set>
+      <hs:letters dir="rtl">
+      <hs:letter tl_letter="ع" />
+      <hs:letter tl_letter="ت" />
+      <hs:letter tl_letter="ق" />
+      <hs:letter tl_letter="ب" />
+      </hs:letters>
+      <hs:phrase>
+         <hs:tl_phrase dir="rtl" >توقعات بعام جديد صعب لسوق العقارات في بريطانيا</hs:tl_phrase>
+         <hs:en_phrase>Expected difficult new year for real estate market in Britain </hs:en_phrase>
+      </hs:phrase>
+    </hs:set>
+
+</hs:content>

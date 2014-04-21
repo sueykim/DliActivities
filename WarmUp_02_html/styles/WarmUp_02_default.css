@@ -29,23 +29,30 @@
 
 html, body {
 	height: auto;
-	width: 910px;
+	/* width: 910px; */
+	width: 850px;
 	font-family: 'FuturaMedium';
+	
+	padding-left: 5px;
+	overflow:hidden;
 }
 
 #activity_wrapper {
 	/* height:554px !important; */
 	
-	height:700px !important;
+	/* height:700px !important; */
+	height: 570px !important;
 	
 	border: none !important;
 	margin-right: -12px;
-	width:910px; 
+	/* width:910px;  */
+	width: 850px;
 }
 
 .activity_area {
 /*     height: 530px !important; */
-    height: 600px !important;
+    /* height: 600px !important; */
+	height: 570px !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -67,7 +74,8 @@ h1, h2, h3, h4, h5, h6 {
 #graphicContainer {
 	background-color: white;
 	height: 122px;
-	left: 52px;
+	/* left: 52px; */
+	left: 42px;
 	position: absolute;
 	width: 160px;
 	border: 1px solid #999999;
@@ -84,9 +92,13 @@ h1, h2, h3, h4, h5, h6 {
 /* using it for the area of the play button, image, word*/
 #wordGraphicAudioMissing {
 	position: absolute;
-	left: 142px;	
+	/* left: 142px;	
 	top: 130px;
 	width: 265px;
+	height: 164px; */
+	left: 132px;	
+	top: 120px;
+	width: 245px;
 	height: 164px;
 	border: 1px solid #999999;
 	z-index: 0;
@@ -101,19 +113,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .playBtnDivStyle {
-	left: 50px;
-	top: 80px;
+	/* left: 50px; */
+	left: 43px;
+	/* top: 80px; */
+	top: 83px;
 	width: 100px;
 	position: absolute;
 }
 
 #clickGuard {
 	display: none;
-	height: 600px;
+	/* height: 600px; */
+	height: 560px;
 	left: 0;
 	position: absolute;
 	top: 0;
-	width: 880px;
+	/* width: 880px; */
+	width: 830px;
 	z-index: 6;
 	background-color: #999999;
 	opacity:0;
@@ -121,24 +137,33 @@ h1, h2, h3, h4, h5, h6 {
 
 #keyboardContainer {
 	background-color: lightgray;
-	height: 210px;
-	left: 142px;
-	padding-top: 12px;
+	/* height: 210px; */
+	height: 190px;
+	/* left: 142px; */
+	left: 132px;
+	/* padding-top: 12px; */
+	padding-top: 6px;
 	position: absolute;
 	text-align: center;
-	top: 380px;
+	/* top: 380px; */
+	top: 360px;
 	vertical-align: middle;
-	width: 594px;
-	padding-left: 20px;
+	/* width: 594px; */
+	width: 554px;
+	/* padding-left: 20px; */
+	padding-left: 13px;
 	z-index: 1;
 }
 
 #wordContainer {
 	height: 50px;
 	position: absolute;
-	top: 308px;
+	/* top: 308px;
 	width: 594px;
-	left: 142px;
+	left: 142px; */
+	top: 293px; 
+	width: 555px;
+	left: 132px;
 }
 
 #word {
@@ -170,7 +195,8 @@ h1, h2, h3, h4, h5, h6 {
 .letter {
 	cursor: pointer;
 	float: left;
-	margin: 4px;
+	/* margin: 4px; */
+	margin: 3px;
 	background-color: #ffffff;
 	width: 38px;
 	height: 38px;
@@ -205,7 +231,7 @@ h1, h2, h3, h4, h5, h6 {
 .roundCornersTileImage {
 	position: absolute;
 	border-radius: 0px 0px 0px 0px;
-	border: 1px solide red;
+	border: 0px solid red;
 	vertical-align: middle;
 	text-align: left;
 }
@@ -216,13 +242,17 @@ h1, h2, h3, h4, h5, h6 {
 
 #tileArea {
 	position: absolute;
-	width: 880px;
-	height: 600px;
+	/* width: 880px;
+	height: 600px; */
+	width: 830px;
+	height: 560px;
 }
 #tileArea2 {
 	position: absolute;
-	width: 880px;
-	height: 600px;
+	/* width: 880px;
+	height: 600px; */
+	width: 830px;
+	height: 560px;
 }
 .moveForward {
 	z-index: 3;
@@ -281,12 +311,23 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 164px;
     padding: 15px;
     position: relative;
-	top: 130px !important;
-    width: 312px;
+	/* top: 130px !important; */
+	top: 120px !important;
+    /* width: 312px; */
+	width: 292px;
 	z-index: 1;
 	margin:0;
-	left: 426px;
+	/* left: 426px; */
+	left: 396px;
 	background-color: #F5F5F5;
+	
+	/* */
+	border: thin solid #BDBDBD;
+    background-image: url('../../common/img/bg_dropbubble_50.png');
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    box-shadow: 0px 2px 4px #BDBDBD;
+    border-radius: 3px;
 }
 
 #feedbackHeader {
@@ -318,7 +359,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #feedbackText {
 	top: 0px;  /* change from -10 to 0 */
-	width: 294px;
+	/* width: 294px; */
+	width: 274px;
 	height: 64px;  /* change from 74 to 64 */
 	overflow:auto;
 }
@@ -346,4 +388,8 @@ h1, h2, h3, h4, h5, h6 {
 	border-radius: 3px;
 	font-size: 16px;
 	min-height: 58px;
+}
+
+.roundCorners {
+    border-radius: 3px;
 }

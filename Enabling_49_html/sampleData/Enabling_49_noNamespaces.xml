@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content target_language="MSA" rtl="true">
+  <set>
+      <letters dir="rtl">
+        <letter tl_letter="س" />
+        <letter tl_letter="ي" />
+        <letter tl_letter="ب" />
+        <letter tl_letter="ن" />
+      </letters>
+      <phrase>
+         <tl_phrase audio="ad_t1_s5_1.mp3"   dir="rtl" >بيان مجلس الأمن بشأن سوريا</tl_phrase>
+         <en_phrase>Statement of the Security Council on Syria </en_phrase>
+      </phrase>
+    </set>
+  <set>
+      <letters dir="rtl">
+      <letter tl_letter="ه" />
+      <letter tl_letter="ك" />
+      <letter tl_letter="ع" />
+      <letter tl_letter="ش" />
+      </letters>
+      <phrase>
+         <tl_phrase audio="ad_t1_s5_2.mp3"   dir="rtl" >مكتب الهاشمي يؤكد عزمه إلى العودة إلى كردستان</tl_phrase>
+         <en_phrase>Hashemi's office confirmed his intention to return to Kurdistan </en_phrase>
+      </phrase>
+    </set>
+  <set>
+      <letters dir="rtl">
+      <letter tl_letter="ت" />
+      <letter tl_letter="ط" />
+      <letter tl_letter="و" />
+      <letter tl_letter="ي" />
+      </letters>
+      <phrase>
+         <tl_phrase audio="ad_t1_s5_3.mp3"   dir="rtl" >موتورولا تطرح هاتفا جديدا بشحنة بطارية تدوم طويلا</tl_phrase>
+         <en_phrase>Motorola offers a new phone with a long-lasting battery </en_phrase>
+      </phrase>
+    </set>
+</content>

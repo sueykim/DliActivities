@@ -2,18 +2,40 @@ body:not([debug="true"]) #firebugIconDiv{
 	display: none; 
 }
 
-.activity_description {
+.noSelect{
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+#purposeAccordion_title, 
+#descriptionAccordion_title,
+#conditionAccordion_title{
+    padding-left: 25px;
+	
+}
+
+.activityDescription,
+#activity_purpose,
+#activity_condition{
     cursor: default;
     display: block;
     font-family: inherit;
     font-size: 12px;
     letter-spacing: 2px;
-    margin-bottom: 20px;
     margin-left: 8px;
-    margin-top: -20px;
-	width: 870px;
+    margin-top: 0px;
+	
+    width: 820px;
+    min-height: 15px;
+    margin-bottom: 5px;
 }
-.activity_hd {
+.activityTitle {
     color: grey;
     cursor: default;
     display: block;
@@ -21,6 +43,7 @@ body:not([debug="true"]) #firebugIconDiv{
     font-size: 22px;
     margin-left: 7px;
     margin-top: 1px;
+    margin-bottom: 0px;
 }
 
 .furigana_div {

@@ -1,6 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
+		<script type="text/javascript" src="../common/js/firebug-lite-1_2.js"></script>
+		
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 		<title>Missing Letters</title>
@@ -46,14 +48,29 @@
 			
 		<div id="clickGuard"></div>
 		<div id="feedback" >
+			<h2 id="feedbackHeader"></h2>
+			<p id="feedbackText"></p>
+			<button id="feedbackBtn" onclick="{closeFeedback();}">OK</button>
+		</div>
+		<div id="feedbackshell">
+			<div id="showwrong"></div>
+		</div>
+		
+		<div id="container_setDiv" class="roundCorners btn-group noSelect">
+			<div id="setDiv" class="roundCorners">
+				<div id="setTitle" class="bootstrapLabel btn_set noSelect">SET</div>
+				<span id="setText" class="bootstrapLabel btn_set_value noSelect">1/3</span>
+			</div>
+		</div>
+<!--		<div id="feedback" >
 			<h2 id="feedbackHeader">Set completed</h2>
 			<p id="feedbackText">Set completed text</p>
 			<button id="feedbackBtn" onclick="{closeFeedback();}">Ok</button>
 		</div>
-		<div id="showwrong"></div>
+
 		<div id="container_setDiv" class="roundCorners">
 			<div id="setDiv" class="roundCorners"><span id="setText">1/3</span></div>
 		</div>
-		
+-->
 	</body>
 </html>

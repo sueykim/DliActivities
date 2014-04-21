@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hs:content target_language="MSA" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart" rtl="true">
+  <hs:set>
+      <hs:letters dir="rtl">
+      <hs:letter tl_letter="س" />
+      <hs:letter tl_letter="ي" />
+      <hs:letter tl_letter="ب" />
+      <hs:letter tl_letter="ن" />
+      </hs:letters>
+      <hs:phrase>
+         <hs:tl_phrase audio="ad_t1_s5_1.mp3"   dir="rtl" >بيان مجلس الأمن بشأن سوريا</hs:tl_phrase>
+         <hs:en_phrase>Statement of the Security Council on Syria </hs:en_phrase>
+      </hs:phrase>
+    </hs:set>
+  <hs:set>
+      <hs:letters dir="rtl">
+      <hs:letter tl_letter="ه" />
+      <hs:letter tl_letter="ك" />
+      <hs:letter tl_letter="ع" />
+      <hs:letter tl_letter="ش" />
+      </hs:letters>
+      <hs:phrase>
+         <hs:tl_phrase audio="ad_t1_s5_2.mp3"   dir="rtl" >مكتب الهاشمي يؤكد عزمه إلى العودة إلى كردستان</hs:tl_phrase>
+         <hs:en_phrase>Hashemi's office confirmed his intention to return to Kurdistan </hs:en_phrase>
+      </hs:phrase>
+    </hs:set>
+  <hs:set>
+      <hs:letters dir="rtl">
+      <hs:letter tl_letter="ت" />
+      <hs:letter tl_letter="ط" />
+      <hs:letter tl_letter="و" />
+      <hs:letter tl_letter="ي" />
+      </hs:letters>
+      <hs:phrase>
+         <hs:tl_phrase audio="ad_t1_s5_3.mp3"   dir="rtl" >موتورولا تطرح هاتفا جديدا بشحنة بطارية تدوم طويلا</hs:tl_phrase>
+         <hs:en_phrase>Motorola offers a new phone with a long-lasting battery </hs:en_phrase>
+      </hs:phrase>
+    </hs:set>
+  <hs:set>
+      <hs:letters dir="rtl">
+      <hs:letter tl_letter="ق" />
+      <hs:letter tl_letter="ي" />
+      <hs:letter tl_letter="ف" />
+      <hs:letter tl_letter="أ" />
+      </hs:letters>
+      <hs:phrase>
+         <hs:tl_phrase audio="ad_t1_s5_4.mp3"   dir="rtl" >فورد تتوقع استيعاب أسواق أفريقيا وآسيا بحلول 2020</hs:tl_phrase>
+         <hs:en_phrase>Ford expects to absorb the markets of Africa and Asia by 2020 </hs:en_phrase>
+      </hs:phrase>
+    </hs:set>
+  <hs:set>
+      <hs:letters dir="rtl">
+      <hs:letter tl_letter="ط" />
+      <hs:letter tl_letter="ر" />
+      <hs:letter tl_letter="ع" />
+      <hs:letter tl_letter="ز" />
+      </hs:letters>
+      <hs:phrase>
+         <hs:tl_phrase audio="ad_t1_s5_5.mp3"   dir="rtl" >المطبخ الصيني بغزو الهندي في عقر داره</hs:tl_phrase>
+         <hs:en_phrase>Chinese cuisine invades Indian cuisine in its hometown </hs:en_phrase>
+      </hs:phrase>
+    </hs:set>
+  <hs:set>
+      <hs:letters dir="rtl">
+      <hs:letter tl_letter="س" />
+      <hs:letter tl_letter="خ" />
+      <hs:letter tl_letter="ن" />
+      <hs:letter tl_letter="ق" />
+      </hs:letters>
+      <hs:phrase>
+         <hs:tl_phrase audio="ad_t1_s5_6.mp3"   dir="rtl" >الإخوان المسلمون المصريون بين السياسة والأخلاق</hs:tl_phrase>
+         <hs:en_phrase>Egyptian Muslim Brotherhood between politics and ethics </hs:en_phrase>
+      </hs:phrase>
+    </hs:set>
+  <hs:set>
+      <hs:letters dir="rtl">
+      <hs:letter tl_letter="ظ" />
+      <hs:letter tl_letter="ل" />
+      <hs:letter tl_letter="ي" />
+      <hs:letter tl_letter="ف" />
+      </hs:letters>
+      <hs:phrase>
+         <hs:tl_phrase audio="ad_t1_s5_7.mp3"   dir="rtl" >ظلام في ليبيا</hs:tl_phrase>
+         <hs:en_phrase>Darkness in Libya </hs:en_phrase>
+      </hs:phrase>
+    </hs:set>
+  <hs:set>
+      <hs:letters dir="rtl">
+      <hs:letter tl_letter="ف" />
+      <hs:letter tl_letter="ت" />
+      <hs:letter tl_letter="خ" />
+      <hs:letter tl_letter="ت" />
+      <hs:letter tl_letter="ص" />
+      </hs:letters>
+      <hs:phrase>
+         <hs:tl_phrase audio="ad_t1_s5_8.mp3"   dir="rtl" >شركة "فرص" السعودية تنفي ضخ استثمارات في مصر </hs:tl_phrase>
+         <hs:en_phrase>Company 'Foras' denies Saudi investments in Egypt </hs:en_phrase>
+      </hs:phrase>
+    </hs:set>
+  <hs:set>
+      <hs:letters dir="rtl">
+      <hs:letter tl_letter="ط" />
+      <hs:letter tl_letter="غ" />
+      <hs:letter tl_letter="م" />
+      <hs:letter tl_letter="ب" />
+      </hs:letters>
+      <hs:phrase>
+         <hs:tl_phrase audio="ad_t1_s5_9.mp3"   dir="rtl" >مؤتمر غوغل للمطورين في دبي</hs:tl_phrase>
+         <hs:en_phrase>Google developers conference in Dubai </hs:en_phrase>
+      </hs:phrase>
+    </hs:set>
+  <hs:set>
+      <hs:letters dir="rtl">
+      <hs:letter tl_letter="ع" />
+      <hs:letter tl_letter="ج" />
+      <hs:letter tl_letter="و" />
+      <hs:letter tl_letter="د" />
+      </hs:letters>
+      <hs:phrase>
+         <hs:tl_phrase audio="ad_t1_s5_10.mp3"   dir="rtl" >العديد من الناس لا يعرفون معنى التكنولوجيا</hs:tl_phrase>
+         <hs:en_phrase>Many people do not know the meaning of technology </hs:en_phrase>
+      </hs:phrase>
+    </hs:set>
+  <hs:set>
+      <hs:letters dir="rtl">
+      <hs:letter tl_letter="م" />
+      <hs:letter tl_letter="ل" />
+      <hs:letter tl_letter="ت" />
+      <hs:letter tl_letter="ح" />
+      </hs:letters>
+      <hs:phrase>
+         <hs:tl_phrase audio="ad_t1_s5_11.mp3"   dir="rtl" >العلماء يستخدمون بكتيريا لمكافحة مرض النوم </hs:tl_phrase>
+         <hs:en_phrase>Scientists use bacteria to fight sleeping syndrome </hs:en_phrase>
+      </hs:phrase>
+    </hs:set>
+  <hs:set>
+      <hs:letters dir="rtl">
+      <hs:letter tl_letter="ن" />
+      <hs:letter tl_letter="ا" />
+      <hs:letter tl_letter="ص" />
+      <hs:letter tl_letter="ت" />
+      </hs:letters>
+      <hs:phrase>
+         <hs:tl_phrase audio="ad_t1_s5_12.mp3"   dir="rtl" >شلل الأطفال ينتقل من باكستان إلى الصين</hs:tl_phrase>
+         <hs:en_phrase>Polio is transmitted from Pakistan to China </hs:en_phrase>
+      </hs:phrase>
+    </hs:set>
+
+</hs:content>

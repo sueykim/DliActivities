@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<content target_language="MSA" rtl="true">
+  <set>
+      <letters dir="rtl">
+      <letter tl_letter="س" />
+      <letter tl_letter="ع" />
+      <letter tl_letter="ي" />
+      <letter tl_letter="ا" />
+      </letters>
+      <phrase>
+         <tl_phrase dir="rtl" >الوضع في سوريا يدعو لمواساة الشعب السوري</tl_phrase>
+         <en_phrase>The situation in Syria calls for comfort of Syrian people </en_phrase>
+      </phrase>
+    </set>
+  <set>
+      <letters dir="rtl">
+      <letter tl_letter="ج" />
+      <letter tl_letter="ب" />
+      <letter tl_letter="ه" />
+      <letter tl_letter="ل" />
+      </letters>
+      <phrase>
+         <tl_phrase dir="rtl" >الجنزوري وجه تهديدا للإخوان المسلمين بحل البرلمان</tl_phrase>
+         <en_phrase>Ganzouri threatens the Muslim Brotherhood to dissolve the parliament </en_phrase>
+      </phrase>
+    </set>
+  <set>
+      <letters dir="rtl">
+      <letter tl_letter="ي" />
+      <letter tl_letter="و" />
+      <letter tl_letter="ن" />
+      <letter tl_letter="ط" />
+      </letters>
+      <phrase>
+         <tl_phrase dir="rtl" >الدين لله والوطن للجميع</tl_phrase>
+         <en_phrase>Religion is for God and the country is for all </en_phrase>
+      </phrase>
+    </set>
+  <set>
+      <letters dir="rtl">
+      <letter tl_letter="س" />
+      <letter tl_letter="ف" />
+      <letter tl_letter="ق" />
+      <letter tl_letter="م" />
+      </letters>
+      <phrase>
+         <tl_phrase dir="rtl" >مرض فيروس سي يمكن الوقاية منه</tl_phrase>
+         <en_phrase>Virus C disease can be prevented </en_phrase>
+      </phrase>
+    </set>
+  <set>
+      <letters dir="rtl">
+      <letter tl_letter="ر" />
+      <letter tl_letter="م" />
+      <letter tl_letter="ك" />
+      <letter tl_letter="ح" />
+      </letters>
+      <phrase>
+         <tl_phrase dir="rtl" >طبق الأكل الصحي...من جامعة هارفارد</tl_phrase>
+         <en_phrase>Plate of healthy food...From Harvard University </en_phrase>
+      </phrase>
+    </set>
+  <set>
+      <letters dir="rtl">
+      <letter tl_letter="ف" />
+      <letter tl_letter="ذ" />
+      <letter tl_letter="ن" />
+      <letter tl_letter="ب" />
+      </letters>
+      <phrase>
+         <tl_phrase dir="rtl" >نقص فيتامين بي 12 أحد أسباب فقدان الذاكرة</tl_phrase>
+         <en_phrase>Lack of vitamin B-12 one of the causes of the loss of memory </en_phrase>
+      </phrase>
+    </set>
+  <set>
+      <letters dir="rtl">
+      <letter tl_letter="ح" />
+      <letter tl_letter="ش" />
+      <letter tl_letter="س" />
+      <letter tl_letter="ج" />
+      </letters>
+      <phrase>
+         <tl_phrase dir="rtl" >الشاطر من سجين إلى مرشح رئاسي</tl_phrase>
+         <en_phrase>Al-Shater from a prisoner to a presidential candidate </en_phrase>
+      </phrase>
+    </set>
+  <set>
+      <letters dir="rtl">
+      <letter tl_letter="ك" />
+      <letter tl_letter="ي" />
+      <letter tl_letter="د" />
+      <letter tl_letter="ل" />
+      </letters>
+      <phrase>
+         <tl_phrase dir="rtl" >نيكول كيدمان تجسد غريس كيلي في فيلم جديد</tl_phrase>
+         <en_phrase>Nicole Kidman embodies Grace Kelly in a new movie </en_phrase>
+      </phrase>
+    </set>
+  <set>
+      <letters dir="rtl">
+      <letter tl_letter="ي" />
+      <letter tl_letter="ن" />
+      <letter tl_letter="ث" />
+      <letter tl_letter="ض" />
+      </letters>
+      <phrase>
+         <tl_phrase dir="rtl" >الوضع الإنساني في اليمن كارثي</tl_phrase>
+         <en_phrase>The humanitarian situation in Yemen is catastrophic. </en_phrase>
+      </phrase>
+    </set>
+  <set>
+      <letters dir="rtl">
+      <letter tl_letter="ر" />
+      <letter tl_letter="و" />
+      <letter tl_letter="ء" />
+      <letter tl_letter="ع" />
+      </letters>
+      <phrase>
+         <tl_phrase dir="rtl" >رئيس لوفتهانزا يتوقع استمرار تراجع الأرباح</tl_phrase>
+         <en_phrase>Chairman of Lufthansa is expecting decline in profits. </en_phrase>
+      </phrase>
+    </set>
+  <set>
+      <letters dir="rtl">
+      <letter tl_letter="ي" />
+      <letter tl_letter="ب" />
+      <letter tl_letter="غ" />
+      <letter tl_letter="ر" />
+      </letters>
+      <phrase>
+         <tl_phrase dir="rtl" >فيلا على ساحل البرتغال مقابل 5 ملايين دولار</tl_phrase>
+         <en_phrase>Villa on the coast of Portugal for $5 million </en_phrase>
+      </phrase>
+    </set>
+  <set>
+      <letters dir="rtl">
+      <letter tl_letter="ع" />
+      <letter tl_letter="ت" />
+      <letter tl_letter="ق" />
+      <letter tl_letter="ب" />
+      </letters>
+      <phrase>
+         <tl_phrase dir="rtl" >توقعات بعام جديد صعب لسوق العقارات في بريطانيا</tl_phrase>
+         <en_phrase>Expected difficult new year for real estate market in Britain </en_phrase>
+      </phrase>
+    </set>
+
+</content>

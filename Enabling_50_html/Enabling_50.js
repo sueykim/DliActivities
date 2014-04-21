@@ -5,11 +5,12 @@ $(document).ready(function() {
 
 	//Default values (for testing)
 	mediaPath = "sampleData/";
-	cssFilename = "styles/Enabling_50_default.css";
+	cssFilename = "styles/enabling_50_dlilearn.css";
 	xmlFilename = mediaPath + "enabling50_noNamespaces.xml";
 	jsonFilename = mediaPath + "enabling50_json.js";
 
 	//testVideoSupport();	
+        loadjscssfile("../common/css/activityDefault.css", "css");
 	loadActivity(parseXml);
 	
 });
@@ -91,11 +92,15 @@ function getLetter(ID){
 	//alert(ltrCompared);
 	if(ltrCompared == ChosenLetter){
 	  $('#' +ID).removeClass('hiddenLetter');
+		var rightFB = '<img  class="fbcorrect" id="id_correct' + currentSet + '" src="../common/img/feedback_correct.png" border="0" width="122px" height="38px">';
+		$('#showwrong').html(rightFB);
+		$("#showwrong").css("display", "block");
+		setTimeout(function(){$("#showwrong").css("display", "none")},500);	
 	  setItemCompleted++;
 	  checkCompleteSet();
 	}
 	else{
-		var wrongFB = '<img  class="fbIncorrect" id="id_incorrect' + currentSet + '" src="../common/Library/images/fb_incorrect.png" border="0" width="138px" height="40px">';
+		var wrongFB = '<img  class="fbIncorrect" id="id_incorrect' + currentSet + '" src="../common/img/feedback_incorrect.png" border="0" width="139px" height="38px">';
 	 $('#showwrong').html(wrongFB);
 	 $("#showwrong").css("display", "block");
 	 setTimeout(function(){$("#showwrong").css("display", "none")},500);	
@@ -143,6 +148,22 @@ function fix_str(S, N)
 			   theCharact = true;
 			}	
 		if (theCharact==true){
+			var prevLtr = S.substr(i-1,1);
+			var specialLtr = ArabicLetterIdentified(prevLtr);
+			//alert( 'specialLtr: ' + specialLtr);
+			if (S.substr(i+1,1) == " " || i==(S.length-1)){ 			    
+				if (prevLtr == " " || i==0 || specialLtr == true)
+					ws( '<span class="hiddenLetter" id="ltr', i, '">', S.substr(i, 1), '</span>' )
+				else
+					ws( D, '<span class="hiddenLetter" id="ltr', i, '">', S.substr(i, 1), '</span>' )
+			}	
+			else if (prevLtr == " " || i==0 ||specialLtr == true){
+				if (S.substr(i+1,1) == " " || i==(S.length-1))
+					ws( '<span class="hiddenLetter" id="ltr', i, '">', S.substr(i, 1), '</span>' )
+				else
+					ws( '<span class="hiddenLetter" id="ltr', i, '">', S.substr(i, 1), '</span>', D )
+			}			
+			else
 		  ws( D, '<span class="hiddenLetter" id="ltr', i, '">', S.substr(i, 1), '</span>', D )
 		  hiddenLtrNo++
 		  }
@@ -150,6 +171,20 @@ function fix_str(S, N)
 		  ws( S.substr(i, 1) )
 		}	
   return wr
+  }
+function ArabicLetterIdentified(Ltr)
+  {
+  var LCC = '&#' +(Ltr.toString()).charCodeAt(0) + ';';
+  //These Arabic letters behave as if there is a space after the letter. So we have to treat them as if there is a space in between.
+  var arabicLtrs = [ '&#1570;', '&#1573;', '&#1575;', '&#1583;', '&#1584;', '&#1585;', '&#1588;', '&#1608;', '&#1650;' ];
+  var aLen = arabicLtrs.length;
+  var theResult = false;
+  for (var i=0; i<aLen; i++)
+    {
+	if (LCC == arabicLtrs[i])
+	  theResult = true;
+	}
+  return theResult;	
   }
   
 var setCompletedShown = false;

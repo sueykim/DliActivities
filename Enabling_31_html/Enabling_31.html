@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<head>
+		<!-- <script type="text/javascript" src="../common/js/firebug-lite-1_2.js"></script> -->
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		
+		<title>Enabling 31</title>
+		
+		<script src="../common/js/AC_OETags.js"></script>
+
+		<script src="../common/js/xml2json.js"></script>
+		<script src="../common/js/dli_activity.js"></script>
+		
+		<link type="text/css" href="../common/css/smoothness/jquery-ui-1.8.20.custom.css" rel="stylesheet" />
+		<!--<link type="text/css" href="../common/css/dlilearn_activities.css" rel="stylesheet" /> -->
+
+		<script type="text/javascript" src="../common/js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="../common/js/jquery-ui-1.8.20.custom.min.js"></script>
+		<script type="text/javascript" src="../common/js/jquery.ui.touch-punch.js"></script>
+		
+		<script src="../common/js/dli_util.js"></script>
+		<script src="../common/js/dli_audio.js"></script>
+		
+		
+		<link href="../common/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+		<script src="../common/js/jquery.mousewheel.min.js"></script>
+		<script src="../common/js/jquery.mCustomScrollbar.js"></script>
+		
+		<script src="Enabling_31.js"></script>
+	</head>
+	<body>
+		<noscript>Activity cannot load. No Javascript support detected.</noscript>
+
+		<h3 class="activity_hd"></h3>
+		<div class="activity_description"></div>
+
+		<div id="flashAudioPlayerDiv"></div>
+		<div id="htmlAudioPlayerDiv"></div>
+		<div id="embeddedAudioPlayerDiv"></div>
+
+		<div id="main" class="roundCorners">
+			<div id="stage" class="roundCorners">
+			 <!--    <div style="border:1px blue solid; width:450px;height:540px;"> -->
+
+				<div class="items" >
+                                    <div style="margin-left:10px; margin-top: 10px;">
+        				     <div style="borderx:1px green solid; width:120px; height:100px; float:left;">
+                                                 <img id="stageImg0" class="roundCorners image"></img>
+                                             </div>
+                                             <div style="borderx:1px solid purple; width:270px; height:100px; float:left;margin-top:10px;">
+                                                <div id="word0" class="roundCorners" style="width:170px; height:30px;  margin-top: 15px; borderx:solid 1px blue;float:left;"></div>
+                                                <div id="audio0" class="roundCorners " style="width:51px;  height:30px;  margin-top: 5px; borderx:solid 1px blue;float:right;">
+                                                           <a href="javascript:;" onMouseOut="MM_swapImage('playBtn_s0','','../common/Library/images/playBtn_s1.png',1)"
+            			                                   onMouseDown="MM_swapImage('playBtn_s0','','../common/Library/images/playBtn_s3.png',1)"
+            			                                   onMouseUp="MM_swapImage('playBtn_s0','','../common/Library/images/playBtn_s2.png',1);"
+                                                                   onMouseOver="MM_swapImage('playBtn_s0','','../common/Library/images/playBtn_s2.png',1)" >
+            			                                    <img id="playBtn_s0" class="playBtnImg"  src="../common/Library/images/playBtn_s1.png" border="0">
+                                                           </a>            				                                                                                                                                                                                           
+                                                </div>   
+                                                <div id="letter0" class="roundCorners" style="borderx:solid 0px orange; height:50px; margin-top: 50px">
+                                                      <span id="drag00" class="roundCorners drag noSelect mix0"></span>
+            					      <span id="drag01" class="roundCorners drag noSelect mix0"></span>
+            				     	      <span id="drag02" class="roundCorners drag noSelect mix0"></span>
+            					      <span id="drag03" class="roundCorners drag noSelect mix0"></span>
+            					      <span id="drag04" class="roundCorners drag noSelect mix0"></span>
+                                                </div>
+                                             </div>
+                                    </div>
+                                </div>
+                                
+				<div class="items">
+                                    <div style="margin-left:10px; margin-top: 10px;">
+                                             <div style="borderx:1px green solid; width:120px; height:100px; float:left;">
+                                                 <img id="stageImg1" class="roundCorners image"></img>
+                                             </div>
+                                             <div style="borderx:1px solid purple; width:270px; height:100px; float:left;;margin-top:10px;">
+                                                <div id="word1" class="roundCorners" style="width:170px; height:30px;  margin-top: 15px; borderx:solid 1px blue;float:left;"></div>
+                                                <div id="audio1" class="roundCorners" style="width:51px;  height:30px;  margin-top: 5px; borderx:solid 1px blue;float:right;">
+                                                
+                                                           <a href="javascript:;" onMouseOut="MM_swapImage('playBtn_s1','','../common/Library/images/playBtn_s1.png',1)"
+            			                                   onMouseDown="MM_swapImage('playBtn_s1','','../common/Library/images/playBtn_s3.png',1)"
+            			                                   onMouseUp="MM_swapImage('playBtn_s1','','../common/Library/images/playBtn_s2.png',1);"
+                                                                   onMouseOver="MM_swapImage('playBtn_s1','','../common/Library/images/playBtn_s2.png',1)" >
+            			                                    <img id="playBtn_s1" class="playBtnImg"  src="../common/Library/images/playBtn_s1.png" border="0">
+                                                           </a>
+
+                                                </div>
+                                                <div id="letter1" class="roundCorners" style="borderx:solid 1px orange; height:50px; margin-top: 50px">
+                                                      <span id="drag10" class="roundCorners drag noSelect mix1"></span>
+            					      <span id="drag11" class="roundCorners drag noSelect mix1"></span>
+            				     	      <span id="drag12" class="roundCorners drag noSelect mix1"></span>
+            					      <span id="drag13" class="roundCorners drag noSelect mix1"></span>
+            					      <span id="drag14" class="roundCorners drag noSelect mix1"></span>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+
+				<div class="items">
+                                    <div style="margin-left:10px; margin-top: 10px;">
+    				         <div style="borderx:1px green solid; width:120px; height:100px; float:left;">
+                                                <img id="stageImg2" class="roundCorners image"></img>
+                                         </div>
+                                         <div style="borderx:1px solid purple; width:270px; height:100px; float:left;;margin-top:10px;">
+                                                <div id="word2" class="roundCorners" style="width:170px; height:30px;  margin-top: 15px; borderx:solid 1px blue;float:left;"></div>
+                                                <div id="audio2" class="roundCorners" style="width:51px;  height:30px;  margin-top: 5px; borderx:solid 1px blue;float:right;">
+                                                           <a href="javascript:;" onMouseOut="MM_swapImage('playBtn_s2','','../common/Library/images/playBtn_s1.png',1)"
+            			                                   onMouseDown="MM_swapImage('playBtn_s2','','../common/Library/images/playBtn_s3.png',1)"
+            			                                   onMouseUp="MM_swapImage('playBtn_s2','','../common/Library/images/playBtn_s2.png',1);"
+                                                                   onMouseOver="MM_swapImage('playBtn_s2','','../common/Library/images/playBtn_s2.png',1)" >
+            			                                    <img id="playBtn_s2" class="playBtnImg"  src="../common/Library/images/playBtn_s1.png" border="0">
+                                                           </a>
+                                                </div>
+                                                <div id="letter2" class="roundCorners" style="borderx:solid 1px orange; height:50px; margin-top: 50px">
+                                                      <span id="drag20" class="roundCorners drag noSelect mix2"></span>
+            					      <span id="drag21" class="roundCorners drag noSelect mix2"></span>
+            				     	      <span id="drag22" class="roundCorners drag noSelect mix2"></span>
+            					      <span id="drag23" class="roundCorners drag noSelect mix2"></span>
+            					      <span id="drag24" class="roundCorners drag noSelect mix2"></span>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                         </div>    <!-- end of stage -->
+
+                        <div id="cultureNote"></div>
+			<div id="feedback31" >
+				<h2 id="feedbackHeader">Set completed</h2>
+				<p id="feedbackText">Set completed text</p>
+				<button id="feedbackBtn" onclick="{closeFeedback();}">Ok</button>    
+			</div>
+
+ 				<div id="clickGuard_container">
+				   <div id="clickGuard" ></div>
+			      </div>
+
+      		        <div id="container_setDiv" class="roundCorners btn-group noSelect">
+      			      <div id="setDiv" class="roundCorners">
+      				      <div id="setTitle" class="bootstrapLabel btn_set noSelect">SET:</div>
+      				      <span id="setText" class="bootstrapLabel btn_set_value noSelect">1/3</span>
+      		  	      </div>
+      			      <div id="id_prev_next_div" class="btn-group">
+                                      <div class="bootstrapLabel btn_prev noSelect" id="set_prev" title="prev" onclick="{prevClick();}">
+      							&lt; Prev
+      				      </div>
+      				      <div class="bootstrapLabel btn_next noSelect" id="set_next" title="next" onclick="{nextClick();}">
+      							Next &gt;
+      			              </div>
+                             </div>
+                       </div>
+		</div>
+	 <div id="navGuard"></div>			
+	 <div id="activityGuard"></div>		
+
+	</body>
+</html>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<content target_language="MSA" hw="true" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart" rtl="true">
+  <sets>
+   <set>
+      <item>
+        <audio>ad_officer.mp3</audio>
+        <image>ad_officer_sm.png</image>
+        <itemEN>Officer</itemEN>
+        <itemTL dir="rtl">ضابط</itemTL>
+        <missingLetter>2</missingLetter>
+        <distraction>ب</distraction>
+        <distraction>و</distraction>
+        <distraction>ي</distraction>
+        <distraction>د</distraction>
+      </item>
+      <item>
+        <audio>ad_soldier.mp3</audio>
+        <image>ad_soldier_sm.png</image>
+        <itemEN>Soldier</itemEN>
+        <itemTL dir="rtl">جندي</itemTL>
+        <missingLetter>4</missingLetter>
+        <distraction>ك</distraction>
+        <distraction>س</distraction>
+        <distraction>د</distraction>
+        <distraction>ل</distraction>
+      </item>
+      <item>
+        <audio>ad_engineer.mp3</audio>
+        <image>ad_engineer_sm.png</image>
+        <itemEN>Engineer</itemEN>
+        <itemTL dir="rtl">مهندس</itemTL>
+        <missingLetter>2</missingLetter>
+        <distraction>س</distraction>
+        <distraction>ش</distraction>
+        <distraction>ت</distraction>
+        <distraction>ز</distraction>
+      </item>
+      <item>
+        <audio>ad_doctor.mp3</audio>
+        <image>ad_doctor_sm.png</image>
+        <itemEN>Doctor</itemEN>
+        <itemTL dir="rtl">طبيب</itemTL>
+        <missingLetter>1</missingLetter>
+        <distraction>ت</distraction>
+        <distraction>د</distraction>
+        <distraction>ض</distraction>
+        <distraction>ع</distraction>
+      </item>
+      <item>
+        <audio>ad_student.mp3</audio>
+        <image>ad_student_sm.png</image>
+        <itemEN>Student</itemEN>
+        <itemTL dir="rtl">طالب</itemTL>
+        <missingLetter>3</missingLetter>
+        <distraction>ق</distraction>
+        <distraction>ك</distraction>
+        <distraction>غ</distraction>
+        <distraction>ث</distraction>
+      </item>
+      <item>
+        <audio>ad_lawyer.mp3</audio>
+        <image>ad_lawyer_sm.png</image>
+        <itemEN>Lawyer</itemEN>
+        <itemTL dir="rtl">محام</itemTL>
+        <missingLetter>2</missingLetter>
+        <distraction>هـ</distraction>
+        <distraction>ت</distraction>
+        <distraction>ع</distraction>
+        <distraction>ج</distraction>
+      </item>
+      <item>
+        <audio>ad_driver.mp3</audio>
+        <image>ad_driver_sm.png</image>
+        <itemEN>Driver</itemEN>
+        <itemTL dir="rtl">سائق</itemTL>
+        <missingLetter>4</missingLetter>
+        <distraction>ك</distraction>
+        <distraction>د</distraction>
+        <distraction>ت</distraction>
+        <distraction>ز</distraction>
+      </item>
+      <item>
+        <audio>ad_policeman.mp3</audio>
+        <image>ad_policeman_sm.png</image>
+        <itemEN>Policeman</itemEN>
+        <itemTL dir="rtl">شرطي</itemTL>
+        <missingLetter>2</missingLetter>
+        <distraction>ز</distraction>
+        <distraction>ذ</distraction>
+        <distraction>س</distraction>
+        <distraction>ل</distraction>
+      </item>
+      <item>
+        <audio>ad_nurse.mp3</audio>
+        <image>ad_nurse_sm.png</image>
+        <itemEN>Nurse</itemEN>
+        <itemTL dir="rtl">ممرضة</itemTL>
+        <missingLetter>1</missingLetter>
+        <distraction>ي</distraction>
+        <distraction>ص</distraction>
+        <distraction>ض</distraction>
+        <distraction>ظ</distraction>
+      </item>
+      <note>
+        <body dir="ltr"><![CDATA[Muammer al-Qadhafi (spelling varies) was the official ruler of Libya from 1969 to 2011. Qadhafi replaced the Libyan Constitution of 1951 with laws based on a political ideology he had formulated and was published in الكتاب الأخضر <b>(The Green Book).</b>]]>  </body>
+      </note>
+    </set>
+  </sets>
+
+</content>

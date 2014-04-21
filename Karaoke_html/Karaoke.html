@@ -20,28 +20,27 @@
 		src="../common/js/jquery.ui.touch-punch.js"></script>
 
 	<script src="../common/js/dli_util.js"></script>
-	<script src="../common/js/dli_audio.js"></script>
+	<script src="../common/js/dli_html_audio.js"></script>
 
 	<script src="Karaoke.js"></script>
 </head>
 <body state_banner="image">
-	<div id="flashAudioPlayerDiv"></div>
-	<div id="htmlAudioPlayerDiv"></div>
-	<div id="embeddedAudioPlayerDiv"></div>
+	<div id="instrumental_container"></div>
+	<div id="vocals_container"></div>
 
 	<h3 class="activity_hd noSelect">Karaoke</h3>
 	<div class="activity_description noSelect">The activity description</div>
 
 	<div id="main">
 		<div id="banner_container">
+			<div id="lyrics_container" class="noSelect">
+				<div id="lyrics" class="noSelect">
+				</div>
+				<div id="showImageBtn" onclick="showImage()">SHOW IMAGE</div>
+			</div>
 			<div id="banner_img_container">
 				<div id="banner_img"></div>
 				<div id="showLyricsBtn" onclick="showLyrics()">SHOW LYRICS</div>
-			</div>
-			<div id="lyrics_container">
-				<div id="lyrics">
-				</div>
-				<div id="showImageBtn" onclick="showImage()">SHOW IMAGE</div>
 			</div>
 		</div>
 		<div id="english_container"></div>
@@ -51,7 +50,7 @@
 		<div id="steps_container"></div>
 		<div id="audioControls_container">
 			<div id="progressBar_container">
-				<div id="progressBar"></svg>
+				<div id="progressBar"></div>
 			</div>
 			<div id="audioButtons_container">
 				<div id="startOverBtn" onclick="startOver()"></div>
@@ -59,6 +58,7 @@
 				<div id="muteBtn" muted="false" onclick="toggleMute()"></div>
 			</div>
 		</div>
+		<div id="clickGuard"></div>
 	</div>
 
 	<div id="snippets" class="hidden">

@@ -31,6 +31,7 @@ $(document).ready(function() {
 		
 		
 	}
+	/*
 	else {
 		// For performance - homework
 		var xmlPath2 = xmlPath.split("/");
@@ -42,6 +43,7 @@ $(document).ready(function() {
 		
 		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
 	}
+	*/
 	
 	// For assessment
 	//xmlFilename = mediaPath + "ad_01_06_11_08_noNamespaces.xml";

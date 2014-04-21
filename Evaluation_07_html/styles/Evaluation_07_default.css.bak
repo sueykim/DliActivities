@@ -144,7 +144,8 @@ video{
 }
 .darkYellow  {
   
-       border:2px solid #B18904;
+       /* border:2px solid #B18904; */
+	   border:8px solid #B18904;
 }
 .white  {
 

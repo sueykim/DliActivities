@@ -173,10 +173,15 @@ function loadPart1ForEnabling03() {
 		$(".feedbackTitle, .feedbackContent, #okBtn").css("display","none");
 	var mSetElem = $(gXmlEnable03).find("session").eq(gCurrentSet);
 	var index=0;
+	document.getElementById("content").innerHTML="";
+	var contentDiv =document.createElement("div");
+			contentDiv.id ="contentDiv";
+			document.getElementById("content").appendChild(contentDiv);
+			
 	$(mSetElem).find("item").each(function(){
 	var itemContainer =document.createElement("div");
 			itemContainer.className ="itemContainer";
-			document.getElementById("content").appendChild(itemContainer);
+			document.getElementById("contentDiv").appendChild(itemContainer);
 			if (index == ($(mSetElem).find("item").length-1)) {
 			$(itemContainer).css({"margin":"0px" });
 			
@@ -205,12 +210,12 @@ function loadPart1ForEnabling03() {
 				 $(tlContainer).css({"top":"10px" });
 			var option = [];
 				  	if (!isJapanese){ 
-						option.push($(this).find("lang_tl_word_text").text());
+						option.push($.trim($(this).find("lang_tl_word_text").text()));
 						option.push($(this).find("distractor_1").text());
 			   			option.push($(this).find("distractor_2").text());
 					}
 					else { 			// To display ruby tag
-					   option.push(displayRubyTag($(this).find("lang_tl_word_text").text()));
+					   option.push(displayRubyTag($.trim($(this).find("lang_tl_word_text").text())));
 					   option.push(displayRubyTag($(this).find("distractor_1").text()));
 			   		   option.push(displayRubyTag($(this).find("distractor_2").text()));
 					}
@@ -261,7 +266,7 @@ function loadPart1ForEnabling03() {
 					
 				
 				var width= $(targetLang).outerWidth(true);
-				if (targetPhrase[i].toLowerCase().replace(".","") == $(this).find("lang_tl_word_text").text().toLowerCase())  { 
+				if ($.trim(targetPhrase[i].toLowerCase().replace(/[!?;:,.]/gi, '')) == $.trim($(this).find("lang_tl_word_text").text().toLowerCase()))  { 
 						targetLang.innerHTML= selectHtml;
 				   		var width = max+ "px";
 				}
@@ -299,12 +304,12 @@ var answer = $(this).val();
 		else
 		    $($(mSetElem).find("item")[index]).attr("numberTry", "1");
 		//correct select
-	if ($(this).val().toLowerCase() == ($($(mSetElem).find("item")[index]).find("lang_tl_word_text").text().toLowerCase())) {
+	if ($.trim($(this).val().toLowerCase()) == $.trim(($($(mSetElem).find("item")[index]).find("lang_tl_word_text").text().toLowerCase()))) {
 		
 		if (!isJapanese) 
-					$(this).select2("val", $($(mSetElem).find("item")[index]).find("lang_tl_word_text").text());
+					$(this).select2("val",$.trim( $($(mSetElem).find("item")[index]).find("lang_tl_word_text").text()));
 					else 			// To display ruby tag
-					$(this).select2("val", displayRubyTag($($(mSetElem).find("item")[index]).find("lang_tl_word_text").text()));
+					$(this).select2("val", displayRubyTag($.trim($($(mSetElem).find("item")[index]).find("lang_tl_word_text").text())));
 					
 		$($(mSetElem).find("item")[index]).attr("partOne", "completed");
 		$(this).select2("enable", false);
@@ -316,9 +321,9 @@ var answer = $(this).val();
 			if (parseInt($($(mSetElem).find("item")[index]).attr("numberTry")) >1) {
 				
 				if (!isJapanese) 
-					$(this).select2("val", $($(mSetElem).find("item")[index]).find("lang_tl_word_text").text());
+					$(this).select2("val", $.trim($($(mSetElem).find("item")[index]).find("lang_tl_word_text").text()));
 				else 			// To display ruby tag
-					$(this).select2("val", displayRubyTag($($(mSetElem).find("item")[index]).find("lang_tl_word_text").text()));
+					$(this).select2("val", displayRubyTag($.trim($($(mSetElem).find("item")[index]).find("lang_tl_word_text").text())));
 					
 				$($(mSetElem).find("item")[index]).attr("partOne", "completed");
 				$(this).select2("enable", false);
@@ -410,23 +415,24 @@ finalScore+= score;
 	index++;
 	
 	}); // end $(mSetElem).find("phrase").each
-	
-	
-	if(index >4) {
-			$("#content").height(420);
-			$("#content").css({"overflow":"auto"});
-			$("#content").mCustomScrollbar({
+	$("#contentDiv").css({"position":"absolute"});
+	var contentHeight = $("#contentDiv").height();
+	$("#contentDiv").css({"position":"relative"});
+	if(index >4 || (contentHeight >350)) {
+			$("#contentDiv").height(350);
+			$("#contentDiv").css({"overflow":"auto"});
+			$("#contentDiv").mCustomScrollbar({
 								 mouseWheel:true,
 													scrollButtons: {
 														enable: true
 													},
 													 theme: "dark-2"
 								});
-		$("#mainContent").height(585);
+		$("#mainContent").height(515);
 	
 	} else {
 		var h= (110 * (index));
-		$("#content").height(h-30);
+		$("#contentDiv").height(h-30);
 		$("#mainContent").height(h+155);
 	}
 	
@@ -517,7 +523,10 @@ if (gTotalItemsCompleted == gTotalItems) {
  
 function loadPart2ForEnabling03() {
 	$("#setText").html((gCurrentSet+1) + '/' + gTotalSetNumber);
-	$("#content").html("");
+	document.getElementById("content").innerHTML="";
+	var contentDiv =document.createElement("div");
+			contentDiv.id ="contentDiv";
+			document.getElementById("content").appendChild(contentDiv);
 	$(".feedbackTitle, .feedbackContent, #okBtn").css("display","none");
 	var mSetElem = $(gXmlEnable03).find("session").eq(gCurrentSet);
 	var index=0;
@@ -525,7 +534,7 @@ function loadPart2ForEnabling03() {
 	$(mSetElem).find("item").each(function(){
 	var itemContainer =document.createElement("div");
 			itemContainer.className ="itemContainer";
-			document.getElementById("content").appendChild(itemContainer);
+			document.getElementById("contentDiv").appendChild(itemContainer);
 			if (index == ($(mSetElem).find("item").length-1)) {
 			$(itemContainer).css({"margin":"0px" });
 			
@@ -542,7 +551,7 @@ function loadPart2ForEnabling03() {
 				 var phrase = $.trim($(this).find("lang_tl_phrase_text").text()); 
 		     	var textArray = phrase.split("||"); 
 			 	for(var i=0; i<textArray.length; i++){
-						if (textArray[i].toLowerCase().replace(".","") == $(this).find("lang_tl_word_text").text().toLowerCase()) {
+						if ($.trim(textArray[i].toLowerCase().replace(/[!?;:,.]/gi, '')) == $.trim($(this).find("lang_tl_word_text").text().toLowerCase())) {
 							if (targetDir.toLowerCase() =="ltr")
 								if (!isJapanese) 
 									textArray[i] = "<div  class='targetItalicLTR' dir='"+ targetDir +"' style='float:left; margin:0px 6px 0px 0px;'>" +textArray[i] +"</div>";
@@ -566,6 +575,10 @@ function loadPart2ForEnabling03() {
 			   var targetPhrase = textArray.join(" ");
 			
 			targetContainerPhase2.innerHTML =targetPhrase;
+			$(targetContainerPhase2).css({"position":"absolute"});
+	var contentHeight = $(targetContainerPhase2).height();
+	$(targetContainerPhase2).height(contentHeight)
+	$(targetContainerPhase2).css({"position":"relative"});
 			
 			//parse English  language
 		 		var englishContainerPhase2 =document.createElement("div");
@@ -586,7 +599,7 @@ function loadPart2ForEnabling03() {
 			    			english.appendChild(engLang);
 							engLang.innerHTML= $.trim(engWords[i]);
 							var width= $(engLang).width();
-							if ($.trim(engWords[i]).toLowerCase().replace(".","") == $(this).find("lang_en_word_text").text().toLowerCase()) {
+							if ($.trim(engWords[i]).toLowerCase().replace(/[!?;:,.]/gi, '') == $.trim($(this).find("lang_en_word_text").text().toLowerCase())) {
 								if ( max <width) 
 								max = width;
 								if ($(this).attr("textbox")) {
@@ -632,7 +645,7 @@ function loadPart2ForEnabling03() {
 										var index = parseInt($(this).attr("id").replace("checkBtn", ""));
     								 	var textbox = "#textbox" + index;
 										var textboxValue = $.trim($(textbox).val()).toLowerCase();
-						 var engWord =  $($(mSetElem).find("item").eq(parseInt(index))).find("lang_en_word_text").text();
+						 var engWord =  $.trim($($(mSetElem).find("item").eq(parseInt(index))).find("lang_en_word_text").text());
 						 $(textbox).val(engWord);
 						engWord= engWord.toLowerCase();
 						 $(textbox).attr("disabled", "disabled");
@@ -693,12 +706,12 @@ $("input[type='text']").keyup(function() {
      var checkBtn ="#checkBtn" + index;  
  if ($.trim($(this).val()) != ""){
 	
-	 $(checkBtn).css({ "margin": "0px 0px 0px 25px", "display":"block"});
+	 $(checkBtn).css({ "margin": "0px 0px 0px 10px", "display":"block"});
 	 $(mSetElem).find("item").eq(parseInt(index)).attr("textbox", $.trim($(this).val()));
  
  } else {
      
-	 $(checkBtn).css({ "margin": "0px 0px 0px 25px", "display":"none"});
+	 $(checkBtn).css({ "margin": "0px 0px 0px 10px", "display":"none"});
 	 if ( $(mSetElem).find("item").eq(parseInt(index)).attr("textbox"))
 	 $(mSetElem).find("item").eq(parseInt(index)).removeAttr("textbox");
  
@@ -709,23 +722,27 @@ $("input[type='text']").keyup(function() {
  $("input[type='text']").keydown(function() {
 	$(".feedbackTitle, .feedbackContent, #okBtn").css("display","none");
 	 });
-if(index >4) {
-			$("#content").height(420);
-			$("#content").css({"overflow":"auto"});
-			$("#content").mCustomScrollbar({
+$("#contentDiv").css({"position":"absolute"});
+	var contentHeight = $("#contentDiv").height();
+	$("#contentDiv").css({"position":"relative"});
+	if(index >4 || (contentHeight >350)) {
+			$("#contentDiv").height(350);
+			$("#contentDiv").css({"overflow":"auto"});
+			$("#contentDiv").mCustomScrollbar({
 								 mouseWheel:true,
 													scrollButtons: {
 														enable: true
 													},
 													 theme: "dark-2"
 								});
-		$("#mainContent").height(585);
+		$("#mainContent").height(515);
 	
 	} else {
 		var h= (110 * (index));
-		$("#content").height(h-30);
+		$("#contentDiv").height(h-30);
 		$("#mainContent").height(h+155);
 	}
+	
 }// end function loadPart2ForEnabling03() 
 function showFeedbackForPhase2(type, index) {
 	 var mSetElem = $(gXmlEnable03).find("session").eq(gCurrentSet);
@@ -772,6 +789,10 @@ function loadPart3ForEnabling03() {
 	theTLinputField_id="";
 		$("#setText").html((gCurrentSet+1) + '/' + gTotalSetNumber);
 	$("#content").html("");
+		document.getElementById("content").innerHTML="";
+	var contentDiv =document.createElement("div");
+			contentDiv.id ="contentDiv";
+			document.getElementById("content").appendChild(contentDiv);
 	$(".feedbackTitle, .feedbackContent, #okBtn").css("display","none");
 	
 	var mSetElem = $(gXmlEnable03).find("session").eq(gCurrentSet);
@@ -781,7 +802,7 @@ function loadPart3ForEnabling03() {
 		var targetDir= $(this).find("lang_tl_phrase_text").attr("dir");
 		var itemContainer =document.createElement("div");
 			itemContainer.className ="itemContainer";
-			document.getElementById("content").appendChild(itemContainer);
+			document.getElementById("contentDiv").appendChild(itemContainer);
 			if (index == ($(mSetElem).find("item").length-1)) {
 			$(itemContainer).css({"margin":"0px" });
 			
@@ -829,7 +850,7 @@ function loadPart3ForEnabling03() {
 								   		
 				
 				var width= $(targetLang).width();
-				if (targetPhrase[i].toLowerCase().replace(".","") == $(this).find("lang_tl_word_text").text().toLowerCase())  { 
+				if ($.trim(targetPhrase[i].toLowerCase().replace(/[!?;:,.]/gi, '')) == $.trim($(this).find("lang_tl_word_text").text().toLowerCase()))  { 
 				              if ( max <width) 
 								max = width;
 					$( targetLang ).remove();
@@ -905,7 +926,7 @@ function loadPart3ForEnabling03() {
 		    								$($(mSetElem).find("item")[index]).attr("numberTryPart3", "1");
 											
 											var textboxValue = $.trim($(textbox).val()).toLowerCase();
-											if (textboxValue == ($($(mSetElem).find("item")[index]).find("lang_tl_word_text").text().toLowerCase())) {
+											if ($.trim(textboxValue) == $.trim(($($(mSetElem).find("item")[index]).find("lang_tl_word_text").text().toLowerCase()))) {
 		
 													$($(mSetElem).find("item")[index]).attr("part3", "completed");
 													 $(textbox).attr("disabled", "disabled");
@@ -981,14 +1002,21 @@ if (gTotalItemsCompleted == gTotalItems) {
 					 $(checkBtn).css({ "display":"none"});	
 				 if (targetDir.toLowerCase() =="ltr"){
 					
-					$(checkBtn).css({ "margin":"0px 0px 0px 25px", "float":"left", "top":"7px" });
+					$(checkBtn).css({ "margin":"0px 0px 0px 10px", "float":"left", "top":"7px" });
 				 }
 				else{
 					
-					$(checkBtn).css({ "margin":"0px 25px 0px 0px", "float":"right", "top":"7px" });
+					$(checkBtn).css({ "margin":"0px 10px 0px 0px", "float":"right", "top":"7px" });
 				}
 				$(tlContainer).css({"position":"absolute"});
+				  if (($(tlContainer).width()+20) <770)
 				 $(tlContainer).width($(tlContainer).width()+20);
+				 else
+				 		$(tlContainer).width(770);
+						
+						$(tlContainer).height($(tlContainer).height()+15);
+						
+						
 				 $(tlContainer).css({"position":"relative"});
 	index++;
 });
@@ -1006,16 +1034,20 @@ $("input[type='text']").css({"position":"relative"});
 	
 	holdTimeout = setTimeout(function(){
 		var h =$("#keyboardContainer").outerHeight( true );
+		if (h < 160)
+		      h= 160;
 		if ($($(gXmlEnable03).find("lang_tl_word_text")[0]).attr("dir") == "ltr"){
-				$("#feedbackPanel").css({"top": ((-1)*(h+10)) +"px", "height":h +"px", "left":"438px", "width": "400px" });
+				$("#feedbackPanel").css({"top": ((-1)*(h+10)) +"px", "height":h +"px", "left":"438px", "width": "390px" });
 				$("#keyboardContainer").css({"left":"0px", "width": "428px"});
 		}else {
-				$("#feedbackPanel").css({"top": ((-1)*(h+10)) +"px", "height":h +"px", "left":"0px", "width": "400px" });
+				$("#feedbackPanel").css({"top": ((-1)*(h+10)) +"px", "height":h +"px", "left":"0px", "width": "390px" });
 				$("#keyboardContainer").css({"left":"430px", "width": "428px"});
 		}
 			
-			$( "#okBtn" ).css({"left":"350px", "top": (h-43)+"px"});	
-				$("#mainContent").height(($("#content").outerHeight( true )+h) +35);
+			$( "#okBtn" ).css({"left":"340px", "top": (h-43)+"px"});	
+			$("#contentDiv").css({"position":"absolute"});
+				$("#mainContent").height(($("#contentDiv").outerHeight( true )+h) +25);
+				$("#contentDiv").css({"position":"relative"});
 			///	$("#bottomContainer").css({ "visibility":"visible"});
 				
 		
@@ -1039,6 +1071,24 @@ $("input[type='text']").css({"position":"relative"});
 
  
  });
+ $("#contentDiv").css({"position":"absolute"});
+	var contentHeight = $("#contentDiv").height();
+	$("#contentDiv").css({"position":"relative"});
+	if(contentHeight >350) {
+		
+		$(".targetContainerPart3").width(745);
+			$("#contentDiv").height(350);
+			$("#contentDiv").css({"overflow":"auto"});
+			$("#contentDiv").mCustomScrollbar({
+								 mouseWheel:true,
+													scrollButtons: {
+														enable: true
+													},
+													 theme: "dark-2"
+								});
+		$("#mainContent").height(515);
+	
+	} 
 }
 function delClicked(){
 	
@@ -1169,7 +1219,7 @@ function keyboardLayout() {
 	
 	}
 	function showFeedbackPart3(type, index) {
-	$(".feedbackContent").css({"width": "390px" });
+	$(".feedbackContent").css({"width": "370px" });
 	
 	var mSetElem = $(gXmlEnable03).find("session").eq(gCurrentSet);
 	 $(".feedbackTitle, .feedbackContent, #okBtn").css("display","block");

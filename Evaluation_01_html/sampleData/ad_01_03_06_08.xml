@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hs:content target_language="MSA" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart" rtl="true">
+  <hs:item>
+    <hs:file_audio>ad_bake_bread_mom_2.mp3</hs:file_audio>
+    <hs:lang_en>Bread</hs:lang_en>
+    <hs:lang_tl dir="rtl">الخبز</hs:lang_tl>
+    <hs:phrase_en>My mother bakes the bread in the morning.</hs:phrase_en>
+    <hs:phrase_tl dir="rtl">أمي||تَخبز||الخبز||في||الصّباح۔</hs:phrase_tl>
+    <hs:missing_word_ids>3</hs:missing_word_ids>
+    <hs:distractors>
+      <hs:distractor>اللحم</hs:distractor>
+      <hs:distractor>السمك</hs:distractor>
+      <hs:distractor>السكر</hs:distractor>
+      <hs:distractor>الملح</hs:distractor>
+      <hs:distractor>أكل</hs:distractor>
+    </hs:distractors>
+  </hs:item>
+  <hs:item>
+    <hs:file_audio>ad_well_polu_water_2.mp3</hs:file_audio>
+    <hs:lang_en>Water</hs:lang_en>
+    <hs:lang_tl dir="rtl">ماء</hs:lang_tl>
+    <hs:phrase_en>The well's water is contaminated.</hs:phrase_en>
+    <hs:phrase_tl dir="rtl">ماء||البئر||مُلوث۔</hs:phrase_tl>
+    <hs:missing_word_ids>1</hs:missing_word_ids>
+    <hs:distractors>
+      <hs:distractor>يشرب</hs:distractor>
+      <hs:distractor>يأكل</hs:distractor>
+      <hs:distractor>قهوة</hs:distractor>
+      <hs:distractor>شاي</hs:distractor>
+      <hs:distractor>بيض</hs:distractor>
+    </hs:distractors>
+  </hs:item>
+  <hs:item>
+    <hs:file_audio>ad_meat_fridge_2.mp3</hs:file_audio>
+    <hs:lang_en>Meat</hs:lang_en>
+    <hs:lang_tl dir="rtl">اللحم</hs:lang_tl>
+    <hs:phrase_en>Put the meat in the refrigerator.</hs:phrase_en>
+    <hs:phrase_tl dir="rtl">ضَعْ||اللحم||في||البَراد۔</hs:phrase_tl>
+    <hs:missing_word_ids>2</hs:missing_word_ids>
+    <hs:distractors>
+      <hs:distractor>الجبن</hs:distractor>
+      <hs:distractor>الدجاج</hs:distractor>
+      <hs:distractor>الخبز</hs:distractor>
+      <hs:distractor>السلطة</hs:distractor>
+      <hs:distractor>الشاي</hs:distractor>
+    </hs:distractors>
+  </hs:item>
+  <hs:item>
+    <hs:file_audio>ad_mom_cook_fish_2.mp3</hs:file_audio>
+    <hs:lang_en>Fish</hs:lang_en>
+    <hs:lang_tl dir="rtl">السمك</hs:lang_tl>
+    <hs:phrase_en>My mother cooks the fish.</hs:phrase_en>
+    <hs:phrase_tl dir="rtl">أمي||تَطبخ||السمك||۔</hs:phrase_tl>
+    <hs:missing_word_ids>3</hs:missing_word_ids>
+    <hs:distractors>
+      <hs:distractor>السكر</hs:distractor>
+      <hs:distractor>يأكل</hs:distractor>
+      <hs:distractor>العصير</hs:distractor>
+      <hs:distractor>الزبد</hs:distractor>
+      <hs:distractor>اللحم</hs:distractor>
+    </hs:distractors>
+  </hs:item>
+  <hs:item>
+    <hs:file_audio>ad_spoon_sugar_2.mp3</hs:file_audio>
+    <hs:lang_en>Sugar</hs:lang_en>
+    <hs:lang_tl dir="rtl">سكر</hs:lang_tl>
+    <hs:phrase_en>I need one spoon of sugar.</hs:phrase_en>
+    <hs:phrase_tl dir="rtl">أريدُ||مِلعقة||سكر||۔</hs:phrase_tl>
+    <hs:missing_word_ids>3</hs:missing_word_ids>
+    <hs:distractors>
+      <hs:distractor>بيض</hs:distractor>
+      <hs:distractor>ملح</hs:distractor>
+      <hs:distractor>بطاطا</hs:distractor>
+      <hs:distractor>زبد</hs:distractor>
+      <hs:distractor>ضابط</hs:distractor>
+    </hs:distractors>
+  </hs:item>
+  <hs:item>
+    <hs:file_audio>ad_drink_coffee_2.mp3</hs:file_audio>
+    <hs:lang_en>Coffee</hs:lang_en>
+    <hs:lang_tl dir="rtl">القهوة</hs:lang_tl>
+    <hs:phrase_en>I prefer drinking coffee.</hs:phrase_en>
+    <hs:phrase_tl dir="rtl">أفَضلُ||شُرب||القهوة||۔</hs:phrase_tl>
+    <hs:missing_word_ids>3</hs:missing_word_ids>
+    <hs:distractors>
+      <hs:distractor>أمي</hs:distractor>
+      <hs:distractor>السمك</hs:distractor>
+      <hs:distractor>خالي</hs:distractor>
+      <hs:distractor>الفاكهة</hs:distractor>
+      <hs:distractor>الجبن</hs:distractor>
+    </hs:distractors>
+  </hs:item>
+  <hs:item>
+    <hs:file_audio>ad_drink_teamilk_2.mp3</hs:file_audio>
+    <hs:lang_en>Tea</hs:lang_en>
+    <hs:lang_tl dir="rtl">الشاي</hs:lang_tl>
+    <hs:phrase_en>I drink tea with milk.</hs:phrase_en>
+    <hs:phrase_tl dir="rtl">أشربُ||الشاي||بالحليب۔</hs:phrase_tl>
+    <hs:missing_word_ids>2</hs:missing_word_ids>
+    <hs:distractors>
+      <hs:distractor>القهوة</hs:distractor>
+      <hs:distractor>يشرب</hs:distractor>
+      <hs:distractor>يأكل</hs:distractor>
+      <hs:distractor>المياه</hs:distractor>
+      <hs:distractor>البيض</hs:distractor>
+    </hs:distractors>
+  </hs:item>
+  <hs:item>
+    <hs:file_audio>ad_girl_drink_milk_2.mp3</hs:file_audio>
+    <hs:lang_en>She drinks</hs:lang_en>
+    <hs:lang_tl dir="rtl">تشرب</hs:lang_tl>
+    <hs:phrase_en>The girl drinks the milk.</hs:phrase_en>
+    <hs:phrase_tl dir="rtl">البِنت||تشرب||الحَليب۔</hs:phrase_tl>
+    <hs:missing_word_ids>2</hs:missing_word_ids>
+    <hs:distractors>
+      <hs:distractor>يأكل</hs:distractor>
+      <hs:distractor>الخبز</hs:distractor>
+      <hs:distractor>اللحم</hs:distractor>
+      <hs:distractor>الأخت</hs:distractor>
+      <hs:distractor>المدرس</hs:distractor>
+    </hs:distractors>
+  </hs:item>
+  <hs:item>
+    <hs:file_audio>ad_eat_father_2.mp3</hs:file_audio>
+    <hs:lang_en>He eats</hs:lang_en>
+    <hs:lang_tl dir="rtl">يأكل</hs:lang_tl>
+    <hs:phrase_en>My father is eating Baklava.</hs:phrase_en>
+    <hs:phrase_tl dir="rtl">أبي||يأكل||بَقلاوة۔</hs:phrase_tl>
+    <hs:missing_word_ids>2</hs:missing_word_ids>
+    <hs:distractors>
+      <hs:distractor>مياه</hs:distractor>
+      <hs:distractor>لحم</hs:distractor>
+      <hs:distractor>خيار</hs:distractor>
+      <hs:distractor>بيض</hs:distractor>
+      <hs:distractor>خبز</hs:distractor>
+    </hs:distractors>
+  </hs:item>
+  <hs:item>
+    <hs:file_audio>ad_sell_cheese_grocer_2.mp3</hs:file_audio>
+    <hs:lang_en>Cheese</hs:lang_en>
+    <hs:lang_tl dir="rtl">الجُبن</hs:lang_tl>
+    <hs:phrase_en>The grocer sells cheese.</hs:phrase_en>
+    <hs:phrase_tl dir="rtl">البَقالُ||يَبيعُ||الجُبن||۔</hs:phrase_tl>
+    <hs:missing_word_ids>3</hs:missing_word_ids>
+    <hs:distractors>
+      <hs:distractor>السكر</hs:distractor>
+      <hs:distractor>البيض</hs:distractor>
+      <hs:distractor>البطاطا</hs:distractor>
+      <hs:distractor>الدجاج</hs:distractor>
+      <hs:distractor>الملح</hs:distractor>
+    </hs:distractors>
+  </hs:item>
+</hs:content>

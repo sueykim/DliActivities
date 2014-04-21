@@ -1,9 +1,9 @@
 $(document).ready(function() {
-	audioInit();
-	
-	if(document.getElementById('audioPlayer').play == undefined){
+	if(audioInit("instrumental_container").play == undefined){
 		alert("This activity must be run in a browser that support HTML 5. " +
 				"HTML 5 support was not detected.");
+	}else{
+		audioInit("vocals_container")
 	}
 	
 	mediaPath = "sampleData/";
@@ -42,6 +42,11 @@ var totalSongTime = 0
 function loadSong(value){
 	currentSet = value;
 
+	$("#instrumental_container > audio")[0].pause()
+	$("#vocals_container > audio")[0].pause()
+	
+	$("#muteBtn").attr("muted","false")
+	
 	jSection = $($(xml).find("song")[currentSet]);
 	
 	currentLineIndex = 0
@@ -58,12 +63,30 @@ function loadSong(value){
 	//Load lyrics
 	$("#lyrics").empty()
 	jSection.find("> line > lang_tl ").each(function(i,v){
-		$("#lyrics").append("<p>" + $(v).text() + "</p>")
+		$("#lyrics").append("<p class='noSelect'>" + $(v).text() + "</p>")
 	})
 	
-	//Todo - hack until I can get the song length
-	var jTiming = jSection.find("> line > timing")
-	totalSongTime = $(jTiming[jTiming.length - 1]).text() * 1000
+	
+	if(params["noSong"] == "true"){
+		//Not accurate but good enough for testing
+		var jTiming = jSection.find("> line > timing")
+		totalSongTime = $(jTiming[jTiming.length - 1]).text() * 1000
+	}else{
+		//The clickguard prevents changing set until the songs are loaded
+		$("#clickGuard").css("display", "block")
+
+		//Load instrumental
+		var instrumentalFile = jSection.find("file_audio_music").text().trim()
+		loadHTMLAudio(removeFileExt(instrumentalFile) ,mediaPath, "instrumental_container")
+					.addEventListener('ended', songEnded)
+		
+		//Load vocals
+		//Note- we're assuming that the first audio file will finish
+		//loading before this one
+		var vocalsFile = jSection.find("file_audio_lyrics").text().trim()
+		loadHTMLAudio(removeFileExt(vocalsFile) ,mediaPath, "vocals_container")
+					.addEventListener('canplay', songLoaded)
+	}
 	
 	numLines = jSection.find("> line").length
 	
@@ -105,7 +128,7 @@ function showImage(){
 }
 
 function startOver(){
-	
+	loadSong(currentSet);
 }
 
 function songEnded(){
@@ -114,6 +137,8 @@ function songEnded(){
 	//Clear the timer
 	deleteSongTimer()
 	
+	$("#muteBtn").attr("muted","false")
+	
 	//Reset the total play time
 	totalSongPlayTime = 0
 	currentLineIndex = 0
@@ -121,6 +146,10 @@ function songEnded(){
 	
 	//Set the button
 	$("#playBtn").attr("state", "paused")
+
+	if(params["debug"] == "true"){
+		alert("song ended")
+	}
 }
 
 var songTimer
@@ -131,7 +160,6 @@ function deleteSongTimer(){
 	songTimer = undefined	
 }
 
-//todo - this will be set by the song
 function updateProgressBar(){
 	var songCompletionPercent = totalSongPlayTime / totalSongTime
 	var progressBarWidth = progressBar_container_width * songCompletionPercent + "px"
@@ -157,8 +185,10 @@ function createSongTimer(){
 				//We're at a line so load it
 				loadLine(i)
 
-				//Todo remove this so that the song finishes
-				if(i == numLines - 1){
+				if(params["noSong"] == "true" && 
+						i == numLines - 1){
+					//In noSong mode we need to call this explicitly
+					//Note- This is not accurate, but good enough for testing.
 					songEnded()
 				}
 				
@@ -168,6 +198,14 @@ function createSongTimer(){
 	},100);	
 }
 
+function songLoaded(){
+	$("#clickGuard").css("display", "none")
+	if($("#instrumental_container > audio")[0].duration == undefined){
+		alert("song duration not found")
+	}else{
+		totalSongTime = $("#instrumental_container > audio")[0].duration * 1000
+	}
+}
 
 function playSong(){
 	//Load it here to reduce latency in the timing loop
@@ -178,7 +216,8 @@ function playSong(){
 		//We're playing the song so pause it
 		
 		$("#playBtn").attr("state", "paused")
-		//todo $("#audioPlayer")[0].pause()
+		$("#instrumental_container > audio")[0].pause()
+		$("#vocals_container > audio")[0].pause()
 		
 		//Clear the timer
 		deleteSongTimer()
@@ -187,21 +226,9 @@ function playSong(){
 		$("#playBtn").attr("state", "playing")
 		
 		
-		if(totalSongPlayTime == 0){
-			//The song hasn't been started yet
-			loadLine(0)
-			
-			//todo
-			//Start the song
-			/*var mediaFile = jSection.find("file_audio_music").text().trim()
-			audio_play_file(removeFileExt(mediaFile) ,mediaPath );
-			
-			$("#audioPlayer")[0].addEventListener('ended', songEnded());*/
-		}else{
-			//Song has been started
-			
-			//todo $("#audioPlayer")[0].play()
-		}
+		//Song has been started and we're paused, so play it
+		$("#instrumental_container > audio")[0].play()
+		$("#vocals_container > audio")[0].play()
 		
 		//Start the timer
 		createSongTimer()
@@ -209,9 +236,16 @@ function playSong(){
 }
 
 function toggleMute(){
+	if(totalSongPlayTime == 0){
+		//Song hasn't been started yet so just return
+		return
+	}
+	
 	if($("#muteBtn").attr("muted") == "true"){
 		$("#muteBtn").attr("muted","false")
+		$("#vocals_container > audio")[0].muted = false
 	}else{
 		$("#muteBtn").attr("muted","true")
+		$("#vocals_container > audio")[0].muted = true
 	}
 }
