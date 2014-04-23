@@ -27,9 +27,9 @@
 
 #enable22Div {
 	position:relative;
-	margin:10px auto 0px auto;
+	margin:0px auto 0px auto;
 	padding:0px;
-	width:880px;
+	width:850px;
 	background-color:#f5f5f5;
 	text-shadow: 0px 1px 0px #fff;
 	font-family: 'FuturaMedium';
@@ -39,9 +39,9 @@
 
 #topPanel{
 	position:relative;
-	margin: 0px 0px 10px 0px;
-	width:880px;
-	min-height:620px;
+	margin: 0px 0px 0px 0px;
+	width:850px;
+	height:539px;
 	background: #f5f5f5; /* Old browsers */
 background: -moz-linear-gradient(top,  #f5f5f5 0%, #f5f5f5 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#f5f5f5)); /* Chrome,Safari4+ */
@@ -61,14 +61,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', end
 }
 #titlePanel {
 	position:relative;
-	margin: 5px 0px 20px 0px;
-	width:880px;
+	margin: 0px;
+	width:850px;
 }
 
 #title {
 	position:relative;
-	margin: 15px 0px 5px 10px;
-	width:860px;
+	margin: 0px;
+	width:840px;
 	font-family: 'FuturaMedium';
 	font-size:22px;
 	letter-spacing: 2px;
@@ -77,9 +77,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', end
 }
 #instruction {
 position:relative;
-	width:860px;
+	width:840px;
 	font-family: 'FuturaMedium';
-	margin:0px 0px 10px 10px;
+	margin:0px;
 	padding:0px;
 	font-size:12px;
 	color:#989898;
@@ -87,9 +87,9 @@ position:relative;
 }
 #contentPanel {
 	position:relative;
-	width:880px;
-	min-height:293px;
-	margin: 0px 0px 10px 0px;
+	width:850px;
+	height:258px;
+	margin: 0px;
 	font-family: 'FuturaMedium';
 	padding:0px;
 	font-size:12px;
@@ -103,9 +103,8 @@ position:relative;
 	position:relative;
 	float:left;
 	width:398px;
-	min-height:293px;
 	font-family: 'FuturaMedium';
-	margin:-5px 13px 8px 5px;
+	margin:0px 5px 5px 0px;
 	padding:0px;
 	font-size:12px;
 	color:#989898;
@@ -114,11 +113,11 @@ position:relative;
 	}
 #dropPanel {
 	position:relative;
-	width:454px;
-	min-height:293px;
+	width:440px;
+	height:245px;
 	float:left;
 	font-family: 'FuturaMedium';
-	margin:0px;
+	margin:5px 0px 0px 0px;
 	padding:0px;
 	font-size:12px;
 	color:#989898;
@@ -139,10 +138,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	}
 	#dropContentArea {
 		position:relative;
-		width:449px;
-	height:263px;
+		width:430px;
+	height:245px;
 	font-family: 'FuturaMedium';
-	margin:15px;
+	margin:5px 5px 0px 5px;
 	padding:0px;
 	font-size:14px;
 	display:block;
@@ -155,7 +154,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	width:880px;
 	height:280px;
 	font-family: 'FuturaMedium';
-	margin: 0px 0px 10px 0px;
+	margin: 0px;
 	padding:0px;
 	font-size:12px;
 	color:#989898;
@@ -169,7 +168,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	float:left;
 	width:320px;
 	height:280px;
-	margin:0px 13px 8px 10px;
+	margin:0px 6px 0px 6px;
 	padding:0px;
 	
 	}
@@ -193,14 +192,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	
 #feedbackPanel  {
 	position:relative;
-	width:527px;
-	height:275px;
+	width:510px;
+	height:272px;
 	float:left;
 	font-family: 'FuturaMedium';
 	margin:0px;
 	padding:0px;
 	font-size:12px;
-	color:#000000;
+	color:#989898;
 	letter-spacing:2px;
 	border:1px solid #cecece;
 	-webkit-border-radius:5px;
@@ -216,15 +215,15 @@ background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 42%,#f7f7f7 68%,#f1f1
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 ); /* IE6-9 */
 
 	}
-#feedback {
+#feedbackEn22 {
 	position:relative;
-	width:495px;
-	height:245px;
-	margin:15px;
+	width:510px;
+	height:272px;
+	margin:0px;
 	padding:0px;
 	font-family: 'FuturaMedium';
 	font-size:14px;
-	color:#000000;
+	color:#757575;
     background-clip: padding-box;
     background-color: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.3);
@@ -260,8 +259,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', end
 }
 #feedbackBottom {
 	position:absolute;
-	left:425px;
-	top:200px;
+	left:450px;
+	top:230px;
 	
 }
 	#playBtn {
@@ -400,4 +399,14 @@ cursor:pointer;
 	position:absolute;
 	top:0px;
 	left:0px;
+}
+#setDiv {
+	cursor:default;
+	left: 0px;
+	z-index:5;
+	height: 30px;
+	background-color: white;
+	width: 40px;
+	position: relative;
+	top: 0px;
 }

@@ -126,13 +126,13 @@ function initEnable21() {
     cssFilename = "css/enabling_21.css"; //css url
     
 	// Values from URL parameters or default values for testing
-	var statusParameters = getPassedParameters();
-	if (!statusParameters) {
+	//var statusParameters = getPassedParameters();
+	//if (!statusParameters) {
 		 mediaPath 	= "activityData/media/";
 		xmlPath 	= "activityData/";
 			xmlFilename = xmlPath + "xml/enabling_21.xml"; //xml url
 			jsonFilename = xmlPath + "json/enabling_21.js"; //json file url
-	}
+	/*}
 	else {
 		// For performance - homework
 		var xmlPath2 = xmlPath.split("/");
@@ -143,7 +143,7 @@ function initEnable21() {
 		}
 		
 		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
-	}
+	}*/
 
     // load xml 
     loadActivity(parseXml);
@@ -197,11 +197,11 @@ function parseXml(t_xml) {
         });
 	gDiagramCoordinate=new Array();
 	//family01
-	gDiagramCoordinate.push([{x: '373', y: '2'}, {x: '727', y: '2'}, {x: '20', y: '173'},{x: '374', y: '173'},{x: '551', y: '173'},{x: '728', y: '173'},{x: '4', y: '342'},{x: '181',y: '342'},{x: '359',y: '342'}]);
+	gDiagramCoordinate.push([{x: '334', y: '2'}, {x: '652', y: '2'}, {x: '18', y: '155'},{x: '336', y: '154'},{x: '494', y: '155'},{x: '651', y: '155'},{x: '4', y: '305'},{x: '163',y: '305'},{x: '321',y: '305'}]);
 	//family02
-	gDiagramCoordinate.push([{x: '222', y: '3'}, {x: '516', y: '3'}, {x: '11', y: '174'},{x: '279', y: '174'},{x: '453', y: '174'},{x: '721', y: '174'},{x: '34', y: '342'},{x: '256',y: '342'},{x: '474',y: '342'},{x: '697',y: '342'}]);
+	gDiagramCoordinate.push([{x: '200', y: '1'}, {x: '463', y: '1'}, {x: '10', y: '157'},{x: '251', y: '157'},{x: '407', y: '155'},{x: '647', y: '155'},{x: '30', y: '306'},{x: '230',y: '306'},{x: '425',y: '306'},{x: '625',y: '306'}]);
 	//family03
-	gDiagramCoordinate.push([{x: '17', y: '5'}, {x: '371', y: '5'}, {x: '16', y: '176'},{x: '362', y: '176'},{x: '710', y: '176'},{x: '361', y: '343'},{x: '538', y: '343'},{x: '715',y: '343'}]);
+	gDiagramCoordinate.push([{x: '14', y: '3'}, {x: '332', y: '3'}, {x: '14', y: '156'},{x: '326', y: '156'},{x: '638', y: '156'},{x: '324', y: '308'},{x: '483', y: '306'},{x: '642',y: '306'}]);
 	loadSet();
 }
 function loadSet() {
@@ -240,6 +240,8 @@ function loadSet() {
 		gTotalFamilyMemberWithoutDistractor = gTotalFamilyMember;
         $(mSetElem).find("family-member").each(function(){
 			var imageMember = document.createElement("img");
+			imageMember.style.width="145px";
+			imageMember.style.height="109px";
 			if (($(this).find("member_type").text().toLowerCase().replace(/^\s+|\s+$/g,'')) != "distractor"){
 				imageMember.id ="image_" + $(this).attr("position");
 			}
@@ -410,7 +412,7 @@ function checkAnserfromUserSeelected(target) {
 		if ($(familyMember).attr("answerAttempts") && (parseFloat($(familyMember).attr("answerAttempts")) > 2)) { 
 			 document.getElementById("audioTextPhase").style.display="block";
 			 document.getElementById("transparentPopUp").style.display="block";
-			 document.getElementById("okBtn").style.display="block";
+			 document.getElementById("okBtn").style.display="none";
 			  $(familyMember).attr("completed", "true");
 			   if ($(familyMember).find("tl_phrase").text() !="") {
 				
@@ -472,7 +474,7 @@ function showHint(type) {
 	 if (type == "true") {
 						  document.getElementById("audioTextPhase").style.display="block";
 						  document.getElementById("transparentPopUp").style.display="block";
-						  document.getElementById("okBtn").style.display="block";
+						  document.getElementById("okBtn").style.display="none";
 						  if ($(familyMember).find("tl_phrase").text() !="") {
 						  		document.getElementById("audioTextPhase").setAttribute("dir", $(familyMember).find("tl_phrase").attr("dir"));
 								  var targetPhrase = $(familyMember).find("tl_phrase").text();

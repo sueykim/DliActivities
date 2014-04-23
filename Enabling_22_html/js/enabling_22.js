@@ -33,31 +33,122 @@ function initEnable22() {
     bottomPanel.id = "bottomPanel";
     enable22Div.appendChild(bottomPanel);
 	
-		  //title panel.
-    var titlePanel = document.createElement("div");
-    titlePanel.id = "titlePanel";
-    topPanel.appendChild(titlePanel);
-	
-		  //title panel.
-    var title = document.createElement("div");
-    title.id = "title";
-	title.innerHTML="";
-	//title.innerHTML="Enabling 22 | Interactions";
-    titlePanel.appendChild(title);
 	
 	
-	  // instruction panel.
-    var instruction = document.createElement("div");
-    instruction.id = "instruction";
-	 instruction.innerHTML="";
-	// instruction.innerHTML="Press the play button to listen to the audio, then drag the correct words in order, to the box on the right.";
-     titlePanel.appendChild(instruction);
 	
+    //panel use to contain the set button for this activity
+    var setButtons = document.createElement("div");
+    setButtons.id = "setButtons";
+	setButtons.class = "pull-right";
+    enable22Div.appendChild(setButtons);
+	
+    //location of folder where place resources files 
+    cssFilename = "css/enabling_22.css"; 
+   
+		// Values from URL parameters or default values for testing
+	//var statusParameters = getPassedParameters();
+	//if (!statusParameters) {
+			 mediaPath 	= "activityData/media/";
+			 xmlPath 	= "activityData/";
+			xmlFilename =   xmlPath  + "xml/enabling_22.xml"; //xml url
+			jsonFilename = xmlPath  + "json/enabling_22.js"; //json file url
+	//}
+	/*else {
+		// For performance - homework
+		var xmlPath2 = xmlPath.split("/");
+		var activityID = getURL_Parameter('activity');
+	
+		if (activityID.length < 2 ) {
+			activityID =+ "0" + activityID;
+		}
+		
+		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
+	}*/
+	
+    // load xml 
+    loadActivity(parseXml);
+
+
+} // end initEnable15()
+
+var homeworkStatus;
+// To display ruby tag
+var isJapanese = false;
+
+	//parsing xml file
+function parseXml(t_xml) {
+    gXmlEnable22 = t_xml; //global variable to hold xml file after parsing it.
+	
+	// To display ruby tag
+	isJapanese = $(xml).find("content").attr("target_language") == "Japanese";
+
+	// true for homework and undefined for regular
+	homeworkStatus = $(gXmlEnable22).find("content").attr("hw");
+	
+  //$(gXmlEnable22).find("section").shuffle(); // random sets inside activity
+	gTotalSetNumber = $(gXmlEnable22).find("section").length; //local variable to hold number Section in activity
+    
+    var string = '<div class="btn-group pull-right">';  //create set buttons for activity at bottom of activity
+	string += '<button class="btn btn_prev" id="prev" title="prev"><b>&#60;</b> Prev</button>';
+          string += '<button class="btn btn_next" id="next" title="next">Next <b>&#62;</b></button>';
+    string += '</div><div class="margin_5 pull-right">&nbsp;</div>';
+	string += '<div class="btn-group pull-right off"><button class="btn btn_set off" id="setDiv" title="SET">SET:</button>';
+    string += '<button class="btn btn_set_value off" id="setText" title="SET">1/' +gTotalSetNumber+'</button></div>';
+    $("#setButtons").html(string); //add buttons inside bottom container
+ 
+        $("#prev").click(function () { //load the set when buttons is clicked
+		clearTimeout(setTimeVariable);
+		$("#feedbackEn22").hide();
+		 		 if ($("#next").attr("disabled"))
+		 				$("#next").removeAttr("disabled");
+				if (gCurrentSet > 0) {
+					 var element =document.getElementById( nameMedia);
+					 	 var element =document.getElementById(nameMedia);
+					 if(element && (element.paused == false)) {
+					 	 element.pause(); 
+		                 element.currentTime = 0.0;
+					 }
+            			gCurrentSet --;
+						if (gCurrentSet == 0) 
+					 		$(this).attr("disabled", "disabled");
+           				loadSet();
+				} else
+						$(this).attr("disabled", "disabled");
+        });
+		$("#next").click(function () { //load the set when buttons is clicked
+		clearTimeout(setTimeVariable);
+		$("#feedbackEn22").hide();
+				 if ($("#prev").attr("disabled"))
+		 				$("#prev").removeAttr("disabled");
+		      	 if (gCurrentSet < (gTotalSetNumber-1)) {
+					 var element =document.getElementById(nameMedia);
+					 if(element && (element.paused == false) ) {
+					 	 element.pause(); 
+		                 element.currentTime = 0.0;
+					 }
+            			gCurrentSet ++;
+						if (gCurrentSet == (gTotalSetNumber-1)) 
+						 		$(this).attr("disabled", "disabled");
+           						loadSet();
+			   }
+        });
+	
+	
+	loadSet(); //call initial set in activity.
+	
+	
+	
+	
+} //end parseXml(t_xml)
+
+	// loading the set for this activity
+function loadSet() {
+	//Reset all Divs panel to start new Section
+	$('#dropContentArea, #videoDiv, #dragPanel, #topPanel').html("");
 	 //content panel.
     var contentPanel = document.createElement("div");
     contentPanel.id = "contentPanel";
     topPanel.appendChild(contentPanel);
-	
 	 //Drag panel.
     var dragPanel = document.createElement("div");
     dragPanel.id = "dragPanel";
@@ -116,7 +207,7 @@ function initEnable22() {
     videoFeedBackPanel.appendChild(feedbackPanel);
 
  var feedback= document.createElement("div");
-    feedback.id = "feedback";
+    feedback.id = "feedbackEn22";
     feedbackPanel.appendChild(feedback);
 	
 	    //feedbackTop
@@ -135,116 +226,7 @@ function initEnable22() {
 	feedbackBottom.innerHTML ='<button type="button" href="#" id="closeFeedbackBtn" class="btn">OK</button>';
    feedback.appendChild(feedbackBottom);
 
-    //panel use to contain the set button for this activity
-    var setButtons = document.createElement("div");
-    setButtons.id = "setButtons";
-	setButtons.class = "pull-right";
-    enable22Div.appendChild(setButtons);
-	
-    //location of folder where place resources files 
-    cssFilename = "css/enabling_22.css"; //css url
-   
-		// Values from URL parameters or default values for testing
-	var statusParameters = getPassedParameters();
-	if (!statusParameters) {
-			 mediaPath 	= "activityData/media/";
-			 xmlPath 	= "activityData/";
-			xmlFilename =   xmlPath  + "xml/enabling_22.xml"; //xml url
-			jsonFilename = xmlPath  + "json/enabling_22.js"; //json file url
-	}
-	else {
-		// For performance - homework
-		var xmlPath2 = xmlPath.split("/");
-		var activityID = getURL_Parameter('activity');
-	
-		if (activityID.length < 2 ) {
-			activityID =+ "0" + activityID;
-		}
-		
-		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
-	}
-	
-    // load xml 
-    loadActivity(parseXml);
-
-
-} // end initEnable15()
-
-var homeworkStatus;
-// To display ruby tag
-var isJapanese = false;
-
-	//parsing xml file
-function parseXml(t_xml) {
-    gXmlEnable22 = t_xml; //global variable to hold xml file after parsing it.
-	
-	// To display ruby tag
-	isJapanese = $(xml).find("content").attr("target_language") == "Japanese";
-
-	// true for homework and undefined for regular
-	homeworkStatus = $(gXmlEnable22).find("content").attr("hw");
-	
-  $(gXmlEnable22).find("section").shuffle(); // random sets inside activity
-	gTotalSetNumber = $(gXmlEnable22).find("section").length; //local variable to hold number Section in activity
-    
-    var string = '<div class="btn-group pull-right">';  //create set buttons for activity at bottom of activity
-	string += '<button class="btn btn_prev" id="prev" title="prev"><b>&#60;</b> Prev</button>';
-          string += '<button class="btn btn_next" id="next" title="next">Next <b>&#62;</b></button>';
-    string += '</div><div class="margin_5 pull-right">&nbsp;</div>';
-	string += '<div class="btn-group pull-right off"><button class="btn btn_set off" id="setDiv" title="SET">SET:</button>';
-    string += '<button class="btn btn_set_value off" id="setText" title="SET">1/' +gTotalSetNumber+'</button></div>';
-    $("#setButtons").html(string); //add buttons inside bottom container
- 
-        $("#prev").click(function () { //load the set when buttons is clicked
-		clearTimeout(setTimeVariable);
-		$("#feedback").hide();
-		 		 if ($("#next").attr("disabled"))
-		 				$("#next").removeAttr("disabled");
-				if (gCurrentSet > 0) {
-					 var element =document.getElementById( nameMedia);
-					 	 var element =document.getElementById(nameMedia);
-					 if(element && (element.paused == false)) {
-					 	 element.pause(); 
-		                 element.currentTime = 0.0;
-					 }
-            			gCurrentSet --;
-						if (gCurrentSet == 0) 
-					 		$(this).attr("disabled", "disabled");
-           				loadSet();
-				} else
-						$(this).attr("disabled", "disabled");
-        });
-		$("#next").click(function () { //load the set when buttons is clicked
-		clearTimeout(setTimeVariable);
-		$("#feedback").hide();
-				 if ($("#prev").attr("disabled"))
-		 				$("#prev").removeAttr("disabled");
-		      	 if (gCurrentSet < (gTotalSetNumber-1)) {
-					 var element =document.getElementById(nameMedia);
-					 if(element && (element.paused == false) ) {
-					 	 element.pause(); 
-		                 element.currentTime = 0.0;
-					 }
-            			gCurrentSet ++;
-						if (gCurrentSet == (gTotalSetNumber-1)) 
-						 		$(this).attr("disabled", "disabled");
-           						loadSet();
-			   }
-        });
-	
-	
-	loadSet(); //call initial set in activity.
-	
-	
-	
-	
-} //end parseXml(t_xml)
-
-	// loading the set for this activity
-function loadSet() {
-	//Reset all Divs panel to start new Section
-	$('#dropContentArea, #videoDiv, #dragPanel').html("");
-	$("#feedback").hide();
+	$("#feedbackEn22").hide();
 	 $("#setText").html((gCurrentSet+1) + '/' + gTotalSetNumber);
 	 
 	  	//reset the homework content for each Section in xml
@@ -282,12 +264,14 @@ function loadSet() {
             			mVideoPlayer.src = videoUrl;
            				mVideoPlayer.load();
             	 }
+				 if($(mSectionElem).find("video").text() !="") {
 				 if ($(mSectionElem).find("image").text() != "") {
 				       mVideoPlayer.style.display="none";
 					   audioAndVideoInit("videoPlayer", "imageVideoAudio")
 				 } else {
 					   mVideoPlayer.style.display="block";
 					   audioAndVideoInit("videoPlayer", "")
+				 }
 				 }
 				 
 		  
@@ -302,14 +286,15 @@ function loadSet() {
 					 		audioPlayer.src=  mediaPath + checkAudioFormatSupportByBrowsers() +"/"+ audioFile.split(".")[0] +"."+ checkAudioFormatSupportByBrowsers();
 							audioPlayer.load();
 	  					}
-						
-						if ($(mSectionElem).find("image").text() != "") {
-				     		 audioPlayer.style.display="none";
-					   		audioAndVideoInit("audioPlayer", "imageVideoAudio")
-				 		} else {
-					  		 audioPlayer.style.display="block";
-					  		 audioAndVideoInit("audioPlayer", "")
-				 		}
+						if($(mSectionElem).find("audio").text() !="") {
+								if ($(mSectionElem).find("image").text() != "") {
+				     				 audioPlayer.style.display="none";
+					   				audioAndVideoInit("audioPlayer", "imageVideoAudio")
+				 				} else {
+					  				    audioPlayer.style.display="block";
+					  		 			audioAndVideoInit("audioPlayer", "")
+				 				}
+						}
 	  }
 	  
 	  var index=0;
@@ -445,21 +430,31 @@ function loadSet() {
 			}
 		});
 		
-		
-		
-		//adjust the height which base on how drag divs
-		$('#dropPanel').height( ($('#dragPanel').outerHeight( true )-10));
-		$('#contentPanel').height( ($('#dragPanel').outerHeight( true )-5));
-		$('#dropContentArea').height(($('#dragPanel').outerHeight( true ) -40));
-		var heightTopPanel = $('#titlePanel').outerHeight( true ) + $('#contentPanel').outerHeight( true )+ $('#videoFeedBackPanel').outerHeight( true ) +5;
-		$('#topPanel').height(heightTopPanel);
+		if($('#dragPanel').outerHeight( true ) >255){
+			$('#contentPanel').height(258);
+			$('#dropPanel, #dropContentArea').width(416);
+			$('#dropContentArea').width(401);
+			$('#dropContentArea, #dropPanel').height(($('#dragPanel').outerHeight( true ) -10));
+			
+		$('#contentPanel').mCustomScrollbar({
+               			scrollButtons: {
+                   				enable: true
+               			},
+                		theme: "dark-2"
+           		});
+		} else {
+				$('#dropPanel').width(440);
+				$('#dropContentArea').width(425);
+				$('#dropContentArea, #dropPanel').height(245);
+		}
 		$(".dragBubble").shuffle();
 		$('.dragBubble').draggable({
 						revert: true,
 						containment:"#contentPanel", 
 						zIndex: 50, 
 						start: function( event, ui ) {
-							$("#feedback").hide();
+							$("#feedbackEn22").hide();
+							
 							//clearTimeout(setTimeVariable);
 						}
 		 });
@@ -529,8 +524,7 @@ function dropFunction(event, ui ) {
 						}
 					 
 						 showFeedback("correct", "<div id='engFeedback'>" + $($(mSectionElem).find("feedback")[i]).text() + "</div>"); 
-					//	$("#engFeedback").css("color", $(mSectionElem).find("enColor").text());
-						$("#engFeedback").css("color", "#333333");
+						$("#engFeedback").css("color", $(mSectionElem).find("enColor").text());
 						
 				} else {
 					 userAnswer = $(ui.draggable).html() +" -- Incorrect!";
@@ -561,7 +555,7 @@ function dropFunction(event, ui ) {
 				
 						// To pass logs
 							logStudentAnswer(questionID, userAnswer, hwContent);
-							logStudentAnswerAttempts(questionID, parseInt(finalScore));
+							logStudentAnswerAttempts(questionID, answerAttempts);
 					}
 
  }
@@ -569,7 +563,7 @@ function dropFunction(event, ui ) {
  
 function audioAndVideoInit(elementID, imageID) {
 	    var element = document.getElementById(elementID);
-		var image = document.getElementById(imageID);
+		
 		//add error event to check the either no support or no source.
 		element.addEventListener('error', function(ev) {
 								if (ev.target.error.code == 4)
@@ -586,6 +580,7 @@ function audioAndVideoInit(elementID, imageID) {
 			   alert("Your media file is not exist inside media folder!!!\nPlease check it and make sure it available inside media folder.");
 		   } else {
 				if ((imageID != "") && (elementID.indexOf("video") > -1 )) {
+					var image = document.getElementById(imageID);
 						image.style.display="none";
 						element.style.display="block";
 				}
@@ -652,6 +647,7 @@ $("#stopBtn").click(function() {
 	  //add Ended event which moves the seekbar to begining.
 	element.addEventListener("ended", function() {
 	if (imageID != "") {
+		var image = document.getElementById(imageID);
 			image.style.display="block";
 			image.style.zIndex=50;
 			element.style.zIndex=0;
@@ -668,8 +664,8 @@ $("#stopBtn").click(function() {
 		//check the audio format which support by browser
 	function checkAudioFormatSupportByBrowsers() {
 
-	    var html5AudioMimeTypes = ["audio/mp3", "audio/mpeg", "audio/ogg"];
-	   var html5AudioTypes = ["mp3","mp3","ogg"]; 
+	    var html5AudioMimeTypes = new Array ("audio/mp3", "audio/mpeg", "audio/ogg");
+	   var html5AudioTypes = new Array ("mp3","mp3","ogg"); 
        var audioPlayer =  document.getElementById('audioPlayer'); 
 	   if(audioPlayer && (audioPlayer != null)) {
        		for (var i = 0; i < html5AudioMimeTypes.length; i++) { 
@@ -683,25 +679,20 @@ $("#stopBtn").click(function() {
  
     //this method uses to check what kind video format that browser will use such as mp4, webm, or ogv
 function checkVideoFormat() {
-	//var html5VideoMimeTypes = ["video/mp4", "video/ogg; codecs='theora'",  "video/webm"];
-	var html5VideoMimeTypes = ["video/mp4", "video/ogg",  "video/webm"];
-	var html5VideoCodecs = ["avc1.42E01E, mp4a.40.2", "theora, vorbis", "vp8.0, vorbis"]
-    var html5VideoTypes = ["mp4", "ogv", "webm"];
+	var html5VideoMimeTypes = new Array("video/mp4", "video/ogg", "video/webm");
+    var html5VideoTypes = new Array("mp4", "ogv", "webm");
     var myVideo = document.getElementById('videoPlayer');
     for (var i = 0; i < html5VideoMimeTypes.length; i++) {
-        //var canPlay = myVideo.canPlayType(html5VideoMimeTypes[i]);
-        var canPlay = myVideo.canPlayType(html5VideoMimeTypes[i] + '; codecs="' + html5VideoCodecs[i] + '"');
-        console.log( i + " This browser " + canPlay + " can play type: " + html5VideoMimeTypes[i]);
-        if ((canPlay == "maybe") || (canPlay == "probably")){
-        	return html5VideoTypes[i];
-        }
+        var canPlay = myVideo.canPlayType(html5VideoMimeTypes[i]);
+        if ((canPlay == "maybe") || (canPlay == "probably"))
+            return html5VideoTypes[i];
     }
     return false;
 } //end checkVideoFormat()
 
 
 function showFeedback(type, string) {
- $("#feedback").toggle();
+ $("#feedbackEn22").toggle();
  $("#closeFeedbackBtn").unbind('click');
  $("#feedbackBody").html(string);
  var mSectionElem = $(gXmlEnable22).find("section").eq(gCurrentSet);
@@ -749,30 +740,18 @@ function showFeedback(type, string) {
 								   			$("#feedbackBody").html( "The Activity is completed.");
 								   			type="set_completed";
 									  }
-								 } else {
-								    $("#titleFeedBack").html("<div class='feedbackTitle'>SET COMPLETED!</div>");
-								    $("#feedbackBody").html( "The Set " +(gCurrentSet+1) + '/' + gTotalSetNumber +" is completed.");
-									type="set_completed";
-									setTimeVariable = setTimeout(function(){
-			 							  if (gCurrentSet < (gTotalSetNumber-1)) {
-												gCurrentSet++;
-												loadSet();
-											}
-									},5000);
-						          		 
-							  }
+								 } 
 							},3000);
 							$( ".dragBubble" ).draggable( "disable" );
 	}
 	}
 	$("#closeFeedbackBtn").click(function () {
-        $("#feedback").hide();
+        $("#feedbackEn22").hide();
 		okButtonIsClicked(type);
     });
 }
   //this function will close the popup if ok button is clicked
 function okButtonIsClicked(type) {
-clearTimeout(setTimeVariable);
 var mSectionElem = $(gXmlEnable22).find("section").eq(gCurrentSet);
 if (type == "correct"){
 if (parseFloat (mSectionElem.attr("totalItemsCompleted")) == gtotalItemsCorrect) {

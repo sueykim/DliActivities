@@ -6,15 +6,12 @@
 	<title>Enabling 21</title>
     <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link type="text/css" href="../common/css/dlilearn_activities.css" rel="stylesheet" />
-    <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet">
 	<link type="text/css" href="../common/css/smoothness/jquery-ui-1.8.20.custom.css" rel="stylesheet" />
   
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="../common/js/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="../common/js/jquery-ui-1.8.20.custom.min.js"></script>
 	<script type="text/javascript" src="../common/js/jquery.ui.touch-punch.js"></script>
-     <script type='text/javascript' src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script type='text/javascript' src="../common/js/xml2json.js"></script>
 	<script type='text/javascript' src="../common/js/dli_activity.js"></script>
     <script type='text/javascript' src="../common/js/dli_util.js"></script>
