@@ -19,7 +19,7 @@ body{
 
 #banner_img_container{ 
 	transition:opacity 2s, transform 2s;
-	-webkit-transition:opacity 2s, -webkit-transform 2s;
+	/*-webkit-transition:opacity 2s, -webkit-transform 2s;*/
 	opacity:1;
 	position: absolute;
 	top: 0px;
@@ -195,7 +195,7 @@ body[state_banner='image'] #lyrics_container{
     position: absolute;
     background-color: #B5B5B5;
 	transition:opacity 2s, transform 2s;
-	-webkit-transition:opacity 2s, -webkit-transform 2s;	
+	/*-webkit-transition:opacity 2s, -webkit-transform 2s;	*/
     width: 852px;
     height: 175px;
     border-radius: 7px;

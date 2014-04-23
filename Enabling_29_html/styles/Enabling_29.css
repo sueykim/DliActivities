@@ -143,7 +143,7 @@ html body {
     min-height: 495px;
     position: inherit;
     top: 176px;
-    width: 198px;
+    width: 172px;
     z-index: 0;
     float: left;
     background-color: white;
@@ -174,7 +174,7 @@ body[state_feedback="true"] #feedback{
     margin-top: 4px;
     width: 89px;
     height: 26px;
-    margin-left: 105px;
+    margin-left: 81px;
     padding: 5px 0px 0px 5px;
     text-align: center;
 }
@@ -225,7 +225,7 @@ body[state_feedback="true"] #feedback{
 }
 #rightContainer {
     height: 548px;
-    width: 314px;
+    width: 236px;
     float: left;
     /*background-color: greenyellow;*/
 }
@@ -239,15 +239,15 @@ body[state_clickGuard="true"] #stageClickGuard {
     height: 518px;
     opacity: .6;
     width: 628px;
-    margin-left: 222px;
+    margin-left: 198px;
     position: absolute;
     display:none; 
 }
 #main{
     
     /*background-color: orange;*/
-    height: 607px;
-    width: 989px;
+    height: 559px;
+    width: 847px;
 }
 
 #keyboardContainer{
@@ -325,7 +325,7 @@ body[state_letter_grid_key="true"] #letterGridKey{
 
 .wordContainer{
     
-    width: 294px;
+    width: 226px;
     height: 40px;
 }
 
@@ -547,12 +547,12 @@ body:not([state_all_words_finished="true"]) .wordHelp{
 }
 
 #feedbackContentMedia > img{
-    max-width: 193px;
+    max-width: 170px;
     
 }
 
 #videoTag{
-    max-width: 190px;
+    max-width: 170px;
     
 }
 
