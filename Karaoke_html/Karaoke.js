@@ -61,7 +61,7 @@ function loadSong(value){
 	updateProgressBar()
 	
 	//Load lyrics
-	$("#lyrics").empty()
+	$("#lyrics").empty() 
 	jSection.find("> line > lang_tl ").each(function(i,v){
 		$("#lyrics").append("<p class='noSelect'>" + $(v).text() + "</p>")
 	})
