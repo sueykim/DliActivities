@@ -56,6 +56,7 @@ function loadXmlOrJson(filename, callback){
 	
 	$.ajax({
 	    type: "GET",
+	    async: false,
 	    url: loadXmlOrJsonFilename,
 	    dataType: "xml",
 	    success: loadXmlOrJson_xmlSuccess,
