@@ -12,28 +12,12 @@ $(document).ready(function() {
 	
 	loadjscssfile("../common/css/activityDefault.css", "css");
 	
-	var statusParameters = getPassedParameters();
-	if (!statusParameters) {
-		//Default values (for testing)
-		mediaPath = "sampleData/";		
-		xmlFilename = "sampleData/WarmUp_04_noNamespaces.xml";
-		jsonFilename = "sampleData/WarmUp_04_noNamespaces.js";
-	}
-	else {
-		// For performance - homework
-		var xmlPath2 = xmlPath.split("/");
-		var activityID = getURL_Parameter('activity');
-	
-		if (activityID.length < 2 ) {
-			activityID =+ "0" + activityID;
-		}
-		
-		xmlFilename  = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
-		jsonFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  ".js" ;
-		
-		$('.activity_hd').html('');
-		$('.activity_description').html('');
-	}
+var statusParameters = getPassedParameters();
+	//Default values (for testing)
+	mediaPath = "sampleData/";		
+	xmlFilename = "sampleData/WarmUp_04_noNamespaces.xml";
+	jsonFilename = "sampleData/WarmUp_04_noNamespaces.js";
+
 	
 	$('.drag').draggable({ revert: true });
 

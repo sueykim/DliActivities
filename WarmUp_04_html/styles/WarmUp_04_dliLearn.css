@@ -74,15 +74,15 @@
     margin: 10px;
     position: relative;
     top: 0px;
-    width: 898px;
+    width: 800px;
 }
 #setDiv {
     background-color: #F5F5F5;
     cursor: default;
     height: 30px;
-    left: 722px;
+    left: 694px;
     position: relative;
-    top: 5px;
+    top: 19px;
     width: 115px;
     z-index: 0;
 }
