@@ -2,9 +2,7 @@ $(document).ready(function() {
 	testVideoSupport();
 	
 	$('#feedback').hide();
-	$( "#tabs" ).tabs({select: tabSelected});
-	$( "#phrase_tabs" ).tabs();
-	
+
 	loadjscssfile("../common/css/activityDefault.css", "css");
 	
 	//Default values (for testing)
@@ -12,74 +10,91 @@ $(document).ready(function() {
 	xmlFilename = mediaPath + "glossary.xml";
 	jsonFilename = mediaPath + "glossary.js";
 	cssFilename = "styles/Glossary.css";
-	
+
 	loadActivity(parseXml);
 	
 	$( "#engSelectable" ).selectable({selected: listItemSelected});
-	$( "#transliSelectable" ).selectable({selected: listItemSelected});
-	$( "#transSelectable" ).selectable({selected: listItemSelected});
 	
 	$( "#engPhraseSelectable" ).selectable();
-	$( "#transliPhraseSelectable" ).selectable();
-	$( "#transPhraseSelectable" ).selectable();
 	
-	$('#tabs').keydown(function(event) {
-	  	if (event.which == 40 && 
-	  		gv_tally > 0) {
-	     execute_select_item(gv_tally - 1);
-	   }
-	   if (event.which == 38 &&
-	   		gv_tally < numItems) {
-	     execute_select_item(gv_tally + 1);
-	   }
-	});
+	//Load filter letter bar
+	for(var i = "A".charCodeAt(0); i < "Z".charCodeAt(0) + 1; i++){
+		var filterBtn = $("#filterBtnSnip").clone()
+		$(filterBtn).find(".filterBtn").text(String.fromCharCode(i))
+		$("#filterLetterBar").append($(filterBtn.html()))
+	}
 	
+	//Load filter module bar
+	for(var i=0; i < highestModule; i++){
+		var filterBtn = $("#filterBtnSnip").clone()
+		$(filterBtn).find(".filterBtn").text(i + 1)
+		$("#filterModuleBar").append($(filterBtn.html()))		
+	}
+	//Load filter task bar
+	for(var i=0; i < highestTask; i++){
+		var filterBtn = $("#filterBtnSnip").clone()
+		$(filterBtn).find(".filterBtn").text(i + 1)
+		$("#filterTaskBar").append($(filterBtn.html()))		
+	}	
+	
+	if(params['languageName'] != undefined){
+		$("#glossaryTitle").text(capitaliseFirstLetter(params['languageName']) + " HeadStart Glossary")
+	}
 }); 
 
-function disableTranslation(){
-	$($("#phrase_tabs ul").find("li")[2]).css("display","none");
-	$($("#tabs ul").find("li")[2]).css("display","none");
-}
+var highestModule = 10
+var highestTask = 7
 
-function disableTransliteration(){
-	$($("#phrase_tabs ul").find("li")[1]).css("display","none");
-	$($("#tabs ul").find("li")[1]).css("display","none");
-}
-
-var scrollTopOff = 0;
-
-var tabTimer;
-
-function timeout_trigger(){
-	/*$("#engTab").scrollTop(scrollTopOff);
-	$("#transliTab").scrollTop(scrollTopOff);
-	$("#transTab").scrollTop(scrollTopOff);*/
+function filterBtnClicked(value){
+	if($(value).hasClass("toggled")){
+		$(value).removeClass("toggled")
+	}else{
+		$(value).addClass("toggled")
+	}
 	
-	scrollToItem(gv_tally, 0);
-	
-	clearTimeout(tabTimer);
+	updateFilteredItems()
 }
 
-function tabSelected(event, ui){
-	tabTimer = setTimeout('timeout_trigger()', 200);
-}	
- 
+function updateFilteredItems(){
+	$("#engSelectable > li").removeClass("hidden")
+	
+	if($("#filterBar .filterBtn.toggled").length > 0){
+		$("#engSelectable > li").each(function(i,v){
+			if($("#filterLetterBar > .filterBtn.toggled").length > 0){
+				//Filter by letters
+				var phraseStartsWith = $(v).text()[0].toUpperCase()
+				
+				if($("#filterLetterBar > .filterBtn.toggled:contains('" + phraseStartsWith + "')").length == 0){
+					$(v).addClass("hidden")
+				}
+			}
+			
+			if($("#filterModuleBar > .filterBtn.toggled").length > 0){
+				//Filter items based on module number
+				if($("#filterModuleBar > .filterBtn.toggled:contains('" 
+									+ $(v).attr("moduleNum") + "')").length == 0){
+					$(v).addClass("hidden")
+				}
+			}
+			
+			//Filter items based on task number
+			if($("#filterTaskBar > .filterBtn.toggled").length > 0){
+				//Filter items based on module number
+				if($("#filterTaskBar > .filterBtn.toggled:contains('" 
+									+ $(v).attr("taskNum") + "')").length == 0){
+					$(v).addClass("hidden")
+				}
+			}
+		})
+	}
+}
+
 function scrollToItem(value, scrollInertia){
 	var options = {};
 	
 	if(scrollInertia != undefined){
 		options['scrollInertia'] = scrollInertia;
 	}
-	
-	$("#engTab").mCustomScrollbar("scrollTo", 
-		"#engSelectable li:nth-child(" + (value + 1) + ")",
-		 options);
-	$("#transliTab").mCustomScrollbar("scrollTo", 
-		"#transliSelectable li:nth-child(" + (value + 1) + ")",
-		 options);
-	$("#transTab").mCustomScrollbar("scrollTo", 
-		"#transSelectable li:nth-child(" + (value + 1) + ")",
-		 options);
 }
  
 var gv_tally = 0;
@@ -97,114 +112,90 @@ function listItemSelected(event, ui){
 	});
 	gv_tally = tally;
 	$('#setText').html((tally+1) + '/' + numItems);
-	scrollTopOff = $(ui.selected.parentNode.parentNode).scrollTop();
 	execute_select_item(tally);
 	scrollToItem(tally);
 	playTheVideo();
 	
 }
 function execute_select_item(tally){
-
+	$(".itemInfo_Index").text((tally+1) + "/" + (numItems + 1))
+	
 	$("#engSelectable li").removeClass("ui-selected");
 	$($("#engSelectable li")[tally]).addClass("ui-selected");
 	
-	$("#transliSelectable li").removeClass("ui-selected");
-	$($("#transliSelectable li")[tally]).addClass("ui-selected");
-	
-	$("#transSelectable li").removeClass("ui-selected");
-	$($("#transSelectable li")[tally]).addClass("ui-selected");
-	
 	jItem = $($(xml).find("phrase")[tally]);
 	
-	$('#engPhraseSelectable').html(jItem.find("english").text());
-	$('#transliPhraseSelectable').html(jItem.find("transliteration").text());
-	
-	//$('#transPhraseSelectable').html(jItem.find("translation").text());
-	if (!isJapanese) {
-	$('#transPhraseSelectable').html(jItem.find("translation").text());
-	}
-	else {
-		// To display ruby tag
-		$('#transPhraseSelectable').html(displayRubyTag(jItem.find("translation").text()));
-	}
-	
-	// For homework
-	if (homeworkStatus) {
-		checkAnswers();
-	}
-}
-function playTheVideo(){
-	var file_video = jItem.find("file_video").text();
-	loadVideo(mediaPath, removeFileExt(file_video), "Mil_01");
+	$('.itemInfo_English').text(jItem.find("english").text());
+	$('.itemInfo_Transliteration').text(jItem.find("transliteration").text());
+	$('.itemInfo_Translation').text(jItem.find("translation").text());	
 }
 
 var jItem;
 
-function activityVideoPlay(){
+function playTheVideo(){
 	if(jItem != undefined){
-		var file_video = jItem.find("file_video").text();
-		loadVideo(mediaPath, removeFileExt(file_video), "Mil_01");
+		var suffix = ""
+		
+		if(jItem.find("phraseID").attr("frms") == "true"){
+			suffix = "frms"
+		}else if(jItem.find("phraseID").attr("ams") == "true"){
+			suffix = "ams"
+		}
+			
+		var file_video = $(xml).find("gloss").attr("language_code")
+							+ jItem.find("phraseID").text()
+							+ "_" + suffix;
+		loadVideo(mediaPath, removeFileExt(file_video), "Glossary");
 	}
 }
 var numItems 
 
-// For homework
-var homeworkStatus;
-var answerAttemptsNum = 0;
-
-// To display ruby tag
-var isJapanese = false;
-
 function parseXml(t_xml){
+	xml = t_xml
 	var engHtml = "";
-	var transliHtml = "";
-	var transHtml = "";
 	
-	// true for homework and undefined for regular
-	homeworkStatus = $(xml).find("content").attr("hw");
+	//Sort xml
+	var items = $(xml).find('phrase');
+
+	items.sort(function(a, b){
+		var a_start = $(a).find("> english").text().charCodeAt(0)
+		var b_start = $(b).find("> english").text().charCodeAt(0)
+		
+		return a_start - b_start
+	});
 	
-	// To display ruby tag
-	isJapanese = $(xml).find("content").attr("target_language") == "Japanese";
+	var glossNode = $(xml).find("gloss")
+	glossNode.empty()
 	
-	$(xml).find("phrase").each(function(){
-			engHtml = engHtml + ' <li class="ui-widget-content enw_li">' +
-						$(this).find("english").text() + '</li>';
-						
-			if($(this).find("transliteration").text() == ""){
-				disableTransliteration();
-			}else{
-				transliHtml = transliHtml + ' <li class="ui-widget-content">' +
-							$(this).find("transliteration").text() + '</li>';
-			}
-			
-			if($(this).find("translation").text() == ""){
-				disableTranslation();
-			}else{
-				//transHtml = transHtml + ' <li class="ui-widget-content">' +
-				//		$(this).find("translation").text() + '</li>';					
-				if (!isJapanese) {
-				transHtml = transHtml + ' <li class="ui-widget-content">' +
-						$(this).find("translation").text() + '</li>';
-			}
-				else {
-					// To display ruby tag
-					transHtml = transHtml + ' <li class="ui-widget-content">' +
-						displayRubyTag($(this).find("translation").text()) + '</li>';
-				}
-			}
-		});
+	$.each(items, function(i,v){
+		glossNode.append(v)
+	})
+	
+	$(xml).find("phrase").each(function(i,v){
+		var parts = $(v).attr("loc").match(/^([0-9]+)_([0-9]+)_([0-9]+)$/)
+		var modNum = parseInt(parts[2])
+		var taskNum = parseInt(parts[3])
+		
+		engHtml = engHtml + ' <li class="ui-widget-content enw_li" '  
+						+ " moduleNum='" + modNum + "' " 
+						+ " taskNum='" + taskNum + "' " 
+						+ '>' + $(v).find("english").text()
+		if(params['debug'] != undefined){
+			engHtml += " :" + modNum + "," + taskNum 
+		}
+		
+		engHtml +=  '</li>';
+	})
 	
 	$('#engSelectable').html(engHtml);
-	$('#transliSelectable').html(transliHtml);
-	$('#transSelectable').html(transHtml);
-	//added the below to activate the mCustomScrollbar on the "engTab" div 
-	$('.allTabs>div:first').mCustomScrollbar("update");	
+	
 	//alert($($('.enw_li')[0]).html()); 
 	var firstSelect= $($('.enw_li')[0]);
 	firstSelect.addClass("ui-selected");
 	numItems = $(xml).find("phrase").length;
 	$('#setText').html('1/' + numItems);
 	execute_select_item(0);
+	playTheVideo();
 }
 
 function prevItemClick(){
@@ -251,28 +242,4 @@ function getURL_Parameter(param) {
         }
     }
     return 'undefined';
-}
-
-// For homework
-function checkAnswers(){
-	var questionID = "";
-	var answer = "";
-	var context = "";
-	var answerAttempts = "";
-
-	answerAttemptsNum++;
-
-	questionID = parseInt(currentSet.toString());
-	answer = "--";
-	context = "--";
-	answerAttempts = answerAttemptsNum.toString();
-	
-	// To see attempts - temp
-	//$("#feedbackText").html("Homework//answerAttempts: " + answerAttempts + " - " + questionID);
-		
-	// To pass logs
-	logStudentAnswer(questionID, answer, context);
-	logStudentAnswerAttempts(questionID, answerAttempts);
-	
-	//$('#feedbackText').show();
 }

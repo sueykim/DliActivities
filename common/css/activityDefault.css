@@ -1,3 +1,26 @@
+@font-face {
+    font-family: "FuturaMedium";
+    font-style: normal;
+    font-weight: normal;
+    src: url("futura-medium-webfont.eot?#iefix") format("embedded-opentype"), url("futura-medium-webfont.woff") format("woff"), url("futura-medium-webfont.ttf") format("truetype"), url("futura-medium-webfont.svg#FuturaMedium") format("svg");
+}
+
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('futura_bold-webfont.eot');
+    src: url('futura_bold-webfont.eot?#iefix') format('eot'),
+         url('futura_bold-webfont.woff') format('woff'),
+         url('futura_bold-webfont.ttf') format('truetype'),
+         url('futura_bold-webfont.svg#webfontrIGithyc') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	font-family: FuturaMedium;
+}
+
 body:not([debug="true"]) #firebugIconDiv{
 	display: none; 
 }
