@@ -18,17 +18,19 @@ body{
 }
 
 #banner_img_container{ 
-	transition:opacity 2s, transform 2s;
-	/*-webkit-transition:opacity 2s, -webkit-transform 2s;*/
-	opacity:1;
+	/*transition:opacity 2s, transform 2s;
+	-webkit-transition:opacity 2s, -webkit-transform 2s;
+	opacity:1;*/
+	display: block;
 	position: absolute;
 	top: 0px;
 }
 
 body[state_banner='lyrics'] #banner_img_container{
-	transform: rotateX(180deg);    
-	-webkit-transform: rotateX(180deg);    
-	opacity:0;
+	/*transform: rotateX(180deg);    
+	-webkit-transform: rotateX(180deg);  
+	opacity:0; */
+	display:none;
 }
 
 #showLyricsBtn{
@@ -36,9 +38,10 @@ body[state_banner='lyrics'] #banner_img_container{
 }
 
 body[state_banner='image'] #lyrics_container{
-	transform: rotateX(-180deg);    
+	/*transform: rotateX(-180deg);    
 	-webkit-transform: rotateX(180deg);    
-	opacity:0;
+	opacity:0;*/
+	display:none;
 }
 
 #showImageBtn{
@@ -194,13 +197,14 @@ body[state_banner='image'] #lyrics_container{
 #lyrics_container{
     position: absolute;
     background-color: #B5B5B5;
-	transition:opacity 2s, transform 2s;
-	/*-webkit-transition:opacity 2s, -webkit-transform 2s;	*/
+	/*transition:opacity 2s, transform 2s;
+	-webkit-transition:opacity 2s, -webkit-transform 2s;	*/
     width: 852px;
     height: 175px;
     border-radius: 7px;
     overflow: hidden;
     top: 0px;
+    display:block;
 }
 
 #lyrics{
