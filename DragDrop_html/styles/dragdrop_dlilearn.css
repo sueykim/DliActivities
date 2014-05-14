@@ -71,31 +71,31 @@
     background-color: transparent;
     cursor: default;
     height: 40px;
-    left: 15px;
+    left: 5px;
     margin: 10px;
     position: absolute;
-    top: 359px;
-    width: 880px;
+    top: 488px;
+    width: 830px;
 }
 #setDiv {
     background-color: #F5F5F5;
     cursor: default;
     height: 30px;
-    left: 765px;
+    left: 693px;
     position: relative;
     top: 5px;
-    width: 115px;
+    width: 110px;
     z-index: 0;
 }
 #clickGuard {
     background-color: grey;
     display: none;
-    height: 353px;
-    left: -11px;
+    height: 536px;
+    left: -7px;
     opacity: 0.3;
     position: absolute;
     top: 0;
-    width: 191px;
+    width: 177px;
     z-index: 166;
 }
 .activity_description {
@@ -145,14 +145,14 @@ html body {
     box-shadow: 0 2px 4px #BDBDBD;
     display: block;
     float: left;
-    left: 725px;
+    left: 165px;
     margin: 0 0 0 7px;
-    max-height: 309px;
-    min-height: 309px;
+    max-height: 90px;
+    min-height: 90px;
     padding: 20px;
     position: relative;
-    top: 0;
-    width: 125px;
+    top: 405px;
+    width: 489px;
     z-index: 0;
 }
 #feedbackHeader {
@@ -164,17 +164,21 @@ html body {
 #feedbackText {
     margin-top: -8px;
     margin-left: -8px;
+    margin-right:-8px;
+    height: 35px;
 }
 #feedbackBtn {
-    bottom: 10px;
+    bottom: 11px;
     position: absolute;
-    right: 26px;
+    right: 13px;
 }
 #backgroundImg {
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 2px #BDBDBD;
     left: 172px;
     position: absolute;
+    height:400px;
+    width:530px;
 }
 .dropped{
     opacity: 1;
@@ -200,6 +204,8 @@ html body {
 #main {
     left: 0px;
     position: absolute;
+    height:550px;
+    width:840px;
 }
 .dragBubbleText {
     cursor: default;
@@ -262,4 +268,15 @@ html body {
 }
 .imageOverlay {
     position: absolute;
+}
+#activityGuard {
+    background-color: grey;
+    display: none;
+    height: 580px;
+    left: -7px;
+    opacity: 0.1;
+    position: absolute;
+    top: -10px;
+    width: 869px;
+    z-index: 266;
 }
