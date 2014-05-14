@@ -16,6 +16,8 @@ $(document).ready(function() {
 	testVideoSupport();	
 	loadActivity(parseXml);
 	
+	$('.activity_hd').html('');
+	$('.activity_description').html('');	
 });
 
 
