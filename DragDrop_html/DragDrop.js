@@ -18,14 +18,14 @@ $(document).ready(function() {
 			drop: dropFunction}); 
 	}
 	
-	if ( getPassedParameters() == false){
+	////if ( getPassedParameters() == false){
 		//Default values (for testing)
 		mediaPath = "sampleData/";
 		
 		xmlFilename = "sampleData/RTL_DragDrop_German_noNamespace.xml";
 		jsonFilename = "sampleData/RTL_DragDrop_German_noNamespace.js";
-	}
-	else {
+	////}
+/*	else {
 		// For performance - homework
 		var xmlPath2 = xmlPath.split("/");
 		var activityID = getURL_Parameter('activity');
@@ -37,7 +37,7 @@ $(document).ready(function() {
 		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
 		$('.activity_hd').html('');
 		$('.activity_description').html('');
-	}
+	} */
 	
 	cssFilename = "styles/dragdrop_dlilearn.css";
 	loadActivity(parseXml);
@@ -268,7 +268,7 @@ function showFeedback(value, textInput){
 			activityCompletedShown = true;
 			break;
 	}
-	
+	$("#feedbackText").mCustomScrollbar();
 	$('#feedback').show();
 	
 	/*$('#feedback').animate( {
@@ -331,8 +331,10 @@ function loadNextSet(){
 	
 		if(parent.activityCompleted){
 			parent.activityCompleted(1,0);
+			$("#activityGuard").css("display","block");
 		}else{
 			showFeedback("activity_completed");
+			$("#activityGuard").css("display","block");
 		}
 	}else{
 		loadSet(currentSet + 1);
