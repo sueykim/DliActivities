@@ -16,9 +16,9 @@ html body {
 #videoStage{
     background-color: grey;
     height: 128px;
-    width: 199px;
+    width: 198px;
     position: relative;
-    left: 96px;
+    left: 87px;
     top: 10px;
 }
 
@@ -56,7 +56,7 @@ html body {
 #engTab{
 	padding: 0px;
 	height: 498px;
-	width: 586px;
+	width: 445px;
 	overflow: auto;
 	float: left;
 }
@@ -224,7 +224,7 @@ html body {
 .itemInfo{
     border: 1px solid lightgray;
 	
-    width: 345px;
+    width: 313px;
     height: 305px;
     padding: 10px;
     position: relative;
@@ -256,12 +256,13 @@ html body {
 #rightColumn{
     float: left;
 	
-    margin-left: 4px;
+    margin-left: 18px;
+    height: 524px;
 }
 
 #filterBar{
 	
-    width: 997px;
+    width: 838px;
     height: 109px;
     border-bottom: 1px grey solid;
     margin-bottom: 10px;
@@ -273,7 +274,7 @@ html body {
 
 .filterBtn{
 	cursor: pointer;
-	width: 32px;
+	width: 27px;
 	height: 30px;
 	background-color: #E4E2E2;
 	float: left;
@@ -310,8 +311,8 @@ html body {
 
 #glossaryTitle{
     font-family: FuturaBold;
-    margin-top: 32px;
-    margin-bottom: 18px;
+    margin-top: 18px;
+    margin-bottom: 13px;
     font-size: 15px;
 }
 

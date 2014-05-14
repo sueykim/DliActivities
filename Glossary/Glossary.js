@@ -12,6 +12,10 @@ $(document).ready(function() {
 	cssFilename = "styles/Glossary.css";
 
 	loadActivity(parseXml);
+
+	if(params['performanceChecks'] != undefined){
+		alert("function ready params loaded")
+	}
 	
 	$( "#engSelectable" ).selectable({selected: listItemSelected});
 	
@@ -39,6 +43,10 @@ $(document).ready(function() {
 	
 	if(params['languageName'] != undefined){
 		$("#glossaryTitle").text(capitaliseFirstLetter(params['languageName']) + " HeadStart Glossary")
+	}
+	
+	if(params['performanceChecks'] != undefined){
+		alert("function ready finished")
 	}
 }); 
 
@@ -151,18 +159,33 @@ function playTheVideo(){
 var numItems 
 
 function parseXml(t_xml){
+	if(params['performanceChecks'] != undefined){
+		alert("function parseXml started")
+	}
+	
 	xml = t_xml
 	var engHtml = "";
 	
 	//Sort xml
 	var items = $(xml).find('phrase');
 
-	items.sort(function(a, b){
-		var a_start = $(a).find("> english").text().charCodeAt(0)
-		var b_start = $(b).find("> english").text().charCodeAt(0)
-		
-		return a_start - b_start
-	});
+	if(params['performanceChecks'] != undefined){
+		alert("function parseXml sort started")
+	}
+	
+	if(params['sort'] != undefined){
+		items.sort(function(a, b){
+			var a_start = $(a).find("> english").text().charCodeAt(0)
+			var b_start = $(b).find("> english").text().charCodeAt(0)
+			
+			return a_start - b_start
+		});
+	}
+
+
+	if(params['performanceChecks'] != undefined){
+		alert("function parseXml sort ended")
+	}	
 	
 	var glossNode = $(xml).find("gloss")
 	glossNode.empty()
@@ -170,6 +193,10 @@ function parseXml(t_xml){
 	$.each(items, function(i,v){
 		glossNode.append(v)
 	})
+	
+	if(params['performanceChecks'] != undefined){
+		alert("function parseXml phrase generation started")
+	}
 	
 	$(xml).find("phrase").each(function(i,v){
 		var parts = $(v).attr("loc").match(/^([0-9]+)_([0-9]+)_([0-9]+)$/)
@@ -186,8 +213,16 @@ function parseXml(t_xml){
 		
 		engHtml +=  '</li>';
 	})
+
+	if(params['performanceChecks'] != undefined){
+		alert("function parseXml phrase generation ended")
+	}	
 	
 	$('#engSelectable').html(engHtml);
+	
+	if(params['performanceChecks'] != undefined){
+		alert("function parseXml phrase generation appended")
+	}
 	
 	//alert($($('.enw_li')[0]).html()); 
 	var firstSelect= $($('.enw_li')[0]);
@@ -196,6 +231,10 @@ function parseXml(t_xml){
 	$('#setText').html('1/' + numItems);
 	execute_select_item(0);
 	playTheVideo();
+	
+	if(params['performanceChecks'] != undefined){
+		alert("function parseXml finished")
+	}
 }
 
 function prevItemClick(){
