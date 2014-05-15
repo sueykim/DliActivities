@@ -2,39 +2,42 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<head>
+		<!-- <script type="text/javascript" src="../common/js/firebug-lite-1_2.js"></script> -->
+		
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-
+		
 		<title>Enabling 1 HTML</title>
-
+		
 		<script src="../common/js/AC_OETags.js"></script>
 
 		<script src="../common/js/xml2json.js"></script>
 		<script src="../common/js/dli_activity.js"></script>
-
+		
 		<link type="text/css" href="../common/css/bootstrap.css" rel="stylesheet" />
 		<link type="text/css" href="../common/css/smoothness/jquery-ui-1.8.20.custom.css" rel="stylesheet" />
 		<script type="text/javascript" src="../common/js/jquery-1.7.2.min.js"></script>
 		<script type="text/javascript" src="../common/js/jquery-ui-1.8.20.custom.min.js"></script>
 		<script type="text/javascript" src="../common/js/jquery.ui.touch-punch.js"></script>
-
+		
 		<script src="../common/js/dli_util.js"></script>
 		<script src="../common/js/dli_audio.js"></script>
-
+		
 		<script src="Enabling_01.js"></script>
 	</head>
 	<body>
 		<noscript>Activity cannot load. No Javascript support detected.</noscript>
-
+		
 		<div id="flashAudioPlayerDiv"></div>
 		<div id="htmlAudioPlayerDiv"></div>
 		<div id="embeddedAudioPlayerDiv"></div>
 
-		<h3 class="activity_hd">Enabling 01 | Key Terms Identification</h3>
+		<h3 class="activity_hd"><!-- Enabling 01 | Key Terms Identification --></h3>
 		<div class="activity_description">
-			Part 1: Select a word from the bottom of the screen and drag it to the box below the corresponding image. Once you have matched all images on the screen with the corresponding text, continue to the next screen for additional images.
+			<!-- Part 1: Select a word from the bottom of the screen and drag it to the box below the corresponding image. Once you have matched all images on the screen with the corresponding text, continue to the next screen for additional images.
+ -->
 		</div>
-
+		
 		<div id="main">
 			<div id="dropTargets"  class="roundCorners">
 				<div id="dropTarget_1" class="dropTarget roundCorners" >
@@ -67,6 +70,7 @@
 				</div>
 			</div>
 
+
 			<div id="dragBubbles" class="roundCorners">
 				<div id="dragBubble_1" class="dragBubble roundCorners" >
 					<div id="dragBubbleText_1" class="dragBubbleText"></div>
@@ -90,6 +94,7 @@
 				<div id="dragBubble_6" class="dragBubble roundCorners" >
 					<div id="dragBubbleText_6" class="dragBubbleText"></div>
 				</div>
+
 
 				<div id="dragBubble_7" class="dragBubble roundCorners" >
 					<div id="dragBubbleText_7" class="dragBubbleText"></div>
@@ -118,22 +123,22 @@
 			<div id="container_playBtn" class="btn-group">
 				<div id="playBtn" class="hidden bootstrapLabel btn_set" >
 					<a href="javascript:;" onMouseOut="MM_swapImage('playBtn_s1','','../common/Library/images/playBtn_s1.png',1)"
-					onMouseDown="MM_swapImage('playBtn_s1','','../common/Library/images/playBtn_s3.png',1);playAudio(this);"
-					onMouseUp="MM_swapImage('playBtn_s1','','../common/Library/images/playBtn_s2.png',1)"
+						onMouseDown="MM_swapImage('playBtn_s1','','../common/Library/images/playBtn_s3.png',1);playAudio(this);"
+						onMouseUp="MM_swapImage('playBtn_s1','','../common/Library/images/playBtn_s2.png',1)"
 				        onMouseOver="MM_swapImage('playBtn_s1','','../common/Library/images/playBtn_s2.png',1)" >
 			          		<img id='playBtn_s1'  src="../common/Library/images/playBtn_s1.png" border="0">
 			    	</a>
-				</div>
+			    </div>
 
 				<div id="playBtnText" class="hidden bootstrapLabel btn_set_value">Play Audio</div>
 			</div>
-		<div id="feedback" >
-			<h2 id="feedbackHeader">Set completed</h2>
+			<div id="feedback" >
+				<h2 id="feedbackHeader">Set completed</h2>
 				<p id="feedbackText">Set completed text</p>
 				<button id="feedbackBtn" onclick="{closeFeedback();}">OK</button>
-		</div>
+			</div>
 
-		<div id="setDiv" class="btn-group">
+			<div id="setDiv" class="btn-group">
 				<div id="setTitle" class="btn btn_set">SET:</div>
 				<div id="setIndex" class="btn btn_set_value">1/3</div>
 			</div>
