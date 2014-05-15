@@ -17,13 +17,36 @@ $(document).ready(function() {
 			hoverClass: "dropTargetHover",
 			drop: dropFunction}); 
 	}
+	loadjscssfile("../common/css/activityDefault.css", "css");
+	if ( getPassedParameters() == false){
+		//Default values (for testing)
+		mediaPath = "sampleData/";		
+		xmlFilename = mediaPath + "levantine_enabling01_noNamespaces.xml";
+		jsonFilename = mediaPath + "levantine_enabling01_noNamespaces.js";
+	}
+	/*
+	else {
+		// For performance - homework
+		var xmlPath2 = xmlPath.split("/");
+		var activityID = getURL_Parameter('activity');
 
-	//Default values (for testing)
-	mediaPath = "sampleData/";
-	cssFilename = "styles/Enabling_01_default.css";
-	xmlFilename = mediaPath + "levantine_enabling01_noNamespaces.xml";
-	jsonFilename = mediaPath + "levantine_enabling01_noNamespaces.js";
+		if (activityID.length < 2 ) {
+			activityID =+ "0" + activityID;
+		}
+		
+		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
+		//to get the keyboard
+		var lang_name_short = getURL_Parameter('language');
+		var langName = {ja:'japanese', sp:'spanish', ad:'msa'};
+		var lang_name_long = langName.ja;
+		keyboardFilename = '../common/keyboards/' + lang_name_long + '_keyboard.js';
 
+		$('.activity_hd').html('');
+		$('.activity_description').html('');
+	}
+	*/
+	
+	cssFilename = "styles/enabling_01_dlilearn.css";
 	loadActivity(parseXml);
 	
 	if(params["debug"] != null){
@@ -35,7 +58,7 @@ $(document).ready(function() {
 	}
 }); 
 
-var cssFilename_state2 = "styles/Enabling_01_dliLearn_state2.css";
+var cssFilename_state2 = "styles/enabling_01_dlilearn_state2.css";
 
 // For homework
 var homeworkStatus;
@@ -47,10 +70,10 @@ var isJapanese = false;
 function setState(value){
 	switch(value){
 		case "2":
-			$(".activity_description").text("Leason 2: Click the play button. " +
+/*			$(".activity_description").text("Leason 2: Click the play button. " +
 				"Listen to the audio. Select the image that corresponds to " + 
 				"the target language.");
-		
+*/		
 			if(cssFilename_state2 != ""){
 				loadjscssfile(cssFilename_state2, "css");
 			}
@@ -89,30 +112,11 @@ function setState(value){
 										[(state2CurrentSet * numDropTargets) + state2CurrentSetIndex]);
 										
 						//$("#playBtnText").text(jItem.find("phrase_tl").text());
-						
-						//Logging section
-						var itemIndex = jItem.attr("origIndex");
-						
-						logStudentAnswer("1:" + itemIndex,	
-									jItem.find("file_graphic").text(),
-									$(this).find("img").attr("src").
-										replace(mediaPath + "png/", ""));
-						
-						if(jItem.attr("timesTried") == undefined){
-							jItem.attr("timesTried", 1);
-						}else{
-							jItem.attr("timesTried",
-								parseInt(jItem.attr("timesTried")) + 1
-							);	
-						}
-										
-						logStudentAnswerAttempts("1:" + 
-									itemIndex, jItem.attr("timesTried"));
-						//End logging section
-						
+						var feedbackStr = "<b>" + jItem.find("phrase_tl").text() + "</b><br /><br />" + jItem.find("feedback_l2").text()
 						if(index == state2CurrentSetIndex + 1){
 							state2FeedbackType = "correct";
-							showFeedback("correct", jItem.find("feedback_l2").text());
+							showFeedback("correct", feedbackStr);
+							//showFeedback("correct", jItem.find("feedback_l2").text());
 						}else{
 							state2FeedbackType = "incorrect";
 							switch(state2NumberIncorrectTries){
@@ -127,8 +131,10 @@ function setState(value){
 								case 2:
 									state2FeedbackType = "auto_correct";
 									showFeedback("incorrect", 
-											"Incorrect. The correct answer is: " + 
-											jItem.find("feedback_l2").text());
+											"Incorrect. The correct answer is: " +
+											feedbackStr);
+										//	jItem.find("feedback_l2").text());
+
 									break;
 							}
 						}
@@ -157,7 +163,7 @@ function state2LoadSet(value){
 	for(var i=0; i<numDropTargets; i++){
 		var jItem = $($(xml).find("item")
 						[state2CurrentSet * numDropTargets + i]);
-					
+
 		$("#dropTargetImg_" + (i+1)).attr("src", mediaPath + "png/" 
 									+ jItem.find("file_graphic").text());
 	}
@@ -200,7 +206,7 @@ var numDropTargets = 6;
 
 function parseXml(t_xml){
 	numSets = $(xml).find("item").length / numDropTargets;
-	
+
 	// true for homework and undefined for regular
 	homeworkStatus = $(xml).find("content").attr("hw");
 	
@@ -327,29 +333,6 @@ function dropFunction(event, ui ) {
 	//Play audio
 	/*var file_audio = $(jSection.find("file_audio")[dropTargetNumGot - 1]).text();
 	audio_play(mediaPath + "mp3/" + file_audio);*/
-	
-	var itemIndex = $(xml).
-			find("phrase_tl:contains('" +
-				$("#dragBubbleText_" + dropTargetNum).text()
-				+ "')").
-			parent().attr("origIndex");
-	
-	logStudentAnswer("0:" + itemIndex,	
-				$("#dragBubbleText_" + dropTargetNum).text(),
-				$("#dragBubbleText_" + dragTextNum).text());
-	
-	var jXmlItem = $(jSection.find("item")[
-				(currentSet * numDropTargets) + dropTargetNum - 1]); 		
-	if(jXmlItem.attr("timesTried") == undefined){
-		jXmlItem.attr("timesTried", 1);
-	}else{
-		jXmlItem.attr("timesTried",
-			parseInt(jXmlItem.attr("timesTried")) + 1
-		);	
-	}
-					
-	logStudentAnswerAttempts("0:" + 
-				itemIndex, jXmlItem.attr("timesTried"));
 	
 	if(dragTextNum == dropTargetNum ){
 		//Show image
@@ -492,7 +475,7 @@ function handleFeedbackClosed2(){
 	if(activityCompletedShown == true){
 		return;
 	}
-	
+
 	if(setCompletedShown ){
 		//The set was completed and the set_completed feedback shown
 		if(state2CurrentSet + 1 == numSets){
@@ -532,7 +515,7 @@ function handleFeedbackClosed2(){
 			checkAnswers();
 		}
 	}			
-	}			
+}
 
 // For homework
 function checkAnswers(){
