@@ -8,10 +8,12 @@
 .dropTarget {
     background-color: #DCDCDC;
     float: left;
-    height: 179px;
+    /* height: 179px; */
+	height: 153px;
     margin: 11px;
     padding: 17px;
-    width: 204px;
+    /* width: 204px; */
+	width: 178px;
 }
 #playBtnText {
     border-radius: 0 4px 4px 0;
@@ -49,7 +51,8 @@
 }
 #setDiv {
 
-	left: 787px;
+	/* left: 787px; */
+	left: 736px;
     top: 420px;
     width: 107px;
 }
@@ -65,8 +68,10 @@
 #dropTargets {
     left: 240px;
     position: absolute;
-    top: 10px;
-    width: 704px;
+    /* top: 10px; */
+	top: 60px;
+    /* width: 704px; */
+	width: 603px;
 }
 #dragBubbles {
     background-image: url("../../common/img/bg_grip_pattern.png");
