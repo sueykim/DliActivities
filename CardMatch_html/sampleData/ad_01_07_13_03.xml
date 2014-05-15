@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hs:content target_language="MSA" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart"  rtl="true">
+  <hs:section>
+    <hs:item id="1">
+      <hs:audio>ad_man.mp3</hs:audio>
+      <hs:lang_en>Man</hs:lang_en>
+      <hs:lang_tl dir="rtl">رَجُل</hs:lang_tl>
+    </hs:item>
+    <hs:item id="2">
+      <hs:audio>ad_fat.mp3</hs:audio>
+      <hs:lang_en>Overweight</hs:lang_en>
+      <hs:lang_tl dir="rtl">بدين</hs:lang_tl>
+    </hs:item>
+    <hs:item id="3">
+      <hs:audio>ad_short.mp3</hs:audio>
+      <hs:lang_en>Short</hs:lang_en>
+      <hs:lang_tl dir="rtl">قَصير</hs:lang_tl>
+    </hs:item>
+    <hs:item id="4">
+      <hs:audio>ad_old.mp3</hs:audio>
+      <hs:lang_en>Old</hs:lang_en>
+      <hs:lang_tl dir="rtl">عَجوز</hs:lang_tl>
+    </hs:item>
+    <hs:item id="5">
+      <hs:audio>ad_mustache.mp3</hs:audio>
+      <hs:lang_en>Mustache</hs:lang_en>
+      <hs:lang_tl dir="rtl">شارِب</hs:lang_tl>
+    </hs:item>
+  </hs:section>
+  <hs:section>
+    <hs:item id="6">
+      <hs:audio>ad_woman.mp3</hs:audio>
+      <hs:lang_en>Woman</hs:lang_en>
+      <hs:lang_tl dir="rtl">اِمرَأة</hs:lang_tl>
+    </hs:item>
+    <hs:item id="7">
+      <hs:audio>ad_beautiful.mp3</hs:audio>
+      <hs:lang_en>Beautiful</hs:lang_en>
+      <hs:lang_tl dir="rtl">جَميل</hs:lang_tl>
+    </hs:item>
+    <hs:item id="8">
+      <hs:audio>ad_handsome.mp3</hs:audio>
+      <hs:lang_en>Handsome</hs:lang_en>
+      <hs:lang_tl dir="rtl">وَسيم</hs:lang_tl>
+    </hs:item>
+    <hs:item id="9">
+      <hs:audio>ad_beard.mp3</hs:audio>
+      <hs:lang_en>Beard</hs:lang_en>
+      <hs:lang_tl dir="rtl">لِحية</hs:lang_tl>
+    </hs:item>
+    <hs:item id="10">
+      <hs:audio>ad_clothes.mp3</hs:audio>
+      <hs:lang_en>Clothes</hs:lang_en>
+      <hs:lang_tl dir="rtl">ملابس</hs:lang_tl>
+    </hs:item>
+  </hs:section>
+  <hs:section>
+    <hs:item id="11">
+      <hs:audio>ad_youngwoman.mp3</hs:audio>
+      <hs:lang_en>Young Woman</hs:lang_en>
+      <hs:lang_tl dir="rtl">شابّة</hs:lang_tl>
+    </hs:item>
+    <hs:item id="12">
+      <hs:audio>ad_glasses.mp3</hs:audio>
+      <hs:lang_en>Glasses</hs:lang_en>
+      <hs:lang_tl dir="rtl">نَظّارة</hs:lang_tl>
+    </hs:item>
+    <hs:item id="13">
+      <hs:audio>ad_thin.mp3</hs:audio>
+      <hs:lang_en>Thin</hs:lang_en>
+      <hs:lang_tl dir="rtl">نَحيف</hs:lang_tl>
+    </hs:item>
+    <hs:item id="14">
+      <hs:audio>ad_veil.mp3</hs:audio>
+      <hs:lang_en>Veil</hs:lang_en>
+      <hs:lang_tl dir="rtl">حِجاب</hs:lang_tl>
+    </hs:item>
+    <hs:item id="15">
+      <hs:audio>ad_bald.mp3</hs:audio>
+      <hs:lang_en>Bald</hs:lang_en>
+      <hs:lang_tl dir="rtl">أصلَع</hs:lang_tl>
+    </hs:item>
+  </hs:section>
+
+</hs:content>

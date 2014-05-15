@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<content target_language="MSA"  rtl="true">
+  <section>
+    <item id="1">
+      <audio>ad_man.mp3</audio>
+      <lang_en>Man</lang_en>
+      <lang_tl dir="rtl">رَجُل</lang_tl>
+    </item>
+    <item id="2">
+      <audio>ad_fat.mp3</audio>
+      <lang_en>Overweight</lang_en>
+      <lang_tl dir="rtl">بدين</lang_tl>
+    </item>
+    <item id="3">
+      <audio>ad_short.mp3</audio>
+      <lang_en>Short</lang_en>
+      <lang_tl dir="rtl">قَصير</lang_tl>
+    </item>
+    <item id="4">
+      <audio>ad_old.mp3</audio>
+      <lang_en>Old</lang_en>
+      <lang_tl dir="rtl">عَجوز</lang_tl>
+    </item>
+    <item id="5">
+      <audio>ad_mustache.mp3</audio>
+      <lang_en>Mustache</lang_en>
+      <lang_tl dir="rtl">شارِب</lang_tl>
+    </item>
+  </section>
+  <section>
+    <item id="6">
+      <audio>ad_woman.mp3</audio>
+      <lang_en>Woman</lang_en>
+      <lang_tl dir="rtl">اِمرَأة</lang_tl>
+    </item>
+    <item id="7">
+      <audio>ad_beautiful.mp3</audio>
+      <lang_en>Beautiful</lang_en>
+      <lang_tl dir="rtl">جَميل</lang_tl>
+    </item>
+    <item id="8">
+      <audio>ad_handsome.mp3</audio>
+      <lang_en>Handsome</lang_en>
+      <lang_tl dir="rtl">وَسيم</lang_tl>
+    </item>
+    <item id="9">
+      <audio>ad_beard.mp3</audio>
+      <lang_en>Beard</lang_en>
+      <lang_tl dir="rtl">لِحية</lang_tl>
+    </item>
+    <item id="10">
+      <audio>ad_clothes.mp3</audio>
+      <lang_en>Clothes</lang_en>
+      <lang_tl dir="rtl">ملابس</lang_tl>
+    </item>
+  </section>
+  <section>
+    <item id="11">
+      <audio>ad_youngwoman.mp3</audio>
+      <lang_en>Young Woman</lang_en>
+      <lang_tl dir="rtl">شابّة</lang_tl>
+    </item>
+    <item id="12">
+      <audio>ad_glasses.mp3</audio>
+      <lang_en>Glasses</lang_en>
+      <lang_tl dir="rtl">نَظّارة</lang_tl>
+    </item>
+    <item id="13">
+      <audio>ad_thin.mp3</audio>
+      <lang_en>Thin</lang_en>
+      <lang_tl dir="rtl">نَحيف</lang_tl>
+    </item>
+    <item id="14">
+      <audio>ad_veil.mp3</audio>
+      <lang_en>Veil</lang_en>
+      <lang_tl dir="rtl">حِجاب</lang_tl>
+    </item>
+    <item id="15">
+      <audio>ad_bald.mp3</audio>
+      <lang_en>Bald</lang_en>
+      <lang_tl dir="rtl">أصلَع</lang_tl>
+    </item>
+  </section>
+
+</content>
