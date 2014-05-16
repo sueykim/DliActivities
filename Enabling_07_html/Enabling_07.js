@@ -16,22 +16,22 @@ $(document).ready(function() {
 	}
 	
 	forceVidType = "html";
-	
-	//Create drop targets	
+
+	//Create drop targets
 	$( "#drop").droppable({
 		hoverClass: "dropTargetHover",
 		drop: dropFunction}); 
-	
+
 	//Default values (for testing)
 	mediaPath = "sampleData/";		
 	xmlFilename = mediaPath + "Enabling_07_sample.xml";
 	jsonFilename = mediaPath + "Enabling_07_sample.js";
 /*		
 	if ( getPassedParameters() == false){
-	//Default values (for testing)
-	mediaPath = "sampleData/";
-	xmlFilename = mediaPath + "Enabling_07_sample.xml";
-	jsonFilename = mediaPath + "Enabling_07_sample.js";
+		//Default values (for testing)
+		mediaPath = "sampleData/";		
+		xmlFilename = mediaPath + "Enabling_07_sample.xml";
+		jsonFilename = mediaPath + "Enabling_07_sample.js";
 	}
 	else{
 		// For performance - homework
@@ -45,7 +45,7 @@ $(document).ready(function() {
 		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
 		$(".activity_hd").html('');
 		$(".activity_description").html('');
-	
+		
 	}
 */	
 	cssFilename = "styles/enabling_07_dlilearn.css";
@@ -150,36 +150,6 @@ function dropFunction(event, ui ){
 			randomizedPlayBtnsArr[jContent.attr("currentConversationIndex")]
 					[parseInt(jSection.attr("currentExchangeIndex"))]);
 	
-	var dragBtnText = "";
-	
-	var trueIndex = randomizedPlayBtnsArr[jContent.attr("currentConversationIndex")]
-								[jSection.attr("currentExchangeIndex")][dragBtnIndex];
-	
-	switch(trueIndex){
-		case 0:
-			dragBtnText = $(jItem.find("en_response_text")).text();
-			break;
-		case 1:
-			dragBtnText = $(jItem.find("distractor1_text")).text();
-			break;
-		case 2:
-			dragBtnText = $(jItem.find("distractor2_text")).text();
-			break;
-	}
-	
-	
-	logStudentAnswer(
-			(parseInt(jContent.attr("currentConversationIndex")) + 1) + ":" + 
-			(parseInt(jSection.find("item").index(jItem)) + 1),	
-			$(jItem.find("en_response_text")).text(),
-			dragBtnText
-	);
-
-	logStudentAnswerAttempts(
-			(parseInt(jContent.attr("currentConversationIndex")) + 1) + ":" + 
-			(parseInt(jSection.find("item").index(jItem)) + 1),
-			parseInt($(jItem).attr("timesIncorrect")) + 1);
-	
 	if(dragBtnIndex == indexNum){
 		ui.draggable.draggable({ revert: false });
 		
@@ -279,7 +249,7 @@ function loadConversation(value){
 	hideStageClickGuard();
 	
 	
-	if(parseInt(jSection.attr("numberOfExchangesSolved")) < 
+	if(parseInt(jSection.attr("numberOfExchangesSolved")) <
 				jSection.find("item").length){
 		loadExchange(0); 
 		hideVideoStage();
@@ -322,7 +292,7 @@ function loadExchange(value){
 		$("#caption_1_text").html(displayRubyTag($(jItem.find("tl_prompt_text")).text()));
 		$("#caption_2_text").html(displayRubyTag($(jItem.find("tl_response_text")).text()));
 	}
-
+	
 	$("#caption_2_text").css("display","none"); //not show at first
 	//load drag bubbles if present
 	if(parseInt(jSection.attr("numberOfExchangesSolved")) > 
