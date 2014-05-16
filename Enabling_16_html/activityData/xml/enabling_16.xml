@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content hw="true"
+	xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart"
+	xmlns="http://fieldsupport.lingnet.org/products/headstart">
+	<item>
+		<background>_testHouse1.png</background>
+		<bombImage>_testBomb1.png</bombImage>
+		<foreignAudio>_testBombMessage1.mp3</foreignAudio>
+		<hint>A longer test to make sure that word wrapping is working correctly and that everything else is correct.</hint>
+		<feedback>A longer feedback to make sure that word wrapping is working correctly and the everything else is correct.</feedback>
+		<bombs>
+			<bomb>
+				<x>98</x>
+				<y>225</y>
+				<correct>true</correct>
+			</bomb>
+			<bomb>
+				<x>171</x>
+				<y>187</y>
+				<correct>false</correct>
+			</bomb>
+			<bomb>
+				<x>28</x>
+				<y>174</y>
+				<correct>false</correct>
+			</bomb>
+			<bomb>
+				<x>275</x>
+				<y>166</y>
+				<correct>false</correct>
+			</bomb>
+		</bombs>
+	</item>
+	<item>
+		<background>_testHouse2.png</background>
+		<bombImage>_testBomb1.png</bombImage>
+		<foreignAudio>_testBombMessage2.mp3</foreignAudio>
+		<hint>Park your car here.</hint>
+		<feedback>The bomb is in the garage.</feedback>
+		<bombs>
+			<bomb>
+				<x>56</x>
+				<y>258</y>
+				<correct>true</correct>
+			</bomb>
+			<bomb>
+				<x>225</x>
+				<y>157</y>
+				<correct>false</correct>
+			</bomb>
+			<bomb>
+				<x>314</x>
+				<y>239</y>
+				<correct>false</correct>
+			</bomb>
+		</bombs>
+	</item>
+	<item>
+		<background>_testCar1.png</background>
+		<bombImage>_testBomb1.png</bombImage>
+		<foreignAudio>_testBombMessage3.mp3</foreignAudio>
+		<hint>It's under one of the seats.</hint>
+		<feedback>The bomb is under the driver's seat.</feedback>
+		<bombs>
+			<bomb>
+				<x>179</x>
+				<y>77</y>
+				<correct>false</correct>
+			</bomb>
+			<bomb>
+				<x>79</x>
+				<y>197</y>
+				<correct>true</correct>
+			</bomb>
+			<bomb>
+				<x>310</x>
+				<y>185</y>
+				<correct>false</correct>
+			</bomb>
+			<bomb>
+				<x>241</x>
+				<y>193</y>
+				<correct>false</correct>
+			</bomb>
+		</bombs>
+	</item>
+	<item>
+		<background>_testCar2.png</background>
+		<bombImage>_testBomb1.png</bombImage>
+		<foreignAudio>_testBombMessage4.mp3</foreignAudio>
+		<hint>Put your luggage in here.</hint>
+		<feedback>The bomb is in the trunk.</feedback>
+		<bombs>
+			<bomb>
+				<x>68</x>
+				<y>178</y>
+				<correct>false</correct>
+			</bomb>
+			<bomb>
+				<x>149</x>
+				<y>115</y>
+				<correct>false</correct>
+			</bomb>
+			<bomb>
+				<x>319</x>
+				<y>93</y>
+				<correct>true</correct>
+			</bomb>
+		</bombs>
+	</item>
+</content>
