@@ -12,13 +12,13 @@ $(document).ready(function() {
 				"HTML 5 support was not detected.");
 	}
 	
-	if ( getPassedParameters() == false){
-	//Default values (for testing)
-	mediaPath = "sampleData/";
-	xmlFilename = "sampleData/Enabling_68_sample.xml";
-	jsonFilename = "sampleData/Enabling_68_sample.js";
-	}
-	else{
+	////if ( getPassedParameters() == false){
+		//Default values (for testing)
+		mediaPath = "sampleData/";
+		xmlFilename = "sampleData/Enabling_68_sample.xml";
+		jsonFilename = "sampleData/Enabling_68_sample.js";
+////	}
+/*	else{
 		// For performance - homework
 		var xmlPath2 = xmlPath.split("/");
 		var activityID = getURL_Parameter('activity');
@@ -30,8 +30,8 @@ $(document).ready(function() {
 		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
 		$(".activity_hd").html('');
 		$(".activity_description").html('');
-	}
-	
+	}  */
+
 	setState(currentState);
 	cssFilename = "styles/enabling_68_dlilearn.css";
 	loadActivity(parseXml);
@@ -54,7 +54,7 @@ function parseXml(t_xml){
 	homeworkStatus = $(xml).find("content").attr("hw");
 
 	numSets = $(xml).find("set").length;
-	
+
 	$(xml).find("set").each(function(){
 		$($(this).find("item")).shuffle();
 	});
@@ -87,11 +87,11 @@ function loadSet(value){
 	}
 	
 	generateIntroPage();
-	
+
 	updateNavButtons();
 	
 	numItems = 5; //todo
-		
+	
 	//setState("greeting");
 	//in case of "no grammar note"
 	if($(jSection.find("explanation")).text().length > 0){
@@ -107,7 +107,6 @@ function loadSet(value){
 var currentItem = 0;
 function loadItem(value){
 	currentItem = value;
-	
 	//$('#itemText').text($(jSection.find("phrase_complete_TL")[currentItem]).text());
 	if (!isJapanese) {
 		$('#itemText').html($(jSection.find("phrase_complete_TL")[currentItem]).text());
@@ -116,6 +115,7 @@ function loadItem(value){
 		// To display ruby tag
 		$('#itemText').html(displayRubyTag($(jSection.find("phrase_complete_TL")[currentItem]).text()));
 	}
+
         if($("#img" + currentItem).hasClass("imageCompleted")){
           $('#itemText').css('color', 'green')
           var itemTextHtml = $('#itemText').html();
@@ -125,12 +125,14 @@ function loadItem(value){
         }else{
            $('#itemText').css('color', 'black')
         }
+
 	updateItemNavButtons()
+	$("#itemText").mCustomScrollbar();
 }
 
 var audioPlaying = false;
 
-function playAudio(){	
+function playAudio(){
 	audioPlaying = true;
 	
 	document.getElementById("nextItemBtnClickGuard").style.display = "block";
@@ -151,7 +153,8 @@ function playAudio(){
 	var re = new RegExp(keyword,"g");
 	itemHtml = itemHtml.replace(re,"<b>" + keyword + "</b>");
 	$("#itemText").html(itemHtml);
-	
+
+
 	//add event listener for audio finished
 	document.getElementById('audioPlayer').addEventListener('ended', audioEnded);
 	document.getElementById('audioPlayer').play();	
@@ -161,7 +164,7 @@ function imageClicked(value){
 	if(audioPlaying == true){
 		return;
 	}
-	
+
 	if($("#img" + currentItem).hasClass("imageCompleted")){
 		//Item  already finished so just ignore the click
 		return;
@@ -169,13 +172,13 @@ function imageClicked(value){
 	
 	var jItem = $(jSection.find("item")[currentItem]);
         if (homeworkStatus) {
-	logStudentAnswer(
-		currentSet,	
-		jItem.find("keyword_TL").text(),
-		$(jSection.find("keyword_TL")[value]).text()
-	);
+      	   logStudentAnswer(
+      		currentSet,
+      		jItem.find("keyword_TL").text(),
+      		$(jSection.find("keyword_TL")[value]).text()
+      	   );
       	}
-	
+
 	if(jItem.attr("timesTried") == undefined){
 		jItem.attr("timesTried", 1);
 	}else{
@@ -183,13 +186,13 @@ function imageClicked(value){
 			parseInt(jItem.attr("timesTried")) + 1
 		);	
 	}
-	
+
 	if (homeworkStatus) {
-	logStudentAnswerAttempts(
+	   logStudentAnswerAttempts(
 		currentSet,
 		jItem.attr("timesTried"));
        }
-	
+
 	if(currentItem == value){
 		feedbackCorrectShown = true;
                 $('#itemText').css('color', 'green');
@@ -236,19 +239,21 @@ function showFeedback(value, textInput){
 			break;
 		case "set_completed":
 			$("#feedbackHeader").html("Set Completed");
-			
+
 			if(currentSet + 1 != numSets){
 				$("#feedbackBtn").text("OK");
 			}
 			break;
 		case "activity_completed":
 			$("#feedbackHeader").html("Activity Completed");
-			$("#feedbackBtn").html("OK");
-			$("#feedbackBtn").css("height", "55px");
+			$("#feedbackBtn").hide();
+			////$("#feedbackBtn").html("");
+			////$("#feedbackBtn").css("height", "24px");
 			break;
 	}
-	
+	$("#feedbackText").mCustomScrollbar();
 	$('#feedback').show();
+
 }
 
 
@@ -262,12 +267,12 @@ function closeFeedback(){
 	$("#feedbackBtn").hide();
 	$("#clickGuard").css("display","none");
 	$("#feedbackButtonImgContainer").html("");
-	
+
 	//checkCompleteSet();
     
     if(feedbackCorrectShown){
     	feedbackCorrectShown = false;
-    	
+
     	$('#img' + currentItem).attr("src",mediaPath + "png/" + $(jSection.find("image_color")[currentItem]).text());
     	$('#img' + currentItem).addClass("imageCompleted")
 //    	alert('$(".imageCompleted").length: ' + $(".imageCompleted").length)
@@ -278,13 +283,13 @@ function closeFeedback(){
     		//alert('set completed');
     		jSection.attr("completed","true");
     		showFeedback("set_completed");
-    	}else{
+  	}else{
     		nextItemClick();
     	}
     }else if(setCompleted){
     	jSection.attr("completed","true");
     	nextClick();
-    	
+
     	if($(xml).find("set").length == 
     		$(xml).find("set[completed='true']").length &&
     		!activityCompletionShown){
@@ -292,11 +297,14 @@ function closeFeedback(){
 //    			alert('all done');
     			if(parent.activityCompleted){
 					parent.activityCompleted(1,0);
+					$("#clickGuard").css("display","block");
 				}else{
 					showFeedback("activity_completed");
+					$("#clickGuard").css("display","block");
 				}
     		}
     }
+
 }
 
 function nextClick(){
@@ -447,7 +455,7 @@ function prevItemClick(){
 	if(currentItem < 0){
           if ($(jSection.find("explanation")).text().length > 0)
 		setState("greeting");
-		loadItem(0);
+          loadItem(0);
 	}else {
 		loadItem(currentItem);
 	}
