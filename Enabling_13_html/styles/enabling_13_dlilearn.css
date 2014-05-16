@@ -7,7 +7,7 @@
     margin-bottom: 20px;
     margin-left: 8px;
     margin-top: -20px;
-    width: 870px;
+    width: 840px;
 }
 .activity_hd {
     color: grey;
@@ -168,7 +168,7 @@ html body {
     min-height: 415px;
     padding: 20px;
     position: absolute;
-    width: 175px;
+    width: 135px;
 	position: absolute;
     z-index: 100;
 }
@@ -185,7 +185,7 @@ html body {
     min-height: 415px;
     padding: 20px;
     position: absolute;
-    width: 175px;
+    width: 135px;
 	position: absolute;
 }
 #feedbackBtn {
@@ -206,8 +206,8 @@ html body {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	width: 100%;
-	height: 100%;
+	width: 850px;
+	height: 540px;
 	z-index: 10;
 }
 
@@ -288,13 +288,13 @@ html body {
     left: 15px;
     margin: 10px;
     top: 460px;
-    width: 870px;
+    width: 820px;
 }
 #setDiv {
     background-color: transparent;
     cursor: default;
     height: 30px;
-    left: 755px;
+    left: 705px;
     position: relative;
     top: 5px;
     width: 115px;
