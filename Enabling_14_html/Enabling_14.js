@@ -8,10 +8,15 @@ var answerAttemptsNum = 0;
 
 $(document).ready(function () {
 	audioInit();
-		  
+	
+	//Default values (for testing)
+	mediaPath = "sampleData/";	
+	xmlFilename = mediaPath + "MobilePhone.xml";
+	jsonFilename = mediaPath + "MobilePhone.js";
+/*	
 	if ( getPassedParameters() == false){	
 	//Default values (for testing)
-	mediaPath = "sampleData/";
+	mediaPath = "sampleData/";	
 	xmlFilename = mediaPath + "MobilePhone.xml";
 	jsonFilename = mediaPath + "MobilePhone.js";
 	}
@@ -29,7 +34,9 @@ $(document).ready(function () {
 		$(".activity_description").html('');
 	}
 
-	
+*/	
+	$(".activity_hd").html('');
+	$(".activity_description").html('');
 	cssFilename = "styles/enabling_14_dlilearn.css";
 	loadActivity(parseXml);
 });
@@ -51,7 +58,7 @@ function parseXml(t_xml)
 		tally++;
 	});
 	
-	
+
 	//Load phoneNumbers
 	$(xml).find("item").each(function(index, v){
 		//Load the answer
@@ -103,7 +110,7 @@ function digitPressed(value){
 		
 		audio_play_file(removeFileExt(digitXml.attr("audio")) ,mediaPath);
 			
-		document.getElementById('displayText').innerHTML = str + 
+		document.getElementById('displayText').innerHTML = str +
 												digitXml.attr("english");
 	}
 }
@@ -127,27 +134,6 @@ var btnLock;
 function callPressed(){
 	var str = document.getElementById('displayText').innerHTML;
 	btnLock = true;
-	
-	
-	logStudentAnswer(
-		currentSet,	
-		currentPhoneNumber + ":" + 
-			$("#answer").find(".phoneNumTxt").text(),
-		str + ":" + $("#selectableContainer .ui-selected").
-									find(".phoneNumTxt").text()
-	);
-	
-	if(itemXml.attr("timesTried") == undefined){
-		itemXml.attr("timesTried", 1);
-	}else{
-		itemXml.attr("timesTried",
-			parseInt(itemXml.attr("timesTried")) + 1
-		);	
-	}
-	
-	logStudentAnswerAttempts(
-		currentSet,
-		itemXml.attr("timesTried"));
 	
 	if(str == currentPhoneNumber && 
 		$("#answer").hasClass("ui-selected")){
