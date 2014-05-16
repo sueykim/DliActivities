@@ -34,7 +34,7 @@
 	text-shadow: 0px 1px 0px #fff;
 	font-family: 'FuturaMedium';
 	letter-spacing:2px;
-	
+	overflow: hidden;
 }
 
 #topPanel{
