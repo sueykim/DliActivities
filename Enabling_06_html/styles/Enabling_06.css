@@ -70,9 +70,9 @@
    background-color:transparent;
     cursor: default;
     height: 40px;
-    left: 659px; /*650px; ------------------------------------*/
+    left: 559px; /*650px; ------------------------------------*/
     margin: 10px;
-    top: 599px; /*575px;--------------------------------------*/
+    top: 510px; /*599px; 575px;--------------------------------------*/
     width: 100px;
 }
 #setDiv {
@@ -80,14 +80,14 @@
     cursor: default;
     height: 30px;
     left: 0px;
-    top: 5px;
+    top: -10px;
     width: 106px;  /*115px;-------------------------------------*/
     z-index: 0;
 }
 #clickGuard {
     background-color:  #F8F8F8; /*for IE */
     display: none;
-    height: 485px;
+    height: 465px;
     margin-left:15px;
     margin-top:-20px;
     opacity: 0.3;
@@ -95,10 +95,21 @@
     z-index:10;
 }
 
+#clickGuardVideo {
+    background-color: #F8F8F8; /*for IE */
+    display: none;
+    height: 465px;
+    margin-left:15px;
+    margin-top:-20px;
+    opacity: 0;
+    width: 745px;
+    z-index:10;
+}
+
 #activityGuard {
     background-color:  #F8F8F8; /*for IE */
     display: none;
-    height: 650px;
+    height: 565px;
     left: 0;
     opacity: 0.3;
     position: absolute;
@@ -157,11 +168,11 @@ html body {
     display: block;
     float: left;
     margin-left:15px;
-    height:45px;
+    height:55px;
     padding: 20px 5px 20px 20px;
     position: absolute;
-    top: 560px;
-    width: 600px;   /*715px ------------------------------*/
+    top: 447px;
+    width: 500px;   /*715px ------------------------------*/
     z-index: 0;
 }
 #feedbackHeader {
@@ -171,8 +182,8 @@ html body {
 }
 #feedbackText {
     margin-top: -23px;
-    height:38px;
-    width:595px;
+    height:45px;
+    width:495px;
 }
 #feedbackBtn {
     bottom: 7px;
@@ -180,14 +191,14 @@ html body {
     right: 10px;
 }
 #clickGuard_container {
-    height: 550px;
+    height: 480px;
     width: 800px;
 }
 
 
 
 #main {
-    height: 600px;
+    height: 565px;
     margin-left: 10px;
     width: 800px;
 }
@@ -201,11 +212,11 @@ html body {
     display: block;
     float: left;
     left: 33px;
-    width: 700px;
-    height: 442px;
+    width: 600px;
+    height: 390px;
     padding: 20px;
     position: absolute;
-    top: 70px;
+    top: 10px;
     background-color: #DDDBDB;
 }
 
@@ -246,7 +257,7 @@ html body {
 
 }
 #textA {
-       width:320px;
+       width:250px;
        height:40px;
        border: 1px solid white;
        float:left;
@@ -254,9 +265,10 @@ html body {
         -moz-border-radius: 15px;
         border-radius: 15px;
         background-color: #E8E8E8;
+        margin-left:20px;
 }
 #textB {
-       width:320px;
+       width:250px;
        height:40px;
        border: 1px solid white;
        float:left;
@@ -268,19 +280,19 @@ html body {
 }
 
 #dropA {
-       width:135px;
-       height:215px;
+       width:100px;
+       height:240px;
        border: 1px solid white;
        float:left;
-       margin-top: 20px;
+       margin: 20px 0px 0px 20px;
        background-color: #E8E8E8;
         -moz-border-radius: 15px;
         border-radius: 15px;
 
 }
 #dropB {
-       width:135px;
-       height:215px;
+       width:100px;
+       height:240px;
        border: 1px solid white;
        float:left;
        margin-top: 20px;
@@ -291,9 +303,8 @@ html body {
 }
 
 .dropArea {
-  padding-top:80px;
-  text-align: center;
-  vertical-align:middle;
+
+   margin-top:60px;
   
 }
 
@@ -301,7 +312,7 @@ html body {
     height: 28px;
     width: 35px;
     background-color:lightgrey;
-    margin-left:50px;
+    margin-left:35px;
     margin-top: 5px;
     text-align:center;
     padding-top:7px;
@@ -310,8 +321,8 @@ html body {
 
 
 #pic {
-       width:390px;
-       height:295px;
+       width:320px;
+       height:240px;
        float:left;
        margin-top: 20px;
        margin-left:16px;
@@ -324,8 +335,8 @@ html body {
        width:420px;
        height:60px;
        float:left;
-       margin-left:195px;
-       margin-top: 25px;
+       margin-left:140px;
+       margin-top: 10px;
        text-align: center;
        padding-top: 10px;
         -moz-border-radius: 15px;
@@ -352,18 +363,10 @@ html body {
     padding-top:2px;
 }
 
-#videoContainerx{
-    background-color: grey;
-    height: 240px;
-    width: 320px;
-	position: absolute;
-	left: 560px;
-	top: 20px;
-}
 
 #videoContainer{
-       width:390px;
-       height:295px;
+       width:320px;
+       height:240px;
        float:left;
        margin-top: 20px;
        margin-left:16px;
@@ -372,6 +375,7 @@ html body {
 }
 
 #videoTag {
-	width: 390px;
-    height: 295px;
+    width: 320px;
+    height: 240px;
+    border-radius: 15px;    
 }
