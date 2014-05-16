@@ -37,7 +37,7 @@ html body {
     border: 1px solid #BDBDBD;
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 4px #BDBDBD;
-	height: 430px;
+	height: 425px;
 	width: 400px;
 }
 #item_container0{	
@@ -45,7 +45,7 @@ html body {
     position: absolute;	
 }
 #item_container1{
-    left: 470px;
+    left: 430px;
     position: absolute;
 }
 .qtext{
@@ -54,8 +54,8 @@ html body {
 	left:5px;
 	top: 20px;	
 	width:380px;
-	height: 150px;
-	
+/*	height: 100px;*/
+
 }
 .qinput{
 	position: relative;
@@ -66,7 +66,7 @@ html body {
 	
 }
 .qpic{
-	padding: 20px 10px 0px 15px;
+	padding: 20px 10px 0px 0px;
 }
 #videoContainer1, #videoContainer2{
     background-color: grey;
@@ -93,7 +93,7 @@ html body {
 	position: relative;
 	float: left;
 	font-size: 18px;
-	padding-bottom:7px;
+	padding-bottom:0px;
 	margin-bottom: 5px;
 
 }
@@ -116,15 +116,14 @@ html body {
     box-shadow: 0 2px 4px #BDBDBD;
     display: block;
     left: 10px;
-	top: 440px;
-    max-height: 70px;
-    min-height: 70px;
+    top: 435px;
+    max-height: 50px;
+    min-height: 50px;
     padding: 20px;
     position: absolute;
-    width: 822px;
-	position: absolute;
+    width: 780px;
     z-index: 100;
-}
+}     
 #fb_background{
 	-moz-user-select: none;
     background: url("../../common/img/bg_dropbubble_50.png") repeat-x scroll center bottom #F5F5F5;
@@ -133,12 +132,11 @@ html body {
     box-shadow: 0 2px 4px #BDBDBD;
     display: block;
     left: 10px;
-	top: 440px;
-    max-height: 70px;
-    min-height: 70px;
+    top: 435px;
+    height:50px;
     padding: 20px;
-	position: absolute;
-	width: 822px;
+    position: absolute;
+    width: 780px;
 }
 #feedbackBtn {
     bottom: 10px;
@@ -175,7 +173,7 @@ html body {
 	left: 380px;
 	width: 120px;
 	position: absolute;
-	top: 480px;
+	top: 460px;
 	z-index:5;
 
 }
@@ -291,21 +289,21 @@ html body {
 #container_setDiv {
    background-color: transparent;
 	position: absolute;
-	top: 550px;
+	top: 525px;
     cursor: default;
     height: 40px;
-    left: 10px;
+    left: -1px;
     margin: 10px;
-    width: 895px;
+    width: 823px;
 }
 #id_setDiv {
     background-color: transparent;
     cursor: default;
     height: 30px;
     top: 5px;
-    width: 120px;
+    /*width: 120px;*/
 	float: left;
-	margin-left: 570px;
+	margin-left: 551px;
 }
 .btn-group > .btn:first-child {
 	border-bottom-left-radius: 4px;
@@ -335,4 +333,8 @@ html body {
 }
 .pull-right {
 	float: right;
+}
+
+#id_prev_next_div {
+ left:200px;
 }
