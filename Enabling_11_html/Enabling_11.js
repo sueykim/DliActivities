@@ -4,6 +4,11 @@ $(document).ready(function() {
 	$('#feedback').hide();
 	
 	//Default values (for testing)
+	mediaPath = "sampleData/";
+	cssFilename = "styles/enabling_11_dlilearn.css";
+	xmlFilename = mediaPath + "enabling11_noNamespaces.xml";
+	jsonFilename = mediaPath + "enabling11_json.js";
+/*	
 	if ( getPassedParameters() == false){
 		mediaPath = "sampleData/";
 	//	cssFilename = "styles/enabling_11_default.css";
@@ -24,8 +29,11 @@ $(document).ready(function() {
 		$('.activity_hd').html('');
 		$('.activity_description').html('');
 	}
+*/	
 	loadjscssfile("../common/css/activityDefault.css", "css");
 	cssFilename = "styles/enabling_11_dlilearn.css";
+	$('.activity_hd').html('');
+	$('.activity_description').html('');
 	//alert(xmlFilename)
 	testVideoSupport();	
 	loadActivity(parseXml);
