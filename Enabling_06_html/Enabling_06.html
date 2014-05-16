@@ -1,8 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	
-	<head>    
+	<head>
 		<!-- <script type="text/javascript" src="../common/js/firebug-lite-1_2.js"></script> -->
 		
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -35,8 +34,8 @@
 	<body>
 		<noscript>Activity cannot load. No Javascript support detected.</noscript>
 
-		<h3 class="activity_hd">Enabling 06</h3>
-		<div class="activity_description">Listen to each of the phrases and drag them to their correct location, matching both the order  <br /> and the person speaking, on the left and right of the screen.</div>
+		<h3 class="activity_hd"><!--Enabling 06--></h3>
+		<div class="activity_description"><!--Listen to each of the phrases and drag them to their correct location, matching both the order  <br /> and the person speaking, on the left and right of the screen.--></div>
 
 		<div id="flashAudioPlayerDiv"></div>
 		<div id="htmlAudioPlayerDiv"></div>
@@ -45,19 +44,23 @@
 		<div id="main" class="roundCorners">
 			<div id="stage" class="roundCorners">
                                 <div id="textA">text a</div><div id="textB">text b</div>
-                                <div id="dropA" class="dropArea">
+                                <div id="dropA">
+                                  <div class="dropArea">
                                     <div id="drop0" class="drop">1</div>
                                     <div id="drop2" class="drop">3</div>
                                     <div id="drop4" class="drop">5</div>
+                                  </div>  
                                 </div>
 
                                 <img id="pic"/>
                           	<div id="videoContainer"  class="roundCorners" style="display:none"></div>
 
-                                <div id="dropB" class="dropArea">
+                                <div id="dropB">
+                                  <div  class="dropArea">
                                     <div id="drop1" class="drop">2</div>
                                     <div id="drop3" class="drop">4</div>
                                     <div id="drop5" class="drop">6</div>
+                                  </div>
                                 </div>
 
                                 <div id="dragBtns">
@@ -101,12 +104,13 @@
 
                               <div id="clickGuard_container">
 				   <div id="clickGuard" ></div>
+				   <div id="clickGuardVideo" ></div>
 			      </div>
 
 			<div id="feedback06" >
 				<h2 id="feedbackHeader">Set completed</h2>
 				<p id="feedbackText">Set completed text</p>
-				<button id="feedbackBtn" onclick="{closeFeedback();}">Ok</button>  
+				<button id="feedbackBtn" onclick="{closeFeedback();}">Ok</button>
 			</div>
 			
 
