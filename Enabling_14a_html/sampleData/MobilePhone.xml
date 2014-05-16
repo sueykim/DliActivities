@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<content xmlns:hs="http://fieldsupport.lingnet.org/products/headstart">
+<content target_language="MSA" tl_textfield_width="250px">
 	<digit english="0" audio="0.mp3">٠</digit>
 	<digit english="1" audio="1.mp3">١</digit>
 	<digit english="2" audio="2.mp3">٢</digit>
@@ -11,7 +11,7 @@
 	<digit english="8" audio="8.mp3">٨</digit>
 	<digit english="9" audio="9.mp3">٩</digit>
 
-	<item english="1200234" audio="ir_phone_2039989.mp3" />
+	<item english="1200234" audio="ir_phone_1200234.mp3" />
 	<item english="2039989" audio="ir_phone_2039989.mp3"/>
 	<item english="3212320" audio="ir_phone_3212320.mp3"/>
 	<item english="4016678" audio="ir_phone_4016678.mp3"/>
