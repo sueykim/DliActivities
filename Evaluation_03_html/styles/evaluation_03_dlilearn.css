@@ -42,7 +42,7 @@ html body {
 #videoContainer2{
     background-color: grey;
     height: 240px;
-    left: 340px;
+    left: 330px;
     position: absolute;
     width: 320px;
 }
@@ -111,6 +111,7 @@ html body {
 	font-size: 12px;	
 	width:660px;
 	height:200px;
+	left:-10px;
 }
 .vidPlayBtnDiv {
 	position: relative;
@@ -118,9 +119,9 @@ html body {
 }
 .dragContainer{
 	background: url("../../common/img/bg_dropbubble_50.png") repeat-x scroll center bottom #F5F5F5;
-    border: 1px solid #BDBDBD;
-    border-radius: 3px 3px 3px 3px;
-    box-shadow: 0 2px 4px #BDBDBD;
+        border: 1px solid #BDBDBD;
+        border-radius: 3px 3px 3px 3px;
+        box-shadow: 0 2px 4px #BDBDBD;
 	height: 60px;
 	width: 645px;
 	margin: 5px 5px 5px 15px ;
@@ -162,14 +163,14 @@ html body {
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 4px #BDBDBD;
     display: block;
-    left: 670px;
-	top: 0px;
+    left: 660px;
+    top: 0px;
     max-height: 415px;
     min-height: 415px;
-    padding: 20px;
-    width: 175px;
-	position: absolute;
-	float: left;
+    padding: 20px 10px 20px 10px;
+    width: 170px;
+    position: absolute;
+    float: left;
     z-index: 100;
 }
 #fb_background{
@@ -179,13 +180,13 @@ html body {
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 4px #BDBDBD;
     display: block;
-    left: 670px;
-	top: 0px;
-    max-height: 415px;
-    min-height: 415px;
+    left: 660px;
+    top: 0px;
+    max-height: 413px;
+    min-height: 413px;
     padding: 20px;
-    width: 175px;
-	position: absolute;
+    width: 150px;
+    position: absolute;
 }
 #feedbackBtn {
     bottom: 10px;
@@ -287,13 +288,13 @@ html body {
     left: 5px;
     margin: 10px;
     top: 450px;
-    width: 898px;
+    width: 837px;
 }
 #setDiv {
     background-color: transparent;
     cursor: default;
     height: 30px;
-    left: 752px;
+    left: 720px;
     position: relative;
     top: 5px;
     width: 125px;
@@ -304,4 +305,8 @@ html body {
 }
 .pull-right {
 	float: right;
+}
+
+#feedbackText {
+        height: 345px;
 }
