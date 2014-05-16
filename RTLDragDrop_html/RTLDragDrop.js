@@ -15,28 +15,50 @@ $(document).ready(function() {
 	for(var i  = 1; i<maxNumberItemsInSet + 1; i++){
 		$( "#dropTarget_" + i ).droppable({
 			hoverClass: "dropTargetHover",
-			drop: dropFunction}); 
+			drop: dropFunction});
 	}
 	
-	//Default values (for testing)
-	mediaPath = "sampleData/";
-	cssFilename = "styles/RTLDragDrop_default.css";
-	xmlFilename = "sampleData/RTL_DragDrop_German_noNamespace.xml";
-	jsonFilename = "sampleData/RTL_DragDrop_German_noNamespace.js";
+	////if ( getPassedParameters() == false){
+		//Default values (for testing)
+		mediaPath = "sampleData/";
+		
+		////xmlFilename = "sampleData/RTL_DragDrop_German_noNamespace.xml";
+                xmlFilename =  "sampleData/RTL_DragDrop_Arabic.xml";
+		jsonFilename = "sampleData/RTL_DragDrop_German_noNamespace.js";
+	////}
+/*	else {
+		// For performance - homework
+		var xmlPath2 = xmlPath.split("/");
+		var activityID = getURL_Parameter('activity');
 	
+		if (activityID.length < 2 ) {
+			activityID =+ "0" + activityID;
+		}
+		
+		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
+		$('.activity_hd').html('');
+		$('.activity_description').html('');
+	} */
+	
+	cssFilename = "styles/RTLdragdrop_dlilearn.css";
 	loadActivity(parseXml);
 }); 
 
+// For homework
+var homeworkStatus;
+var answerAttemptsNum = 0;
+
+// To display ruby tag
+var isJapanese = false;
 
 function parseXml(t_xml){
 	numSets = $(xml).find("section").length;
 	
-	//Tag items (for logging)
-	$(xml).find("section").each(function(){
-		$(this).find("item").filter(function(i,itm,a){
-							$(itm).attr("origIndex", i);
-						})
-	})
+	// true for homework and undefined for regular
+	homeworkStatus = $(xml).find("content").attr("hw");
+
+	// To display ruby tag
+	isJapanese = $(xml).find("content").attr("target_language") == "Japanese";
 	
 	//Randomize sets
 	$(xml).find("section").each(function(){
@@ -83,7 +105,15 @@ function loadSet(value){
 		$('#dragBubble_' + i).draggable({ revert: true });
 		
 		if(lang_tl.length > 0){
-			$('#dragBubbleText_' + i).text(lang_tl);
+			//$('#dragBubbleText_' + i).text(lang_tl);
+			if (!isJapanese) {
+				$('#dragBubbleText_' + i).html(lang_tl);
+			}
+			else {
+				// To display ruby tag
+				$('#dragBubbleText_' + i).html(displayRubyTag(lang_tl));
+			}
+			
 			$("#dragBubbleTextContainer_" + i ).parent().css("display", "block");
 		}else{
 			$('#dragBubbleText_' + i).text("");
@@ -138,7 +168,7 @@ function loadSet(value){
 	}
 	
 	//Load images
-	$("#backgroundImg").attr("src", mediaPath + 'jpg/' +  jSection.find("graphic").text());
+	$("#backgroundImg").attr("src", mediaPath + 'png/' +  jSection.find("graphic").text());
 }
 
 function extractLastLetter(value){
@@ -149,41 +179,15 @@ function extractLastLetter(value){
 	return out;
 }
 
-
 function dropFunction(event, ui ) {
 	var dropTargetNumGot = extractLastLetter($(this).attr("id"));
 	
-	var dragBubbleId = $(ui.draggable.find(".dragBubbleText")[0]).attr("id");
-	var dropTargetNumLookingFor = extractLastLetter(dragBubbleId);
+	var dropTargetNumLookingFor = extractLastLetter(
+							$(ui.draggable.find(".dragBubbleText")[0]).attr("id"));
 		
 	//Play audio
 	var file_audio = $(jSection.find("file_audio")[dropTargetNumGot - 1]).text();
 	audio_play_file(removeFileExt(file_audio), mediaPath);
-	
-	
-	var dropTargetText = $(this).find(".dropTargetText").text();
-	var itemIndex = -1;
-	jSection.find("lang_en").each(function(){
-						if($(this).text() == dropTargetText){
-							itemIndex = $(this).parent().attr("origIndex");
-						}
-					});
-	
-	logStudentAnswer(currentSet + ":" + itemIndex,	
-				dropTargetText,
-				$("#" + dragBubbleId).text());
-	
-	var jXmlItem = $(jSection.find("item")[dropTargetNumGot - 1]); 		
-	if(jXmlItem.attr("timesTried") == undefined){
-		jXmlItem.attr("timesTried", 1);
-	}else{
-		jXmlItem.attr("timesTried",
-			parseInt(jXmlItem.attr("timesTried")) + 1
-		);	
-	}
-	
-	logStudentAnswerAttempts(currentSet + ":" + 
-				itemIndex, jXmlItem.attr("timesTried"));
 	
 	if(dropTargetNumLookingFor == dropTargetNumGot){
 		//Show image
@@ -204,8 +208,12 @@ function dropFunction(event, ui ) {
 		
 		$("#img_" + dropTargetNumGot).removeClass('disabledImage');
 		
-		$(this).find(".dropTargetText").text(
-			ui.draggable.find(".dragBubbleText").text()
+		//$(this).find(".dropTargetText").text(
+		//	ui.draggable.find(".dragBubbleText").text()
+		//)
+		// To display ruby tag
+		$(this).find(".dropTargetText").html(
+			ui.draggable.find(".dragBubbleText").html()
 		)
 		
 		answeredItems++;
@@ -222,7 +230,7 @@ function playAudio(index){
 	audio_play_file(removeFileExt(file_audio), mediaPath);
 }
 
-function showFeedback(value, text){
+function showFeedback(value, textInput){
 	//Clear the dialog box
 	$("#feedbackHeader").html("");
 	$("#feedbackText").html("");
@@ -230,13 +238,22 @@ function showFeedback(value, text){
 	$("#feedbackBtn").show();
 	$("#clickGuard").css("display","block");
 	
+	var text = "";
+	if (!isJapanese) {
+		text = textInput;
+	}
+	else {
+		// To display ruby tag
+		text = displayRubyTag(textInput);
+	}
+		
 	switch(value){
 		case "incorrect":
-			$("#feedbackHeader").html("Incorrect");
+			$("#feedbackHeader").html('<img src="../common/img/feedback_incorrect.png">');
 			$("#feedbackText").html(text);
 			break;
 		case "correct":
-			$("#feedbackHeader").html("Correct");
+			$("#feedbackHeader").html('<img src="../common/img/feedback_correct.png">');
 			$("#feedbackText").html(text);
 			break;
 		case "set_completed":
@@ -248,11 +265,12 @@ function showFeedback(value, text){
 			break;
 		case "activity_completed":
 			$("#feedbackHeader").html("Activity Completed");
-			$("#feedbackBtn").html("Next Activity");
+			////$("#feedbackBtn").html("Next Activity");
+			$("#feedbackBtn").hide();			
 			activityCompletedShown = true;
 			break;
 	}
-	
+	$("#feedbackText").mCustomScrollbar();
 	$('#feedback').show();
 	
 	/*$('#feedback').animate( {
@@ -278,7 +296,11 @@ function closeFeedback(){
 	}
 	
 	checkCompleted();
-	
+			
+	// For homework
+	if (homeworkStatus) {
+		checkAnswers();
+	}
 	
 	/*$('#feedback').css( {
 	left: '580px',
@@ -311,10 +333,68 @@ function loadNextSet(){
 	
 		if(parent.activityCompleted){
 			parent.activityCompleted(1,0);
+			$("#activityGuard").css("display","block");
 		}else{
 			showFeedback("activity_completed");
+			$("#activityGuard").css("display","block");
 		}
 	}else{
 		loadSet(currentSet + 1);
+	}
+}
+
+function getPassedParameters()
+{
+	mediaPath = getURL_Parameter("mediaPath");
+	xmlPath   = getURL_Parameter("xmlPath");
+	return mediaPath != 'undefined';
+}
+function getURL_Parameter(param) {
+    var urlQuery = location.href.split("?")
+    if (typeof urlQuery == 'undefined')
+        return 'undefined';
+
+    if (urlQuery.length < 2)
+        return 'undefined';
+
+    var urlItems = urlQuery[1].split("&")
+    var paramCount = urlItems.length;
+    for (i = 0; i < paramCount; i++) {
+        paramItem = urlItems[i].split("=");
+        paramName = paramItem[0];
+        paramValue = paramItem[1];
+
+        if (param == paramName) {
+            return paramValue;
+        }
+    }
+    return 'undefined';
+}
+
+// For homework
+function checkAnswers(){
+	var questionID = "";
+	var answer = "";
+	var context = "";
+	var answerAttempts = "";
+
+	answerAttemptsNum++;
+
+	questionID = parseInt(currentSet.toString());
+	answer = "--";
+	context = "--";
+	answerAttempts = answerAttemptsNum.toString();
+	
+	// To see attempts - temp
+	//$("#feedbackText").html("Homework//answerAttempts: " + answerAttempts + " - " + questionID);
+		
+	// To pass logs
+	logStudentAnswer(questionID, answer, context);
+	logStudentAnswerAttempts(questionID, answerAttempts);
+	
+	//$('#feedbackText').show();
+	
+	if ($("#feedbackHeader").html() == "Set Completed") {
+		answerAttemptsNum--;
 	}
 }
