@@ -25,7 +25,7 @@
     border-radius: 0 4px 4px 0;
     bottom: auto;
     font-size: 14px;
-    height: 19px;
+    height: 20px;
     padding-right: 8px;
     padding-top: 5px;
     float: left;
@@ -39,7 +39,7 @@
     background-position: center bottom !important;
     background-repeat: repeat-x !important;
     color: #FFFFFF;
-    left: 3px;
+    left: 1px;
     letter-spacing: 2px;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -57,7 +57,6 @@
     border-style: solid;
     border-width: 1px;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
-    color: #333333;
     cursor: default;
     display: inline-block;
     font-size: 14px;
@@ -77,12 +76,12 @@
     margin: 10px;
     position: relative;
     top: 440px;
-    width: 964px;
+    width: 880px;
 }
 #setDiv {
     cursor: default;
     height: 30px;
-    left: 795px;
+    left: 750px;
     position: absolute;
     top: 5px;
     width: 114px;
@@ -90,9 +89,10 @@
 }
 #id_prev_next_div {
     width: 180px;
-    left: 744px;
-    position: relative;
-    top: -49px;
+    left: 710px;
+    position: absolute;
+    top: 5px;
+    display: none;
 }
 * {
     -moz-box-sizing: inherit;
@@ -103,14 +103,13 @@
 #clickGuard {
     background-color: grey;
     display: none;
-    height: 100%;
     left: 0;
-    opacity: 0;
+    opacity: 0.2;
     position: absolute;
     top: 0;
-    width: 1000px;
+    width: 850px;
     z-index: 99;
-    min-height: 530px;
+    min-height: 560px;
 }
 .activity_description {
     display: block;
@@ -131,7 +130,7 @@
     margin-top: -2px;
 }
 html body {
-    width: 910px;
+    width: 845px;
     background-color: #F5F5F5;
     color: #444444;
     font-family: Arial,Helvetica,sans-serif;
@@ -154,39 +153,36 @@ html body {
     width: 180px;
 }
 #feedback {
-	display:block;
+    display:block;
     max-height: none;
     position: relative;
     float: left;
     left: 0px;
     min-height: 253px;
-    
-	margin-top: 24px;
-    margin-left: 10px;
+    margin-top: 20px;
+    margin-left: 8px;
     -moz-user-select: none;
     background: url("../../common/img/bg_dropbubble_50.png") repeat-x scroll center bottom #F5F5F5;
     border: 1px solid #BDBDBD;
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 4px #BDBDBD;
-    
-	padding: 12px;
-    top:0px;
-    
-	width: 395px;
+    padding: 12px;
+    top:0px;    
+    width: 380px;
     z-index: 1003;
 }
 #feedbackHeader {
     min-height: 39px;
-    text-align: center;
+    text-align: left;
     font-size: 20px;
     letter-spacing: 2px;
     margin-top: 0px;
 }
 #feedbackText {
-    width: 323px;
+    width: 385px;
     margin-top: -4px;
     top: 54px;
-    min-height: 156px;
+    height: 156px;
 }
 #feedbackBtn {
     float: right;
@@ -194,20 +190,20 @@ html body {
     width: 81px;
 }
 #explanation_container_1{
-    float: left;
-    
-    width: 435px;
+    float: left;    
+    width: 404px;
+    margin-left:5px;
     background: url("../../common/img/bg_dropbubble_50.png") repeat-x scroll center bottom #F5F5F5;
     border: 1px solid #BDBDBD;
     box-shadow: 0 2px 4px #BDBDBD;
-	
+
     border-radius: 3px;
     margin-top: 26px;
 }
 #explanation_container_2{
     margin-left: 18px;
     float: left;
-    width: 444px;
+    width: 404px;
     background: url("../../common/img/bg_dropbubble_50.png") repeat-x scroll center bottom #F5F5F5;
     border: 1px solid #BDBDBD;
     box-shadow: 0 2px 4px #BDBDBD;
@@ -216,7 +212,8 @@ html body {
     margin-top: 26px;	
 }
 #grammerNote_container{
-    width: 900px;
+    width: 827px;
+    margin-left:5px;
     box-shadow: 1 1px 2px #BDBDBD;
     border-radius: 3px;
     border: 1px solid #BDBDBD;
@@ -225,36 +222,40 @@ html body {
 }
 #ex2PhraseTLLabel {
     margin-left: 61px;
+	margin-right: 10px;
     font-size: 15px;
-    width: 371px;
+    width: 315px;
 }
 #ex2PhraseENLabel {
     margin-right: 10px;
     margin-left: 42px;
     font-size: 12px;
-    text-align: right;
+
 }
 #ex1PhraseTLLabel {
     margin-left: 61px;
+	margin-right: 10px;
     font-size: 15px;
-    width: 352px;
+    width: 315px;
 }
 #ex1PhraseENLabel {
     margin-right: 10px;
     margin-left: 42px;
     font-size: 12px;
-    text-align: right;
+
 }
 #phraseENLabel {
     margin-right: 20px;
     margin-left: 20px;
     left: 20px;
-    font-size: 20px;
+    font-size: 12px;
 }
 #itemText {
     font-size: 23px;
-    width: 333px;
+    width: 315px;
     margin-left: 62px;
+    line-height:150%;
+    height:235px;
 }
 #phraseTLLabel {
     margin-right: 20px;
@@ -263,10 +264,10 @@ html body {
 }
 .itemImg {
     cursor: pointer;
-    height: 119px;
-    width: 158px;
+    height: 120px;
+    width: 160px;
     background-color: grey;
-    margin-left: 6px;
+    margin-left: -3px;
 }
 #playBtn {
     margin-bottom: 10px;
@@ -279,7 +280,7 @@ html body {
     min-height: 50px;
     margin-bottom: 15px;
     padding-left: 10px;
-    width: 484px;
+    width: 390px;
     left: 8px;
 }
 #playBtnEx2 {
@@ -288,7 +289,7 @@ html body {
     margin-bottom: 15px;
     padding-left: 10px;
     
-    width: 484px;
+    width: 390px;
     left: 8px;
 }
 #playBtn_ex1s1, #playBtn_ex2s1 {
@@ -296,9 +297,9 @@ html body {
 }
 #explanationLabel {
     margin-right: 10px;
-    text-align: right;
+    text-align: left;
     font-size: 12px;
-    margin-left: 41px;
+    margin-left: 20px;
 }
 #grammarLabel, #exampleLabel {
     font-size: 19px;
@@ -309,14 +310,13 @@ html body {
     -moz-user-select: none;
 	-webkit-user-select: none;
     background-color: #F5F5F5;
-    padding: 15px;
-    width: 910px;
+    padding: 5px;
+    width: 835px;
 }
 #main {
-    padding-left: 40px;
+    padding-left: 0px;
     -moz-user-select: none;
 	-webkit-user-select: none;
-    height: 350px;
     position: relative;
 }
 #correctBubble {
@@ -341,7 +341,7 @@ html body {
     -moz-user-select: none;
 	-webkit-user-select: none;
     cursor: default;
-    left: 361px;
+    left: 618px;
     margin: 5px;
     padding: 6px 3px 5px 6px;
     position: absolute;
@@ -363,7 +363,7 @@ html body {
 }
 #statusBar {
     top: 15px;
-    width: 910px;
+    width: 840px;
     clear: both;
     position: relative;
     margin-bottom: 50px;
@@ -373,7 +373,7 @@ html body {
 #itemNumDiv {
     cursor: default;
     height: 30px;
-    left: 39px;
+    left: 10px;
     position: absolute;
     top: 5px;
     width: 119px;
@@ -421,14 +421,14 @@ html body {
 }
 #setDiv {
     background-color: transparent;
-    left: 630px;
+    left: 750px;
     position: absolute;
     right: 69px;
-    width: 110px;
+    width: 100px;
 }
 #nextDiv {
     position: absolute;
-    left: 871px;
+    left: 861px;
     top: 7px;
 }
 #nextBtnLink {
@@ -441,7 +441,7 @@ html body {
     position: absolute;
 }
 #prevDiv {
-    left: 832px;
+    left: 822px;
     position: absolute;
     top: 7px;
 }
@@ -498,13 +498,14 @@ html body {
     border-radius: 3px;
     border: 1px solid #BDBDBD;
     background: url("../../common/img/bg_dropbubble_50.png") repeat-x scroll center bottom #F5F5F5;
-    margin-top: 25px;
+    margin-top: 20px;
+	margin-left: 10px;
     min-height: 277px;
-    width: 423px;
+    width: 405px;
 }
 #id_prev_nextItem_div{
     width: 180px;
-    left: 165px;
+    left: 120px;
     position: relative;
     top: 4px;
 }
@@ -532,7 +533,6 @@ html body {
 	background-image: url("../../common/img/bg_btn.png"); /* ---- point to the root folder/img/ ----- */
 	background-position: center bottom;
 	background-repeat: repeat-x;
-	color: #444444;
 	text-shadow: 1px 1px 1px #FFFFFF;
 	cursor: pointer;
 	display: inline-block;
@@ -553,7 +553,8 @@ html body {
 #img_container{
     float: left;
     background: url("../../common/img/bg_dropbubble_50.png") repeat-x scroll center bottom #F5F5F5;
-    padding: 12px 9px;
+    margin-left: 10px;
+	padding: 12px 9px;
     border: 1px solid #BDBDBD;
     box-shadow: 0 2px 4px #BDBDBD;
 }
@@ -565,3 +566,4 @@ html body {
 #feedbackButtonImgContainer > img{
 	margin-top: 5px;
 }
+
