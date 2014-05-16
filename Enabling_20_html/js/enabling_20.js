@@ -103,13 +103,13 @@ function initEnable20(){
 		cssFilename = "css/enabling_20.css";   //css url
 		
 		// Values from URL parameters or default values for testing
-	var statusParameters = getPassedParameters();
-	if (!statusParameters) {
+	//var statusParameters = getPassedParameters();
+	//if (!statusParameters) {
 			mediaPath 	= "activityData/media/";
 			xmlPath 	= "activityData/";
 		 xmlFilename = xmlPath  + "xml/enabling_20.xml"; //xml url
 		 jsonFilename = xmlPath  + "json/enabling_20.js"; //json file url
-	}
+	/*}
 	else {
 		// For performance - homework
 		var xmlPath2 = xmlPath.split("/");
@@ -120,7 +120,7 @@ function initEnable20(){
 		}
 		
 		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
-	}
+	}*/
 	
 	
 	   // load xml 
@@ -282,12 +282,13 @@ function loadQuestion(){
 				$("#choiceText_"+(i+1)).html(answers[i].text);
 				//alert(parseFloat($("#choiceText_"+(i+1)).outerHeight( true )))
 				if (parseFloat($("#choiceText_"+(i+1)).outerHeight( true )) >= 20){
-				$("#label_"+(i+1)).height( parseFloat($("#choiceText_"+(i+1)).outerHeight( true )) + 34 );
-				height +=( parseFloat($("#choiceText_"+(i+1)).outerHeight( true )) + 34 );
+					
+				$("#label_"+(i+1)).height( parseFloat($("#choiceText_"+(i+1)).outerHeight( true )) + 25 );
+				height +=( parseFloat($("#choiceText_"+(i+1)).outerHeight( true )) + 25 );
 				}
 				else{
-				$("#label_"+(i+1)).height(54);
-					height +=54;
+				$("#label_"+(i+1)).height(40);
+					height +=40;
 				}
 				
 				
@@ -299,16 +300,17 @@ function loadQuestion(){
 
 				});
 		}
-		if ((height+30) < 330){ 
-				$("#answersDiv").height(height+25);
-				$("#contentPanelInner, #boardDiv").height(height+25+70+198+10);
-				var top= ((height+25+70+178+10)-350) +"px";
+		if ((height+30) < 280){ 
+				$("#answersDiv").height(height+10);
+				$("#contentPanelInner, #boardDiv").height(height+10+70+150+10);
+				var top= ((height+10+70+178+10)-350) +"px";
 				$("#popUpNoteDiv").css("top",top); 
 		
 		} else {
-					$("#answersDiv").css({"height":"330px", "overflow":"auto"});	
-						$("#contentPanelInner,#boardDiv").height(330+70+198+10);
-						var top= ((330+70+178+10)-350) +"px";
+			
+					$("#answersDiv").css({"height":"275px", "overflow":"auto"});	
+						$("#contentPanelInner,#boardDiv").height(275+70+150+10);
+						var top= ((275+70+178+10)-350) +"px";
 				$("#popUpNoteDiv").css("top",top); 
 						 $("#answersDiv").mCustomScrollbar({
 							 mouseWheel:true,
@@ -450,7 +452,7 @@ function checkAnswers(){
 				
 				// To pass logs
 			logStudentAnswer(questionID, answer, context);
-			logStudentAnswerAttempts(questionID, parseInt(finalScore));
+			logStudentAnswerAttempts(questionID, answerAttempts);
 		}			
 }
 
@@ -505,8 +507,8 @@ function showHint(type) {
 		 
 	 }
 	 
-	if ( parseFloat($("#hintBody").height()) > 100 ) { 
-	 	$("#hintBody").css({"height":"100px", "overflow":"auto"});	
+	if ( parseFloat($("#hintBody").height()) > 80 ) { 
+	 	$("#hintBody").css({"height":"80px", "overflow":"auto"});	
 		$("#hintBody").mCustomScrollbar({
 							 mouseWheel:true,
                									scrollButtons: {
