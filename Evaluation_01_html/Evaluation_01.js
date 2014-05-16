@@ -18,6 +18,7 @@ $(document).ready(function() {
 var numItems;
 var numItemsPerSet = 1;
 var setItemCompleted = 0;
+var itemNotSet = true;
 function parseXml(t_xml){
 	numItems = $(xml).find("item").length;
 	numSets = Math.ceil(numItems/1);
@@ -31,6 +32,7 @@ function parseXml(t_xml){
 var numberItemsInSet;
 var audFileAry = [];
 var answerAry = [];
+var stAnsAry= [];
 function loadSet(value){
 	currentSet = value;
 	setCompletedShown = false;
@@ -43,7 +45,7 @@ function loadSet(value){
 		numberItemsInSet = lastIndexInSet - 1 - numItems;
 	}
 	
-	if (currentSet == 0){
+	if (itemNotSet){
 		var ansAry = [];
 		var iLen = numItems;
 		for (var i=0;i<iLen;i++){			
@@ -104,14 +106,18 @@ function loadSet(value){
 				$($("#id_set_" + i).find(".dragBubble")[m]).draggable( 'enable');
 				$($("#id_set_" + i).find(".dragBubble")[m]).draggable({ revert: true, helper: "clone" });
 			}
+		itemNotSet = false;
 		}	
 	}
 	var sLen = $(".css_set_div").length;
 	//alert(sLen);
 	for (var i=0; i<sLen; i++){
 		$($(".css_set_div")[i]).css('display','none');
+		stAnsAry.push($($(".dropTargetArea")[i]).html());
 	}
+	$("#dropTgt" + currentSet).html(stAnsAry[currentSet]);
 	$($(".css_set_div")[currentSet]).css('display', 'block');
+//	alert($("#dropTgt" + currentSet).html());
 }
 
 function playAudio(value){	
@@ -122,8 +128,10 @@ function playAudio(value){
 }	
 
 function dropFunction(event, ui) {
-	//var dropTargetNumGot = ($(this).attr("id"))-1;	
+	var dropTargetNo = extractLastNumber($(this).attr("id"));
+    //alert( dropTargetNo );	
 	var dragBubbleTxt = $($(ui.draggable).find(".dragBubbleText")[0]).text();
+	stAnsAry[dropTargetNo] = dragBubbleTxt;
 	//alert(dragBubbleTxt)
 	$(this).html(dragBubbleTxt);
 	var allDone = checkComplete();
@@ -171,6 +179,7 @@ function judgingAnswers(){
 	}
 	else
 		showFeedback("activity_completed", "Failed!")
+	$("#id_submitBtn").css('display', 'none');	
 }
 function showFeedback(value, text){
 	//Clear the dialog box
