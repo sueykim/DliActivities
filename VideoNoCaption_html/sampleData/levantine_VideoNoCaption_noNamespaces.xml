@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hs:content target_language="Tagalog" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart" disableCaption="true" disableTitleBar="true">
+	<hs:video_file>videoTest</hs:video_file>
+  <hs:title dir="ltr"><![CDATA[ video Title ]]></hs:title>
+
+</hs:content>
