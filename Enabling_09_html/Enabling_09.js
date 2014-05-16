@@ -10,10 +10,10 @@ $(document).ready(function() {
 		jsonFilename = mediaPath + "levantine_enabling09_noNamespaces.js";
 /*		
 	if ( getPassedParameters() == false){
-	//Default values (for testing)
-	mediaPath = "sampleData/";
-	xmlFilename = mediaPath + "levantine_enabling09_noNamespaces.xml";
-	jsonFilename = mediaPath + "levantine_enabling09_noNamespaces.js";
+		//Default values (for testing)
+		mediaPath = "sampleData/";		
+		xmlFilename = mediaPath + "levantine_enabling09_noNamespaces.xml";
+		jsonFilename = mediaPath + "levantine_enabling09_noNamespaces.js";
 	}
 	else {
 		// For performance - homework
@@ -23,7 +23,7 @@ $(document).ready(function() {
 		if (activityID.length < 2 ) {
 			activityID =+ "0" + activityID;
 		}
-	
+		
 		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
 		
 		$('.activity_hd').html('');
@@ -115,7 +115,7 @@ function loadSet(value){
 				$($(xml).find("lang_en")[(currentSet*numItemsPerSet) + i - 1]).text()
 			);
 		$('#dropTargetText_' + i).addClass("displayNone");
-	}
+	}	
 }
 
 function playVideo(index){
@@ -123,7 +123,7 @@ function playVideo(index){
 					(currentSet*numItemsPerSet) + index - 1]).text();
 	file_video = file_video.substring(0, file_video.lastIndexOf("."));
 	//alert( file_video );
-	loadVideo(mediaPath, file_video);
+        loadVideo(mediaPath, file_video);
 	
 }
 
@@ -138,34 +138,7 @@ function dropFunction(event, ui ) {
 	
 	var dropTargetNumLookingFor = extractLastLetter(
 							$(ui.draggable.find(".dragBubbleText")[0]).attr("id"));
-	
-	var jItem = $($(xml).find("item")[
-					(currentSet*numItemsPerSet) + (dropTargetNumLookingFor - 1)]);
-	
-	var jDragItem = $($(xml).find("item")[
-	  	  				(currentSet*numItemsPerSet) + (dropTargetNumGot - 1)]);
-	  	
-	var dropBtnText = jItem.find("lang_en").text();
-	var dragBtnText = jDragItem.find("lang_en").text();
-	
-	logStudentAnswer(
-		currentSet,	
-		dropBtnText,
-		dragBtnText
-	);
- 	
-	if(jItem.attr("timesTried") == undefined){
-		jItem.attr("timesTried", 1);
-	}else{
-		jItem.attr("timesTried",
-			parseInt(jItem.attr("timesTried")) + 1
-		);	
-	}
-	
-	logStudentAnswerAttempts(
-		currentSet,
-		jItem.attr("timesTried"));
-	
+		
 	//Play audio
 /*	var file_video = $($(xml).find("file_video")[
 					(currentSet*numItemsPerSet) + (dropTargetNumGot - 1)]).text();
@@ -226,7 +199,7 @@ function showFeedback(value, textInput){
 			break;
 	}
 	$("#feedbackText").mCustomScrollbar();
-	
+
 	//$('#feedback').show();
 }
 
@@ -262,7 +235,7 @@ function checkCompleted(){
 			setCompletedShown = true;
 			showFeedback("set_completed");
 		}
-	}	
+	}
 	
 	// For homework
 	if (homeworkStatus) {
