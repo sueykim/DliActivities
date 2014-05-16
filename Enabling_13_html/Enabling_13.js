@@ -9,6 +9,10 @@ $(document).ready(function() {
 
 	loadjscssfile("../common/css/activityDefault.css", "css");
 	//Default values (for testing)
+	mediaPath = "sampleData/";		
+	xmlFilename = mediaPath + "enabling13_noNamespaces.xml";
+	jsonFilename = mediaPath + "enabling13_json.js";
+/*		
 	if ( getPassedParameters() == false){
 		mediaPath = "sampleData/";		
 		xmlFilename = mediaPath + "enabling13_noNamespaces.xml";
@@ -26,7 +30,8 @@ $(document).ready(function() {
 		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
 		$('.activity_hd').html('');
 	}
-
+*/
+	$('.activity_hd').html('');
 	cssFilename = "styles/enabling_13_dlilearn.css";
 	testVideoSupport();	
 	loadActivity(parseXml);
