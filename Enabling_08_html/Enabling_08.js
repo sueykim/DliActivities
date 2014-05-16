@@ -4,7 +4,7 @@ $(document).ready(function() {
 	
 	hideClickGuard();
 	hideStageClickGuard();
-	
+
 	$("#feedbackHeader").html("");
 	$("#feedbackText").html("");
 	$('#feedback').show();
@@ -21,13 +21,13 @@ $(document).ready(function() {
 
 	if ( getPassedParameters() == false)
            {
-	//Default values (for testing)
-	mediaPath = "sampleData/";
-	cssFilename = "styles/Enabling_08.css";
-	xmlFilename = mediaPath + "Enabling_08_sampleData.xml";
-	jsonFilename = mediaPath + "Enabling_08_sampleData.js";
+	   //Default values (for testing)
+           mediaPath = "sampleData/";
+           cssFilename = "styles/Enabling_08.css";
+           xmlFilename = mediaPath + "Enabling_08_sampleData.xml";
+           jsonFilename = mediaPath + "Enabling_08_sampleData.js";
            }
-        else
+        /* else
           { 
           // For performance - homework
 		var xmlPath2 = xmlPath.split("/");
@@ -36,11 +36,12 @@ $(document).ready(function() {
 		if (activityID.length < 2 ) {
 			activityID =+ "0" + activityID;
 		}
-	
+		
 		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
 		$(".activity_hd").html('');
 		$(".activity_description").html('');
-          } 
+          }  */
+		  
         cssFilename = "styles/enabling_08_dlilearn.css";
 	loadActivity(parseXml);
 	
@@ -65,7 +66,7 @@ function startButtonDown(){
 	$(".dropTarget").css("opacity", "1");
 	$("#playBtnAudio").css("opacity", "1");
 	$("#letter_container").removeClass("invisible");
-	
+
 	playAudio();
 }
 
@@ -137,7 +138,7 @@ function draggingStopFunction(){
 
 var letterIncorrectArray = [];
 
-function dropFunction(event, ui ){	
+function dropFunction(event, ui ){
 	dragging = false;
 	
 	var dragBtnLetter = ui.draggable.text().toLowerCase();
@@ -152,14 +153,14 @@ function dropFunction(event, ui ){
 	var correctLetterDropped = false;
         /*
 		if(homeworkStatus){
-	logStudentAnswer(
-			(parseInt(jContent.attr("currentConversationIndex")) + 1) + ":" + 
-			(parseInt(jSession.find("item").index(jItem)) + 1),	
-			dropBtnLetter,
-			dragBtnLetter
-	);
+          logStudentAnswer(
+  			(parseInt(jContent.attr("currentConversationIndex")) + 1) + ":" +
+  			(parseInt(jSession.find("item").index(jItem)) + 1),
+  			dropBtnLetter,
+  			dragBtnLetter
+  	  );
 
-	logStudentAnswerAttempts(
+	  logStudentAnswerAttempts(
 			(parseInt(jContent.attr("currentConversationIndex")) + 1) + ":" + 
 			(parseInt(jSession.find("item").index(jItem)) + 1),
 			letterIncorrectArray[dropBtnIndex] + 1);
@@ -168,7 +169,7 @@ function dropFunction(event, ui ){
 	if(homeworkStatus){
 		checkAnswers((parseInt(jContent.attr("currentConversationIndex"))+1), parseInt(jSession.find("item").index(jItem)));
 	}
-
+		
 	if(dropBtnLetter == dragBtnLetter){
 		//correct letter landed
 		correctLetterDropped = true;
@@ -301,7 +302,7 @@ function loadExchange(value){
 	$("#answerDiv").text("");
 	$("#drop_container").css("display", "block");
 	$("#playBtnAudio").css("display", "inline-block");
-	$("#playBtnAudio").css("opacity", "0");
+	$("#playBtnAudio").css("opacity", "0");	
 	$("#letter_container").addClass("invisible");
 	
 	jSession.attr("currentExchangeIndex", value);
