@@ -111,6 +111,7 @@ function parseXml(t_xml){
 
 function loadSet(value){
         $("#clickGuard").css("display","none");
+        $("#clickGuardVideo").css("display","none");
 	$("#feedbackHeader").html("");
 	
 	$("#videoContainer").hide();
@@ -199,6 +200,7 @@ function loadSet(value){
                                            $("#pic").hide();
                                            $("#videoContainer").show();
                                            playVideo();
+                                           $("#clickGuardVideo").css("display","block")
                                            ////setTimeout (function(){playVideo()},  parseInt(300))
                                            ////****** End of video play **************////
                                           }
@@ -233,6 +235,7 @@ function loadSet(value){
                                  setTimeout (function(){$("#pic").hide()},  parseInt(1000))
                                  setTimeout (function(){$("#videoContainer").show()},  parseInt(1000))
                                  setTimeout (function(){playVideo()},  parseInt(1000))
+                                 $("#clickGuardVideo").css("display","block")
                                  ////****** End of video play **************////
                                 }
                           checkAcitivty()
