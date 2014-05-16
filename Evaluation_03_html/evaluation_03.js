@@ -7,13 +7,13 @@ $(document).ready(function() {
 	
 	$('#feedback').hide();
 	loadjscssfile("../common/css/activityDefault.css", "css");
-	if ( getPassedParameters() == false){
+	////if ( getPassedParameters() == false){
 		//Default values (for testing)
 		mediaPath = "sampleData/";		
 		xmlFilename = mediaPath + "evaluation03_noNamespaces.xml";
 		jsonFilename = mediaPath + "evaluation03_json.js";
-	}
-	else {
+	////}
+/*	else {
 		// For performance - homework
 		var xmlPath2 = xmlPath.split("/");
 		var activityID = getURL_Parameter('activity');
@@ -31,7 +31,7 @@ $(document).ready(function() {
 
 		$('.activity_hd').html('');
 		$('.activity_description').html('');
-	}
+	}  */
 	testVideoSupport();	
 	cssFilename = "styles/evaluation_03_dlilearn.css";
 	loadActivity(parseXml);
@@ -253,6 +253,7 @@ function showFeedback(value, textInput){
 	
 	$('#feedback').show();
 	$("#clickGuard").css("display", "inline");
+	$("#feedbackText").mCustomScrollbar();
 }
 
 function closeFeedback(){
@@ -262,7 +263,7 @@ function closeFeedback(){
 	if(activityCompletedShown)
 		$("#clickGuard").css("display", "inline");
 	else
-		$("#clickGuard").css("display", "none");	
+		$("#clickGuard").css("display", "none");
 
 	// For homework
 	if (homeworkStatus) {
@@ -300,13 +301,13 @@ function loadNextSet(){
 			passingScore = passingScore;
 			
 		var stScore = crrtNumber/numSets;
-		alert('stScore= ' + stScore + ': passingScore= ' + passingScore)
+		////alert('stScore= ' + stScore + ': passingScore= ' + passingScore)
 		if ( stScore >= passingScore){ ;
 			if(parent.activityCompleted){
 				parent.activityCompleted(1,0);
 			}
 			else{
-			alert('here')
+			////alert('here')
 			showFeedback("activity_completed", "Passed!")
 			}
 		}
