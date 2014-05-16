@@ -82,15 +82,15 @@
     background-color: transparent;
     cursor: default;
     height: 30px;
-    left: 600px;
+    left: 175px;
     position: absolute;
     right: 69px;
     top: 5px;
     width: 114px;
     z-index: 0;
 }
-#id_prev_next_div {
-    left: 720px;
+#id_prev_next_div {                                                           
+    left: 285px;
     position: relative;
     top: 6px;
 }
@@ -108,7 +108,17 @@
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 99;
+}
+
+#activityGuard {
+    background-color: grey;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 .activity_description {
     display: block;
@@ -156,15 +166,14 @@ html body {
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 4px #BDBDBD;
     display: block;
-    left: 545px;
+    left: 0px;
     margin: 0 0 0 7px;
-    max-height: 138px;
-    min-height: 138px;
+    max-height: 110px;
+    min-height: 110px;
     padding: 20px;
-    position: relative;
-    top: -110px;
+    position: relavtive;
     width: 310px;
-    z-index: 1000;
+    top:412px;
 }
 #feedbackHeader {
     font-size: 20px;
@@ -180,31 +189,32 @@ html body {
 #feedbackBtn {
     bottom: 10px;
     position: absolute;
-    right: 26px;
+    right: 10px;
+
 }
 .droppedLetter {
 }
 .videoAudioList {
     background-color: white;
-    height: 279px;
-    left: 705px;
+    height: 200px;
+    left: 627px;
     position: absolute;
     top: 26px;
-    width: 215px;
+    width: 210px;
 }
 .videoAudioList #videoTag {
-    margin-top: 63px;
+    margin-top: 25px;
 }
 .videoClueList #videoTag {
-    margin-top: 29px;
+    margin-top: 25px;
 }
 .videoClueList {
     background-color: white;
-    height: 280px;
-    left: 367px;
+    height: 230px; /*280px;*/
+    left: 374px;
     position: absolute;
     top: 25px;
-    width: 296px;
+    width: 242px; /*296px;*/
 }
 #videoTag {
     width: 100%;
@@ -216,11 +226,11 @@ html body {
     cursor: pointer;
     float: left;
     font-size: 18px;
-    height: 34px;
+    height: 28px;
     margin: 2px;
     padding-top: 12px;
     text-align: center;
-    width: 45px;
+    width: 36px;
 }
 .number {
     font-size: 0.6em;
@@ -294,7 +304,7 @@ html body {
 #clueList {
     background-color: transparent;
     height: 400px;
-    left: 416px;
+    left: 370px;
     position: absolute;
     top: 0;
     width: 250px;
@@ -303,24 +313,24 @@ html body {
     background-repeat: repeat;
     border-radius: 3px 3px 3px 3px;
     font-size: 22px;
-    left: 6px;
-    padding: 20px 5px 10px 5px;
+    left: 0px;
+    padding: 10px 5px 10px 5px;
     position: relative;
     text-align: center;
-    top: 50px;
+    top: -125px;
     vertical-align: middle;
-    width: 529px;
+    width: 350px;
     overflow: auto;
-    height: 148px;
+    height: 150px;
 }
 
 #main {
     -moz-user-select: none;
 	-webkit-user-select: none;
-    height: 350px;
+    height: 570px;
     left: 6px;
     position: relative;
-    width: 885px;
+    width: 845px;
 }
 td {
     background-color: white;
@@ -343,11 +353,10 @@ td {
 }
 #statusBar {
     height: 40px;
-    left: 24px;
-    margin-top: 5px;
+    left: 400px;
+    margin-top: -49px;
     position: relative;
-    top: -98px;
-    width: 925px;
+    width: 439px;
 }
 #setLabel {
     -moz-user-select: none;
@@ -397,7 +406,7 @@ td {
 #grid_container {
 }
 #audioList_container {
-    left: 679px;
+    left: 624px;
     position: relative;
     width: 220px;
 }
@@ -415,4 +424,12 @@ td {
 }
 #audioList .dragBubbleTextContainer {
     width: 187px;
+}
+#secondBox {
+           top:-145px;
+}
+
+#feedbackText {
+  height:  65px;
+  margin-right:5px;
 }
