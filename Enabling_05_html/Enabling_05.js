@@ -34,10 +34,10 @@ $(document).ready(function() {
 		jsonFilename = "sampleData/levantine_enabling05_noNamespaces.js";
 /*		
 	if ( getPassedParameters() == false){
-	//Default values (for testing)
-	mediaPath = "sampleData/";
-	xmlFilename = "sampleData/levantine_enabling05_noNamespaces.xml";
-	jsonFilename = "sampleData/levantine_enabling05_noNamespaces.js";
+		//Default values (for testing)
+		mediaPath = "sampleData/";			
+		xmlFilename = "sampleData/levantine_enabling05_noNamespaces.xml";
+		jsonFilename = "sampleData/levantine_enabling05_noNamespaces.js";
 	}
 	else{
 		// For performance - homework
@@ -51,7 +51,7 @@ $(document).ready(function() {
 		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
 		$(".activity_hd").html('');
 		$(".activity_description").html('');
-	
+		
 	}
 */	
 	cssFilename = "styles/Enabling_05_default.css";	
@@ -74,13 +74,6 @@ function parseXml(t_xml){
 	isJapanese = $(xml).find("content").attr("target_language") == "Japanese";
 
 	numSets = $(xml).find("section").length;
-	
-	/*//Tag items (for logging)
-	$(xml).find("section").each(function(){
-		$(this).find("item").each(function(i){
-							$(this).attr("origIndex", i);
-						})
-	})*/
 	
 	//Randomize sets
 	$(xml).find("section").each(function(){
@@ -167,27 +160,6 @@ function dropFunction(event, ui ) {
 	var file_audio = $(jSection.find("file_audio")[dropTargetNumGot - 1]).text();
 	audio_play_file(removeFileExt(file_audio) ,mediaPath );
 	
-	//Logging
-	var jXmlItem = $(jSection.find("item")[dropTargetNumGot - 1]); 	
-		
-	if(jXmlItem.attr("timesTried") == undefined){
-		jXmlItem.attr("timesTried", 1);
-	}else{
-		jXmlItem.attr("timesTried",
-			parseInt(jXmlItem.attr("timesTried")) + 1
-		);	
-	}
-	
-	var itemIndex = 1 + parseInt(jXmlItem.attr("origIndex"));
-		
-	logStudentAnswer((currentSet + 1) + ":" + itemIndex,	
-			$(jSection.find("lang_en")[dropTargetNumGot - 1]).text(),
-			ui.draggable.find(".dragBubbleText").text()
-	);
-
-	logStudentAnswerAttempts((currentSet + 1) + ":" + 
-				itemIndex, jXmlItem.attr("timesTried"));
-					
 	if(dropTargetNumLookingFor == dropTargetNumGot){
 		//Show image
 		ui.draggable.draggable( 'disable' );
@@ -291,7 +263,7 @@ function checkCompleted(){
 			setCompletedShown = true;
 			showFeedback("set_completed");
 		}
-	}	
+	}
 					
 	// For homework
 	if (homeworkStatus) {
