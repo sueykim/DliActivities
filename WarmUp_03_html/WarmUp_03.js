@@ -38,6 +38,8 @@ $(document).ready(function() {
 	}
 	
 */	
+	$('.activity_hd').html('');
+	$('.activity_description').html('');
 	testVideoSupport();
 	cssFilename = "styles/warmup_03_dliLearn.css";
 	loadActivity(parseXml);
