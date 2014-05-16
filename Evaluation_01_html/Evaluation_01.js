@@ -173,13 +173,19 @@ function judgingAnswers(){
 	if ( stScore >= passingScore){ 
 		if(parent.activityCompleted){
 			parent.activityCompleted(1,0);
-			}
-		else
+		}else{
 			showFeedback("activity_completed", "Passed!")
+		}
 	}
-	else
-		showFeedback("activity_completed", "Failed!")
-	$("#id_submitBtn").css('display', 'none');	
+	else{
+		if(parent.activityCompleted){
+			parent.activityCompleted(false,0);
+		}else{
+			showFeedback("activity_completed", "Failed!")
+		}
+	}
+
+	$("#id_submitBtn").css('display', 'none');
 }
 function showFeedback(value, text){
 	//Clear the dialog box
