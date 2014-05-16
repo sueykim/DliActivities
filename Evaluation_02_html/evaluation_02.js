@@ -7,14 +7,14 @@ $(document).ready(function() {
 	
 	$('#feedback').hide();
 	loadjscssfile("../common/css/activityDefault.css", "css");
-	if ( getPassedParameters() == false){
+////	if ( getPassedParameters() == false){
 	//Default values (for testing)
 		mediaPath = "sampleData/";
 		xmlPath = "sampleData/";	
 		xmlFilename = xmlPath + "evaluation02_noNamespaces.xml";
 		jsonFilename = xmlPath + "evaluation02_json.js";
-	}
-	else {
+	////}
+/*	else {
 		// For performance - homework
 		var xmlPath2 = xmlPath.split("/");
 		var activityID = getURL_Parameter('activity');
@@ -32,7 +32,7 @@ $(document).ready(function() {
 
 		$('.activity_hd').html('');
 		$('.activity_description').html('');
-	}
+	}  */
 	testVideoSupport();	
 	cssFilename = "styles/evaluation_02_dlilearn.css";
 	loadActivity(parseXml);
@@ -79,12 +79,13 @@ function loadSet(value){
 	theInputExtension = theInputExtension.substr(theInputExtension.lastIndexOf(".")+1);
 
 	if(theInputType == 'image' || theInputExtension=='png'){
-		var theImage0 = mediaPath + 'png/' + $($(xml).find("file_input")[startIndex]).text()
-		var theImageText0 = '<img  class="qpic" src="' + theImage0 + '" border="0" />'
+		var theImage0 = mediaPath + '/png/' + $($(xml).find("file_input")[startIndex]).text()
+		var theImageText0 = '<img  class="qpic" style="width:320px; height:240px;" src="' + theImage0 + '" border="0" />'
 		$("#qinput0").html(theImageText0);
-		var theImage1 = mediaPath + 'png/' + $($(xml).find("file_input")[startIndex +1]).text()
-		var theImageText1 = '<img  class="qpic" src="' + theImage1 + '" border="0" />'
+		var theImage1 = mediaPath + '/png/' + $($(xml).find("file_input")[startIndex +1]).text()
+		var theImageText1 = '<img  class="qpic"  style="width:320px; height:240px;" src="' + theImage1 + '" border="0" />'
 		$("#qinput1").html(theImageText1);
+		$('.qtext').css({'height':'100'});
 	}
 	else{
 		var theVideo0 = $($(xml).find("file_input")[startIndex]).text();
@@ -108,6 +109,7 @@ function loadSet(value){
 		loadVideo( mediaPath, theVideo1, vidContainer, vidTag, true )
 		xid(vidTag).className = "videoScreen";
 		xid("playBtnVid2").onclick = function(){playVideo(2)};
+		$('.qtext').css({'height':'125'});
 	}
 	
 	//set the text choice
@@ -158,7 +160,7 @@ function loadSet(value){
 				qStr += '<div class="qWord">&nbsp;' +tlSentenceAry[j] + '&nbsp;</div>';
 				
 		}
-	return qStr	
+	return qStr
 	}	
 
 	if (currentSet == 0 && stuAnsAry.length == 0){
@@ -211,15 +213,16 @@ function checkAnswers(){
 		else
 			passingScore = passingScore;
 //	alert(stScore)		
-	if ( stScore >= passingScore){ 
+	if ( stScore >= passingScore){
 		if(parent.activityCompleted){
 			parent.activityCompleted(1,0);
 			}
 		else
 			showFeedback("activity_completed", "Passed!")
 	}
-	else
+	else  {
 		showFeedback("activity_completed", "Failed!")
+	}
 	$("#clickGuard").css("display", "inline");
 	//alert($("#set_prev").css("disabled", "true")
 	$("#set_prev").attr("disabled", "disabled");
