@@ -265,6 +265,7 @@ function playEn(value) {
 	}
 }
 
+
 function playClue(value) {
 	var keywordIndex = extractLastNumber($(value).find(">img").attr("id"));
 	;
@@ -756,6 +757,8 @@ function showFeedback(value, textInput) {
 	}
 
 	$('#feedback').show();
+	
+	$("#feedbackText").mCustomScrollbar();
 }
 
 var feedbackCorrectShown = false;
@@ -792,8 +795,10 @@ function closeFeedback() {
 
 			if (parent.activityCompleted) {
 				parent.activityCompleted(1, 0);
+                            	$("#activityGuard").css("display", "block");
 			} else {
 				showFeedback("activity_completed");
+                              	$("#activityGuard").css("display", "block");
 			}
 		}
 	}
