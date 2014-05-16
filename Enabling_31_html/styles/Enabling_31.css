@@ -70,7 +70,7 @@
    background-color: transparent;
     cursor: default;
     height: 40px;
-    left: 490px;
+    left: 530px;
   /*  position: relative;  */
     top: 518px;
     width: 270px;
@@ -92,7 +92,7 @@
     left: 53px;
     opacity: 0.3;
     position: absolute;
-    width: 423px;
+    width: 460px;
     top:50px;
     z-index:10;
 }
@@ -169,7 +169,7 @@ html body {
     margin-top:10px;
     /*position: absolute;*/
     /*top: 119px;*/
-    width: 110px;
+    width: 160px;
 }
 
 
@@ -182,7 +182,7 @@ html body {
     box-shadow: 0 2px 4px #BDBDBD;
     display: block;
     float: left;
-    left: 500px;
+    left: 540px;
     height:100px;
     padding: 20px 5px 20px 20px;
     position: absolute;
@@ -296,7 +296,7 @@ html body {
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 4px #BDBDBD;
     display: block;
-    left: 500px;
+    left: 540px;
     /*top: 83px;*/
     /*max-height: 260px;
     min-height: 260px; */
@@ -316,7 +316,7 @@ html body {
     display: block;
     float: left;
     left: 33px;
-    width: 420px;
+    width: 460px;
     height: 515px;
     padding: 20px;
     position: absolute;
@@ -378,7 +378,7 @@ html body {
 .items {
 
       /* border:1px solid red;*/
-       width:420px; 
+       width:460px;
        height:140px; 
        margin-top:20px; 
        background-color: #ececec;
