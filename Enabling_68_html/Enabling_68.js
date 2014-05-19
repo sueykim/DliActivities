@@ -332,6 +332,7 @@ function audioEnded(){
 	updateItemNavButtons();
 	updateNavButtons();
 	audioPlaying = false;
+	$("#itemText").mCustomScrollbar();
 }
 
 
