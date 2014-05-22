@@ -49,11 +49,11 @@ $(document).ready(function() {
 		}
 		
 		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
-		$(".activity_hd").html('');
-		$(".activity_description").html('');
 		
 	}
 */	
+	$(".activity_hd").html('');
+	$(".activity_description").html('');
 	cssFilename = "styles/Enabling_05_default.css";	
 	cssFilename = "styles/Enabling_05_dliLearn.css";
 	loadActivity(parseXml);
