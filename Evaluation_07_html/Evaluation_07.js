@@ -241,17 +241,20 @@ function checkAnswers(){
 //	alert(stScore)
 	if ( stScore >= passingScore){ 
 		if(parent.activityCompleted){
-			parent.activityCompleted(1,0);  
-                        $("#clickGuard").css("display", "inline");
-			}
-		else
+			parent.activityCompleted(1,0);
+            $("#clickGuard").css("display", "inline");
+        }else{
 			showFeedback("activity_completed", "Passed!")
+		}
 	}
-	else
-		//showFeedback("activity_completed", "Failed!")
-		showFeedback("activity_completed_fail", "You have failed. Please try again.")
-	////activityCompletedShown = true;
-
+	else{
+		if(parent.activityCompleted){
+			parent.activityCompleted(false,0);
+		}else{
+			showFeedback("activity_completed", "Failed!")
+		}
+	}	
+	
    $(".image").unbind("click");
    ////$("#playBtn").hide();
    $('#submit').hide();

@@ -302,17 +302,20 @@ function loadNextSet(){
 			
 		var stScore = crrtNumber/numSets;
 		////alert('stScore= ' + stScore + ': passingScore= ' + passingScore)
-		if ( stScore >= passingScore){ ;
+		if ( stScore >= passingScore){ 
 			if(parent.activityCompleted){
 				parent.activityCompleted(1,0);
-			}
-			else{
-			////alert('here')
-			showFeedback("activity_completed", "Passed!")
+			}else{
+				showFeedback("activity_completed", "Passed!")
 			}
 		}
-		else
-		showFeedback("activity_completed", "Failed!")		
+		else{
+			if(parent.activityCompleted){
+				parent.activityCompleted(false,0);
+			}else{
+				showFeedback("activity_completed", "Failed!")
+			}
+		}
 	}
 	else{
 		loadSet(currentSet + 1);
