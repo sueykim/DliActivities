@@ -256,11 +256,9 @@ function loadNextSet(){
 	
 		if(parent.activityCompleted){
 			parent.activityCompleted(1,0);
-			alert('parent')
 			$("#clickGuard").css("display","block");
 		}else{
 			showFeedback("activity_completed");
-			alert('local')
                         $("#clickGuard").css("display","block");
 		}
 	}else{
