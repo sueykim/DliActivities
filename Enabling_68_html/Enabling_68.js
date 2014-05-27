@@ -125,9 +125,10 @@ function loadItem(value){
         }else{
            $('#itemText').css('color', 'black')
         }
-
+          
 	updateItemNavButtons()
-	$("#itemText").mCustomScrollbar();
+	if(currentItem != 0)
+  	   $("#itemText").mCustomScrollbar();
 }
 
 var audioPlaying = false;
@@ -150,8 +151,17 @@ function playAudio(){
 	var itemHtml = $("#itemText").html();
 
 	var keyword = $(jSection.find("keyword_TL")[currentItem]).text();
-	var re = new RegExp(keyword,"g");
-	itemHtml = itemHtml.replace(re,"<b>" + keyword + "</b>");
+	var re = new RegExp(keyword,"g");    
+	
+	var keyWBolded =  "<b>" + keyword + "<\/b>"
+        var keyMatch = itemHtml.match(keyWBolded, "g")
+
+        if(!keyMatch)
+            itemHtml = itemHtml.replace(re,"<b>" + keyword + "</b>");
+        ////else
+          ////alert('match')
+
+
 	$("#itemText").html(itemHtml);
 
 
@@ -332,7 +342,7 @@ function audioEnded(){
 	updateItemNavButtons();
 	updateNavButtons();
 	audioPlaying = false;
-	$("#itemText").mCustomScrollbar();
+        $("#itemText").mCustomScrollbar();
 }
 
 
@@ -506,4 +516,3 @@ function getURL_Parameter(param) {
     }
     return 'undefined';
 }
-
