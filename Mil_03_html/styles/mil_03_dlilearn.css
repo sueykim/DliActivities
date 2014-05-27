@@ -36,7 +36,7 @@ html body {
 #videoContainer{
     background-color: #999;
     height: 240px;
-    left: 525px;
+    left: 505px;
 	top: 20px;
 	text-align: center;
     position: relative;
@@ -67,7 +67,7 @@ html body {
     min-height: 120px;
     padding: 20px;
     position: absolute;
-    width: 800px;
+    width: 780px;
 	position: absolute;
     z-index: 100;
 }
@@ -84,7 +84,7 @@ html body {
     min-height: 120px;
     padding: 20px;
     position: absolute;
-    width: 800px;
+    width: 780px;
 	position: absolute;
 }
 #feedbackBtn {
@@ -129,11 +129,12 @@ html body {
     width: 44px;
 	height: 44px;
 	float: left;
-	margin-left:3px;
+	margin-left:0px;
+	margin-top:3px;
 }
 
 #playBtnVid{
-    top: 140px;	
+    top: 140px;
     position: absolute;
     left: 8px;
 }
@@ -145,7 +146,7 @@ html body {
 
 #dropTargets{
 	left: 0px;
-	width: 510px;
+	width: 480px;
 	position: absolute;
 	padding: 5px;
 }
@@ -170,7 +171,7 @@ html body {
 	background:#DDD;	
 	margin-top:2px;
 	padding:25px;
-	width:490px;
+	width:465px;
 	border-radius: 3px 3px 3px 3px !important;
 	font-size: 16px;
 	padding: 2px;
@@ -207,6 +208,8 @@ html body {
     float: left;
     font-size: 14px;
     padding: 7px 6px 3px 12px;
+    height:21px;
+    border-radius: 5px 0 0 5px;
 }
 #setIndex {
     bottom: auto;
@@ -217,7 +220,8 @@ html body {
     float: left;
     padding-right: 11px;
     padding-top: 7px;
-	 padding-left: 12px;
+    padding-left: 12px;
+    border-radius: 0 5px 5px 0;
 }
 .btn_set {
     background-color: #999999;
@@ -285,7 +289,7 @@ html body {
 }
 .menuTD{
 	border-bottom: 1px solid #999;
-	width			 : 455px;
+	width			 : 355px;
 }
 .menuChoice{
 	width: 100%;
@@ -303,4 +307,15 @@ html body {
 	padding          : 0px;
 	visibility       : hidden;
 	z-index          :102;
+}
+
+.ddList {
+        background:#DDD;
+        width: 421px;
+	height: 38px;
+	float: left;
+	margin-left:0px;
+	margin-top:3px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
 }
