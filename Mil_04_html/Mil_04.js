@@ -17,7 +17,7 @@ $(document).ready(function() {
 	loadActivity(parseXml);
 	
 	$('.activity_hd').html('');
-	$('.activity_description').html('');	
+	$('.activity_description').html('');
 });
 
 
@@ -68,7 +68,7 @@ function loadSet(value){
 		//alert(themenuChoices);
 		var menuStr = spf('<table class="css_menu_table" cellspacing="0" cellpadding="5">~<caption style="display: none;">~</caption></table>',[themenuChoices,theAns]); 
 		$($(".css_menu_def")[i]).html(menuStr);
-	}	 
+	}
 }
 function turn_on(x){
 	x.src = "../common/img/btn_play_sm_on.png"
@@ -325,7 +325,7 @@ function my_menu_class( whoami )
 //		 $($(".showResult")[theNo]).css('backgroundColor', '#519a3b');
 		 showFeedback('correct', theFB);
 		 whoWin = 'O';
-	  }	 
+	  }
 	  else{
 		$($(".showResult")[theNo]).html('<img src="../common/img/glass_x.png" border="0" />');
 //		$($(".showResult")[theNo]).html('<div>X</div>');
@@ -338,7 +338,7 @@ function my_menu_class( whoami )
       }
     }
   }//my_menu_class
-  
+
 
 function evaluateThreeInARow(){
 	// Flatten the two-dimensional array.
@@ -398,11 +398,11 @@ function showFeedback(value, text){
 	//Clear the dialog box
 	$("#feedbackHeader").html("");
 	$("#feedbackText").html("");
-	
+
 	switch(value){
 		case "incorrect":
 			$("#feedbackHeader").html('<img src="../common/img/feedback_incorrect.png" width="122px" height:38px">');
-			$("#feedbackText").html(text);
+			$("#feedbackText").html(text);  
 			break;
 		case "correct":
 			$("#feedbackHeader").html('<img src="../common/img/feedback_correct.png" width="139px" height:38px">');
@@ -416,16 +416,18 @@ function showFeedback(value, text){
 			$("#feedbackHeader").html("Activity Completed");
 			break;
 	}
-	
+
+
 	$('#feedback').show();
-	$("#clickGuard").css("display", "block");	
+	$("#feedbackText").mCustomScrollbar();
+	$("#clickGuard").css("display", "block");
 }
 
 function closeFeedback(){
 	$('#feedback').hide();
 	
 	checkCompleted();
-    $("#clickGuard").css("display", "none");	
+       $("#clickGuard").css("display", "none");
 
 }
 
@@ -463,8 +465,10 @@ function loadNextSet(){
 	
 		if(parent.activityCompleted){
 			parent.activityCompleted(1,0);
+			$("#clickGuardActivity").css("display", "block");
 		}else{
 			showFeedback("activity_completed");
+			$("#clickGuardActivity").css("display", "block");
 		}
 	}else{
 		$(xml).find("item").shuffle();
