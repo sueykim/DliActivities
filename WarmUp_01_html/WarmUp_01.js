@@ -303,7 +303,7 @@ function showDoneMark(No){
 	if (inputFldDisplay == "none" && itemCompletedAry[No] == 0){
 		$($('.doneImg')[No-currentSet*numItemsPerSet]).css('display','block');
 		itemCompletedAry[No] = 1;
-		checkCompleteSet();
+		//=>checkCompleteSet();//used when feedback clicked
 		}
 }
 
@@ -338,8 +338,8 @@ function checkCompleteSet(){
 	} 
 	if(setCompletedDone == true){
 		showFeedback("set_completed");
+		setCompletedShown =  true;
 	}
-
 	activityCompletedShown = true;
 	for(var i=0;i<numItems; i++){
 		if(itemCompletedAry[i] == 0){
@@ -347,11 +347,18 @@ function checkCompleteSet(){
 		}
 	}
 	if(activityCompletedShown == true){
+          /*
 		if(parent.activityCompleted){
 			parent.activityCompleted(1,0);
 		}else{
 			showFeedback("activity_completed");
 		}
+		*/
+		if(parent.activityCompleted){
+			parent.activityCompleted(1,0);
+		}
+		showFeedback("activity_completed");
+
 	
 	}
 }
@@ -394,8 +401,14 @@ function closeFeedback(){
   	answerAttemptsNum++;
 	$('#feedback').hide();
         $("#clickGuard").css("display", "none");
-    
 
+        //added to display completed set after word/prase FB, not to over write it as before
+        if (!setCompletedShown){
+                checkCompleteSet()
+        }
+        //else if (! activityCompletedShown)  {
+        //        checkCompleteSet()
+        //}
 	// For homework
 	if (homeworkStatus) {
 		checkAnswers();
