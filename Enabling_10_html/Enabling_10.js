@@ -92,19 +92,30 @@ function loadSet(value){
 	for(var i = 0; i < numItemsPerSet; i++){
 
 		//Remove itemCompleted class
-		$($(".dropdown-text")[i]).removeClass("itemCompleted");
+		$($(".dropdown-menu")[i]).removeClass("itemCompleted");
 		//$("#dropTarget_" + (i + 1) + " select").addClass("dropdown-menu");
-		$($(".dropdown-text")[i]).html("Select Answer");
+		$($(".dropdown-menu")[i]).html("Select Answer");
 	}
-	
+
+
+
 	for(var i = 0; i< 5; i++)
 	{
 		var theNo = currentSet*5 + i;
 		var file_video = $($(xml).find("file_video")[theNo]).text();
 		file_video = file_video.substring(0, file_video.lastIndexOf("."));		
-		var playVidStr = '<span id="oid_main_menu_' + i + '" class="css_menu" ><img  class="playBtn" id="playBtn' + i + '" onclick="vidBtnClicked(\'' + file_video + '\',' + i + ')" src="../common/Library/images/playBtn_s1.png" border="0" onmouseover="turn_on(this)" onmouseout="turn_off(this)"></span>';
+		var playVidStr = '<span><img  class="playBtn" id="playBtn' + i + '" onclick="vidBtnClicked(\'' + file_video + '\',' + i + ')" src="../common/Library/images/playBtn_s1.png" border="0" onmouseover="turn_on(this)" onmouseout="turn_off(this)"></span>';
 		//alert(playVidStr);
 		$($(".playBtnDiv")[i]).html(playVidStr);
+		
+		var ddString = '<span id="oid_main_menu_' + i + '" class="css_menu" ><span  class="ddList"  onclick="dropDownList(\'' + file_video + '\',' + i + ')">Select Answer</span></span>';
+
+		$($(".dropdown-menu")[i]).html(ddString);
+
+
+		
+
+
 		var theAns = $($(xml).find("lang_en")[theNo]).text();
 
 		var themenuChoices = hidden_menu(theNo);
@@ -140,6 +151,7 @@ function hidden_menu(N){
 	choiceStr += '<tr class="fbTR"><td style="display: none;"><div class="fbDiv">' + fbTxt + '</div></td></tr>';
 	var hintTxt = $($(xml).find("hint_l1")[N]).text();
 	choiceStr += '<tr class="hintTR"><td style="display: none;"><div class="hintDiv">' + hintTxt + '</div></td></tr>';
+
 	return choiceStr
 }
 
@@ -152,8 +164,16 @@ function vidBtnClicked(FN){
 	//mediaPath = mediaPath.substr(0, stringcutoff+6) + 'mil/';
 	//alert(mediaPath)
 	loadVideo(mediaPath, vidFN);
+	////new my_menu_class( 'gi_menus' ).init();
+}
+
+
+function dropDownList(FN){
+	var vidFN = FN;
+	loadVideo(mediaPath, vidFN);
 	new my_menu_class( 'gi_menus' ).init();
 }
+
 
 function foundation_menu_class( whoami )
   {
@@ -364,8 +384,8 @@ function my_menu_class( whoami )
 	  //alert('theNo: ' + theNo);
 
       if (theSelectedChoice == correct_ans){
-		$($(".dropdown-text")[theNo]).addClass("itemCompleted");
-		$($(".dropdown-text")[theNo]).html(correct_ans);
+		$($(".dropdown-menu")[theNo]).addClass("itemCompleted");
+		$($(".dropdown-menu")[theNo]).html(correct_ans);
 		$($(".playBtnDiv")[theNo]).html('<img  class="playBtn" src="../common/Library/images/playBtn_s1.png" border="0">');
 		 showFeedback('correct', theFB);
 //		 $("#feedbackHeader").html('<img src="../common/img/feedback_correct.png" width="122px" height:38px">');	
