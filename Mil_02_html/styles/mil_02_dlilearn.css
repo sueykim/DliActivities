@@ -20,11 +20,11 @@
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 #container_setDiv {
-    top: 535px;
+    top: 525px;
     width: 810px;
 }
 #setDiv {
-    left: 685px;
+    left: 695px;
 
 }
 .activity_description {
@@ -53,9 +53,15 @@ html body {
     line-height: 20px;
 }
 .dragBubbleText {
-    left: 5px;
-    position: relative;
-    top: 5px;
+    /*left: 5px;
+    position: relative;  */
+    position: absolute;
+    top: 2px;
+    height:45px;
+    text-align:left;
+    margin-left:10px;
+
+
 }
 #videoContainer {
     background-color: grey;
@@ -86,16 +92,32 @@ html body {
     top: -3px;
 }
 .tlText{
-	height: 50px;
-	overflow: auto;
-	padding: 2px;
+    height: 48px;
+    /*overflow: auto;*/
+    padding: 2px;
+    text-align:left;
+    margin-left:10px;
 }
 .dropTargetText {
-    height: 50px;
-	overflow: auto;
+    height: 48px;
+    /*overflow: auto;*/
+    padding: 2px 2px 2px 15px;
     font-size: 12px;
     position: relative;
+    /*background-color:#EEEEEE;*/
+    border-top: 1px solid #E3E3E3;
+    text-align:left;
 }
+
+.dummy {
+    height: 48px;
+    /*overflow: auto;*/
+    font-size: 12px;
+    position: relative;
+    background-color:#EEEEEE;
+    border-top: 1px solid #E3E3E3;
+}
+
 #dropTargets {
     left: 1px;
     position: absolute;
@@ -107,7 +129,7 @@ html body {
 }
 .dropTarget {
     border-radius: 0 0 0 0;
-    height: 103px;
+    height: 99px;
     margin: 10px 0 10px 43px;
     position: relative;
     width: 220px;
@@ -127,13 +149,13 @@ html body {
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 2px #BDBDBD;
     font-size: 14px;
-    height: 52px;
+    height: 50px;
     margin-bottom: 27px;
     padding: 2px;
     width: 220px;
-	text-align: center;
+	/*text-align: center;*/
 	cursor: pointer;
-	overflow: auto
+	/*overflow: auto*/
 }
 .itemDropped {
 /*    background-color: #F7F7F7;
@@ -154,8 +176,8 @@ html body {
     box-shadow: 0 2px 4px #BDBDBD;
     display: block;
     left: 510px;
-    max-height: 260px;
-    min-height: 260px;
+    max-height: 250px;
+    min-height: 250px;
     padding: 20px;
     position: absolute;
     top: 283px;
@@ -173,10 +195,10 @@ html body {
     margin-top: -10px;
 }
 #feedbackText {
-    width: 300px;
-    min-height: 180px;
-    max-height: 180px;
-    overflow: auto;
+    width: 297px;
+    min-height: 140px;
+    max-height: 140px;
+    /*overflow: auto;*/
 }
 #clickGuard {
 	display: none;
@@ -185,6 +207,6 @@ html body {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	width: 850px;
-	height: 550px;
+	width: 840px;
+	height: 570px;
 }
