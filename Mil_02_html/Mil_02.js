@@ -17,7 +17,7 @@ $(document).ready(function() {
 		$('#dragBubble_' + i).draggable({ revert: true });
 	}
 	
-	//Create drop targets	
+	//Create drop targets
 	for(var i  = 1; i<6; i++){
 		$( "#dropTarget_" + i ).droppable({
 			hoverClass: "dropTargetHover",
@@ -68,6 +68,7 @@ function loadSet(value){
 	updateSetText();
 	
 	$(".dragBubble").css("display", "block");
+	$(".dummy").show();
 	
 	//Load drag bubbles
 	for(var i  = 1; i<6; i++){
@@ -107,7 +108,10 @@ function loadSet(value){
 				$($(xml).find("lang_en")[(currentSet*numItemsPerSet) + i - 1]).text()
 			);
 		$('#dropTargetText_' + i).addClass("displayNone");
-	}	
+	}
+ $(".dragBubbleText").mCustomScrollbar();
+ $(".tlText").mCustomScrollbar();
+
 }
 
 function playVideo(index){
@@ -144,7 +148,9 @@ function dropFunction(event, ui ) {
 		$(this).removeClass("itemNotCompleted");
 		
 		$(this).find(".dropTargetText").removeClass("displayNone");
-		
+		$(this).find(".dummy").hide();
+	        $(this).find(".dropTargetText").mCustomScrollbar();
+
 		showFeedback("correct", 
 			$($(xml).find("feedback")[(currentSet*numItemsPerSet) + (dropTargetNumGot - 1)]).text());
 	}else{
@@ -195,7 +201,8 @@ function showFeedback(value, textInput){
 			break;
 		case "activity_completed":
 			$("#feedbackHeader").html("Activity Completed");
-			$("#feedbackBtn").html("Next Activity");
+			////$("#feedbackBtn").html("Next Activity");
+                        $("#feedbackBtn").hide();
 			break;
 	}
 	$("#feedbackText").mCustomScrollbar();
@@ -249,8 +256,12 @@ function loadNextSet(){
 	
 		if(parent.activityCompleted){
 			parent.activityCompleted(1,0);
+			alert('parent')
+			$("#clickGuard").css("display","block");
 		}else{
 			showFeedback("activity_completed");
+			alert('local')
+                        $("#clickGuard").css("display","block");
 		}
 	}else{
 		loadSet(currentSet + 1);
