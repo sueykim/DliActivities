@@ -375,20 +375,26 @@ div, span{
 .linkClass{
 	border: 1px solid lightgray;
 	background: url("../../common/img/bg_dropbubble_50.png") repeat-x scroll center bottom #F5F5F5;
+	/* ~botros
 	padding-top: 5px;
 	width: 28px;
 	height: 26px;
+    	*/
+    	padding:7px  7px  7px  7px;
 	box-shadow: 1px 1px 1px #BDBDBD;
 	float: left;
 }
 
 .linkClassHighlighted{
-	padding-top: 5px;
 	box-shadow: 1px 1px 1px #BDBDBD;
 	background: url("../../common/img/bg_dropbubble_50.png") repeat-x scroll center bottom #F5F5F5;
 	border: 1px solid lightgray;
+	/* ~botros
+	padding-top: 5px;
 	height: 26px;
 	width: 28px;
+    	*/
+    	padding:7px  7px  7px  7px;
 	float: left;
 	color: red;
 }
@@ -400,11 +406,20 @@ div, span{
 }
 
 #conversationArrow{
-	float: left;	
-	width: 28px;
+	float: right;/*was left*/	
+	width: 20px;/*was 28*/
+	/* ~botros
 	margin-left: 3px;
+	*/
 	padding-left: 2px;
 	padding-top: 5px;
+	padding-right:2px;
+}
+#conversationArrow img{
+    max-width:100%; 
+    max-height:100%;
+    margin:auto;
+    display:block;
 }
 
 #exchangeArrow{
