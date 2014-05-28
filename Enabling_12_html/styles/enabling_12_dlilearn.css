@@ -241,7 +241,7 @@ html body {
 	padding-left: 5px;
 	float: left;
 	height: 60px;
-	overflow: auto;
+	/*overflow: auto;*/
 }
 #ENtext0, #ENtext1, #ENtext2{
 	font-size: 12pt;
@@ -250,7 +250,7 @@ html body {
 	padding-left: 5px;
 	float: left;
 	height: 60px;
-	overflow: auto;
+	/*overflow: auto;*/
 }
 
 #clickGuard{
@@ -310,6 +310,8 @@ html body {
 #feedbackText {
     cursor: default;
     margin-top: -7px;
+    height:80px;
+    width:567px;
 }
 
 
@@ -396,7 +398,7 @@ html body {
     background-color: transparent;
     cursor: default;
     height: 30px;
-    left: 698px;
+    left: 703px;
     position: relative;
     top: 5px;
     width: 115px;
@@ -407,4 +409,8 @@ html body {
 }
 .pull-right {
 	float: right;
+}
+
+.mCSB_container {
+        overflow:visible; 
 }
