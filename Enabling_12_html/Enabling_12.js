@@ -164,7 +164,7 @@ function loadSet(value){
 			else
 				$("#TLtext" + i).html(displayRubyTag(TLtextAry[a]));		
 		}
-			
+
 		$("#ENtext" + i).html(ENtextAry[a]);
 		$("#TLtext" + i).css("direction", TLdir);
 		$("#hiddenText" + i).val(a);	
@@ -176,6 +176,8 @@ function loadSet(value){
 		
 		}
 	//alert('hw_qtext: ' + hw_qtext);
+	 if(currentSet != 0)
+	    $("#TLtext0, #TLtext1, #TLtext2, #ENtext0, #ENtext1, #ENtext2").mCustomScrollbar();
 }
 
 function playVideo(btnNo, videoIndex){
@@ -212,12 +214,13 @@ function selectText(lg){
 function dropFunction(event, ui ) {
 	var dropTargetNumGot = extractLastNumber($(this).attr("id"))-1;	
 	var dragBubbleNum = extractLastNumber($(ui.draggable).attr("id"));
-	
 	var dropTargetNumLookingFor = $("#hiddenText" + dragBubbleNum).val();
 	 // alert(dropTargetNumLookingFor);
 	if(dropTargetNumLookingFor == dropTargetNumGot ){
 		ui.draggable.draggable( 'disable' );
+                $("#dragBtn" + dragBubbleNum).draggable({ revert: false});
 		$(this).droppable( 'disable' );
+
 		var addNoString = '<div class="droppedNo">' +
 						'<img class="droppedNoBtn" src="../common/img/btn_drag_0' + (dragBubbleNum+1) + '.png" border="0">' +
 						'</div>'
@@ -266,7 +269,9 @@ function showFeedback(value, textInput){
 			break;
 	}
 	
-	$('#feedback').show();
+	$('#feedback').show();	
+        $("#feedbackText").mCustomScrollbar();
+
 }
 
 function closeFeedback(){
