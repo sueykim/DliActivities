@@ -195,10 +195,10 @@ function loadActivity(t_activityLoadCallback){
 		var lang_name_long = langName.ja;
 		keyboardFilename = '../common/keyboards/' + lang_name_long + '_keyboard.js';
 
-		$('.activity_hd').html('');
-		$('.activity_description').html('');
 	}
 	
+	$('.activity_hd').html('');
+	$('.activity_description').html('');
 	loadActivityData(null, null, t_activityLoadCallback);
 }
 
