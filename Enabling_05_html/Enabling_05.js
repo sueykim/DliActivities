@@ -52,8 +52,6 @@ $(document).ready(function() {
 		
 	}
 */	
-	$(".activity_hd").html('');
-	$(".activity_description").html('');
 	cssFilename = "styles/Enabling_05_default.css";	
 	cssFilename = "styles/Enabling_05_dliLearn.css";
 	loadActivity(parseXml);
