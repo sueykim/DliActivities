@@ -115,7 +115,9 @@ function loadSet(value){
 				$($(xml).find("lang_en")[(currentSet*numItemsPerSet) + i - 1]).text()
 			);
 		$('#dropTargetText_' + i).addClass("displayNone");
-	}	
+	}
+        
+ $(".dragBubbleText").mCustomScrollbar();
 }
 
 function playVideo(index){
@@ -152,6 +154,7 @@ function dropFunction(event, ui ) {
 		$(this).removeClass("itemNotCompleted");
 		
 		$(this).find(".dropTargetText").removeClass("displayNone");
+	        $(this).find(".dropTargetText").mCustomScrollbar();
 		
 		showFeedback("correct", 
 			$($(xml).find("feedback_l1")[(currentSet*numItemsPerSet) + (dropTargetNumGot - 1)]).text());
@@ -195,7 +198,8 @@ function showFeedback(value, textInput){
 			break;
 		case "activity_completed":
 			$("#feedbackHeader").html("Activity Completed");
-			$("#feedbackBtn").html("Next Activity");
+			////$("#feedbackBtn").html("Next Activity");
+			$("#feedbackBtn").hide();
 			break;
 	}
 	$("#feedbackText").mCustomScrollbar();
@@ -249,8 +253,10 @@ function loadNextSet(){
 	
 		if(parent.activityCompleted){
 			parent.activityCompleted(1,0);
+			$("#clickGuard").css("display","block");
 		}else{
 			showFeedback("activity_completed");
+                        $("#clickGuard").css("display","block");
 		}
 	}else{
 		loadSet(currentSet + 1);
