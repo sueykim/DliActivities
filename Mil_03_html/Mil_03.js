@@ -325,9 +325,9 @@ function foundation_menu_class( whoami )
     e_src = src
 	var theIdNo = e_src.id.substr(14)
 	if(theIdNo > 4)
-		mv( evt.clientX, evt.clientY - 170 )
+		mv( evt.clientX-80, evt.clientY - 170 )
 	else	 
-		mv( evt.clientX, evt.clientY + 10 )
+		mv( evt.clientX-80, evt.clientY + 10 )
     id_menu_box.style.visibility = "visible"
     id_menu_box.innerHTML = xid(e_src.id.substr(1)).innerHTML
     set_TABLE( id_menu_box )
