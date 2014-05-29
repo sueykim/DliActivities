@@ -205,6 +205,14 @@ function parseXml(t_xml){
 	numItems = $(xml).find("item").length;
 	$('#setText').html('1/' + numItems);
 	execute_select_item(0);
+       //alert($("#activityIFrame").attr('src'))
+                  
+       //added to detect the load of the mil_01 into framework then and only then play the video of the first phrase
+       if (parent.window.frames['activityIFrame'] != undefined && parent.window.frames['activityIFrame'].src != '' && parent.window.frames['activityIFrame'].src.toLowerCase().indexOf('mil_01') > -1 )
+       {
+          playTheVideo()
+       }
+       //if (frmsrc != undefined && frmsrc)
 }
 
 function prevItemClick(){
