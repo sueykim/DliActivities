@@ -166,8 +166,8 @@ html body {
     box-shadow: 0 2px 4px #BDBDBD;
     display: block;
     left: 500px;
-    max-height: 160px;
-    min-height: 160px;
+    max-height: 156px;
+    min-height: 156px;
     padding: 20px;
     position: absolute;
     top: 260px;
@@ -183,8 +183,8 @@ html body {
     box-shadow: 0 2px 4px #BDBDBD;
     display: block;
     left: 500px;
-    max-height: 160px;
-    min-height: 160px;
+    max-height: 156px;
+    min-height: 156px;
     padding: 20px;
     position: absolute;
     top: 260px;
@@ -209,10 +209,20 @@ html body {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	width: 850px;
-	height: 570px;
+	width: 840px;
+	height: 550px;
 }
 
+#clickGuardActivity {
+	display: none;
+	opacity: 0.3;
+	background-color: lightgray;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 840px;
+	height: 550px;
+}
 
 .noSelect{
   -webkit-user-select: none;  /* Chrome all / Safari all */
@@ -290,14 +300,14 @@ html body {
     height: 40px;
     left: 0px;
     margin: 10px;
-    top: 460px;
+    top: 456px;
     width: 810px;
 }
 #setDiv {
     background-color: transparent;
     cursor: default;
     height: 30px;
-    left: 685px;
+    left: 705px;
     position: relative;
     top: 5px;
     width: 115px;
@@ -310,3 +320,11 @@ html body {
 	float: right;
 }
 
+#feedbackText {
+    height:86px;
+    width:290px;
+}
+
+#stepPane {
+    height: 550px;
+}
