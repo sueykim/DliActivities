@@ -153,8 +153,9 @@ function correctTimerEnd(){
 	document.getElementById('displayText').innerHTML = copyOfText;
 	
 	$(itemXml).attr('audio');
-	
-	document.getElementById('clickGuard').style.display = "block";
+
+	//document.getElementById('clickGuard').style.display = "block";
+	document.getElementById('clickGuard').style.display = "none";
 	btnLock = false;
 }
 
