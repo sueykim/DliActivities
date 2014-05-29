@@ -1,3 +1,4 @@
+
 #setLabel {
     background-image: url("../../common/img/bg_btn_set.png") !important;
 }
@@ -23,7 +24,7 @@
     width: 820px;
 }
 #setDiv {
-    left: 690px;
+    left: 705px;
 }
 .activity_description {
     font-family: inherit;
@@ -50,13 +51,19 @@ html body {
     letter-spacing: 2px;
     line-height: 20px;
 }
+
+
 .dragBubbleText {
-    left: 3px;
-    position: relative;
-    top: 3px;
-	height: 50px;
-	font-size: 13px;
-	overflow: auto;
+    /*left: 5px;
+    position: relative;  */
+    position: absolute;
+    top: 2px;
+    height:50px;
+    text-align:left;
+    margin-left:10px;
+    font-size: 13px;
+
+
 }
 #videoContainer {
     background-color: grey;
@@ -81,19 +88,27 @@ html body {
     height: 242px;
 }
 .playBtn {
-    height: 55px;
+    height: 50px;
     left: -55px;
     position: absolute;
     top: -3px;
 }
+
+
 .dropTargetText {
+    /*left: 5px;
+    position: relative;  */
+    position: absolute;
+    top: 2px;
+    height:50px;
+    text-align:left;
+    margin-left:10px;
     font-size: 13px;
-    left: 3px;
-    position: relative;
-    top: 3px;
-	height: 50px;
-	overflow: auto;
+
 }
+
+
+
 #dropTargets {
     left: 10px;
     position: absolute;
@@ -106,15 +121,15 @@ html body {
 .dropTarget {
     border-radius: 0 0 0 0;
     height: 60px;
-    margin: 20px 0 40px 53px;
+    margin: 20px 0 43px 53px;
     position: relative;
     width: 220px;
-	text-align: center;
+    /*text-align: center;*/
 }
 #dragBubbles {
     left: 290px;
     position: absolute;
-    top: 30px;
+    top: 31px;
     width: 220px;
 }
 .dragBubble {
@@ -126,10 +141,10 @@ html body {
     box-shadow: 0 2px 2px #BDBDBD;
     font-size: 14px;
     height: 60px;
-    margin-bottom: 28px;
-    padding: 2px;
+    margin-bottom: 22px;
+    padding: 2px 3px;
     width: 220px;
-	text-align: center;
+/*	text-align: center;*/
 	cursor: pointer;
 }
 .itemDropped {
@@ -170,9 +185,9 @@ html body {
     margin-top: -10px;
 }
 #feedbackText {
-    width: 300px;
-    min-height: 115px;
-    max-height: 115px;
+    width: 295px;
+    min-height: 110px;
+    max-height: 110px;
     overflow: auto;
 }
 #clickGuard {
@@ -183,5 +198,5 @@ html body {
 	top: 0px;
 	left: 0px;
 	width: 850px;
-	height: 526px;
+	height: 550px;
 }
