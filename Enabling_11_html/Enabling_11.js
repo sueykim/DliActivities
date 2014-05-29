@@ -482,7 +482,8 @@ function showFeedback(value, textInput){
 	}
 	
 	$('#feedback').show();
-	$("#clickGuard").css("display", "block");	
+	$("#feedbackText").mCustomScrollbar();
+	$("#clickGuard").css("display", "block");
 }
 
 function closeFeedback(){
@@ -540,8 +541,10 @@ function loadNextSet(){
 	
 		if(parent.activityCompleted){
 			parent.activityCompleted(1,0);
+			$("#clickGuardActivity").css("display", "block");
 		}else{
 			showFeedback("activity_completed");
+			$("#clickGuardActivity").css("display", "block");			
 		}
 	}else{
 		$(xml).find("item").shuffle();
