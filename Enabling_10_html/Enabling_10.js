@@ -66,7 +66,7 @@ function parseXml(t_xml){
 	isJapanese = $(xml).find("content").attr("target_language") == "Japanese";
 	
 	//Randomize sets
-	//$(xml).find("item").shuffle()
+	$(xml).find("item").shuffle()
 
 	loadSet(0);
 }
@@ -387,6 +387,7 @@ function my_menu_class( whoami )
 		$($(".dropdown-menu")[theNo]).addClass("itemCompleted");
 		$($(".dropdown-menu")[theNo]).html(correct_ans);
 		$($(".playBtnDiv")[theNo]).html('<img  class="playBtn" src="../common/Library/images/playBtn_s1.png" border="0">');
+		$($(".dropdown-menu")[theNo]).mCustomScrollbar();
 		 showFeedback('correct', theFB);
 //		 $("#feedbackHeader").html('<img src="../common/img/feedback_correct.png" width="122px" height:38px">');	
 //		$('#feedback').show();	
@@ -401,6 +402,8 @@ function my_menu_class( whoami )
 //		document.getElementById('clickGuard').style.display = "block";
 //		timeoutID = window.setTimeout(timerEnd, 500);
 		}
+		
+	$("#feedbackText").mCustomScrollbar();		
       }
     }
   }//my_menu_class
