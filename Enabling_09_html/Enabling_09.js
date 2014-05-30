@@ -35,7 +35,7 @@ $(document).ready(function() {
 	
 	//Create Drag Bubble
 	for(var i  = 1; i<7; i++){
-		$('#dragBubble_' + i).draggable({ revert: true });
+		$('#dragBubble_' + i).draggable({ revert: true, containment:"#main" });
 	}
 	
 	//Create drop targets	
