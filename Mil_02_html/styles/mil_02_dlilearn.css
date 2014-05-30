@@ -20,7 +20,7 @@
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 #container_setDiv {
-    top: 525px;
+    top: 510px;
     width: 810px;
 }
 #setDiv {
@@ -69,7 +69,7 @@ html body {
     height: 243px;
     left: 510px;
     position: absolute;
-    top: 30px;
+    top: 15px;
     width: 324px;
 }
 .displayNone {
@@ -121,7 +121,7 @@ html body {
 #dropTargets {
     left: 1px;
     position: absolute;
-    top: 21px;
+    top: 5px;
     width: 265px;
 }
 #container_setDiv {
@@ -138,7 +138,7 @@ html body {
 #dragBubbles {
     left: 275px;
     position: absolute;
-    top: 30px;
+    top: 15px;
     width: 225px;
 }
 .dragBubble {
@@ -180,7 +180,7 @@ html body {
     min-height: 250px;
     padding: 20px;
     position: absolute;
-    top: 283px;
+    top: 268px;
     width: 326px;
     z-index: 100;
 }
@@ -209,4 +209,10 @@ html body {
 	left: 0px;
 	width: 840px;
 	height: 570px;
+}
+
+#main {
+
+       height:575px;
+       width:840px;
 }
