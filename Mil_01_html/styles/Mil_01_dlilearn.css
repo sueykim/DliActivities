@@ -1,26 +1,4 @@
-@font-face {
-    font-family: 'FuturaMedium';
-    src:url('font/futura-medium-webfont.eot');
-	src: url('font/futura-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/futura-medium-webfont.woff') format('woff'),
-         url('font/futura-medium-webfont.ttf') format('truetype'),
-         url('font/futura-medium-webfont.svg#FuturaMedium') format('svg');
-    font-weight: normal;
-    font-style: normal;
 
-}
-
-@font-face {
-    font-family: 'FuturaBold';
-    src: url('font/futura_bold-webfont.eot');
-    src: url('font/futura_bold-webfont.eot?#iefix') format('eot'),
-         url('font/futura_bold-webfont.woff') format('woff'),
-         url('font/futura_bold-webfont.ttf') format('truetype'),
-         url('font/futura_bold-webfont.svg#webfontrIGithyc') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 .activity_description {
     cursor: default;
     display: block;
@@ -44,8 +22,8 @@
 html body {
     background-color: #F5F5F5;
     color: #444444;
-    /*font-family: Arial,Helvetica,sans-serif;   */
-    font-family: 'FuturaMedium';
+    font-family: Arial,Helvetica,sans-serif;   
+    /*font-family: 'FuturaMedium';   */
     letter-spacing: 2px;
     line-height: 20px;
     -moz-user-select: none;
@@ -54,10 +32,10 @@ html body {
 .allTabs>div{clear:both;margin-top:10px;overflow:auto;}
 
 #main{
-	/*font-family: Arial, Helvetica, sans-serif;   */
+	font-family: Arial, Helvetica, sans-serif;   
 	position:relative;
 	border: 0px solid red;
-	font-family: 'FuturaMedium';
+	/*font-family: 'FuturaMedium'; */
 }
 
 #videoStage{
@@ -78,17 +56,17 @@ html body {
 #engSelectable .ui-selecting { background: #FECA40; }
 #engSelectable .ui-selected { background: #f6a816; color: white; }
 #engSelectable { list-style-type: none; margin: 0; padding: 0; width: 100%; }
-#engSelectable li { margin: 3px; padding: 0.4em; font-size: 12pt; height: auto; font-family: 'FuturaMedium';}     /*height: 18px;*/
+#engSelectable li { margin: 3px; padding: 0.4em; font-size: 12pt; height: auto; }     /*height: 18px;   font-family: 'FuturaMedium';  */
 
 #transliSelectable .ui-selecting { background: #FECA40; }
 #transliSelectable .ui-selected { background: #f6a816; color: white; }
 #transliSelectable { list-style-type: none; margin: 0; padding: 0; width: 100%; }
-#transliSelectable li { margin: 3px; padding: 0.4em; font-size: 12pt; height: auto; font-family: 'FuturaMedium';  }  /*height: 18px;*/
+#transliSelectable li { margin: 3px; padding: 0.4em; font-size: 12pt; height: auto;   }  /*height: 18px;    font-family: 'FuturaMedium';*/
 
 #transSelectable .ui-selecting { background: #FECA40; }
 #transSelectable .ui-selected { background: #f6a816; color: white; } 
 #transSelectable { list-style-type: none; margin: 0; padding: 0; width: 100%; }
-#transSelectable li { margin: 3px; padding: 0.4em; font-size: 14pt; height: auto; font-family: 'FuturaMedium';  }          /*height: 18px;*/
+#transSelectable li { margin: 3px; padding: 0.4em; font-size: 14pt; height: auto;   }          /*height: 18px;   font-family: 'FuturaMedium';  */
 
 .ui-tabs-panel{
 	overflow: auto;
@@ -108,17 +86,17 @@ html body {
 #engPhraseSelectable .ui-selecting { background: #FECA40; }
 #engPhraseSelectable .ui-selected { background: #F39814; color: white; }
 #engPhraseSelectable { list-style-type: none; margin: 0; padding: 0; width: 100%; }
-#engPhraseSelectable li { margin: 3px; padding: 0.4em; font-size: 12pt; height: auto;  font-family: 'FuturaMedium';}   /*height: 18px;*/
+#engPhraseSelectable li { margin: 3px; padding: 0.4em; font-size: 12pt; height: auto;  }   /*height: 18px;   font-family: 'FuturaMedium'; */
 
 #transliPhraseSelectable .ui-selecting { background: #FECA40; }
 #transliPhraseSelectable .ui-selected { background: #F39814; color: white; }
 #transliPhraseSelectable { list-style-type: none; margin: 0; padding: 0; width: 100%; }
-#transliPhraseSelectable li { margin: 3px; padding: 0.4em; font-size: 12pt; height: auto;  font-family: 'FuturaMedium';}    /*height: 18px;*/
+#transliPhraseSelectable li { margin: 3px; padding: 0.4em; font-size: 12pt; height: auto;  }    /*height: 18px;  font-family: 'FuturaMedium';  */
 
 #transPhraseSelectable .ui-selecting { background: #FECA40; }
 #transPhraseSelectable .ui-selected { background: #F39814; color: white; }
 #transPhraseSelectable { list-style-type: none; margin: 0; padding: 0; width: 100%; }
-#transPhraseSelectable li { margin: 3px; padding: 0.4em; font-size: 14pt; height: auto;  font-family: 'FuturaMedium';}   /*height: 18px;*/
+#transPhraseSelectable li { margin: 3px; padding: 0.4em; font-size: 14pt; height: auto;  }   /*height: 18px;  font-family: 'FuturaMedium';  */
 
 
 #videoTag {
