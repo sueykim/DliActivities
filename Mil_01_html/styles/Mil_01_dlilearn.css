@@ -92,7 +92,7 @@ html body {
 
 .ui-tabs-panel{
 	overflow: auto;
-	height: 334px;
+	/* height: 334px; */
 }
 
 #tabs ul {
@@ -264,7 +264,7 @@ html body {
     height: 40px;
     left: 0px;
     margin: 10px;
-    width: 840px;
+    width: 99%;/*840px; */
 	border:0px solid blue;
 }
 #id_setDiv {
@@ -274,7 +274,7 @@ html body {
     top: 5px;
     width: 130px;
 	float: left;
-	margin-left: 540px;
+	margin-left: 530px; /*540px;   */
 }
 #id_prev_next_div{
 	float: left;
