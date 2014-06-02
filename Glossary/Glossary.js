@@ -70,7 +70,7 @@ function updateFilteredItems(){
 		$("#engSelectable > li").each(function(i,v){
 			if($("#filterLetterBar > .filterBtn.toggled").length > 0){
 				//Filter by letters
-				var phraseStartsWith = $(v).text()[0].toUpperCase()
+				var phraseStartsWith = $(v).find("div > .label").text()[0].toUpperCase()
 				
 				if($("#filterLetterBar > .filterBtn.toggled:contains('" + phraseStartsWith + "')").length == 0){
 					$(v).addClass("hidden")
@@ -80,7 +80,7 @@ function updateFilteredItems(){
 			if($("#filterModuleBar > .filterBtn.toggled").length > 0){
 				//Filter items based on module number
 				if($("#filterModuleBar > .filterBtn.toggled:contains('" 
-									+ $(v).attr("moduleNum") + "')").length == 0){
+									+ $(v).attr("modulenum") + "')").length == 0){
 					$(v).addClass("hidden")
 				}
 			}
@@ -89,12 +89,15 @@ function updateFilteredItems(){
 			if($("#filterTaskBar > .filterBtn.toggled").length > 0){
 				//Filter items based on module number
 				if($("#filterTaskBar > .filterBtn.toggled:contains('" 
-									+ $(v).attr("taskNum") + "')").length == 0){
+									+ $(v).attr("tasknum") + "')").length == 0){
 					$(v).addClass("hidden")
 				}
 			}
 		})
 	}
+	
+	setTimeout(function(){
+		$("#engTab").mCustomScrollbar("update")}, 500)
 }
 
 function scrollToItem(value, scrollInertia){
@@ -203,10 +206,14 @@ function parseXml(t_xml){
 		var modNum = parseInt(parts[2])
 		var taskNum = parseInt(parts[3])
 		
-		engHtml = engHtml + ' <li class="ui-widget-content enw_li" '  
-						+ " moduleNum='" + modNum + "' " 
-						+ " taskNum='" + taskNum + "' " 
-						+ '>' + $(v).find("english").text()
+		var itemSnipClone = $("#itemSnip").clone()
+		
+		itemSnipClone.attr("modulenum", modNum)
+		itemSnipClone.attr("tasknum", taskNum)
+		itemSnipClone.find(".label").text($(v).find("english").text())
+		
+		engHtml = engHtml + itemSnipClone.html()
+		
 		if(params['debug'] != undefined){
 			engHtml += " :" + modNum + "," + taskNum 
 		}
@@ -235,6 +242,9 @@ function parseXml(t_xml){
 	if(params['performanceChecks'] != undefined){
 		alert("function parseXml finished")
 	}
+	
+	setTimeout(function(){
+		$("#engTab").mCustomScrollbar()}, 500)	
 }
 
 function prevItemClick(){

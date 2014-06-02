@@ -33,7 +33,7 @@ html body {
 #engSelectable .ui-selecting { background: #FECA40; }
 #engSelectable .ui-selected { background: #D8A037; color: white; }
 #engSelectable { list-style-type: none; margin: 0; padding: 0; width: 100%; }
-#engSelectable li { margin: 3px; padding: 0.4em; font-size: 12px; height: 18px; border: 0px; cursor: pointer; background: transparent;}
+#engSelectable li { margin: 3px; padding: 0.4em; font-size: 12px; border: 0px; cursor: pointer; background: transparent; clear: both;}
 
 .ui-tabs-panel{
 	overflow: auto;
@@ -332,4 +332,24 @@ html body {
     font-family: FuturaBold;
 	
     float: right;
+}
+
+li > div > .label{
+	margin-left:7px;
+	margin-top:2px;
+	width: 385px;
+}
+
+.playItemBtn:hover{
+    background-image: url("../../common/Library/images/playBtn_s2.png");
+}
+
+.playItemBtn{
+	box-shadow: 2px 2px 5px #BDBDBD;
+    width: 20px;
+	float: left;
+    margin-right: 7px;
+	background-image: url("../../common/Library/images/playBtn_s1.png");
+	height: 20px;
+	background-size: cover;
 }
