@@ -14,7 +14,21 @@ $(document).ready(function () {
 	$(".activity_hd").html('');
 	$(".activity_description").html('');
 	loadActivity(parseXml);
-});
+	
+	
+	//bind text input with mouse click
+	$('#scratchText')   //leave submit buttons, etc alone
+          .bind( 'focus', function() {                //focus is more accessible than click
+                                                      //a user can't change a field without it
+              $(this)
+                 .attr('value', '')                   //more chaining = less searching
+                 //.css('color','#000');
+             })  ;
+          //.bind( 'blur', function() {                 //supposing you want to revert back on blur...
+          //    $(this)
+                 //.css('color','#ccc');
+          //   });
+        });
 
 var xml;
 function parseXml(t_xml)

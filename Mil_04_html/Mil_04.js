@@ -200,7 +200,7 @@ function foundation_menu_class( whoami )
   this.do_out = function(a)
     {
     ch_row[a].style.cursor = 'default'
-    timer_set( 500 )
+    timer_set( 2000 )
     }
   this.do_click = function(a)
     {
@@ -229,7 +229,7 @@ function foundation_menu_class( whoami )
           var c = a[i]
           c.onmouseout = function()
             {
-            timer_set( 600 )
+            timer_set( 1000 )
             }
           c.onclick =new Function(spf("~.m_over(arguments[0], this)", [whoami]))
           }
@@ -274,10 +274,20 @@ function foundation_menu_class( whoami )
     timer_clear()
     e_src = src
 	var theIdNo = e_src.id.substr(14)
-	if(theIdNo > 5)
-		mv( evt.clientX, evt.clientY - 170 )
-	else	 
-		mv( evt.clientX, evt.clientY + 18 )
+	
+	if(evt.clientX > 100) {
+        	if(theIdNo > 5)
+        		mv( evt.clientX-80, evt.clientY - 170 )
+        	else	 
+        		mv( evt.clientX-80, evt.clientY + 18 )
+           }
+        else {
+        	if(theIdNo > 5)
+        		mv( evt.clientX, evt.clientY - 170 )
+        	else	 
+        		mv( evt.clientX, evt.clientY + 18 )
+         }
+
     id_menu_box.style.visibility = "visible"
     id_menu_box.innerHTML = xid(e_src.id.substr(1)).innerHTML
     set_TABLE( id_menu_box )
@@ -390,7 +400,7 @@ function evaluateIsTied(){
 	var sLen = $(".showResult").length;
 	for (var i=0; i < sLen; i++)
 		if ($($(".showResult")[i]).css('display') == 'none')
-			return false;  
+			return false;
 	return true;
 	}
 			
@@ -442,8 +452,20 @@ function checkCompleted(){
 		//Check for set completed
 		var theTie = evaluateIsTied();
 		if(theTie){
-			setCompletedShown = true;
-			showFeedback("set_completed", "This round is a draw.");
+                        var winnerDecided = evaluateThreeInARow();
+			if (winnerDecided && whoWin=='O'){
+				showFeedback("set_completed", "You won this round.");
+				setCompletedShown = true;
+			}	
+			else if (winnerDecided && whoWin=='X'){
+				showFeedback("set_completed", "You lost this round.");
+				setCompletedShown = true;
+			}
+
+                        else {
+                               showFeedback("set_completed", "This round is a draw.");
+                               	setCompletedShown = true;
+                        }
 		}
 		else{
 			var winnerDecided = evaluateThreeInARow();
@@ -456,7 +478,7 @@ function checkCompleted(){
 				setCompletedShown = true;
 			}
 		}
-	}	
+	}
 }
 
 function loadNextSet(){
