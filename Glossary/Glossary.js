@@ -129,7 +129,7 @@ function listItemSelected(event, ui){
 	
 }
 function execute_select_item(tally){
-	$(".itemInfo_Index").text((tally+1) + "/" + (numItems + 1))
+	$(".itemInfo_Index").text((tally+1) + "/" + (numItems))
 	
 	$("#engSelectable li").removeClass("ui-selected");
 	$($("#engSelectable li")[tally]).addClass("ui-selected");
