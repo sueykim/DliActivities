@@ -31,6 +31,7 @@
 	display:block;
 	width:100%;
 	height:100%;
+	background-color:#090
 }
 
 .card img {
@@ -50,19 +51,25 @@
 	font-family:'Arial';
 	font-weight:bold;
 	font-size:14px;
+	margin:0px;
+	padding:0px;
+	text-align:center;
 }
 
 .card .card-detail p {
+	position:absolute;
 	display:block;
-	width:75%;
-	height:75%;	
+	width:100px;
+	height:148px;	
 	font-weight:bold;	
 	color:#333;				
 	font-family: 'Arial';
-	font-size:18px;
+	font-size:14px;
 	text-align:center;
 	margin:10px;
-	padding: 45px,5px,5px,5px;	
+	padding: 0px;
+	z-index:10000;
+	background-color:#0F6;
 
 
 }		
