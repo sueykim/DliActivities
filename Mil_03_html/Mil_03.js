@@ -159,8 +159,8 @@ function vidBtnClicked(FN){
 
 function dropDownList(FN){
 	var vidFN = FN;
-	loadVideo(mediaPath, vidFN);
 	new my_menu_class( 'gi_menus' ).init();
+	loadVideo(mediaPath, vidFN);	
 }
 
 function foundation_menu_class( whoami )
@@ -279,7 +279,7 @@ function foundation_menu_class( whoami )
           var c = a[i]
           c.onmouseout = function()
             {
-            timer_set( 800 )
+            ////timer_set( 800 )
             }
           c.onclick =new Function(spf("~.m_over(arguments[0], this)", [whoami]))
           }
