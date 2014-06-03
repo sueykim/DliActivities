@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 170px;
     padding: 15px;
     position: relative;
-	top: 50px !important;
+	top: 80px !important;
     /* width: 620px; */
 	width: 590px;
     z-index: 100;
@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 #feedbackText {
 	top: 0px;
 	/* width: 602px;  */
-	width: 572px; 
+	width: 562px; 
 	height: 74px;
 	overflow:auto;
 }
@@ -205,7 +205,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding-right:18px;
 	/* width: 558px; */
 	width: 508px;
-	height: 236px;
+	height: 296px;
 }
 
 .boxBGForChoice{
@@ -223,7 +223,7 @@ h1, h2, h3, h4, h5, h6 {
 	top: 0;
 	/* width: 890px; */
 	width: 840px;
-	height: 500px;
+	height: 560px;
 	z-index: 6;
 	border: solid thin gray;
 	background-color: gray;
@@ -234,7 +234,7 @@ h1, h2, h3, h4, h5, h6 {
 #container_setDiv{
 	height: 40px;
 	position: absolute;
-	top: 254px;
+	top: 314px;
 	/* width: 882px !important; */
 	width: 832px !important;
 	text-align:right;
@@ -342,7 +342,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: -3px;
 	padding-top: 0px; 
 	padding-bottom: 0px; 
-	height: 240px;
+	height: 300px;
 }
 
 #sortableOrderDiv {
@@ -356,9 +356,9 @@ h1, h2, h3, h4, h5, h6 {
 	padding-right: 4px;
 	margin-top: 3px; 
 	margin-bottom: 3px; 
-	height: 32px;
+	height: 42px;
 	text-align: center;
-	line-height: 32px;
+	line-height: 30px;
 }
 
 
@@ -373,16 +373,18 @@ h1, h2, h3, h4, h5, h6 {
 .sortableDivItem {
 	margin-top: 3px; 
 	margin-bottom: 3px; 
-	height: 32px;
+	height: 42px;
 }
 .sortableDivItem:hover {
 	cursor: pointer;
 	background-color: #dedede;
 }
 .sortableSpanItem{
-	line-height: 30px;
+	line-height: 16px;
 	padding-left: 10px;
 	padding-right: 10px;
+	padding-top: 4px;
+	display: table-cell;
 }
 
 .roundCorners {
