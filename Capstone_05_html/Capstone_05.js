@@ -300,7 +300,7 @@ function playVideo(index){
 
 function showFeedback(value, textInput){
 	//Enable the clickguard
-	$('#clickGuard').css('height', '300');
+	$('#clickGuard').css('height', '360');
 	$('#clickGuard').css('display', 'block');
 	$('#clickGuard').css('z-index', $('#feedback').css('z-index')-2);
 	
@@ -363,7 +363,7 @@ function closeFeedback(){
 		$('.playBtn').css('z-index', '6');
 	}
 	
-	$('#clickGuard').css('height', '244');
+	$('#clickGuard').css('height', '304');
 	checkCompleted();
 }
 
