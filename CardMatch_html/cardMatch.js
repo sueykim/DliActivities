@@ -15,12 +15,14 @@ $(document).ready(function() {
 });
 
 var flipCardPossible = false;
+var toggle=false;
 function enableCardFlip(){
 	if ($('html').hasClass('csstransforms3d')) {	
 			flipCardPossible = true;
 			$('.card').removeClass('scroll').addClass('flip');		
 			$('.card.flip').click(
 				function () {
+				toggle=true;
 					$(this).find('.card-wrapper').addClass('flipIt');					
 					showFront(extractLastNumber($(this).attr("id")));
 				}
@@ -30,6 +32,7 @@ function enableCardFlip(){
 			//alert('ie');
 			$('.card').click(
 				function () {
+					toggle=true;
 					$(this).find('img').attr('src','../common/Library/images/card_front.png');
 					$(this).find('.card-detail').css('display','block');
 					$(this).find('.card-detail').css('bottom',0);
@@ -78,15 +81,19 @@ function loadSet(value){
 	var EN = $($(xml).find("lang_en")[startIndex + i]).text();
 	var aud = $($(xml).find("audio")[startIndex + i]).text();
 	var itemID = $($(xml).find("item")[startIndex + i]).attr("id");
-
-	var tl_str = '<input type="text" value="' + itemID + '" class="hiddenId" />'
+if (parseInt(itemID) >10)
+ 	var width= "25px";
+ else
+  	var width= "18px";
+ 
+	var tl_str = '<div class="hiddenId" style="width:'+width+'">' + itemID + '</div>'
 				+ '<p>' + TL + '</p>'
 				+ '<input type="hidden" value="' + aud + '" class="hiddenAud" />';
 	$("#cardInside" + a).html(tl_str);
 	a = hatA.get();
 	answeredAry.push(0);
-	var en_str = '<input type="text" value="' + itemID + '" class="hiddenId"/>'
-				+ '<p style="font-size:14px;">' + EN + '</p>';
+	var en_str = '<div class="hiddenId" style="width:'+width+'">' + itemID + '</div>'
+				+ '<p>' + EN + '</p>';
 	$("#cardInside" + a).html(en_str);
 	}
     
@@ -108,28 +115,29 @@ function showFront(No){
 	}
 
 	//to push the data into choiceData
-	if (answeredAry[No] == 0 && No != choiceData[1]){
-		var item_id = $("#cardContainer" + No).find('.hiddenId').attr('value');
+	if (answeredAry[No] == 0 && (No != choiceData[1]) && toggle){
+		var item_id = $.trim($("#cardContainer" + No).find('.hiddenId').html());
 		choiceData.push(item_id);
 		choiceData.push(No);
 	}
-	
 	//if it has 2 items to compare:
 	if (choiceData.length > 3){	  
 		judgingChoices();
 	} 
 	else
-	{$("#clickGuard").css("display", "none");}    
+	{$("#clickGuard").css("display", "none");}
+	toggle=false;    
 }	
 
 function judgingChoices(){
+	
    $("#clickGuard").css("display", "block");
 	if (choiceData.length > 3){	
 		var item1 = choiceData[1];
 		var item2 = choiceData[3];
 		if (choiceData[0] == choiceData[2]){
-			$("#cardContainer" + item1).find('.hiddenId').css('visibility', 'hidden');
-			$("#cardContainer" + item2).find('.hiddenId').css('visibility', 'hidden');
+		$("#cardContainer" + item1).find('.hiddenId').css('visibility', 'visible');
+			$("#cardContainer" + item2).find('.hiddenId').css('visibility', 'visible');
 			choiceData = [];
 			answeredAry[item1] = answeredAry[item2] = 1;
 			setItemCompleted++;
@@ -140,7 +148,10 @@ function judgingChoices(){
 			choiceData = [];
 			setTimeout(function(){
 			showback(item1);
-			showback(item2);}, 2000);
+			showback(item2);
+			$("#clickGuard").css("display", "none");
+			
+			}, 2000);
 		}		
    }	
 	
@@ -156,7 +167,7 @@ function showback(No){
 		$(containr).find('.card-detail').css('display','none');
 		$(containr).find('.card-detail').css('bottom','-280px');
 	}
-  setTimeout(function(){$("#clickGuard").css("display", "none")},1500);	
+  	
 }
 
 function playAudio(value){	
