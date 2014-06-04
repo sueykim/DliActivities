@@ -46,17 +46,28 @@ function loadSet(value){
         //hide all audio play buttons if no video attached
         if (jSet.find("correct_response_media").text() == '' && jSet.find("d_1_media").text() == '' && jSet.find("d_2_media").text() == '')
         {
-          if(true)
+          if(params['standardMode'] == 'true')
           {  //(params['standardMode'] == 'true')
 		$('#selections .playSelBtn').hide()
-
-
           }
           else
           {
 		$("#sel1 > .playSelBtn").hide()
 		$("#sel2 > .playSelBtn").hide()
 		$("#sel3 > .playSelBtn").hide()
+          }
+        }
+        else
+        {
+          if(params['standardMode'] == 'true')
+          {  //(params['standardMode'] == 'true')
+		$('#selections .playSelBtn').show()
+          }
+          else
+          {
+		$("#sel1 > .playSelBtn").show()
+		$("#sel2 > .playSelBtn").show()
+		$("#sel3 > .playSelBtn").show()
           }
         }
 
