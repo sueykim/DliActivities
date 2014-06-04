@@ -50,7 +50,7 @@ function initEnable22() {
 	//if (!statusParameters) {
 			 mediaPath 	= "activityData/media/";
 			 xmlPath 	= "activityData/";
-			xmlFilename =   xmlPath  + "xml/enabling_22.xml"; //xml url
+			xmlFilename =   xmlPath  + "xml/ta_01_07_13_04.xml"; //xml url
 			jsonFilename = xmlPath  + "json/enabling_22.js"; //json file url
 	//}
 	/*else {
@@ -248,6 +248,7 @@ function loadSet() {
 	  if ($(mSectionElem).find("image").text() != "") {
 		  var imageVideoAudio = document.createElement("img");
               imageVideoAudio.id = "imageVideoAudio";
+			  //alert(mediaPath +"png/"+$(mSectionElem).find("image").text());
 			  imageVideoAudio.setAttribute("src", mediaPath +"png/"+$(mSectionElem).find("image").text());
 			  document.getElementById("videoDiv").appendChild(imageVideoAudio);
 	  }
@@ -297,7 +298,7 @@ function loadSet() {
 						}
 	  }
 	  
-	  var index=0;
+	  var index=1;
 		var engIndex=0;
 		$(mSectionElem).find("tl_sentence").each(function(){
 			if ($(this).text() != "") {
@@ -323,11 +324,11 @@ function loadSet() {
 							var dropDiv = document.createElement("div");
 							//dropDiv.innerHTML = words[i];
 							if (!isJapanese) {
-								dropDiv.innerHTML = words[i];
+								dropDiv.innerHTML = $.trim(words[i]);
 							}
 							else {
 								// To display ruby tag
-								dropDiv.innerHTML = displayRubyTag(words[i]);
+								dropDiv.innerHTML = displayRubyTag($.trim(words[i]));
 							}
 							dropDiv.setAttribute("dir", $(this).attr("dir"));
 							dropDiv.id = "word" +index;
@@ -344,10 +345,10 @@ function loadSet() {
 						if (words[i] != "") {
 							var dropDiv = document.createElement("div");
 							if (!isJapanese) 
-								dropDiv.innerHTML = words[i];
+								dropDiv.innerHTML = $.trim(words[i]);
 							else 
 											// To display ruby tag
-								dropDiv.innerHTML = displayRubyTag(words[i]);
+								dropDiv.innerHTML = displayRubyTag($.trim(words[i]));
 							dropDiv.setAttribute("dir", $(this).attr("dir"));
 							dropDiv.id = "word" +index;
 								index++;
@@ -367,69 +368,112 @@ function loadSet() {
 					
 				}
 				else {
-					$(".dropBubble").css({"height": "18px"}); 
-					$(".dropBubble").css({"line-height": "18px"}); 
+					$(".dropBubble").css({"height": "28px"}); 
+					$(".dropBubble").css({"line-height": "28px"}); 
 				}
 			}
 		});
 	   
 	  var i=0;
+	  var maxWidth=0;
 		$(mSectionElem).find("tl_word").each(function(){
 			if ($(this).text() != "") {
 				if (mSectionElem.attr("completed") != "true") {
+					var posit = $(this).attr("posit");
 					gtotalItemsCorrect++;
 						if ($(this).attr("completed") != "true") {
 								var dragDiv = document.createElement("div");
-									dragDiv.setAttribute("dir", $(this).attr("dir"));
-									
+								$('#dragPanel').append(dragDiv);
+								var drag = document.createElement("div");
+								    dragDiv.appendChild(drag);
+									drag.setAttribute("dir", $(this).attr("dir"));
+									if ((parseInt($.trim($(this).attr("posit"))) > 0) && ( $.trim($(this).text()).toLowerCase() == $.trim($("#word" +posit).html().toLowerCase().replace(/[!?;:,.]/gi, '')))) {
+											 $("#word" +$(this).attr("posit")).removeClass( "dropBubble" ).addClass( "dropWord" );
+											  $("#word" +$(this).attr("posit")).html("");
+									} else {
+									    var wordTarget= $.trim($(this).text()).toLowerCase();
+										$(".dropBubble").each(function(){
+												var text= $.trim($(this).text().toLowerCase().replace(/[!?;:,.]/gi, ''));
+												if (wordTarget == text) {
+													posit= $(this).attr("id").replace("word","");
+													$("#word" +posit).removeClass( "dropBubble" ).addClass( "dropWord" );
+													$("#word" +posit).html("");
+												}
+										});
+									}
 									//dragDiv.innerHTML = $(this).text();
 									if (!isJapanese) {
-										dragDiv.innerHTML = $(this).text();
+										drag.innerHTML = $.trim($(this).text());
 									}
 									else {
 										// To display ruby tag
-										dragDiv.innerHTML = displayRubyTag($(this).text());
+										drag.innerHTML = displayRubyTag($.trim($(this).text()));
 									}
 									
-									dragDiv.id = "correct" +i;
+									drag.id = "correct" +posit;
+									$(drag).data(drag.id, i);
 										i++;
+										$(drag).css("position","absolute");
+										if ( maxWidth < $(drag).width())
+										 	maxWidth = $(drag).width();
+										$(drag).css("position","");
+											
+									drag.className = 'drag';
 									dragDiv.className = 'dragBubble';
-									$('#dragPanel').append(dragDiv);
+									
 						} else {
 							i++;
+							
 								var wordsPosition = $(this).attr("posit");
 								var numWords = wordsPosition.split(",");
 								for ( var z=0; z < numWords.length; z++) { 
-										var id = "word" +(numWords[z] -1);
-										$("#"+id).css({"visibility":"visible", "color": "#7b0026" });
+										var id = "word" +(numWords[z]);
+										$("#"+id).css({"visibility":"visible", "color": "#000", "border-bottom":"1px solid #000"});
 								}
 					  }
 				}
 			}
 		});
+		
 		i=0;
 		$(mSectionElem).find("dist_word").each(function(){
 			if ($(this).text() != "") {
-				           var dragDiv = document.createElement("div");
-							dragDiv.setAttribute("dir", $(this).attr("dir"));
+				var duplicate = false;
+				var word= $.trim($(this).text()).toLowerCase();
+				$(mSectionElem).find("tl_word").each(function(){
+					if (word==$.trim($(this).text()).toLowerCase())
+					   duplicate=true;
+				});
+				
+				if(!duplicate) {
+				          	var dragDiv = document.createElement("div");
+							$('#dragPanel').append(dragDiv);
+								var drag = document.createElement("div");
+								    dragDiv.appendChild(drag);
+							drag.setAttribute("dir", $(this).attr("dir"));
 							
 							//dragDiv.innerHTML = $(this).text();
-							if (!isJapanese) {
-								dragDiv.innerHTML = $(this).text();
-							}
-							else {
-								// To display ruby tag
-								dragDiv.innerHTML = displayRubyTag($(this).text());
-							}
+									if (!isJapanese) {
+										drag.innerHTML = $.trim($(this).text());
+									}
+									else {
+										// To display ruby tag
+										drag.innerHTML = displayRubyTag($.trim($(this).text()));
+									}
 							
-							dragDiv.id = "distractor" +i;
+							drag.id = "distractor" +i;
 							i++;
+							$(drag).css("position","absolute");
+							if ( maxWidth < $(drag).width())
+								maxWidth = $(drag).width();
+							$(drag).css("position","");
+							drag.className = 'drag';
 							dragDiv.className = 'dragBubble';
-							$('#dragPanel').append(dragDiv);
+				}
 				
 			}
 		});
-		
+		$('.dropWord').width(maxWidth+15);
 		if($('#dragPanel').outerHeight( true ) >255){
 			$('#contentPanel').height(258);
 			$('#dropPanel, #dropContentArea').width(416);
@@ -448,27 +492,28 @@ function loadSet() {
 				$('#dropContentArea, #dropPanel').height(245);
 		}
 		$(".dragBubble").shuffle();
-		$('.dragBubble').draggable({
+		$('.drag').draggable({
 						revert: true,
 						containment:"#contentPanel", 
 						zIndex: 50, 
 						start: function( event, ui ) {
 							$("#feedbackEn22").hide();
 							
+							
 							//clearTimeout(setTimeVariable);
 						}
 		 });
-		$( "#dropPanel").droppable({drop: dropFunction}); 
+		$( ".dropWord").droppable({drop: dropFunction}); 
 		if (mSectionElem.attr("completed") == "true") {
-				$( ".dragBubble" ).draggable( "disable" );
+				 $('.drag').draggable( 'disable' );
 				$(".englishSentence").css({"visibility":"visible"});
 				
 					$(mSectionElem).find("tl_word").each(function(){
 					var wordsPosition = $(this).attr("posit");
 						var numWords = wordsPosition.split(",");
 						for ( var z=0; z < numWords.length; z++) { 
-							var id = "word" +(numWords[z] -1);
-								$("#"+id).css({"visibility":"visible", "color": "#7b0026" });
+							var id = "word" +(numWords[z]);
+								$("#"+id).css({"visibility":"visible", "color": "#000", "border-bottom":"1px solid #000"});
 						}
 				});
 				
@@ -484,10 +529,10 @@ function loadSet() {
 			     if(parent.activityCompleted)
 						parent.activityCompleted(1,0);
 				else
-						showFeedback("activity_completed", "The Activity is completed.");
+						showFeedback("activity_completed", "");
 												 
 			} else {
-				 showFeedback("set_completed", "The Set " +(gCurrentSet+1) + '/' + gTotalSetNumber +" is completed."); 
+				 showFeedback("set_completed", ""); 
 		   }
 		}
 					
@@ -499,6 +544,8 @@ function dropFunction(event, ui ) {
 	
 	var userAnswer = "";
 				var name= $(ui.draggable).attr("id");
+				var dropTargetId = event.target.id;
+				
 					if (mSectionElem.attr("answerAttempts")) {
 							var num = parseFloat(mSectionElem.attr("answerAttempts")) +1;
 								mSectionElem.attr("answerAttempts", num);
@@ -506,25 +553,38 @@ function dropFunction(event, ui ) {
 				     			mSectionElem.attr("answerAttempts", "1");
 				
 				if(name.indexOf("correct") > -1 ){
+					var dropTargetNum = dropTargetId.replace("word", "") ;
+					var dragTargetNum= name.replace("correct", "");
+					if(dropTargetNum == dragTargetNum){
 						if (mSectionElem.attr("totalItemsCompleted"))
 					      		 mSectionElem.attr("totalItemsCompleted", parseFloat (mSectionElem.attr("totalItemsCompleted")) +1);
 				   		else
 						   mSectionElem.attr("totalItemsCompleted", 1);
 						   userAnswer = $(ui.draggable).html() +" -- Correct!"
-						ui.draggable.draggable( 'disable' );
-						$(ui.draggable).css("opacity", "0");
-						var i = parseFloat(name.replace("correct", ""));
-						$($(mSectionElem).find("tl_word")[i]).attr("completed", "true");
+						$(ui.draggable).parent().css("visibility","hidden");
+						$("#"+dropTargetId).removeClass( "dropWord" ).addClass("dropCompleted" );
+						$("#"+dropTargetId).html($(ui.draggable).html());
+						$("#"+dropTargetId).css("width","");
+						 if (parseFloat (mSectionElem.attr("totalItemsCompleted")) == gtotalItemsCorrect) {
+							 $(".englishSentence").css({"visibility":"visible"});
+						       $('.drag').draggable( 'disable' );
+							   mSectionElem.attr("completed", "true");
+							   gTotalsectionCompleted++;
+							   $("#dropContentArea").mCustomScrollbar({
+              									 scrollButtons: { enable: true },
+                								 theme: "dark-2"
+           						});
+						 }
 						
-						var wordsPosition = $($(mSectionElem).find("tl_word")[i]).attr("posit");
-						var numWords = wordsPosition.split(",");
-						for ( var z=0; z < numWords.length; z++) { 
-							var id = "word" +(numWords[z] -1);
-								$("#"+id).css({"visibility":"visible", "color": "#7b0026" });
-						}
-					 
+						var i = $("#"+name).data(name);
+						$($(mSectionElem).find("tl_word")[i]).attr("completed", "true");
 						 showFeedback("correct", "<div id='engFeedback'>" + $($(mSectionElem).find("feedback")[i]).text() + "</div>"); 
-						$("#engFeedback").css("color", $(mSectionElem).find("enColor").text());
+						//$("#engFeedback").css("color", $(mSectionElem).find("enColor").text());
+					} else {
+					      userAnswer = $(ui.draggable).html() +" -- Incorrect!";
+						  showFeedback("wrong", "That answer is incorrect.");
+						
+					}
 						
 				} else {
 					 userAnswer = $(ui.draggable).html() +" -- Incorrect!";
@@ -694,7 +754,7 @@ function checkVideoFormat() {
 function showFeedback(type, string) {
  $("#feedbackEn22").toggle();
  $("#closeFeedbackBtn").unbind('click');
- $("#feedbackBody").html(string);
+
  var mSectionElem = $(gXmlEnable22).find("section").eq(gCurrentSet);
 
     if (type == "correct") 
@@ -719,62 +779,26 @@ function showFeedback(type, string) {
 	        $("#titleFeedBack").html("<div class='feedbackTitle'>SET COMPLETED!</div>");
 		 
     }
-	if (type == "correct"){
-  if (parseFloat (mSectionElem.attr("totalItemsCompleted")) == gtotalItemsCorrect) {
-	 
-							mSectionElem.attr("completed", "true");
-							gTotalsectionCompleted++;
-							
-							setTimeVariable = setTimeout(function(){
-									$(".englishSentence").css({"visibility":"visible"});
-									$(".dropBubble").css({"visibility":"visible"});
-									$("#dropContentArea").mCustomScrollbar({
-              									 scrollButtons: { enable: true },
-                								 theme: "dark-2"
-           							});
-								if (gTotalsectionCompleted == gTotalSetNumber) {
-									  if(parent.activityCompleted)
-											parent.activityCompleted(1,0);
-									  else {
-										  	$("#titleFeedBack").html("<div class='feedbackTitle'>ACTIVITY COMPLETED!</div>");
-								   			$("#feedbackBody").html( "The Activity is completed.");
-								   			type="set_completed";
-									  }
-								 } 
-							},3000);
-							$( ".dragBubble" ).draggable( "disable" );
+	if ((gTotalsectionCompleted == gTotalSetNumber) || (type == "activity_completed")) {
+	     	string += "<div class='activityCompleted'>The activity is completed.</div>";
+			$("#closeFeedbackBtn").toggle();
 	}
+	else {
+			if ((parseFloat (mSectionElem.attr("totalItemsCompleted")) == gtotalItemsCorrect) || (type == "set_completed") ) 
+	     			string += "<div class='activityCompleted'>The set is completed.</div>";
 	}
+	
+	 $("#feedbackBody").html(string);
 	$("#closeFeedbackBtn").click(function () {
         $("#feedbackEn22").hide();
 		okButtonIsClicked(type);
     });
+	
 }
   //this function will close the popup if ok button is clicked
 function okButtonIsClicked(type) {
 var mSectionElem = $(gXmlEnable22).find("section").eq(gCurrentSet);
-if (type == "correct"){
-if (parseFloat (mSectionElem.attr("totalItemsCompleted")) == gtotalItemsCorrect) {
-	$(".englishSentence").css({"visibility":"visible"});
-	$(".dropBubble").css({"visibility":"visible"});
-	$("#dropContentArea").mCustomScrollbar({
-              			 scrollButtons: { enable: true },
-                		 theme: "dark-2"
-    });
-	if (gTotalsectionCompleted == gTotalSetNumber) {
-					if(parent.activityCompleted)
-							parent.activityCompleted(1,0);
-					 else
-							showFeedback("activity_completed", "The Activity is completed.");
-	} else {
-			 	showFeedback("set_completed", "The Set " +(gCurrentSet+1) + '/' + gTotalSetNumber +" is completed."); 
-						          		 
-			}
-		
-		$( ".dragBubble" ).draggable( "disable" );
-}
-}
-if (type == "set_completed")
+if ((parseFloat (mSectionElem.attr("totalItemsCompleted")) == gtotalItemsCorrect) || (type == "set_completed"))
   if (gCurrentSet < (gTotalSetNumber-1)) {
 	  gCurrentSet++;
 	  loadSet();
