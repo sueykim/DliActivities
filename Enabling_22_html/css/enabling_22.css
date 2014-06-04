@@ -199,7 +199,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	margin:0px;
 	padding:0px;
 	font-size:12px;
-	color:#989898;
+	color:#000;
 	letter-spacing:2px;
 	border:1px solid #cecece;
 	-webkit-border-radius:5px;
@@ -223,7 +223,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	padding:0px;
 	font-family: 'FuturaMedium';
 	font-size:14px;
-	color:#757575;
+	color:#000;
     background-clip: padding-box;
     background-color: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.3);
@@ -255,7 +255,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', end
 	width:475px;
 	left:15px;
 	top:25px;
+	font-family: 'FuturaMedium';
+	font-size:14px;
+	color:#000;
 	
+}
+#engFeedback {
+	font-family: 'FuturaMedium';
+	font-size:14px;
+	color:#000;
 }
 #feedbackBottom {
 	position:absolute;
@@ -325,7 +333,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', end
 	color:#757575;
 	text-align:center;
 	margin:5px 0px 0px 8px;
-	padding-top:10px;
+	padding:0px;
 	background: #ffffff; /* Old browsers */
 background: -moz-linear-gradient(top,  #ffffff 0%, #f4f4f4 50%, #ebebeb 76%, #e7e7e7 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f4f4f4), color-stop(76%,#ebebeb), color-stop(100%,#e7e7e7)); /* Chrome,Safari4+ */
@@ -334,6 +342,16 @@ background: -o-linear-gradient(top,  #ffffff 0%,#f4f4f4 50%,#ebebeb 76%,#e7e7e7 
 background: -ms-linear-gradient(top,  #ffffff 0%,#f4f4f4 50%,#ebebeb 76%,#e7e7e7 100%); /* IE10+ */
 background: linear-gradient(to bottom,  #ffffff 0%,#f4f4f4 50%,#ebebeb 76%,#e7e7e7 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7e7e7',GradientType=0 ); /* IE6-9 */
+cursor:pointer;
+
+}
+.drag{
+	height:45px;
+	padding-top:10px;
+	font-family: 'FuturaMedium';
+	font-size:14px;
+	color:#757575;
+	text-align:center;
 cursor:pointer;
 
 }
@@ -347,6 +365,7 @@ cursor:pointer;
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
 	border-radius:5px;
+
 }
 .dropBubble {
 	font-family: 'FuturaMedium';
@@ -354,17 +373,52 @@ cursor:pointer;
 	color:#757575;
 	float:left;
 	margin:0px 10px 0px 0px;
-	visibility:hidden;
+		padding:0px;
+	visibility:visible;
+	
+	
+	
+	
+}
+.dropWord {
+	font-family: 'FuturaMedium';
+	font-size:16px;
+	color:#757575;
+	float:left;
+	margin:0px 10px 0px 0px;
+	padding:0px;
+	border:none;
+	border-radius:0px;
+	border-bottom:1px solid #000;
+	visibility:visible;
+	background:none;
+	
+	
+	
+}
+
+.dropCompleted {
+	font-family: 'FuturaMedium';
+	font-size:16px;
+	color:#000;
+	float:left;
+	margin:0px 10px 0px 0px;
+	visibility:visible;
+	background:none;
+	border:none;
+	border-bottom:1px solid #000;
+	border-radius:0px;
+	
 }
 .targetSentence {
 	width:425px;
-	margin:0px 0px 5px 0px;
+	margin:0px 0px 5px 5px;
 	padding:0px
 	display:block;
 	clear:both;	
 }
 .englishSentence {
-	margin:10px 0px 10px 0px;
+	margin:10px 0px 10px 5px;
 	width:425px;
 	display:block;
 	font-family: 'FuturaMedium';
@@ -409,4 +463,13 @@ cursor:pointer;
 	width: 40px;
 	position: relative;
 	top: 0px;
+}
+.activityCompleted {
+	margin-top:20px;
+	width:475px;
+	font-family: 'FuturaMedium';
+	font-size:16px;
+	text-align:center;
+	color:#06F;
+
 }
