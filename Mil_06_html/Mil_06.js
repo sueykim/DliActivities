@@ -40,8 +40,26 @@ function loadSet(value){
 		$("#sel2 > .selText").text(jSet.find("> d_1_en").text())
 		$("#sel3 > .selText").text(jSet.find("> d_2_en").text())
 	}
-	
+
 	updateSetText()
+	
+        //hide all audio play buttons if no video attached
+        if (jSet.find("correct_response_media").text() == '' && jSet.find("d_1_media").text() == '' && jSet.find("d_2_media").text() == '')
+        {
+          if(true)
+          {  //(params['standardMode'] == 'true')
+		$('#selections .playSelBtn').hide()
+
+
+          }
+          else
+          {
+		$("#sel1 > .playSelBtn").hide()
+		$("#sel2 > .playSelBtn").hide()
+		$("#sel3 > .playSelBtn").hide()
+          }
+        }
+
 }
 
 function closeFeedback(){
@@ -206,7 +224,7 @@ function clearItems(){
 
 function selectItem(value){
 	clearItems()
-	
+
 	$("#sel" + value).attr("selected", "true")
 
 	var vidFilename = ""
@@ -223,8 +241,27 @@ function selectItem(value){
 	}
 
 
-	$('#vids > iframe').get(1).contentWindow.location.replace("video.html?mediaPath=" + mediaPath + 
+        //play item
+        // if no video put blank page
+        if (vidFilename == '')
+        {
+          $('#vids > iframe').get(1).contentWindow.location.replace("about:blank")
+
+        }
+        else
+        {
+          //otherwise play the video
+          $('#vids > iframe').get(1).contentWindow.location.replace("video.html?mediaPath=" + mediaPath +
 									"&video=" + vidFilename +
 									"&play=true");
+        }
+
+
+        //stop the main vid
+	jSet = $($(xml).find("set")[currentSet])
+	if(jSet.find("> stml_media").text().length > 0){
+		$('#vids > iframe').get(0).contentWindow.location.replace("video.html?mediaPath=" + mediaPath + 
+									"&video=" + jSet.find("> stml_media").text());
+	}
 }
 
