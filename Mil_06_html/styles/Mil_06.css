@@ -202,7 +202,7 @@ body{
     margin: 10px;
     position: relative;
     top: 0;
-    width: 898px;
+    /* width: 898px; ~botros */
     clear: both;
 }
 
