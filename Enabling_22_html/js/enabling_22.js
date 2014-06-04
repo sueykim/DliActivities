@@ -50,7 +50,7 @@ function initEnable22() {
 	//if (!statusParameters) {
 			 mediaPath 	= "activityData/media/";
 			 xmlPath 	= "activityData/";
-			xmlFilename =   xmlPath  + "xml/ta_01_07_13_04.xml"; //xml url
+			xmlFilename =   xmlPath  + "xml/enabling_22.xml"; //xml url
 			jsonFilename = xmlPath  + "json/enabling_22.js"; //json file url
 	//}
 	/*else {
