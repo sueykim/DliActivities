@@ -50,9 +50,10 @@ video{
 }
 
 .selText{
-    margin-left: 14px;
-    
+    margin-left: 14px;    
     margin-top: 6px;
+    margin-right: 0px; /*~ Minhwan*/
+    margin-bottom: 6px;  /* margin-bottom: 6px; ~Minhwan*/
     color: #6B6B6B;
     width: 446px;
     float: left;
@@ -89,7 +90,9 @@ body{
     
     border-radius: 4px;
     margin-bottom: 6px;
-    height: 32px;
+    height: 45px; /*~ Minhwan*/
+/*     height: 40px;
+*/
     width: 579px;
     background-color: #ECEBEB;
     cursor: pointer;
@@ -106,7 +109,9 @@ body{
 #clickGuard {
     background-color: grey;
     display: none;
-    height: 353px;
+/*    height: 353px; 
+*/
+    height: 395px; /*~ Minhwan*/
     left: 0px;
     opacity: .3;
     position: absolute;
