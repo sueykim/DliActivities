@@ -81,21 +81,21 @@
     background-color: #F5F5F5;
     cursor: default;
     height: 30px;
-    left: 693px;
+    left: 705px;
     position: relative;
     top: 5px;
     width: 110px;
     z-index: 0;
 }
 #clickGuard {
-    background-color: grey;
+    background-color: lightgrey;
     display: none;
     height: 536px;
     left: -7px;
     opacity: 0.3;
     position: absolute;
     top: 0;
-    width: 177px;
+    width: 187px;
     z-index: 166;
 }
 .activity_description {
@@ -145,7 +145,7 @@ html body {
     box-shadow: 0 2px 4px #BDBDBD;
     display: block;
     float: left;
-    left: 165px;
+    left: 177px;
     margin: 0 0 0 7px;
     max-height: 90px;
     min-height: 90px;
@@ -175,7 +175,7 @@ html body {
 #backgroundImg {
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 2px #BDBDBD;
-    left: 172px;
+    left: 184px;
     position: absolute;
     height:400px;
     width:530px;
@@ -188,10 +188,12 @@ html body {
     border: 1px solid darkgray;
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 4px #BDBDBD inset;
-    height: 32px;
+    height:35px;
     position: absolute;
     width: 140px;
 }
+
+
 #answeredDiv {
     background-color: white;
     display: none;
@@ -209,45 +211,50 @@ html body {
 }
 .dragBubbleText {
     cursor: default;
-    font-size: 16px;
-    margin: 0 0 0 6px;
-    padding: 0;
-    position: relative;
-    top: 5px;
+    font-size: 14px;
+    background-color:yellow;
+    min-height:15px;
+    max-height: 32px;
 }
+
 .playBtn {
     border-right: 1px solid #BDBDBD;
     float: left;
-    width: 30px;
+    width: 33px;
+    /*margin-right:5px;*/
 }
 .playBtnD{
     border-right: 1px solid #BDBDBD;
     float: left;
-    margin: 1px 0 0 2px;
-    width: 30px;
+    width: 32px;
 }
 .disabledImage {
     display: none;
 }
 .dropTargetText {
     cursor: default;
-    font-size: 12px;
+    font-size: 14px;
     left: 5px;
-    margin: 6px;
-    position: relative;
     top: 6px;
-}
+    background-color:yellow;
+    min-height:15px;
+    max-height: 32px;
+} 
+
+
 .dragBubble {
     background-color: white;
     border: 1px solid #BDBDBD;
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 4px #BDBDBD;
     cursor: default;
-    height: 29px;
+    height: 35px;
     margin-top: 15px;
     position: absolute;
-    width: 163px;
+    width: 176px;
+    margin-left:2px;
 }
+
 #dropTargets {
     left: 184px;
     position: absolute;
@@ -255,10 +262,14 @@ html body {
     z-index: 100;
 }
 #dragBubbles {
-    left: 0;
+    border-radius: 3px 3px 3px 3px;
+    background-color: #EAEAEA;
     position: absolute;
-    width: 160px;
+    width: 181px;
+    height:538px;
 }
+
+
 #imageContainer {
     height: 350px;
     left: 165px;
@@ -279,4 +290,24 @@ html body {
     top: -10px;
     width: 869px;
     z-index: 266;
+}
+
+.dragBubbleTextContainer {
+     /* height: 30px;
+      top:5px;
+      bottom:5px;  
+      background-color:orange;  */
+      margin-top:2px;
+}
+
+.dropTargetTextContainer {
+     /* height: 30px;
+      top:5px;
+      bottom:5px;
+      background-color:orange;  */
+      margin-top:2px;
+}
+
+.mCSB_container {
+    padding:5px 5px 5px 5px;
 }
