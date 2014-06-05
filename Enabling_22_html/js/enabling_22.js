@@ -428,6 +428,8 @@ function loadSet() {
 								var numWords = wordsPosition.split(",");
 								for ( var z=0; z < numWords.length; z++) { 
 										var id = "word" +(numWords[z]);
+										if(z==0)
+										$("#"+id).html(capitaliseFirstLetter($("#"+id).html()));
 										$("#"+id).css({"visibility":"visible", "color": "#000", "border-bottom":"1px solid #000"});
 								}
 					  }
@@ -513,7 +515,9 @@ function loadSet() {
 						var numWords = wordsPosition.split(",");
 						for ( var z=0; z < numWords.length; z++) { 
 							var id = "word" +(numWords[z]);
-								$("#"+id).css({"visibility":"visible", "color": "#000", "border-bottom":"1px solid #000"});
+							if(z==0)
+							$("#"+id).html(capitaliseFirstLetter($("#"+id).html()));
+							$("#"+id).css({"visibility":"visible", "color": "#000", "border-bottom":"1px solid #000"});
 						}
 				});
 				
@@ -563,7 +567,10 @@ function dropFunction(event, ui ) {
 						   userAnswer = $(ui.draggable).html() +" -- Correct!"
 						$(ui.draggable).parent().css("visibility","hidden");
 						$("#"+dropTargetId).removeClass( "dropWord" ).addClass("dropCompleted" );
-						$("#"+dropTargetId).html($(ui.draggable).html());
+						if(dropTargetNum==1)
+						    $("#"+dropTargetId).html(capitaliseFirstLetter($(ui.draggable).html()));
+						else
+						   $("#"+dropTargetId).html($(ui.draggable).html());
 						$("#"+dropTargetId).css("width","");
 						 if (parseFloat (mSectionElem.attr("totalItemsCompleted")) == gtotalItemsCorrect) {
 							 $(".englishSentence").css({"visibility":"visible"});
@@ -804,3 +811,7 @@ if ((parseFloat (mSectionElem.attr("totalItemsCompleted")) == gtotalItemsCorrect
 	  loadSet();
   }
 } //end okButtonIsClicked()
+function capitaliseFirstLetter(string)
+{
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
