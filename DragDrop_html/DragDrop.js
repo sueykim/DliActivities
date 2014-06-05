@@ -8,16 +8,16 @@ $(document).ready(function() {
 	
 	//Create Drag Bubble
 	for(var i  = 1; i<maxNumberItemsInSet + 1; i++){
-		$('#dragBubble_' + i).draggable({ revert: true });
+		$('#dragBubble_' + i).draggable({ revert: true, containment:"#main"  });
 	}
 	
 	//Create drop targets	
 	for(var i  = 1; i<maxNumberItemsInSet + 1; i++){
 		$( "#dropTarget_" + i ).droppable({
 			hoverClass: "dropTargetHover",
-			drop: dropFunction}); 
+			drop: dropFunction});
 	}
-	
+
 	////if ( getPassedParameters() == false){
 		//Default values (for testing)
 		mediaPath = "sampleData/";
@@ -41,7 +41,7 @@ $(document).ready(function() {
 	
 	cssFilename = "styles/dragdrop_dlilearn.css";
 	loadActivity(parseXml);
-}); 
+});
 
 // For homework
 var homeworkStatus;
@@ -78,7 +78,7 @@ var answeredItems = 0;
 
 function loadSet(value){
 	currentSet = value;
-	
+
 	$(".dragBubbleTextContainer").shuffle();
 	$('.dragBubble').draggable( 'enable' );
 	$('.dragBubble').css("opacity","1");
@@ -168,11 +168,16 @@ function loadSet(value){
 	
 	//Load images
 	$("#backgroundImg").attr("src", mediaPath + 'png/' +  jSection.find("graphic").text());
+
+	$(".dropTargetText").mCustomScrollbar();
+	$(".dragBubbleText").mCustomScrollbar();
+        $(".mCSB_dragger").css({"height": "25px"}, {"top":"2px"})
+        $(".mCSB_dragger_bar").css({"width": "8px"})
 }
 
 function extractLastLetter(value){
 	var out = "";
-	
+
 	out = value.substr(value.length - 1, value.length);
 	
 	return out;
@@ -187,7 +192,7 @@ function dropFunction(event, ui ) {
 	//Play audio
 	var file_audio = $(jSection.find("file_audio")[dropTargetNumGot - 1]).text();
 	audio_play_file(removeFileExt(file_audio), mediaPath);
-	
+
 	if(dropTargetNumLookingFor == dropTargetNumGot){
 		//Show image
 		ui.draggable.css("top", $(this).css("top"));
@@ -206,22 +211,30 @@ function dropFunction(event, ui ) {
 		$(this).find(".playBtnD").css("display","block");
 		
 		$("#img_" + dropTargetNumGot).removeClass('disabledImage');
-		
+
 		//$(this).find(".dropTargetText").text(
 		//	ui.draggable.find(".dragBubbleText").text()
 		//)
 		// To display ruby tag
+
+                var wordItem = $(jSection.find("lang_tl")[dropTargetNumGot-1]).text()
+
+
+
 		$(this).find(".dropTargetText").html(
-			ui.draggable.find(".dragBubbleText").html()
-		)
-		
+			wordItem )
+
+                $($(".dropTargetText")[dropTargetNumGot-1]).mCustomScrollbar();
+                $(".mCSB_dragger").css({"height": "25px"}, {"top":"2px"})
+                $(".mCSB_dragger_bar").css({"width": "8px"})                
+
 		answeredItems++;
 		$("#answeredText").text(answeredItems + "/" + numItemsInSet);
-		
 		showFeedback("correct", $(jSection.find("feedback")[dropTargetNumLookingFor - 1]).text());
+
 	}else{
 		showFeedback("incorrect", $(jSection.find("hint")[dropTargetNumLookingFor - 1]).text());
-	}	
+	}
 }
 
 function playAudio(index){
@@ -264,7 +277,8 @@ function showFeedback(value, textInput){
 			break;
 		case "activity_completed":
 			$("#feedbackHeader").html("Activity Completed");
-			$("#feedbackBtn").html("Next Activity");
+			////$("#feedbackBtn").html("Next Activity");
+			$("#feedbackBtn").hide();
 			activityCompletedShown = true;
 			break;
 	}
