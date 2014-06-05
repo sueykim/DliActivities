@@ -192,7 +192,20 @@ function showFeedback(value, text){
 	
 }
 
-function submit(value){
+function submit(event, value ){    //value
+
+        //to stop propagation with the click event on the div parent which will play the video again
+        if (event.stopPropagation) {
+            event.stopPropagation();   // W3C model
+        } else {
+            event.cancelBubble = true; // IE model
+        }
+        //now stop the second video, no need to stop the first one since it get stopped automatically when seond starts playing
+        if ($('#vids > iframe').contents().find('#videoTag')[1])
+        {
+            $('#vids > iframe').contents().find('#videoTag')[1].pause()
+        }
+
 	logStudentAnswer(
 			(currentSet + 1),	
 			$("#sel1 > .selText").text(),
@@ -226,7 +239,7 @@ function submit(value){
 		}
 	}
 	
-	selectItem(value)
+	//selectItem(value)
 }
 
 function clearItems(){
