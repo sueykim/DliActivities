@@ -7,8 +7,8 @@
 }
 
 #feedbackTextContainer{
-    height: 286px;
-    
+    /*height: 286px; */ /*botros*/
+    height:315px;
     overflow: auto;
     width: 201px;
     margin-bottom: 10px;
@@ -20,10 +20,11 @@ video{
     height: 211px;
 }
 
-#rightPane{
-    margin-left: 245px;
+#leftPane{
+    /* margin-left: 245px;  */ /*botros*/
     
     position: relative;
+    float:left; /*botros*/
 }
 
 #setDiv {
@@ -140,14 +141,18 @@ body{
     box-shadow: 0 2px 4px #BDBDBD;
     display: block;
     margin: 0 0 0 7px;
-    min-height: 328px;
+    /*
+    min-height: 328px;  
+    max-height: 328px;
+    */                    /*botros*/
+    min-height: 360px;
+    max-height: 360px;
     padding: 11px;;
     width: 203px;
     z-index: 1000;
     position: inherit;
     float: left;
     margin-top: 0px;
-    max-height: 328px;
 }
 #feedbackHeader {
     font-size: 20px;
@@ -204,7 +209,9 @@ body{
     cursor: default;
     height: 40px;
     left: 0;
-    margin: 10px;
+    /* margin: 10px;*/   /*botros*/
+    margin-right:27px;  /*botros*/
+    float:right;  /*botros*/
     position: relative;
     top: 0;
     /* width: 898px; ~botros */
