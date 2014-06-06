@@ -201,9 +201,15 @@ function submit(event, value ){    //value
             event.cancelBubble = true; // IE model
         }
         //now stop the second video, no need to stop the first one since it get stopped automatically when seond starts playing
-        if ($('#vids > iframe').contents().find('#videoTag')[1])
+        var indx = 1
+        if(params['standardMode'] == 'true')
         {
-            $('#vids > iframe').contents().find('#videoTag')[1].pause()
+          indx = 0
+        }
+
+        if ($('#vids > iframe').contents().find('#videoTag')[indx])
+        {
+            $('#vids > iframe').contents().find('#videoTag')[indx].pause()
         }
 
 	logStudentAnswer(
