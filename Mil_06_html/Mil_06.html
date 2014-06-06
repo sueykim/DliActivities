@@ -43,14 +43,8 @@
 			Recognize the sounds then key them into the phone.
 		</div>
 		<div id="main">
-			<div id="feedback" >
-				<div id="feedbackTextContainer">
-					<h2 id="feedbackHeader"></h2>
-					<p id="feedbackText"></p>
-				</div>
-				<button id="feedbackBtn" style="display: none;" onclick="{closeFeedback();}">Ok</button>
-			</div>
-			<div id="rightPane">
+
+			<div id="leftPane">
 				<div id="vids">
 					<iframe ></iframe>
 					<iframe ></iframe>
@@ -78,18 +72,26 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<div id="clickGuard" ></div>
-				
-				<div id="container_setDiv" class="roundCorners btn-group noSelect">
+
+
+			</div>
+			<div id="feedback" >
+				<div id="feedbackTextContainer">
+					<h2 id="feedbackHeader"></h2>
+					<p id="feedbackText"></p>
+				</div>
+				<button id="feedbackBtn" style="display: none;" onclick="{closeFeedback();}">Ok</button>
+			</div>
+			<div id="container_setDiv" class="roundCorners btn-group noSelect">
 					<div id="setDiv" class="roundCorners">
 						<div id="setTitle" class="bootstrapLabel btn_set noSelect">
 							SET:
 						</div>
 						<span id="setText" class="bootstrapLabel btn_set_value noSelect"></span>
 					</div>
-				</div>		
-			</div>
+				</div>
 		</div>
 	</body>
 </html>
