@@ -77,7 +77,7 @@ function loadVideoNoPlayYet(path, videoName){
 		loadFlashVideo("videoContainer", path, videoName);
 	}else if(videoTagSupported){
 		//HTML Video
-		loadHTMLVideo("videoContainer", path, videoName, ["mp4","ogv","ogg","m4v"]);
+		loadHTMLVideo("videoContainer", path, videoName, ["ogv","mp4","ogg","m4v"]);
 		//document.getElementById("videoTag").play();
 		document.getElementById("videoTag").load();
 	}else if(flashSupported){
@@ -149,7 +149,7 @@ function loadVideo(path, videoName){
 		loadFlashVideo("videoContainer", path, videoName);
 	}else if(videoTagSupported){
 		//HTML Video 
-		loadHTMLVideo("videoContainer", path, videoName, ["mp4","ogv","ogg","m4v"]);
+		loadHTMLVideo("videoContainer", path, videoName, ["ogv","mp4","ogg","m4v"]);
 		document.getElementById("videoTag").play();
 	}else if(flashSupported){
 		//Flash Video
