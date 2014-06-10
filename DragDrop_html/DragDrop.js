@@ -170,7 +170,10 @@ function loadSet(value){
 	$("#backgroundImg").attr("src", mediaPath + 'png/' +  jSection.find("graphic").text());
 
 	$(".dropTargetText").mCustomScrollbar();
-	$(".dragBubbleText").mCustomScrollbar();
+        $(".dragBubbleText").mCustomScrollbar({
+                        contentTouchScroll:false   //// to make DragNdrop and mCustomscrollbar in a same box to be workable in an ipad (touch screen). Otherwise, DragNdrop doesn't work in an ipad.
+                        });
+	
         $(".mCSB_dragger").css({"height": "25px"}, {"top":"2px"})
         $(".mCSB_dragger_bar").css({"width": "8px"})
 }
