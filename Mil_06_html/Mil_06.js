@@ -226,10 +226,10 @@ function submit(event, value ){    //value
 				showFeedback("correct",jSet.find("correct_response_feedback").text())
 				break;
 			case 2:
-				showFeedback("incorrect", jSet.find("d_2_feedback").text())
+				showFeedback("incorrect", jSet.find("d_1_feedback").text())
 				break;
 			case 3:
-				showFeedback("incorrect", jSet.find("d_1_feedback").text())
+				showFeedback("incorrect", jSet.find("d_2_feedback").text())
 				break;
 		}
 	}else{
