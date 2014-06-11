@@ -17,7 +17,7 @@ $(document).ready(function() {
 var flipCardPossible = false;
 var toggle=false;
 function enableCardFlip(){
-	if ($('html').hasClass('csstransforms3d')) {	
+	if (($('html').hasClass('csstransforms3d')) && isNotMobile()) {	
 			flipCardPossible = true;
 			$('.card').removeClass('scroll').addClass('flip');		
 			$('.card.flip').click(
@@ -29,7 +29,7 @@ function enableCardFlip(){
 			);
 			
 		} else {
-			//alert('ie');
+			//alert('ie'); 
 			$('.card').click(
 				function () {
 					toggle=true;
@@ -214,7 +214,12 @@ function showFeedback(value, text){
 			$("#feedbackHeader").html("Activity Completed");
 			break;
 	}
-	
+	if(currentSet + 1 == numSets){
+		$("#feedbackHeader").html("Activity Completed");
+		if(parent.activityCompleted)
+			parent.activityCompleted(1,0);
+		$('#feedbackBtn').hide();
+	}
 	$('#feedback').show();
 }
 function closeFeedback(){
@@ -304,4 +309,13 @@ function xid( a )
 function globalize_id( the_id )
 {
 	window [ the_id ] = xid(the_id)
+}
+
+	function isNotMobile(){
+			var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));    
+    if (mobile)   
+	  		return false;
+	 else
+	  		return true;
+	  
 }
