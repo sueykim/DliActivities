@@ -787,6 +787,8 @@ function showFeedback(type, string) {
 		 
     }
 	if ((gTotalsectionCompleted == gTotalSetNumber) || (type == "activity_completed")) {
+		  if(parent.activityCompleted)
+			   parent.activityCompleted(1,0);
 	     	string += "<div class='activityCompleted'>The activity is completed.</div>";
 			$("#closeFeedbackBtn").toggle();
 	}
