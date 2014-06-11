@@ -142,7 +142,8 @@ function showFeedback(value, text){
 	
 	switch(value){
 		case "incorrect":
-			$("#feedbackHeader").html("Incorrect");
+			//$("#feedbackHeader").html("Incorrect");
+			$("#feedbackHeader").html('<img src="../common/img/feedback_incorrect.png">');
 			
 			$("#feedbackText").html(text);
 			
@@ -165,7 +166,8 @@ function showFeedback(value, text){
 			
 			break;
 		case "correct":
-			$("#feedbackHeader").html("Correct");
+			//$("#feedbackHeader").html("Correct");
+			$("#feedbackHeader").html('<img src="../common/img/feedback_correct.png">');
 			$("#feedbackText").html(text);
 			$("#feedbackBtn").text("Next Set");
 			
