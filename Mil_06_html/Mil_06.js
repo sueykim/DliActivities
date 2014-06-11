@@ -221,15 +221,20 @@ function submit(event, value ){    //value
 	logStudentAnswerAttempts((currentSet + 1), attemptCount)
 
 	if(params['standardMode'] == 'true'){
+		var theStr = '';
 		switch(value){
 			case 1:
 				showFeedback("correct",jSet.find("correct_response_feedback").text())
 				break;
 			case 2:
-				showFeedback("incorrect", jSet.find("d_1_feedback").text())
+				theStr = jSet.find("d_1_feedback").text();
+				theStr = attemptCount == 1 ? theStr : theStr + '<\/br>' + jSet.find("additional_feedback").text();	 			    
+				showFeedback("incorrect", theStr);	
 				break;
 			case 3:
-				showFeedback("incorrect", jSet.find("d_2_feedback").text())
+				theStr = jSet.find("d_2_feedback").text();
+				theStr = attemptCount == 1 ? theStr : theStr + '<\/br>' + jSet.find("additional_feedback").text();
+				showFeedback("incorrect", theStr);
 				break;
 		}
 	}else{
