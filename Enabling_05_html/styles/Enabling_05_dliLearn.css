@@ -99,6 +99,7 @@ html body {
     cursor: default;
     font-size: 14px;
     left: 5px;
+    padding-right: 5px;
     position: relative;
     top: 10px;
 }
