@@ -66,7 +66,7 @@ html body {
 #transSelectable .ui-selecting { background: #FECA40; }
 #transSelectable .ui-selected { background: #f6a816; color: white; } 
 #transSelectable { list-style-type: none; margin: 0; padding: 0; width: 100%; }
-#transSelectable li { margin: 3px; padding: 0.4em; font-size: 14pt; height: auto;   }          /*height: 18px;   font-family: 'FuturaMedium';  */
+#transSelectable li { margin: 3px; padding: 0.4em; font-size: 12pt; height: auto;   }          /*height: 18px;   font-family: 'FuturaMedium';  */
 
 .ui-tabs-panel{
 	overflow: auto;
@@ -96,7 +96,7 @@ html body {
 #transPhraseSelectable .ui-selecting { background: #FECA40; }
 #transPhraseSelectable .ui-selected { background: #F39814; color: white; }
 #transPhraseSelectable { list-style-type: none; margin: 0; padding: 0; width: 100%; }
-#transPhraseSelectable li { margin: 3px; padding: 0.4em; font-size: 14pt; height: auto;  }   /*height: 18px;  font-family: 'FuturaMedium';  */
+#transPhraseSelectable li { margin: 3px; padding: 0.4em; font-size: 12pt; height: auto;  }   /*height: 18px;  font-family: 'FuturaMedium';  */
 
 
 #videoTag {
