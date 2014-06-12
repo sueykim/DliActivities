@@ -10,9 +10,9 @@ $(document).ready(function() {
 	mediaPath = "sampleData/";
 	xmlFilename = "sampleData/enabling04_noNamespaces.xml";
 	jsonFilename = "sampleData/enabling04_noNamespaces.js";
-	keyboardFilename = "sampleData/test_keyboard.js";
+	//keyboardFilename = "sampleData/test_keyboard.js";
 	cssFilename = "styles/enabling_04_dlilearn.css";
-		
+	
 	$('.activity_hd').html('');
 	$('.activity_description').html('');	
 	loadActivity(parseXml);
@@ -27,9 +27,7 @@ $(document).ready(function() {
 	}
 }); 
 
-var testObj = {value:"ي"}
-var testArr = ["ي"]
-var testStr = "اركض";
+
 var showAnswers = false;
 
 // For homework
@@ -345,9 +343,8 @@ function showFeedback(value, textInput){
 	
 	lastFeedback = value;
 	//Clear the dialog box
-	$("#feedbackHeader").html("");
-	$("#feedbackText").html("");
-	$("#feedbackBtn").text("OK");
+    $('#feedback').html("");
+	$('#feedback').html('<h2 id="feedbackHeader">Set completed</h2><p id="feedbackText">Set completed text</p><button id="feedbackBtn" onclick="{closeFeedback();}">OK</button>');
 	$("#feedbackBtn").show();
 	
 	var text = "";
@@ -378,8 +375,10 @@ function showFeedback(value, textInput){
 	}
 	
 	$('#feedback').show();
-	
-	$("#feedbackText").mCustomScrollbar();
+	if ($("#feedbackText").height()> 205) {
+		$("#feedbackText").css({"height": "210px", "padding":"0px 0px 0px 10px"});
+		$("#feedbackText").mCustomScrollbar();
+	}
 	
 	/*$('#feedback').animate( {
 	left: '380px',
