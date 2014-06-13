@@ -282,7 +282,7 @@ function foundation_menu_class( whoami )
           var c = a[i]
           c.onmouseout = function()
             {
-            timer_set( 1000 )
+            timer_set( 10000 )
             }
           c.onclick =new Function(spf("~.m_over(arguments[0], this)", [whoami]))
           }
