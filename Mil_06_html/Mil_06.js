@@ -210,10 +210,15 @@ function submit(event, value ){    //value
     {
       indx = 0
     }
-
-    $("#videoTag1")[0].pause()
-    $("#videoTag2")[0].pause()
+	
+	if($("#videoTag1").length > 0){
+    	$("#videoTag1")[0].pause()
+	}
     
+    if($("#videoTag2").length > 0){
+    	$("#videoTag2")[0].pause()
+    }
+	
 	logStudentAnswer(
 			(currentSet + 1),	
 			$("#sel1 > .selText").text(),
