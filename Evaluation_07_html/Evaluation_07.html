@@ -41,7 +41,7 @@
 	</head>
 	<body>
 		<noscript>Activity cannot load. No Javascript support detected.</noscript>
-		<div id="activity_wrapper">    
+		<div id="activity_wrapper">
 
 		<h3 class="activity_hd"  style="margin-left:-10px;"></h3>
 		<div class="activity_description"></div>
@@ -51,7 +51,22 @@
                                  <div id="htmlAudioPlayerDiv">  </div>
                                  <div id="flashAudioPlayerDiv">  </div>
                                  <div id="embeddedAudioPlayerDiv">  </div>
-                                 <img  id="playBtn" class="css_playBtn" alt="play button" src="../common/img/btn_play_audio_on.png"  border="0" style="max-width:300%;"/>
+
+				<div id="playBtn">
+					<a class="playBtnLink" 
+                                                onMouseOut="MM_swapImage('playBtn_s1','','../common/img/btn_play_audio_on.png',1)"
+						onMouseDown="MM_swapImage('playBtn_s1','','../common/img/btn_play_audio_on.png',1);playAudio();"
+						onMouseUp="MM_swapImage('playBtn_s1','','../common/img/btn_play_audio_on.png',1)"
+				                onMouseOver="MM_swapImage('playBtn_s1','','../common/img/btn_play_audio_on.png',1)" >
+				                <img  id="playBtn_s1" class="css_playBtn" alt="play button" src="../common/img/btn_play_audio_on.png"  border="0" style="max-width:300%;"/>
+			       	        </a>
+
+
+				</div>
+                                 
+                                 
+
+                                <!-- <img  id="playBtn" class="css_playBtn" alt="play button" src="../common/img/btn_play_audio_on.png"  border="0" style="max-width:300%;"/> -->
                             </div>
                              <div id="imageDisplay">
                                        <div>
