@@ -13,7 +13,7 @@
 	width: 240px;
 	height: 150px;
 }
-
+                                
 .leftColBtn{
         height: 22px;
         margin-left: 10px;
@@ -154,7 +154,7 @@ video{
 #submit  {
 	position:absolute;
 	left: 430px;
-	top: 520px;
+	top: 525px;
 	cursor: pointer;
 	display:none;
 
@@ -180,7 +180,7 @@ video{
 
 #activity_wrapper {
     	font-family: 'FuturaMedium';
-    	height:560px;		/*  Change as needed-- Variable will have to be passed up to main framework */
+    	height:565px;		/*  Change as needed-- Variable will have to be passed up to main framework */
     	width:820px;
     	overflow:hidden;
     	/*border: solid thin #F00;*/
@@ -192,13 +192,13 @@ video{
     	margin-top:-5px;
     	border-radius: 3px;
     	/*margin-right: -12px;*/
-	 
+
 }
 
 
 
 #container_setDiv {
-        top:515px;
+        top:520px;
         left:525px;
         background-color: transparent;
         width:250px;
