@@ -7,7 +7,7 @@ $(document).ready(function() {
 	////if (!statusParameters) {
 		mediaPath 	= "sampleData/";
 		xmlPath 	= "sampleData/";
-		
+
 		// For performance - homework
 		////xmlFilename = xmlPath + "vb_02_01_06_01_noNamespaces_hw.xml";
 	        xmlFilename = xmlPath + "Evaluation_07_noNamespaces.xml";
@@ -143,15 +143,17 @@ function loadSet(value){
                }
             })
         })
-
+       /*
         $("#playBtn").click(function() {
+          alert('a')
             if(imgFades[currentSet] == 0) {
+              alert('b')
               $(".image").stop().fadeTo(0, 1);
               imgFades.splice(currentSet, 1, 1);
-            }
-            playAudio(currentSet);
+            }  
+           ///// playAudio(currentSet);
         })
-
+        */
    }
 
 
@@ -176,11 +178,19 @@ function prevClick(){
 }
 
 
-function playAudio(num){
+function playAudio(){
             ////audio_play(audioPath + audios[num]);
-            audio_play_file(removeFileExt(audios[num]),mediaPath);
+            
+            
+            if(imgFades[currentSet] == 0) {
+              $(".image").stop().fadeTo(0, 1);
+              imgFades.splice(currentSet, 1, 1);
+            }
+            audio_play_file(removeFileExt(audios[currentSet]),mediaPath);
+
    }
-   
+
+
 function checkAllAnswered() {
                  for (var i=0; i<numSets; i++){
                    if(studentAnswers[i] == 0){
@@ -241,7 +251,7 @@ function checkAnswers(){
 //	alert(stScore)
 	if ( stScore >= passingScore){ 
 		if(parent.activityCompleted){
-			parent.activityCompleted(1,0);
+			parent.activityCompleted(1,0);  
             $("#clickGuard").css("display", "inline");
         }else{
 			showFeedback("activity_completed", "Passed!")
@@ -253,8 +263,8 @@ function checkAnswers(){
 		}else{
 			showFeedback("activity_completed", "Failed!")
 		}
-	}	
-	
+	}
+
    $(".image").unbind("click");
    ////$("#playBtn").hide();
    $('#submit').hide();
