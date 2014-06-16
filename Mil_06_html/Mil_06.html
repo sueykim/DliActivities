@@ -20,7 +20,7 @@
 		<script src="../common/js/jquery.mCustomScrollbar.js"></script>
 		<script src="../common/js/dli_util.js"></script>
 		<script src="../common/js/dli_audio.js"></script>
-		<script src="../common/js/dli_video.js"></script>
+		<script src="../common/js/dli_video_new.js"></script>
 
 		<script src="Mil_06.js"></script>
 
@@ -46,8 +46,32 @@
 
 			<div id="leftPane">
 				<div id="vids">
-					<iframe ></iframe>
-					<iframe ></iframe>
+					<div id="vid1" >
+						<div class="videoStage roundCorners">
+							<div id="videoContainer1"  class="roundCorners"></div>
+							<div class="playBtnVideo playBtn">
+								<a href="javascript:;"
+								onMouseOut="MM_swapImage('playBtn_video','','../common/Library/images/playBtn_s1.png',1)"
+								onMouseDown="MM_swapImage('playBtn_video','','../common/Library/images/playBtn_s3.png',1);activityVideoPlay(1)"
+								onMouseUp="MM_swapImage('playBtn_video','','../common/Library/images/playBtn_s2.png',1);"
+								onMouseOver="MM_swapImage('playBtn_video','','../common/Library/images/playBtn_s2.png',1)" > 
+									<img class="playBtn_video"  src="../common/Library/images/playBtn_s1.png" border="0"> </a>
+							</div>
+						</div>
+					</div>
+					<div id="vid2" >
+						<div class="videoStage roundCorners">
+							<div id="videoContainer2"  class="roundCorners"></div>
+							<div class="playBtnVideo playBtn">
+								<a href="javascript:;"
+								onMouseOut="MM_swapImage('playBtn_video','','../common/Library/images/playBtn_s1.png',1)"
+								onMouseDown="MM_swapImage('playBtn_video','','../common/Library/images/playBtn_s3.png',1);activityVideoPlay(2)"
+								onMouseUp="MM_swapImage('playBtn_video','','../common/Library/images/playBtn_s2.png',1);"
+								onMouseOver="MM_swapImage('playBtn_video','','../common/Library/images/playBtn_s2.png',1)" > 
+									<img class="playBtn_video"  src="../common/Library/images/playBtn_s1.png" border="0"> </a>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div id="selections">
 					<div id="sel1" onclick="selectItem(1)">

@@ -1,6 +1,8 @@
 $(document).ready(function() {	
 	loadjscssfile("../common/css/activityDefault.css", "css");
 	
+	testVideoSupport()
+	
 	mediaPath = "sampleData/";
 	cssFilename = "styles/Mil_06.css";
 	xmlFilename = mediaPath + "sample.xml";
@@ -18,16 +20,17 @@ var jSet
 function loadSet(value){
 	attemptCount = 1
 	
+	clearVideo("videoContainer1")
+	clearVideo("videoContainer2")
+	
 	$("#selections > div").removeAttr("selected")
 	
 	jSet = $($(xml).find("set")[currentSet])
 
 	if(jSet.find("> stml_media").text().length > 0){
-		$('#vids > iframe').get(0).contentWindow.location.replace("video.html?mediaPath=" + mediaPath + 
-									"&video=" + jSet.find("> stml_media").text());
+		loadVideo(mediaPath, removeFileExt(jSet.find("> stml_media").text()), 
+				"videoContainer1", "videoTag1");
 	}
-									
-	$('#vids > iframe').get(1).contentWindow.location.replace("about:blank");
 
 	$('#selections > div').shuffle();
 
@@ -195,25 +198,22 @@ function showFeedback(value, text){
 }
 
 function submit(event, value ){    //value
+    //to stop propagation with the click event on the div parent which will play the video again
+    if (event.stopPropagation) {
+        event.stopPropagation();   // W3C model
+    } else {
+        event.cancelBubble = true; // IE model
+    }
+    //now stop the second video, no need to stop the first one since it get stopped automatically when seond starts playing
+    var indx = 1
+    if(params['standardMode'] == 'true')
+    {
+      indx = 0
+    }
 
-        //to stop propagation with the click event on the div parent which will play the video again
-        if (event.stopPropagation) {
-            event.stopPropagation();   // W3C model
-        } else {
-            event.cancelBubble = true; // IE model
-        }
-        //now stop the second video, no need to stop the first one since it get stopped automatically when seond starts playing
-        var indx = 1
-        if(params['standardMode'] == 'true')
-        {
-          indx = 0
-        }
-
-        if ($('#vids > iframe').contents().find('#videoTag')[indx])
-        {
-            $('#vids > iframe').contents().find('#videoTag')[indx].pause()
-        }
-
+    $("#videoTag1")[0].pause()
+    $("#videoTag2")[0].pause()
+    
 	logStudentAnswer(
 			(currentSet + 1),	
 			$("#sel1 > .selText").text(),
@@ -282,23 +282,25 @@ function selectItem(value){
         // if no video put blank page
         if (vidFilename == '')
         {
-          $('#vids > iframe').get(1).contentWindow.location.replace("about:blank")
-
+        	clearVideo("videoContainer2")
         }
         else
         {
-          //otherwise play the video
-          $('#vids > iframe').get(1).contentWindow.location.replace("video.html?mediaPath=" + mediaPath +
-									"&video=" + vidFilename +
-									"&play=true");
+	          //otherwise play the video
+	  		  loadVideo(mediaPath, removeFileExt(vidFilename), 
+	  				  "videoContainer2", "videoTag2");
         }
 
 
         //stop the main vid
 	jSet = $($(xml).find("set")[currentSet])
 	if(jSet.find("> stml_media").text().length > 0){
-		$('#vids > iframe').get(0).contentWindow.location.replace("video.html?mediaPath=" + mediaPath + 
-									"&video=" + jSet.find("> stml_media").text());
+		$("#videoTag1")[0].pause()
 	}
 }
 
+function activityVideoPlay(index){
+	if($("#videoTag" + index).length > 0 && $("#videoTag" + index)[0].play != undefined){
+		$("#videoTag" + index)[0].play()
+	}
+}

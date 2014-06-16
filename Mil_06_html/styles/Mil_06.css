@@ -1,9 +1,10 @@
-#videoStage{
+.videoStage{
     background-color: grey;
     height: 180px;
-    position: absolute;
-    width: 240px;
+    width: 285px;
     top: 8px;
+    float: left;
+    margin: 3px;
 }
 
 #feedbackTextContainer{
@@ -16,8 +17,9 @@
 
 video{
     background-color: black;
-    width: 280px;
-    height: 211px;
+    width: 285px;
+    height: 179px;
+    border-radius: 7px;
 }
 
 #leftPane{
@@ -80,6 +82,9 @@ body{
 #selections{
     margin-left: 7px;
 	
+    clear: both;
+    top: 10px;
+    position: relative;
 }
 
 #selections > div:hover{
@@ -101,6 +106,7 @@ body{
 
 #selections > div[selected] > .submitBtn{
     display: block;
+    margin-top: 8px;
 }
 
 #selections > div[selected]{
@@ -226,10 +232,10 @@ iframe{
     border: 0px;
 }
 
-#playBtnVideo {
-    left: 6px;
+.playBtnVideo {
+    margin-left: 9px;
+    top: 118px;
     position: absolute;
-    top: 151px;
 }
 
 .playSelBtn:hover{
@@ -268,4 +274,13 @@ iframe{
     margin-top: 5px;
     font-size: 13.4px;
     font-weight: bold;
+}
+#vids{
+	
+}
+
+#vid1, #vid2{
+    position: relative;
+	
+    top: 0px;
 }
