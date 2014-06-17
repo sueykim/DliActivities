@@ -90,7 +90,8 @@ html body {
     border: 1px solid lightgrey;
     border-radius: 3px 3px 3px 3px;
     height: 61px;
-    margin: 8px;
+    margin: 7px;
+    padding-right:5px;
 }
 .disabledImage {
     display: none;
@@ -99,7 +100,7 @@ html body {
     cursor: default;
     font-size: 14px;
     left: 5px;
-    padding-right: 5px;
+   /* padding-right: 5px;*/
     position: relative;
     top: 10px;
 }
@@ -111,7 +112,7 @@ html body {
     box-shadow: 1px 1px 2px 0 #BDBDBD;
     cursor: pointer;
     height: 50px;
-    margin-top: 7px;
+    margin-top: 6px;
 }
 #dropTargets {
     left: 0px;
