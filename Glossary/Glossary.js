@@ -44,12 +44,17 @@ $(document).ready(function() {
 	if(params['languageName'] != undefined){
 		$("#glossaryTitle").text(capitaliseFirstLetter(params['languageName']) + " HeadStart Glossary")
 	}
+
+	if(params['languageId'] != undefined){
+		languageId = params['languageId']
+	}	
 	
 	if(params['performanceChecks'] != undefined){
 		alert("function ready finished")
 	}
 }); 
 
+var languageId = ""
 var highestModule = 10
 var highestTask = 7
 
@@ -147,8 +152,8 @@ function playTheVideo(){
 	if(jItem != undefined){
 		var suffix = ""
 		
-		if(jItem.find("phraseID").attr("frms") == "true"){
-			suffix = "frms"
+		if(jItem.find("phraseID").attr(languageId.substr(0,1) + "ms") == "true"){
+			suffix = languageId.substr(0,1) + "ms"
 		}else if(jItem.find("phraseID").attr("ams") == "true"){
 			suffix = "ams"
 		}
