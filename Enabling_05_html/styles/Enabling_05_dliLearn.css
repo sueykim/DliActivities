@@ -83,7 +83,9 @@ html body {
     -webkit-user-select: none;
 }
 #main{
-	position: relative;
+    position: relative;
+    width:850px;
+    height:560px;
 }
 .dropTarget {
     background-color: #E9E9E9;
