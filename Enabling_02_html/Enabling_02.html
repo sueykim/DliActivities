@@ -19,6 +19,13 @@
 
 		<script src="Enabling_02.js"></script>
 
+		<link href="../common/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+		
+		<script src="../common/js/jquery.mousewheel.min.js"></script>
+		<script src="../common/js/jquery.mCustomScrollbar.js"></script>
+
+
+
 	</head>
 	<body >
 		<div id="flashAudioPlayerDiv"></div>
@@ -122,8 +129,8 @@
 
 			<div id="feedback" >
 				<h2 id="feedbackHeader">Set completed</h2>
-				<p id="feedbackText">
-					Set completed text
+
+				<p id="feedbackText" class="content2 mCustomScrollbar">Set completed text
 				</p>
 				<button id="feedbackBtn" onclick="{closeFeedback();}">
 					Ok
