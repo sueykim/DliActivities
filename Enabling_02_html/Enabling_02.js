@@ -534,6 +534,8 @@ function showFeedback(value, textInput){
 	}
 	
 	$('#feedback').show();
+	$("#feedbackText").mCustomScrollbar();
+	
 	
 	/*$('#feedback').animate( {
 	left: '380px',
