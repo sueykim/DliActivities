@@ -10,7 +10,7 @@ $(document).ready(function() {
 	
 	//Create Drag Bubble
 	for(var i  = 1; i<7; i++){
-		$('#dragBubble_' + i).draggable({ revert: true,stack: "div" });
+		$('#dragBubble_' + i).draggable({ revert: true,stack: "div", containment:"#main" });
 	}
 	
 	//Create drop targets	
