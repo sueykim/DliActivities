@@ -16,19 +16,14 @@ $(document).ready(function () {
 	loadActivity(parseXml);
 	
 	
-	//bind text input with mouse click
-	$('#scratchText')   //leave submit buttons, etc alone
-          .bind( 'focus', function() {                //focus is more accessible than click
-                                                      //a user can't change a field without it
-              $(this)
-                 .attr('value', '')                   //more chaining = less searching
-                 //.css('color','#000');
-             })  ;
-          //.bind( 'blur', function() {                 //supposing you want to revert back on blur...
-          //    $(this)
-                 //.css('color','#ccc');
-          //   });
+	
+		  
+		  
+		  
+		  		$("#scratchText").focus(function() {if (this.value == "Scratch Text Area") {this.value = ''; }});
+$("#scratchText").blur(function() { if ($.trim(this.value) == '') { this.value = "Scratch Text Area";} });
         });
+
 
 var xml;
 function parseXml(t_xml)
@@ -119,13 +114,24 @@ var btnLock;
 
 function callPressed(){
 	var str = document.getElementById('displayText').innerHTML;
-	btnLock = true;
+	if( parseInt(str) >= 0) {// revised by thomaa to add this if to check user enter number before send. otherwise, no work.
+	//btnLock = true;
+	btnLock = false;
+	
+	//revised for the 14a by Thomas 20140613
+		if ($(itemXml).attr("numberTry"))
+			$(itemXml).attr("numberTry", parseInt($(itemXml).attr("numberTry")) +1);
+		else
+		    $(itemXml).attr("numberTry", "1");
+			
+	
+			
 	//revised for the 14a by SK 20140304
 	if(str == currentPhoneNumber){
 		copyOfText = str;
 		
 		document.getElementById('displayText').innerHTML = "Correct!";
-		
+			$('#displayText').css( {"font-size": "40px", "padding":"0px 3px 0px 3px"});
 		timeoutID = window.setTimeout(correctTimerEnd, 2000);
 		document.getElementById('clickGuard').style.display = "block";
 		
@@ -134,7 +140,28 @@ function callPressed(){
 		$("#" + currentSet).addClass("itemCompleted");
 		
 		
-		//check for all completed
+		
+	}else{
+		//revised for the 14a by Thomas 20140613
+		if ($(itemXml).attr("numberTry") >2) {
+			$(itemXml).attr('completed', "true");
+			copyOfText = currentPhoneNumber;
+			document.getElementById('displayText').innerHTML = "The correct answer is:";
+		$('#displayText').css( {"font-size": "20px", "padding":"15px 0px 0px 0px"});
+		timeoutID = window.setTimeout(correctTimerEnd, 2000);
+		document.getElementById('clickGuard').style.display = "block";
+		} else {//end revised by Thomas
+		
+		copyOfText = str;
+		
+		document.getElementById('displayText').innerHTML = "Try Again!";
+		$('#displayText').css( {"font-size": "40px", "padding":"0px 3px 0px 3px"});
+		timeoutID = window.setTimeout(timerEnd, 2000);
+		document.getElementById('clickGuard').style.display = "block";
+		}
+	}
+	}
+	//check for all completed
 		var completed = true;
 		$(xml).find("item").each(function(){
 			if($(this).attr("completed") != "true"){
@@ -149,33 +176,23 @@ function callPressed(){
 			}else{
 				alert("Activity Completed");
 			}
-		}else{
-			//alert("incomplete");
 		}
-	}else{
-		copyOfText = str;
-		
-		document.getElementById('displayText').innerHTML = "Incorrect";
-		
-		timeoutID = window.setTimeout(timerEnd, 2000);
-		document.getElementById('clickGuard').style.display = "block";
-	}
 }
 
 
 function correctTimerEnd(){
 	document.getElementById('displayText').innerHTML = copyOfText;
-	
-	$(itemXml).attr('audio');
+	$('#displayText').css( {"font-size": "40px", "padding":"5px 3px 0px 3px"});
+	//$(itemXml).attr('audio');
 
-	//document.getElementById('clickGuard').style.display = "block";
-	document.getElementById('clickGuard').style.display = "none";
+	document.getElementById('clickGuard').style.display = "block";
+	//document.getElementById('clickGuard').style.display = "none";
 	btnLock = false;
 }
 
 function timerEnd(){
 	document.getElementById('displayText').innerHTML = copyOfText;
-	
+	$('#displayText').css( {"font-size": "40px", "padding":"5px 3px 0px 3px"});
 	document.getElementById('clickGuard').style.display = "none";
 	
 	btnLock = false;
@@ -187,8 +204,12 @@ function nextClick(){
 		
 	if(currentSet != numSets - 1){
 		//Save the scratch text
+		var text= document.getElementById("displayText").innerHTML;
+		if ((text == "Try Again!") || (text == "The correct answer is:")||(text == "Correct!"))
+		         text = copyOfText;
 		itemXml.attr("scratchText", document.getElementById("scratchText").value);
-		itemXml.attr("tempDisplayValue", document.getElementById("displayText").innerHTML);
+		itemXml.attr("tempDisplayValue", text);
+		clearTimeout(timeoutID);
 	
 		loadSet(currentSet + 1);
 	}
@@ -200,8 +221,12 @@ function prevClick(){
 	
 	if(currentSet != 0){
 		//Save the scratch text
+			var text= document.getElementById("displayText").innerHTML;
+		if ((text == "Try Again!") || (text == "The correct answer is:")||(text == "Correct!"))
+		         text = copyOfText;
 		itemXml.attr("scratchText", document.getElementById("scratchText").value);
-		itemXml.attr("tempDisplayValue", document.getElementById("displayText").innerHTML);
+		itemXml.attr("tempDisplayValue", text);
+		clearTimeout(timeoutID);
 		
 		loadSet(currentSet - 1);
 	}
@@ -240,7 +265,6 @@ function loadSet(value){
 					$(xml).find("content").attr("tl_textfield_width") +
 					"' ";
 		}
-		
 		var transValue = translatePhoneNum($(v).attr("value"));
 		
 		$("#selectable").append($("<div class='phoneNum noSelect' " + 
