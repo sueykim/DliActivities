@@ -476,3 +476,8 @@ html body {
     width: 100%;
     z-index: 9;
 }
+
+.content2{
+    height: 200px;
+    overflow-y: auto;
+}
