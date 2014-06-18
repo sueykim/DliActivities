@@ -3,12 +3,12 @@ $(document).ready(function() {
 	$("#feedbackText").html("");
 	$('#feedback').show();
 	$("#feedbackBtn").hide();
-	
+
 	audioInit();
 	
 	//Create Drag Bubble
 	for(var i  = 0; i < numDragBubbles; i++){
-		$('#dragBubble_' + (i + 1)).draggable({ revert: true , stack: "div"});
+		$('#dragBubble_' + (i + 1)).draggable({ revert: true , stack: "div", containment:"#main"});
 	}
 	
 	//Create drop targets	
@@ -150,13 +150,14 @@ function setState(value){
 	}
 }
 
+
 function state2LoadSet(value){
 	state2CurrentSet = value;
 	state2CurrentSetIndex = 0;
 	setCompletedShown = false;
 	
 	$("#clickGuard").css("display","none");
-	
+
 	document.getElementById('setIndex').innerHTML = (state2CurrentSet + 1) + "/" + numSets;
 	
 	//Load image buttons
@@ -206,7 +207,7 @@ var numDropTargets = 6;
 
 function parseXml(t_xml){
 	numSets = $(xml).find("item").length / numDropTargets;
-
+        numSets = Math.ceil(numSets);
 	// true for homework and undefined for regular
 	homeworkStatus = $(xml).find("content").attr("hw");
 	
@@ -389,10 +390,11 @@ function showFeedback(value, textInput){
 			break;
 		case "activity_completed":
 			$("#feedbackHeader").html("Activity Completed");
-			$("#feedbackBtn").html("Next Activity");
+			////$("#feedbackBtn").html("Next Activity");
 			break;
 	}
 	$("#clickGuard").css("display","block");
+	$("#feedbackText").mCustomScrollbar();
 	$('#feedback').show();
 	
 	/*$('#feedback').animate( {
