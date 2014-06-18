@@ -359,7 +359,7 @@ function exchangeAudioPlay(){
 	document.getElementById('audioPlayer').play();
     */
     exchangeAudioEnded();
-
+}
 function exchangeAudioEnded(){
 	if(conversationSolvedToggle){
 		//We're at the last exchange so play movie
