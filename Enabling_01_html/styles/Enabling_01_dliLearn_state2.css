@@ -52,7 +52,7 @@
 #setDiv {
 
 	/* left: 787px; */
-	left: 736px;
+	left: 722px;
     top: 420px;
     width: 107px;
 }
@@ -105,4 +105,23 @@
     top: 58px;
     width: 235px;
     z-index: 100;
+}
+
+#feedbackText {
+	margin-top:-3px;
+	height:240px;
+	width:204px;
+}
+
+
+#clickGuard {
+    background-color: lightgray;
+    display: none;
+    height: 460px;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    width: 850px;
+    z-index: 10;
 }
