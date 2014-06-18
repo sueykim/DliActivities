@@ -19,11 +19,10 @@ $(document).ready(function() {
 	
 	//tod - add 2 tries per letter
 
-	if ( getPassedParameters() == false)
-           {
-	   //Default values (for testing)
-           mediaPath = "sampleData/";
-           cssFilename = "styles/Enabling_08.css";
+    if (getPassedParameters() == false) {
+        //Default values (for testing)
+        mediaPath = "sampleData/";
+        cssFilename = "styles/Enabling_08.css";
            xmlFilename = mediaPath + "Enabling_08_sampleData.xml";
            jsonFilename = mediaPath + "Enabling_08_sampleData.js";
            }
@@ -286,9 +285,14 @@ function loadConversation(value){
 		loadExchange(0); 
 		hideVideoStage();
 	}else{
-		showVideoStage();
+        // will play the audio istead
+        //exchangeAudioPlay();
+        //showVideoStage();
+        loadExchangeNPlay();
 		loadLinksAndArrows();
-		activityVideoPlay();	
+        //no need for the video after the conversation per sabine
+        //activityVideoPlay();
+        activityVideoCompleted();
 	}
 }
 
@@ -298,6 +302,10 @@ function playAudio(){
 	document.getElementById('audioPlayer').play();
 }
 
+function loadExchangeNPlay() {
+    loadExchange(0);
+    exchangeAudioPlay();
+}
 function loadExchange(value){
 	$("#answerDiv").text("");
 	$("#drop_container").css("display", "block");
@@ -374,13 +382,15 @@ function loadExchange(value){
 	//Refresh drag and drop components
 	$( ".dropTarget").droppable({
 		hoverClass: "dropTargetHover",
-		drop: dropFunction}); 
+        drop: dropFunction
+    });
 
-	$('.letter').draggable({ revert: true , 
-						//stack: "div",
-						distance: 20,
-						drag: draggingFunction,
-						stop: draggingStopFunction});
+    $('.letter').draggable({ revert: true,
+        //stack: "div",
+        distance: 20,
+        drag: draggingFunction,
+        stop: draggingStopFunction
+    });
 	
 	//load drag bubbles if present
 	if(parseInt(jSession.attr("numberOfExchangesSolved")) > 
@@ -407,6 +417,7 @@ function loadExchange(value){
 }
 
 function exchangeAudioPlay(){
+    //document.getElementById('audioPlayer').removeEventListener('error', function (e) { alert(e) });
 	var file_audio = $(jItem.find("lang_tl_a_phrase_audio")).text();
 	audio_play_file(removeFileExt(file_audio), mediaPath );
 	
@@ -416,7 +427,8 @@ function exchangeAudioPlay(){
 }
 
 function exchangeAudioEnded(){
-	var file_audio = $(jItem.find("lang_tl_b_phrase_audio")).text();
+    document.getElementById('audioPlayer').removeEventListener('ended', exchangeAudioEnded);
+    var file_audio = $(jItem.find("lang_tl_b_phrase_audio")).text(); //lang_tl_b_phrase_audio
 	audio_play_file(removeFileExt(file_audio), mediaPath );
 
 	//add event listener for audio finished
@@ -430,9 +442,11 @@ function exchangeAudioEnded2(){
 		//We're at the last exchange so play movie
 		jSession.attr("completed","true");
 		
-		showVideoStage();
-		hideStageClickGuard();	
-		activityVideoPlay();	
+        //per sabine no need fot the video
+        //showVideoStage();
+        //hideStageClickGuard();
+        //activityVideoPlay();
+        activityVideoCompleted();
 	}
 	
 	loadLinksAndArrows();
@@ -469,6 +483,7 @@ function exchangeArrowPressed(){
 	loadExchange(jSession.attr("currentExchangeIndex"));
 }
 
+/* not used since we dnt need the video at the end
 function activityVideoPlay(){
 	//add event listener for video finished
 	showClickGuard();
@@ -479,6 +494,7 @@ function activityVideoPlay(){
 	document.getElementById('videoTag').addEventListener('ended', activityVideoCompleted);
 	document.getElementById('videoTag').play();
 }
+*/
 
 function activityVideoCompleted(){
 	hideClickGuard();
@@ -680,6 +696,7 @@ function showFeedback(value, textInput){
 	}
 	
 	$('#feedback').show();
+    $("#feedbackText").mCustomScrollbar();
 	
 	/*$('#feedback').animate( {
 	left: '380px',
