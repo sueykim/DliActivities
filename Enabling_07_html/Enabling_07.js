@@ -348,6 +348,8 @@ function playBtnUp(value){
 }
 
 function exchangeAudioPlay(){
+//per Sabine, no need for the audio by itself
+/*
 	//add event listener for audio finished
 	var file_audio = $(jItem.find("tl_response_audio")).text();
 	audio_play_file(removeFileExt(file_audio), mediaPath );
@@ -355,7 +357,8 @@ function exchangeAudioPlay(){
 	//todo fix this
 	document.getElementById('audioPlayer').addEventListener('ended', exchangeAudioEnded);
 	document.getElementById('audioPlayer').play();
-}
+    */
+    exchangeAudioEnded();
 
 function exchangeAudioEnded(){
 	if(conversationSolvedToggle){
