@@ -234,7 +234,7 @@ html body {
 
 #playBtnVideo{
     left: 30px;
-    position: absolute;
+    position: absolute !important;
     top: 350px;
     z-index: 9000;
 }
