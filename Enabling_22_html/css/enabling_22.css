@@ -365,6 +365,7 @@ cursor:pointer;
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
 	border-radius:5px;
+	z-index:10000;
 
 }
 .dropBubble {
@@ -451,8 +452,11 @@ cursor:pointer;
 }
 #audioPlayer {
 	position:absolute;
-	top:0px;
-	left:0px;
+	top:35px;
+	left:35px;
+	width:35px;
+	z-index:0;
+	
 }
 #setDiv {
 	cursor:default;
