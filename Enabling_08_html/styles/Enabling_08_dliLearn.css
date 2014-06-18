@@ -577,3 +577,7 @@ div, span{
     left: 160px;
     top: 220px;
 }
+.content2{
+    height: 200px;
+    overflow-y: auto;
+}
