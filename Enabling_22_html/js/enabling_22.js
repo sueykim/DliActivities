@@ -428,7 +428,7 @@ function loadSet() {
 								var numWords = wordsPosition.split(",");
 								for ( var z=0; z < numWords.length; z++) { 
 										var id = "word" +(numWords[z]);
-										if(z==0)
+										if(numWords[z]==1)
 										$("#"+id).html(capitaliseFirstLetter($("#"+id).html()));
 										$("#"+id).css({"visibility":"visible", "color": "#000", "border-bottom":"1px solid #000"});
 								}
@@ -515,7 +515,7 @@ function loadSet() {
 						var numWords = wordsPosition.split(",");
 						for ( var z=0; z < numWords.length; z++) { 
 							var id = "word" +(numWords[z]);
-							if(z==0)
+							if(numWords[z]==1)
 							$("#"+id).html(capitaliseFirstLetter($("#"+id).html()));
 							$("#"+id).css({"visibility":"visible", "color": "#000", "border-bottom":"1px solid #000"});
 						}
