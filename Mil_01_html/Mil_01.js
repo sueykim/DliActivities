@@ -15,9 +15,9 @@ $(document).ready(function() {
 	
 	loadActivity(parseXml);
 	
-	$( "#engSelectable" ).selectable({selected: listItemSelected});
-	$( "#transliSelectable" ).selectable({selected: listItemSelected});
-	$( "#transSelectable" ).selectable({selected: listItemSelected});
+	//$( "#engSelectable" ).selectable()//{selected: listItemSelected});
+	//$( "#transliSelectable" ).selectable()//{selected: listItemSelected});
+	//$( "#transSelectable" ).selectable()//{selected: listItemSelected});
 	
 	$( "#engPhraseSelectable" ).selectable();
 	$( "#transliPhraseSelectable" ).selectable();
@@ -34,6 +34,7 @@ $(document).ready(function() {
 	   }
 	});
 	
+	$("#tabs > div").scrollTop(0)
 }); 
 
 function disableTranslation(){
@@ -61,10 +62,17 @@ function timeout_trigger(){
 }
 
 function tabSelected(event, ui){
+	//setTimeout(function(){
+	//	$(ui.panel).mCustomScrollbar("update")}, 500)	
+	
 	tabTimer = setTimeout('timeout_trigger()', 200);
 }	
  
 function scrollToItem(value, scrollInertia){
+	$("#tabs > div").animate({ scrollTop: value * 34 }, "slow")
+	
+	return;
+	
 	var options = {};
 	
 	if(scrollInertia != undefined){
@@ -83,12 +91,16 @@ function scrollToItem(value, scrollInertia){
 }
  
 var gv_tally = 0;
-function listItemSelected(event, ui){
+function listItemSelected(node, event){
+	$("#tabs > div > ol > li").removeClass("ui-selected")
+	
+	$(node).addClass("ui-selected")
+	
 	var tally = 0;
 
 //	alert($(ui.selected).html())
-	$(ui.selected.parentNode).find("li").each(function(){
-	    if($(this).hasClass("ui-selected")){
+	$(node.parentNode).find("li").each(function(i,v){
+	    if($(v).hasClass("ui-selected")){
 	        return false;
 	    }
 	    
@@ -97,7 +109,7 @@ function listItemSelected(event, ui){
 	});
 	gv_tally = tally;
 	$('#setText').html((tally+1) + '/' + numItems);
-	scrollTopOff = $(ui.selected.parentNode.parentNode).scrollTop();
+	scrollTopOff = $(node.parentNode).scrollTop();
 	execute_select_item(tally);
 	scrollToItem(tally);
 	playTheVideo();
@@ -167,13 +179,13 @@ function parseXml(t_xml){
 	isJapanese = $(xml).find("content").attr("target_language") == "Japanese";
 	
 	$(xml).find("item").each(function(){
-			engHtml = engHtml + ' <li class="ui-widget-content enw_li">' +
+			engHtml = engHtml + ' <li onclick="listItemSelected(this, event)" class="ui-widget-content enw_li">' +
 						$(this).find("lang_en").text() + '</li>';
 						
 			if($(this).find("lang_trans").text() == ""){
 				disableTransliteration();
 			}else{
-				transliHtml = transliHtml + ' <li class="ui-widget-content">' +
+				transliHtml = transliHtml + ' <li onclick="listItemSelected(this, event)" class="ui-widget-content">' +
 							$(this).find("lang_trans").text() + '</li>';
 			}
 			
@@ -183,12 +195,12 @@ function parseXml(t_xml){
 				//transHtml = transHtml + ' <li class="ui-widget-content">' +
 				//		$(this).find("lang_tl").text() + '</li>';					
 				if (!isJapanese) {
-				transHtml = transHtml + ' <li class="ui-widget-content">' +
+				transHtml = transHtml + ' <li onclick="listItemSelected(this, event)" class="ui-widget-content">' +
 						$(this).find("lang_tl").text() + '</li>';
 			}
 				else {
 					// To display ruby tag
-					transHtml = transHtml + ' <li class="ui-widget-content">' +
+					transHtml = transHtml + ' <li onclick="listItemSelected(this, event)" class="ui-widget-content">' +
 						displayRubyTag($(this).find("lang_tl").text()) + '</li>';
 				}
 			}
@@ -197,22 +209,31 @@ function parseXml(t_xml){
 	$('#engSelectable').html(engHtml);
 	$('#transliSelectable').html(transliHtml);
 	$('#transSelectable').html(transHtml);
-	//added the below to activate the mCustomScrollbar on the "engTab" div 
-	$('.allTabs>div:first').mCustomScrollbar("update");	
+	
 	//alert($($('.enw_li')[0]).html()); 
 	var firstSelect= $($('.enw_li')[0]);
 	firstSelect.addClass("ui-selected");
 	numItems = $(xml).find("item").length;
 	$('#setText').html('1/' + numItems);
 	execute_select_item(0);
-       //alert($("#activityIFrame").attr('src'))
-                  
-       //added to detect the load of the mil_01 into framework then and only then play the video of the first phrase
-       if (parent.window.frames['activityIFrame'] != undefined && parent.window.frames['activityIFrame'].src != '' && parent.window.frames['activityIFrame'].src.toLowerCase().indexOf('mil_01') > -1 )
-       {
-          playTheVideo()
-       }
-       //if (frmsrc != undefined && frmsrc)
+	playTheVideo();
+	
+	/*setTimeout(function(){
+		//added the below to activate the mCustomScrollbar on the "engTab" div 
+		$($(".allTabs>div")[0]).mCustomScrollbar()
+		
+		$('#tabs').tabs('select', 1);
+		$($(".allTabs>div")[1]).mCustomScrollbar()
+		
+		$('#tabs').tabs('select', 2);
+		$($(".allTabs>div")[2]).mCustomScrollbar()
+		
+
+		$('#tabs').tabs('select', 0);
+	},500)*/
+	
+	//setTimeout(function(){
+	//	$(".allTabs>div").mCustomScrollbar()}, 500)	
 }
 
 function prevItemClick(){

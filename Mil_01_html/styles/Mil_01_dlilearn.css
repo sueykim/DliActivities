@@ -56,7 +56,7 @@ html body {
 #engSelectable .ui-selecting { background: #FECA40; }
 #engSelectable .ui-selected { background: #f6a816; color: white; }
 #engSelectable { list-style-type: none; margin: 0; padding: 0; width: 100%; }
-#engSelectable li { margin: 3px; padding: 0.4em; font-size: 12px; height: auto; }     /*height: 18px;   font-family: 'FuturaMedium';  */
+#engSelectable li { cursor:pointer; margin: 3px; padding: 0.4em; font-size: 12px; height: auto; }     /*height: 18px;   font-family: 'FuturaMedium';  */
 
 #transliSelectable .ui-selecting { background: #FECA40; }
 #transliSelectable .ui-selected { background: #f6a816; color: white; }

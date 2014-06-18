@@ -24,27 +24,6 @@
 		<script src="../common/js/dli_video.js"></script>
 		
 		<script src="Mil_01.js"></script>
-		
-	<script>
-		 $(function() {
-			$( "#tabs" ).tabs();
-			$(".allTabs>div").mCustomScrollbar();
-			$('.allTabs>div').hide();
-				$('.allTabs>div:first').show();
-				$('.allTabs ul li:first').addClass('active');			
-				$('.allTabs ul li a').click(function(){
-					$('.allTabs ul li').removeClass('active');
-					$(this).parent().addClass('active');
-					var currentTab = $(this).attr('href');
-					$('.allTabs>div').hide();
-					$(currentTab).show();
-					$(currentTab).mCustomScrollbar("update");
-					return false;
-				});
-		});
-	
-
-	</script>
 	</head>
 	<body>
 		<noscript>Activity cannot load. No Javascript support detected.</noscript>
