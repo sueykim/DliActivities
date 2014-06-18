@@ -182,8 +182,11 @@ function loadSet(value){
 	$($('.smImg')[i]).html(imgStr);
 	var tlWordStr = $($(xml).find("lang_tl")[theNo]).text();
 	$($('.tlText')[i]).html(tlWordStr);
-	var tlDir = $($(xml).find("lang_tl")[theNo]).attr("dir");	
-	var tlInputStr = '<input type="text" id="tlIput' + theNo + '" width="165px" />';
+	var tlDir = $($(xml).find("lang_tl")[theNo]).attr("dir");
+	if (tlWordStr.length > 18)
+    	  var tlInputStr = '<input type="text" id="tlIput' + theNo + '" width="165px" style="font-size: 14px;")/>';
+	else
+    	  var tlInputStr = '<input type="text" id="tlIput' + theNo + '" width="165px" />';
 	$($('.tlInputfield')[i]).html(tlInputStr);
 	if (tlDir.toLowerCase() == 'rtl')
 		$('#tlIput'+theNo).css({'direction':'rtl', 'text-align':'right'});
