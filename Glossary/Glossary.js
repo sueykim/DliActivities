@@ -104,8 +104,8 @@ function updateFilteredItems(){
 		})
 	}
 	
-	//setTimeout(function(){
-	//	$("#engTab").mCustomScrollbar("update")}, 500)
+	setTimeout(function(){
+		$("#engTab").mCustomScrollbar("update")}, 500)
 }
 
 function scrollToItem(value, scrollInertia){
@@ -274,8 +274,8 @@ function parseXml(t_xml){
 		alert("function parseXml finished")
 	}
 	
-	//setTimeout(function(){
-	//	$("#engTab").mCustomScrollbar()}, 500)	
+	setTimeout(function(){
+		$("#engTab").mCustomScrollbar()}, 500)	
 }
 
 function numberOfItems(){
