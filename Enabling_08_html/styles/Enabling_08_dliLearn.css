@@ -396,7 +396,8 @@ div, span{
     	*/
     	padding:7px  7px  7px  7px;
 	float: left;
-	color: red;
+	color: green;
+	font-weight: bold;
 }
 
 #conversationLinks {
