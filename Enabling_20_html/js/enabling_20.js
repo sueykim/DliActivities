@@ -62,22 +62,7 @@ function initEnable20(){
 	        hint.id = "hint";
 		   feedbackDiv.appendChild(hint);
 		   
-		   	    //feedbackTop
-    var hintTop = document.createElement("div");
-    hintTop.id = "hintTop";
-	hintTop.innerHTML ='<div id="titleHint"></div>';
-	hint.appendChild(hintTop);
 	
-   //feedbackBody 
-    var hintBody = document.createElement("div");
-    	hintBody.id = "hintBody";
-		hint.appendChild(hintBody);
-
-    //feedbackBottom
-    var hintBottom = document.createElement("div");
-    hintBottom.id = "hintBottom";
-	hintBottom.innerHTML ='<button type="button" href="#" id="closeHintBtn" class="btn">OK</button>';
-   hint.appendChild(hintBottom);
 		   
 		   
 		   
@@ -150,7 +135,7 @@ function parseXml(t_xml)
 	var temp = new Object();
 	temp={x:38, y:33, pinsX:45, pinsY:36};
 	notesCoordinates.push(temp);
-	temp={x:400, y:13, pinsX:435, pinsY:13}
+	temp={x:365, y:13, pinsX:390, pinsY:10}
 	notesCoordinates.push(temp);
 	temp={x:210, y:80, pinsX:250, pinsY:80};
 	notesCoordinates.push(temp);
@@ -249,8 +234,7 @@ function loadQuestion(){
 	$('input:radio').attr('checked', false);
 	$('input:radio').attr('disabled', false);
 	$('input:radio').unbind('click');
-	$("#hintBody, #titleHint").html("");
-	$("#hintBottom").hide();
+	$("#hint").html("");
 	$('input:radio').css("cursor", "pointer");
 	$('label').css("cursor", "pointer");
 	$("#setText").html((currentQuestion + 1) +"/"+totalQuestions);
@@ -300,14 +284,20 @@ function loadQuestion(){
 
 				});
 		}
-		if ((height+30) < 280){ 
+		if ((height+30) < 280){
+			$("#feedbackDiv").height(230); 
+			$("#hint, #transcript").height(222); 
+			
 				$("#answersDiv").height(height+10);
-				$("#contentPanelInner, #boardDiv").height(height+10+70+150+10);
+				$("#contentPanelInner, #boardDiv").height(height+10+70+230+10);
 				var top= ((height+10+70+178+10)-350) +"px";
 				$("#popUpNoteDiv").css("top",top); 
 		
 		} else {
-			
+			    $("#feedbackDiv").height(150);
+				$("#hint, #transcript").height(142);
+				
+				 
 					$("#answersDiv").css({"height":"275px", "overflow":"auto"});	
 						$("#contentPanelInner,#boardDiv").height(275+70+150+10);
 						var top= ((275+70+178+10)-350) +"px";
@@ -400,14 +390,12 @@ function checkAnswers(){
 				$('input:radio').attr('disabled', true);
 					$('input:radio').css("cursor", "default");
 						$('label').css("cursor", "default");
-				 if (questionCompleted == totalQuestions)
-				  holdTimeout= setTimeout(function(){
-					                      		  $(enable20_xml).find("questions").attr("completed", "true");
-																  if(parent.activityCompleted)
-																			parent.activityCompleted(1,0);
-																  else
-																			showHint("activity_completed");
-										  },  5000);
+				 if (questionCompleted == totalQuestions){
+					            $(enable20_xml).find("questions").attr("completed", "true");
+								 if(parent.activityCompleted)
+										parent.activityCompleted(1,0);
+									
+				};
 				  			
 		} else {
 				if ( ($(questionObj).attr("numberTry") == 2)){
@@ -421,21 +409,19 @@ function checkAnswers(){
 								if ($(this).val()=="true")
 										$(this).attr('checked', true);
 						});
-						 if (questionCompleted == totalQuestions)
-						 				  holdTimeout= setTimeout(function(){
-					                      		                 $(enable20_xml).find("questions").attr("completed", "true");
-																  if(parent.activityCompleted)
-																			parent.activityCompleted(1,0);
-																  else
-																			showHint("activity_completed");
-										              },  5000);
+						 if (questionCompleted == totalQuestions){
+					            $(enable20_xml).find("questions").attr("completed", "true");
+	                                   if(parent.activityCompleted)
+											parent.activityCompleted(1,0);
+										   
+						};
 					
 									
 				}else  {
 						showHint("false");
 						 holdTimeout= setTimeout(function(){
 					                      		                $("#hint").hide();
-										              },  5000);
+										  },  5000);
 				}
 	
 
@@ -459,8 +445,32 @@ function checkAnswers(){
 
 
 function showHint(type) {
-	$("#titleHint, #hintBody").html("");
-    $("#closeHintBtn").unbind('click');
+	var  hint= document.getElementById("hint");
+	hint.innerHTML="";
+		   	    //feedbackTop
+    var hintTop = document.createElement("div");
+    hintTop.id = "hintTop";
+	hintTop.innerHTML ='<div id="titleHint"></div>';
+	hint.appendChild(hintTop);
+	
+   //feedbackBody 
+    var hintBody = document.createElement("div");
+    	hintBody.id = "hintBody";
+		hint.appendChild(hintBody);
+
+    //feedbackBottom
+    var hintBottom = document.createElement("div");
+    hintBottom.id = "hintBottom";
+	hintBottom.innerHTML ='<button type="button" href="#" id="closeHintBtn" class="btn">OK</button>';
+    hint.appendChild(hintBottom);
+	if ($("#hint").height() > 142 ){
+	$("#hintBottom").css("top", "185px");
+	$("#hintBody").css("top", "3px");
+	}
+	else {
+	$("#hintBottom").css("top", "110px");
+	$("#hintBody").css("top", "-3px");
+	}
 	 $("#hint, #hintBottom").show();
 	  $("#transcript").hide();
 	  var questionObj =$(enable20_xml).find("questions").children()[currentQuestion];;
@@ -490,7 +500,8 @@ function showHint(type) {
 	 if (type == "true") {
 		 $("#titleHint").html("<img src='images/feedback_correct.png'/>");
 		
-	 } else  if (type == "false"){
+	 }
+	 if (type == "false"){
 		 $("#titleHint").html("<img src='images/feedback_incorrect.png'/>");
 		  if ($(questionObj).attr("numberTry") && ($(questionObj).attr("numberTry") == 2)) {
 				$("#hintBody").append('<div style="color:#7a0026">The correct answer is showned above.</div>');
@@ -499,16 +510,28 @@ function showHint(type) {
 		  } 
 		
 	 
-	 } else  if (type == "activity_completed"){
-		 $("#titleHint").html("This Activity is completed!");
-		$("#titleHint").css({"color": "#29725b", "margin" :"15px 0px 0px 0px"});
-		$("#hintBody").html("");
-		$("#closeHintBtn").hide();
+	 }
+	  if (questionCompleted == totalQuestions){
+		 $("#hintBody").append('<div style="color:#29725b; margin:8px 0px 0px 0px;">This Activity is completed!</div>')
+		 $("#closeHintBtn").hide();
 		 
 	 }
-	 
-	if ( parseFloat($("#hintBody").height()) > 80 ) { 
-	 	$("#hintBody").css({"height":"80px", "overflow":"auto"});	
+	
+	 if ($("#hint").height() < 143 ) {
+				if ( parseFloat($("#hintBody").height()) > 80 ) { 
+	 						$("#hintBody").css({"height":"80px", "overflow":"auto"});	
+							$("#hintBody").mCustomScrollbar({
+							 mouseWheel:true,
+               									scrollButtons: {
+                  								 	enable: true
+              							 		},
+               									 theme: "dark-2"
+           					});
+				}
+	 }
+	else {
+	if ( parseFloat($("#hintBody").height()) > 150 ) { 
+	 	$("#hintBody").css({"height":"150px", "overflow":"auto"});	
 		$("#hintBody").mCustomScrollbar({
 							 mouseWheel:true,
                									scrollButtons: {
@@ -516,6 +539,7 @@ function showHint(type) {
               							 		},
                									 theme: "dark-2"
            					});
+	}
 	}
 	 
 	 $("#closeHintBtn").click(function () {
@@ -564,7 +588,7 @@ function addImagesOnBoard(img, transcriptInput, langDir, x, y, obj, index){
 				 if (langDir.toLowerCase()== "rtl")
 						 $("#transcript").css({'font-size':'18px'});
 				else
-						 $("#transcript").css({'font-size':'14px'});
+						 $("#transcript").css({'font-size':'15px'});
 				$("#transcript").html(transcript);
 			}
 		 	 imgEl.onmouseout = function()  {
@@ -657,7 +681,7 @@ function loadBiggerNote(url, transcriptInput, langDir){
 				 if (langDir.toLowerCase()== "rtl")
 						 $("#transcript").css({'font-size':'18px'});
 				else
-						 $("#transcript").css({'font-size':'14px'});
+						 $("#transcript").css({'font-size':'15px'});
 				$("#transcript").html(transcript);
 			}
 		 	 imgEl.onmouseout = function()  {
