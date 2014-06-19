@@ -17,9 +17,8 @@ $(document).ready(function() {
 		alert("function ready params loaded")
 	}
 	
-	$( "#engSelectable" ).selectable({selected: listItemSelected});
+	//$( "#engSelectable" ).selectable({selected: listItemSelected});
 	
-	$( "#engPhraseSelectable" ).selectable();
 	
 	//Load filter letter bar
 	for(var i = "A".charCodeAt(0); i < "Z".charCodeAt(0) + 1; i++){
@@ -59,6 +58,8 @@ var highestModule = 10
 var highestTask = 7
 
 function filterBtnClicked(value){
+	loadBlankItem()
+	
 	if($(value).hasClass("toggled")){
 		$(value).removeClass("toggled")
 	}else{
@@ -66,6 +67,8 @@ function filterBtnClicked(value){
 	}
 	
 	updateFilteredItems()
+	
+	listItemSelected($("#engSelectable > li:not('.hidden')")[0])
 }
 
 function updateFilteredItems(){
@@ -101,8 +104,8 @@ function updateFilteredItems(){
 		})
 	}
 	
-	setTimeout(function(){
-		$("#engTab").mCustomScrollbar("update")}, 500)
+	//setTimeout(function(){
+	//	$("#engTab").mCustomScrollbar("update")}, 500)
 }
 
 function scrollToItem(value, scrollInertia){
@@ -114,12 +117,21 @@ function scrollToItem(value, scrollInertia){
 }
  
 var gv_tally = 0;
-function listItemSelected(event, ui){
+function listItemSelected(node, event){
+	if(node == undefined){
+		loadBlankItem()
+		return
+	}
+	
 	var tally = 0;
+	
+	$("#engSelectable > li").removeClass("ui-selected")
+	
+	$(node).addClass("ui-selected")
 
 //	alert($(ui.selected).html())
-	$(ui.selected.parentNode).find("li").each(function(){
-	    if($(this).hasClass("ui-selected")){
+	$(node.parentNode).find("li").each(function(i,v){
+	    if($(v).hasClass("ui-selected")){
 	        return false;
 	    }
 	    
@@ -127,14 +139,31 @@ function listItemSelected(event, ui){
 	
 	});
 	gv_tally = tally;
-	$('#setText').html((tally+1) + '/' + numItems);
+	
 	execute_select_item(tally);
 	scrollToItem(tally);
 	playTheVideo();
 	
 }
+
+function loadBlankItem(){
+	
+	$(".itemInfo_Index").text("")
+	
+	$("#engSelectable li").removeClass("ui-selected");
+	
+	$('.itemInfo_English').text("");
+	$('.itemInfo_Transliteration').text("");
+	$('.itemInfo_Translation').text("");	
+	
+	$("#videoTag").remove()
+}
+
 function execute_select_item(tally){
-	$(".itemInfo_Index").text((tally+1) + "/" + (numItems))
+	var elemIndex = $("#engSelectable li:not('.hidden')")
+							.index($("#engSelectable li.ui-selected")[0])
+	
+	$(".itemInfo_Index").text((elemIndex+1) + "/" + numberOfItems())
 	
 	$("#engSelectable li").removeClass("ui-selected");
 	$($("#engSelectable li")[tally]).addClass("ui-selected");
@@ -164,7 +193,6 @@ function playTheVideo(){
 		loadVideo(mediaPath, removeFileExt(file_video), "Glossary");
 	}
 }
-var numItems 
 
 function parseXml(t_xml){
 	if(params['performanceChecks'] != undefined){
@@ -213,8 +241,8 @@ function parseXml(t_xml){
 		
 		var itemSnipClone = $("#itemSnip").clone()
 		
-		itemSnipClone.attr("modulenum", modNum)
-		itemSnipClone.attr("tasknum", taskNum)
+		itemSnipClone.find("li").attr("modulenum", modNum)
+		itemSnipClone.find("li").attr("tasknum", taskNum)
 		itemSnipClone.find(".label").text($(v).find("english").text())
 		
 		engHtml = engHtml + itemSnipClone.html()
@@ -223,7 +251,6 @@ function parseXml(t_xml){
 			engHtml += " :" + modNum + "," + taskNum 
 		}
 		
-		engHtml +=  '</li>';
 	})
 
 	if(params['performanceChecks'] != undefined){
@@ -239,8 +266,7 @@ function parseXml(t_xml){
 	//alert($($('.enw_li')[0]).html()); 
 	var firstSelect= $($('.enw_li')[0]);
 	firstSelect.addClass("ui-selected");
-	numItems = $(xml).find("phrase").length;
-	$('#setText').html('1/' + numItems);
+	
 	execute_select_item(0);
 	playTheVideo();
 	
@@ -248,8 +274,12 @@ function parseXml(t_xml){
 		alert("function parseXml finished")
 	}
 	
-	setTimeout(function(){
-		$("#engTab").mCustomScrollbar()}, 500)	
+	//setTimeout(function(){
+	//	$("#engTab").mCustomScrollbar()}, 500)	
+}
+
+function numberOfItems(){
+	return $("#engSelectable >li:not('.hidden')").length
 }
 
 function prevItemClick(){
@@ -258,16 +288,16 @@ function prevItemClick(){
 	}
 	execute_select_item(gv_tally);
 	playTheVideo();
-	$('#setText').html((gv_tally+1) + '/' + numItems);	
+	
 	scrollToItem(gv_tally);
 }
 function nextItemClick(){
-	if (gv_tally < numItems-1){
+	if (gv_tally < $(xml).find("phrase").length-1){
 		gv_tally++;
 	}
 	execute_select_item(gv_tally);
 	playTheVideo();
-	$('#setText').html((gv_tally+1) + '/' + numItems);	
+	
 	scrollToItem(gv_tally);
 }
 function getPassedParameters()
