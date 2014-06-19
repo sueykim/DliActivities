@@ -184,7 +184,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', end
 	background: linear-gradient(to bottom,  #fcfcfc 0%,#fcfcfc 25%,#e6e6e6 100%) !important; /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#e6e6e6',GradientType=0 ); /* IE6-9 */
 	 font-family: 'FuturaMedium';
-	font-size: 13px;
+	font-size: 15px;
 	color:#444444;
 }
 #hintTop {
@@ -204,8 +204,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', end
 #hintBottom {
 	position:absolute;
 	left:278px;
-	width:30px;
-	height:30px;
+	width:20px;
+	height:20px;
 	top:110px;
 	
 }
