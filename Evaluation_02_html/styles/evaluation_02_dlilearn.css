@@ -7,7 +7,7 @@
     margin-bottom: 20px;
     margin-left: 8px;
     margin-top: -20px;
-	width: 890px;
+	width: 860px;
 }
 .activity_hd {
     color: grey;
@@ -37,7 +37,7 @@ html body {
     border: 1px solid #BDBDBD;
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 4px #BDBDBD;
-	height: 425px;
+	height: 420px;
 	width: 400px;
 }
 #item_container0{	
@@ -116,7 +116,7 @@ html body {
     box-shadow: 0 2px 4px #BDBDBD;
     display: block;
     left: 10px;
-    top: 435px;
+    top: 430px;
     max-height: 50px;
     min-height: 50px;
     padding: 20px;
@@ -132,8 +132,8 @@ html body {
     box-shadow: 0 2px 4px #BDBDBD;
     display: block;
     left: 10px;
-    top: 435px;
-    height:50px;
+    top: 430px;
+    height:40px;
     padding: 20px;
     position: absolute;
     width: 780px;
@@ -289,7 +289,7 @@ html body {
 #container_setDiv {
    background-color: transparent;
 	position: absolute;
-	top: 525px;
+	top: 510px;
     cursor: default;
     height: 40px;
     left: -1px;
@@ -301,7 +301,7 @@ html body {
     cursor: default;
     height: 30px;
     top: 5px;
-    /*width: 120px;*/
+    width: 120px;
 	float: left;
 	margin-left: 551px;
 }
@@ -336,5 +336,5 @@ html body {
 }
 
 #id_prev_next_div {
- left:200px;
+ /*left:200px;*/
 }
