@@ -534,6 +534,7 @@ function loadSet() {
 						parent.activityCompleted(1,0);
 				else
 						showFeedback("activity_completed", "");
+						gTotalsectionCompleted++;
 												 
 			} else {
 				 showFeedback("set_completed", ""); 
@@ -787,14 +788,17 @@ function showFeedback(type, string) {
 		 
     }
 	if ((gTotalsectionCompleted == gTotalSetNumber) || (type == "activity_completed")) {
-		  if(parent.activityCompleted)
-			   parent.activityCompleted(1,0);
+		if(parent.activityCompleted)
+						parent.activityCompleted(1,0);
 	     	string += "<div class='activityCompleted'>The activity is completed.</div>";
+			gTotalsectionCompleted++;
 			$("#closeFeedbackBtn").toggle();
 	}
 	else {
 			if ((parseFloat (mSectionElem.attr("totalItemsCompleted")) == gtotalItemsCorrect) || (type == "set_completed") ) 
 	     			string += "<div class='activityCompleted'>The set is completed.</div>";
+					if (gTotalsectionCompleted > gTotalSetNumber)
+					$("#closeFeedbackBtn").toggle();
 	}
 	
 	 $("#feedbackBody").html(string);
