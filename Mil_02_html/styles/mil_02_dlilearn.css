@@ -24,7 +24,7 @@
     width: 810px;
 }
 #setDiv {
-    left: 695px;
+    left: 690px;
 
 }
 .activity_description {
@@ -66,11 +66,11 @@ html body {
 #videoContainer {
     background-color: grey;
     border-radius: 0 0 0 0;
-    height: 243px;
+    height: 240px;
     left: 510px;
-    position: absolute;
+    position: relative;
     top: 15px;
-    width: 324px;
+    width: 320px;
 }
 .displayNone {
     display: none;
@@ -83,7 +83,8 @@ html body {
     border: 1px solid #E3E3E3;
 }
 #videoTag {
-    height: 242px;
+    width: 320px;
+    height: 240px;
 }
 .playBtn {
     height: 40px;
@@ -181,7 +182,7 @@ html body {
     padding: 20px;
     position: absolute;
     top: 268px;
-    width: 326px;
+    width: 321px;
     z-index: 100;
 }
 #feedbackBtn {
@@ -195,7 +196,7 @@ html body {
     margin-top: -10px;
 }
 #feedbackText {
-    width: 297px;
+    width: 290px;
     min-height: 140px;
     max-height: 140px;
     /*overflow: auto;*/
