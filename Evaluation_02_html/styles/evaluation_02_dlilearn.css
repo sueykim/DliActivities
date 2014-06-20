@@ -303,7 +303,7 @@ html body {
     top: 5px;
     width: 120px;
 	float: left;
-	margin-left: 551px;
+	margin-left: 531px;
 }
 .btn-group > .btn:first-child {
 	border-bottom-left-radius: 4px;
@@ -336,5 +336,5 @@ html body {
 }
 
 #id_prev_next_div {
- /*left:200px;*/
+/* left:200px; */
 }
