@@ -54,8 +54,8 @@ $(document).ready(function() {
 }); 
 
 var languageId = ""
-var highestModule = 10
-var highestTask = 7
+var highestModule = 0
+var highestTask = 0
 
 function filterBtnClicked(value){
 	loadBlankItem()
@@ -232,12 +232,20 @@ function parseXml(t_xml){
 	
 	if(params['performanceChecks'] != undefined){
 		alert("function parseXml phrase generation started")
-	}
+	} 
 	
 	$(xml).find("phrase").each(function(i,v){
 		var parts = $(v).attr("loc").match(/^([0-9]+)_([0-9]+)_([0-9]+)$/)
 		var modNum = parseInt(parts[2])
 		var taskNum = parseInt(parts[3])
+		
+		if(highestTask < taskNum){
+			highestTask = taskNum
+		}
+		
+		if(highestModule < modNum){
+			highestModule = modNum
+		}
 		
 		var itemSnipClone = $("#itemSnip").clone()
 		
