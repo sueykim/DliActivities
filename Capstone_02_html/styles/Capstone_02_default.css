@@ -31,7 +31,7 @@ html, body {
 	height: auto;
 	/* width: 910px; */
 	width: 860px;
-	font-family: 'FuturaMedium';
+	/*font-family: 'FuturaMedium';*/
 }
 
 #activity_wrapper {
@@ -39,7 +39,8 @@ html, body {
 	border: none !important;
 	margin-right: -12px;
 	/* width:910px; */
-	width: 860px;	
+	width: 860px;
+	font-family: 'Arial';	
 }
 
 .activity_area {
