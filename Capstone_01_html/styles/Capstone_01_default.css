@@ -31,7 +31,7 @@ html, body {
 	height: auto;
 	/* width: 910px; */
 	width: 860px;
-	font-family: 'FuturaMedium';
+	/* font-family: 'FuturaMedium'; */
 }
 
 #activity_wrapper {
@@ -40,6 +40,8 @@ html, body {
 	margin-right: -12px;
 	/* width:910px;  */
 	width: 860px; 
+	
+	font-family: 'Arial';
 }
 
 .activity_area {
@@ -365,6 +367,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn_prev {
 	right: -3px !important;
 }
+
 .roundCorners {
     border-radius: 3px;
 }
