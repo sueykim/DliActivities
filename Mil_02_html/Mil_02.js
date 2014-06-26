@@ -23,7 +23,7 @@ $(document).ready(function() {
 			hoverClass: "dropTargetHover",
 			drop: dropFunction}); 
 	}
-	
+
 	loadActivity(parseXml);
 }); 
 
@@ -62,7 +62,7 @@ function loadSet(value){
 	setCompletedShown = false;
 	
 	$(".dragBubbleText").shuffle();
-	
+
 	$('.dragBubble').draggable( 'enable' );
 
 	updateSetText();
@@ -109,11 +109,13 @@ function loadSet(value){
 			);
 		$('#dropTargetText_' + i).addClass("displayNone");
 	}
- $(".dragBubbleText").mCustomScrollbar({
-                contentTouchScroll:false   //// to make DragNdrop and mCustomscrollbar in a same box to be workable in an ipad (touch screen). Otherwise, DragNdrop doesn't work in an ipad.
-                         }); 
- $(".tlText").mCustomScrollbar();
-
+	
+	if(currentSet != 0) {
+           $(".dragBubbleText").mCustomScrollbar({
+                          contentTouchScroll:false   //// to make DragNdrop and mCustomscrollbar in a same box to be workable in an ipad (touch screen). Otherwise, DragNdrop doesn't work in an ipad.
+                                   });
+           $(".tlText").mCustomScrollbar();
+           }
 }
 
 function playVideo(index){
