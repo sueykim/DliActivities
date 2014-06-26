@@ -285,3 +285,8 @@ html body {
 	float: right;
 }
 
+#transliPhraseTab {
+   width:300px;
+   height:140px;
+   padding:24px 5px 17px 17px;
+}
