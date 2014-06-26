@@ -504,7 +504,7 @@ function showHint(type) {
 	 if (type == "false"){
 		 $("#titleHint").html("<img src='images/feedback_incorrect.png'/>");
 		  if ($(questionObj).attr("numberTry") && ($(questionObj).attr("numberTry") == 2)) {
-				$("#hintBody").append('<div style="color:#7a0026">The correct answer is showned above.</div>');
+				$("#hintBody").append('<div style="color:#7a0026">The correct answer is shown above.</div>');
 		  } else{
 		 		$("#titleHint").html("<img src='images/feedback_incorrect.png' class='feedbackImage'/>");
 		  } 
