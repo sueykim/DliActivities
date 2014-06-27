@@ -27,10 +27,20 @@ function loadSet(value){
 	
 	jSet = $($(xml).find("set")[currentSet])
 
+        //only play if the iframe is loaded with src not when all templates are loaded when refreshed
+       if (parent.window.frames['activityIFrame'] != undefined && parent.window.frames['activityIFrame'].src != '' && parent.window.frames['activityIFrame'].src.toLowerCase().indexOf('mil_06') > -1 )
+       {
 	if(jSet.find("> stml_media").text().length > 0){
 		loadVideo(mediaPath, removeFileExt(jSet.find("> stml_media").text()), 
 				"videoContainer1", "videoTag1");
+                 }
+                 else
+                 {
+                      hidePlaybutton("#vid1");
+                 }
 	}
+        //hide the second video till button clicked
+        hidePlaybutton("#vid2");
 
 	$('#selections > div').shuffle();
 
@@ -47,7 +57,7 @@ function loadSet(value){
 	updateSetText()
 	
         //hide all audio play buttons if no video attached
-        if (jSet.find("correct_response_media").text() == '' && jSet.find("d_1_media").text() == '' && jSet.find("d_2_media").text() == '')
+        if (jSet.find("correct_response_media").text().trim() == '' && jSet.find("d_1_media").text().trim() == '' && jSet.find("d_2_media").text().trim() == '')
         {
           if(params['standardMode'] == 'true')
           {  //(params['standardMode'] == 'true')
@@ -197,6 +207,14 @@ function showFeedback(value, text){
 	
 }
 
+function hidePlaybutton(dv)
+{
+   $(dv).find('.playBtn_video').hide()
+} // hidePlaybutton
+function showPlaybutton(dv)
+{
+   $(dv).find('.playBtn_video').show()
+} // hidePlaybutton
 function submit(event, value ){    //value
     //to stop propagation with the click event on the div parent which will play the video again
     if (event.stopPropagation) {
@@ -285,12 +303,14 @@ function selectItem(value){
 
         //play item
         // if no video put blank page
-        if (vidFilename == '')
+        if (jQuery.trim( vidFilename ) == '')
         {
         	clearVideo("videoContainer2")
+        	hidePlaybutton("#vid2");
         }
         else
-        {
+        {          //show the video div
+                   showPlaybutton ("#vid2")
 	          //otherwise play the video
 	  		  loadVideo(mediaPath, removeFileExt(vidFilename), 
 	  				  "videoContainer2", "videoTag2");
