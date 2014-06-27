@@ -19,7 +19,7 @@ $(document).ready(function() {
 		// For performance - homework
 		var xmlPath2 = xmlPath.split("/");
 		var activityID = getURL_Parameter('activity');
-	
+
 		if (activityID.length < 2 ) {
 			activityID =+ "0" + activityID;
 		}
@@ -116,10 +116,13 @@ function loadSet(value){
 			);
 		$('#dropTargetText_' + i).addClass("displayNone");
 	}
-        
- $(".dragBubbleText").mCustomScrollbar({
-                contentTouchScroll:false   //// to make DragNdrop and mCustomscrollbar in a same box to be workable in an ipad (touch screen). Otherwise, DragNdrop doesn't work in an ipad.
-                }); 
+	if(currentSet != 0) {
+           $(".dragBubbleText").mCustomScrollbar({
+                          contentTouchScroll:false   //// to make DragNdrop and mCustomscrollbar in a same box to be workable in an ipad (touch screen). Otherwise, DragNdrop doesn't work in an ipad.
+                          });
+           }
+
+
 }
 
 function playVideo(index){
