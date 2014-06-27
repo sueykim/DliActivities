@@ -55,6 +55,7 @@
     border-style: solid;
     border-width: 1px;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
     cursor: default;
     display: inline-block;
     font-size: 14px;
@@ -74,60 +75,30 @@
     margin: 10px;
     position: relative;
     top: 0;
-    width: 850px;
+    width: 898px;
 }
 #setDiv {
     background-color: #F5F5F5;
     cursor: default;
     height: 30px;
-    left: 744px;
+    left: 610px;
     position: relative;
     top: 5px;
     width: 115px;
     z-index: 0;
 }
 #clickGuard {
-    background-color: gray;
+    background-color: grey;
     display: none;
-    height: 415px;
-    left: 235px;
+    height: 426px;
+    left: 266px;
     opacity: 0.1;
     position: absolute;
     top: -11px;
-    width: 625px;
+    width: 671px;
     z-index: 166;
 }
 
-
-#activityClickGuard {
-    background-color: gray;
-    display: none;
-    height: 415px;
-    left: 0px;
-    opacity: 0.1;
-    position: absolute;
-    top: -11px;
-    width: 850px;
-    z-index: 166;
-}
-
-.activity_description {
-    display: block;
-    font-family: inherit;
-    font-size: 12px;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    margin-left: 26px;
-    margin-top: -19px;
-}
-.activity_hd {
-    color: grey;
-    display: block;
-    font-family: inherit;
-    font-size: 22px;
-    margin-left: 26px;
-    margin-top: -2px;
-}
 html body {
     background-color: #F5F5F5;
     color: #444444;
@@ -147,7 +118,7 @@ html body {
     float: left;
     font-size: 16px;
     height: 40px;
-    margin: 13px 2px 2px 0px;
+    margin: 13px 2px 2px 19px;
     width: 180px;
 }
 #feedback {
@@ -158,14 +129,14 @@ html body {
     box-shadow: 0 2px 4px #BDBDBD;
     display: block;
     float: left;
-    left: 0px;
+    left: 19px;
     margin: 0 0 0 7px;
     max-height: 261px;
     min-height: 261px;
     padding: 20px;
     position: absolute;
     top: 101px;
-    width: 170px;
+    width: 185px;
     z-index: 1000;
 }
 #feedbackHeader {
@@ -174,14 +145,13 @@ html body {
     margin-top: -13px;
 }
 #feedbackText {
-    margin-top: -3px;
-    width:182px;
-    margin-right:5px;
+    height: 269px;
+    overflow: auto;
 }
 #feedbackBtn {
     bottom: 10px;
     position: absolute;
-    right: 10px;
+    right: 26px;
 }
 #container_1 {
     background-color: #F5F5F5;
@@ -242,15 +212,15 @@ html body {
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 4px #BDBDBD;
     height: 401px;
-    left: 235px;
+    left: 286px;
     position: relative;
     width: 623px;
 }
 #dropTarget_1 {
     box-shadow: -1px 1px 6px grey inset;
-    height: 40px;
+    height: 35px;
     left: 20px;
-    margin-left: 12px;
+    margin-left: 15px;
     margin-top: 5px;
     position: absolute;
     top: 170px;
@@ -258,9 +228,9 @@ html body {
 }
 #dropTarget_2 {
     box-shadow: -1px 1px 6px grey inset;
-    height: 40px;
+    height: 35px;
     left: 197px;
-    margin-left: 21px;
+    margin-left: 25px;
     margin-top: 5px;
     position: absolute;
     top: 170px;
@@ -268,9 +238,9 @@ html body {
 }
 #dropTarget_3 {
     box-shadow: -1px 1px 6px grey inset;
-    height: 40px;
+    height: 35px;
     left: 385px;
-    margin-left: 22px;
+    margin-left: 25px;
     margin-top: 5px;
     position: absolute;
     top: 170px;
@@ -301,7 +271,7 @@ html body {
     background-color: darkGray;
     border: 3px solid darkGray;
     float: left;
-    height: 40px;
+    height: 35px;
     margin-left: 15px;
     margin-top: 15px;
     width: 165px;
@@ -310,7 +280,7 @@ html body {
     background-color: darkGray;
     border: 3px solid darkGray;
     float: left;
-    height: 40px;
+    height: 35px;
     margin-left: 19px;
     margin-top: 15px;
     width: 165px;
@@ -319,7 +289,7 @@ html body {
     background-color: darkGray;
     border: 3px solid darkGray;
     float: left;
-    height: 40px;
+    height: 35px;
     margin-left: 19px;
     margin-top: 15px;
     width: 165px;
@@ -328,7 +298,7 @@ html body {
     background-color: darkGray;
     border: 3px solid darkGray;
     float: left;
-    height: 40px;
+    height: 35px;
     margin-left: 15px;
     margin-top: 8px;
     width: 165px;
@@ -337,7 +307,7 @@ html body {
     background-color: darkGray;
     border: 3px solid darkGray;
     float: left;
-    height: 40px;
+    height: 35px;
     margin-left: 19px;
     margin-top: 8px;
     width: 165px;
@@ -346,7 +316,7 @@ html body {
     background-color: darkGray;
     border: 3px solid darkGray;
     float: left;
-    height: 40px;
+    height: 35px;
     margin-left: 19px;
     margin-top: 8px;
     width: 165px;
@@ -355,7 +325,7 @@ html body {
     background-color: darkkhaki;
     border: 3px solid darkkhaki;
     float: left;
-    height: 40px;
+    height: 35px;
     margin-left: 15px;
     margin-top: 15px;
     width: 165px;
@@ -364,7 +334,7 @@ html body {
     background-color: darkkhaki;
     border: 3px solid darkkhaki;
     float: left;
-    height: 40px;
+    height: 35px;
     margin-left: 19px;
     margin-top: 15px;
     width: 165px;
@@ -373,7 +343,7 @@ html body {
     background-color: darkkhaki;
     border: 3px solid darkkhaki;
     float: left;
-    height: 40px;
+    height: 35px;
     margin-left: 19px;
     margin-top: 15px;
     width: 165px;
@@ -382,7 +352,7 @@ html body {
     background-color: darkkhaki;
     border: 3px solid darkkhaki;
     float: left;
-    height: 40px;
+    height: 35px;
     margin-left: 15px;
     margin-top: 8px;
     width: 165px;
@@ -391,7 +361,7 @@ html body {
     background-color: darkkhaki;
     border: 3px solid darkkhaki;
     float: left;
-    height: 40px;
+    height: 35px;
     margin-left: 19px;
     margin-top: 8px;
     width: 165px;
@@ -400,7 +370,7 @@ html body {
     background-color: darkkhaki;
     border: 3px solid darkkhaki;
     float: left;
-    height: 40px;
+    height: 35px;
     margin-left: 19px;
     margin-top: 8px;
     width: 165px;
@@ -415,13 +385,12 @@ html body {
     bottom: 0;
     cursor: default;
     font-family: Arial,Helvetica,sans-serif;
-    font-size: 13px;
+    font-size: 17px;
     left: 0;
     position: absolute;
     right: 0;
     text-align: center;
-    line-height: 15px;
-    top:15px;
+    top: 6px;
 }
 #nextDiv {
     height: 27px;
@@ -465,7 +434,7 @@ html body {
     z-index: 7;
 }
 #id_prev_next_div {
-    left: 615px;
+    left: 684px;
     position: relative;
     top: -23px;
 }
@@ -476,9 +445,9 @@ html body {
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 1px 0 0 #FFFFFF, 0 5px 11px 2px rgba(119, 119, 119, 0.4) inset;
     height: 80px;
-    left: 8px;
+    left: 26px;
     position: absolute;
-    width: 210px;
+    width: 222px;
 }
 #main {
     position: relative;
@@ -491,10 +460,5 @@ html body {
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 9 !important;
-}
-
-.content2{
-    height: 200px;
-    overflow-y: auto;
+    z-index: 9;
 }
