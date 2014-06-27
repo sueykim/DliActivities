@@ -136,6 +136,24 @@
 			<p id="feedbackText">Set completed text</p>
 			<button id="feedbackBtn" class="btn" onclick="{closeFeedback();}">Ok</button>
 		</div>
-				
+			
+                        
+                        
+                <!--
+        	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.0.6/jquery.mousewheel.js"></script>
+        	<script>$.event.special.mousewheel || document.write('<script src="../common/js/jquery.mousewheel.js"><\/script>')</script>   -->
+                <script type="text/javascript" src="../common/js/jquery.mCustomScrollbar.js"></script>
+        	<script>
+        		(function($){
+        			$(window).load(function(){
+        				$(".dragBubbleText").mCustomScrollbar({
+        				        contentTouchScroll:false,     //// to make DragNdrop and mCustomscrollbar in a same box to be workable in an ipad (touch screen). Otherwise, DragNdrop doesn't work in an ipad.
+        					advanced:{
+        						updateOnContentResize:true     
+        					}
+        				});
+        			});
+        		})(jQuery);
+        	</script>
 	</body>
 </html>
