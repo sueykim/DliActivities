@@ -87,9 +87,8 @@ function dropFunction(event, ui ) {
 		ui.draggable.draggable( 'option', 'revert', false ); 
 		
 		$('#clickGuard').css('display', 'block');
-
+		
 		showFeedback("correct", correctText);
-		reloadSet = true;
 	}else{
 		//incorrect
 		if(DropIncorrectCount > 0){
@@ -98,7 +97,7 @@ function dropFunction(event, ui ) {
 
 			itemsCompletedCount++;
 			
-			DropIncorrectCount = 0; 
+			DropIncorrectCount = 0;
 			$(setXml).attr("state", nextState($(setXml).attr("state")));
 			reloadSet = true;
 		}else{
@@ -119,42 +118,28 @@ function dropFunction(event, ui ) {
 	$(setXml).attr("DropIncorrectCount", DropIncorrectCount);
 }
 
-
-var setCompletedShown = false;
 function checkActivityCompleted(){
 	if(completedFeedbackShown){
 		return;
 	}
-
+	
 	var activityCompleted = true;
-        if(setCompletedShown ){
-               loadSet(currentSet + 1);
-               setCompletedShown = false
-         }
-
-	$(xml).find("set").each(function(index){
-              if (($(this).attr("state") == "completed")&& (currentSet == index) && (setCompletedShown == false)){
-                         setCompletedShown = true;
-                         showFeedback("set_completed");
-                      }
+	$(xml).find("set").each(function(){	
 		if($(this).attr("state") != "completed"){
 			activityCompleted = false;
 		}
 	});
-
-
+	
 	if(activityCompleted){
 		completedFeedbackShown = true;
-		$('#activityClickGuard').css('display', 'block');
+		
 		//Check to see if we're in a container (such as Gateway)
 		if(parent.activityCompleted){
 			parent.activityCompleted(1,0);
-                        $("#feedbackHeader").hide();
-	                $("#feedbackBtn").hide();
 		}else{
-			showFeedback("completed");
+			showFeedback("completed");	
 		}
-
+		
 	}
 
 	// For homework
@@ -229,11 +214,11 @@ function placeBtn(dragBubbleNum, targetNum){
 	var modVal;
 	if(dragBubbleNum < 4){
 		//row 1
-		topVal = -70;      ////-71
+		topVal = -71;
 		modVal = dragBubbleNum;
 	}else{
 		//row 2
-		topVal = -126;     ////-120
+		topVal = -120;
 		modVal = dragBubbleNum -3;
 	}
 
@@ -242,19 +227,19 @@ function placeBtn(dragBubbleNum, targetNum){
 	
 	if( modVal != targetNum){ //If 0 they're currently lined up then the left val is zero
 		if(modVal == 1 && targetNum == 2){
-			leftVal = 191;	///187
+			leftVal = 187;	
 		}
 		
 		if(modVal == 1 && targetNum == 3){
 			leftVal = 377;
 		}
-
+		
 		if(modVal == 2 && targetNum == 1){
-			leftVal = -185;       ////187
+			leftVal = -187;
 		}
 		
 		if(modVal == 2 && targetNum == 3){
-			leftVal = 191;        ////187
+			leftVal = 187;
 		}
 		
 		if(modVal == 3 && targetNum == 1){
@@ -352,10 +337,11 @@ function enableSingleAudioBtn(value){
 function loadSet(value){
 	currentSet = value;
 	numSets = $(xml).find("set").length;;
-
+	
+	
 	//Disable the clickguard
 	$('#clickGuard').css('display', 'none');
-
+	
 	resetAllDragBtns();
 	
 	updateNavButtons();
@@ -543,15 +529,14 @@ function showFeedback(value, textInput){
 			break;
 		case "completed":
 			$("#feedbackHeader").html("Activity Completed");
-			////$("#feedbackBtn").html("Next Activity");
-			$("#feedbackBtn").hide();
+			$("#feedbackBtn").html("Next Activity");
 			break;
 	}
 	
 	$('#feedback').show();
 	$("#feedbackText").mCustomScrollbar();
 	
-
+	
 	/*$('#feedback').animate( {
 	left: '380px',
 	top: '200px',
@@ -574,15 +559,15 @@ function closeFeedback(){
 	$("#correctAnswer").text("");
 	$("#clickGuard").css("display","none");
 	$("#buttonGuard").css("z-index", btnCG_orig);
-
+	
 	checkActivityCompleted();
-
+	
 	//Reload the set if requested
 	if(reloadSet){
 		reloadSet = false;
-                loadSet(currentSet);
+		loadSet(currentSet);
 	}
-
+	
 	
 	/*$('#feedback').css( {
 	left: '580px',
