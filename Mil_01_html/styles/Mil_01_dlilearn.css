@@ -60,7 +60,7 @@ html body {
 
 #transliSelectable .ui-selecting { background: #FECA40; }
 #transliSelectable .ui-selected { background: #f6a816; color: white; }
-#transliSelectable { list-style-type: none; margin: 0; padding: 0; width: 100%; }
+#transliSelectable { list-style-type: none; margin-top: 0; padding: 0; width: 100%; }
 #transliSelectable li { margin: 3px; padding: 0.4em; font-size: 12px; height: auto;   }  /*height: 18px;    font-family: 'FuturaMedium';*/
 
 #transSelectable .ui-selecting { background: #FECA40; }
@@ -90,7 +90,7 @@ html body {
 
 #transliPhraseSelectable .ui-selecting { background: #FECA40; }
 #transliPhraseSelectable .ui-selected { background: #F39814; color: white; }
-#transliPhraseSelectable { list-style-type: none; margin: 0; padding: 0; width: 100%; }
+#transliPhraseSelectable { list-style-type: none; margin-top: 0; padding: 0; width: 100%; }
 #transliPhraseSelectable li { margin: 3px; padding: 0.4em; font-size: 12pt; height: auto;  }    /*height: 18px;  font-family: 'FuturaMedium';  */
 
 #transPhraseSelectable .ui-selecting { background: #FECA40; }
@@ -286,7 +286,7 @@ html body {
 }
 
 #transliPhraseTab {
-   width:300px;
+   width:295px;
    height:140px;
-   padding:24px 5px 17px 17px;
+   padding:17px 5px 17px 24px;
 }
