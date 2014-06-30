@@ -17,7 +17,8 @@ function parseXml(t_xml){
 }
 
 var jSet
-function loadSet(value){
+function loadSet(value)
+{
 	attemptCount = 1
 	
 	clearVideo("videoContainer1")
@@ -28,15 +29,24 @@ function loadSet(value){
 	jSet = $($(xml).find("set")[currentSet])
 
         //only play if the iframe is loaded with src not when all templates are loaded when refreshed
-       if (parent.window.frames['activityIFrame'] != undefined && parent.window.frames['activityIFrame'].src != '' && parent.window.frames['activityIFrame'].src.toLowerCase().indexOf('mil_06') > -1 )
+  if (parent.window.frames['activityIFrame'] != undefined) 
        {
-	if(jSet.find("> stml_media").text().length > 0){
+    //alert(parent.window.frames['activityIFrame'].src )
+    var srcLocation = parent.window.frames['activityIFrame'].src || parent.window.frames['activityIFrame'].location || parent.window.frames['activityIFrame'].href
+    //alert(srcLocation.toString().toLowerCase().indexOf('mil_06') > -1)
+    if ((srcLocation.toString() != '') && srcLocation.toString().toLowerCase().indexOf('mil_06') > -1) {
+        //alert(srcLocation)
+        //alert(jSet.find("> stml_media").text().length > 0)
+      if(jSet.find("> stml_media").text().length > 0)
+      {
+      //alert('am here')
 		loadVideo(mediaPath, removeFileExt(jSet.find("> stml_media").text()), 
 				"videoContainer1", "videoTag1");
                  }
                  else
                  {
                       hidePlaybutton("#vid1");
+      }
                  }
 	}
         //hide the second video till button clicked
