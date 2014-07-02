@@ -176,10 +176,8 @@ function loadSet(value){
 		file_video = file_video.substring(0, file_video.lastIndexOf("."));
 		var vidContainer = "videoContainer" + i;
 		var vidTag = "videoTag" + i;
-		loadVideo(mediaPath, file_video, vidContainer, vidTag, false );
-		
-	var videoTagInfo = document.getElementById("videoTag" + i);
-	videoTagInfo.pause();
+		loadVideo(mediaPath, file_video, vidContainer, vidTag, true );
+		$("#playBtnVid"+i).hide();
 	}
 	
 	//Load question
@@ -308,8 +306,6 @@ function playVideoHold(index){
 }
 
 function playVideo(btnNo){
-	var videoTagInfo = "videoTag" + (btnNo+1);
-
 	for (var i=0; i<numItemsPerSet; i++) {
 		if (i!= (btnNo)) {
 			var vidTagNoPlay = "videoTag" + (i+1);
