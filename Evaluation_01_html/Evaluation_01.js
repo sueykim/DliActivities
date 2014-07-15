@@ -104,7 +104,7 @@ function loadSet(value){
 				var theChoiceStr = '<div class="dragBubbleText">' + theChoiceAry[a] + '</div>'
 				$($("#id_set_" + i).find(".dragBubble")[m]).html(theChoiceStr);
 				$($("#id_set_" + i).find(".dragBubble")[m]).draggable( 'enable');
-				$($("#id_set_" + i).find(".dragBubble")[m]).draggable({ revert: true, helper: "clone" });
+				$($("#id_set_" + i).find(".dragBubble")[m]).draggable({ revert: true, helper: "clone", containment:"#main"});
 			}
 		itemNotSet = false;
 		}	
