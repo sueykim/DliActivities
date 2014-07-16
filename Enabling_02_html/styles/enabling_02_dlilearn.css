@@ -468,7 +468,7 @@ html body {
 }
 #main {
     position: relative;
-    top: -9px;
+    top: 5px;
 }
 #buttonGuard {
     height: 80px;

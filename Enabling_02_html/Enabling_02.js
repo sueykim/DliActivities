@@ -163,12 +163,12 @@ function parseXml(t_xml)
 		randomizeSet(this);		
 	});
 
-	$('#dragBubble_1').draggable({ revert: true });
-	$('#dragBubble_2').draggable({ revert: true });
-	$('#dragBubble_3').draggable({ revert: true });
-	$('#dragBubble_4').draggable({ revert: true });
-	$('#dragBubble_5').draggable({ revert: true });
-	$('#dragBubble_6').draggable({ revert: true });
+	$('#dragBubble_1').draggable({stack: "div", revert: true });
+	$('#dragBubble_2').draggable({stack: "div", revert: true });
+	$('#dragBubble_3').draggable({stack: "div", revert: true });
+	$('#dragBubble_4').draggable({stack: "div", revert: true });
+	$('#dragBubble_5').draggable({stack: "div", revert: true });
+	$('#dragBubble_6').draggable({stack: "div", revert: true });
 
 	
 	$( "#dropTarget_1" ).droppable({
@@ -218,7 +218,7 @@ function placeBtn(dragBubbleNum, targetNum){
 		modVal = dragBubbleNum;
 	}else{
 		//row 2
-		topVal = -120;
+		topVal = -125;
 		modVal = dragBubbleNum -3;
 	}
 
