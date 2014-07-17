@@ -287,6 +287,12 @@ var BrowserDetect = {
 		},
 		{
 			string: navigator.userAgent,
+			subString: "Trident",
+			identity: "Explorer",
+			versionSearch: "MSIE"
+		},
+		{
+			string: navigator.userAgent,
 			subString: "MSIE",
 			identity: "Explorer",
 			versionSearch: "MSIE"
@@ -302,6 +308,11 @@ var BrowserDetect = {
 			subString: "Mozilla",
 			identity: "Netscape",
 			versionSearch: "Mozilla"
+		},
+		{
+			string: navigator.userAgent,
+			subString: "CriOS",
+			identity: "Chrome"
 		}
 	],
 	dataOS : [
@@ -324,6 +335,11 @@ var BrowserDetect = {
 			   string: navigator.userAgent,
 			   subString: "iPhone",
 			   identity: "iPhone/iPod"
+	    },
+		{
+			   string:  navigator.platform,
+			   subString: "iPad",
+			   identity: "iPad"
 	    },
 		{
 			string: navigator.platform,

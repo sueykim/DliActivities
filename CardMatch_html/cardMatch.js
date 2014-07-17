@@ -17,7 +17,9 @@ $(document).ready(function() {
 var flipCardPossible = false;
 var toggle=false;
 function enableCardFlip(){
-	if (($('html').hasClass('csstransforms3d')) && isNotMobile()) {	
+	if (BrowserDetect.browser != "Explorer" 
+		&& $('html').hasClass('csstransforms3d') 
+		&& isNotMobile()) {	
 			flipCardPossible = true;
 			$('.card').removeClass('scroll').addClass('flip');		
 			$('.card.flip').click(
