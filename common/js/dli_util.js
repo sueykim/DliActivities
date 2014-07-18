@@ -287,15 +287,15 @@ var BrowserDetect = {
 		},
 		{
 			string: navigator.userAgent,
-			subString: "Trident",
+			subString: "MSIE",
 			identity: "Explorer",
 			versionSearch: "MSIE"
 		},
 		{
 			string: navigator.userAgent,
-			subString: "MSIE",
+			subString: "Trident",
 			identity: "Explorer",
-			versionSearch: "MSIE"
+			versionSearch: "rv"
 		},
 		{
 			string: navigator.userAgent,
