@@ -163,12 +163,12 @@ function parseXml(t_xml)
 		randomizeSet(this);		
 	});
 
-	$('#dragBubble_1').draggable({stack: "div", revert: true });
-	$('#dragBubble_2').draggable({stack: "div", revert: true });
-	$('#dragBubble_3').draggable({stack: "div", revert: true });
-	$('#dragBubble_4').draggable({stack: "div", revert: true });
-	$('#dragBubble_5').draggable({stack: "div", revert: true });
-	$('#dragBubble_6').draggable({stack: "div", revert: true });
+	$('#dragBubble_1').draggable({stack: "div", revert: true, scroll: false});
+	$('#dragBubble_2').draggable({stack: "div", revert: true, scroll: false});
+	$('#dragBubble_3').draggable({stack: "div", revert: true, scroll: false});
+	$('#dragBubble_4').draggable({stack: "div", revert: true, scroll: false});
+	$('#dragBubble_5').draggable({stack: "div", revert: true, scroll: false});
+	$('#dragBubble_6').draggable({stack: "div", revert: true, scroll: false});
 
 	
 	$( "#dropTarget_1" ).droppable({
@@ -268,7 +268,7 @@ function resetAllDragBtns(){
 		$('#dragBubble_' + i).removeClass( 'correct' );
 		$('#dragBubble_' + i).css({'left':'','top':''});
 		$('#dragBubble_' + i).draggable("enable");
-		$('#dragBubble_' + i).draggable({ revert: true });
+		$('#dragBubble_' + i).draggable({ revert: true, scroll: false });
 		$('#dragBubble_' + i).data({dropTargetNum: ""});
 			
 	}
