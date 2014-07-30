@@ -236,10 +236,10 @@ function parseXml(t_xml){
 	//	$(".allTabs>div").mCustomScrollbar()}, 500)	
 	
 	      //added to detect the load of the mil_01 into framework then and only then play the video of the first phrase
-       if (parent.window.frames['activityIFrame'] != undefined && parent.window.frames['activityIFrame'].src != '' && parent.window.frames['activityIFrame'].src.toLowerCase().indexOf('mil_01') > -1 )
+     /*  if (parent.window.frames['activityIFrame'] != undefined && parent.window.frames['activityIFrame'].src != '' && parent.window.frames['activityIFrame'].src.toLowerCase().indexOf('mil_01') > -1 )
        {
           playTheVideo()
-       }
+       }*/
 }
 
 function prevItemClick(){
