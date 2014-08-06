@@ -104,11 +104,11 @@ function loadSet(value){
 		var theNo = currentSet*5 + i;
 		var file_video = $($(xml).find("file_video")[theNo]).text();
 		file_video = file_video.substring(0, file_video.lastIndexOf("."));		
-		var playVidStr = '<span><img  class="playBtn" id="playBtn' + i + '" onclick="vidBtnClicked(\'' + file_video + '\',' + i + ')" src="../common/Library/images/playBtn_s1.png" border="0" onmouseover="turn_on(this)" onmouseout="turn_off(this)"></span>';
+		var playVidStr = '<span><img  class="playBtn" id="playBtn' + i + '" onMouseDown="vidBtnClicked(\'' + file_video + '\',' + i + ')" src="../common/Library/images/playBtn_s1.png" border="0" onmouseover="turn_on(this)" onmouseout="turn_off(this)"></span>';
 		//alert(playVidStr);
 		$($(".playBtnDiv")[i]).html(playVidStr);
 		
-		var ddString = '<span id="oid_main_menu_' + i + '" class="css_menu" ><span  class="ddList"  onclick="dropDownList(\'' + file_video + '\',' + i + ')">Select Answer</span></span>';
+		var ddString = '<span id="oid_main_menu_' + i + '" class="css_menu" ><span  class="ddList"  onMouseDown="dropDownList(\'' + file_video + '\',' + i + ')">Select Answer</span></span>';
 
 		$($(".dropdown-menu")[i]).html(ddString);
 
