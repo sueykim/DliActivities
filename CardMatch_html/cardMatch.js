@@ -174,8 +174,8 @@ function showback(No){
 
 function playAudio(value){	
 	//alert(value);
-	//audio_play_file(removeFileExt(value),mediaPath);
-	audio_play( mediaPath + 'mp3/'+ value)
+	audio_play_file(removeFileExt(value),mediaPath);
+	//audio_play( mediaPath + 'mp3/'+ value)
 }	
 
 
