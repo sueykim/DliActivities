@@ -559,15 +559,30 @@ function checkCompleted(){
 		
 		completedFeedbackShown = true;
 		
-		//Check to see if we're in a container (such as Gateway)
-		if(parent.activityCompleted){
-			parent.activityCompleted(1,0);
+		//Check pass or fail
+		var stScore = finalScore/100;
+		var passingScore = $(xml).find("content").attr("passing_score");
+		if(passingScore == undefined || passingScore == NaN){
+			passingScore = .8;
 		}else{
-			showFeedback("activity_completed", finalScore);
-			
-			//Enable the clickguard
-			$('#clickGuard').css('display', 'block');
+			passingScore = passingScore;
 		}
+		if(stScore >= passingScore){ 
+			if(parent.activityCompleted){
+				parent.activityCompleted(1,0);  
+			}else{
+				showFeedback("activity_completed", ("Passed! - " + stScore*100));
+			}
+		}else{
+			if(parent.activityCompleted){
+				parent.activityCompleted(false,0);
+			}else{
+				showFeedback("activity_completed", ("Failed! - " + stScore*100));
+			}
+		}
+		
+		//Enable the clickguard
+		$('#clickGuard').css('display', 'block');
 		
 		$('#submitBtn').prop('disabled', true);
 	}
