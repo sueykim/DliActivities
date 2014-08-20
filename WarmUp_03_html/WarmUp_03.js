@@ -131,10 +131,20 @@ function leftColDown(value){
 	
 	currentLeftColIndex = value;
 
-	var videoName = $(xml).find("item").eq(currentSet*6 + currentLeftColIndex - 1).find("file_input").text();
-	videoName = videoName.substring(0, videoName.lastIndexOf("."));
-
-	loadVideo(mediaPath, videoName);
+	var theItem = $(xml).find("item").eq(currentSet*6 + currentLeftColIndex - 1)
+	var mediaType = theItem.find("media_type").text();
+	var fileInput = theItem.find("file_input").text();
+	
+	switch(mediaType.toLowerCase()){
+		case "video":
+			var videoName = fileInput.substring(0, fileInput.lastIndexOf("."));
+			loadVideo(mediaPath, videoName);
+			break;
+		case "image":
+			$("#videoContainer").append($("<img src='" + mediaPath + "png/" 
+													+ fileInput + "'></img>"))
+			break;
+	}
 	
 	//Set left col bubble style
 	$("#div_leftCol" + currentLeftColIndex).removeClass("divBtn");

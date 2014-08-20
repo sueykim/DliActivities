@@ -5,8 +5,8 @@
       <lang_en>Sit!</lang_en>
       <lang_tl dir="ltr">Kaa!</lang_tl>
       <file_audio>sw_sit.mp3</file_audio>
-      <file_input>sw_sit.flv</file_input>
-      <media_type>video</media_type>
+      <file_input>1.png</file_input>
+      <media_type>Image</media_type>
       <hint>The action opposite of standing.</hint>
       <feedback>"Kaa" means sit.</feedback>
     </item>
