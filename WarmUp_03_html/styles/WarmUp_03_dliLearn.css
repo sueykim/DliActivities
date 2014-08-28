@@ -189,6 +189,10 @@ html body {
 }
 #feedbackText {
     margin-top: -13px;
+	top: 0px;
+	width: 294px;
+	height: 72px;  
+	overflow:auto;
 }
 #feedbackBtn {
     bottom: 10px;
