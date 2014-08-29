@@ -3,6 +3,8 @@ var homeworkStatus;
 var answerAttemptsNum = 0;
 
 $(document).ready(function() {
+	audioInit();
+	
 	$("#feedbackHeader").html("");
 	$("#feedbackText").html("");
 	$('#feedback').show();
@@ -141,10 +143,15 @@ function leftColDown(value){
 			loadVideo(mediaPath, videoName);
 			break;
 		case "image":
-			$("#videoContainer").append($("<img src='" + mediaPath + "png/" 
+			$("#videoContainer").html($("<img src='" + mediaPath + "png/" 
 													+ fileInput + "'></img>"))
 			break;
 	}
+
+	var theAudio = theItem.find("file_audio").text();
+	if (theAudio != undefined){
+		audio_play_file(removeFileExt(theAudio),mediaPath);
+	}	
 	
 	//Set left col bubble style
 	$("#div_leftCol" + currentLeftColIndex).removeClass("divBtn");

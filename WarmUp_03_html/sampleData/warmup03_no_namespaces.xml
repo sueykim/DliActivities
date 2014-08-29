@@ -4,7 +4,7 @@
     <item>
       <lang_en>Sit!</lang_en>
       <lang_tl dir="ltr">Kaa!</lang_tl>
-      <file_audio>sw_sit.mp3</file_audio>
+      <file_audio>rain.mp3</file_audio>
       <file_input>1.png</file_input>
       <media_type>Image</media_type>
       <hint>The action opposite of standing.</hint>
@@ -13,9 +13,9 @@
     <item>
       <lang_en>Stand up!</lang_en>
       <lang_tl dir="ltr">Simama!</lang_tl>
-      <file_audio>sw_stand up.mp3</file_audio>
-      <file_input>sw_stand_up.flv</file_input>
-      <media_type>video</media_type>
+      <file_audio>red.mp3</file_audio>
+      <file_input>2.png</file_input>
+      <media_type>image</media_type>
       <hint>The action opposite of sitting.</hint>
       <feedback>"Simama" means stand up.</feedback>
     </item>
@@ -31,7 +31,7 @@
     <item>
       <lang_en>Come!</lang_en>
       <lang_tl dir="ltr">Njoo!</lang_tl>
-      <file_audio>sw_come.mp3</file_audio>
+      <file_audio>rice.mp3</file_audio>
       <file_input>sw_come.flv</file_input>
       <media_type>video</media_type>
       <hint>The act of moving toward someone or some place. </hint>
