@@ -149,7 +149,7 @@ function leftColDown(value){
 	}
 
 	var theAudio = theItem.find("file_audio").text();
-	if (theAudio != undefined){
+	if (theAudio != undefined && theAudio.length > 0){
 		audio_play_file(removeFileExt(theAudio),mediaPath);
 	}	
 	
