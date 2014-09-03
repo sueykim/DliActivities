@@ -262,7 +262,7 @@ video {
 #buttonContainer {
     height: 195px;
     margin-left: 100px;
-    margin-top: -15px;
+    margin-top: 0px;
 }
 #videoContainer {
     height: 241px;
