@@ -144,13 +144,12 @@ function leftColDown(value){
 			break;
 		case "image":
 			$("#videoContainer").html($("<img src='" + mediaPath + "png/" 
-													+ fileInput + "'></img>"))
+													+ fileInput + "'></img>"));
+			var theAudio = theItem.find("file_audio").text();
+			if (theAudio != undefined && theAudio.length > 0){
+				audio_play_file(removeFileExt(theAudio),mediaPath);
+			}	
 			break;
-	}
-
-	var theAudio = theItem.find("file_audio").text();
-	if (theAudio != undefined && theAudio.length > 0){
-		audio_play_file(removeFileExt(theAudio),mediaPath);
 	}	
 	
 	//Set left col bubble style
