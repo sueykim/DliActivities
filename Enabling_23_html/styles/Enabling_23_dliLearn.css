@@ -166,14 +166,14 @@ html body {
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 4px #BDBDBD;
     display: block;
-    left: 0px;
+    left: 362px;
     margin: 0 0 0 7px;
-    max-height: 110px;
-    min-height: 110px;
+    max-height: 95px;
+    min-height: 95px;
     padding: 20px;
     position: relavtive;
-    width: 310px;
-    top:412px;
+    width: 431px;
+    top:390px;
 }
 #feedbackHeader {
     font-size: 20px;
@@ -185,6 +185,9 @@ html body {
     margin-top: -13px;
     position: absolute;
     top: 54px;
+    height:  50px;
+    margin-right:9px;
+
 }
 #feedbackBtn {
     bottom: 10px;
@@ -295,7 +298,7 @@ html body {
 #audioList {
     background: url("../../common/img/bg_dropbubble_50.png") repeat-x scroll center bottom #F5F5F5;
     border: 1px solid lightgray;
-    height: 381px;
+    height: 355px;
     overflow-x: hidden;
     overflow-y: auto;
     position: relative;
@@ -317,7 +320,7 @@ html body {
     padding: 10px 5px 10px 5px;
     position: relative;
     text-align: center;
-    top: -125px;
+    /*top: -30px;*/
     vertical-align: middle;
     width: 350px;
     overflow: auto;
@@ -339,7 +342,7 @@ td {
 #clues {
     background: url("../../common/img/bg_dropbubble_50.png") repeat-x scroll center bottom #F5F5F5;
     border: 1px solid lightgray;
-    height: 372px;
+    height: 345px;
     overflow-x: hidden;
     overflow-y: auto;
     padding-top: 10px;
@@ -354,7 +357,7 @@ td {
 #statusBar {
     height: 40px;
     left: 400px;
-    margin-top: -49px;
+    margin-top: -19px;
     position: relative;
     width: 439px;
 }
@@ -427,9 +430,4 @@ td {
 }
 #secondBox {
            top:-145px;
-}
-
-#feedbackText {
-  height:  65px;
-  margin-right:5px;
 }
