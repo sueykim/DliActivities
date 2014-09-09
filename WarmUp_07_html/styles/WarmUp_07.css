@@ -1,0 +1,138 @@
+#main{
+	
+}
+
+#idLeftCol{
+    width: 300px;
+	
+    float: left;
+}
+
+.playBtnRTL:hover{
+    background-image: url('../../common/Library/images/playBtn_s2.png');
+}
+
+.playBtnRTL{
+	cursor:pointer;
+    background-image: url('../../common/Library/images/playBtn_s1.png');
+	background-size: cover;
+    
+	float: right;
+	-moz-transform: scale(-1, 1);
+	-webkit-transform: scale(-1, 1);
+	-o-transform: scale(-1, 1);
+	-ms-transform: scale(-1, 1);
+	transform: scale(-1, 1);
+}
+
+#idName{
+    text-align: left;
+	
+    float: left;
+    /* width: 249px; */
+    /* background-color: red; */
+}
+
+#idPlayBtnLTR,
+#idPlayBtnRTL{
+	width: 20px;
+	height: 20px;
+}
+
+.playBtnLTR:hover{
+    background-image: url('../../common/Library/images/playBtn_s2.png');
+}
+
+.playBtnLTR{
+	cursor:pointer;
+    background-image: url('../../common/Library/images/playBtn_s1.png');
+    background-size: cover;
+    float: left;
+}
+
+#idChar{
+    font-size: 32px;
+	
+    padding-right: 15px;
+    clear: both;
+}
+
+#idDesc{
+    text-align: left;
+	
+}
+
+#idRightCol{
+    width: 200px;
+	
+    float: left;
+}
+
+#idCharGrid{
+    width: 100%;
+	
+}
+
+#idExample1Container{
+    clear: both;
+	
+}
+
+#idPlayBtnExample1LTR, 
+#idPlayBtnExample1RTL,
+#idPlayBtnExample2LTR,
+#idPlayBtnExample2RTL{
+	width: 20px;
+	height: 20px;
+}
+
+#idExample1En,
+#idExample2En{
+    text-align: left;
+	
+    float: left;
+    /* width: 152px; */
+}
+
+#idExample1,
+#idExample2
+{
+	clear:both;
+	text-align: right;
+}
+
+#idExample2Container{
+	
+}
+
+#snippets{
+    display: none;
+	
+}
+
+.gridItem:hover{
+	background-color: grey;
+	cursor: pointer;
+}
+
+.gridItem{
+    width: 26px;
+	
+    float: left;
+    background-color: lightgray;
+    text-align: center;
+    margin: 1px;
+    padding: 2px;
+}
+
+body[dir='rtl'] #idPlayBtnLTR,
+body[dir='rtl'] #idPlayBtnExample1LTR,
+body[dir='rtl'] #idPlayBtnExample2LTR{
+	display:none;
+}
+
+body[dir='ltr'] #idPlayBtnRTL,
+body[dir='ltr'] #idPlayBtnExample1RTL,
+body[dir='ltr'] #idPlayBtnExample2RTL{
+	display:none;
+}
