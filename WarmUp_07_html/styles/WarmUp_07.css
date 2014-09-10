@@ -164,6 +164,10 @@ body{
 	cursor: pointer;
 }
 
+.gridItem[visited='true']{
+	background-color: #A8A5A5;
+}
+
 .gridItem{
     width: 30px;
 	

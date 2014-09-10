@@ -61,8 +61,28 @@ function loadLetter(index){
 	$("#idExample2En").text(jEx2.attr("en"))
 	$("#idExample2").text(jEx2.text())
 	$("body").attr("ex2_audio", jEx2.attr("aud"))
+	
+	//Mark letter as being shown
+	$($("#idCharGrid > .gridItem")[index]).attr("visited", "true")
+	
+	checkCompleted()
 }
 
+var activityCompletedShown = false
+
+function checkCompleted(){
+	if(!activityCompletedShown && 
+			$("#idCharGrid > .gridItem:not([visited='true'])").length == 0){
+		//Completed
+		activityCompletedShown = true
+		
+		if(parent.activityCompleted){
+			parent.activityCompleted(1,0);
+		}else{
+			alert("Activity Completed")
+		}
+	}
+}
 function parseXml(t_xml){
 	//Loop through all letters
 	$(t_xml).find("letter").each(function(l_i, l_v){
