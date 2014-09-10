@@ -405,7 +405,7 @@
          <hs:name>daal</hs:name>
          <hs:desc><![CDATA[The letter <b>daal</b> is similar to the English sound <b>d</b>, as in dog.]]></hs:desc>
          <hs:example dir="rtl" aud="ad_bald.mp3" en="daal1"><![CDATA[باد]]></hs:example>
-         <hs:example dir="rtl" aud="ad_bald.mp3" en="daal2"><![CDATA[گدا]]></hs:example>
+         <hs:example dir="rtl" aud="ad_youngwoman.mp3" en="daal2"><![CDATA[گدا]]></hs:example>
       </hs:letter>
 
   </hs:letters>
