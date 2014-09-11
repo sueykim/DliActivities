@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<hs:content  target_language="Japanese" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
+  <hs:letters total="30">
+     <hs:letter>
+         <!--<hs:char>ا</hs:char>-->
+         <hs:char>A</hs:char>
+         <hs:audio>ad_bald.mp3</hs:audio>
+         <hs:name>alef</hs:name>
+         <hs:desc><![CDATA[The letter <b>alef</b> sounds like the <b>a</b> in father.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_beard.mp3" en="alef1"><![CDATA[left]]></hs:example>
+         <hs:example dir="rtl" aud="ad_beautiful.mp3" en="alef2"><![CDATA[left2]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>ب</hs:char>-->
+         <hs:char>B</hs:char>
+         <hs:audio>ad_beard.mp3</hs:audio>
+         <hs:name>bey</hs:name>
+         <hs:desc><![CDATA[It represents the <b>b</b> sound in English, as in banana.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_beautiful.mp3" en="bey1"><![CDATA[آب]]></hs:example>
+         <hs:example dir="rtl" aud="ad_clothes.mp3" en="bey2"><![CDATA[باروت]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>د</hs:char>-->
+         <hs:char>C</hs:char>
+         <hs:audio>ad_beautiful.mp3</hs:audio>
+         <hs:name>daal</hs:name>
+         <hs:desc><![CDATA[The letter <b>daal</b> is similar to the English sound <b>d</b>, as in dog.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_clothes.mp3" en="daal1"><![CDATA[باد]]></hs:example>
+         <hs:example dir="rtl" aud="ad_fat.mp3" en="daal2"><![CDATA[گدا]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>ف</hs:char>-->
+         <hs:char>D</hs:char>
+         <hs:audio>ad_clothes.mp3</hs:audio>
+         <hs:name>fey</hs:name>
+         <hs:desc><![CDATA[Its sound is like the letter <b>f</b> in English:food.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_fat.mp3" en="fey1"><![CDATA[قفشله]]></hs:example>
+         <hs:example dir="rtl" aud="ad_glasses.mp3" en="fey2"><![CDATA[قرفه]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>گ</hs:char>-->
+         <hs:char>E</hs:char>
+         <hs:loc>E1</hs:loc>
+         <hs:audio>ad_fat.mp3</hs:audio>
+         <hs:name>gaaf</hs:name>
+         <hs:desc><![CDATA[It is similar to the hard <b>g</b> sound in English, as in goose.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_glasses.mp3" en="gaaf1"><![CDATA[جنگ]]></hs:example>
+         <hs:example dir="rtl" aud="ad_handsome.mp3" en="gaaf2"><![CDATA[گدا]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>ح</hs:char>-->
+         <hs:char>F</hs:char>
+         <hs:loc>F1</hs:loc>
+         <hs:audio>ad_glasses.mp3</hs:audio>
+         <hs:name>hey</hs:name>
+         <hs:desc><![CDATA[To pronounce <b>Hey</b>, imagine you are trying to warm up your hands breathing into them.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_handsome.mp3" en="Hey1"><![CDATA[اسلحه]]></hs:example>
+         <hs:example dir="rtl" aud="ad_man.mp3" en="Hey2"><![CDATA[جحریمه]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>ه</hs:char>-->
+         <hs:char>G</hs:char>
+         <hs:loc>A2</hs:loc>
+         <hs:audio>ad_handsome.mp3</hs:audio>
+         <hs:name>hey_sm</hs:name>
+         <hs:desc><![CDATA[It is similar to the hard <b>h</b> sound in English, as in hat.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_man.mp3" en="hey_sm1"><![CDATA[قشله]]></hs:example>
+         <hs:example dir="rtl" aud="ad_mustache.mp3" en="hey_sm2"><![CDATA[قره]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>پ</hs:char>-->
+         <hs:char>H</hs:char>
+         <hs:loc>A3</hs:loc>
+         <hs:audio>ad_man.mp3</hs:audio>
+         <hs:name>pey</hs:name>
+         <hs:desc><![CDATA[It is similar to the <b>p</b> sound in English, as in pony.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_mustache.mp3" en="pey1"><![CDATA[پنجه]]></hs:example>
+         <hs:example dir="rtl" aud="ad_old.mp3" en="pey2"><![CDATA[پوچ]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>ط</hs:char>-->
+         <hs:char>I</hs:char>
+         <hs:loc>A4</hs:loc>
+         <hs:audio>ad_mustache.mp3</hs:audio>
+         <hs:name>toy</hs:name>
+         <hs:desc><![CDATA[It is similar to the <b>t</b> sound in English, as in train.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_old.mp3" en="toy1"><![CDATA[قشطله]]></hs:example>
+         <hs:example dir="rtl" aud="ad_short.mp3" en="toy2"><![CDATA[قطره]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>خ</hs:char>-->
+         <hs:char>J</hs:char>
+         <hs:loc>A6</hs:loc>
+         <hs:audio>ad_old.mp3</hs:audio>
+         <hs:name>khey</hs:name>
+         <hs:desc><![CDATA[<b>khey</b> resembles the sound at the end of the Scottish word loch.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_short.mp3" en="khey1"><![CDATA[تلخ]]></hs:example>
+         <hs:example dir="rtl" aud="ad_thin.mp3" en="khey2"><![CDATA[خون]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>غ</hs:char>-->
+         <hs:char>K</hs:char>
+         <hs:loc>B6</hs:loc>
+         <hs:audio>ad_short.mp3</hs:audio>
+         <hs:name>ghayn</hs:name>
+         <hs:desc><![CDATA[Make a gargling sound in the back of your throat to pronounce it.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_thin.mp3" en="ghayn1"><![CDATA[قشغله]]></hs:example>
+         <hs:example dir="rtl" aud="ad_veil.mp3" en="ghayn2"><![CDATA[قرهغ]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>ق</hs:char>-->
+         <hs:char>L</hs:char>
+         <hs:loc>c6</hs:loc>
+         <hs:audio>ad_thin.mp3</hs:audio>
+         <hs:name>qaaf</hs:name>
+         <hs:desc><![CDATA[The letter <b>qaaf</b> is pronounced in the back of your throat.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_veil.mp3" en="qaaf1"><![CDATA[قشله]]></hs:example>
+         <hs:example dir="rtl" aud="ad_woman.mp3" en="qaaf2"><![CDATA[قره]]></hs:example>
+     </hs:letter>
+
+     <hs:letter>
+         <!--<hs:char>ا</hs:char>-->
+         <hs:char>A</hs:char>
+         <hs:audio>ad_bald.mp3</hs:audio>
+         <hs:name>alef</hs:name>
+         <hs:desc><![CDATA[The letter <b>alef</b> sounds like the <b>a</b> in father.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_beard.mp3" en="alef1"><![CDATA[left]]></hs:example>
+         <hs:example dir="rtl" aud="ad_beautiful.mp3" en="alef2"><![CDATA[left2]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>ب</hs:char>-->
+         <hs:char>B</hs:char>
+         <hs:audio>ad_beard.mp3</hs:audio>
+         <hs:name>bey</hs:name>
+         <hs:desc><![CDATA[It represents the <b>b</b> sound in English, as in banana.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_beautiful.mp3" en="bey1"><![CDATA[آب]]></hs:example>
+         <hs:example dir="rtl" aud="ad_clothes.mp3" en="bey2"><![CDATA[باروت]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>د</hs:char>-->
+         <hs:char>C</hs:char>
+         <hs:audio>ad_beautiful.mp3</hs:audio>
+         <hs:name>daal</hs:name>
+         <hs:desc><![CDATA[The letter <b>daal</b> is similar to the English sound <b>d</b>, as in dog.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_clothes.mp3" en="daal1"><![CDATA[باد]]></hs:example>
+         <hs:example dir="rtl" aud="ad_fat.mp3" en="daal2"><![CDATA[گدا]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>ف</hs:char>-->
+         <hs:char>D</hs:char>
+         <hs:audio>ad_clothes.mp3</hs:audio>
+         <hs:name>fey</hs:name>
+         <hs:desc><![CDATA[Its sound is like the letter <b>f</b> in English:food.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_fat.mp3" en="fey1"><![CDATA[قفشله]]></hs:example>
+         <hs:example dir="rtl" aud="ad_glasses.mp3" en="fey2"><![CDATA[قرفه]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>گ</hs:char>-->
+         <hs:char>E</hs:char>
+         <hs:loc>E1</hs:loc>
+         <hs:audio>ad_fat.mp3</hs:audio>
+         <hs:name>gaaf</hs:name>
+         <hs:desc><![CDATA[It is similar to the hard <b>g</b> sound in English, as in goose.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_glasses.mp3" en="gaaf1"><![CDATA[جنگ]]></hs:example>
+         <hs:example dir="rtl" aud="ad_handsome.mp3" en="gaaf2"><![CDATA[گدا]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>ح</hs:char>-->
+         <hs:char>F</hs:char>
+         <hs:loc>F1</hs:loc>
+         <hs:audio>ad_glasses.mp3</hs:audio>
+         <hs:name>hey</hs:name>
+         <hs:desc><![CDATA[To pronounce <b>Hey</b>, imagine you are trying to warm up your hands breathing into them.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_handsome.mp3" en="Hey1"><![CDATA[اسلحه]]></hs:example>
+         <hs:example dir="rtl" aud="ad_man.mp3" en="Hey2"><![CDATA[جحریمه]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>ه</hs:char>-->
+         <hs:char>G</hs:char>
+         <hs:loc>A2</hs:loc>
+         <hs:audio>ad_handsome.mp3</hs:audio>
+         <hs:name>hey_sm</hs:name>
+         <hs:desc><![CDATA[It is similar to the hard <b>h</b> sound in English, as in hat.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_man.mp3" en="hey_sm1"><![CDATA[قشله]]></hs:example>
+         <hs:example dir="rtl" aud="ad_mustache.mp3" en="hey_sm2"><![CDATA[قره]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>پ</hs:char>-->
+         <hs:char>H</hs:char>
+         <hs:loc>A3</hs:loc>
+         <hs:audio>ad_man.mp3</hs:audio>
+         <hs:name>pey</hs:name>
+         <hs:desc><![CDATA[It is similar to the <b>p</b> sound in English, as in pony.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_mustache.mp3" en="pey1"><![CDATA[پنجه]]></hs:example>
+         <hs:example dir="rtl" aud="ad_old.mp3" en="pey2"><![CDATA[پوچ]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>ط</hs:char>-->
+         <hs:char>I</hs:char>
+         <hs:loc>A4</hs:loc>
+         <hs:audio>ad_mustache.mp3</hs:audio>
+         <hs:name>toy</hs:name>
+         <hs:desc><![CDATA[It is similar to the <b>t</b> sound in English, as in train.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_old.mp3" en="toy1"><![CDATA[قشطله]]></hs:example>
+         <hs:example dir="rtl" aud="ad_short.mp3" en="toy2"><![CDATA[قطره]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>خ</hs:char>-->
+         <hs:char>J</hs:char>
+         <hs:loc>A6</hs:loc>
+         <hs:audio>ad_old.mp3</hs:audio>
+         <hs:name>khey</hs:name>
+         <hs:desc><![CDATA[<b>khey</b> resembles the sound at the end of the Scottish word loch.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_short.mp3" en="khey1"><![CDATA[تلخ]]></hs:example>
+         <hs:example dir="rtl" aud="ad_thin.mp3" en="khey2"><![CDATA[خون]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>غ</hs:char>-->
+         <hs:char>K</hs:char>
+         <hs:loc>B6</hs:loc>
+         <hs:audio>ad_short.mp3</hs:audio>
+         <hs:name>ghayn</hs:name>
+         <hs:desc><![CDATA[Make a gargling sound in the back of your throat to pronounce it.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_thin.mp3" en="ghayn1"><![CDATA[قشغله]]></hs:example>
+         <hs:example dir="rtl" aud="ad_veil.mp3" en="ghayn2"><![CDATA[قرهغ]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>ق</hs:char>-->
+         <hs:char>L</hs:char>
+         <hs:loc>c6</hs:loc>
+         <hs:audio>ad_thin.mp3</hs:audio>
+         <hs:name>qaaf</hs:name>
+         <hs:desc><![CDATA[The letter <b>qaaf</b> is pronounced in the back of your throat.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_veil.mp3" en="qaaf1"><![CDATA[قشله]]></hs:example>
+         <hs:example dir="rtl" aud="ad_woman.mp3" en="qaaf2"><![CDATA[قره]]></hs:example>
+     </hs:letter>
+
+     <hs:letter>
+         <!--<hs:char>ا</hs:char>-->
+         <hs:char>M</hs:char>
+         <hs:audio>ad_veil.mp3</hs:audio>
+         <hs:name>alef</hs:name>
+         <hs:desc><![CDATA[The letter <b>alef</b> sounds like the <b>a</b> in father.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_woman.mp3" en="alef1"><![CDATA[صدا]]></hs:example>
+         <hs:example dir="rtl" aud="ad_youngwoman.mp3" en="alef2"><![CDATA[بار]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>ب</hs:char>-->
+         <hs:char>N</hs:char>
+         <hs:audio>ad_woman.mp3</hs:audio>
+         <hs:name>bey</hs:name>
+         <hs:desc><![CDATA[It represents the <b>b</b> sound in English, as in banana.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_youngwoman.mp3" en="bey1"><![CDATA[آب]]></hs:example>
+         <hs:example dir="rtl" aud="ad_bald.mp3" en="bey2"><![CDATA[باروت]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>د</hs:char>-->
+         <hs:char>O</hs:char>
+         <hs:audio>ad_youngwoman.mp3</hs:audio>
+         <hs:name>daal</hs:name>
+         <hs:desc><![CDATA[The letter <b>daal</b> is similar to the English sound <b>d</b>, as in dog.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_bald.mp3" en="daal1"><![CDATA[باد]]></hs:example>
+         <hs:example dir="rtl" aud="ad_bald.mp3" en="daal2"><![CDATA[گدا]]></hs:example>
+      </hs:letter>
+
+     <hs:letter>
+         <!--<hs:char>ا</hs:char>-->
+         <hs:char>A</hs:char>
+         <hs:audio>ad_bald.mp3</hs:audio>
+         <hs:name>alef</hs:name>
+         <hs:desc><![CDATA[The letter <b>alef</b> sounds like the <b>a</b> in father.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_beard.mp3" en="alef1"><![CDATA[left]]></hs:example>
+         <hs:example dir="rtl" aud="ad_beautiful.mp3" en="alef2"><![CDATA[left2]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>ب</hs:char>-->
+         <hs:char>B</hs:char>
+         <hs:audio>ad_beard.mp3</hs:audio>
+         <hs:name>bey</hs:name>
+         <hs:desc><![CDATA[It represents the <b>b</b> sound in English, as in banana.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_beautiful.mp3" en="bey1"><![CDATA[آب]]></hs:example>
+         <hs:example dir="rtl" aud="ad_clothes.mp3" en="bey2"><![CDATA[باروت]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>د</hs:char>-->
+         <hs:char>C</hs:char>
+         <hs:audio>ad_beautiful.mp3</hs:audio>
+         <hs:name>daal</hs:name>
+         <hs:desc><![CDATA[The letter <b>daal</b> is similar to the English sound <b>d</b>, as in dog.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_clothes.mp3" en="daal1"><![CDATA[باد]]></hs:example>
+         <hs:example dir="rtl" aud="ad_fat.mp3" en="daal2"><![CDATA[گدا]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>ف</hs:char>-->
+         <hs:char>D</hs:char>
+         <hs:audio>ad_clothes.mp3</hs:audio>
+         <hs:name>fey</hs:name>
+         <hs:desc><![CDATA[Its sound is like the letter <b>f</b> in English:food.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_fat.mp3" en="fey1"><![CDATA[قفشله]]></hs:example>
+         <hs:example dir="rtl" aud="ad_glasses.mp3" en="fey2"><![CDATA[قرفه]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>گ</hs:char>-->
+         <hs:char>E</hs:char>
+         <hs:loc>E1</hs:loc>
+         <hs:audio>ad_fat.mp3</hs:audio>
+         <hs:name>gaaf</hs:name>
+         <hs:desc><![CDATA[It is similar to the hard <b>g</b> sound in English, as in goose.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_glasses.mp3" en="gaaf1"><![CDATA[جنگ]]></hs:example>
+         <hs:example dir="rtl" aud="ad_handsome.mp3" en="gaaf2"><![CDATA[گدا]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>ح</hs:char>-->
+         <hs:char>F</hs:char>
+         <hs:loc>F1</hs:loc>
+         <hs:audio>ad_glasses.mp3</hs:audio>
+         <hs:name>hey</hs:name>
+         <hs:desc><![CDATA[To pronounce <b>Hey</b>, imagine you are trying to warm up your hands breathing into them.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_handsome.mp3" en="Hey1"><![CDATA[اسلحه]]></hs:example>
+         <hs:example dir="rtl" aud="ad_man.mp3" en="Hey2"><![CDATA[جحریمه]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>ه</hs:char>-->
+         <hs:char>G</hs:char>
+         <hs:loc>A2</hs:loc>
+         <hs:audio>ad_handsome.mp3</hs:audio>
+         <hs:name>hey_sm</hs:name>
+         <hs:desc><![CDATA[It is similar to the hard <b>h</b> sound in English, as in hat.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_man.mp3" en="hey_sm1"><![CDATA[قشله]]></hs:example>
+         <hs:example dir="rtl" aud="ad_mustache.mp3" en="hey_sm2"><![CDATA[قره]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>پ</hs:char>-->
+         <hs:char>H</hs:char>
+         <hs:loc>A3</hs:loc>
+         <hs:audio>ad_man.mp3</hs:audio>
+         <hs:name>pey</hs:name>
+         <hs:desc><![CDATA[It is similar to the <b>p</b> sound in English, as in pony.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_mustache.mp3" en="pey1"><![CDATA[پنجه]]></hs:example>
+         <hs:example dir="rtl" aud="ad_old.mp3" en="pey2"><![CDATA[پوچ]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>ط</hs:char>-->
+         <hs:char>I</hs:char>
+         <hs:loc>A4</hs:loc>
+         <hs:audio>ad_mustache.mp3</hs:audio>
+         <hs:name>toy</hs:name>
+         <hs:desc><![CDATA[It is similar to the <b>t</b> sound in English, as in train.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_old.mp3" en="toy1"><![CDATA[قشطله]]></hs:example>
+         <hs:example dir="rtl" aud="ad_short.mp3" en="toy2"><![CDATA[قطره]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>خ</hs:char>-->
+         <hs:char>J</hs:char>
+         <hs:loc>A6</hs:loc>
+         <hs:audio>ad_old.mp3</hs:audio>
+         <hs:name>khey</hs:name>
+         <hs:desc><![CDATA[<b>khey</b> resembles the sound at the end of the Scottish word loch.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_short.mp3" en="khey1"><![CDATA[تلخ]]></hs:example>
+         <hs:example dir="rtl" aud="ad_thin.mp3" en="khey2"><![CDATA[خون]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>غ</hs:char>-->
+         <hs:char>K</hs:char>
+         <hs:loc>B6</hs:loc>
+         <hs:audio>ad_short.mp3</hs:audio>
+         <hs:name>ghayn</hs:name>
+         <hs:desc><![CDATA[Make a gargling sound in the back of your throat to pronounce it.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_thin.mp3" en="ghayn1"><![CDATA[قشغله]]></hs:example>
+         <hs:example dir="rtl" aud="ad_veil.mp3" en="ghayn2"><![CDATA[قرهغ]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>ق</hs:char>-->
+         <hs:char>L</hs:char>
+         <hs:loc>c6</hs:loc>
+         <hs:audio>ad_thin.mp3</hs:audio>
+         <hs:name>qaaf</hs:name>
+         <hs:desc><![CDATA[The letter <b>qaaf</b> is pronounced in the back of your throat.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_veil.mp3" en="qaaf1"><![CDATA[قشله]]></hs:example>
+         <hs:example dir="rtl" aud="ad_woman.mp3" en="qaaf2"><![CDATA[قره]]></hs:example>
+     </hs:letter>
+
+     <hs:letter>
+         <!--<hs:char>ا</hs:char>-->
+         <hs:char>M</hs:char>
+         <hs:audio>ad_veil.mp3</hs:audio>
+         <hs:name>alef</hs:name>
+         <hs:desc><![CDATA[The letter <b>alef</b> sounds like the <b>a</b> in father.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_woman.mp3" en="alef1"><![CDATA[صدا]]></hs:example>
+         <hs:example dir="rtl" aud="ad_youngwoman.mp3" en="alef2"><![CDATA[بار]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>ب</hs:char>-->
+         <hs:char>N</hs:char>
+         <hs:audio>ad_woman.mp3</hs:audio>
+         <hs:name>bey</hs:name>
+         <hs:desc><![CDATA[It represents the <b>b</b> sound in English, as in banana.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_youngwoman.mp3" en="bey1"><![CDATA[آب]]></hs:example>
+         <hs:example dir="rtl" aud="ad_bald.mp3" en="bey2"><![CDATA[باروت]]></hs:example>
+      </hs:letter>
+     <hs:letter>
+         <!--<hs:char>د</hs:char>-->
+         <hs:char>O</hs:char>
+         <hs:audio>ad_youngwoman.mp3</hs:audio>
+         <hs:name>daal</hs:name>
+         <hs:desc><![CDATA[The letter <b>daal</b> is similar to the English sound <b>d</b>, as in dog.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_bald.mp3" en="daal1"><![CDATA[باد]]></hs:example>
+         <hs:example dir="rtl" aud="ad_youngwoman.mp3" en="daal2"><![CDATA[گدا]]></hs:example>
+      </hs:letter>
+
+  </hs:letters>
+</hs:content>
