@@ -35,6 +35,8 @@ var answerAttemptsNum = 0;
 
 // To display ruby tag
 var isJapanese = false;
+var disableHighlighting = false
+
 
 function loadLetter(index){
 	var l_v = $(xml).find("letter")[index]
@@ -58,6 +60,11 @@ function loadLetter(index){
 	var ex1Text = jEx1.text().replace(regEx, "<div class='highlight'>" 
 										+ $($(l_v).find("char")).text().toLowerCase()
 										+ "</div>")
+	
+	if(disableHighlighting){
+		ex1Text = jEx1.text()	
+	}
+	
 	$("#idExample1").html(ex1Text)
 	
 	$("body").attr("ex1_audio", jEx1.attr("aud"))
@@ -68,6 +75,11 @@ function loadLetter(index){
 	var ex2Text = jEx2.text().replace(regEx2, "<div class='highlight'>" 
 										+ $($(l_v).find("char")).text().toLowerCase()
 										+ "</div>")
+	
+	if(disableHighlighting){
+		ex2Text = jEx2.text()	
+	}
+	
 	$("#idExample2").html(ex2Text)
 	$("body").attr("ex2_audio", jEx2.attr("aud"))
 	
@@ -96,6 +108,11 @@ function checkCompleted(){
 var isJapanese = false
 
 function parseXml(t_xml){
+	if(params['disableHighlighting'] != undefined 
+			&& params['disableHighlighting'].toLowerCase() == "true"){
+		disableHighlighting = true
+	}
+
 	isJapanese = $(xml).find("content").attr("target_language") == "Japanese";
 	
 	//Loop through all letters

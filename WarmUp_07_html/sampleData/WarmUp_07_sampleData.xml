@@ -20,8 +20,8 @@
          <hs:example dir="rtl" aud="ad_clothes.mp3" en="bey2"><![CDATA[باروت]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>د</hs:char>-->
-         <hs:char>C</hs:char>
+         <hs:char>د</hs:char>
+         <!--<hs:char>C</hs:char>-->
          <hs:audio>ad_beautiful.mp3</hs:audio>
          <hs:name>daal</hs:name>
          <hs:desc><![CDATA[The letter <b>daal</b> is similar to the English sound <b>d</b>, as in dog.]]></hs:desc>
@@ -29,8 +29,8 @@
          <hs:example dir="rtl" aud="ad_fat.mp3" en="daal2"><![CDATA[گدا]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>ف</hs:char>-->
-         <hs:char>D</hs:char>
+         <hs:char>ف</hs:char>
+         <!--<hs:char>D</hs:char>-->
          <hs:audio>ad_clothes.mp3</hs:audio>
          <hs:name>fey</hs:name>
          <hs:desc><![CDATA[Its sound is like the letter <b>f</b> in English:food.]]></hs:desc>
@@ -38,8 +38,8 @@
          <hs:example dir="rtl" aud="ad_glasses.mp3" en="fey2"><![CDATA[قرفه]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>گ</hs:char>-->
-         <hs:char>E</hs:char>
+         <hs:char>گ</hs:char>
+         <!--<hs:char>E</hs:char>-->
          <hs:loc>E1</hs:loc>
          <hs:audio>ad_fat.mp3</hs:audio>
          <hs:name>gaaf</hs:name>
@@ -48,8 +48,8 @@
          <hs:example dir="rtl" aud="ad_handsome.mp3" en="gaaf2"><![CDATA[گدا]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>ح</hs:char>-->
-         <hs:char>F</hs:char>
+         <hs:char>ح</hs:char>
+         <!--<hs:char>F</hs:char>-->
          <hs:loc>F1</hs:loc>
          <hs:audio>ad_glasses.mp3</hs:audio>
          <hs:name>hey</hs:name>
@@ -58,8 +58,8 @@
          <hs:example dir="rtl" aud="ad_man.mp3" en="Hey2"><![CDATA[جحریمه]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>ه</hs:char>-->
-         <hs:char>G</hs:char>
+         <hs:char>ه</hs:char>
+         <!--<hs:char>G</hs:char>-->
          <hs:loc>A2</hs:loc>
          <hs:audio>ad_handsome.mp3</hs:audio>
          <hs:name>hey_sm</hs:name>
@@ -68,8 +68,8 @@
          <hs:example dir="rtl" aud="ad_mustache.mp3" en="hey_sm2"><![CDATA[قره]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>پ</hs:char>-->
-         <hs:char>H</hs:char>
+         <hs:char>پ</hs:char>
+         <!--<hs:char>H</hs:char>-->
          <hs:loc>A3</hs:loc>
          <hs:audio>ad_man.mp3</hs:audio>
          <hs:name>pey</hs:name>
@@ -78,8 +78,8 @@
          <hs:example dir="rtl" aud="ad_old.mp3" en="pey2"><![CDATA[پوچ]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>ط</hs:char>-->
-         <hs:char>I</hs:char>
+         <hs:char>ط</hs:char>
+         <!--<hs:char>I</hs:char>-->
          <hs:loc>A4</hs:loc>
          <hs:audio>ad_mustache.mp3</hs:audio>
          <hs:name>toy</hs:name>
@@ -88,8 +88,8 @@
          <hs:example dir="rtl" aud="ad_short.mp3" en="toy2"><![CDATA[قطره]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>خ</hs:char>-->
-         <hs:char>J</hs:char>
+         <hs:char>خ</hs:char>
+         <!--<hs:char>J</hs:char>-->
          <hs:loc>A6</hs:loc>
          <hs:audio>ad_old.mp3</hs:audio>
          <hs:name>khey</hs:name>
@@ -98,8 +98,8 @@
          <hs:example dir="rtl" aud="ad_thin.mp3" en="khey2"><![CDATA[خون]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>غ</hs:char>-->
-         <hs:char>K</hs:char>
+         <hs:char>غ</hs:char>
+         <!--<hs:char>K</hs:char>-->
          <hs:loc>B6</hs:loc>
          <hs:audio>ad_short.mp3</hs:audio>
          <hs:name>ghayn</hs:name>
@@ -108,8 +108,8 @@
          <hs:example dir="rtl" aud="ad_veil.mp3" en="ghayn2"><![CDATA[قرهغ]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>ق</hs:char>-->
-         <hs:char>L</hs:char>
+         <hs:char>ق</hs:char>
+         <!--<hs:char>L</hs:char>-->
          <hs:loc>c6</hs:loc>
          <hs:audio>ad_thin.mp3</hs:audio>
          <hs:name>qaaf</hs:name>
@@ -119,8 +119,8 @@
      </hs:letter>
 
      <hs:letter>
-         <!--<hs:char>ا</hs:char>-->
-         <hs:char>A</hs:char>
+         <hs:char>ا</hs:char>
+         <!--<hs:char>A</hs:char>-->
          <hs:audio>ad_bald.mp3</hs:audio>
          <hs:name>alef</hs:name>
          <hs:desc><![CDATA[The letter <b>alef</b> sounds like the <b>a</b> in father.]]></hs:desc>
@@ -128,8 +128,8 @@
          <hs:example dir="rtl" aud="ad_beautiful.mp3" en="alef2"><![CDATA[left2]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>ب</hs:char>-->
-         <hs:char>B</hs:char>
+         <hs:char>ب</hs:char>
+         <!--<hs:char>B</hs:char>-->
          <hs:audio>ad_beard.mp3</hs:audio>
          <hs:name>bey</hs:name>
          <hs:desc><![CDATA[It represents the <b>b</b> sound in English, as in banana.]]></hs:desc>
@@ -137,8 +137,8 @@
          <hs:example dir="rtl" aud="ad_clothes.mp3" en="bey2"><![CDATA[باروت]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>د</hs:char>-->
-         <hs:char>C</hs:char>
+         <hs:char>د</hs:char>
+         <!--<hs:char>C</hs:char>-->
          <hs:audio>ad_beautiful.mp3</hs:audio>
          <hs:name>daal</hs:name>
          <hs:desc><![CDATA[The letter <b>daal</b> is similar to the English sound <b>d</b>, as in dog.]]></hs:desc>
@@ -146,8 +146,8 @@
          <hs:example dir="rtl" aud="ad_fat.mp3" en="daal2"><![CDATA[گدا]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>ف</hs:char>-->
-         <hs:char>D</hs:char>
+         <hs:char>ف</hs:char>
+         <!--<hs:char>D</hs:char>-->
          <hs:audio>ad_clothes.mp3</hs:audio>
          <hs:name>fey</hs:name>
          <hs:desc><![CDATA[Its sound is like the letter <b>f</b> in English:food.]]></hs:desc>
@@ -155,8 +155,8 @@
          <hs:example dir="rtl" aud="ad_glasses.mp3" en="fey2"><![CDATA[قرفه]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>گ</hs:char>-->
-         <hs:char>E</hs:char>
+         <hs:char>گ</hs:char>
+         <!--<hs:char>E</hs:char>-->
          <hs:loc>E1</hs:loc>
          <hs:audio>ad_fat.mp3</hs:audio>
          <hs:name>gaaf</hs:name>
@@ -165,8 +165,8 @@
          <hs:example dir="rtl" aud="ad_handsome.mp3" en="gaaf2"><![CDATA[گدا]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>ح</hs:char>-->
-         <hs:char>F</hs:char>
+         <hs:char>ح</hs:char>
+         <!--<hs:char>F</hs:char>-->
          <hs:loc>F1</hs:loc>
          <hs:audio>ad_glasses.mp3</hs:audio>
          <hs:name>hey</hs:name>
@@ -175,8 +175,8 @@
          <hs:example dir="rtl" aud="ad_man.mp3" en="Hey2"><![CDATA[جحریمه]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>ه</hs:char>-->
-         <hs:char>G</hs:char>
+         <hs:char>ه</hs:char>
+         <!--<hs:char>G</hs:char>-->
          <hs:loc>A2</hs:loc>
          <hs:audio>ad_handsome.mp3</hs:audio>
          <hs:name>hey_sm</hs:name>
@@ -185,8 +185,8 @@
          <hs:example dir="rtl" aud="ad_mustache.mp3" en="hey_sm2"><![CDATA[قره]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>پ</hs:char>-->
-         <hs:char>H</hs:char>
+         <hs:char>پ</hs:char>
+         <!--<hs:char>H</hs:char>-->
          <hs:loc>A3</hs:loc>
          <hs:audio>ad_man.mp3</hs:audio>
          <hs:name>pey</hs:name>
@@ -195,8 +195,8 @@
          <hs:example dir="rtl" aud="ad_old.mp3" en="pey2"><![CDATA[پوچ]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>ط</hs:char>-->
-         <hs:char>I</hs:char>
+         <hs:char>ط</hs:char>
+         <!--<hs:char>I</hs:char>-->
          <hs:loc>A4</hs:loc>
          <hs:audio>ad_mustache.mp3</hs:audio>
          <hs:name>toy</hs:name>
@@ -205,8 +205,8 @@
          <hs:example dir="rtl" aud="ad_short.mp3" en="toy2"><![CDATA[قطره]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>خ</hs:char>-->
-         <hs:char>J</hs:char>
+         <hs:char>خ</hs:char>
+         <!--<hs:char>J</hs:char>-->
          <hs:loc>A6</hs:loc>
          <hs:audio>ad_old.mp3</hs:audio>
          <hs:name>khey</hs:name>
@@ -215,8 +215,8 @@
          <hs:example dir="rtl" aud="ad_thin.mp3" en="khey2"><![CDATA[خون]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>غ</hs:char>-->
-         <hs:char>K</hs:char>
+         <hs:char>غ</hs:char>
+         <!--<hs:char>K</hs:char>-->
          <hs:loc>B6</hs:loc>
          <hs:audio>ad_short.mp3</hs:audio>
          <hs:name>ghayn</hs:name>
@@ -225,8 +225,8 @@
          <hs:example dir="rtl" aud="ad_veil.mp3" en="ghayn2"><![CDATA[قرهغ]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>ق</hs:char>-->
-         <hs:char>L</hs:char>
+         <hs:char>ق</hs:char>
+         <!--<hs:char>L</hs:char>-->
          <hs:loc>c6</hs:loc>
          <hs:audio>ad_thin.mp3</hs:audio>
          <hs:name>qaaf</hs:name>
@@ -236,8 +236,8 @@
      </hs:letter>
 
      <hs:letter>
-         <!--<hs:char>ا</hs:char>-->
-         <hs:char>M</hs:char>
+         <hs:char>ا</hs:char>
+         <!--<hs:char>M</hs:char>-->
          <hs:audio>ad_veil.mp3</hs:audio>
          <hs:name>alef</hs:name>
          <hs:desc><![CDATA[The letter <b>alef</b> sounds like the <b>a</b> in father.]]></hs:desc>
@@ -245,8 +245,8 @@
          <hs:example dir="rtl" aud="ad_youngwoman.mp3" en="alef2"><![CDATA[بار]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>ب</hs:char>-->
-         <hs:char>N</hs:char>
+         <hs:char>ب</hs:char>
+         <!--<hs:char>N</hs:char>-->
          <hs:audio>ad_woman.mp3</hs:audio>
          <hs:name>bey</hs:name>
          <hs:desc><![CDATA[It represents the <b>b</b> sound in English, as in banana.]]></hs:desc>
@@ -254,8 +254,8 @@
          <hs:example dir="rtl" aud="ad_bald.mp3" en="bey2"><![CDATA[باروت]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>د</hs:char>-->
-         <hs:char>O</hs:char>
+         <hs:char>د</hs:char>
+         <!--<hs:char>O</hs:char>-->
          <hs:audio>ad_youngwoman.mp3</hs:audio>
          <hs:name>daal</hs:name>
          <hs:desc><![CDATA[The letter <b>daal</b> is similar to the English sound <b>d</b>, as in dog.]]></hs:desc>
@@ -264,8 +264,8 @@
       </hs:letter>
 
      <hs:letter>
-         <!--<hs:char>ا</hs:char>-->
-         <hs:char>A</hs:char>
+         <hs:char>ا</hs:char>
+         <!--<hs:char>A</hs:char>-->
          <hs:audio>ad_bald.mp3</hs:audio>
          <hs:name>alef</hs:name>
          <hs:desc><![CDATA[The letter <b>alef</b> sounds like the <b>a</b> in father.]]></hs:desc>
@@ -273,8 +273,8 @@
          <hs:example dir="rtl" aud="ad_beautiful.mp3" en="alef2"><![CDATA[left2]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>ب</hs:char>-->
-         <hs:char>B</hs:char>
+         <hs:char>ب</hs:char>
+         <!--<hs:char>B</hs:char>-->
          <hs:audio>ad_beard.mp3</hs:audio>
          <hs:name>bey</hs:name>
          <hs:desc><![CDATA[It represents the <b>b</b> sound in English, as in banana.]]></hs:desc>
@@ -282,8 +282,8 @@
          <hs:example dir="rtl" aud="ad_clothes.mp3" en="bey2"><![CDATA[باروت]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>د</hs:char>-->
-         <hs:char>C</hs:char>
+         <hs:char>د</hs:char>
+         <!--<hs:char>C</hs:char>-->
          <hs:audio>ad_beautiful.mp3</hs:audio>
          <hs:name>daal</hs:name>
          <hs:desc><![CDATA[The letter <b>daal</b> is similar to the English sound <b>d</b>, as in dog.]]></hs:desc>
@@ -291,8 +291,8 @@
          <hs:example dir="rtl" aud="ad_fat.mp3" en="daal2"><![CDATA[گدا]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>ف</hs:char>-->
-         <hs:char>D</hs:char>
+         <hs:char>ف</hs:char>
+         <!--<hs:char>D</hs:char>-->
          <hs:audio>ad_clothes.mp3</hs:audio>
          <hs:name>fey</hs:name>
          <hs:desc><![CDATA[Its sound is like the letter <b>f</b> in English:food.]]></hs:desc>
@@ -300,8 +300,8 @@
          <hs:example dir="rtl" aud="ad_glasses.mp3" en="fey2"><![CDATA[قرفه]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>گ</hs:char>-->
-         <hs:char>E</hs:char>
+         <hs:char>گ</hs:char>
+         <!--<hs:char>E</hs:char>-->
          <hs:loc>E1</hs:loc>
          <hs:audio>ad_fat.mp3</hs:audio>
          <hs:name>gaaf</hs:name>
@@ -310,8 +310,8 @@
          <hs:example dir="rtl" aud="ad_handsome.mp3" en="gaaf2"><![CDATA[گدا]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>ح</hs:char>-->
-         <hs:char>F</hs:char>
+         <hs:char>ح</hs:char>
+         <!--<hs:char>F</hs:char>-->
          <hs:loc>F1</hs:loc>
          <hs:audio>ad_glasses.mp3</hs:audio>
          <hs:name>hey</hs:name>
@@ -320,8 +320,8 @@
          <hs:example dir="rtl" aud="ad_man.mp3" en="Hey2"><![CDATA[جحریمه]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>ه</hs:char>-->
-         <hs:char>G</hs:char>
+         <hs:char>ه</hs:char>
+         <!--<hs:char>G</hs:char>-->
          <hs:loc>A2</hs:loc>
          <hs:audio>ad_handsome.mp3</hs:audio>
          <hs:name>hey_sm</hs:name>
@@ -330,8 +330,8 @@
          <hs:example dir="rtl" aud="ad_mustache.mp3" en="hey_sm2"><![CDATA[قره]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>پ</hs:char>-->
-         <hs:char>H</hs:char>
+         <hs:char>پ</hs:char>
+         <!--<hs:char>H</hs:char>-->
          <hs:loc>A3</hs:loc>
          <hs:audio>ad_man.mp3</hs:audio>
          <hs:name>pey</hs:name>
@@ -340,8 +340,8 @@
          <hs:example dir="rtl" aud="ad_old.mp3" en="pey2"><![CDATA[پوچ]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>ط</hs:char>-->
-         <hs:char>I</hs:char>
+         <hs:char>ط</hs:char>
+         <!--<hs:char>I</hs:char>-->
          <hs:loc>A4</hs:loc>
          <hs:audio>ad_mustache.mp3</hs:audio>
          <hs:name>toy</hs:name>
@@ -350,8 +350,8 @@
          <hs:example dir="rtl" aud="ad_short.mp3" en="toy2"><![CDATA[قطره]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>خ</hs:char>-->
-         <hs:char>J</hs:char>
+         <hs:char>خ</hs:char>
+         <!--<hs:char>J</hs:char>-->
          <hs:loc>A6</hs:loc>
          <hs:audio>ad_old.mp3</hs:audio>
          <hs:name>khey</hs:name>
@@ -360,8 +360,8 @@
          <hs:example dir="rtl" aud="ad_thin.mp3" en="khey2"><![CDATA[خون]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>غ</hs:char>-->
-         <hs:char>K</hs:char>
+         <hs:char>غ</hs:char>
+         <!--<hs:char>K</hs:char>-->
          <hs:loc>B6</hs:loc>
          <hs:audio>ad_short.mp3</hs:audio>
          <hs:name>ghayn</hs:name>
@@ -370,8 +370,8 @@
          <hs:example dir="rtl" aud="ad_veil.mp3" en="ghayn2"><![CDATA[قرهغ]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>ق</hs:char>-->
-         <hs:char>L</hs:char>
+         <hs:char>ق</hs:char>
+         <!--<hs:char>L</hs:char>-->
          <hs:loc>c6</hs:loc>
          <hs:audio>ad_thin.mp3</hs:audio>
          <hs:name>qaaf</hs:name>
@@ -381,8 +381,8 @@
      </hs:letter>
 
      <hs:letter>
-         <!--<hs:char>ا</hs:char>-->
-         <hs:char>M</hs:char>
+         <hs:char>ا</hs:char>
+         <!--<hs:char>M</hs:char>-->
          <hs:audio>ad_veil.mp3</hs:audio>
          <hs:name>alef</hs:name>
          <hs:desc><![CDATA[The letter <b>alef</b> sounds like the <b>a</b> in father.]]></hs:desc>
@@ -390,8 +390,8 @@
          <hs:example dir="rtl" aud="ad_youngwoman.mp3" en="alef2"><![CDATA[بار]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>ب</hs:char>-->
-         <hs:char>N</hs:char>
+         <hs:char>ب</hs:char>
+         <!--<hs:char>N</hs:char>-->
          <hs:audio>ad_woman.mp3</hs:audio>
          <hs:name>bey</hs:name>
          <hs:desc><![CDATA[It represents the <b>b</b> sound in English, as in banana.]]></hs:desc>
@@ -399,8 +399,8 @@
          <hs:example dir="rtl" aud="ad_bald.mp3" en="bey2"><![CDATA[باروت]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>د</hs:char>-->
-         <hs:char>O</hs:char>
+         <hs:char>د</hs:char>
+         <!--<hs:char>O</hs:char>-->
          <hs:audio>ad_youngwoman.mp3</hs:audio>
          <hs:name>daal</hs:name>
          <hs:desc><![CDATA[The letter <b>daal</b> is similar to the English sound <b>d</b>, as in dog.]]></hs:desc>
