@@ -54,12 +54,21 @@ function loadLetter(index){
 
 	var jEx1 = $($(l_v).find("example")[0])
 	$("#idExample1En").text(jEx1.attr("en"))
-	$("#idExample1").text(jEx1.text())
+	var regEx = new RegExp($($(l_v).find("char")).text(), "ig");
+	var ex1Text = jEx1.text().replace(regEx, "<div class='highlight'>" 
+										+ $($(l_v).find("char")).text().toLowerCase()
+										+ "</div>")
+	$("#idExample1").html(ex1Text)
+	
 	$("body").attr("ex1_audio", jEx1.attr("aud"))
 
 	var jEx2 = $($(l_v).find("example")[1])
 	$("#idExample2En").text(jEx2.attr("en"))
-	$("#idExample2").text(jEx2.text())
+	var regEx2 = new RegExp($($(l_v).find("char")).text(), "ig");
+	var ex2Text = jEx2.text().replace(regEx2, "<div class='highlight'>" 
+										+ $($(l_v).find("char")).text().toLowerCase()
+										+ "</div>")
+	$("#idExample2").html(ex2Text)
 	$("body").attr("ex2_audio", jEx2.attr("aud"))
 	
 	//Mark letter as being shown
@@ -83,12 +92,23 @@ function checkCompleted(){
 		}
 	}
 }
+
+var isJapanese = false
+
 function parseXml(t_xml){
+	isJapanese = $(xml).find("content").attr("target_language") == "Japanese";
+	
 	//Loop through all letters
 	$(t_xml).find("letter").each(function(l_i, l_v){
 		//Create letter for grid and load it
 		var jGridItemSnip = 	$($("#gridItemSnip").html())
-		jGridItemSnip.text($($(l_v).find("char")).text())
+		
+		if (isJapanese) {
+			jGridItemSnip.html(displayRubyTag($($(l_v).find("char")).text()))
+		}else{
+			jGridItemSnip.text($($(l_v).find("char")).text())
+		}
+		
 		jGridItemSnip.attr("onclick", "loadLetter(" + l_i + ")")
 		
 		$("#idCharGrid").append(jGridItemSnip)

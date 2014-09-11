@@ -134,12 +134,18 @@ body{
     /* width: 152px; */
 }
 
+.highlight{
+    display: inline;
+    color: #B43C4B;
+    font-family: FuturaBold;
+}
+
 #idExample1,
 #idExample2
 {
-	clear:both;
 	text-align: right;
 	padding-top: 9px;
+	clear: both;
 }
 
 #idExample2Container{

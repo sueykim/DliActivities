@@ -7,16 +7,16 @@
          <hs:audio>ad_bald.mp3</hs:audio>
          <hs:name>alef</hs:name>
          <hs:desc><![CDATA[The letter <b>alef</b> sounds like the <b>a</b> in father.]]></hs:desc>
-         <hs:example dir="rtl" aud="ad_beard.mp3" en="alef1"><![CDATA[left]]></hs:example>
-         <hs:example dir="rtl" aud="ad_beautiful.mp3" en="alef2"><![CDATA[left2]]></hs:example>
+         <hs:example dir="rtl" aud="ad_beard.mp3" en="alef1"><![CDATA[apple]]></hs:example>
+         <hs:example dir="rtl" aud="ad_beautiful.mp3" en="alef2"><![CDATA[abcdabcd]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <!--<hs:char>ب</hs:char>-->
-         <hs:char>B</hs:char>
+         <hs:char>ب</hs:char>
+         <!--<hs:char>B</hs:char>-->
          <hs:audio>ad_beard.mp3</hs:audio>
          <hs:name>bey</hs:name>
          <hs:desc><![CDATA[It represents the <b>b</b> sound in English, as in banana.]]></hs:desc>
-         <hs:example dir="rtl" aud="ad_beautiful.mp3" en="bey1"><![CDATA[آب]]></hs:example>
+         <hs:example dir="rtl" aud="ad_beautiful.mp3" en="bey1"><![CDATA[آب ب]]></hs:example>
          <hs:example dir="rtl" aud="ad_clothes.mp3" en="bey2"><![CDATA[باروت]]></hs:example>
       </hs:letter>
      <hs:letter>
