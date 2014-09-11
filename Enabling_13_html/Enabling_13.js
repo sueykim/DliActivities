@@ -57,6 +57,7 @@ function parseXml(t_xml){
 
 var numberItemsInSet;
 var videoFileAry = [];
+var fb_text;
 function loadSet(value){
 	currentSet = value;
 	//$("#tapTL").html( $(xml).find("content").attr("target_language"));
@@ -114,6 +115,7 @@ function loadSet(value){
 	var d2_text = $($(xml).find("d_2_en")[startIndex]).text();
 	enTextAry.push(d2_text);
 	hiddenvalueAry.push('d2');
+	fb_text = $($(xml).find("correct_response_en")[startIndex]).text();
 	var hatA = new randomNumbers( 3 );
 	for(var i = 0; i< 3; i++)
 		{
@@ -189,7 +191,7 @@ function submitAns(No){
                 }
 	}
 	else{
-		showFeedback("incorrect");
+		showFeedback("incorrect", fb_text);
 		// For homework
 	        if (homeworkStatus) {
                   sendHWdata(0);
