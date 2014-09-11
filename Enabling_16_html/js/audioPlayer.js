@@ -1,13 +1,20 @@
 var flash;
 var quickTime;
 function  loadAud (audioFile) {
-	var media = mediaPath+"media/mp3/"+audioFile;
+	var media;
+	var statusParameters = getPassedParameters();
+	if (!statusParameters) {
+		mediaPath = "activityData/media/";
+	}
+	
+	media = mediaPath + "mp3/" + audioFile;
+	
 	 var  audioPlayer = document.getElementById('html5Audio'); 
 	if (checkAudioFormatSupportByBrowsers())  {
 			try { 
 			        // if (bomExplosion) 
 						//	setTimeout("setSmudgeForBomArea()", 800);
-					 audioPlayer.src=  mediaPath +"media/" +checkAudioFormatSupportByBrowsers() +"/"+ audioFile.split(".")[0] +"."+ checkAudioFormatSupportByBrowsers();
+					 audioPlayer.src=  mediaPath + checkAudioFormatSupportByBrowsers() +"/"+ audioFile.split(".")[0] +"."+ checkAudioFormatSupportByBrowsers();
 					 audioPlayer.load();
 					 audioPlayer.addEventListener('ended', html5AudioPlayFinished, false);
 				     audioPlayer.play(); 
