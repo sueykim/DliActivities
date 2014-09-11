@@ -21,7 +21,9 @@ function initEnable16()
 		enable16Div.appendChild(enable16Content);
 		var feedbackPanel =document.createElement("div");
 			feedbackPanel.id ="feedbackPanel";
-			feedbackPanel.innerHTML="<div class='feedbackTitle'></div><div class='feedbackContent'></div><button id='okBtn'>OK</button>";
+			feedbackPanel.innerHTML="<div class='feedbackTitle'></div>" + 
+				"<div class='feedbackContent'></div>" + 
+				"<button id='okBtn' class='btn pull-right'>OK</button>";
 			enable16Div.appendChild(feedbackPanel);
 		
 	    //left panel div
@@ -95,6 +97,11 @@ function initEnable16()
 	    setNumbers.id ="setNumbers";
 		rightDiv.appendChild(setNumbers);
 		
+		var setDivContainer =document.createElement("div");
+		setDivContainer.id ="container_setDiv";
+		setDivContainer.className="roundCorners pull-right";
+		rightDiv.appendChild(setDivContainer);
+		
 		//HTML5 Audio holder
 		var audioPlayer =document.createElement("div");
 	    audioPlayer.id ="audioPlayer";
@@ -108,16 +115,22 @@ function initEnable16()
 		//load initial audio
 		audioInitLoad();
 		
-		 //location of folder where place resources files 
-		mediaPath = "activityData/";
-		cssFilename = "css/enabling_16.css";   //css url
-		xmlFilename = mediaPath + "xml/enabling_16.xml"; //xml url
-		jsonFilename = mediaPath + "json/enabling_16.js"; //json file url
-	
+		// Default values (for testing)
+		//mediaPath = "activityData/";
+		cssFilename = "css/enabling_16.css";  //css url
+		
+		// Values from URL parameters or default values for testing
+		var statusParameters = getPassedParameters();
+		if (!statusParameters) {
+			//location of folder where place resources files 
+			mediaPath = "activityData/media/";
+			xmlPath = mediaPath.substr(0,(mediaPath.length-6));
+			xmlFilename = xmlPath + "xml/enabling_16.xml"; //xml url
+			jsonFilename = xmlPath + "json/enabling_16.js"; //json file url
+		}
+		
 	   // load xml 
 	loadActivity(parseXml);
-	
-
 }// end initEnable15()
 
 
@@ -133,17 +146,28 @@ function parseXml(t_xml){
 function loadSet(){
 	 $("#toolBox").css({"background-color":"#eeeeee", "opacity":"0.2"});
 	  $("#popUpDiv").css("display", "block");
-	  $("#okBtn").html("Ok");
-	 $("#okBtn").css({"width":"40px", "left":"756px"});
+	  $("#okBtn").html("OK");
 	   $(".feedbackTitle, .feedbackContent, #okBtn").css("display","none");
 	  $("#startButton").css("display", "block");
 	  timer =15;
 	  var totalItems= $(xmlEnable16).find("item").length;
 	  homeworkStatus = $(xmlEnable16).find("content").attr("hw"); // true for homework and undefined for regular
 	 var currentElem = $(xmlEnable16).find("item").eq(currentItem);
-	  $("#setNumbers").html("<div class=\"setQuestion\">Set:</div><div class=\"setNumbers\">"+(currentItem+1) +"/"+ totalItems +"</div>")
-	 var bomPackageUrl ="activityData/media/png/"+$(currentElem).find("bombImage").text();
-	 var imageUrl ="activityData/media/png/"+$(currentElem).find("background").text();
+	  $("#setNumbers").html("<div class=\"setQuestion\">Set:</div><div class=\"setNumbers\">"+(currentItem+1) +"/"+ totalItems +"</div>");
+	
+	$("#container_setDiv").html(
+		'<div class="btn-group pull-right">' + 
+			'<button class="btn btn_set" id="setDiv" title="SET">SET:</button>' + 
+			'<button class="btn btn_set_value" id="setText" title="SET">1/3</button>' + 
+		'</div>'
+	);
+	currentSet = currentItem;
+	numSets = totalItems;
+	updateSetText();
+	
+	var bomPackageUrl = mediaPath + "png/" + $(currentElem).find("objectImage").text();
+	var imageUrl = mediaPath + "png/" + $(currentElem).find("background").text();
+	
 	 document.getElementById("imageHolder").innerHTML="";
 	 var imageLoader =document.createElement("img");
 	    imageLoader.id ="imageLoader";
@@ -157,7 +181,7 @@ function loadSet(){
 		document.getElementById("imageHolder").appendChild(explosionImage);
 	
 	 var bomIndex =1;
-	 	$(currentElem).find("bomb").each(function(){
+		$(currentElem).find("object").each(function(){
 			 
 				var bomImage =document.createElement("img");
 				var name;
@@ -335,63 +359,65 @@ function dropFunction(event, ui ) {
 		  $(".feedbackTitle").html("<img src='images/feedback_correct.png'/>");
 		 $(".feedbackContent").html("<div class='feedbackTitleText'>Feedback:</div><div class='feedbackText'>"+ $(currentItemObj).find("feedback").text() +"</div>"); 
 		 if (currentItem <  maxTotalItem) {
-		     $("#okBtn").html("Next");
-		     $("#okBtn").css({"width":"55px", "left":"741px"});
+			 $("#okBtn").html("NEXT");
 		 }
 	}   
 	 if (type == "wrong") {
 		 $(".feedbackTitle").html("<img src='images/feedback_incorrect.png'/>");
 	      $("#bottomPopUpText").html($(currentItemObj).find("hint").text());
-		  $(".feedbackContent").html("<div class='feedbackTitleText'>Hint:</div><div class='feedbackText'>"+ $(currentItemObj).find("hint").text() +"</div>"); 
+		  $(".feedbackContent").html("<div class='feedbackTitleText'>Hint:</div><div class='feedbackText'>"+ "Hint: " + $(currentItemObj).find("hint").text() +"</div>"); 
 	} 
 	if (type == "feedback") {
 		$("#popUpDiv").css("display", "block");
 		  $(".feedbackTitle").html("<img src='images/feedback_incorrect.png'/>");
 		  $(".feedbackContent").html("<div class='feedbackTitleText'>Feedback:</div><div class='feedbackText'>"+ "The correct answer is: " + $(currentItemObj).find("feedback").text() + "</div>");
 		   if (currentItem <  maxTotalItem) {
-		     $("#okBtn").html("Next");
-		     $("#okBtn").css({"width":"55px", "left":"741px"});
+			 $("#okBtn").html("NEXT");
 		 }
 	}
-	   if (type == "completted") {
-			  $(".feedbackTitle").html("");
-			   $("#okBtn").css("display","none");
-		  $(".feedbackContent").html("<div class='setCompleted'>Activity is Completed!</div>");  
-		 
-	 }
-	  $( "#okBtn" ).unbind( "click" );
- $( "#okBtn" ).click(function() {
-	 $(".feedbackTitle, .feedbackContent, #okBtn").css("display","none");
-	     var  maxTotalItem = $(xmlEnable16).find("item").length-1;
-		 if (currentItem >=  maxTotalItem){
-			  if (($(xmlEnable16).find("item").eq(currentItem).attr("result") == "feedback") ||($(xmlEnable16).find("item").eq(currentItem).attr("result") == "correct")) {
-			 			$(xmlEnable16).find("item").eq(currentItem).attr("result", "completted");
-				         popUpMessage();
-			  }else
-			     	startTimer(); 
-		 }
-		 else {
-				 if (timer > 0 ) {
-					  if (($(xmlEnable16).find("item").eq(currentItem).attr("result") == "feedback") ||($(xmlEnable16).find("item").eq(currentItem).attr("result") == "correct")) {
-						  		currentItem++;
-								loadSet();
-					  } //else
-			     		       //startTimer(); 
-				 }
-			 	 else {
-					 currentItem++;
-						loadSet();
-			 		}
-			 
-}
-	 
-	 
-	 
-	 });
+	if (type == "completted") {
+		if(parent.activityCompleted){
+			$(".feedbackTitle").html("");
+			$("#okBtn").css("display","none");
+			$(".feedbackContent").html("");  
+			
+			parent.activityCompleted(1,0);
+		}else{
+			$(".feedbackTitle").html("");
+			$("#okBtn").css("display","none");
+			$(".feedbackContent").html("<div class='setCompleted'>Activity is Completed!</div>");  
+		}
+	}
+	
+	$( "#okBtn" ).unbind( "click" );
+	$( "#okBtn" ).click(function() {
+		$(".feedbackTitle, .feedbackContent, #okBtn").css("display","none");
+		var  maxTotalItem = $(xmlEnable16).find("item").length-1;
+		if (currentItem >=  maxTotalItem){
+			if (($(xmlEnable16).find("item").eq(currentItem).attr("result") == "feedback") ||
+				($(xmlEnable16).find("item").eq(currentItem).attr("result") == "correct")) {
+				$(xmlEnable16).find("item").eq(currentItem).attr("result", "completted");
+				popUpMessage();
+			} //else
+				//startTimer(); 
+		}
+		else {
+			 if (timer > 0 ) {
+				if (($(xmlEnable16).find("item").eq(currentItem).attr("result") == "feedback") ||
+					($(xmlEnable16).find("item").eq(currentItem).attr("result") == "correct")) {
+					currentItem++;
+					loadSet();
+				} //else
+					//startTimer(); 
+			}
+			else {
+				currentItem++;
+				loadSet();
+			}
+		}
+	});
+	
+	$(".feedbackTitleText").hide();
+	$(".feedbackText").mCustomScrollbar();
  }
- 
-
- 
- 
- 
  
