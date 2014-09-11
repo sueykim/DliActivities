@@ -79,12 +79,13 @@ body{
 	
     padding-right: 15px;
     clear: both;
+    padding-bottom: 10px;
 }
 
 #idDesc{
     text-align: left;
 	
-    height: 352px;
+    height: 346px;
 	background: url("../../common/img/bg_dropbubble_50.png") repeat-x scroll center bottom #F5F5F5;
     border: 1px solid #BDBDBD;
     border-radius: 3px 3px 3px 3px;
@@ -134,6 +135,10 @@ body{
     /* width: 152px; */
 }
 
+b{
+    font-family: FuturaBold;
+}
+
 .highlight{
     display: inline;
     color: #B43C4B;
@@ -146,6 +151,7 @@ body{
 	text-align: right;
 	padding-top: 9px;
 	clear: both;
+	padding-right: 10px;
 }
 
 #idExample2Container{
