@@ -33,6 +33,10 @@
 				<div id="idName">
 				</div>
 				
+				<div id="idIntroductionBtn" onclick="introClicked()">
+					Introduction
+				</div>
+				
 				<div id="idPlayBtnRTL" class="playBtnRTL" onclick="playAudio('main')">
 				</div>
 				
@@ -41,6 +45,16 @@
 				
 				<div id="idDesc">
 				</div>
+				
+				<div id="idCharImages">
+					<div class="charImage">Initial</div>
+					<div class="charImage">Middle</div>
+					<div class="charImage">Final</div>
+				</div>
+
+				<div id="idCompleteBtn" onclick="completeClicked()">
+					Complete
+				</div>
 			</div>
 			
 			<div id="idRightCol">
@@ -48,27 +62,20 @@
    				</div>
    				
    				<div id="idExampleContainers">
-	   				<div id="idExample1Container">
-	   					<div id="idPlayBtnExample1LTR" class="playBtnLTR" onclick="playAudio('ex1')"></div>
-	   					<div id="idExample1En"></div>
-	   					<div id="idPlayBtnExample1RTL" class="playBtnRTL" onclick="playAudio('ex1')"></div>
-	   					
-	   					<div id="idExample1"></div>
-	   				</div>
-	   				
-	   				<div id="idExample2Container">
-	   					<div id="idPlayBtnExample2LTR" class="playBtnLTR" onclick="playAudio('ex2')"></div>
-	   					<div id="idExample2En"></div>
-	   					<div id="idPlayBtnExample2RTL" class="playBtnRTL" onclick="playAudio('ex2')"></div>
-	   					
-	   					<div id="idExample2"></div>
-	   				</div>
    				</div>
 			</div>
 			
 			<div id="snippets">
 				<div id="gridItemSnip">
 					<div class="gridItem"></div>
+				</div>
+				<div id="exampleContainerSnip">
+					<div class="exampleContainer">
+	   					<div class="playBtnLTR" onclick="playAudio('ex',this)"></div>
+	   					<div class="exampleEn"></div>
+	   					<div class="playBtnRTL" onclick="playAudio('ex',this)"></div>
+	   					<div class="example"></div>
+	   				</div>
 				</div>
 			</div>	
 				

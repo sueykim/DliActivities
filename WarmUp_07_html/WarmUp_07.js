@@ -13,16 +13,22 @@ $(document).ready(function() {
 	
 }); 
 
-function playAudio(value){	
-	switch(value){
+function introClicked(){
+	$("body").attr("intro", "true")
+}
+
+function completeClicked(){
+	completeActivity()
+}
+
+function playAudio(type, element){	
+	switch(type){
 		case 'main':
 			audio_play_file(removeFileExt($("body").attr("audio")),mediaPath)
 			break;
-		case 'ex1':
-			audio_play_file(removeFileExt($("body").attr("ex1_audio")),mediaPath)
-			break;
-		case 'ex2':
-			audio_play_file(removeFileExt($("body").attr("ex2_audio")),mediaPath)
+		case 'ex':
+			var jExContainer = $($(element).parent())
+			audio_play_file(removeFileExt(jExContainer.attr("audio")),mediaPath)
 			break;
 	}
 }
@@ -36,52 +42,118 @@ var answerAttemptsNum = 0;
 // To display ruby tag
 var isJapanese = false;
 var disableHighlighting = false
-
+var jItem
 
 function loadLetter(index){
-	var l_v = $(xml).find("letter")[index]
+	if($("body").attr("warmup_08") == "true"){
+		$("body").attr("intro", "false")
+	}
+	
+	jItem = $($(xml).find("letter")[index])
+	
+	if(jItem.find("initial_image").length == 1){
+		$($(".charImage")[0]).css("background-image", 
+					"url(" + mediaPath + "png/" 
+					+ $(jItem.find("initial_image")).text() + ")" )
+		
+		$($(".charImage")[1]).css("background-image", 
+					"url(" + mediaPath + "png/" 
+					+ $(jItem.find("middle_image")).text() + ")" )
+		
+		$($(".charImage")[2]).css("background-image", 
+					"url(" + mediaPath + "png/" 
+					+ $(jItem.find("final_image")).text() + ")" )
+	}
 	
 	//Load fields
-	$("body").attr("audio", $($(l_v).find("audio")).text())
+	$("body").attr("audio", $(jItem.find("audio")).text())
 
-	if($($(l_v).find("example")[0]).attr("dir").toLowerCase() == "rtl"){
+	if($(jItem.find("example")[0]).attr("dir").toLowerCase() == "rtl"){
 		$("body").attr("dir", "rtl")
 	}else{
 		$("body").attr("dir", "ltr")
 	}
 
-	$("#idName").text($($(l_v).find("name")).text())
-	$("#idChar").text($($(l_v).find("char")).text())
-	$("#idDesc").html($($(l_v).find("desc")).text())
-
-	var jEx1 = $($(l_v).find("example")[0])
-	$("#idExample1En").text(jEx1.attr("en"))
-	var regEx = new RegExp($($(l_v).find("char")).text(), "ig");
-	var ex1Text = jEx1.text().replace(regEx, "<div class='highlight'>" 
-										+ $($(l_v).find("char")).text().toLowerCase()
-										+ "</div>")
+	$("#idName").text($(jItem.find("name")).text())
+	$("#idChar").text($(jItem.find("char")).text())
 	
-	if(disableHighlighting){
-		ex1Text = jEx1.text()	
+	if($("body").attr("warmup_07") == "true"){
+		$("#idDesc").html($(jItem.find("desc")).text())
 	}
 	
-	$("#idExample1").html(ex1Text)
+	var itemChar = $(jItem.find("char")).text().toLowerCase()
 	
-	$("body").attr("ex1_audio", jEx1.attr("aud"))
+	$("#idExampleContainers").empty()
+	
+	jItem.find("example").each(function(i_e,v_e){
+		var jEx = $(jItem.find("example")[i_e])
+		var exText = jEx.text()
+		
+		var jExampleContainerSnip = $($("#exampleContainerSnip").html())
+		
+		var enText = jEx.attr("en")
+		if(enText == undefined){
+			enText = jEx.attr("en_word")
+		}
+		
+		jExampleContainerSnip.find(".exampleEn").text(enText)
+			
+		for(var i_t=exText.length-1; i_t >= 0; i_t--){
+			if(exText[i_t].toLowerCase() == itemChar){
+				var outputText = exText.substring(0, i_t) 
+				
+				//Is this the beginning of the item
+				if(i_t != 0){
+					//No
+					outputText += "&zwj;"	
+				}
+				
+				outputText += "<span class='highlight'>"
+				
+				//Is there a space before this word
+				if(i_t != 0 
+						&& exText[i_t-1] != " "){
+					outputText += "&zwj;"	
+				}
+				
+				outputText += exText[i_t]
+				
+				
+				//Is there a space after this word
+				if(i_t != exText.length-1
+						&& exText[i_t+1] != " "){
+					outputText += "&zwj;"	
+				}
+				
+				outputText += "</span>"
+				
+				//Is this the end of the item
+				if(i_t != exText.length-1){
+					//No
+					outputText += "&zwj;"	
+				}
+				
+				outputText += exText.substring(i_t+1, exText.length) 
+			
+				exText = outputText
+			}
+		}
 
-	var jEx2 = $($(l_v).find("example")[1])
-	$("#idExample2En").text(jEx2.attr("en"))
-	var regEx2 = new RegExp($($(l_v).find("char")).text(), "ig");
-	var ex2Text = jEx2.text().replace(regEx2, "<div class='highlight'>" 
-										+ $($(l_v).find("char")).text().toLowerCase()
-										+ "</div>")
+		if(disableHighlighting){
+			exText = jEx.text()	
+		}
+		
+		jExampleContainerSnip.find(".example").html(exText)
 	
-	if(disableHighlighting){
-		ex2Text = jEx2.text()	
-	}
+		var audioText = jEx.attr("aud")
+		if(audioText == undefined){
+			audioText = jEx.attr("audio")
+		}
 	
-	$("#idExample2").html(ex2Text)
-	$("body").attr("ex2_audio", jEx2.attr("aud"))
+		jExampleContainerSnip.attr("audio",audioText)
+	
+		$("#idExampleContainers").append(jExampleContainerSnip)
+	})
 	
 	//Mark letter as being shown
 	$($("#idCharGrid > .gridItem")[index]).attr("visited", "true")
@@ -89,20 +161,29 @@ function loadLetter(index){
 	checkCompleted()
 }
 
+
 var activityCompletedShown = false
 
 function checkCompleted(){
 	if(!activityCompletedShown && 
 			$("#idCharGrid > .gridItem:not([visited='true'])").length == 0){
-		//Completed
-		activityCompletedShown = true
+		$("body").attr("completed","true")
 		
-		if(parent.activityCompleted){
-			parent.activityCompleted(1,0);
-		}else{
-			alert("Activity Completed")
+		if($("body").attr("warmup_07") == "true"){
+			completeActivity()
 		}
 	}
+}
+
+function completeActivity(){
+	//Completed
+	activityCompletedShown = true
+
+	if(parent.activityCompleted){
+		parent.activityCompleted(1,0);
+	}else{
+		alert("Activity Completed")
+	}	
 }
 
 var isJapanese = false
@@ -114,6 +195,16 @@ function parseXml(t_xml){
 	}
 
 	isJapanese = $(xml).find("content").attr("target_language") == "Japanese";
+	
+	//Is this a WarmUp_08 xml file
+	if($(t_xml).find("set").length > 0){
+		$("body").attr("warmup_08", "true")
+		$("head > title").text("WarmUp 08")
+		
+		$("#idDesc").html($(t_xml).find("introduction").text())
+	}else{
+		$("body").attr("warmup_07", "true")
+	}
 	
 	//Loop through all letters
 	$(t_xml).find("letter").each(function(l_i, l_v){
@@ -132,5 +223,6 @@ function parseXml(t_xml){
 	})
 	
 	loadLetter(0)
+	$("body").attr("intro", "true")
 }
 

@@ -12,7 +12,6 @@ body{
 	
 }
 
-
 #idLeftCol{
     width: 343px;
 	
@@ -56,6 +55,14 @@ body{
     padding-left: 3px;
 }
 
+body[warmup_08='true'] #main #idPlayBtnRTL{
+	display: none;
+}
+
+body[warmup_08='true'] #main #idPlayBtnLTR{
+	display: block;
+}
+
 #idPlayBtnLTR,
 #idPlayBtnRTL{
 	width: 35px;
@@ -74,6 +81,41 @@ body{
     float: left;
 }
 
+#idIntroductionBtn:hover,
+#idCompleteBtn:hover{
+    background-color: #8B8B8B;
+}
+
+#idCompleteBtn{
+    background-color: #979595;
+	clear: both;
+    width: 66px;
+    padding: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+	display:none;
+}
+
+body[completed="true"] #idCompleteBtn{
+	display:block;
+}
+
+#idIntroductionBtn{
+    background-color: #979595;
+	
+    width: 83px;
+    padding: 7px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+body[warmup_08='true'] #idChar{
+	font-size: 126px;
+}
+
 #idChar{
     font-size: 45px;
 	
@@ -81,6 +123,11 @@ body{
     clear: both;
     padding-bottom: 10px;
 }
+
+body[warmup_08='true'] #idDesc{
+	display:none;
+}
+
 
 #idDesc{
     text-align: left;
@@ -108,9 +155,8 @@ body{
     margin-bottom: 10px;
 }
 
-#idExample1Container{
+.exampleContainer{
     clear: both;
-	
     padding-top: 20px;
     padding-bottom: 20px;
     height: 50px;
@@ -119,16 +165,13 @@ body{
     font-size: 19px;
 }
 
-#idPlayBtnExample1LTR, 
-#idPlayBtnExample1RTL,
-#idPlayBtnExample2LTR,
-#idPlayBtnExample2RTL{
+.exampleContainer > .playBtnLTR,
+.exampleContainer > .playBtnRTL{
 	width: 25px;
 	height: 25px;
 }
 
-#idExample1En,
-#idExample2En{
+.exampleEn{
     text-align: left;
 	
     float: left;
@@ -139,31 +182,25 @@ b{
     font-family: FuturaBold;
 }
 
+body[warmup_08='true'] .highlight{
+    display: inline;
+    color: #505050;
+    background-color: #DBAD73;
+    font-family: FuturaBold;
+}
+
 .highlight{
     display: inline;
     color: #B43C4B;
     font-family: FuturaBold;
 }
 
-#idExample1,
-#idExample2
+.example
 {
 	text-align: right;
 	padding-top: 9px;
 	clear: both;
 	padding-right: 10px;
-}
-
-#idExample2Container{
-    clear: both;
-	
-    padding-top: 20px;
-    padding-bottom: 20px;
-    height: 50px;
-    margin-left: 5px;
-    margin-right: 5px;	
-    font-size: 19px;
-    border-top: 1px solid #D3D3D3;
 }
 
 #snippets{
@@ -193,13 +230,45 @@ b{
 }
 
 body[dir='rtl'] #idPlayBtnLTR,
-body[dir='rtl'] #idPlayBtnExample1LTR,
-body[dir='rtl'] #idPlayBtnExample2LTR{
+body[dir='rtl'] .exampleContainer > .playBtnLTR{
 	display:none;
 }
 
 body[dir='ltr'] #idPlayBtnRTL,
-body[dir='ltr'] #idPlayBtnExample1RTL,
-body[dir='ltr'] #idPlayBtnExample2RTL{
+body[dir='ltr'] .exampleContainer > .playBtnRTL{
 	display:none;
+}
+
+.charImage{
+    width: 79px;
+	
+    height: 100px;
+    background-repeat: no-repeat;
+    float: left;
+    text-align: left;
+    /* background-position-x: 60px; */
+    /* background-position-y: 10px; */
+    padding: 10px 30px 0px 5px;
+    background-position: 60px 10px;
+}
+
+body:not([warmup_08='true']) #idCharImages,
+body:not([warmup_08='true']) #idCompleteBtn,
+body:not([warmup_08='true']) #idIntroductionBtn{
+	display:none;
+}
+
+#idCharImages{
+    border-top: 1px solid #ACABAB;
+	
+    height: 121px;
+    margin-top: 70px;
+}
+
+body[warmup_08='true'][intro='true'] #main #idLeftCol #idDesc{
+	display:block;
+}
+
+body[warmup_08='true'][intro='true'] #main #idLeftCol > * {
+	display: none;
 }
