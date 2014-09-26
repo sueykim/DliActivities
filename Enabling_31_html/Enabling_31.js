@@ -43,6 +43,12 @@ var numSets = 0;
 var NUM_DRAG_BUBBLES = 3;
 var questionWord
 
+//// adding sessions
+var sessionLen =0;
+var sessions =[];
+var culNote=[]
+var itemDir;
+//////////////////////
 
 var sets =[];
 var items =[];
@@ -57,19 +63,51 @@ var maxLen
 var isJapanese = false;
 
 function parseXml(t_xml){
+
+       itemDir = $(xml).find("content").attr("rtl");  //// determine RTL or LTR
+       if(itemDir != 'true') {
+            $(".item_word").css("float", "right");
+            $(".item_audio").css("float", "left");
+            $(".item_audio").css("margin-left", "15px");
+         }
+
+
+        ////* adding sessions /////////////////////////////////////
+        sessionLen =  $(xml).find("set").length;
+       ////////////////////////////////////////////////////////////
+
 	numSets = Math.ceil($(xml).find("item").length / NUM_DRAG_BUBBLES);
-	
         maxLen = numSets * NUM_DRAG_BUBBLES;
         for (var i=0; i<maxLen; i++)
           answerAttemptsNum[i] = 0;
+
 
         sets = new Array (numSets);
         items = new Array (numSets);
 	letterArray= new Array(numSets);
         audArr = new Array(numSets);
 
-	$(xml).find("item").shuffle();
+	////$(xml).find("item").shuffle();
 	
+
+        ////* shuffle items within sessions ///////////////
+	for (var i=0; i<sessionLen; i++)
+	    $($(xml).find("set")[i]).find("item").shuffle();
+	//////////////////////////////////////////////////
+
+        //////////// assigning culture note to each set (same culture note if sets are in the same session) /////
+        culNote = new Array (numSets);
+        var cnt = 0;
+        for (var i=0; i<sessionLen; i++) {
+          sessions[i] =  $($(xml).find("set")[i]).find("item").length / NUM_DRAG_BUBBLES
+          for (var j=0; j<sessions[i]; j++) {
+             culNote[cnt] =  $($(xml).find("body")[i]).text();
+             cnt++
+             ////alert( $($(xml).find("body")[i]).text())
+             }
+          }
+         ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 	for(var i=0; i< numSets; i++)   {
                 sets[i] = 0;
@@ -78,7 +116,7 @@ function parseXml(t_xml){
                 audArr[i] = new Array(NUM_DRAG_BUBBLES);
                 for(var j=0; j < NUM_DRAG_BUBBLES; j++){
                    items[i][j] = 0;
-                   audArr[i][j] = $($(xml).find("audio")[i + (j * NUM_DRAG_BUBBLES)]).text()
+                   audArr[i][j] = $($(xml).find("audio")[(i * NUM_DRAG_BUBBLES) + j]).text();
                    }
                 }
 
@@ -105,7 +143,9 @@ function loadSet(value){
 	  }
 
 
-        $("#cultureNote").html('<div style="text-align:center" > Culture Note </div><br />'  + $($(xml).find("body")[0]).text());
+        ////$("#cultureNote").html('<div style="text-align:center" > Culture Note </div><br />'  + $($(xml).find("body")[0]).text());
+        //// implementing culture note for each set (same culture note if sets are in the same session) ////
+        $("#cultureNote").html('<div style="text-align:center" > Culture Note </div><br />'  + culNote[currentSet]);
         $("#cultureNote").mCustomScrollbar();  
         playAudioPhrase()
 
