@@ -185,6 +185,8 @@ function playTheVideo(){
 			suffix = languageId.substr(0,1) + "ms"
 		}else if(jItem.find("phraseID").attr("ams") == "true"){
 			suffix = "ams"
+		}else if(jItem.find("phraseID").attr("frms") == "true"){
+			suffix = "frms"
 		}
 			
 		var file_video = $(xml).find("gloss").attr("language_code")
