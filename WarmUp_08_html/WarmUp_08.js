@@ -5,9 +5,9 @@ $(document).ready(function() {
 	
 	//Default values (for testing)
 	mediaPath = "sampleData/";
-	xmlFilename = mediaPath + "WarmUp_07_sampleData.xml";
-	jsonFilename = mediaPath + "WarmUp_07_sampleData.js";
-	cssFilename = "styles/WarmUp_07.css";
+	xmlFilename = mediaPath + "WarmUp_08_sampleData.xml";
+	jsonFilename = mediaPath + "WarmUp_08_sampleData.js";
+	cssFilename = "styles/WarmUp_08.css";
 	
 	loadActivity(parseXml);
 	
