@@ -10,7 +10,7 @@ $(document).ready(function() {
 	mediaPath = "sampleData/";
 	xmlFilename = "sampleData/enabling04_noNamespaces.xml";
 	jsonFilename = "sampleData/enabling04_noNamespaces.js";
-	//keyboardFilename = "sampleData/test_keyboard.js";
+	keyboardFilename = "sampleData/test_keyboard.js";
 	cssFilename = "styles/enabling_04_dlilearn.css";
 	
 	$('.activity_hd').html('');
@@ -302,12 +302,11 @@ function letterClicked(node){
 		timesTried = 0;
 	}else{
 		if(timesTried == 2){
-			showFeedback("incorrect", $(
-										$(
-											$(item).find("hint")
-										)[mysteryLetterIndex]
-									).text()
-								);
+			if(mysteryLetterIndex == $(item).find("hint").length - 1){
+				showFeedback("incorrect", $($(xml).find("feedback")[currentSelectedIndex]).text());
+			}else{
+				showFeedback("incorrect", $($(xml).find("global_hint")[currentSelectedIndex]).text());
+			}
 			
 			forceCorrect = true; //force it to grey out the item
 			
@@ -319,7 +318,12 @@ function letterClicked(node){
 			timesTried = 0;
 		}else{
 			forceCorrect = false;
-			showFeedback("incorrect", $($(xml).find("global_hint")[currentSelectedIndex]).text());
+			showFeedback("incorrect", $(
+										$(
+											$(item).find("hint")
+										)[mysteryLetterIndex]
+									).text()
+								);
 		}
 	}
 }
