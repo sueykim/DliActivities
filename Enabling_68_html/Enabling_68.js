@@ -62,8 +62,10 @@ function parseXml(t_xml){
 	loadSet(0);
 }
 
+var imgClick = false;
 function loadSet(value){
 	currentSet = value;
+	imgClick = false;
 	jSection = $($(xml).find("set")[currentSet]);
 
 	$($("#img_container").find("img")).shuffle();
@@ -107,6 +109,7 @@ function loadSet(value){
 var currentItem = 0;
 function loadItem(value){
 	currentItem = value;
+	imgClick = false;
 	//$('#itemText').text($(jSection.find("phrase_complete_TL")[currentItem]).text());
 	if (!isJapanese) {
 		$('#itemText').html($(jSection.find("phrase_complete_TL")[currentItem]).text());
@@ -132,10 +135,11 @@ function loadItem(value){
 }
 
 var audioPlaying = false;
+var normalTextShow;  //// showing a normal text 1.5 seconds after bold face showing
 
 function playAudio(){
 	audioPlaying = true;
-	
+	imgClick = true;
 	document.getElementById("nextItemBtnClickGuard").style.display = "block";
 	document.getElementById("prevItemBtnClickGuard").style.display = "block";
 	
@@ -149,69 +153,76 @@ function playAudio(){
 	//todo - highlight words
 	//var itemHtml = $("#itemText").text();
 	var itemHtml = $("#itemText").html();
+	var itemHtml2 = $("#itemText").html();
+            itemHtml2 = itemHtml2.replace(/<[//]{0,1}(B|b)[^><]*>/g,"");    //// no bold face
+
 
 	var keyword = $(jSection.find("keyword_TL")[currentItem]).text();
-	var re = new RegExp(keyword,"g");    
-	
+	var re = new RegExp(keyword,"g");
+
+        //// when clicking the audio button again while bold characters showing up
 	var keyWBolded =  "<b>" + keyword + "<\/b>"
         var keyMatch = itemHtml.match(keyWBolded, "g")
+        /////////////////////////////////////////////
 
-        if(!keyMatch)
+        if(!keyMatch){
             itemHtml = itemHtml.replace(re,"<b>" + keyword + "</b>");
         ////else
           ////alert('match')
 
-
-	$("#itemText").html(itemHtml);
-
+ 	   $("#itemText").html(itemHtml);
+	       
+	 normalTextShow = setTimeout(function(){$("#itemText").html(itemHtml2)}, 1500);  }
 
 	//add event listener for audio finished
 	document.getElementById('audioPlayer').addEventListener('ended', audioEnded);
-	document.getElementById('audioPlayer').play();	
-}	
+	document.getElementById('audioPlayer').play();
+
+}
 
 function imageClicked(value){
-	if(audioPlaying == true){
+	if(imgClick == false){
 		return;
 	}
+        ////else {
+        	if($("#img" + currentItem).hasClass("imageCompleted")){
+        		//Item  already finished so just ignore the click
+        		return;
+        	}
 
-	if($("#img" + currentItem).hasClass("imageCompleted")){
-		//Item  already finished so just ignore the click
-		return;
-	}
-	
-	var jItem = $(jSection.find("item")[currentItem]);
-        if (homeworkStatus) {
-      	   logStudentAnswer(
-      		currentSet,
-      		jItem.find("keyword_TL").text(),
-      		$(jSection.find("keyword_TL")[value]).text()
-      	   );
-      	}
+        	var jItem = $(jSection.find("item")[currentItem]);
+                if (homeworkStatus) {
+              	   logStudentAnswer(
+              		currentSet,
+              		jItem.find("keyword_TL").text(),
+              		$(jSection.find("keyword_TL")[value]).text()
+              	   );
+              	}
 
-	if(jItem.attr("timesTried") == undefined){
-		jItem.attr("timesTried", 1);
-	}else{
-		jItem.attr("timesTried",
-			parseInt(jItem.attr("timesTried")) + 1
-		);	
-	}
+        	if(jItem.attr("timesTried") == undefined){
+        		jItem.attr("timesTried", 1);
+        	}else{
+        		jItem.attr("timesTried",
+        			parseInt(jItem.attr("timesTried")) + 1
+        		);
+        	}
 
-	if (homeworkStatus) {
-	   logStudentAnswerAttempts(
-		currentSet,
-		jItem.attr("timesTried"));
-       }
+        	if (homeworkStatus) {
+        	   logStudentAnswerAttempts(
+        		currentSet,
+        		jItem.attr("timesTried"));
+               }
 
-	if(currentItem == value){
-		feedbackCorrectShown = true;
-                $('#itemText').css('color', 'green');
-                $("#img" + currentItem).addClass("imageCompleted")
-		showFeedback("correct", $(jSection.find("feedback")[value]).text());
-	}else{
-		//todo - show incorrect bubble
-		showFeedback("incorrect", "");
-	}
+        	if(currentItem == value){
+        		feedbackCorrectShown = true;
+                        $('#itemText').css('color', 'green');
+                        $("#img" + currentItem).addClass("imageCompleted")
+        		showFeedback("correct", $(jSection.find("feedback")[value]).text());
+        	}else{
+        		//todo - show incorrect bubble
+        		showFeedback("incorrect", "");
+        	}
+       //// }
 }
 
 function showFeedback(value, textInput){
@@ -320,7 +331,7 @@ function closeFeedback(){
 function nextClick(){
 	if(setBtnLock)
 		return;
-		
+
 	if(currentSet == numSets - 1){
 		
 	}else{	
@@ -448,16 +459,27 @@ function setState(value){
 
 var itemBtnLock = false;
 
-function nextItemClick(){
+function nextItemClick(){ 
+        var player = document.getElementById('audioPlayer')
+        if( !player.paused && !player.ended && 0 < player.currentTime ) {
+           player.pause();
+           clearTimeout(normalTextShow);
+           }
+
 	if(itemBtnLock)
 		return;
 		
 	if((currentItem + 1) != numItems){
 		loadItem(currentItem + 1);
-	}
+          }
 }
 
 function prevItemClick(){
+        var player = document.getElementById('audioPlayer')
+        if( !player.paused && !player.ended && 0 < player.currentTime ) {
+           player.pause();
+           clearTimeout(normalTextShow);
+           }
 	if(itemBtnLock)
 		return;
 	
