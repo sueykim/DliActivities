@@ -208,7 +208,7 @@ function showFeedback(value, textInput){
 			$("#feedbackBtn").html("Next Activity");
 			break;
 	}
-	
+	$("#feedbackText").mCustomScrollbar();	
 	$('#feedback').show();
 	
 	/*$('#feedback').animate( {
