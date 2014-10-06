@@ -233,4 +233,7 @@ html body {
     cursor: default;
     margin-top: -13px;
     margin-left: -10px;
+    margin-right:-9px;
+    min-height: 70px;
+    max-height: 70px;
 }
