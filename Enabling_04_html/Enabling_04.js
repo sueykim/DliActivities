@@ -11,7 +11,7 @@ $(document).ready(function() {
 	xmlFilename = "sampleData/enabling04_noNamespaces.xml";
 	jsonFilename = "sampleData/enabling04_noNamespaces.js";
 	keyboardFilename = "sampleData/test_keyboard.js";
-	cssFilename = "styles/enabling_04_dlilearn.css";
+	cssFilename = "styles/Enabling_04_dliLearn.css";
 	
 	$('.activity_hd').html('');
 	$('.activity_description').html('');	
@@ -57,7 +57,7 @@ function parseXml(t_xml){
 	
 	carousel = $("#carousel1").CloudCarousel(		
 		{			
-			xPos: 260,
+			xPos: 210,
 			yPos: -30,
 			altBox: $("#alt-text"),
 			titleBox: $("#title-text"),

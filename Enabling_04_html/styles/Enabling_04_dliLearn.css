@@ -28,7 +28,8 @@
 * {
     -moz-box-sizing: inherit;
 	-webkit-box-sizing: initial;
-	box-sizing: content-box;
+	
+    box-sizing: content-box;
 }
 
 .activity_description {
@@ -200,9 +201,9 @@ html body {
 }
 
 #carousel1 {
-	width: 840px; 
+	width: 713px; 
     height: 128px;
-	margin-left: 0px;
+	margin-left: 47px;
     overflow: scroll;
 }
 
