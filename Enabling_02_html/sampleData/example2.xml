@@ -11,7 +11,7 @@
         <item>
             <lang_en>two</lang_en>
             <lang_tl dir="ltr">tl two</lang_tl>
-            <file_img_video>2.png</file_img_video>
+            <file_img_video>rain.mp4</file_img_video>
             <file_audio>2.mp3</file_audio>
             <hint><![CDATA[two hint The correct answer pertains to American currency.]]></hint>
             <feedback><![CDATA[two feedback أبي في مدينة بركاءfour <b>Dola ya Kimarekani</b> means <i>US dollar</i>. Often, people in Kenya just say <b>dola</b> without laboring to include <b>ya Kimarekani</b>.]]></feedback>
@@ -41,7 +41,7 @@
         <item>
             <lang_en>four</lang_en>
             <lang_tl dir="ltr">tl four</lang_tl>
-            <file_img_video>4.png</file_img_video>
+            <file_img_video>red.mp4</file_img_video>
             <file_audio>4.mp3</file_audio>
             <hint><![CDATA[four hint The correct answer begins with an ‘a’.]]></hint>
             <feedback><![CDATA[four feedback <b>Asilimia</b> means <i>percent(age)</i>. It is derived from two words <b>asili, </b><i>origin</i> and <b>mia, </b><i>a hundred</i>.]]></feedback>
@@ -57,7 +57,7 @@
         <item>
             <lang_en>six</lang_en>
             <lang_tl dir="ltr">six </lang_tl>
-            <file_img_video>6.png</file_img_video>
+            <file_img_video>rice.mp4</file_img_video>
             <file_audio>6.mp3</file_audio>
             <hint><![CDATA[six hint The correct answer is similar to the English ‘note’. ]]></hint>
             <feedback><![CDATA[six feedback <b>Noti</b> means <i>note</i> or <i>bill</i>.]]></feedback>
@@ -95,7 +95,7 @@
         <item>
             <lang_en>nine</lang_en>
             <lang_tl dir="ltr">nine</lang_tl>
-            <file_img_video>9.png</file_img_video>
+            <file_img_video>river.ogv</file_img_video>
             <file_audio>9.mp3</file_audio>
             <hint><![CDATA[nine hint The correct answer has the word <i>two</i>.]]></hint>
             <feedback><![CDATA[nine feedback One Kenya shilling is the equivalent of ten Tanzania shillings.]]></feedback>

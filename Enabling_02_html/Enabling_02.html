@@ -7,6 +7,7 @@
 		<script src="../common/js/xml2json.js"></script>
 		<script src="../common/js/dli_activity.js"></script>
 		<script src="../common/js/dli_audio.js"></script>
+		<script src="../common/js/dli_video_new.js"></script>
 		<script src="../common/js/AC_OETags.js"></script>
 
 		<link type="text/css" href="../common/css/bootstrap.css" rel="stylesheet" />
@@ -72,10 +73,24 @@
 
 			<div id="container_container">
 				<div id="container_1" class="roundCorners" >
-					<img id="img_1" class="roundCorners" />
-					<img id="img_2" class="roundCorners" />
-					<img id="img_3" class="roundCorners" />
-
+					<div id="img_1_container" class="roundCorners" >
+						<div id="videoContainer1"  class="roundCorners"></div>
+						<img id="img_1" class="roundCorners" />
+						<div class="videoBtn" onclick="playTheVideo(0)"></div>
+					</div>
+					
+					<div id="img_2_container" class="roundCorners" >
+						<div id="videoContainer2"  class="roundCorners"></div>
+						<img id="img_2" class="roundCorners" />
+						<div class="videoBtn" onclick="playTheVideo(1)"></div>
+					</div>
+					
+					<div id="img_3_container" class="roundCorners" >
+						<div id="videoContainer3"  class="roundCorners"></div>
+						<img id="img_3" class="roundCorners" />
+						<div class="videoBtn" onclick="playTheVideo(2)"></div>
+					</div>
+					
 					<div id="dropTarget_1" class="dropTarget roundCorners" >
 						<span id="dropTargetText_1" class="dragBubbleText">?</span>
 					</div>

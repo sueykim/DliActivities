@@ -158,15 +158,15 @@ html body {
     height: 211px;
     margin: 10px;
     position: relative;
-    width: 577px;
+    width: 603px;
 }
 #img_1 {
     background-color: gray;
     height: 150px;
     left: 22px;
-    margin-left: 8px;
+    /* margin-left: 8px; */
     margin-top: 5px;
-    position: absolute;
+    /* position: absolute; */
     width: 180px;
 }
 #img_2 {
@@ -175,7 +175,7 @@ html body {
     left: 212px;
     margin-left: 5px;
     margin-top: 5px;
-    position: absolute;
+    /* position: absolute; */
     width: 180px;
 }
 #img_3 {
@@ -184,7 +184,7 @@ html body {
     left: 400px;
     margin-left: 5px;
     margin-top: 5px;
-    position: absolute;
+    /* position: absolute; */
     width: 180px;
 }
 .dropTarget {
@@ -461,4 +461,63 @@ html body {
     top: 0;
     width: 100%;
     z-index: 9;
+}
+
+div#playBtnVid1, div#playBtnVid2,div#playBtnVid3 {
+position: absolute;
+top: 101px;
+left: 0px;
+}
+
+video {
+width: 180px;
+height: 157px;
+}
+
+div#img_1_container, div#img_2_container, div#img_3_container {
+/* width: 180px; */
+/* height: 150px; */
+float: left;
+padding-left: 16px;
+position: relative;
+}
+
+div#videoContainer1, div#videoContainer2, div#videoContainer3 {
+    position: relative;
+}
+
+#img_1_container[video='true'] > img,
+#img_2_container[video='true'] > img,
+#img_3_container[video='true'] > img{
+  display:none;
+}
+
+#img_1_container:not([video='true']) > #videoContainer1,
+#img_2_container:not([video='true']) > #videoContainer2,
+#img_3_container:not([video='true']) > #videoContainer3{
+  display:none;
+}
+
+#img_1_container:not([video='true']) > .videoBtn,
+#img_2_container:not([video='true']) > .videoBtn,
+#img_3_container:not([video='true']) > .videoBtn{
+  display:none;
+}
+
+.videoBtn:hover{
+   background-image: url('../../common/Library/images/playBtn_s2.png');
+}
+
+.videoBtn{
+  cursor:pointer;
+ background-image: url('../../common/Library/images/playBtn_s1.png');
+  
+ width: 40px;
+  
+ height: 40px;
+ /* background-color: red; */
+ position: absolute;
+ top: 102px;
+ background-size: contain;
+ left: 22px;
 }

@@ -9,6 +9,8 @@ var isJapanese = false;
 
 $(document).ready(function() {
 	audioInit();
+
+	testVideoSupport();
 	
 	$("#feedbackHeader").html("");
 	$("#feedbackText").html("");
@@ -388,7 +390,23 @@ function loadSet(value){
 		var itemXml = this;
 		
 		$(this).find("file_img_video").each(function(){
-			$("#img_" + imgTally).attr("src", mediaPath + "png/"+ $(this).text());
+			switch(extractFileExt($(this).text())[0]){
+				case "mp4": 
+				case "ogv": 
+				case "m4v": 
+				case "webm":
+					$("#img_" + imgTally + "_container").attr("video", "true")
+					loadHTMLVideo("videoContainer" + imgTally, 
+								mediaPath, removeFileExt($(this).text()), 
+								"videoTag" + imgTally, false, ["ogv", "mp4","ogg","m4v"]);
+		
+					break; 
+				default:
+					$("#img_" + imgTally + "_container").attr("video", "false")
+					$("#img_" + imgTally).attr("src", mediaPath + "png/"+ $(this).text());
+			
+			}
+			
 			$('#dragBubble_' + tally).data({ dropTargetNum: imgTally});
 			$('#dropTarget_' + imgTally).data({ dropTargetNum: imgTally,
 										correctText: $(itemXml).find("feedback").text(),
@@ -698,4 +716,8 @@ function checkAnswers(){
 	logStudentAnswerAttempts(questionID, answerAttempts);
 	
 	//$('#feedbackText').show();
+}
+
+function playTheVideo(itemNum){
+	$("#img_" + (itemNum + 1) +"_container video")[0].play()
 }
