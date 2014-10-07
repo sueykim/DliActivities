@@ -736,11 +736,13 @@ function showFeedback(value, textInput) {
 
 	switch (value) {
 	case "incorrect":
-		$("#feedbackHeader").html("Incorrect");
+		////$("#feedbackHeader").html("Incorrect");
+                $("#feedbackHeader").html('<img src="../common/img/feedback_incorrect.png" width="139px" height:38px">');
 		$("#feedbackText").html(text);
 		break;
 	case "correct":
-		$("#feedbackHeader").html("Correct");
+		////$("#feedbackHeader").html("Correct");
+          	$("#feedbackHeader").html('<img src="../common/img/feedback_correct.png" width="122px" height:38px">');
 		$("#feedbackText").html(text);
 		break;
 	case "set_completed":
