@@ -178,16 +178,14 @@ html body {
 #feedbackHeader {
     font-size: 20px;
     letter-spacing: 2px;
-    margin-top: -13px;
-    position: absolute;
+    margin-top: -10px;
 }
 #feedbackText {
-    margin-top: -13px;
-    position: absolute;
-    top: 54px;
-    height:  50px;
-    margin-right:9px;
-
+    width: 442px;
+    min-height: 40px;
+    max-height: 40px;
+    overflow: auto;
+    margin-top: -5px;
 }
 #feedbackBtn {
     bottom: 10px;
