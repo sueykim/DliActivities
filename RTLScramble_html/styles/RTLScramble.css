@@ -1,0 +1,281 @@
+#snippets{
+	display: none;
+}
+
+.spacer{
+	width: 15px;
+	/* background-color: blue; */
+	height: 23px;
+	float: left;
+	
+	margin-top: 2px;
+}
+
+.letterContainer{
+    /* display: inline-block; */
+    cursor: pointer;
+    width: 20px;
+    /* background-color: lightcoral; */
+    height: 23px;
+    position: relative;
+    float: left;
+    margin: 1px 1px 0px 0px;
+}
+
+.letter {
+    padding: 2px; 
+    text-align: center;
+    height: 16px;
+}
+
+.wordContainer:hover > .word{
+	display:none;
+}
+
+.wordContainer > div:not(.word):not(.ui-draggable-dragging) {
+	opacity:0;
+}
+
+.wordContainer:hover > div:not(.word):not(.ui-draggable-dragging) {
+	opacity:1;
+}
+
+.wordContainer{
+    background-color: #BEBDBD;
+	
+    position: absolute;
+    padding: 4px 3px 1px 3px;
+    height: 28px;
+    border-radius: 3px;
+}
+
+.word{
+    position: absolute;
+	
+    margin-top: 2px;
+    /* background-color: red; */
+    width: 85%;
+    text-align: center;
+}
+
+.blankLetter{
+	
+}
+
+.leftDrop{
+    /* background-color: #DAE9FF; */
+	
+    position: absolute;
+    height: 100%;
+    width: 49%;
+}
+
+.rightDrop{
+    /* background-color: #FFD8D8; */
+    height: 100%;
+    width: 49%;	
+	
+    left: 50%;
+    position: absolute;
+    margin-left: 1px;
+}
+
+.dropContainer{
+    /* background-color: purple; */
+	
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: .5;
+}
+
+.overLeft{
+	/*background-color: red;*/
+    border-left: 3px solid black;
+}
+
+.overRight{
+	/*background-color: red;*/
+    border-right: 3px solid black;
+}
+
+.ui-draggable-dragging{
+	opacity: .6;
+	background-color:transparent;
+}
+
+.highlightLetter{
+    font-weight: bold;
+	color:blue;
+}
+
+#feedback {
+    -moz-user-select: none;
+    background: url("../../common/img/bg_dropbubble_50.png") repeat-x scroll center bottom #f5f5f5;
+    border: 1px solid #bdbdbd;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px #bdbdbd;
+    display: block;
+    left: 10px;
+    max-height: 100px;
+    min-height: 100px;
+    padding: 20px;
+    position: absolute;
+    top: 370px;
+    width: 507px;
+    z-index: 100;
+}
+#feedbackBtn {
+    bottom: 10px;
+    position: absolute;
+    right: 10px;
+}
+#feedbackHeader {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: -10px;
+}
+
+#setTitle {
+    background-image: url("../../common/img/bg_btn_set.png") !important;
+    border-bottom-left-radius: 4px;
+    border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+    border-top-left-radius: 4px;
+    color: #ffffff;
+    float: left;
+    font-size: 14px;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-top: 7px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+#setText {
+    border-radius: 0 4px 4px 0;
+    bottom: auto;
+    font-size: 14px;
+    height: 19px;
+    margin-left: -7px;
+    padding-right: 7px;
+    padding-top: 7px;
+    position: relative;
+    top: 0;
+    width: 29px;
+}
+
+.btn_set {
+    background-color: #999999;
+    background-image: url("../../common/img/bg_btn_set.png") !important;
+    background-position: center bottom !important;
+    background-repeat: repeat-x !important;
+    color: #ffffff;
+    left: 3px;
+    letter-spacing: 2px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.btn {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-image: url("../../common/img/bg_btn.png");
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #a2a2a2;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #444444;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 4px 12px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+}
+.bootstrapLabel {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #f5f5f5;
+    background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+    border-image: none;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+    cursor: default;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-left: -1px;
+    padding: 4px 12px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+}
+#container_setDiv {
+    background-color: transparent;
+    cursor: default;
+    height: 40px;
+    left: 567px;
+    margin: 10px;
+    position: absolute;
+    top: 405px;
+    /* width: 820px; */
+}
+#id_setDiv {
+    background-color: transparent;
+    cursor: default;
+    float: left;
+    height: 30px;
+    margin-left: 12px;
+    top: 5px;
+    width: 120px;
+}
+#id_prev_next_div {
+    float: left;
+    clear: both;
+    margin-top: 10px;
+}
+.btn-group > .btn:first-child {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    margin-left: 0;
+    margin-right: -9px;
+}
+.btn-group > .btn:last-child, .btn-group > .dropdown-toggle {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.btn-group > .btn + .btn {
+    margin-left: -1px;
+}
+.btn:hover, .btn:active, .btn.active {
+    background-color: #e6e6e6;
+    color: #333333;
+}
+.btn_prev:hover, .btn_next:hover {
+    background-color: #e6e6e6;
+    background-image: url("");
+}
+.roundCorners {
+    border-radius: 3px;
+}
+
+.letterSpace.highlightLetter{
+    border: 2px solid blue;	
+}
+
+.letterSpace{
+    border: 2px solid grey;
+	
+}

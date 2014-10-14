@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		
+		<title>RTLScramble HTML</title>
+		
+		<script src="../common/js/AC_OETags.js"></script>
+
+		<script src="../common/js/xml2json.js"></script>
+		<script src="../common/js/dli_activity.js"></script>
+		
+		<link type="text/css" href="../common/css/smoothness/jquery-ui-1.8.20.custom.css" rel="stylesheet" />
+		<script type="text/javascript" src="../common/js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="../common/js/jquery-ui-1.8.20.custom.min.js"></script>
+		<!--<script type="text/javascript" src="jquery-1.10.1.js"></script>-->
+		<script type="text/javascript" src="../common/js/jquery.ui.touch-punch.js"></script>
+		
+		<script src="../common/js/dli_util.js"></script>
+		<script src="../common/js/dli_audio.js"></script>
+		
+		<script src="RTLScramble.js"></script>
+	</head>
+	<body>
+		<noscript>Activity cannot load. No Javascript support detected.</noscript>
+
+		<div id="main" class="noSelect">
+			<img id="img"></img>
+			<div id="wordsContainer"></div>
+		</div>
+
+		<div id="feedback" >
+			<h2 id="feedbackHeader"></h2>
+			<p id="feedbackText"></p>
+			<button id="feedbackBtn" onclick="{closeFeedback();}">OK</button>
+		</div>
+		<div id="container_setDiv" class="roundCorners noSelect" >
+		<div id="id_setDiv" class="roundCorners">
+			<div id="setTitle" class="bootstrapLabel btn_set noSelect">SET</div>
+			<div id="setText" class="bootstrapLabel btn_set_value noSelect">1/3</div>				
+		</div>
+		<div id="id_prev_next_div" class="btn-group">
+			<button class="btn btn_prev" id="set_prev" title="prev" onclick="{prevClick();}">< Prev</button>
+			<button class="btn btn_next" id="set_next" title="next" onclick="{nextClick();}">Next ></button>
+		</div>	
+
+
+		<div id="snippets">			
+			<div id="letter_snippet">
+					<div class="letterContainer">
+						<div class="dropContainer">
+							<div class="leftDrop"></div>
+							<div class="rightDrop"></div>
+						</div>
+						<div class="letter"></div>
+					</div>
+			</div>
+			
+			<div id="word_snippet">
+				<div class="wordContainer" targetWord="">
+					<div class="spacer"> </div>
+					
+					<div class="spacer"> </div>
+					<div class="word"></div>
+				</div>
+
+			</div>
+		</div>	
+
+
+		<div id="flashAudioPlayerDiv"></div>
+		<div id="htmlAudioPlayerDiv"></div>
+		<div id="embeddedAudioPlayerDiv"></div>
+	</body>
+</html>
