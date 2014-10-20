@@ -184,6 +184,9 @@ function showFeedback(value, textInput){
 	$("body").attr("state_feedback" , "true")
 	$("body").attr("state_clickGuard" , "true")
 	
+	$("#feedbackTextContainer").mCustomScrollbar("destroy");
+	$("#feedbackTextContainer").mCustomScrollbar();
+	
 	/*$('#feedback').animate( {
 	left: '380px',
 	top: '200px',
