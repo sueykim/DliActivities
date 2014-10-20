@@ -125,7 +125,6 @@ html body {
     background-color: #F5F5F5;
     color: #444444;
     font-family: Arial,Helvetica,sans-serif;
-    letter-spacing: 2px;
     line-height: 20px;
     position: absolute;
 }
@@ -499,6 +498,7 @@ body:not([state_all_words_finished="true"]) .wordHelp{
 
 .currentLetterGridLetter{
     background-color:yellow;
+	opacity: .5;
 }
 
 #wordFinderContainer{

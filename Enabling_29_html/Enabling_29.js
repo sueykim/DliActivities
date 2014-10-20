@@ -187,6 +187,11 @@ function showFeedback(value, textInput){
 	$("#feedbackTextContainer").mCustomScrollbar("destroy");
 	$("#feedbackTextContainer").mCustomScrollbar();
 	
+	//This is a fix for the mCustomScrollbar freezing the video_file
+	if(document.getElementById("videoTag") != undefined){
+		document.getElementById("videoTag").play();
+	}
+	
 	/*$('#feedback').animate( {
 	left: '380px',
 	top: '200px',
@@ -252,9 +257,16 @@ function closeFeedback(){
 	} );*/
 }
 
+var rtl = false;
+
 function parseXml(t_xml){
 	// To display ruby tag
 	isJapanese = $(xml).find("content").attr("target_language") == "Japanese";
+
+	if($(xml).find("content").attr("rtl") == "true"){
+		rtl = true
+		$("body").attr("rtl", "true")
+	}
 
 	numSets = $(xml).find("set").length;
 	if($(xml).find("content").attr("hw") != undefined){
@@ -293,11 +305,22 @@ function loadSet(value){
 	jLetterGrid.find("row").each(function(i,v){
 		var jSnippetRow = $($("#letterGridRow_snippet").html());
 		
-		var letterArray = $(v).text().split(" ")
+		var letterArray = $(v).text()
+								.replace("\t","")
+								.replace("  ", " ")
+								.split(" ") 
+		
+		if($("body").attr("rtl") == "true"){
+			letterArray = letterArray.reverse()
+		}
 		
 		var jSnippetLetter = $($("#letter_snippet").html());
 		
 		$.each(letterArray, function(i,v){
+			if(v.length == 0){
+				return
+			}
+			
 			var jSnippetLetterClone = jSnippetLetter.clone()
 			jSnippetLetterClone.text(v)
 							
@@ -449,7 +472,7 @@ function wordHelpClicked(v){
 	}else{
 		//Clue shown so highlight letter
 		var wordCoords = jKeyword.find("tl_word_coordinates")
-		var regex = /[ ]?([A-Z])([0-9]+)[:]([A-Z])[,]?/g
+		var regex = /[ ]?([A-Z])([0-9]+)[:]?([A-Z])?[,]?/g
 				
 		var parsedRow = regex.exec($(wordCoords).text())
 		
@@ -633,11 +656,17 @@ function generateKeywordCoordsObj(jKeyword){
 	var wordCoords = jKeyword.find("tl_word_coordinates")
 	
 	//Load keyword Obj (used to compare against the currently selected obj
-	var regex = /[ ]?([A-Z])([0-9]+)[:]([A-Z])[,]?/g
+	var regex = /[ ]?([A-Z])([0-9]+)[:]?([A-Z])?[,]?/g
 	var keywordObj = {}
 	
 	var parsedRow 
 	while(parsedRow = regex.exec($(wordCoords).text())){
+		if(parsedRow[3] == undefined){
+			parsedRow[3] = $("#letterGrid > .letterGridRow:eq(" + 
+								(parsedRow[2] - 1) + ") > div:eq(" + 
+								(letterToNumber(parsedRow[1]) - 1) +")").text()
+		}
+		
 		keywordObj[parsedRow[1] + parsedRow[2]]= parsedRow[3]
 	}
 	

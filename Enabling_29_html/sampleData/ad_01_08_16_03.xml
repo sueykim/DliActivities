@@ -15,13 +15,12 @@
   <hs:keyword>
     <hs:tl_word>
              <hs:tl_text>مبنى</hs:tl_text>
-             <!--<hs:tl_text>22مبنى</hs:tl_text>-->
              <hs:tl_word_coordinates>G1,F1,E1,D1</hs:tl_word_coordinates>
     </hs:tl_word>
     <hs:en_word>Building</hs:en_word>
     <hs:tl_media>
              <hs:media_type>audio</hs:media_type>
-             <hs:media_file>ad_building.mp3</hs:media_file>
+             <hs:media_file>artillery.mp3</hs:media_file>
     </hs:tl_media>
     <hs:clue>
         <hs:clue_list>
@@ -33,7 +32,7 @@
              <hs:feedback_text><![CDATA[It ends with the letter ى]]></hs:feedback_text>
              <hs:feedback>
                   <hs:media_type>video</hs:media_type>
-                  <hs:media_file>ad_fbuilding.flv</hs:media_file>
+                  <hs:media_file>rain.flv</hs:media_file>
              </hs:feedback>
     </hs:clue>
   </hs:keyword>
@@ -45,7 +44,7 @@
     <hs:en_word>Garden</hs:en_word>
     <hs:tl_media>
              <hs:media_type>audio</hs:media_type>
-             <hs:media_file>ad_garden.mp3</hs:media_file>
+             <hs:media_file>bomb.mp3</hs:media_file>
     </hs:tl_media>
     <hs:clue>
         <hs:clue_list>
@@ -57,7 +56,7 @@
              <hs:feedback_text><![CDATA[The word ends with the letter ة]]></hs:feedback_text>
              <hs:feedback>
                   <hs:media_type>video</hs:media_type>
-                  <hs:media_file>ad_fgarden.flv</hs:media_file>
+                  <hs:media_file>red.flv</hs:media_file>
              </hs:feedback>
     </hs:clue>
   </hs:keyword>
@@ -69,7 +68,7 @@
     <hs:en_word>Apartment </hs:en_word>
     <hs:tl_media>
              <hs:media_type>audio</hs:media_type>
-             <hs:media_file>ad_apartment.mp3</hs:media_file>
+             <hs:media_file>knife.mp3</hs:media_file>
     </hs:tl_media>
     <hs:clue>
         <hs:clue_list>
@@ -81,7 +80,7 @@
              <hs:feedback_text><![CDATA[The first missing letter is ق]]></hs:feedback_text>
              <hs:feedback>
                   <hs:media_type>video</hs:media_type>
-                  <hs:media_file>ad_fapartment.flv</hs:media_file>
+                  <hs:media_file>rice.flv</hs:media_file>
              </hs:feedback>
     </hs:clue>
   </hs:keyword>
@@ -93,7 +92,7 @@
     <hs:en_word>House</hs:en_word>
     <hs:tl_media>
              <hs:media_type>audio</hs:media_type>
-             <hs:media_file>ad_house.mp3</hs:media_file>
+             <hs:media_file>missile.mp3</hs:media_file>
     </hs:tl_media>
     <hs:clue>
         <hs:clue_list>
@@ -105,7 +104,7 @@
              <hs:feedback_text><![CDATA[The missing letter sounds like T in English]]></hs:feedback_text>
              <hs:feedback>
                   <hs:media_type>video</hs:media_type>
-                  <hs:media_file>ad_fhouse.flv</hs:media_file>
+                  <hs:media_file>river.flv</hs:media_file>
              </hs:feedback>
     </hs:clue>
   </hs:keyword>
@@ -117,7 +116,7 @@
     <hs:en_word>Floor</hs:en_word>
     <hs:tl_media>
              <hs:media_type>audio</hs:media_type>
-             <hs:media_file>ad_floor.mp3</hs:media_file>
+             <hs:media_file>rocket.mp3</hs:media_file>
     </hs:tl_media>
     <hs:clue>
         <hs:clue_list>
@@ -129,7 +128,7 @@
              <hs:feedback_text><![CDATA[The last letter is ق]]></hs:feedback_text>
              <hs:feedback>
                   <hs:media_type>video</hs:media_type>
-                  <hs:media_file>ad_ffloor.flv</hs:media_file>
+                  <hs:media_file>road.flv</hs:media_file>
              </hs:feedback>
     </hs:clue>
   </hs:keyword>
@@ -141,7 +140,7 @@
     <hs:en_word>Elevator</hs:en_word>
     <hs:tl_media>
              <hs:media_type>audio</hs:media_type>
-             <hs:media_file>ad_elevator.mp3</hs:media_file>
+             <hs:media_file>artillery.mp3</hs:media_file>
     </hs:tl_media>
     <hs:clue>
         <hs:clue_list>
@@ -153,7 +152,7 @@
              <hs:feedback_text><![CDATA[The word means "elevator" ]]></hs:feedback_text>
              <hs:feedback>
                   <hs:media_type>video</hs:media_type>
-                  <hs:media_file>ad_felevator.flv</hs:media_file>
+                  <hs:media_file>rain.flv</hs:media_file>
              </hs:feedback>
     </hs:clue>
   </hs:keyword>
@@ -180,7 +179,7 @@
     <hs:en_word>Stairs</hs:en_word>
     <hs:tl_media>
              <hs:media_type>audio</hs:media_type>
-             <hs:media_file>ad_stair.mp3</hs:media_file>
+             <hs:media_file>bomb.mp3</hs:media_file>
     </hs:tl_media>
     <hs:clue>
         <hs:clue_list>
@@ -192,7 +191,7 @@
              <hs:feedback_text><![CDATA[The last letter is ج]]></hs:feedback_text>
              <hs:feedback>
                   <hs:media_type>video</hs:media_type>
-                  <hs:media_file>ad_fstair.flv</hs:media_file>
+                  <hs:media_file>red.flv</hs:media_file>
              </hs:feedback>
     </hs:clue>
   </hs:keyword>
@@ -204,7 +203,7 @@
     <hs:en_word>Door </hs:en_word>
     <hs:tl_media>
              <hs:media_type>audio</hs:media_type>
-             <hs:media_file>ad_door.mp3</hs:media_file>
+             <hs:media_file>knife.mp3</hs:media_file>
     </hs:tl_media>
     <hs:clue>
         <hs:clue_list>
@@ -216,7 +215,7 @@
              <hs:feedback_text><![CDATA[The word means "door"]]></hs:feedback_text>
              <hs:feedback>
                   <hs:media_type>video</hs:media_type>
-                  <hs:media_file>ad_fdoor.flv</hs:media_file>
+                  <hs:media_file>rice.flv</hs:media_file>
              </hs:feedback>
     </hs:clue>
   </hs:keyword>
@@ -228,7 +227,7 @@
     <hs:en_word>Window</hs:en_word>
     <hs:tl_media>
              <hs:media_type>audio</hs:media_type>
-             <hs:media_file>ad_window.mp3</hs:media_file>
+             <hs:media_file>missile.mp3</hs:media_file>
     </hs:tl_media>
     <hs:clue>
         <hs:clue_list>
@@ -240,7 +239,7 @@
              <hs:feedback_text><![CDATA[The first letter sounds like "sh" ]]></hs:feedback_text>
              <hs:feedback>
                   <hs:media_type>video</hs:media_type>
-                  <hs:media_file>ad_fwindow.flv</hs:media_file>
+                  <hs:media_file>river.flv</hs:media_file>
              </hs:feedback>
     </hs:clue>
   </hs:keyword>
@@ -252,7 +251,7 @@
     <hs:en_word>Living room</hs:en_word>
     <hs:tl_media>
              <hs:media_type>audio</hs:media_type>
-             <hs:media_file>ad_livingroom.mp3</hs:media_file>
+             <hs:media_file>rocket.mp3</hs:media_file>
     </hs:tl_media>
     <hs:clue>
         <hs:clue_list>
@@ -264,7 +263,7 @@
              <hs:feedback_text><![CDATA[The first word means "room"]]></hs:feedback_text>
              <hs:feedback>
                   <hs:media_type>video</hs:media_type>
-                  <hs:media_file>ad_flivingroom.flv</hs:media_file>
+                  <hs:media_file>road.flv</hs:media_file>
              </hs:feedback>
     </hs:clue>
   </hs:keyword>
@@ -276,7 +275,7 @@
     <hs:en_word>Kitchen</hs:en_word>
     <hs:tl_media>
              <hs:media_type>audio</hs:media_type>
-             <hs:media_file>ad_kitchen.mp3</hs:media_file>
+             <hs:media_file>artillery.mp3</hs:media_file>
     </hs:tl_media>
     <hs:clue>
         <hs:clue_list>
@@ -288,7 +287,7 @@
              <hs:feedback_text><![CDATA[The missing letters means to cook]]></hs:feedback_text>
              <hs:feedback>
                   <hs:media_type>video</hs:media_type>
-                  <hs:media_file>ad_fkitchen.flv</hs:media_file>
+                  <hs:media_file>rain.flv</hs:media_file>
              </hs:feedback>
     </hs:clue>
   </hs:keyword>
@@ -300,7 +299,7 @@
     <hs:en_word>Bathroom</hs:en_word>
     <hs:tl_media>
              <hs:media_type>audio</hs:media_type>
-             <hs:media_file>ad_bathroom.mp3</hs:media_file>
+             <hs:media_file>bomb.mp3</hs:media_file>
     </hs:tl_media>
     <hs:clue>
         <hs:clue_list>
@@ -312,7 +311,7 @@
              <hs:feedback_text><![CDATA[The last letter is identical to the second one]]></hs:feedback_text>
              <hs:feedback>
                   <hs:media_type>video</hs:media_type>
-                  <hs:media_file>ad_fbathroom.flv</hs:media_file>
+                  <hs:media_file>red.flv</hs:media_file>
              </hs:feedback>
     </hs:clue>
   </hs:keyword>
@@ -337,7 +336,7 @@
     <hs:en_word>Garage</hs:en_word>
     <hs:tl_media>
              <hs:media_type>audio</hs:media_type>
-             <hs:media_file>ad_garage.mp3</hs:media_file>
+             <hs:media_file>missile.mp3</hs:media_file>
     </hs:tl_media>
     <hs:clue>
         <hs:clue_list>
@@ -349,7 +348,7 @@
              <hs:feedback_text><![CDATA[Downward]]></hs:feedback_text>
              <hs:feedback>
                   <hs:media_type>video</hs:media_type>
-                  <hs:media_file>ad_fgarage.flv</hs:media_file>
+                  <hs:media_file>rice.flv</hs:media_file>
              </hs:feedback>
     </hs:clue>
   </hs:keyword>
@@ -361,7 +360,7 @@
     <hs:en_word>Roof</hs:en_word>
     <hs:tl_media>
              <hs:media_type>audio</hs:media_type>
-             <hs:media_file>ad_roof.mp3</hs:media_file>
+             <hs:media_file>artillery.mp3</hs:media_file>
     </hs:tl_media>
     <hs:clue>
         <hs:clue_list>
@@ -373,7 +372,7 @@
              <hs:feedback_text><![CDATA[لإhree letters word]]></hs:feedback_text>
              <hs:feedback>
                   <hs:media_type>video</hs:media_type>
-                  <hs:media_file>ad_froof.flv</hs:media_file>
+                  <hs:media_file>river.flv</hs:media_file>
              </hs:feedback>
     </hs:clue>
   </hs:keyword>
@@ -381,13 +380,11 @@
     <hs:tl_word>
              <hs:tl_text>سرير</hs:tl_text>
              <hs:tl_word_coordinates>E2,F2,G2,H2</hs:tl_word_coordinates>
-             <!--<hs:tl_text>سري</hs:tl_text>
-             <hs:tl_word_coordinates>E2,F2,G2</hs:tl_word_coordinates>-->
     </hs:tl_word>
     <hs:en_word>Bed</hs:en_word>
     <hs:tl_media>
              <hs:media_type>audio</hs:media_type>
-             <hs:media_file>ad_bed.mp3</hs:media_file>
+             <hs:media_file>bomb.mp3</hs:media_file>
     </hs:tl_media>
     <hs:clue>
         <hs:clue_list>
@@ -399,7 +396,7 @@
              <hs:feedback_text><![CDATA[it has two ر]]></hs:feedback_text>
              <hs:feedback>
                   <hs:media_type>video</hs:media_type>
-                  <hs:media_file>ad_fbed.flv</hs:media_file>
+                  <hs:media_file>road.flv</hs:media_file>
              </hs:feedback>
     </hs:clue>
   </hs:keyword>
@@ -411,7 +408,7 @@
     <hs:en_word>Chair</hs:en_word>
     <hs:tl_media>
              <hs:media_type>audio</hs:media_type>
-             <hs:media_file>ad_chair.mp3</hs:media_file>
+             <hs:media_file>missile.mp3</hs:media_file>
     </hs:tl_media>
     <hs:clue>
         <hs:clue_list>
@@ -423,7 +420,7 @@
              <hs:feedback_text><![CDATA[Synonym to مقعد]]></hs:feedback_text>
              <hs:feedback>
                   <hs:media_type>video</hs:media_type>
-                  <hs:media_file>ad_fchair.flv</hs:media_file>
+                  <hs:media_file>rain.flv</hs:media_file>
              </hs:feedback>
     </hs:clue>
   </hs:keyword>
@@ -435,7 +432,7 @@
     <hs:en_word>Table</hs:en_word>
     <hs:tl_media>
              <hs:media_type>audio</hs:media_type>
-             <hs:media_file>ad_table.mp3</hs:media_file>
+             <hs:media_file>bomb.mp3</hs:media_file>
     </hs:tl_media>
     <hs:clue>
         <hs:clue_list>
@@ -447,7 +444,7 @@
              <hs:feedback_text><![CDATA[The word means table]]></hs:feedback_text>
              <hs:feedback>
                   <hs:media_type>video</hs:media_type>
-                  <hs:media_file>ad_ftable.flv</hs:media_file>
+                  <hs:media_file>red.flv</hs:media_file>
              </hs:feedback>
     </hs:clue>
   </hs:keyword>
@@ -459,7 +456,7 @@
     <hs:en_word>Bedroom</hs:en_word>
     <hs:tl_media>
              <hs:media_type>audio</hs:media_type>
-             <hs:media_file>ad_bedroom.mp3</hs:media_file>
+             <hs:media_file>missile.mp3</hs:media_file>
     </hs:tl_media>
     <hs:clue>
         <hs:clue_list>
@@ -471,7 +468,7 @@
              <hs:feedback_text><![CDATA[The missing letter has the same sound of F in English]]></hs:feedback_text>
              <hs:feedback>
                   <hs:media_type>video</hs:media_type>
-                  <hs:media_file>ad_fbedroom.flv</hs:media_file>
+                  <hs:media_file>rice.flv</hs:media_file>
              </hs:feedback>
     </hs:clue>
   </hs:keyword>
