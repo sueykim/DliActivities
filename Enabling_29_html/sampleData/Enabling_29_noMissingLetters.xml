@@ -64,7 +64,7 @@
                         <hs:first_position>N5</hs:first_position>
                     </hs:list_position>
                 </hs:clue_list>
-                <hs:feedback_text><![CDATA[this is <b>text for feedback artillery</b> testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text ]]></hs:feedback_text>
+                <hs:feedback_text><![CDATA[this is <b>text for feedback bomb</b> testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text testing really long test text ]]></hs:feedback_text>
                 <hs:feedback>
                     <hs:media_type>image</hs:media_type>
                     <hs:media_file>test1.jpg</hs:media_file>                    
