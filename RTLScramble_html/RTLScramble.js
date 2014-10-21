@@ -23,6 +23,10 @@ function parseXml(t_xml){
 		}
 	})
 	
+	if($(xml).find("content").attr("dir") == "rtl"){
+		$('body').attr("dir","rtl")
+	}
+	
 	/*$(".word").hover(function(){
 		$(this).attr("")
 	})*/
@@ -37,11 +41,13 @@ function removeDropHighlights(){
 	$("#main .overLeft").removeClass("overLeft")	
 }
 
-function highlightCorrectLetters(event){
-	var lookingFor = $(event.target).closest(".wordContainer").attr("targetWord") 
-	var found = $(event.target).closest(".wordContainer").find(".letter").text()
+function highlightCorrectLetters(jNode){
+	var jWordContainer = jNode.closest(".wordContainer")
 	
-	$(event.target).closest(".wordContainer").find(".letter").each(function(i,v){
+	var lookingFor = jWordContainer.attr("targetWord") 
+	var found = jWordContainer.find(".letter").text()
+	
+	jWordContainer.find(".letter").each(function(i,v){
 		if(lookingFor[i] == $(v).text()){
 			$(v).addClass("highlightLetter")	
 		}else{
@@ -50,9 +56,25 @@ function highlightCorrectLetters(event){
 	})
 	
 	if(lookingFor == found){
-		alert("word finished")
+		//alert("word finished")
+		jWordContainer.attr("completed","true")
+		
+		var index = jWordContainer.index()
+		
+		var jItem = $(
+						$(
+							$(xml).find("section")[currentSet]
+						).find("item")[index]
+					)
+		
+		jItem.attr("completed", "true")
+		
+		var feedback = $(jItem.find("feedback")).text()
+					
+		showFeedback("correct", feedback)
 	}
 }
+
 
 function isWordFinished(){
 	//what is the word
@@ -60,6 +82,7 @@ function isWordFinished(){
 }
 
 function loadSet(setNum){
+	setCompletedShown = false;
 	//Clear the stage
 	$("#wordsContainer").empty()
 	
@@ -74,20 +97,25 @@ function loadSet(setNum){
 	)
 	
 	//Load image dimensions
-	$("#img").attr("width", jGraphic.attr("width") + "px")
-	$("#img").attr("height", jGraphic.attr("height") + "px") 
+	$("#img").attr("width", (jGraphic.attr("width") * 1.5) + "px")
+	$("#img").attr("height", (jGraphic.attr("height") * 1.5) + "px") 
 	
 	//Load the words
 	$($($(xml).find("section")[setNum]).find("> item")).each(function(i_item,v_item){
 		//Load the letters
 		var jWord = $($("#word_snippet").html())
 
+		//Mark it if it is completed
+		if($(v_item).attr("completed")){
+			jWord.attr("completed","true")
+		}
+		
 		//Load target word
 		jWord.attr("targetWord",$($(v_item).find("lang_tl")).text())
 		
 		//Load word offsets
-		jWord.css("left", $($(v_item).find("left")).text() + "px")
-		jWord.css("top", $($(v_item).find("top")).text() + "px")
+		jWord.css("left", ($($(v_item).find("left")).text() * 1.5) + "px")
+		jWord.css("top", ($($(v_item).find("top")).text() * 1.5) + "px")
 		
 		$($(v_item).find("> letter")).each(function(i_letter, v_letter){
 			var jLetter = $($("#letter_snippet").html())
@@ -104,6 +132,8 @@ function loadSet(setNum){
 		$(jWord.find(".word")).text($(jWord.find(".letter")).text())
 		
 		$("#wordsContainer").append(jWord)
+		
+		highlightCorrectLetters(jWord)
 	})
 	
 	$(".letterContainer").draggable({ helper: "clone", revert: true, zIndex: 100 , containment: "parent" })
@@ -124,7 +154,7 @@ function loadSet(setNum){
 				ui.helper.remove()
 				
 				$(ui.draggable).animate({"width":"20px"},
-								highlightCorrectLetters(event))
+								highlightCorrectLetters($(event.target)))
 								
 				var jWord = $(event.target).closest(".wordContainer") 
 				$(jWord.find(".word")).text($(jWord.find(".letter")).text())
@@ -172,7 +202,7 @@ function loadSet(setNum){
 				ui.helper.remove()
 				
 				$(ui.draggable).animate({"width":"20px"},
-								highlightCorrectLetters(event))
+								highlightCorrectLetters($(event.target)))
 								
 				var jWord = $(event.target).closest(".wordContainer") 
 				$(jWord.find(".word")).text($(jWord.find(".letter")).text())
@@ -207,4 +237,118 @@ function loadSet(setNum){
 		
 		//Highlight the spaces
 		$("#main .letter:contains(' ')").addClass("letterSpace")
+}
+
+function playAudio(obj){
+	var index = $(obj).closest(".wordContainer").index()
+	var file_audio = $(
+						$(
+							$(
+								$(xml).find("section")[currentSet]
+							).find("item")[index]
+						).find("file_audio")
+					).text()
+					
+	audio_play_file(removeFileExt(file_audio), mediaPath);
+}
+
+var isJapanese = false
+
+function showFeedback(value, textInput){
+	//Clear the dialog box
+	$("#feedbackHeader").html("");
+	$("#feedbackText").html("");
+	$("#feedbackBtn").text("OK");
+	$("#feedbackBtn").show();
+	
+	var text = "";
+	if (!isJapanese) {
+		text = textInput;
+	}
+	else {
+		// To display ruby tag
+		text = displayRubyTag(textInput);
+	}
+	
+	switch(value){
+		case "incorrect":
+			$("#feedbackHeader").html('<img src="../common/img/feedback_incorrect.png" width="139px" height:38px">');
+			$("#feedbackText").html(text);
+			break;
+		case "correct":
+			$("#feedbackHeader").html('<img src="../common/img/feedback_correct.png" width="122px" height:38px">');
+			$("#feedbackText").html(text);
+			break;
+		case "set_completed":
+			$("#feedbackHeader").html("Set Completed");
+			
+			if(currentSet + 1 != numSets){
+				$("#feedbackBtn").text("Next Set");
+			}
+			break;
+		case "activity_completed":
+			$("#feedbackHeader").html("Activity Completed");
+			////$("#feedbackBtn").html("Next Activity");
+                        $("#feedbackBtn").hide();
+			break;
+	}
+
+	$('#feedback').show();
+	$("#clickGuard").css("display","block")
+}
+
+	
+function closeFeedback(){
+	$("#feedbackHeader").html("");
+	$("#feedbackText").html("");
+	$("#feedbackBtn").hide();
+
+	$("#clickGuard").css("display","none");
+	
+	checkCompleted();
+	
+	
+	/*$('#feedback').css( {
+	left: '580px',
+	top: '250px',
+	width: 0,
+	height: 0
+	} );*/
+}
+
+var setCompletedShown = false;
+var activityCompletedShown = false;
+
+function checkCompleted(){
+	if(setCompletedShown && !activityCompletedShown){
+		//Check for activity completed
+		loadNextSet();
+	}else if(!setCompletedShown){
+		//Check for set completed
+		if($("#main .wordContainer:not([completed='true'])").length == 0){
+			setCompletedShown = true;
+			showFeedback("set_completed");
+		}
+	}
+	
+	// For homework
+	/*if (homeworkStatus) {
+		checkAnswers();
+	}*/
+}
+
+function loadNextSet(){
+	if(currentSet + 1 == numSets){
+		activityCompletedShown = true;
+	
+		if(parent.activityCompleted){
+			parent.activityCompleted(1,0);
+			$("#activityGuard").css("display","block");
+		}else{
+			showFeedback("activity_completed");
+			$("#activityGuard").css("display","block");
+		}
+	}else{
+		loadSet(currentSet + 1);
+	}
 }

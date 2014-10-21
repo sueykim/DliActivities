@@ -11,10 +11,16 @@
 	margin-top: 2px;
 }
 
+#main > img{
+	position:absolute;
+	left: 5px;
+	top: 5px;
+} 
+
 .letterContainer{
     /* display: inline-block; */
     cursor: pointer;
-    width: 20px;
+    width: 18px;
     /* background-color: lightcoral; */
     height: 23px;
     position: relative;
@@ -32,11 +38,13 @@
 	display:none;
 }
 
-.wordContainer > div:not(.word):not(.ui-draggable-dragging) {
+.wordContainer > div.letterContainer,
+.wordContainer > div.spacer{
 	opacity:0;
 }
 
-.wordContainer:hover > div:not(.word):not(.ui-draggable-dragging) {
+.wordContainer:hover > div.letterContainer,
+.wordContainer:hover > div.spacer{
 	opacity:1;
 }
 
@@ -68,6 +76,7 @@
     position: absolute;
     height: 100%;
     width: 49%;
+    left: 0px;
 }
 
 .rightDrop{
@@ -121,19 +130,34 @@
     min-height: 100px;
     padding: 20px;
     position: absolute;
-    top: 370px;
-    width: 507px;
+    top: 540px;
+    width: 603px;
     z-index: 100;
 }
+#feedbackBtn:hover {
+	background-color: #AFAFAF;
+	color: #303030;
+}
+
 #feedbackBtn {
+	cursor: pointer;
     bottom: 10px;
     position: absolute;
     right: 10px;
+    background-color: lightgrey;
+    
+	padding: 5px 12px;
+    border-radius: 3px;
+    
+	border: 1px solid grey;
+	display: none;
 }
 #feedbackHeader {
     font-size: 20px;
     letter-spacing: 2px;
     margin-top: -10px;
+    text-align: center;
+    margin-bottom: -16px;
 }
 
 #setTitle {
@@ -153,13 +177,14 @@
     border-radius: 0 4px 4px 0;
     bottom: auto;
     font-size: 14px;
-    height: 19px;
-    margin-left: -7px;
+    height: 20px;
+    /* margin-left: -7px; */
     padding-right: 7px;
     padding-top: 7px;
     position: relative;
     top: 0;
     width: 29px;
+    float: left;
 }
 
 .btn_set {
@@ -178,23 +203,25 @@
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
     background-image: url("../../common/img/bg_btn.png");
-    background-position: center bottom;
-    background-repeat: repeat-x;
+    /* background-position: center bottom; */
+    /* background-repeat: repeat-x; */
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #a2a2a2;
-    border-image: none;
+    /* border-image: none; */
     border-style: solid;
     border-width: 1px;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
     color: #444444;
     cursor: pointer;
-    display: inline-block;
+    /* display: inline-block; */
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
     padding: 4px 12px;
-    text-align: center;
+    /* text-align: center; */
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-    vertical-align: middle;
+    /* vertical-align: middle; */
+    float: left;
+    width: 63px;
 }
 .bootstrapLabel {
     -moz-border-bottom-colors: none;
@@ -226,11 +253,11 @@
     background-color: transparent;
     cursor: default;
     height: 40px;
-    left: 567px;
+    left: 684px;
     margin: 10px;
     position: absolute;
-    top: 405px;
-    /* width: 820px; */
+    top: 585px;
+    width: 150px;
 }
 #id_setDiv {
     background-color: transparent;
@@ -245,19 +272,20 @@
     float: left;
     clear: both;
     margin-top: 10px;
+    display: none;
 }
 .btn-group > .btn:first-child {
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
     margin-left: 0;
-    margin-right: -9px;
+    margin-right: -1pxpx;
 }
 .btn-group > .btn:last-child, .btn-group > .dropdown-toggle {
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
 }
 .btn-group > .btn + .btn {
-    margin-left: -1px;
+    margin-left: -2px;
 }
 .btn:hover, .btn:active, .btn.active {
     background-color: #e6e6e6;
@@ -278,4 +306,66 @@
 .letterSpace{
     border: 2px solid grey;
 	
+}
+
+body[dir="rtl"] .playBtnLTR  {
+    display: none;
+}
+
+body:not([dir="rtl"]) .playBtnRTL{
+    display: none;
+}
+
+.playBtnLTR, .playBtnRTL {
+    height: 27px;
+    /* margin-top: 13px; */
+    width: 27px;
+}
+
+.playBtnLTR,
+.playBtnRTL{
+    background-image: url("../../common/Library/images/playBtn_s1.png");
+    background-size: cover;
+    cursor: pointer;
+    float: left;
+}
+
+.playBtnLTR:hover,
+.playBtnRTL:hover{
+    background-image: url("../../common/Library/images/playBtn_s2.png");
+}
+
+
+.playBtnRTL{
+    transform: scale(-1, 1);
+}
+
+#feedbackText{
+	text-align:left;
+	overflow: auto;
+	max-height: 41px;
+}
+
+.wordContainer[completed='true'] .wordClickGuard{
+	display:block;
+}
+
+.wordClickGuard{
+	display: none;
+    width: 100%;
+    
+	height: 25px;
+    background-color: grey;
+    opacity: .5;
+}
+
+#clickGuard{
+    background-color: black;
+
+    width: 100%;
+    height: 708px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: .5;
 }

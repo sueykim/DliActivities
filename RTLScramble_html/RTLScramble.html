@@ -30,21 +30,24 @@
 			<div id="wordsContainer"></div>
 		</div>
 
+		<div id="container_setDiv" class="roundCorners noSelect" >
+			<div id="id_setDiv" class="roundCorners">
+				<div id="setTitle" class="bootstrapLabel btn_set noSelect">SET</div>
+				<div id="setText" class="bootstrapLabel btn_set_value noSelect">1/3</div>				
+			</div>
+			<div id="id_prev_next_div" class="btn-group">
+				<button class="btn btn_prev" id="set_prev" title="prev" onclick="{prevClick();}">Prev</button>
+				<button class="btn btn_next" id="set_next" title="next" onclick="{nextClick();}">Next</button>
+			</div>	
+		</div>
+		
+		<div id="clickGuard" style="display: none;"></div>
+
 		<div id="feedback" >
 			<h2 id="feedbackHeader"></h2>
 			<p id="feedbackText"></p>
-			<button id="feedbackBtn" onclick="{closeFeedback();}">OK</button>
+			<div id="feedbackBtn" onclick="{closeFeedback();}">OK</div>
 		</div>
-		<div id="container_setDiv" class="roundCorners noSelect" >
-		<div id="id_setDiv" class="roundCorners">
-			<div id="setTitle" class="bootstrapLabel btn_set noSelect">SET</div>
-			<div id="setText" class="bootstrapLabel btn_set_value noSelect">1/3</div>				
-		</div>
-		<div id="id_prev_next_div" class="btn-group">
-			<button class="btn btn_prev" id="set_prev" title="prev" onclick="{prevClick();}">< Prev</button>
-			<button class="btn btn_next" id="set_next" title="next" onclick="{nextClick();}">Next ></button>
-		</div>	
-
 
 		<div id="snippets">			
 			<div id="letter_snippet">
@@ -59,10 +62,13 @@
 			
 			<div id="word_snippet">
 				<div class="wordContainer" targetWord="">
+					<div onclick="playAudio(this)" class="playBtnLTR"></div>
 					<div class="spacer"> </div>
 					
 					<div class="spacer"> </div>
 					<div class="word"></div>
+					<div onclick="playAudio(this)" class="playBtnRTL"></div>
+					<div class="wordClickGuard"></div>
 				</div>
 
 			</div>
