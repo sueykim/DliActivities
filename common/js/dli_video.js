@@ -134,7 +134,7 @@ function loadVideo(path, videoName, activityName, play, gloss){
 					if(!document.getElementById("videoTag").play){
 						alert("HTML video not supported");
 					}else{
-                                                alert('html player')
+                                                //alert('html player')
 						//document.getElementById("videoTag").play();
 						document.getElementById("videoTag").play();
 					}
