@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hs:content target_language="Chavacano" dir="rtl" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
+  <hs:section>
+   <hs:graphic width="550" height="350">hv_scramble_luzon.png</hs:graphic>
+    <hs:item  completed="true">
+      <hs:feedback >One of the most popular landmarks along the <i>Pasig River</i> is the Malacanang Palace, the official residence of the Philippine president.
+      				One of the most popular landmarks along the <i>Pasig River</i> is the Malacanang Palace, the official residence of the Philippine president.
+      				One of the most popular landmarks along the <i>Pasig River</i> is the Malacanang Palace, the official residence of the Philippine president.
+      				</hs:feedback>
+      <hs:file_audio>0.mp3</hs:file_audio>
+      <hs:hint >The correct spelling is <b>Rio de Pasig.</b></hs:hint>
+      <hs:lang_en >Pasig River</hs:lang_en>
+      <hs:lang_tl>Rio de Pasig</hs:lang_tl>
+      <hs:left>103</hs:left>
+      <hs:top>210</hs:top>
+      <hs:width>300</hs:width>
+      <hs:letter>R</hs:letter>
+      <hs:letter>i</hs:letter>
+      <hs:letter>o</hs:letter>
+      <hs:letter> </hs:letter>
+      <hs:letter>d</hs:letter>
+      <hs:letter>e</hs:letter>
+      <hs:letter> </hs:letter>
+      <hs:letter>P</hs:letter>
+      <hs:letter>a</hs:letter>
+      <hs:letter>s</hs:letter>
+      <hs:letter>i</hs:letter>
+      <hs:letter>g</hs:letter>
+    </hs:item>
+    <hs:item  completed="true">
+      <hs:feedback>The <i>Pagsanjan Falls</i> in Laguna is located within the Pagsanjan Gorge National Park.</hs:feedback>
+      <hs:file_audio>1.mp3</hs:file_audio>
+      <hs:hint>The correct spelling is <b>Cascada de Pagsanjan.</b></hs:hint>
+      <hs:lang_en>Pagsanjan Falls</hs:lang_en>
+      <hs:lang_tl>Cascada de Pagsanjan</hs:lang_tl>
+      <hs:left>100</hs:left>
+      <hs:top>250</hs:top>
+      <hs:width>485</hs:width>
+      <hs:letter>C</hs:letter>
+      <hs:letter>a</hs:letter>
+      <hs:letter>s</hs:letter>
+      <hs:letter>c</hs:letter>
+      <hs:letter>a</hs:letter>
+      <hs:letter>d</hs:letter>
+      <hs:letter>a</hs:letter>
+      <hs:letter> </hs:letter>
+      <hs:letter>d</hs:letter>
+      <hs:letter>e</hs:letter>
+      <hs:letter> </hs:letter>
+      <hs:letter>P</hs:letter>
+      <hs:letter>a</hs:letter>
+      <hs:letter>g</hs:letter>
+      <hs:letter>s</hs:letter>
+      <hs:letter>a</hs:letter>
+      <hs:letter>n</hs:letter>
+      <hs:letter>j</hs:letter>
+      <hs:letter>a</hs:letter>
+      <hs:letter>n</hs:letter>
+    </hs:item>
+    <hs:item>
+      <hs:feedback >One of the most popular landmarks along the <i>Pasig River</i> is the Malacanang Palace, the official residence of the Philippine president.
+      				One of the most popular landmarks along the <i>Pasig River</i> is the Malacanang Palace, the official residence of the Philippine president.
+      				One of the most popular landmarks along the <i>Pasig River</i> is the Malacanang Palace, the official residence of the Philippine president.
+      				</hs:feedback>
+      <hs:file_audio>2.mp3</hs:file_audio>
+      <hs:hint>The correct spelling is <b>Luzon.</b></hs:hint>
+      <hs:lang_en>Luzon</hs:lang_en>
+      <hs:lang_tl>مبنى</hs:lang_tl>
+      <hs:left>85</hs:left>
+      <hs:top>100</hs:top>
+      <hs:width>150</hs:width>
+      <hs:letter>ى</hs:letter>
+      <hs:letter>ن</hs:letter>
+      <hs:letter>ب</hs:letter>
+      <hs:letter>م</hs:letter>
+    </hs:item>
+  </hs:section>
+  <hs:section>
+   <hs:graphic width="550" height="350">hv_scramble_visayas.png</hs:graphic>
+    <hs:item>
+      <hs:feedback >One of the most popular landmarks along the <i>Pasig River</i> is the Malacanang Palace, the official residence of the Philippine president.
+				One of the most popular landmarks along the <i>Pasig River</i> is the Malacanang Palace, the official residence of the Philippine president.
+				One of the most popular landmarks along the <i>Pasig River</i> is the Malacanang Palace, the official residence of the Philippine president.
+				</hs:feedback>
+      <hs:file_audio>3.mp3</hs:file_audio>
+      <hs:hint>The correct spelling is <b>Visayas.</b></hs:hint>
+      <hs:lang_en>Visayas</hs:lang_en>
+      <hs:lang_tl>شقة</hs:lang_tl>
+      <hs:left>50</hs:left>
+      <hs:top>140</hs:top>
+      <hs:width>180</hs:width>
+      <hs:letter>ة</hs:letter>
+      <hs:letter>ق</hs:letter>
+      <hs:letter>ش</hs:letter>
+    </hs:item>
+    <hs:item>
+      <hs:feedback>The oldest educational institution in Asia, the University of San Carlos, is in <i>Cebu.</i></hs:feedback>
+      <hs:file_audio>4.mp3</hs:file_audio>
+      <hs:hint>The correct spelling is <b>Cebu.</b></hs:hint>
+      <hs:lang_en>Cebu</hs:lang_en>
+      <hs:lang_tl>حد يقة</hs:lang_tl>
+      <hs:left>140</hs:left>
+      <hs:top>225</hs:top>
+      <hs:width>130</hs:width>
+      <hs:letter>ة</hs:letter>
+      <hs:letter>ق</hs:letter>
+      <hs:letter>ي</hs:letter>
+      <hs:letter> </hs:letter>
+      <hs:letter>د</hs:letter>
+      <hs:letter>ح</hs:letter>
+    </hs:item>
+    <hs:item completed="true">
+      <hs:feedback>The <i>Sulu Sea</i> is located in the southwestern Philippines.</hs:feedback>
+      <hs:file_audio>5.mp3</hs:file_audio>
+      <hs:hint>The correct spelling is <b>Mar de Sulu.</b></hs:hint>
+      <hs:lang_en>Sulu Sea</hs:lang_en>
+      <hs:lang_tl>Mar de Sulu</hs:lang_tl>
+      <hs:left>25</hs:left>
+      <hs:top>300</hs:top>
+      <hs:width>275</hs:width>
+      <hs:letter>M</hs:letter>
+      <hs:letter>a</hs:letter>
+      <hs:letter>r</hs:letter>
+      <hs:letter> </hs:letter>
+      <hs:letter>d</hs:letter>
+      <hs:letter>e</hs:letter>
+      <hs:letter> </hs:letter>
+      <hs:letter>S</hs:letter>
+      <hs:letter>u</hs:letter>
+      <hs:letter>l</hs:letter>
+      <hs:letter>u</hs:letter>
+    </hs:item>
+    <hs:item completed="true">
+      <hs:feedback>At one point, the <i>San Juanico Strait</i> is only about a mile and a half wide.</hs:feedback>
+      <hs:file_audio>6.mp3</hs:file_audio>
+      <hs:hint>The correct spelling is <b>Estrecho de San Juanico.</b></hs:hint>
+      <hs:lang_en>San Juanico Strait</hs:lang_en>
+      <hs:lang_tl>Estrecho de San Juanico</hs:lang_tl>
+      <hs:left>45</hs:left>
+      <hs:top>190</hs:top>
+      <hs:width>545</hs:width>
+      <hs:letter>E</hs:letter>
+      <hs:letter>s</hs:letter>
+      <hs:letter>t</hs:letter>
+      <hs:letter>r</hs:letter>
+      <hs:letter>e</hs:letter>
+      <hs:letter>c</hs:letter>
+      <hs:letter>h</hs:letter>
+      <hs:letter>o</hs:letter>
+      <hs:letter> </hs:letter>
+      <hs:letter>d</hs:letter>
+      <hs:letter>e</hs:letter>
+      <hs:letter> </hs:letter>
+      <hs:letter>S</hs:letter>
+      <hs:letter>a</hs:letter>
+      <hs:letter>n</hs:letter>
+      <hs:letter> </hs:letter>
+      <hs:letter>J</hs:letter>
+      <hs:letter>u</hs:letter>
+      <hs:letter>a</hs:letter>
+      <hs:letter>n</hs:letter>
+      <hs:letter>i</hs:letter>
+      <hs:letter>c</hs:letter>
+      <hs:letter>o</hs:letter>
+    </hs:item>
+    <hs:item >
+      <hs:feedback><i>Dumaguete </i>is one of the top ten most visited cities in the country, attracting a huge number of European tourists.</hs:feedback>
+      <hs:file_audio>7.mp3</hs:file_audio>
+      <hs:hint>The correct spelling is <b>Dumaguete.</b></hs:hint>
+      <hs:lang_en>Dumaguete</hs:lang_en>
+      <hs:lang_tl>مصعد</hs:lang_tl>
+      <hs:left>105</hs:left>
+      <hs:top>265</hs:top>
+      <hs:width>225</hs:width>
+      <hs:letter>د</hs:letter>
+      <hs:letter>ع</hs:letter>
+      <hs:letter>ص</hs:letter>
+      <hs:letter>م</hs:letter>
+    </hs:item>
+  </hs:section>
+  <hs:section>
+   <hs:graphic width="550" height="350">hv_drag-drop_mindanao.png</hs:graphic>
+    <hs:item completed="true">
+      <hs:feedback><i>Dipolog</i> is the gateway to western Mindanao.</hs:feedback>
+      <hs:file_audio>8.mp3</hs:file_audio>
+      <hs:hint>The correct spelling is <b>Dipolog.</b></hs:hint>
+      <hs:lang_en>Dipolog</hs:lang_en>
+      <hs:lang_tl>Dipolog</hs:lang_tl>
+      <hs:left>193</hs:left>
+      <hs:top>150</hs:top>
+      <hs:width>200</hs:width>
+      <hs:letter>D</hs:letter>
+      <hs:letter>i</hs:letter>
+      <hs:letter>p</hs:letter>
+      <hs:letter>o</hs:letter>
+      <hs:letter>l</hs:letter>
+      <hs:letter>o</hs:letter>
+      <hs:letter>g</hs:letter>
+    </hs:item>
+    <hs:item completed="true">
+      <hs:feedback><i>Mindanao </i>is called the "Land of Promise" because a lot of its potential has yet to be developed.</hs:feedback>
+      <hs:file_audio>9.mp3</hs:file_audio>
+      <hs:hint>The correct spelling is <b>Mindanao.</b></hs:hint>
+      <hs:lang_en>Mindanao</hs:lang_en>
+      <hs:lang_tl>Mindanao</hs:lang_tl>
+      <hs:left>200</hs:left>
+      <hs:top>180</hs:top>
+      <hs:width>205</hs:width>
+      <hs:letter>M</hs:letter>
+      <hs:letter>i</hs:letter>
+      <hs:letter>n</hs:letter>
+      <hs:letter>d</hs:letter>
+      <hs:letter>a</hs:letter>
+      <hs:letter>n</hs:letter>
+      <hs:letter>a</hs:letter>
+      <hs:letter>o</hs:letter>
+    </hs:item>
+    <hs:item completed="true">
+      <hs:feedback><i>Zamboanga City</i> is also known as the "City of Flowers."</hs:feedback>
+      <hs:file_audio>10.mp3</hs:file_audio>
+      <hs:hint>The correct spelling is <b>Ciudad de Zamboanga.</b></hs:hint>
+      <hs:lang_en>City of Zamboanga</hs:lang_en>
+      <hs:lang_tl>Ciudad de Zamboanga</hs:lang_tl>
+      <hs:left>130</hs:left>
+      <hs:top>220</hs:top>
+      <hs:width>450</hs:width>
+      <hs:letter>C</hs:letter>
+      <hs:letter>i</hs:letter>
+      <hs:letter>u</hs:letter>
+      <hs:letter>d</hs:letter>
+      <hs:letter>a</hs:letter>
+      <hs:letter>d</hs:letter>
+      <hs:letter> </hs:letter>
+      <hs:letter>d</hs:letter>
+      <hs:letter>e</hs:letter>
+      <hs:letter> </hs:letter>
+      <hs:letter>Z</hs:letter>
+      <hs:letter>a</hs:letter>
+      <hs:letter>m</hs:letter>
+      <hs:letter>b</hs:letter>
+      <hs:letter>o</hs:letter>
+      <hs:letter>a</hs:letter>
+      <hs:letter>n</hs:letter>
+      <hs:letter>g</hs:letter>
+      <hs:letter>a</hs:letter>
+    </hs:item>
+    <hs:item>
+      <hs:feedback><i>Davao </i>is the richest city outside of metro Manila.</hs:feedback>
+      <hs:file_audio>11.mp3</hs:file_audio>
+      <hs:hint>The correct spelling is <b>Davao.</b></hs:hint>
+      <hs:lang_en>Davao</hs:lang_en>
+      <hs:lang_tl>بيت</hs:lang_tl>
+      <hs:left>303</hs:left>
+      <hs:top>258</hs:top>
+      <hs:width>140</hs:width>
+      <hs:letter>ت</hs:letter>
+      <hs:letter>ي</hs:letter>
+      <hs:letter>ب</hs:letter>
+    </hs:item>
+    <hs:item completed="true">
+      <hs:feedback>A strong earthquake took place in the <i>Moro Gulf</i> in 1976, killing thousands of people in the Zamboanga Peninsula.</hs:feedback>
+      <hs:file_audio>12.mp3</hs:file_audio>
+      <hs:hint>The correct spelling is <b>Gulfo de Moro.</b></hs:hint>
+      <hs:lang_en>Moro Gulf</hs:lang_en>
+      <hs:lang_tl>Gulfo de Moro</hs:lang_tl>
+      <hs:left>110</hs:left>
+      <hs:top>300</hs:top>
+      <hs:width>325</hs:width>
+      <hs:letter>G</hs:letter>
+      <hs:letter>u</hs:letter>
+      <hs:letter>l</hs:letter>
+      <hs:letter>f</hs:letter>
+      <hs:letter>o</hs:letter>
+      <hs:letter> </hs:letter>
+      <hs:letter>d</hs:letter>
+      <hs:letter>e</hs:letter>
+      <hs:letter> </hs:letter>
+      <hs:letter>M</hs:letter>
+      <hs:letter>o</hs:letter>
+      <hs:letter>r</hs:letter>
+      <hs:letter>o</hs:letter>
+    </hs:item>
+    <hs:item  >
+      <hs:feedback><i>Camiguin </i>is the second smallest province in the Philippines.</hs:feedback>
+      <hs:file_audio>13.mp3</hs:file_audio>
+      <hs:hint>The correct spelling is <b>Camiguin.</b></hs:hint>
+      <hs:lang_en>Camiguin</hs:lang_en>
+      <hs:lang_tl>طابق</hs:lang_tl>
+      <hs:left>250</hs:left>
+      <hs:top>100</hs:top>
+      <hs:width>210</hs:width>
+      <hs:letter>ق</hs:letter>
+      <hs:letter>ب</hs:letter>
+      <hs:letter>ا</hs:letter>
+      <hs:letter>ط</hs:letter>
+    </hs:item>
+  </hs:section>
+
+</hs:content>
