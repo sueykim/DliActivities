@@ -125,17 +125,17 @@
     border-radius: 3px;
     box-shadow: 0 2px 4px #bdbdbd;
     display: block;
-    left: 10px;
+    left: 5px;
     max-height: 100px;
     min-height: 100px;
     padding: 20px;
     position: absolute;
-    top: 540px;
-    width: 603px;
+    top: 426px;
+    width: 635px;
     z-index: 100;
 }
 #feedbackBtn:hover {
-	background-color: #AFAFAF;
+	background-color: #e6e6e6;
 	color: #303030;
 }
 
@@ -144,19 +144,26 @@
     bottom: 10px;
     position: absolute;
     right: 10px;
-    background-color: lightgrey;
     
-	padding: 5px 12px;
+	background-color: #f5f5f5;
+    
+	padding: 7px 13px;
     border-radius: 3px;
     
-	border: 1px solid grey;
+	border: 1px solid;
 	display: none;
+	color: #6C6C6C;
+	border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+	font-size: 13px;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 #feedbackHeader {
     font-size: 20px;
     letter-spacing: 2px;
     margin-top: -10px;
-    text-align: center;
+    text-align: left;
     margin-bottom: -16px;
 }
 
@@ -253,10 +260,10 @@
     background-color: transparent;
     cursor: default;
     height: 40px;
-    left: 684px;
+    left: 709px;
     margin: 10px;
     position: absolute;
-    top: 585px;
+    top: 468px;
     width: 150px;
 }
 #id_setDiv {
@@ -344,6 +351,8 @@ body:not([dir="rtl"]) .playBtnRTL{
 	text-align:left;
 	overflow: auto;
 	max-height: 41px;
+	color: #444444;
+	text-shadow: 0px 1px 0px #fff;
 }
 
 .wordContainer[completed='true'] .wordClickGuard{
@@ -363,7 +372,7 @@ body:not([dir="rtl"]) .playBtnRTL{
     background-color: black;
 
     width: 100%;
-    height: 708px;
+    height: 573px;
     position: absolute;
     top: 0px;
     left: 0px;

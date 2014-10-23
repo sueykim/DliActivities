@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<hs:content target_language="Chavacano" dir="rtl" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
+<hs:content target_language="Chavacano" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
   <hs:section>
    <hs:graphic width="550" height="350">hv_scramble_luzon.png</hs:graphic>
     <hs:item  completed="true">

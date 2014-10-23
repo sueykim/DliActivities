@@ -44,11 +44,17 @@ function removeDropHighlights(){
 function highlightCorrectLetters(jNode){
 	var jWordContainer = jNode.closest(".wordContainer")
 	
-	var lookingFor = jWordContainer.attr("targetWord") 
-	var found = jWordContainer.find(".letter").text()
+	//var lookingFor = jWordContainer.attr("targetWord") 
+	var lookingFor = cleanUpForIE9($($($(xml).find("content > section")[currentSet]
+							).find("> item")[jWordContainer.index()]
+						).find("letter").text())
+					
+	var found = cleanUpForIE9(jWordContainer.find(".letter").text())
 	
 	jWordContainer.find(".letter").each(function(i,v){
-		if(lookingFor[i] == $(v).text()){
+		var text = cleanUpForIE9($(v).text()) 
+
+		if(lookingFor[i] == text){
 			$(v).addClass("highlightLetter")	
 		}else{
 			$(v).removeClass("highlightLetter")
@@ -75,11 +81,19 @@ function highlightCorrectLetters(jNode){
 	}
 }
 
+function cleanUpForIE9(text){
+	//Have to add the cleanup for IE9
+	return text.replace(/\n/g,"")
+		.replace(/\t/g," ")
+		.replace(/\s+/g," ")
+}
 
 function isWordFinished(){
 	//what is the word
 	//What are the letters
 }
+
+var scaleFactor = 1.17
 
 function loadSet(setNum){
 	setCompletedShown = false;
@@ -97,8 +111,8 @@ function loadSet(setNum){
 	)
 	
 	//Load image dimensions
-	$("#img").attr("width", (jGraphic.attr("width") * 1.5) + "px")
-	$("#img").attr("height", (jGraphic.attr("height") * 1.5) + "px") 
+	$("#img").attr("width", (jGraphic.attr("width") * scaleFactor) + "px")
+	$("#img").attr("height", (jGraphic.attr("height") * scaleFactor) + "px") 
 	
 	//Load the words
 	$($($(xml).find("section")[setNum]).find("> item")).each(function(i_item,v_item){
@@ -114,8 +128,8 @@ function loadSet(setNum){
 		jWord.attr("targetWord",$($(v_item).find("lang_tl")).text())
 		
 		//Load word offsets
-		jWord.css("left", ($($(v_item).find("left")).text() * 1.5) + "px")
-		jWord.css("top", ($($(v_item).find("top")).text() * 1.5) + "px")
+		jWord.css("left", ($($(v_item).find("left")).text() * scaleFactor) + "px")
+		jWord.css("top", ($($(v_item).find("top")).text() * scaleFactor) + "px")
 		
 		$($(v_item).find("> letter")).each(function(i_letter, v_letter){
 			var jLetter = $($("#letter_snippet").html())
@@ -125,11 +139,49 @@ function loadSet(setNum){
 			jLetter.insertBefore(jWord.find(".spacer")[1])
 		})
 		
-		//Shuffle
-		jWord.find(".letterContainer").shuffle()
+		var wordText = cleanUpForIE9($(jWord.find(".letter"))
+								.text())
+
+		if(wordText.length < 2){
+			alert("Content Error- A word can not be one letter")
+			return;
+		}
 		
-		//Load the shuffled word
-		$(jWord.find(".word")).text($(jWord.find(".letter")).text())
+		//Make sure the shuffle doesn't end with the correct word
+		var iterationCount = 0
+		while(wordText == $($(v_item).find("lang_tl")).text() ||
+			wordText.split("").reverse()
+					.join().replace(/[,]/g, "")
+							== $($(v_item).find("lang_tl")).text()){
+			//Debug output
+			iterationCount++
+			
+			if(iterationCount > 1){
+				if(params['debug'] != undefined){
+					alert("having to reshuffle word: " 
+							+ wordText + ","
+							+ $($(v_item).find("lang_tl")).text()
+						)
+				}
+			}
+			
+			//Shuffle
+			jWord.find(".letterContainer").shuffle()
+			
+			wordText = cleanUpForIE9($(jWord.find(".letter"))
+								.text())
+		}
+		
+		//Load the shuffled word		
+		var dir = $("body").attr("dir")
+		if(dir != undefined && dir == "rtl"){
+			wordText = wordText.split("")
+								.reverse()
+								.join()
+								.replace(/[,]/g, "")
+		}
+		
+		$(jWord.find(".word")).text(wordText)
 		
 		$("#wordsContainer").append(jWord)
 		
@@ -139,104 +191,97 @@ function loadSet(setNum){
 	$(".letterContainer").draggable({ helper: "clone", revert: true, zIndex: 100 , containment: "parent" })
 	
 	$(".leftDrop" ).droppable({
-			drop: function( event, ui ) {
-				if(dragToggle == false){
-					console.log("l received drop before over")	
-				}
-				
-				
-				removeDropHighlights()
-				
-				var letterContainer = $(event.target).closest(".letterContainer") 
-				$(ui.draggable).css("width","0px")
-				
-				$(ui.draggable).insertBefore(letterContainer);
-				ui.helper.remove()
-				
-				$(ui.draggable).animate({"width":"20px"},
-								highlightCorrectLetters($(event.target)))
-								
-				var jWord = $(event.target).closest(".wordContainer") 
-				$(jWord.find(".word")).text($(jWord.find(".letter")).text())
-			},
-
-			over: function( event, ui ) { 
-				if(dragToggle == true){
-					console.log("l received over before out")	
-					lockNextOut = true
-				}
-				
-				dragToggle = true
-				removeDropHighlights()
-				$(event.target).addClass("overLeft")
-			},
-			
-			out: function( event, ui ) { 
-				if(lockNextOut == true){
-					lockNextOut = false;
-					return;
-				}
-				
-				if(dragToggle == false){
-					console.log("l received out before over")	
-				}
-			
-				dragToggle = false
-				
-				removeDropHighlights()
-			}
+			drop: function(event, ui){dropFunction( event, ui, "left")},
+			over: function( event, ui ) {overFunction(event, ui, "left")},
+			out: function( event, ui ) {outFunction(event,ui, "left")}
 		});
 
 	$(".rightDrop" ).droppable({
-			drop: function( event, ui ) {
-				if(dragToggle == false){
-					console.log("r received drop before over")	
-				}
-				
-				removeDropHighlights()
-				
-				var letterContainer = $(event.target).closest(".letterContainer") 
-				$(ui.draggable).css("width","0px")
-				
-				$(ui.draggable).insertAfter(letterContainer);
-				ui.helper.remove()
-				
-				$(ui.draggable).animate({"width":"20px"},
-								highlightCorrectLetters($(event.target)))
-								
-				var jWord = $(event.target).closest(".wordContainer") 
-				$(jWord.find(".word")).text($(jWord.find(".letter")).text())
-			},
-
-			over: function( event, ui ) { 
-				if(dragToggle == true){
-					console.log("r received over before out")	
-					lockNextOut = true
-				}
-				
-				dragToggle = true
-				removeDropHighlights()
-				$(event.target).addClass("overRight")
-			},
-			
-			out: function( event, ui ) {
-				if(lockNextOut == true){
-					lockNextOut = false;
-					return;
-				}
-				
-				if(dragToggle == false){
-					console.log("r received out before over")	
-				}
-			
-				dragToggle = false
-
-				removeDropHighlights()
-			}
+			drop: function(event, ui){dropFunction( event, ui, "right")},
+			over: function( event, ui ) {overFunction(event, ui, "right")},
+			out: function( event, ui ) {outFunction(event,ui, "right")}
 		});	
 		
 		//Highlight the spaces
-		$("#main .letter:contains(' ')").addClass("letterSpace")
+			
+		//$("#main .letter:contains(' ')").addClass("letterSpace")
+		
+		//IE9 doesn't like contains
+		$("#main .letter").each(function(i,v){
+			var text = cleanUpForIE9($(v).text())
+			
+			if(text == " "){
+				$(v).addClass("letterSpace")
+				console.log("letterSpace added")
+			}
+		})
+}
+
+function dropFunction( event, ui , dir) {
+	if(dragToggle == false){
+		console.log((dir == "right")? "r": "l" + " received drop before over")	
+	}
+
+	removeDropHighlights()
+
+	var letterContainer = $(event.target).closest(".letterContainer") 
+	$(ui.draggable).css("width","0px")
+
+	if(dir == "right"){
+		$(ui.draggable).insertAfter(letterContainer);
+	}else{
+		$(ui.draggable).insertBefore(letterContainer);
+	}
+	
+	ui.helper.remove()
+
+	$(ui.draggable).animate({"width":"20px"},
+					highlightCorrectLetters($(event.target)))
+
+	var jWord = $(event.target).closest(".wordContainer") 
+
+	var wordText = cleanUpForIE9($(jWord.find(".letter")).text())
+
+	var dir = $("body").attr("dir")
+	if(dir != undefined && dir == "rtl"){
+		wordText = wordText.split("")
+							.reverse()
+							.join()
+							.replace(/[,]/g, "")
+	}
+
+	$(jWord.find(".word")).text(wordText)
+}
+
+function overFunction( event, ui, dir ){
+	if(dragToggle == true){
+		console.log((dir == "right")? "r": "l" + " received over before out")	
+		lockNextOut = true
+	}
+
+	dragToggle = true
+	removeDropHighlights()
+	
+	if(dir == "right"){
+		$(event.target).addClass("overRight")
+	}else{
+		$(event.target).addClass("overLeft")
+	}
+}
+
+function outFunction( event, ui, dir ){
+	if(lockNextOut == true){
+		lockNextOut = false;
+		return;
+	}
+
+	if(dragToggle == false){
+		console.log((dir == "right")? "r": "l" + "received out before over")	
+	}
+
+	dragToggle = false
+
+	removeDropHighlights()
 }
 
 function playAudio(obj){
@@ -295,6 +340,9 @@ function showFeedback(value, textInput){
 
 	$('#feedback').show();
 	$("#clickGuard").css("display","block")
+	
+	$("#feedbackText").mCustomScrollbar("destroy");
+	$("#feedbackText").mCustomScrollbar();
 }
 
 	
