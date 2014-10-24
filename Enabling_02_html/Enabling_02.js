@@ -220,7 +220,7 @@ function placeBtn(dragBubbleNum, targetNum){
 		modVal = dragBubbleNum;
 	}else{
 		//row 2
-		topVal = -125;
+		topVal = -120;
 		modVal = dragBubbleNum -3;
 	}
 
@@ -229,11 +229,11 @@ function placeBtn(dragBubbleNum, targetNum){
 	
 	if( modVal != targetNum){ //If 0 they're currently lined up then the left val is zero
 		if(modVal == 1 && targetNum == 2){
-			leftVal = 187;	
+			leftVal = 190;	
 		}
 		
 		if(modVal == 1 && targetNum == 3){
-			leftVal = 377;
+			leftVal = 378;
 		}
 		
 		if(modVal == 2 && targetNum == 1){
@@ -241,7 +241,7 @@ function placeBtn(dragBubbleNum, targetNum){
 		}
 		
 		if(modVal == 2 && targetNum == 3){
-			leftVal = 187;
+			leftVal = 189;
 		}
 		
 		if(modVal == 3 && targetNum == 1){
@@ -249,7 +249,7 @@ function placeBtn(dragBubbleNum, targetNum){
 		}
 		
 		if(modVal == 3 && targetNum == 2){
-			leftVal = -192;
+			leftVal = -190;
 		}
 	}
 	
