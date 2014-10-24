@@ -400,3 +400,14 @@ function loadNextSet(){
 		loadSet(currentSet + 1);
 	}
 }
+
+//This function is in case they are using a touch screen
+var wordContainer
+function touchStart(){
+	$("#main .wordContainer").removeAttr("touched")
+	//wordContainer = $(this).closest(".wordContainer")
+	wordContainer = this
+	$(wordContainer).attr("touched", "true")
+	
+	console.log("touched is " + $(wordContainer).attr("touched"))
+}

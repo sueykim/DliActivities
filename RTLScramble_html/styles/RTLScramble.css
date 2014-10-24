@@ -1,3 +1,7 @@
+#main{
+	height: 575px;
+}
+
 #snippets{
 	display: none;
 }
@@ -34,11 +38,12 @@
     height: 16px;
 }
 
-.wordContainer:hover > .word{
+.wordContainer:hover > .word ,
+.wordContainer[touched] > .word{
 	display:none;
 }
 
-.wordContainer > div.letterContainer,
+.wordContainer:not([touched]) > div.letterContainer,
 .wordContainer > div.spacer{
 	opacity:0;
 }
