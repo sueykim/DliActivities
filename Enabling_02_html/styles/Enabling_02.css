@@ -75,13 +75,12 @@
     margin: 10px;
     position: relative;
     top: 0;
-    width: 898px;
 }
 #setDiv {
     background-color: #F5F5F5;
     cursor: default;
     height: 30px;
-    left: 610px;
+    left: 586px;
     position: relative;
     top: 5px;
     width: 115px;
@@ -212,7 +211,7 @@ html body {
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 4px #BDBDBD;
     height: 401px;
-    left: 286px;
+    left: 259px;
     position: relative;
     width: 623px;
 }
@@ -434,7 +433,7 @@ html body {
     z-index: 7;
 }
 #id_prev_next_div {
-    left: 684px;
+    left: 646px;
     position: relative;
     top: -23px;
 }
@@ -451,7 +450,8 @@ html body {
 }
 #main {
     position: relative;
-    top: -9px;
+    top: 0px;
+    left: -20px;
 }
 #buttonGuard {
     height: 80px;
@@ -501,6 +501,11 @@ div#videoContainer1, div#videoContainer2, div#videoContainer3 {
 #img_1_container:not([video='true']) > .videoBtn,
 #img_2_container:not([video='true']) > .videoBtn,
 #img_3_container:not([video='true']) > .videoBtn{
+  display:none;
+}
+
+/*Hide the default play btn*/
+.playBtn{
   display:none;
 }
 

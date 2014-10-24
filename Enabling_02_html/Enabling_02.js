@@ -395,11 +395,15 @@ function loadSet(value){
 				case "ogv": 
 				case "m4v": 
 				case "webm":
+				case "flv":
 					$("#img_" + imgTally + "_container").attr("video", "true")
-					loadHTMLVideo("videoContainer" + imgTally, 
-								mediaPath, removeFileExt($(this).text()), 
-								"videoTag" + imgTally, false, ["ogv", "mp4","ogg","m4v"]);
-		
+					
+					loadVideo(mediaPath, 
+							removeFileExt($(this).text()),
+							"videoContainer" + imgTally,
+							"videoTag" + imgTally,
+							true)
+					
 					break; 
 				default:
 					$("#img_" + imgTally + "_container").attr("video", "false")
