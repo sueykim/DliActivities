@@ -12,7 +12,8 @@ $(document).ready(function() {
 	
 	loadjscssfile("../common/css/activityDefault.css", "css");
 	
-var statusParameters = getPassedParameters();
+	var statusParameters = getPassedParameters();
+	
 	//Default values (for testing)
 	mediaPath = "sampleData/";		
 	xmlFilename = "sampleData/WarmUp_04_noNamespaces.xml";
@@ -54,7 +55,7 @@ function parseXml(t_xml){
 var numAnsweredInSet = 0;
 
 function loadSet(value){
-	$('.drag').css("opacity","1");
+	$('.drag').removeClass("correct");
 	$('.drag').draggable( 'enable' );
 	
 	currentSet = value;
@@ -111,8 +112,9 @@ function dropHandler(event, ui ){
 	var dragIndex = extractLastNumber($(ui.draggable).attr("id"));
 	
 	if(orderIndexArray[numAnsweredInSet] == dragIndex){
-		$(ui.draggable).css("opacity","0");
+		$(ui.draggable).addClass("correct");
 		$(ui.draggable).draggable( 'disable' );
+		$(ui.draggable).text($($(currentDropItem).find("en_word")).text())
 		
 		//$("#correctAnswer").text($(ui.draggable).text());
 		$("#correctAnswer").html($(ui.draggable).html());

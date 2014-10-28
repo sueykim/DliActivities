@@ -256,3 +256,10 @@ html body {
 }
 #drag5 {
 }
+
+.correct{
+  opacity: .7;
+  background-color: rgb(226, 224, 224);
+  background-image: initial;
+  color: black;
+}
