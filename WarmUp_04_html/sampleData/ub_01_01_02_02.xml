@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hs:content target_language="Turkmen" xmlns:hs="http://fieldsupport.dliflc.edu/products/gateway2">
+    <hs:item>
+      <hs:tl_word dir="ltr">barikada</hs:tl_word>
+      <hs:en_word dir="ltr">barricade</hs:en_word>
+      <hs:image>1.png</hs:image>
+      <hs:audio>1.mp3</hs:audio>
+      <hs:hint dir="ltr"><![CDATA[The term defines an improvised barrier.]]></hs:hint>
+      <hs:feedback dir="ltr"><![CDATA[<b>Barikada</b> means <i>barricade.</i> The stress is placed on the second <b>a</b> when pronouncing this word.]]></hs:feedback>
+    </hs:item>
+    <hs:item>
+      <hs:tl_word dir="ltr">kontrabanda</hs:tl_word>
+      <hs:en_word dir="ltr">contraband</hs:en_word>
+      <hs:image>2.png</hs:image>
+      <hs:audio>2.mp3</hs:audio>
+      <hs:hint dir="ltr"><![CDATA[This term describes something that is imported or exported illegally.]]></hs:hint>
+      <hs:feedback dir="ltr"><![CDATA[<b>Kontrabanda,</b> a loan word from Russian, should be recognized by English speakers as <i>contraband.</i>
+
+]]></hs:feedback>
+    </hs:item>
+    <hs:item>
+      <hs:tl_word dir="ltr">komanda</hs:tl_word>
+      <hs:en_word dir="ltr">command</hs:en_word>
+      <hs:image>3.png</hs:image>
+      <hs:audio>3.mp3</hs:audio>
+      <hs:hint dir="ltr"><![CDATA[This term describes an order.
+ 
+
+]]></hs:hint>
+      <hs:feedback dir="ltr"><![CDATA[<b>Komanda</b> means <i>command.</i> This is a loan word from Russian.
+
+]]></hs:feedback>
+    </hs:item>
+    <hs:item>
+      <hs:tl_word dir="ltr">kamuflýaž</hs:tl_word>
+      <hs:en_word dir="ltr">camouflage</hs:en_word>
+      <hs:image>4.png</hs:image>
+      <hs:audio>4.mp3</hs:audio>
+      <hs:hint dir="ltr"><![CDATA[The green and brown clothing that soldiers wear.]]></hs:hint>
+      <hs:feedback dir="ltr"><![CDATA[<b>Kamuflýaž</b> means <i>camouflage.</i>  When pronouncing, the last <b>a</b> gets the stress.]]></hs:feedback>
+    </hs:item>
+    <hs:item>
+      <hs:tl_word dir="ltr">bomba</hs:tl_word>
+      <hs:en_word dir="ltr">bomb</hs:en_word>
+      <hs:image>5.png</hs:image>
+      <hs:audio>5.mp3</hs:audio>
+      <hs:hint dir="ltr"><![CDATA[This is an explosive weapon.]]></hs:hint>
+      <hs:feedback dir="ltr"><![CDATA[You should recognize <b>bomba</b> as <i>bomb.</i>]]></hs:feedback>
+    </hs:item>
+    <hs:item>
+      <hs:tl_word dir="ltr">parad</hs:tl_word>
+      <hs:en_word dir="ltr">parade</hs:en_word>
+      <hs:image>6.png</hs:image>
+      <hs:audio>6.mp3</hs:audio>
+      <hs:hint dir="ltr"><![CDATA[This word refers to a large, organized procession.]]></hs:hint>
+      <hs:feedback dir="ltr"><![CDATA[<b>Parad</b> means <i>parade.</i> The letter <b>d</b> is pronounced as /t/.  ]]></hs:feedback>
+    </hs:item>
+    <hs:item>
+      <hs:tl_word dir="ltr">paraşut</hs:tl_word>
+      <hs:en_word dir="ltr">parachute</hs:en_word>
+      <hs:image>7.png</hs:image>
+      <hs:audio>7.mp3</hs:audio>
+      <hs:hint dir="ltr"><![CDATA[A cloth canopy that allows a free fall from an aircraft.]]></hs:hint>
+      <hs:feedback dir="ltr"><![CDATA[<b>Paraşut</b> means <i>parachute,</i> pronounced the same as in English.]]></hs:feedback>
+    </hs:item>
+    <hs:item>
+      <hs:tl_word dir="ltr">weteran</hs:tl_word>
+      <hs:en_word dir="ltr">veteran</hs:en_word>
+      <hs:image>8.png</hs:image>
+      <hs:audio>8.mp3</hs:audio>
+      <hs:hint dir="ltr"><![CDATA[This refers to a person with military experience.]]></hs:hint>
+      <hs:feedback dir="ltr"><![CDATA[<b>Weteran</b> means <i>veteran.</i> The stress falls on the last syllable in this word.]]></hs:feedback>
+    </hs:item>
+    <hs:item>
+      <hs:tl_word dir="ltr">artilleriýa</hs:tl_word>
+      <hs:en_word dir="ltr">artillery</hs:en_word>
+      <hs:image>9.png</hs:image>
+      <hs:audio>9.mp3</hs:audio>
+      <hs:hint dir="ltr"><![CDATA[This word refers to large-caliber guns.]]></hs:hint>
+      <hs:feedback dir="ltr"><![CDATA[<b>Artilleriýa</b> means <i>artillery.</i>  When pronouncing, the stress falls on the letter <b>e.</b> ]]></hs:feedback>
+    </hs:item>
+    <hs:item>
+      <hs:tl_word dir="ltr">batalýon</hs:tl_word>
+      <hs:en_word dir="ltr">battalion</hs:en_word>
+      <hs:image>10.png</hs:image>
+      <hs:audio>10.mp3</hs:audio>
+      <hs:hint dir="ltr"><![CDATA[This word defines an infantry unit.]]></hs:hint>
+      <hs:feedback dir="ltr"><![CDATA[<b>Batalýon</b> means <i>battalion.</i> The letter <b>o</b> is stressed.]]></hs:feedback>
+    </hs:item>
+    <hs:item>
+      <hs:tl_word dir="ltr">pozisiýa</hs:tl_word>
+      <hs:en_word dir="ltr">position</hs:en_word>
+      <hs:image>11.png</hs:image>
+      <hs:audio>11.mp3</hs:audio>
+      <hs:hint dir="ltr"><![CDATA[This is a place where someone or something is located. ]]></hs:hint>
+      <hs:feedback dir="ltr"><![CDATA[A loan word from Russian, <b>pozisiýa</b> means <i>position.</i>]]></hs:feedback>
+    </hs:item>
+    <hs:item>
+      <hs:tl_word dir="ltr">taktikalar</hs:tl_word>
+      <hs:en_word dir="ltr">tactics</hs:en_word>
+      <hs:image>12.png</hs:image>
+      <hs:audio>12.mp3</hs:audio>
+      <hs:hint dir="ltr"><![CDATA[This word defines a carefully planned action.]]></hs:hint>
+      <hs:feedback dir="ltr"><![CDATA[<b>Taktikalar</b> means <i>tactics.</i> The stress falls on the first <b>a</b> in this word. ]]></hs:feedback>
+    </hs:item>
+    <hs:item>
+      <hs:tl_word dir="ltr">baza</hs:tl_word>
+      <hs:en_word dir="ltr">base</hs:en_word>
+      <hs:image>13.png</hs:image>
+      <hs:audio>13.mp3</hs:audio>
+      <hs:hint dir="ltr"><![CDATA[This word refers to a military installation.]]></hs:hint>
+      <hs:feedback dir="ltr"><![CDATA[<b>Baza</b> means <i>base.</i> A long stress falls on the first <b>a</b> in this word.]]></hs:feedback>
+    </hs:item>
+    <hs:item>
+      <hs:tl_word dir="ltr">awiasiýa</hs:tl_word>
+      <hs:en_word dir="ltr">aviation</hs:en_word>
+      <hs:image>14.png</hs:image>
+      <hs:audio>14.mp3</hs:audio>
+      <hs:hint dir="ltr"><![CDATA[This word defines the operation of an aircraft.]]></hs:hint>
+      <hs:feedback dir="ltr"><![CDATA[<b>Awiasiýa</b> means <i>aviation.</i> Because this is a loan word from Russian, the letter <b>s</b> is pronounced as /ts/.]]></hs:feedback>
+    </hs:item>
+    <hs:item>
+      <hs:tl_word dir="ltr">patrul</hs:tl_word>
+      <hs:en_word dir="ltr">patrol</hs:en_word>
+      <hs:image>15.png</hs:image>
+      <hs:audio>15.mp3</hs:audio>
+      <hs:hint dir="ltr"><![CDATA[A group of people keeping watch over an area.]]></hs:hint>
+      <hs:feedback dir="ltr"><![CDATA[<b>Patrul</b> means <i>patrol,</i> in which the letter <b>u</b> gets stressed.]]></hs:feedback>
+    </hs:item>
+
+</hs:content>

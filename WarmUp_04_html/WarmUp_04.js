@@ -55,8 +55,9 @@ function parseXml(t_xml){
 var numAnsweredInSet = 0;
 
 function loadSet(value){
-	$('.drag').removeClass("correct");
-	$('.drag').draggable( 'enable' );
+	$('.drag').addClass("correct")
+				.draggable('disable')
+				.text("")
 	
 	currentSet = value;
 	updateSetText();
@@ -65,10 +66,14 @@ function loadSet(value){
 	numAnsweredInSet = 0;
 	
 	for(var i=0; i < NUM_DRAG_BUBBLES; i++){
-		//Load drag bubble text
-		//$("#drag" + i).text(
-		//	$($(xml).find("tl_word")[i + (currentSet * NUM_DRAG_BUBBLES)]).text()
-		//);
+		if($(xml).find("item")[i + (currentSet * NUM_DRAG_BUBBLES)] == undefined){
+			//No more items
+			break;
+		}
+		
+		$("#drag" + i).removeClass("correct");
+		$("#drag" + i).draggable('enable');
+		
 		if (!isJapanese) {
 			$("#drag" + i).html(
 				$($(xml).find("tl_word")[i + (currentSet * NUM_DRAG_BUBBLES)]).text()
@@ -209,7 +214,18 @@ function closeFeedback(){
 			feedbackState = "";
 			
 			numAnsweredInSet++;
-			if(numAnsweredInSet == NUM_DRAG_BUBBLES){
+			
+			//todo don't use numAnsweredInSet to figure out pass/fail
+			
+			var setFinished = true
+			$('.drag').each(function(i,v){
+				if($(v).hasClass("correct") == false){
+					setFinished = false
+				}					
+			})
+			
+			
+			if(setFinished){
 				showFeedback("set_completed");
 			}else{
 				loadStage();
