@@ -13,6 +13,12 @@ var numSets;
 var keyboardHtml;
 var params;
 var localPath = "";
+
+if(!window.console){
+	window.console = {}
+	window.console.log = function () { };
+}
+
 if (window.location.protocol.indexOf("file") >= 0)
 {
 	localPath = window.location.href.substr(0, window.location.href.indexOf("templates")-1);
