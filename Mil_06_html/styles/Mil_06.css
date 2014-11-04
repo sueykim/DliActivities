@@ -1,6 +1,6 @@
 .videoStage{
     background-color: grey;
-    height: 180px;
+    height: 215px;
     width: 285px;
     top: 8px;
     float: left;
@@ -16,9 +16,9 @@
 }
 
 video{
-    background-color: black;
+    background-color: black;                                                 f
     width: 285px;
-    height: 179px;
+    height: 214px;
     border-radius: 7px;
 }
 
@@ -281,6 +281,16 @@ iframe{
 
 #vid1, #vid2{
     position: relative;
-	
+    margin-left:6px;
     top: 0px;
 }
+
+.playBtn_video {
+    margin-top: 35px;
+}
+
+#videoTag1, #videoTag2{
+  width:285px;
+  background-color: grey;
+
+}  
