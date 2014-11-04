@@ -65,6 +65,8 @@ function highlightCorrectLetters(jNode){
 		//alert("word finished")
 		jWordContainer.attr("completed","true")
 		
+		//jWordContainer.find("> .word").text(lookingFor)
+		
 		var index = jWordContainer.index()
 		
 		var jItem = $(
@@ -74,6 +76,9 @@ function highlightCorrectLetters(jNode){
 					)
 		
 		jItem.attr("completed", "true")
+		
+		numAnswered++
+		$("#numText").text(numAnswered + "/" + numItems)
 		
 		var feedback = $(jItem.find("feedback")).text()
 					
@@ -101,7 +106,7 @@ function loadSet(setNum){
 	$("#wordsContainer").empty()
 	
 	currentSet = setNum;
-	updateSetText();
+	updatetSetText();
 	
 	//Load image
 	var jGraphic = $($($(xml).find("section")[setNum]).find("> graphic"))
@@ -148,44 +153,49 @@ function loadSet(setNum){
 		}
 		
 		//Make sure the shuffle doesn't end with the correct word
-		var iterationCount = 0
-		while(wordText == $($(v_item).find("lang_tl")).text() ||
-			wordText.split("").reverse()
-					.join().replace(/[,]/g, "")
-							== $($(v_item).find("lang_tl")).text()){
-			//Debug output
-			iterationCount++
-			
-			if(iterationCount > 1){
-				if(params['debug'] != undefined){
-					alert("having to reshuffle word: " 
-							+ wordText + ","
-							+ $($(v_item).find("lang_tl")).text()
-						)
+		if($(v_item).attr("completed") == "true"){
+			wordText = $($(v_item).find("lang_tl")).text()
+		} else {
+			var iterationCount = 0
+			while(wordText == $($(v_item).find("lang_tl")).text() ||
+				wordText.split("").reverse()
+						.join().replace(/[,]/g, "")
+								== $($(v_item).find("lang_tl")).text()){
+				//Debug output
+				iterationCount++
+
+				if(iterationCount > 1){
+					if(params['debug'] != undefined){
+						alert("having to reshuffle word: " 
+								+ wordText + ","
+								+ $($(v_item).find("lang_tl")).text()
+							)
+					}
 				}
+
+				//Shuffle
+				jWord.find(".letterContainer").shuffle()
+
+				wordText = cleanUpForIE9($(jWord.find(".letter"))
+									.text())
 			}
-			
-			//Shuffle
-			jWord.find(".letterContainer").shuffle()
-			
-			wordText = cleanUpForIE9($(jWord.find(".letter"))
-								.text())
-		}
-		
-		//Load the shuffled word		
-		var dir = $("body").attr("dir")
-		if(dir != undefined && dir == "rtl"){
-			wordText = wordText.split("")
-								.reverse()
-								.join()
-								.replace(/[,]/g, "")
+
+			//Load the shuffled word		
+			var dir = $("body").attr("dir")
+			if(dir != undefined && dir == "rtl"){
+				wordText = wordText.split("")
+									.reverse()
+									.join()
+									.replace(/[,]/g, "")
+			}
 		}
 		
 		$(jWord.find(".word")).text(wordText)
 		
 		$("#wordsContainer").append(jWord)
-		
-		highlightCorrectLetters(jWord)
+		if($(v_item).attr("completed") != "true"){
+			highlightCorrectLetters(jWord)
+		}
 	})
 	
 	$(".letterContainer").draggable({ helper: "clone", revert: true, zIndex: 100 , containment: "parent" })
@@ -202,20 +212,28 @@ function loadSet(setNum){
 			out: function( event, ui ) {outFunction(event,ui, "right")}
 		});	
 		
-		//Highlight the spaces
-			
-		//$("#main .letter:contains(' ')").addClass("letterSpace")
-		
-		//IE9 doesn't like contains
-		$("#main .letter").each(function(i,v){
-			var text = cleanUpForIE9($(v).text())
-			
-			if(text == " "){
-				$(v).addClass("letterSpace")
-				console.log("letterSpace added")
-			}
-		})
+	//Highlight the spaces
+
+	//$("#main .letter:contains(' ')").addClass("letterSpace")
+
+	//IE9 doesn't like contains
+	$("#main .letter").each(function(i,v){
+		var text = cleanUpForIE9($(v).text())
+
+		if(text == " "){
+			$(v).addClass("letterSpace")
+			console.log("letterSpace added")
+		}
+	})
+	
+	//Show the number answered
+	numItems = $($(xml).find("section")[setNum]).find("> item ").length
+	numAnswered = $($(xml).find("section")[setNum]).find("> item[completed='true'] ").length
+	$("#numText").text(numAnswered + "/" + numItems)
 }
+
+var numItems
+var numAnswered
 
 function dropFunction( event, ui , dir) {
 	if(dragToggle == false){
@@ -333,8 +351,8 @@ function showFeedback(value, textInput){
 			break;
 		case "activity_completed":
 			$("#feedbackHeader").html("Activity Completed");
-			////$("#feedbackBtn").html("Next Activity");
-                        $("#feedbackBtn").hide();
+			//$("#feedbackBtn").html("Next Activity");
+            //$("#feedbackBtn").hide();
 			break;
 	}
 
@@ -386,7 +404,7 @@ function checkCompleted(){
 }
 
 function loadNextSet(){
-	if(currentSet + 1 == numSets){
+	if($(xml).find("item:not([completed='true'])").length == 0){
 		activityCompletedShown = true;
 	
 		if(parent.activityCompleted){
@@ -396,18 +414,28 @@ function loadNextSet(){
 			showFeedback("activity_completed");
 			$("#activityGuard").css("display","block");
 		}
-	}else{
+	}else if(currentSet + 1 < numSets){
 		loadSet(currentSet + 1);
 	}
 }
 
 //This function is in case they are using a touch screen
 var wordContainer
-function touchStart(){
+function touchStart(wc){
 	$("#main .wordContainer").removeAttr("touched")
 	//wordContainer = $(this).closest(".wordContainer")
-	wordContainer = this
+	wordContainer = wc
+	
+	console.log("touched at start is " + $(wordContainer).attr("touched"))
+	
 	$(wordContainer).attr("touched", "true")
 	
+	//alert("touched")
+	
 	console.log("touched is " + $(wordContainer).attr("touched"))
+}
+
+function updatetSetText(){
+	//document.getElementById('setText').innerHTML = (currentSet + 1) + "/" + numSets;
+	$("#tsetText").html((currentSet + 1) + "/" + numSets);
 }

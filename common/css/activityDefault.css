@@ -2,7 +2,10 @@
     font-family: "FuturaMedium";
     font-style: normal;
     font-weight: normal;
-    src: url("futura-medium-webfont.eot?#iefix") format("embedded-opentype"), url("futura-medium-webfont.woff") format("woff"), url("futura-medium-webfont.ttf") format("truetype"), url("futura-medium-webfont.svg#FuturaMedium") format("svg");
+    src: url("futura-medium-webfont.eot?#iefix") format("embedded-opentype")
+		, url("futura-medium-webfont.woff") format("woff")
+		, url("futura-medium-webfont.ttf") format("truetype")
+		, url("futura-medium-webfont.svg#FuturaMedium") format("svg");
 }
 
 @font-face {
@@ -18,7 +21,7 @@
 }
 
 body{
-	font-family: FuturaMedium;
+	font-family: FuturaMedium, arial;
 }
 
 body:not([debug="true"]) #firebugIconDiv{

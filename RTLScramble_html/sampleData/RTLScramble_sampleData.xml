@@ -2,12 +2,12 @@
 <hs:content target_language="Chavacano" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
   <hs:section>
    <hs:graphic width="550" height="350">hv_scramble_luzon.png</hs:graphic>
-    <hs:item  completed="true">
+    <hs:item  >
       <hs:feedback >One of the most popular landmarks along the <i>Pasig River</i> is the Malacanang Palace, the official residence of the Philippine president.
       				One of the most popular landmarks along the <i>Pasig River</i> is the Malacanang Palace, the official residence of the Philippine president.
       				One of the most popular landmarks along the <i>Pasig River</i> is the Malacanang Palace, the official residence of the Philippine president.
       				</hs:feedback>
-      <hs:file_audio>0.mp3</hs:file_audio>
+      <hs:file_audio>10.mp3</hs:file_audio>
       <hs:hint >The correct spelling is <b>Rio de Pasig.</b></hs:hint>
       <hs:lang_en >Pasig River</hs:lang_en>
       <hs:lang_tl>Rio de Pasig</hs:lang_tl>
@@ -27,7 +27,7 @@
       <hs:letter>i</hs:letter>
       <hs:letter>g</hs:letter>
     </hs:item>
-    <hs:item  completed="true">
+    <hs:item  >
       <hs:feedback>The <i>Pagsanjan Falls</i> in Laguna is located within the Pagsanjan Gorge National Park.</hs:feedback>
       <hs:file_audio>1.mp3</hs:file_audio>
       <hs:hint>The correct spelling is <b>Cascada de Pagsanjan.</b></hs:hint>
@@ -109,7 +109,7 @@
       <hs:letter>b</hs:letter>
       <hs:letter>u</hs:letter>
     </hs:item>
-    <hs:item completed="true">
+    <hs:item >
       <hs:feedback>The <i>Sulu Sea</i> is located in the southwestern Philippines.</hs:feedback>
       <hs:file_audio>5.mp3</hs:file_audio>
       <hs:hint>The correct spelling is <b>Mar de Sulu.</b></hs:hint>
@@ -130,7 +130,7 @@
       <hs:letter>l</hs:letter>
       <hs:letter>u</hs:letter>
     </hs:item>
-    <hs:item completed="true">
+    <hs:item >
       <hs:feedback>At one point, the <i>San Juanico Strait</i> is only about a mile and a half wide.</hs:feedback>
       <hs:file_audio>6.mp3</hs:file_audio>
       <hs:hint>The correct spelling is <b>Estrecho de San Juanico.</b></hs:hint>
@@ -163,7 +163,7 @@
       <hs:letter>c</hs:letter>
       <hs:letter>o</hs:letter>
     </hs:item>
-    <hs:item completed="true">
+    <hs:item >
       <hs:feedback><i>Dumaguete </i>is one of the top ten most visited cities in the country, attracting a huge number of European tourists.</hs:feedback>
       <hs:file_audio>7.mp3</hs:file_audio>
       <hs:hint>The correct spelling is <b>Dumaguete.</b></hs:hint>
@@ -185,7 +185,7 @@
   </hs:section>
   <hs:section>
    <hs:graphic width="550" height="350">hv_drag-drop_mindanao.png</hs:graphic>
-    <hs:item completed="true">
+    <hs:item >
       <hs:feedback><i>Dipolog</i> is the gateway to western Mindanao.</hs:feedback>
       <hs:file_audio>8.mp3</hs:file_audio>
       <hs:hint>The correct spelling is <b>Dipolog.</b></hs:hint>
@@ -202,7 +202,7 @@
       <hs:letter>o</hs:letter>
       <hs:letter>g</hs:letter>
     </hs:item>
-    <hs:item completed="true">
+    <hs:item >
       <hs:feedback><i>Mindanao </i>is called the "Land of Promise" because a lot of its potential has yet to be developed.</hs:feedback>
       <hs:file_audio>9.mp3</hs:file_audio>
       <hs:hint>The correct spelling is <b>Mindanao.</b></hs:hint>
@@ -220,7 +220,7 @@
       <hs:letter>a</hs:letter>
       <hs:letter>o</hs:letter>
     </hs:item>
-    <hs:item completed="true">
+    <hs:item >
       <hs:feedback><i>Zamboanga City</i> is also known as the "City of Flowers."</hs:feedback>
       <hs:file_audio>10.mp3</hs:file_audio>
       <hs:hint>The correct spelling is <b>Ciudad de Zamboanga.</b></hs:hint>
@@ -264,7 +264,7 @@
       <hs:letter>a</hs:letter>
       <hs:letter>o</hs:letter>
     </hs:item>
-    <hs:item completed="true">
+    <hs:item >
       <hs:feedback>A strong earthquake took place in the <i>Moro Gulf</i> in 1976, killing thousands of people in the Zamboanga Peninsula.</hs:feedback>
       <hs:file_audio>12.mp3</hs:file_audio>
       <hs:hint>The correct spelling is <b>Gulfo de Moro.</b></hs:hint>
@@ -287,7 +287,7 @@
       <hs:letter>r</hs:letter>
       <hs:letter>o</hs:letter>
     </hs:item>
-    <hs:item   completed="true">
+    <hs:item   >
       <hs:feedback><i>Camiguin </i>is the second smallest province in the Philippines.</hs:feedback>
       <hs:file_audio>13.mp3</hs:file_audio>
       <hs:hint>The correct spelling is <b>Camiguin.</b></hs:hint>
