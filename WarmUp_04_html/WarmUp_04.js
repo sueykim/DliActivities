@@ -20,7 +20,9 @@ $(document).ready(function() {
 	jsonFilename = "sampleData/WarmUp_04_noNamespaces.js";
 
 	
-	$('.drag').draggable({ revert: true });
+	$('.drag').draggable({ revert: true
+					, stack : ".drag"
+					, containment: "#main"});
 
 	$( "#drop" ).droppable({
 		hoverClass: "dropTargetHover",
@@ -184,6 +186,9 @@ function showFeedback(value, textInput){
 	
 	$('#feedback').show();
 	
+	$("#feedbackTextContainer").show()
+	$("#feedbackTextContainer").mCustomScrollbar();
+	
 	/*$('#feedback').animate( {
 	left: '380px',
 	top: '200px',
@@ -199,6 +204,9 @@ var activityCompletedShown = false;
 function closeFeedback(){
 	if($("#feedbackBtn").text()=="OK" && $("#feedbackHeader").text() != "Set Completed")
 	    answerAttemptsNum++;
+	
+	$("#feedbackTextContainer").mCustomScrollbar("destroy");
+	$("#feedbackTextContainer").hide()
 
 	$("#feedbackHeader").html("");
 	$("#feedbackText").html("");
