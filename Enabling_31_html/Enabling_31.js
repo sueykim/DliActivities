@@ -303,7 +303,7 @@ $(function() {
 var finished
 function checkFinished(){
     finished = true;
-    for (var i=0; i< NUM_DRAG_BUBBLES; i++) {
+    for (var i=0; i< numSets; i++) {
       if(items[currentSet][i] == 0) {
         finished = false;
         return
@@ -315,7 +315,7 @@ function checkFinished(){
 var checkAct
 function checkAcitivty(){
      checkAct = true;
-    for (var i=0; i< NUM_DRAG_BUBBLES; i++) {
+    for (var i=0; i< numSets; i++) {
       if(sets[i] == 0) {
         checkAct = false;
         return
