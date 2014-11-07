@@ -91,9 +91,10 @@
     display: none;
     height: 289px;
     left: 0;
-    opacity: 0.3;
-    top: 179px;
+    opacity: .5;
     width: 488px;
+    z-index: 1000;
+    position: relative;
 }
 .activity_description {
     display: block;
@@ -186,6 +187,7 @@ html body {
     padding: 10px 2px 8px 15px;
     width: 200px;
 }
+
 #main {
     height: 411px;
     margin-left: 10px;
