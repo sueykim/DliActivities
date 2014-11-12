@@ -22,7 +22,8 @@ $(document).ready(function() {
 	
 	$('.drag').draggable({ revert: true
 					, stack : ".drag"
-					, containment: "#main"});
+					, containment: "#main"
+					, scroll: false});
 
 	$( "#drop" ).droppable({
 		hoverClass: "dropTargetHover",
