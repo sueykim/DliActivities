@@ -1,0 +1,41 @@
+<div id="keyboard">
+    <div id="letter1" class="letter roundCornersLetter">q</div>
+    <div id="letter2" class="letter roundCornersLetter">w</div>
+    <div id="letter3" class="letter roundCornersLetter">e</div>
+    <div id="letter4" class="letter roundCornersLetter">r</div>
+    <div id="letter5" class="letter roundCornersLetter">t</div>
+    <div id="letter6" class="letter roundCornersLetter">y</div>
+    <div id="letter7" class="letter roundCornersLetter">u</div>
+    <div id="letter8" class="letter roundCornersLetter">i</div>
+    <div id="letter9" class="letter roundCornersLetter">o</div>
+    <div id="letter10" class="letter roundCornersLetter">p</div>
+	
+    <div id="letter11" class="letter roundCornersLetter">a</div>
+    <div id="letter12" class="letter roundCornersLetter">s</div>
+    <div id="letter13" class="letter roundCornersLetter">d</div>
+    <div id="letter14" class="letter roundCornersLetter">f</div>
+    <div id="letter15" class="letter roundCornersLetter">g</div>
+    <div id="letter16" class="letter roundCornersLetter">h</div>
+    <div id="letter17" class="letter roundCornersLetter">j</div>
+    <div id="letter18" class="letter roundCornersLetter">k</div>
+    <div id="letter19" class="letter roundCornersLetter">l</div>
+
+    <div id="letter20" class="letter roundCornersLetter">z</div>
+    <div id="letter21" class="letter roundCornersLetter">x</div>
+    <div id="letter22" class="letter roundCornersLetter">c</div>
+    <div id="letter23" class="letter roundCornersLetter">v</div>
+    <div id="letter24" class="letter roundCornersLetter">b</div>
+    <div id="letter25" class="letter roundCornersLetter">n</div>
+    <div id="letter26" class="letter roundCornersLetter">m</div>
+    <div id="letter27" class="letter roundCornersLetter">.</div>
+    <div id="letter28" class="letter roundCornersLetter">!</div>
+    <div id="letter29" class="letter roundCornersLetter">?</div>
+    
+    <div id="letter30" class="letter roundCornersLetter">ğ</div>
+    <div id="letter31" class="letter roundCornersLetter">İ</div>
+    <div id="letter32" class="letter roundCornersLetter">ı</div>
+    <div id="letter33" class="letter roundCornersLetter">ş</div>
+    <div id="letter34" class="letter roundCornersLetter">ö</div>
+    <div id="letter35" class="letter roundCornersLetter">ü</div>
+    <div id="letter36" class="letter roundCornersLetter">ç</div>
+</div>
