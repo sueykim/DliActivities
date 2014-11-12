@@ -227,10 +227,11 @@ html body {
     margin: 2px;
     padding-top: 1px;
     text-align: center;
-    width: 37px;
+    width: 35px;
 }
 
 #keyboard{
     position: relative;
-    left: 4px;
+    left: 14px;
+	top: 2px;
 }
