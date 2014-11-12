@@ -50,8 +50,8 @@ function parseXml(t_xml){
 	var tally = 0;
 	$(xml).find("image").each(function(){
 		$("#carousel1").append('<img id="img_' + tally + '" class = "cloudcarousel" ' + 
-					' src="' + mediaPath + '/png/' + $(this).text() + '" alt="Flag 1 Description" ' + 
-					' title="Flag 1 Title" onclick="imageClicked(' + tally + ')"/>');
+					' src="' + mediaPath + '/png/' + $(this).text() + '" ' + 
+					' onclick="imageClicked(' + tally + ')"/>');
 		tally++;
 	})
 	
