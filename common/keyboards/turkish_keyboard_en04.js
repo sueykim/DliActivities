@@ -1,121 +1,201 @@
 var jsonKeyboard = {
     "div": {
-        "__cnt": 60, "div":[ {
-            "__cnt": 3, "_id": "letter1", "_class": "letter roundCornersLetter", "__text": "Q"
-        }, {
-            "__cnt": 3, "_id": "letter2", "_class": "letter roundCornersLetter", "__text": "W"
-        }, {
-            "__cnt": 3, "_id": "letter3", "_class": "letter roundCornersLetter", "__text": "E"
-        }, {
-            "__cnt": 3, "_id": "letter4", "_class": "letter roundCornersLetter", "__text": "R"
-        }, {
-            "__cnt": 3, "_id": "letter5", "_class": "letter roundCornersLetter", "__text": "T"
-        }, {
-            "__cnt": 3, "_id": "letter6", "_class": "letter roundCornersLetter", "__text": "Y"
-        }, {
-            "__cnt": 3, "_id": "letter7", "_class": "letter roundCornersLetter", "__text": "U"
-        }, {
-            "__cnt": 3, "_id": "letter8", "_class": "letter roundCornersLetter", "__text": "I"
-        }, {
-            "__cnt": 3, "_id": "letter9", "_class": "letter roundCornersLetter", "__text": "O"
-        }, {
-            "__cnt": 3, "_id": "letter10", "_class": "letter roundCornersLetter", "__text": "P"
-        }, {
-            "__cnt": 3, "_id": "letter11", "_class": "letter roundCornersLetter", "__text": "A"
-        }, {
-            "__cnt": 3, "_id": "letter12", "_class": "letter roundCornersLetter", "__text": "S"
-        }, {
-            "__cnt": 3, "_id": "letter13", "_class": "letter roundCornersLetter", "__text": "D"
-        }, {
-            "__cnt": 3, "_id": "letter14", "_class": "letter roundCornersLetter", "__text": "F"
-        }, {
-            "__cnt": 3, "_id": "letter15", "_class": "letter roundCornersLetter", "__text": "G"
-        }, {
-            "__cnt": 3, "_id": "letter16", "_class": "letter roundCornersLetter", "__text": "H"
-        }, {
-            "__cnt": 3, "_id": "letter17", "_class": "letter roundCornersLetter", "__text": "J"
-        }, {
-            "__cnt": 3, "_id": "letter18", "_class": "letter roundCornersLetter", "__text": "K"
-        }, {
-            "__cnt": 3, "_id": "letter19", "_class": "letter roundCornersLetter", "__text": "L"
-        }, {
-            "__cnt": 3, "_id": "letter20", "_class": "letter roundCornersLetter", "__text": "Z"
-        }, {
-            "__cnt": 3, "_id": "letter21", "_class": "letter roundCornersLetter", "__text": "X"
-        }, {
-            "__cnt": 3, "_id": "letter22", "_class": "letter roundCornersLetter", "__text": "C"
-        }, {
-            "__cnt": 3, "_id": "letter23", "_class": "letter roundCornersLetter", "__text": "V"
-        }, {
-            "__cnt": 3, "_id": "letter24", "_class": "letter roundCornersLetter", "__text": "B"
-        }, {
-            "__cnt": 3, "_id": "letter25", "_class": "letter roundCornersLetter", "__text": "N"
-        }, {
-            "__cnt": 3, "_id": "letter26", "_class": "letter roundCornersLetter", "__text": "M"
-        }, {
-            "__cnt": 3, "_id": "letter27", "_class": "letter roundCornersLetter", "__text": "."
-        }, {
-            "__cnt": 3, "_id": "letter28", "_class": "letter roundCornersLetter", "__text": "!"
-        }, {
-            "__cnt": 3, "_id": "letter29", "_class": "letter roundCornersLetter", "__text": "?"
-        }], "div_asArray":[ {
-            "__cnt": 3, "_id": "letter1", "_class": "letter roundCornersLetter", "__text": "Q"
-        }, {
-            "__cnt": 3, "_id": "letter2", "_class": "letter roundCornersLetter", "__text": "W"
-        }, {
-            "__cnt": 3, "_id": "letter3", "_class": "letter roundCornersLetter", "__text": "E"
-        }, {
-            "__cnt": 3, "_id": "letter4", "_class": "letter roundCornersLetter", "__text": "R"
-        }, {
-            "__cnt": 3, "_id": "letter5", "_class": "letter roundCornersLetter", "__text": "T"
-        }, {
-            "__cnt": 3, "_id": "letter6", "_class": "letter roundCornersLetter", "__text": "Y"
-        }, {
-            "__cnt": 3, "_id": "letter7", "_class": "letter roundCornersLetter", "__text": "U"
-        }, {
-            "__cnt": 3, "_id": "letter8", "_class": "letter roundCornersLetter", "__text": "I"
-        }, {
-            "__cnt": 3, "_id": "letter9", "_class": "letter roundCornersLetter", "__text": "O"
-        }, {
-            "__cnt": 3, "_id": "letter10", "_class": "letter roundCornersLetter", "__text": "P"
-        }, {
-            "__cnt": 3, "_id": "letter11", "_class": "letter roundCornersLetter", "__text": "A"
-        }, {
-            "__cnt": 3, "_id": "letter12", "_class": "letter roundCornersLetter", "__text": "S"
-        }, {
-            "__cnt": 3, "_id": "letter13", "_class": "letter roundCornersLetter", "__text": "D"
-        }, {
-            "__cnt": 3, "_id": "letter14", "_class": "letter roundCornersLetter", "__text": "F"
-        }, {
-            "__cnt": 3, "_id": "letter15", "_class": "letter roundCornersLetter", "__text": "G"
-        }, {
-            "__cnt": 3, "_id": "letter16", "_class": "letter roundCornersLetter", "__text": "H"
-        }, {
-            "__cnt": 3, "_id": "letter17", "_class": "letter roundCornersLetter", "__text": "J"
-        }, {
-            "__cnt": 3, "_id": "letter18", "_class": "letter roundCornersLetter", "__text": "K"
-        }, {
-            "__cnt": 3, "_id": "letter19", "_class": "letter roundCornersLetter", "__text": "L"
-        }, {
-            "__cnt": 3, "_id": "letter20", "_class": "letter roundCornersLetter", "__text": "Z"
-        }, {
-            "__cnt": 3, "_id": "letter21", "_class": "letter roundCornersLetter", "__text": "X"
-        }, {
-            "__cnt": 3, "_id": "letter22", "_class": "letter roundCornersLetter", "__text": "C"
-        }, {
-            "__cnt": 3, "_id": "letter23", "_class": "letter roundCornersLetter", "__text": "V"
-        }, {
-            "__cnt": 3, "_id": "letter24", "_class": "letter roundCornersLetter", "__text": "B"
-        }, {
-            "__cnt": 3, "_id": "letter25", "_class": "letter roundCornersLetter", "__text": "N"
-        }, {
-            "__cnt": 3, "_id": "letter26", "_class": "letter roundCornersLetter", "__text": "M"
-        }, {
-            "__cnt": 3, "_id": "letter27", "_class": "letter roundCornersLetter", "__text": "."
-        }, {
-            "__cnt": 3, "_id": "letter28", "_class": "letter roundCornersLetter", "__text": "!"
-        }, {
-            "__cnt": 3, "_id": "letter29", "_class": "letter roundCornersLetter", "__text": "?"
-        }], "_id": "keyboard", "__text":[ "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n\t\n\t", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n"]
+        "__cnt": 68, "button":[ {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "a"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "b"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "c"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "d"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "e"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "f"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "g"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "h"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "i"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "j"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "k"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "l"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "m"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "n"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "o"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "p"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "q"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "r"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "s"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "t"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "u"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "v"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "w"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "x"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "y"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "z"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "ğ"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "İ"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "ı"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "ş"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "ö"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "ü"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "ç"
+        }], "button_asArray":[ {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "a"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "b"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "c"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "d"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "e"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "f"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "g"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "h"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "i"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "j"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "k"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "l"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "m"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "n"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "o"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "p"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "q"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "r"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "s"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "t"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "u"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "v"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "w"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "x"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "y"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "z"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "ğ"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "İ"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "ı"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "ş"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "ö"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "ü"
+        },
+        {
+            "__cnt": 2, "_onclick": "letterClicked(this)", "__text": "ç"
+        }], "_id": "keyboard", "__text":[ "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n    ", "\n"]
     }
-}
+};
