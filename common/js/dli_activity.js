@@ -251,6 +251,7 @@ function displayRubyTag(textInput){
 	return textInput
 }
 
+var disableStripNamespace = false
 
 function handleXml(t_xml)
 {
@@ -264,7 +265,9 @@ function handleXml(t_xml)
 	}
 	
 	//todo fix 
-	fileText = stripNamespace(fileText)
+	if(!disableStripNamespace){
+		fileText = stripNamespace(fileText)
+	}
 	
 	xml = $.parseXML(fileText);
 	
