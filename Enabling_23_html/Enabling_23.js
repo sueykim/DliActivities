@@ -203,14 +203,14 @@ function loadClues() {
 
 												$(jSnip)
 														.find(".dragBubbleText")
-														.text(
+														.html(
 																$(this)
 																		.attr(
 																				"number")
 																		+ ". "
 																		+ $(
 																				this)
-																				.text());
+																				.html());
 
 												$("#clues")
 														.append(
