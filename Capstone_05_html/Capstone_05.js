@@ -48,6 +48,12 @@ var setObject;
 var setObjectArray = [];
 var tempResponses;
 
+// To show feedback for second incorrect answer
+var feedbackForSecondIncorrectAnswerTextArray = [];
+
+// To differentiate clickGuard height depending on number of items either under 6 or maximum 8
+var maxResponseLength = 0;
+
 // To check answer status 
 // 0: no trial, 1: first incorrect answer, 2: second incorrect answer, 3: correct answer
 var answerItemStatusArray = [];  
@@ -73,6 +79,15 @@ function parseXml(t_xml){
 	
 	// Randomize sets
 	$(xml).find("item").shuffle();
+	
+	// To show feedback for second incorrect answer
+	$(xml).find("item").each(function(){
+		var tempResponse = "";
+		$(this).find("response").each(function(){
+			tempResponse += $(this).text() + "<br>";
+		});
+		feedbackForSecondIncorrectAnswerTextArray.push(tempResponse);
+	});
 	
 	// Randomize responses on sets
 	$(xml).find("item").each(function(){
@@ -100,6 +115,29 @@ function parseXml(t_xml){
 		setObject.feedback = $(this).find("feedback").text();
 		setObjectArray.push(setObject);
 	});
+	
+	// To differentiate interface depending on number of items either under 6 or maximum 8
+	var responseLengthArray = [];
+	$(setObjectArray).each(function(){
+		responseLengthArray.push(this["responseA"].length);
+	});
+	
+	maxResponseLength = Math.max.apply(null, responseLengthArray);	
+	
+	if (maxResponseLength > 6) {
+		$('#feedback').css('max-height', '260px');
+		$('#feedbackText').css('max-height', '164px');
+		$('#choicesC5').css('height', '386px');
+		$('#container_setDiv').css('top', '404px');
+		$('#sortableDivOutside').css('height', '390px');
+	}
+	else {
+		$('#feedback').css('max-height', '170px');
+		$('#feedbackText').css('max-height', '74px');
+		$('#choicesC5').css('height', '296px');
+		$('#container_setDiv').css('top', '314px');
+		$('#sortableDivOutside').css('height', '300px');
+	}
 	
 	loadSet(0);
 
@@ -262,15 +300,16 @@ function sortableItemStatusCheckAfterCheckAnswer(setNumber) {
 	else if (answerItemStatusArray[setNumber]==2){
 		answerItemStatusArray[setNumber]++;
 		
-		var feedbackForSecondIncorrectAnswerCombined = "The correct answer is:<br>" + $($(xml).find("hint")[currentSet]).text();
-		
+		////var feedbackForSecondIncorrectAnswerCombined = "The correct answer is:<br>" + $($(xml).find("hint")[currentSet]).text();
+		var feedbackForSecondIncorrectAnswerCombined = "The correct answer is:<br>" + feedbackForSecondIncorrectAnswerTextArray[currentSet];
 		showFeedback("incorrect",feedbackForSecondIncorrectAnswerCombined);
 		
 		$('#checkAnswerBtn').prop('disabled', true);
 		$('#checkAnswerBtn').text('Answered');
 	}
 	else if (answerItemStatusArray[setNumber]==1){
-		var feedbackForFirstIncorrectAnswerCombined = "Hint:<br>" + feedbackForFirstIncorrectAnswer;
+		////var feedbackForFirstIncorrectAnswerCombined = "Hint:<br>" + feedbackForFirstIncorrectAnswer;
+		var feedbackForFirstIncorrectAnswerCombined = "Hint:<br>" + $($(xml).find("hint")[currentSet]).text();
 		showFeedback("incorrect",feedbackForFirstIncorrectAnswerCombined);
 	}
 	
@@ -300,7 +339,14 @@ function playVideo(index){
 
 function showFeedback(value, textInput){
 	//Enable the clickguard
-	$('#clickGuard').css('height', '360');
+	// To differentiate clickGuard height depending on number of items either under 6 or maximum 8
+	if (maxResponseLength > 6) {
+		$('#clickGuard').css('height', '450px');
+	}
+	else {
+		$('#clickGuard').css('height', '360px');
+	}
+	
 	$('#clickGuard').css('display', 'block');
 	$('#clickGuard').css('z-index', $('#feedback').css('z-index')-2);
 	
@@ -363,7 +409,13 @@ function closeFeedback(){
 		$('.playBtn').css('z-index', '6');
 	}
 	
-	$('#clickGuard').css('height', '304');
+	// To differentiate clickGuard height depending on number of items either under 6 or maximum 8
+	if (maxResponseLength > 6) {
+		$('#clickGuard').css('height', '394px');
+	}
+	else {
+		$('#clickGuard').css('height', '304px');
+	}
 	checkCompleted();
 }
 
