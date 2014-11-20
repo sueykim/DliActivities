@@ -57,6 +57,10 @@ html body {
 #main{
 	font-family: 'Arial';
 	position: relative;
+	overflow: hidden;
+	width: 840px;
+	height: 525px;
+	/* background-color: green; */
 }
 #videoContainer1{
     background-color: transparent;
