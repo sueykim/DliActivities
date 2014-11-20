@@ -105,7 +105,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #feedback {
-    max-height: 170px;
+    /* max-height: 170px;
+    min-height: 170px; */
+	max-height: 260px;
     min-height: 170px;
     padding: 15px;
     position: relative;
@@ -142,8 +144,12 @@ h1, h2, h3, h4, h5, h6 {
 	top: 0px;
 	/* width: 602px;  */
 	width: 562px; 
-	height: 74px;
+	/* height: 74px; */
+	max-height: 164px;
+    min-height: 74px;
+	margin-bottom: 30px;
 	overflow:auto;
+
 }
 
 #feedbackBtn {
@@ -206,7 +212,8 @@ h1, h2, h3, h4, h5, h6 {
 	padding-right:18px;
 	/* width: 558px; */
 	width: 508px;
-	height: 296px;
+	/*height: 296px;*/
+	height: 386px;
 }
 
 .boxBGForChoice{
@@ -224,7 +231,7 @@ h1, h2, h3, h4, h5, h6 {
 	top: 0;
 	/* width: 890px; */
 	width: 840px;
-	height: 560px;
+	/* height: 560px; */
 	z-index: 6;
 	border: solid thin gray;
 	background-color: gray;
@@ -235,7 +242,9 @@ h1, h2, h3, h4, h5, h6 {
 #container_setDiv{
 	height: 40px;
 	position: absolute;
-	top: 314px;
+	/* top: 314px; */
+	top: 404px;
+	
 	/* width: 882px !important; */
 	width: 832px !important;
 	text-align:right;
@@ -343,7 +352,8 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: -3px;
 	padding-top: 0px; 
 	padding-bottom: 0px; 
-	height: 300px;
+	/* height: 300px; */
+	height: 390px;
 }
 
 #sortableOrderDiv {
