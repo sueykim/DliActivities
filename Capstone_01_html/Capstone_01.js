@@ -422,7 +422,8 @@ function checkCompleted(){
 			
 		}
 		
-		if(totalCorrectNumber==answerItemCheckedArray.length){
+		//if(totalCorrectNumber==answerItemCheckedArray.length){
+		if(totalCheckedNumber==answerItemCheckedArray.length){
 			if(completedFeedbackShown){
 				return;
 			}
