@@ -250,10 +250,19 @@ html body {
 .dragBubbleText {
     color: grey;
     font-size: 12px;
-    left: 9px;
+    left: 0px;
     position: relative;
     top: 4px;
 }
+
+
+.dragBubbleTextWrapper {
+    margin-left:38px;
+    width:200px;
+}
+
+
+
 .playBtn {
     float: left;
 }
@@ -420,9 +429,14 @@ td {
 }
 #hr_sep {
 }
-#clues .dragBubbleTextContainer {
+#clues {
     width: 263px;
 }
+
+.dragBubbleTextContainer {
+    width: 215px;
+}
+
 #audioList .dragBubbleTextContainer {
     width: 187px;
 }
