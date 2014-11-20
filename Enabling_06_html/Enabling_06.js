@@ -30,7 +30,7 @@ $(document).ready(function() {
 		
 		xmlFilename  = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
 		jsonFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  ".js" ;
-		
+
 		$('.activity_hd').html('');
 		$('.activity_description').html('');
 	}
@@ -127,6 +127,8 @@ function loadSet(value){
            $('#audio' + i).append('<img id="playBtn_s' + i + '" class="drag"  src="../common/Library/images/playBtn_s1.png" border="0" \>')
 
         var textA = $($(xml).find("main")[currentSet]).find("lang_tl_a").text();
+        var textAtoolTip = $($(xml).find("main")[currentSet]).find("lang_en_a").text();
+
         if (!isJapanese)
              $("#textA").html(textA);
         else
@@ -138,6 +140,7 @@ function loadSet(value){
       
       
         var textB = $($(xml).find("main")[currentSet]).find("lang_tl_b").text();
+        var textBtoolTip = $($(xml).find("main")[currentSet]).find("lang_en_b").text();
         if (!isJapanese)
             $("#textB").html(textB);
         else
@@ -150,6 +153,7 @@ function loadSet(value){
                
 	$("#textA").mCustomScrollbar();
 	$("#textB").mCustomScrollbar();
+	$(".mCSB_dragger_bar").css({"z-index": "0"})
       
         var imgFile = $($(xml).find("main")[currentSet]).find("file_img").text();
         $("#pic").attr("src", mediaPath + "png/" + imgFile);
@@ -157,7 +161,7 @@ function loadSet(value){
 
         $(function() {
                $('.drag').draggable();
-               $('.drag').draggable({ revert: true});
+               $('.drag').draggable({ revert: true, containment:"#main"});
 
                $(".drop").droppable({
 		  drop: dropFunction});
@@ -252,6 +256,32 @@ function loadSet(value){
                  };
         };
         
+
+///////////// toolTip //////////////////////////////
+            var tooltipJS = null;
+                //Lets first initialize our tooltip object
+
+                tooltipJS = new ToolTipJS();
+
+                //set the tooltip location preference, these can be reordered as required
+                tooltipJS.addLocationPreference(new tooltipJS.tooltipLocation(tooltipJS.LocationConstants.Top, "tooltip-Top"));
+                tooltipJS.addLocationPreference(new tooltipJS.tooltipLocation(tooltipJS.LocationConstants.Right, "tooltip-Right"));
+                tooltipJS.addLocationPreference(new tooltipJS.tooltipLocation(tooltipJS.LocationConstants.Left, "tooltip-Left"));
+                tooltipJS.addLocationPreference(new tooltipJS.tooltipLocation(tooltipJS.LocationConstants.Bottom, "tooltip-Bottom"));
+
+
+                //apply tooltips to all the DIVs.
+                tooltipJS.applyTooltip("textA", getProductContent(textAtoolTip), 20, true);
+                tooltipJS.applyTooltip("textB", getProductContent(textBtoolTip), 20, true);
+
+
+            function getProductContent(description) {
+                var content = null;
+                content = "{{description}}";
+                content = content.replace("{{description}}", description);
+                return content;
+            }
+////////////////////////////////////////////////////
 
 };
 
