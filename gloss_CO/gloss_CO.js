@@ -7,14 +7,14 @@ $(document).ready(function() {
 	
 	//Default values (for testing)
 	mediaPath = "sampleData/";
-	xmlFilename = mediaPath + "gloss_GW_sampleData.xml";
-	jsonFilename = mediaPath + "gloss_GW_sampleData.js";
-	cssFilename = "styles/gloss_GW.css";
+	xmlFilename = mediaPath + "gloss_CO_sampleData.xml";
+	jsonFilename = mediaPath + "gloss_CO_sampleData.js";
+	cssFilename = "styles/gloss_CO.css";
 	
 	loadActivity(parseXml);
 	
 }); 
 
 function parseXml(t_xml){
-	$($("#main > h1")[0]).text("GW step number: " + params["stepIndex"] )
+	$($("#main > h1")[0]).text("CO - step number: " + params["stepIndex"] )
 }
