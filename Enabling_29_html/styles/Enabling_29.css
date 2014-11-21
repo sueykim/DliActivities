@@ -343,6 +343,16 @@ body[state_letter_grid_key="true"] #letterGridKey{
     
     width: 226px;
     height: 40px;
+    margin: 1px;
+}
+
+.wordContainer[completed='true'][word_found='true']{
+    background-color: rgb(187, 184, 184);
+}
+
+.wordContainer[completed='true']{
+    background-color: rgb(235, 233, 233);
+
 }
 
 .playWordBtn:hover{

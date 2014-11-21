@@ -125,6 +125,8 @@ function dropFunction(event, ui ) {
         
     	writeTimesTriedArray(jKeyword, letterIndex, timesTried)
     }
+	
+	syncWordFoundCompleteWithUI()
 }
 
 var priorFeedbackType = ""
@@ -438,6 +440,8 @@ function loadSet(value){
 	})
 	
 	updateNavButtons();
+	
+	syncWordFoundCompleteWithUI()
 }
 
 
@@ -514,6 +518,8 @@ function playBtnClicked(v){
 		jSection.find("keyword").length){
 		$("body").attr("state_all_words_finished", "true")
 	}
+	
+	syncWordFoundCompleteWithUI()
 }
 
 var jStartLetter = undefined;
@@ -821,6 +827,22 @@ function letterGridMouseUp(){
     			timesTried);
 		jSection.attr("timesTried",timesTried)
 	}
+	
+	syncWordFoundCompleteWithUI()
+}
+
+function syncWordFoundCompleteWithUI(){
+	jSection.find("> keyword").each(function(i,v){
+		if($(v).attr("completed") == "true"){
+			$($("#rightContainer > .wordContainer")[i])
+									.attr("completed","true")
+		}
+		
+		if($(v).attr("word_found") == "true"){
+			$($("#rightContainer > .wordContainer")[i])
+									.attr("word_found","true")
+		}		
+	})
 }
 
 function getLetterRowCol(jVal){
