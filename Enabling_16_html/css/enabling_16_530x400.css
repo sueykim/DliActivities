@@ -33,7 +33,7 @@ html, body {
 	left:0px;
 	/* width:850px; */
 	width:848px;
-	height:345px;
+	height: 400px;
 	overflow:hidden;
 }
 #leftDiv {
@@ -41,7 +41,7 @@ html, body {
 	margin:0px 10px 0px 10px;
 	padding:0px;
 	width:518px;
-	height:345px;
+	height: 400px;
 	background-image:url(../images/leftPanelBG.png);
 	background-repeat:no-repeat;
 	float:left;
@@ -54,9 +54,9 @@ html, body {
 #imageHolder {
 	margin:0px;
 	padding:0px;
-	position:absolute;
-	width:380px;
-	height:360px;
+	/* position:absolute; */
+	width: 530px;
+	height: 400px;
 	left:69px;
 	top:0px;
 	
@@ -66,10 +66,11 @@ html, body {
 	margin:0px;
 	padding:0px;
 	width:273px;
-	height:345px;
+	height: 400px;
 	background-image:url(../images/rightPanelBG.png);
 	background-repeat:no-repeat;
 	float:left;
+	background-size: 273px 400px;
 	-webkit-border-radius:3px;
 	-moz-border-radius:3px;
 	border-radius:3px;
@@ -150,10 +151,10 @@ html, body {
 	position:absolute;
 	width:55px;
 	height:19px;
-	left:180px;
-	top:139px;
+	left: 182px;
+	top: 158px;
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:20px;
+	font-size: 23px;
 	color:#000000;
 }
 #toolBox {
@@ -161,9 +162,9 @@ html, body {
 	padding:0px;
 	position:absolute;
 	width:95px;
-	height:91px;
+	height: 108px;
 	left:91px;
-	top:177px;
+	top: 204px;
 }
 #setNumbers {
 	margin:0px;
@@ -173,6 +174,7 @@ html, body {
 	height:52px;
 	left:41px;
 	top:283px;
+	display: none;
 }
 .dragTarget {
 	position:absolute;
@@ -207,7 +209,8 @@ html, body {
 		margin:10px 10px 0px 10px;
 	padding:0px;
 	width:803px;
-		height:172px;
+		
+	height: 137px;
 		top:10px;
 		background: #ffffff; /* Old browsers */
 background: -moz-linear-gradient(top,  #ffffff 0%, #fdfdfd 18%, #fbfbfb 18%, #fafafa 29%, #f8f8f8 30%, #f5f5f5 40%, #f6f6f6 43%, #f4f4f4 44%, #f3f3f3 53%, #f1f1f1 54%, #efefef 60%, #f0f0f0 63%, #eeeeee 64%, #ececec 74%, #eaeaea 74%, #ebebeb 81%, #e9e9e9 82%, #e6e6e6 100%); /* FF3.6+ */
@@ -287,7 +290,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	height: 40px;
 	position: absolute;
 	/* top: 286px; */
-	top: 275px;
+	top: 323px;
 	/* top: 239px; */ /* to test */
 	/* width: 882px !important; */
 	/* width: 832px !important; */
@@ -303,7 +306,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	
 	/* */
 	background-color: transparent;
-	left: 0px;
+	left: 7px;
 	margin-top: 0px;
 	
 	/*border: solid 1px #969696;*/

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content hw="true"
+	xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart"
+	xmlns="http://fieldsupport.lingnet.org/products/headstart">
+	<item>
+		<background>tu_house_bomb.png</background>
+		<objectImage type="bomb">_testBomb1.png</objectImage>
+		<foreignAudio>_testBombMessage1.mp3</foreignAudio>
+		<hint>A longer test to make sure that word wrapping is working correctly and that everything else is correct. A longer test to make sure that word wrapping is working correctly and that everything else is correct. A longer test to make sure that word wrapping is working correctly and that everything else is correct.</hint>
+		<feedback>A longer feedback to make sure that word wrapping is working correctly and the everything else is correct. A longer feedback to make sure that word wrapping is working correctly and the everything else is correct. A longer feedback to make sure that word wrapping is working correctly and the everything else is correct.</feedback>
+		<objects>
+			<object>
+				<x>98</x>
+				<y>225</y>
+				<correct>true</correct>
+			</object>
+			<object>
+				<x>171</x>
+				<y>187</y>
+				<correct>false</correct>
+			</object>
+			<object>
+				<x>28</x>
+				<y>174</y>
+				<correct>false</correct>
+			</object>
+			<object>
+				<x>275</x>
+				<y>166</y>
+				<correct>false</correct>
+			</object>
+		</objects>
+	</item>
+	<item>
+		<background>tu_living_room1.png</background>
+		<objectImage type="bomb">_testBomb1.png</objectImage>
+		<foreignAudio>_testBombMessage2.mp3</foreignAudio>
+		<hint>Park your car here.</hint>
+		<feedback>The bomb is in the garage.</feedback>
+		<objects>
+			<object>
+				<x>56</x>
+				<y>258</y>
+				<correct>true</correct>
+			</object>
+			<object>
+				<x>225</x>
+				<y>157</y>
+				<correct>false</correct>
+			</object>
+			<object>
+				<x>314</x>
+				<y>239</y>
+				<correct>false</correct>
+			</object>
+		</objects>
+	</item>
+	<item>
+		<background>tu_house_bomb.png</background>
+		<objectImage type="bomb">_testBomb1.png</objectImage>
+		<foreignAudio>_testBombMessage3.mp3</foreignAudio>
+		<hint>It's under one of the seats.</hint>
+		<feedback>The bomb is under the driver's seat.</feedback>
+		<objects>
+			<object>
+				<x>179</x>
+				<y>77</y>
+				<correct>false</correct>
+			</object>
+			<object>
+				<x>79</x>
+				<y>197</y>
+				<correct>true</correct>
+			</object>
+			<object>
+				<x>310</x>
+				<y>185</y>
+				<correct>false</correct>
+			</object>
+			<object>
+				<x>241</x>
+				<y>193</y>
+				<correct>false</correct>
+			</object>
+		</objects>
+	</item>
+	<item>
+		<background>tu_living_room1.png</background>
+		<objectImage type="bomb">_testBomb1.png</objectImage>
+		<foreignAudio>_testBombMessage4.mp3</foreignAudio>
+		<hint>Put your luggage in here.</hint>
+		<feedback>The bomb is in the trunk.</feedback>
+		<objects>
+			<object>
+				<x>68</x>
+				<y>178</y>
+				<correct>false</correct>
+			</object>
+			<object>
+				<x>149</x>
+				<y>115</y>
+				<correct>false</correct>
+			</object>
+			<object>
+				<x>319</x>
+				<y>93</y>
+				<correct>true</correct>
+			</object>
+		</objects>
+	</item>
+</content>
