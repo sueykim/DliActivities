@@ -1,0 +1,233 @@
+body{
+    height: 575px;
+    width: 865px;
+    /* overflow: hidden; */
+    font-family: Arial;
+}
+
+
+body[mode='LGP'] #intro,
+body:not([mode='VGP']) #videoContainer,
+#feedback[mode='instructions'] #feedbackText,
+#feedback[mode='instructions'][page='tl'] #en_instructions,
+#feedback[mode='instructions'][page='en'] #tl_instructions,
+body:not([mode='SUM']) #question,
+body:not([mode='LGP']) #transcriptBtn{
+    display: none;
+}
+
+#snippets{
+    display:none;
+}
+
+#feedback {
+    background: url("../../common/img/bg_dropbubble_50.png") repeat-x scroll center bottom #f5f5f5;
+    border: 1px solid #bdbdbd;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px #bdbdbd;
+    padding: 20px;
+    width: 635px;
+    z-index: 100;
+    height: 200px;
+}
+
+#guidelineBtn,
+#compairBtn,
+#transcriptBtn{
+	cursor: pointer;
+    padding: 7px 13px;
+    border-radius: 3px;
+    border: 1px solid;
+	color: #6C6C6C;
+	border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+	font-size: 13px;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+#feedbackBtn {
+	cursor: pointer;
+    bottom: 10px;
+    position: absolute;
+    right: 10px;
+    background-color: #f5f5f5;
+    padding: 7px 13px;
+    border-radius: 3px;
+    border: 1px solid;
+	color: #6C6C6C;
+	border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+	font-size: 13px;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+#main{
+}
+
+#toolbar{
+    /* background-color: yellow; */
+    height: 32px;
+    width: 76px;
+    margin-left: auto;
+}
+
+#teachersNoteBtn:hover{
+    /* background-color: purple; */
+    background-image: url("../gif/btnTeacher_on.gif");
+}
+
+#teachersNoteBtn{
+    cursor:pointer;
+    /* background-color: aquamarine; */
+    width: 30px;
+    height: 30px;
+    float: right;
+    background-image: url("../gif/btnTeacher.gif");
+}
+
+#instructionsBtn:hover{
+    /* background-color: purple; */
+    background-image: url('../gif/btnInstruction_on.gif');
+}
+
+#instructionsBtn{
+    cursor:pointer;
+    /* background-color: blue; */
+    width: 30px;
+    height: 30px;
+    float: right;
+    background-image: url('../gif/btnInstruction.gif');
+}
+
+#intro{    
+    /* background-color: green; */
+}
+
+#question{
+    /* background-color: red; */
+    clear: both;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+#container{
+    /* background-color: orange; */
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#answersToolbar{
+    /* background-color: rgb(130, 147, 162); */
+    height: 51px;
+    width: 566px;
+    margin-left: 354px;
+    clear: both;
+}
+
+#guidelineBtn{
+    cursor:pointer;
+    width: 66px;
+    height: 25px;
+    float: left;
+    padding: 8px 10px 0px 10px;
+    margin: 6px;
+    border-radius: 3px;
+}
+
+#transcriptBtn{
+    cursor:pointer;
+    width: 95px;
+    height: 25px;
+    float: left;
+    padding: 8px 10px 0px 10px;
+    margin: 6px;
+    border-radius: 3px;
+    float: right;
+}
+
+
+
+#compairBtn{
+    cursor:pointer;
+    background-color: green;
+    width: 58px;
+    height: 25px;
+    float: left;
+    padding: 9px 10px 0px 20px;
+    margin: 6px;
+    border-radius: 3px;
+}
+
+#yourText{
+    /* background-color: aqua; */
+    width: 350px;
+    height: 270px;
+    float: left;
+    border: 1px solid black;
+    margin: 5px;
+    margin-left: 97px;
+    padding: 10px;
+}
+
+#resultHTML{
+    background-color: rgb(235, 235, 235);
+    width: 350px;
+    height: 270px;
+    float: left;
+    overflow: hidden;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+}
+
+#feedbackText{
+    height: 152px;
+    margin: 0px;
+}
+
+.reasonBtn:hover{
+    background-color: gray;
+}
+
+.reasonBtn{
+    width: 86px;
+    background-color: rgb(177, 177, 177);
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+#videoContainer{
+    background-color: lavender;
+    width: 300px;
+    height: 217px;
+    float: left;
+    margin-right: 7px;
+}
+
+#tl_instructions,
+#en_instructions{
+	cursor:pointer;
+}
+
+#feedbackHeader {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: -10px;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+#compairBtn:hover,
+#guidelineBtn:hover,
+#transcriptBtn:hover{
+    color: black;
+	
+    background-image: linear-gradient(to bottom, #ffffff, lightgray);
+}

@@ -1,0 +1,58 @@
+LGP
+LO_ru_sci214/ru_sci214/ru_sci214_act2.html
+
+SUM
+LO_al_ecn004/al_ecn004/al_ecn004_act6.html
+
+VGP
+LO_al_env206/al_env206/al_env206_act5.html
+
+
+	<QREC on="1">
+		<A_Type><![CDATA[SUM|LGP|VGP]]></A_Type>
+		<UPDATED><![CDATA[Dec 18]]></UPDATED>
+		<DEV_COMMENT dir="ltr" esbox="0"><![CDATA[OK]]></DEV_COMMENT>
+		
+		Not used in activity. Possibly used for LO index generation
+		<ACTY_DESCRIPTION dir="ltr" esbox="0"><![CDATA[]]></ACTY_DESCRIPTION>
+		
+		id_popup (Teacher's Note)
+		<POP_UP dir="ltr" esbox="0"><![CDATA[]]></POP_UP>
+		
+		first line (to the right of the video window)
+		<NOTE dir="ltr" esbox="0"><![CDATA[]]></NOTE>
+		
+		id_FL_inst0 (Instructions target language)
+		<FL_INST dir="ltr" esbox="0"><![CDATA[]]></FL_INST>
+		
+		id_XL_inst0 (Instructions english)
+		<XL_INST dir="ltr" esbox="0"><![CDATA[]]></XL_INST>
+		
+		unknown
+		<PREP_TEXT dir="ltr" esbox="0"><![CDATA[]]></PREP_TEXT>
+		
+		Question text (SUM) - Transcript text (LGP)
+		<QText dir="ltr" esbox="0"><![CDATA[]]></QText>
+		
+		guidelines
+		<AID dir="ltr" esbox="0"><![CDATA[]]></AID>
+		
+		compair result text (Concatinate all stimulus in compair results)
+		<STIMULUS dir="ltr" esbox="0"><![CDATA[]]></STIMULUS>
+		
+		showFB(index) - Reason button dialog text
+		<FB dir="ltr" esbox="0"><![CDATA[]]></FB>
+		
+		The video file to load on startup
+		<VIDEO_CLIP><![CDATA[al_ecn215_act5.flv]]></VIDEO_CLIP>
+		
+		(Can repeat- but not sure why)
+		<AUD_FB><![CDATA[ru_sci214_act2_seg1.mp3]]></AUD_FB>
+		
+		Unknown
+		<AUD_STIMULUS><![CDATA[ru_sci214_act2_seg1.mp3]]></AUD_STIMULUS>
+		<AUD_STIMULUS><![CDATA[SELECT]]></AUD_STIMULUS>
+		
+		Unknown
+		<PREP_AUD><![CDATA[SELECT]]></PREP_AUD>
+	</QREC>
