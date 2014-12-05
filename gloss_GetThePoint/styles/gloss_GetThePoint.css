@@ -1,7 +1,7 @@
 body{
     height: 575px;
-    width: 865px;
-    /* overflow: hidden; */
+    width: 850px;
+    overflow: hidden;
     font-family: Arial;
 }
 
@@ -70,7 +70,7 @@ body:not([mode='LGP']) #transcriptBtn{
     /* background-color: yellow; */
     height: 32px;
     width: 76px;
-    margin-left: auto;
+    margin-left: 756px;
 }
 
 #teachersNoteBtn:hover{
@@ -115,14 +115,15 @@ body:not([mode='LGP']) #transcriptBtn{
 #container{
     /* background-color: orange; */
     height: 200px;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: 1px; */
+    /* margin-right: auto; */
+    width: 830px;
 }
 
 #answersToolbar{
     /* background-color: rgb(130, 147, 162); */
     height: 51px;
-    width: 566px;
+    width: 485px;
     margin-left: 354px;
     clear: both;
 }
@@ -163,8 +164,8 @@ body:not([mode='LGP']) #transcriptBtn{
 
 #yourText{
     /* background-color: aqua; */
-    width: 350px;
-    height: 270px;
+    width: 330px;
+    height: 200px;
     float: left;
     border: 1px solid black;
     margin: 5px;
@@ -174,8 +175,8 @@ body:not([mode='LGP']) #transcriptBtn{
 
 #resultHTML{
     background-color: rgb(235, 235, 235);
-    width: 350px;
-    height: 270px;
+    width: 330px;
+    height: 200px;
     float: left;
     overflow: hidden;
     border: 1px solid black;
@@ -230,4 +231,15 @@ body:not([mode='LGP']) #transcriptBtn{
     color: black;
 	
     background-image: linear-gradient(to bottom, #ffffff, lightgray);
+}
+
+#videoContainer > embed{
+	width: 100%;
+	height: 100%;
+}
+
+#htmlAudioPlayerDiv{
+    /* background-color: green; */
+    margin-left: 30px;
+    margin-bottom: 15px;
 }

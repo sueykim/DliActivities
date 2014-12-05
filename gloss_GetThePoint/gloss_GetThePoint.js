@@ -2,6 +2,7 @@ disableStripNamespace = true;
 
 $(document).ready(function() {
 	audioInit();
+	testVideoSupport();
 	
 	loadjscssfile("../common/css/activityDefault.css", "css");
 	
@@ -18,7 +19,7 @@ $(document).ready(function() {
 var jQREC;
 
 function parseXml(t_xml){
-    jQREC = $($(xml).find("DB > QREC")[params['stepIndex']-1])
+    jQREC = $($(xml).find("DB > QREC")[params['stepIndex']])
 	
 	jQREC.find(" > *").each(function(i,v){
 		$(v).text($(v).text().replace("<![CDATA[", "").replace("]]>", ""))
@@ -30,8 +31,19 @@ function parseXml(t_xml){
 		case "SUM":
 			break;
 		case "LGP":
+			var file_audio = $(jQREC.find("> AUD_FB")[0]).text()
+			audio_play_file(removeFileExt(file_audio), mediaPath);
+			$("#audioPlayer").attr("controls","")
 			break;
 		case "VGP":
+			var filename = $(jQREC.find("> VIDEO_CLIP")[0]).text()
+			
+			if(extractFileExt(filename) == "flv"){
+				forceVidType = "flash"
+			}
+			
+			loadVideoNoPlayYet("../gloss_GetThePoint/" + mediaPath 
+							, removeFileExt(filename))
 			break;
 	}
 	

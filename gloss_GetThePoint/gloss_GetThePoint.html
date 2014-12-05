@@ -26,6 +26,8 @@
 		<script src="../common/js/dli_util.js"></script>
 		<script src="../common/js/dli_audio.js"></script>
 		
+		<script src="../common/js/dli_video.js"></script>
+		
 		<script src="gloss_GetThePoint.js"></script>
 	</head>
 	<body>
@@ -36,10 +38,16 @@
 				<div id="instructionsBtn" onclick="showFeedback('instructions')"></div>
 				<div id="teachersNoteBtn" onclick="showFeedback('teachersNote')"></div>
 			</div>
+			
+			<div id="flashAudioPlayerDiv"></div>
+			<div id="htmlAudioPlayerDiv"></div>
+			<div id="embeddedAudioPlayerDiv"></div>
+			
 			<div id="introContainer">
 				<div id="videoContainer"></div>
 				<div id="intro"></div>
 			</div>
+			
 			<div id="question"></div>
 			<div id="answersToolbar">
 				<div id="guidelineBtn" onclick="showFeedback('guidelines')">Guidelines</div>
@@ -69,10 +77,5 @@
 				<div class="reasonBtn">Reason</div>
 			</div>
 		</div>	
-
-
-		<div id="flashAudioPlayerDiv"></div>
-		<div id="htmlAudioPlayerDiv"></div>
-		<div id="embeddedAudioPlayerDiv"></div>
 	</body>
 </html>
