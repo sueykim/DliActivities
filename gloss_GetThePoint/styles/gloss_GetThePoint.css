@@ -1,7 +1,7 @@
 body{
     height: 575px;
-    width: 850px;
-    overflow: hidden;
+    width: 845px;
+    /* overflow: hidden; */
     font-family: Arial;
 }
 
@@ -12,7 +12,10 @@ body:not([mode='VGP']) #videoContainer,
 #feedback[mode='instructions'][page='tl'] #en_instructions,
 #feedback[mode='instructions'][page='en'] #tl_instructions,
 body:not([mode='SUM']) #question,
-body:not([mode='LGP']) #transcriptBtn{
+body:not([mode='LGP']) #transcriptBtn,
+#feedback[mode='teachersNote'] #en_instructions,
+#feedback[mode='teachersNote'] #tl_instructions,
+body:not([mode='LGP']) #flashAudioPlayerDiv{
     display: none;
 }
 
@@ -110,6 +113,7 @@ body:not([mode='LGP']) #transcriptBtn{
     clear: both;
     border: 1px solid black;
     margin-bottom: 10px;
+    width: 95%;
 }
 
 #container{
@@ -242,4 +246,8 @@ body:not([mode='LGP']) #transcriptBtn{
     /* background-color: green; */
     margin-left: 30px;
     margin-bottom: 15px;
+}
+
+#introContainer{
+	width:95%;
 }

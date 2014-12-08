@@ -19,11 +19,17 @@ $(document).ready(function() {
 var jQREC;
 
 function parseXml(t_xml){
+	//Change to text and back to xml
+	var fileText = new XMLSerializer().serializeToString(t_xml);
+	fileText = fileText.replace(/src=(["'])Images\//g, "src=$1" + mediaPath + "Images/" )
+	xml = $.parseXML(fileText)
+	
     jQREC = $($(xml).find("DB > QREC")[params['stepIndex']])
 	
 	jQREC.find(" > *").each(function(i,v){
 		$(v).text($(v).text().replace("<![CDATA[", "").replace("]]>", ""))
 	})
+	
 	
 	$("body").attr("mode", jQREC.find("A_Type").text())
 	
