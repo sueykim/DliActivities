@@ -35,13 +35,16 @@
 
 		<div id="main" class="noSelect">
 			<div id="toolbar">
+				<div id="titleLabel"></div>
 				<div id="instructionsBtn" onclick="showFeedback('instructions')"></div>
 				<div id="teachersNoteBtn" onclick="showFeedback('teachersNote')"></div>
 			</div>
 			
-			<div id="flashAudioPlayerDiv"></div>
-			<div id="htmlAudioPlayerDiv"></div>
-			<div id="embeddedAudioPlayerDiv"></div>
+			<div id="audioPlayerContainer">
+				<div id="flashAudioPlayerDiv"></div>
+				<div id="htmlAudioPlayerDiv"></div>
+				<div id="embeddedAudioPlayerDiv"></div>
+			</div>
 			
 			<div id="introContainer">
 				<div id="videoContainer"></div>
@@ -64,10 +67,19 @@
 
 		<div id="feedback" >
 			<h2 id="feedbackHeader"></h2>
-			<p id="feedbackText"></p>
 			
-			<div id="tl_instructions" onclick="setFeedbackPage('en')"></div>
-			<div id="en_instructions" onclick="setFeedbackPage('tl')"></div>
+			<div id="feedbackTextContainer">
+				<p id="feedbackText"></p>
+
+				<div id="tl_instructions" onclick="setFeedbackPage('en')"></div>
+				<div id="en_instructions" onclick="setFeedbackPage('tl')"></div>
+			</div>
+
+			<div id="audioPlayerContainer2">
+				<div id="flashAudioPlayerDiv2"></div>
+				<div id="htmlAudioPlayerDiv2"></div>
+				<div id="embeddedAudioPlayerDiv2"></div>
+			</div>
 
 			<div id="feedbackBtn" onclick="{closeFeedback();}">OK</div>
 		</div>

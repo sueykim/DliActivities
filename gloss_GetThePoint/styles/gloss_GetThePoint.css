@@ -5,18 +5,21 @@ body{
     font-family: Arial;
 }
 
-
-body[mode='LGP'] #intro,
+#feedback:not([mode='reason']) #audioPlayerContainer2,
+#flashAudioPlayerDiv, #flashAudioPlayerDiv2,
 body:not([mode='VGP']) #videoContainer,
-#feedback[mode='instructions'] #feedbackText,
 #feedback[mode='instructions'][page='tl'] #en_instructions,
 #feedback[mode='instructions'][page='en'] #tl_instructions,
 body:not([mode='SUM']) #question,
-body:not([mode='LGP']) #transcriptBtn,
 #feedback[mode='teachersNote'] #en_instructions,
 #feedback[mode='teachersNote'] #tl_instructions,
 body:not([mode='LGP']) #flashAudioPlayerDiv{
     display: none;
+}
+
+body[mode='VGP'] #intro{
+	width: 480px;
+	float: left;
 }
 
 #snippets{
@@ -31,7 +34,8 @@ body:not([mode='LGP']) #flashAudioPlayerDiv{
     padding: 20px;
     width: 635px;
     z-index: 100;
-    height: 200px;
+    max-height: 330px;
+    height: 330px;
 }
 
 #guidelineBtn,
@@ -70,10 +74,12 @@ body:not([mode='LGP']) #flashAudioPlayerDiv{
 }
 
 #toolbar{
-    /* background-color: yellow; */
-    height: 32px;
-    width: 76px;
-    margin-left: 756px;
+    background-color: lightblue;
+    height: 25px;
+    /* width: 76px; */
+    margin-bottom: 10px;
+    position: relative;
+    padding-top: 5px;
 }
 
 #teachersNoteBtn:hover{
@@ -86,8 +92,11 @@ body:not([mode='LGP']) #flashAudioPlayerDiv{
     /* background-color: aquamarine; */
     width: 30px;
     height: 30px;
-    float: right;
+    /* float: right; */
     background-image: url("../gif/btnTeacher.gif");
+    position: absolute;
+    top: 0px;
+    right: 32px;
 }
 
 #instructionsBtn:hover{
@@ -100,8 +109,11 @@ body:not([mode='LGP']) #flashAudioPlayerDiv{
     /* background-color: blue; */
     width: 30px;
     height: 30px;
-    float: right;
+    /* float: right; */
     background-image: url('../gif/btnInstruction.gif');
+    position: absolute;
+    right: 0px;
+    top: 0px;
 }
 
 #intro{    
@@ -114,6 +126,8 @@ body:not([mode='LGP']) #flashAudioPlayerDiv{
     border: 1px solid black;
     margin-bottom: 10px;
     width: 95%;
+    max-height: 283px;
+    overflow: auto;
 }
 
 #container{
@@ -182,14 +196,14 @@ body:not([mode='LGP']) #flashAudioPlayerDiv{
     width: 330px;
     height: 200px;
     float: left;
-    overflow: hidden;
+    overflow: auto;
     border: 1px solid black;
     margin: 5px;
     padding: 10px;
 }
 
 #feedbackText{
-    height: 152px;
+    max-height: 282px;
     margin: 0px;
 }
 
@@ -206,6 +220,7 @@ body:not([mode='LGP']) #flashAudioPlayerDiv{
     border: 1px solid;
     margin-left: 5px;
     margin-bottom: 10px;
+    clear: both;
 }
 
 #videoContainer{
@@ -250,4 +265,21 @@ body:not([mode='LGP']) #flashAudioPlayerDiv{
 
 #introContainer{
 	width:95%;
+}
+
+#titleLabel{
+    text-align: center;
+	
+}
+
+#audioPlayerContainer2{
+    /* background-color: lightseagreen; */
+    width: 306px;
+    height: 32px;
+    position: absolute;
+    bottom: 12px;
+}
+
+#audioPlayer2{
+	background-color: white;
 }

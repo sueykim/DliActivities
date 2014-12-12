@@ -1,28 +1,44 @@
 disableStripNamespace = true;
 
 $(document).ready(function() {
-	audioInit();
-	testVideoSupport();
+	audioInit()
+	audioInit(2)
 	
-	loadjscssfile("../common/css/activityDefault.css", "css");
+	testVideoSupport()
+	
+	loadjscssfile("../common/css/activityDefault.css", "css")
 	
 	//Default values (for testing)
-	mediaPath = "sampleData/";
-	xmlFilename = mediaPath + "al_ecn004.xml";
-	jsonFilename = mediaPath + "al_ecn004.js";
-	cssFilename = "styles/gloss_GetThePoint.css";
+	mediaPath = "sampleData/"
+	xmlFilename = mediaPath + "al_ecn004.xml"
+	jsonFilename = mediaPath + "al_ecn004.js"
+	cssFilename = "styles/gloss_GetThePoint.css"
 	
-	loadActivity(parseXml);
-	
+	loadActivity(parseXml)
 }); 
 
 var jQREC;
+var disableSubDirectories = false
+var audioVideoMediaDir = ""
 
 function parseXml(t_xml){
 	//Change to text and back to xml
 	var fileText = new XMLSerializer().serializeToString(t_xml);
 	fileText = fileText.replace(/src=(["'])Images\//g, "src=$1" + mediaPath + "Images/" )
 	xml = $.parseXML(fileText)
+
+	if(params['disableSubDirectories'] != undefined
+			&& params['disableSubDirectories'] == "true"){
+		disableSubDirectories = true;
+	}
+	
+	if(params['audioVideoMediaDir'] != undefined){
+		audioVideoMediaDir = params['audioVideoMediaDir'];
+	}
+	
+	$("#titleLabel").text($($($(xml)
+						.find("DB > QREC")[0])
+						.find("FL_Title")[0]).text())
 	
     jQREC = $($(xml).find("DB > QREC")[params['stepIndex']])
 	
@@ -37,9 +53,15 @@ function parseXml(t_xml){
 		case "SUM":
 			break;
 		case "LGP":
-			var file_audio = $(jQREC.find("> AUD_FB")[0]).text()
-			audio_play_file(removeFileExt(file_audio), mediaPath);
+			var file_audio = $(jQREC.find("> AUD_STIMULUS")[0]).text()
+			audio_play_file(removeFileExt(file_audio), mediaPath + audioVideoMediaDir, undefined, disableSubDirectories);
 			$("#audioPlayer").attr("controls","")
+			$("#audioPlayer")[0].pause()
+
+			if(jQREC.find("> QText").text().length == 0){
+				$("#transcriptBtn").css("display", "none")
+			}
+			
 			break;
 		case "VGP":
 			var filename = $(jQREC.find("> VIDEO_CLIP")[0]).text()
@@ -48,8 +70,13 @@ function parseXml(t_xml){
 				forceVidType = "flash"
 			}
 			
-			loadVideoNoPlayYet("../gloss_GetThePoint/" + mediaPath 
+			loadVideoNoPlayYet("../gloss_GetThePoint/" + mediaPath + audioVideoMediaDir
 							, removeFileExt(filename))
+
+			if(jQREC.find("> QText").text().length == 0){
+				$("#transcriptBtn").css("display", "none")
+			}
+			
 			break;
 	}
 	
@@ -61,20 +88,9 @@ function parseXml(t_xml){
 	
 	setTimeout(function(){showFeedback("instructions")}, 1000)
 
-}
-
-
-function playAudio(obj){
-	var index = $(obj).closest(".wordContainer").index()
-	var file_audio = $(
-						$(
-							$(
-								$(xml).find("section")[currentSet]
-							).find("item")[index]
-						).find("file_audio")
-					).text()
-					
-	audio_play_file(removeFileExt(file_audio), mediaPath);
+	if(jQREC.find("> POP_UP").text().length == 0){
+		$("#teachersNoteBtn").css("display", "none")
+	}
 }
 
 var isJapanese = false
@@ -116,8 +132,8 @@ function generateStimulus(){
 	//Quick way to decode html entities
 	$("#resultHTML").html(output)
 	
-	$("#resultHTML").mCustomScrollbar("destroy");
-	$("#resultHTML").mCustomScrollbar();
+	//$("#resultHTML").mCustomScrollbar("destroy");
+	//$("#resultHTML").mCustomScrollbar();
 }
 
 function showFeedback(value, textInput){
@@ -147,6 +163,7 @@ function showFeedback(value, textInput){
 			$("#feedbackHeader").html("Instructions");
 			$('#feedback').attr("mode","instructions")
 			setFeedbackPage("tl")
+			$("#feedbackText").html("(Click text to switch language)")
 			$("#tl_instructions").html(jQREC.find("> FL_INST").text())
 			$("#en_instructions").html(jQREC.find("> XL_INST").text())
 			break;
@@ -159,6 +176,17 @@ function showFeedback(value, textInput){
 			$("#feedbackHeader").html("Reason");
 			$('#feedback').attr("mode","reason")
 			$("#feedbackText").html($(jQREC.find("> FB")[textInput]).text())
+			
+			if(jQREC.find("> AUD_FB")[textInput] != undefined){
+				var file_audio = $(jQREC.find("> AUD_FB")[textInput]).text()
+				audio_play_file(removeFileExt(file_audio), mediaPath + audioVideoMediaDir,2, disableSubDirectories);
+				$("#audioPlayer2")[0].pause()
+				$("#audioPlayerContainer2").css("display", "block")
+			}else{
+				$("#audioPlayerContainer2").css("display", "none")
+			}
+			
+			$("#audioPlayer2").attr("controls","controls")
 			break;
 		case "transcript":
 			$("#feedbackHeader").html("Transcript");
@@ -170,8 +198,8 @@ function showFeedback(value, textInput){
 	$('#feedback').show();
 	$("#clickGuard").css("display","block")
 	
-	$("#feedbackText").mCustomScrollbar("destroy");
-	$("#feedbackText").mCustomScrollbar();
+	$("#feedbackTextContainer").mCustomScrollbar("destroy");
+	$("#feedbackTextContainer").mCustomScrollbar();
 }
 
 function setFeedbackPage(value){
