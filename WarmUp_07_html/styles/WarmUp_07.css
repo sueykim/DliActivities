@@ -372,3 +372,8 @@ body[mode='warmup_08'][intro='true'] #main #idLeftCol > * ,
 body[mode='warmup_08a'][intro='true'] #main #idLeftCol > * {
 	display: none;
 }
+
+body[item_blank="true"] #idExampleContainers,
+body[item_blank="true"] #idLeftCol{
+	display: none;
+}

@@ -3,12 +3,10 @@
   <hs:letters total="30">
      <hs:letter>
          <!--<hs:char>ا</hs:char>-->
-         <hs:char>A</hs:char>
+         <hs:char></hs:char>
          <hs:audio>ad_bald.mp3</hs:audio>
          <hs:name>alef</hs:name>
-         <hs:desc><![CDATA[The letter <b>alef</b> sounds like the <b>a</b> in father.]]></hs:desc>
-         <hs:example dir="rtl" aud="ad_beard.mp3" en="alef1"><![CDATA[apple]]></hs:example>
-         <hs:example dir="rtl" aud="ad_beautiful.mp3" en="alef2"><![CDATA[abcdabcd]]></hs:example>
+         <hs:desc><![CDATA[]]></hs:desc>
       </hs:letter>
      <hs:letter>
          <hs:char>ب</hs:char>

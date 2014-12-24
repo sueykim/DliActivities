@@ -79,6 +79,14 @@ function loadLetter(index){
 	
 	jItem = $($(xml).find("letter")[index])
 	
+	if(jItem.find("> char").length == 0 ||
+			jItem.find("> char").text().length == 0){
+		$("body").attr("item_blank", "true")
+		return
+	}else{
+		$("body").attr("item_blank", "false")
+	}
+
 	if(jItem.find("initial_image").length == 1){
 		$($(".charImage")[0]).css("background-image", 
 					"url(" + mediaPath + "png/" 
