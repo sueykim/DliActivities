@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<hs:content  target_language="Dari" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">	
+<hs:set>
+  <hs:introduction>
+     <hs:title><![CDATA[<b>Introduction</b>]]></hs:title>
+     <hs:intro><![CDATA[Dari is written from right to left in a style similar to English cursive. The shape of most Dari letters changes depending on where they are located in a word: at the beginning (initial position), in the middle (medial position), at the end (final position), or standing alone (isolated). This rule is true for most letters. Some letters do not connect with the letters that follow or precede them. Click on one of the letters on the right to browse the alphabet]]>
+     </hs:intro>
+  </hs:introduction>
+  <hs:letters>
+     <hs:letter>
+         <hs:char>A</hs:char>
+         <hs:audio>ad_bald.mp3</hs:audio>
+         <hs:name>a</hs:name>
+         <hs:initial_image>alef_initial.png</hs:initial_image>
+         <hs:middle_image>alef_middle.png</hs:middle_image>
+         <hs:final_image>alef_final.png</hs:final_image>
+         <hs:example dir="rtl" audio="ad_beard.mp3" en_word="voice">air</hs:example>
+         <hs:example dir="rtl" audio="ad_beautiful.mp3" en_word="load">apple</hs:example>
+         <hs:example dir="rtl" audio="ad_clothes.mp3" en_word="weapon">abcabc</hs:example>
+      </hs:letter>
+     <hs:letter>
+         <hs:char>b</hs:char>
+         <hs:audio>ad_beard.mp3</hs:audio>
+         <hs:name>B</hs:name>
+         <hs:initial_image>bey_initial.png</hs:initial_image>
+         <hs:middle_image>bey_middle.png</hs:middle_image>
+         <hs:final_image>bey_final.png</hs:final_image>
+         <hs:example dir="rtl" audio="ad_beautiful.mp3" en_word="water">bear</hs:example>
+         <hs:example dir="rtl" audio="ad_clothes.mp3" en_word="middle">between</hs:example>
+         <hs:example dir="rtl" audio="ad_fat.mp3" en_word="gunpowder">better</hs:example>
+      </hs:letter>
+
+     <hs:letter>
+         <hs:char>c</hs:char>
+         <hs:audio>ad_beautiful.mp3</hs:audio>
+         <hs:name>C</hs:name>
+         <hs:initial_image>tey_initial.png</hs:initial_image>
+         <hs:middle_image>tey_middle.png</hs:middle_image>
+         <hs:final_image>tey_final.png</hs:final_image>
+         <hs:example dir="rtl" audio="ad_clothes.mp3" en_word="hand">car</hs:example>
+         <hs:example dir="rtl" audio="ad_fat.mp3" en_word="strong">concord</hs:example>
+         <hs:example dir="rtl" audio="ad_glasses.mp3" en_word="tank">cake</hs:example>
+      </hs:letter>
+     <hs:letter>
+         <hs:char>d</hs:char>
+         <hs:loc>E1</hs:loc>
+         <hs:audio>ad_clothes.mp3</hs:audio>
+         <hs:name>D</hs:name>
+         <hs:initial_image>sey_initial.png</hs:initial_image>
+         <hs:middle_image>sey_middle.png</hs:middle_image>
+         <hs:final_image>sey_final.png</hs:final_image>
+         <hs:example dir="rtl" audio="ad_fat.mp3" en_word="triangle">daring</hs:example>
+         <hs:example dir="rtl" audio="ad_glasses.mp3" en_word="example">dashing</hs:example>
+         <hs:example dir="rtl" audio="ad_handsome.mp3" en_word="second">dimond</hs:example>
+      </hs:letter>
+     <hs:letter>
+         <hs:char>E</hs:char>
+         <hs:loc>F1</hs:loc>
+         <hs:audio>ad_fat.mp3</hs:audio>
+         <hs:name>jeem</hs:name>
+         <hs:initial_image>jeem_initial.png</hs:initial_image>
+         <hs:middle_image>jeem_middle.png</hs:middle_image>
+         <hs:final_image>jeem_final.png</hs:final_image>
+         <hs:example dir="rtl" audio="ad_glasses.mp3" en_word="five">eager</hs:example>
+         <hs:example dir="rtl" audio="ad_handsome.mp3" en_word="finger">earnings</hs:example>
+         <hs:example dir="rtl" audio="ad_man.mp3" en_word="war">eye</hs:example>
+      </hs:letter>
+     <hs:letter>
+         <hs:char>F</hs:char>
+         <hs:loc>GF</hs:loc>
+         <hs:audio>ad_glasses.mp3</hs:audio>
+         <hs:name>chey</hs:name>
+         <hs:initial_image>chey_initial.png</hs:initial_image>
+         <hs:middle_image>chey_middle.png</hs:middle_image>
+         <hs:final_image>chey_final.png</hs:final_image>
+         <hs:example dir="rtl" audio="ad_handsome.mp3" en_word="hollow">frisbee</hs:example>
+         <hs:example dir="rtl" audio="ad_man.mp3" en_word="flat tire">firefly</hs:example>
+         <hs:example dir="rtl" audio="ad_mustache.mp3" en_word="four">funny</hs:example>
+      </hs:letter>
+     <hs:letter>
+         <hs:char>G</hs:char>
+         <hs:loc>A2</hs:loc>
+         <hs:audio>ad_handsome.mp3</hs:audio>
+         <hs:name>hey</hs:name>
+         <hs:initial_image>hey_initial.png</hs:initial_image>
+         <hs:middle_image>hey_middle.png</hs:middle_image>
+         <hs:final_image>hey_final.png</hs:final_image>
+         <hs:example dir="rtl" audio="ad_man.mp3" en_word="penalty">gold</hs:example>
+         <hs:example dir="rtl" audio="ad_mustache.mp3" en_word="spring">going</hs:example>
+         <hs:example dir="rtl" audio="ad_old.mp3" en_word="seven">gone</hs:example>
+      </hs:letter>
+     <hs:letter>
+         <hs:char>H</hs:char>
+         <hs:loc>B2</hs:loc>
+         <hs:audio>ad_man.mp3</hs:audio>
+         <hs:name>khey</hs:name>
+         <hs:initial_image>khey_initial.png</hs:initial_image>
+         <hs:middle_image>khey_middle.png</hs:middle_image>
+         <hs:final_image>khey_final.png</hs:final_image>
+         <hs:example dir="rtl" audio="ad_mustache.mp3" en_word="bitter">heaven</hs:example>
+         <hs:example dir="rtl" audio="ad_old.mp3" en_word="communication">hot</hs:example>
+         <hs:example dir="rtl" audio="ad_short.mp3" en_word="blood">hosehead</hs:example>
+      </hs:letter>
+     <hs:letter>
+         <hs:char>I</hs:char>
+         <hs:loc>C2</hs:loc>
+         <hs:audio>ad_mustache.mp3</hs:audio>
+         <hs:name>daal</hs:name>
+         <hs:initial_image>daal_initial.png</hs:initial_image>
+         <hs:middle_image>daal_middle.png</hs:middle_image>
+         <hs:final_image>daal_final.png</hs:final_image>
+         <hs:example dir="rtl" audio="ad_old.mp3" en_word="wind">Iron</hs:example>
+         <hs:example dir="rtl" audio="ad_short.mp3" en_word="beggar">Ivory</hs:example>
+         <hs:example dir="rtl" audio="ad_thin.mp3" en_word="gunpowder">IDevice</hs:example>
+      </hs:letter>
+  </hs:letters>
+</hs:set>
+</hs:content>

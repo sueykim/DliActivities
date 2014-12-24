@@ -9,9 +9,36 @@ $(document).ready(function() {
 	jsonFilename = mediaPath + "WarmUp_07_sampleData.js";
 	cssFilename = "styles/WarmUp_07.css";
 	
+	params = getParams(window.location.href);
+
+	if(params['mode'] != undefined){
+		$("body").attr("mode", params['mode'])
+		
+		switch(params['mode']){
+			case "warmup_08":
+				titleAlreadySet = true
+				$("title").text("WarmUp 8 HTML")
+				break
+			case "warmup_07a":
+				titleAlreadySet = true
+				$("title").text("WarmUp 7a HTML")
+				//cssFilename = "styles/WarmUp_07a.css"
+				break
+			case "warmup_08a":
+				titleAlreadySet = true
+				$("title").text("WarmUp 8a HTML")
+				//cssFilename = "styles/WarmUp_07a.css";
+				break
+		}
+	}else{
+		$("body").attr("mode", "warmup_07")
+	}
+	
 	loadActivity(parseXml);
 	
 }); 
+
+var titleAlreadySet = false
 
 function introClicked(){
 	$("body").attr("intro", "true")
@@ -44,8 +71,9 @@ var isJapanese = false;
 var disableHighlighting = false
 var jItem
 
-function loadLetter(index){
-	if($("body").attr("warmup_08") == "true"){
+function loadLetter(index){ 
+	if($("body").attr("mode") == "warmup_08" 
+			|| $("body").attr("mode") == "warmup_08a"){
 		$("body").attr("intro", "false")
 	}
 	
@@ -77,7 +105,8 @@ function loadLetter(index){
 	$("#idName").text($(jItem.find("name")).text())
 	$("#idChar").text($(jItem.find("char")).text())
 	
-	if($("body").attr("warmup_07") == "true"){
+	if($("body").attr("mode") == "warmup_07" 
+			|| $("body").attr("mode") == "warmup_07a"){
 		$("#idDesc").html($(jItem.find("desc")).text())
 	}
 	
@@ -99,9 +128,17 @@ function loadLetter(index){
 		jExampleContainerSnip.find(".exampleEn").text(enText)
 			
 		for(var i_t=exText.length-1; i_t >= 0; i_t--){
-			if(exText[i_t].toLowerCase() == itemChar){
+			//Are there multiple characters in itemChar
+				//If so substring the current index + itemChar.length
+					//If the result isn't itemChar.length then continue
+			var currentCharStr = exText.substring(i_t, 
+											i_t + itemChar.length)
+
+			if(currentCharStr.toLowerCase() 
+										== itemChar.toLowerCase()){
 				var outputText = exText.substring(0, i_t) 
-				
+				var endOfCharStrIndex = i_t + currentCharStr.length
+
 				//Is this the beginning of the item
 				if(i_t != 0){
 					//No
@@ -113,27 +150,29 @@ function loadLetter(index){
 				//Is there a space before this word
 				if(i_t != 0 
 						&& exText[i_t-1] != " "){
+					//No
 					outputText += "&zwj;"	
 				}
 				
-				outputText += exText[i_t]
+				outputText += currentCharStr
 				
 				
 				//Is there a space after this word
-				if(i_t != exText.length-1
-						&& exText[i_t+1] != " "){
+				if(endOfCharStrIndex != exText.length
+						&& exText[endOfCharStrIndex+1] != " "){
+					//No
 					outputText += "&zwj;"	
 				}
 				
 				outputText += "</span>"
 				
 				//Is this the end of the item
-				if(i_t != exText.length-1){
+				if(endOfCharStrIndex != exText.length){
 					//No
 					outputText += "&zwj;"	
 				}
 				
-				outputText += exText.substring(i_t+1, exText.length) 
+				outputText += exText.substring(endOfCharStrIndex, exText.length) 
 			
 				exText = outputText
 			}
@@ -169,7 +208,8 @@ function checkCompleted(){
 			$("#idCharGrid > .gridItem:not([visited='true'])").length == 0){
 		$("body").attr("completed","true")
 		
-		if($("body").attr("warmup_07") == "true"){
+		if($("body").attr("mode") == "warmup_07"
+				|| $("body").attr("mode") == "warmup_07a"){
 			completeActivity()
 		}
 	}
@@ -199,7 +239,10 @@ function parseXml(t_xml){
 	//Is this a WarmUp_08 xml file
 	if($(t_xml).find("set").length > 0){
 		$("body").attr("warmup_08", "true")
-		$("head > title").text("WarmUp 08")
+
+		if(!titleAlreadySet){
+			$("head > title").text("WarmUp 08")
+		}
 		
 		var introHTML = "<div id='intro_title'>" 
 							+ $(t_xml).find("introduction > title").text() 
@@ -210,8 +253,6 @@ function parseXml(t_xml){
 							+ "</div>"
 		
 		$("#idDesc").html(introHTML)
-	}else{
-		$("body").attr("warmup_07", "true")
 	}
 	
 	//Loop through all letters
@@ -230,7 +271,8 @@ function parseXml(t_xml){
 		$("#idCharGrid").append(jGridItemSnip)
 	})
 	
-	if($("body").attr("warmup_07") == "true"){
+	if($("body").attr("mode") == "warmup_07"
+			|| $("body").attr("mode") == "warmup_07a"){
 		loadLetter(0)
 	}
 	$("body").attr("intro", "true")

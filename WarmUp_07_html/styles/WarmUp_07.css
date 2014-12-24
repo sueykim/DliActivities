@@ -4,7 +4,10 @@ body{
 }
 
 #main{
-    margin-top: 25px;
+    /* margin-top: 25px; */
+    position: absolute;
+    left: 30px;
+    top: 25px;
 }
 
 #idExampleContainers{
@@ -12,18 +15,49 @@ body{
 	
 }
 
-body[warmup_07='true'] #idExampleContainers{
-    top: 370px;
+body[mode='warmup_07'] #idExampleContainers{
+    top: 241px;
 	
     position: absolute;
     width: 278px;
 }
 
-body[warmup_08='true'] #idExampleContainers{
+
+body[mode='warmup_08a'] #idExampleContainers{
+    top: 297px;
+}
+
+body[mode='warmup_07a'] #idExampleContainers{
     top: 281px;
+}
+
+body[mode='warmup_08'] #idExampleContainers{
+    top: 281px;
+    width: 278px;	
+    left: 390px;
+}
 	
+body[mode='warmup_07a'] #idExampleContainers,
+body[mode='warmup_08a'] #idExampleContainers{	
     position: absolute;
     width: 278px;	
+    left: 390px;
+}
+
+body[mode='warmup_07a'] #idLeftCol{
+	height: 283px;
+	top: 189px;
+}
+
+body[mode='warmup_08a'] #idLeftCol{
+	height: 205px;
+	top: 306px;
+}
+
+body[mode='warmup_07a'] #idLeftCol,
+body[mode='warmup_08a'] #idLeftCol{
+    position: absolute;
+    left: 0px;
 }
 
 #idLeftCol{
@@ -38,7 +72,7 @@ body[warmup_08='true'] #idExampleContainers{
     height: 484px;
     padding: 10px;
     margin: 10px;
-    margin-left: 85px;
+    /* margin-left: 85px; */
 }
 
 .playBtnRTL:hover{
@@ -69,11 +103,13 @@ body[warmup_08='true'] #idExampleContainers{
     padding-left: 3px;
 }
 
-body[warmup_08='true'] #main #idPlayBtnRTL{
+body[mode='warmup_08'] #main #idPlayBtnRTL,
+body[mode='warmup_08a'] #main #idPlayBtnRTL{
 	display: none;
 }
 
-body[warmup_08='true'] #main #idPlayBtnLTR{
+body[mode='warmup_08'] #main #idPlayBtnLTR,
+body[mode='warmup_08a'] #main #idPlayBtnLTR{
 	display: block;
 }
 
@@ -126,7 +162,8 @@ body[completed="true"] #idCompleteBtn{
     cursor: pointer;
 }
 
-body[warmup_08='true'] #idChar{
+body[mode='warmup_08'] #idChar,
+body[mode='warmup_08a'] #idChar{
 	font-size: 126px;
 }
 
@@ -138,7 +175,8 @@ body[warmup_08='true'] #idChar{
     padding-bottom: 10px;
 }
 
-body[warmup_08='true'] #idDesc{
+body[mode='warmup_08'] #idDesc,
+body[mode='warmup_08a'] #idDesc{
 	display:none;
 }
 
@@ -148,16 +186,29 @@ body[warmup_08='true'] #idDesc{
 	
 }
 
+body[mode="warmup_08"] #idDesc{
+    height: 463px;
+}
+
+body[mode="warmup_07a"] #idDesc{
+    height: 143px;
+}
+
+body[mode="warmup_08a"] #idDesc{
+    height: 280px;
+}
+
 #idDesc{
     text-align: left;
 	
-    height: 346px;
+    /* height: 201px; */
 	background: url("../../common/img/bg_dropbubble_50.png") repeat-x scroll center bottom #F5F5F5;
     border: 1px solid #BDBDBD;
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 4px #BDBDBD;
 
     padding: 10px;
+    height: 344px;
 }
 
 #idRightCol{
@@ -168,10 +219,26 @@ body[warmup_08='true'] #idDesc{
     padding-left: 35px;
 }
 
+body[mode='warmup_07a'] #idCharGrid{
+    width: 455px;
+    left: 100px;
+}
+
+body[mode='warmup_08a'] #idCharGrid{
+    width: 645px;
+    left: 36px;
+}
+
+body[mode='warmup_08a'] #idCharGrid,
+body[mode='warmup_07a'] #idCharGrid{
+    position: absolute;
+    top: 0px;
+}
+
 #idCharGrid{
-    width: 100%;
-	
-    margin-bottom: 10px;
+    width: 100%; 
+	margin-bottom: 10px;
+	/* height: 200px; */
 }
 
 .exampleContainer{
@@ -201,7 +268,8 @@ b{
     font-family: FuturaBold;
 }
 
-body[warmup_08='true'] .highlight{
+body[mode='warmup_08'] .highlight,
+body[mode='warmup_08a'] .highlight{
     display: inline;
     color: #B43C4B;
     font-family: FuturaBold;
@@ -270,10 +338,21 @@ body[dir='ltr'] .exampleContainer > .playBtnRTL{
     background-position: 60px 10px;
 }
 
-body:not([warmup_08='true']) #idCharImages,
-body:not([warmup_08='true']) #idCompleteBtn,
-body:not([warmup_08='true']) #idIntroductionBtn{
+body[mode='warmup_07'] #idCharImages,
+body[mode='warmup_07a'] #idCharImages,
+body[mode='warmup_07'] #idCompleteBtn,
+body[mode='warmup_07a'] #idCompleteBtn,
+body[mode='warmup_07'] #idIntroductionBtn,
+body[mode='warmup_07a'] #idIntroductionBtn{
 	display:none;
+}
+
+body[mode='warmup_08a'] #idCharImages{
+	display:none;
+}
+
+body[mode='warmup_08'] #idCharImages{
+	margin-top: 0px;
 }
 
 #idCharImages{
@@ -283,10 +362,13 @@ body:not([warmup_08='true']) #idIntroductionBtn{
     margin-top: 70px;
 }
 
-body[warmup_08='true'][intro='true'] #main #idLeftCol #idDesc{
+body[mode='warmup_08'][intro='true'] #main #idLeftCol #idDesc,
+body[mode='warmup_08a'][intro='true'] #main #idLeftCol #idDesc{
 	display:block;
+	/*height: 462px;*/
 }
 
-body[warmup_08='true'][intro='true'] #main #idLeftCol > * {
+body[mode='warmup_08'][intro='true'] #main #idLeftCol > * ,
+body[mode='warmup_08a'][intro='true'] #main #idLeftCol > * {
 	display: none;
 }
