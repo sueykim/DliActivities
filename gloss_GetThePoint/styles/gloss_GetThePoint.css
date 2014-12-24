@@ -203,7 +203,7 @@ body[mode='VGP'] #intro{
 }
 
 #feedbackText{
-    max-height: 282px;
+    /* max-height: 282px; */
     margin: 0px;
 }
 
@@ -282,4 +282,8 @@ body[mode='VGP'] #intro{
 
 #audioPlayer2{
 	background-color: white;
+}
+
+#feedbackTextContainer{
+    height: 289px;
 }
