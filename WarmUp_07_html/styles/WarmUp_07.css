@@ -195,7 +195,7 @@ body[mode="warmup_07a"] #idDesc{
 }
 
 body[mode="warmup_08a"] #idDesc{
-    height: 280px;
+    height: 182px;
 }
 
 #idDesc{
@@ -209,6 +209,7 @@ body[mode="warmup_08a"] #idDesc{
 
     padding: 10px;
     height: 344px;
+    overflow: auto;
 }
 
 #idRightCol{
