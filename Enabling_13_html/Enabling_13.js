@@ -115,16 +115,17 @@ function loadSet(value){
 	var d2_text = $($(xml).find("d_2_en")[startIndex]).text();
 	enTextAry.push(d2_text);
 	hiddenvalueAry.push('d2');
-	fb_text = $($(xml).find("correct_response_en")[startIndex]).text();
+	fb_text = '<b>The correct answer is:</b>' + '<br />' + $($(xml).find("correct_response_en")[startIndex]).text();
 	var hatA = new randomNumbers( 3 );
 	for(var i = 0; i< 3; i++)
 		{
 		var a = hatA.get()
-		
+
 		$("#id_text" + i).html(enTextAry[a]);
 		$("#hiddenText" + i).val(hiddenvalueAry[a]);
-		if (correct_video != ''){
-		  $("#playBtn" + i).click( function(){placeVideo(this)} );
+		if (correct_video != ''){ 
+		  $("#playBtn" + i).click( function(){placeVideo(this)} );    
+		  $("#id_text" + i).click( function(){placeVideo(this)} );
 		  videoFileAry.push(localVideoFileAry[a]);
 		}
 		else
