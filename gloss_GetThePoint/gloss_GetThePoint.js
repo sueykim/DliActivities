@@ -14,6 +14,8 @@ $(document).ready(function() {
 	jsonFilename = mediaPath + "al_ecn004.js"
 	cssFilename = "styles/gloss_GetThePoint.css"
 	
+	$(parent.document).find("body").attr("glossPageNav", "false")
+	
 	loadActivity(parseXml)
 }); 
 
@@ -36,7 +38,9 @@ function parseXml(t_xml){
 		audioVideoMediaDir = params['audioVideoMediaDir'];
 	}
 	
-	$("#titleLabel").text($($($(xml)
+	$($(parent.document)
+			.find("#main #taskAndStepPane_header > .title"))
+					.text($($($(xml)
 						.find("DB > QREC")[0])
 						.find("FL_Title")[0]).text())
 	
@@ -98,7 +102,12 @@ var isJapanese = false
 function setState(value){
 	switch(value){
 		case 'compair':
-			generateStimulus()
+			if($("#typeText").attr("state") != "intro" && 
+					$("#typeText").text().length != 0){
+				$("#container").attr("state", "compair")
+				generateStimulus()
+			}
+	
 			break;
 	}
 }
@@ -112,10 +121,17 @@ function generateStimulus(){
 	
 	var output = ""	
 	var reasonIndex = 0
+	var firstTag = true
 	jQREC.find("> *").each(function(i,v){
 		switch($(v).prop("tagName")){
-			case "STIMULUS":
-				output += $('<div>').html($(v).html()).text()
+			case "STIMULUS":				
+				if(firstTag){
+					firstTag = false
+				}else{
+					output += "<hr/>"
+				}
+				
+				output += $('<div>').html($(v).text()).html()
 				break;
 			case "FB":
 				var jReasonBtn = $($("#reasonBtn_snippet").html())
@@ -140,7 +156,7 @@ function showFeedback(value, textInput){
 	//Clear the dialog box
 	$("#feedbackHeader").html("");
 	$("#feedbackText").html("");
-	$("#feedbackBtn").text("OK");
+	$("#feedbackBtn").text("X");
 	$("#feedbackBtn").show();
 	$('#feedback').attr("mode","")
 	
@@ -163,7 +179,7 @@ function showFeedback(value, textInput){
 			$("#feedbackHeader").html("Instructions");
 			$('#feedback').attr("mode","instructions")
 			setFeedbackPage("tl")
-			$("#feedbackText").html("(Click text to switch language)")
+			$("#feedbackText").html("<p class='centerInstructionSwitch'>(Click text to switch language)</p>")
 			$("#tl_instructions").html(jQREC.find("> FL_INST").text())
 			$("#en_instructions").html(jQREC.find("> XL_INST").text())
 			break;
@@ -198,8 +214,8 @@ function showFeedback(value, textInput){
 	$('#feedback').show();
 	$("#clickGuard").css("display","block")
 	
-	$("#feedbackTextContainer").mCustomScrollbar("destroy");
-	$("#feedbackTextContainer").mCustomScrollbar();
+	//$("#feedbackTextContainer").mCustomScrollbar("destroy");
+	//$("#feedbackTextContainer").mCustomScrollbar();
 }
 
 function setFeedbackPage(value){
@@ -225,5 +241,13 @@ function closeFeedback(){
 	$("#clickGuard").css("display","none");
 }
 
+function resetTextArea(){
+	$("#typeText").text("")
+}
 
-
+function startTyping(){
+	if($("#typeText").attr("state") == "intro"){
+		$("#typeText").text("")
+		$("#typeText").attr("state", "started")
+	}
+}

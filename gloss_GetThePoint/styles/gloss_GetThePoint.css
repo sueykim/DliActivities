@@ -1,10 +1,23 @@
 body{
-    height: 575px;
-    width: 845px;
-    /* overflow: hidden; */
+	background: -moz-linear-gradient(top, rgba(234,234,234,0.65) 0%, rgba(191,191,191,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(234,234,234,0.65)), color-stop(100%,rgba(191,191,191,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(234,234,234,0.65) 0%,rgba(191,191,191,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(234,234,234,0.65) 0%,rgba(191,191,191,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(234,234,234,0.65) 0%,rgba(191,191,191,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(234,234,234,0.65) 0%,rgba(191,191,191,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6eaeaea', endColorstr='#bfbfbf',GradientType=0 ); /* IE6-9 */
+
+    
+	min-height: 554px;
+    
+	width: 830px;
+    
+	overflow-x: hidden;
     font-family: Arial;
+	margin-left: 25px;
 }
 
+#answersToolbar > #audioHintsBtn,
 #feedback:not([mode='reason']) #audioPlayerContainer2,
 #flashAudioPlayerDiv, #flashAudioPlayerDiv2,
 body:not([mode='VGP']) #videoContainer,
@@ -28,19 +41,22 @@ body[mode='VGP'] #intro{
 
 #feedback {
     background: url("../../common/img/bg_dropbubble_50.png") repeat-x scroll center bottom #f5f5f5;
-    border: 1px solid #bdbdbd;
+    border: 0px solid #bdbdbd;
     border-radius: 3px;
     box-shadow: 0 2px 4px #bdbdbd;
-    padding: 20px;
+    padding: 0px;
     width: 635px;
     z-index: 100;
-    max-height: 330px;
-    height: 330px;
+    max-height: 380px;
+    /* height: auto; */
+    left: 115px;
+    top: 130px;
 }
 
 #guidelineBtn,
 #compairBtn,
-#transcriptBtn{
+#transcriptBtn,
+#audioHintsBtn{
 	cursor: pointer;
     padding: 7px 13px;
     border-radius: 3px;
@@ -53,27 +69,41 @@ body[mode='VGP'] #intro{
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
+#feedbackBtn:hover{
+    background-color: rgb(101, 101, 101);
+    color: white;
+}
+
 #feedbackBtn {
+	background-color: grey;
+	text-align: center;
 	cursor: pointer;
-    bottom: 10px;
+    
+	top: -14px;
     position: absolute;
-    right: 10px;
+    
+	right: -14px;
     background-color: #f5f5f5;
-    padding: 7px 13px;
-    border-radius: 3px;
+    
+	padding: 3px 0px;
+    
+	border-radius: 29px;
     border: 1px solid;
 	color: #6C6C6C;
 	border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
-	font-size: 13px;
+	font-size: 21px;
 	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-	background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+	/* background-image: linear-gradient(to bottom, #ffffff, #e6e6e6); */
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	height: 23px;
+	width: 28px;
 }
 
 #main{
 }
 
 #toolbar{
+	display: none;
     background-color: lightblue;
     height: 25px;
     /* width: 76px; */
@@ -121,13 +151,23 @@ body[mode='VGP'] #intro{
 }
 
 #question{
-    /* background-color: red; */
+    background-color: white;
     clear: both;
-    border: 1px solid black;
+    border: 0px solid black;
     margin-bottom: 10px;
-    width: 95%;
+    width: 97%;
     max-height: 283px;
     overflow: auto;
+    border-radius: 2px;
+}
+
+#container[state='intro'] > #typeText{
+    width: 784px;
+	
+}
+
+#container:not([state='intro']) > #resultHTML{
+	opacity: 1;
 }
 
 #container{
@@ -136,91 +176,144 @@ body[mode='VGP'] #intro{
     /* margin-left: 1px; */
     /* margin-right: auto; */
     width: 830px;
+    position: relative;
 }
 
 #answersToolbar{
     /* background-color: rgb(130, 147, 162); */
     height: 51px;
-    width: 485px;
-    margin-left: 354px;
+    width: auto;
+    margin-left: auto;
     clear: both;
+    margin-right: auto;
+    text-align: center;
+}
+
+#audioHintsBtn{
+    cursor:pointer;
+    width: 70px;
+    height: 30px;
+    /* float: left; */
+    padding: 15px 28px 0px 32px;
+    margin: 6px;
+    border-radius: 3px;
+    color: black;
+    box-shadow: 0px 1px 1px grey;
+    display: inline-block;
 }
 
 #guidelineBtn{
     cursor:pointer;
     width: 66px;
-    height: 25px;
-    float: left;
-    padding: 8px 10px 0px 10px;
+    height: 30px;
+    /* float: left; */
+    padding: 15px 28px 0px 32px;
     margin: 6px;
     border-radius: 3px;
+    color: black;
+    box-shadow: 0px 1px 1px grey;
+    display: inline-block;
 }
 
 #transcriptBtn{
-    cursor:pointer;
-    width: 95px;
-    height: 25px;
-    float: left;
-    padding: 8px 10px 0px 10px;
-    margin: 6px;
-    border-radius: 3px;
-    float: right;
+	cursor: pointer;
+	width: 98px;
+	height: 30px;
+	/* float: left; */
+	padding: 15px 28px 0px 32px;
+	margin: 6px;
+	border-radius: 3px;
+	color: black;
+	box-shadow: 0px 1px 1px grey;
+	display: inline-block;
 }
 
 
 
 #compairBtn{
     cursor:pointer;
-    background-color: green;
-    width: 58px;
-    height: 25px;
+    background-image: inherit;
+    background-color: #A5AFDA;
+    width: 107px;
+    height: 27px;
     float: left;
-    padding: 9px 10px 0px 20px;
+    padding: 10px 10px 0px 10px;
     margin: 6px;
-    border-radius: 3px;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, .6);
+    border: 0px;
 }
 
-#yourText{
-    /* background-color: aqua; */
-    width: 330px;
-    height: 200px;
-    float: left;
-    border: 1px solid black;
-    margin: 5px;
-    margin-left: 97px;
+#typeText{
+    background-color: white;
+    width: 320px;
+    height: 163px;
+    /* float: left; */
+    border: 0px solid black;
+    margin-top: 5px;
+    /* margin-left: 97px; */
     padding: 10px;
+    -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s;
+    position: absolute;
+    top: 8px;
+}
+
+#resultHTML > hr{
+    box-shadow: 0px 0px 8px rgb(190, 187, 187);
+
+    border: 1px solid rgb(209, 209, 209);
 }
 
 #resultHTML{
-    background-color: rgb(235, 235, 235);
-    width: 330px;
-    height: 200px;
-    float: left;
+    position: absolute;
+    background-color: white;
+    width: 440px;
+    height: 163px;
+    /* float: left; */
     overflow: auto;
-    border: 1px solid black;
+    border: 0px solid black;
     margin: 5px;
     padding: 10px;
+    opacity: 0;
+
+    -webkit-transition: opacity 1s linear 1s; /* For Safari 3.1 to 6.0 */
+    transition: opacity 1s linear 1s;  
+    left: 340px;
+    top: 8px;
 }
 
 #feedbackText{
-    /* max-height: 282px; */
+    max-height: 282px;
     margin: 0px;
+    overflow: auto;
 }
 
 .reasonBtn:hover{
-    background-color: gray;
+    background-color: rgb(241, 230, 230);
+    color: black;
 }
 
 .reasonBtn{
-    width: 86px;
-    background-color: rgb(177, 177, 177);
-    border-radius: 3px;
+    width: 46px;
+    background-color: white;
+    border-radius: 40px;
     text-align: center;
     cursor: pointer;
-    border: 1px solid;
+    border: 0px solid grey;
     margin-left: 5px;
     margin-bottom: 10px;
     clear: both;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: inset 0px 0px 9px grey;
+    font-size: 12px;
+    color: rgb(74, 74, 74);
+    position: relative;
+    left: 361px;
 }
 
 #videoContainer{
@@ -236,20 +329,33 @@ body[mode='VGP'] #intro{
 	cursor:pointer;
 }
 
-#feedbackHeader {
-    font-size: 20px;
-    letter-spacing: 2px;
-    margin-top: -10px;
-    text-align: left;
-    margin-bottom: 4px;
+.centerInstructionSwitch{
+    margin-left: auto;
+    margin-right: auto;
+    width: 258px;
 }
 
-#compairBtn:hover,
+#feedbackHeader {
+    font-size: 17px;
+    letter-spacing: 2px;
+    text-align: left;
+    color: white;
+    background-color: #243155;
+    margin: 0px;
+    padding: 10px 10px 10px 18px;
+}
+
 #guidelineBtn:hover,
-#transcriptBtn:hover{
+#transcriptBtn:hover,
+#audioHintsBtn:hover{
     color: black;
 	
     background-image: linear-gradient(to bottom, #ffffff, lightgray);
+}
+
+#compairBtn:hover{
+	/* font-size: 17px; */
+	background-color: #97A1CC;
 }
 
 #videoContainer > embed{
@@ -276,7 +382,7 @@ body[mode='VGP'] #intro{
     /* background-color: lightseagreen; */
     width: 306px;
     height: 32px;
-    position: absolute;
+    /* position: absolute; */
     bottom: 12px;
 }
 
@@ -285,5 +391,35 @@ body[mode='VGP'] #intro{
 }
 
 #feedbackTextContainer{
-    height: 289px;
+    height: 279px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+#clickGuard{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	opacity: .5;
+}
+
+#resetBtn:hover{
+    color: #5B5B5B;
+}
+
+#resetBtn{
+    float: left;
+    margin-left: 594px;
+    margin-top: 17px;
+    font-size: 14px;
+    margin-right: 42px;
+    cursor: pointer;
+}
+
+#typeText[state="intro"]{
+	color:darkgrey;
 }

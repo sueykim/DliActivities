@@ -6,6 +6,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 		
+		<script type="text/javascript" src="../common/js/firebug_check.js"></script>
+		
 		<title>Gloss - Get The Point</title>
 		
 		<script src="../common/js/AC_OETags.js"></script>
@@ -54,13 +56,15 @@
 			<div id="question"></div>
 			<div id="answersToolbar">
 				<div id="guidelineBtn" onclick="showFeedback('guidelines')">Guidelines</div>
-				<div id="compairBtn" onclick="setState('compair')">Compair</div>
+				<div id="audioHintsBtn" onclick="showFeedback('audioHints')">Audio Hints</div>
 				<div id="transcriptBtn" onclick="showFeedback('transcript')">View Transcript</div>
 			</div>
-			<div id="container">
-				<div id="yourText" contenteditable></div>
+			<div id="container" state="intro">
 				<div id="resultHTML"></div>
+				<div id="typeText" state="intro" contenteditable="true" onclick="startTyping()">Type your response here.</div>
 			</div>
+			<div id="resetBtn" onclick="resetTextArea()">Reset</div>
+			<div id="compairBtn" onclick="setState('compair')">Submit</div>
 		</div>
 		
 		<div id="clickGuard" style="display: none;"></div>
@@ -82,7 +86,7 @@
 				<div id="embeddedAudioPlayerDiv2"></div>
 			</div>
 
-			<div id="feedbackBtn" onclick="{closeFeedback();}">OK</div>
+			<div id="feedbackBtn" onclick="{closeFeedback();}">X</div>
 		</div>
 
 		<div id="snippets">	
