@@ -20,13 +20,13 @@ $(document).ready(function() {
         cssFilename = "css/enabling_33_default.css";
         // Values from URL parameters or default values for testing
 	var statusParameters = getPassedParameters();
-	if (!statusParameters) {
+	////if (!statusParameters) {
     	   mediaPath = "library/";
     	   cssFilename = "css/enabling_33_default.css";
     	   xmlFilename = mediaPath + "enabling33_writingCharacters.xml";
     	   jsonFilename = mediaPath + "enabling33_writingCharacters.js";
-		}
-	else {
+	////	}
+/*	else {
 		// For performance - homework
 		var xmlPath2 = xmlPath.split("/");
 		var activityID = getURL_Parameter('activity');
@@ -36,7 +36,7 @@ $(document).ready(function() {
 		}
 
 		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
-	}
+	}   */
 
 	loadActivity(parseXml);
 
@@ -70,7 +70,7 @@ function loadSet(value){
 	//updateSetText();
 	
 	setXml = $(xml).find("set").eq(currentSet);
-	
+
 	itemTotal = $(setXml).find("item").length;
 //	 var mVideoPlayer = document.createElement("video");
 //        mVideoPlayer.id = "videoPlayer";
@@ -198,7 +198,7 @@ function loadCanvas(){
 	var ctx = canvas.getContext('2d');
 	
 	var sketch = document.querySelector('#sketch');
-	canvas.width = 539;
+	canvas.width = 455;////539;
 	canvas.height = 400;
 	
 	// Creating a tmp canvas
