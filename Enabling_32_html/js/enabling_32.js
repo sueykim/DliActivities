@@ -14,7 +14,7 @@ var initialIndex;
 
 //init and load files
 $(document).ready(function() {
-	$('#feedback').hide();
+	$('#feedback_32').hide();
 	//panel use to contain the set button for this activity
 	   var mVideoPlayer = document.createElement("video");
         mVideoPlayer.id = "videoPlayer";
@@ -51,13 +51,13 @@ $(document).ready(function() {
 
 	// Values from URL parameters or default values for testing
 	var statusParameters = getPassedParameters();
-	if (!statusParameters) {
+////	if (!statusParameters) {
 			 mediaPath 	= "activityData/media/";
 			 xmlPath 	= "activityData/";
 			xmlFilename = xmlPath  + "xml/enabling_32.xml";
 		    jsonFilename = xmlPath  + "json/enabling_32.js";
-	}
-	else {
+////	}
+/*	else {
 		// For performance - homework
 		var xmlPath2 = xmlPath.split("/");
 		var activityID = getURL_Parameter('activity');
@@ -67,7 +67,7 @@ $(document).ready(function() {
 		}
 		
 		xmlFilename = xmlPath + xmlPath2[xmlPath2.length-2].toString() + "_" + activityID +  "." +xmlPath2[xmlPath2.length-3].toString();
-	}
+	}   */
 	
 	loadActivity(parseXml);
 	
@@ -93,7 +93,7 @@ function parseXml(t_xml){
 		
 		 $("#prev").click(function () { //load the set when buttons is clicked
 		  clearTimeout(holdTimeout);
-		 $('#feedback').hide();
+		 $('#feedback_32').hide();
 		
 		 if((document.getElementById('videoPlayer')) && !(document.getElementById('videoPlayer').paused))
 								document.getElementById('videoPlayer').pause(); 
@@ -122,7 +122,7 @@ function parseXml(t_xml){
 				 if((document.getElementById('videoPlayer')) && !(document.getElementById('videoPlayer').paused))
 								document.getElementById('videoPlayer').pause(); 
 		
-		$('#feedback').hide();
+		$('#feedback_32').hide();
 		
 		 if ($("#prev").attr("disabled"))
 		 				$("#prev").removeAttr("disabled");
@@ -436,14 +436,14 @@ function showFeedback(value, text){
 			$("#feedbackText").html(text);
 			break;
 	}
-	$('#feedback').show();
+	$('#feedback_32').show();
 	if (munSetCompleted == totalSets){
 		
 		holdTimeout= setTimeout(function(){
 		    if(parent.activityCompleted)
 							parent.activityCompleted(1,0);
 		    else {
-					$('#feedback').show();
+					$('#feedback_32').show();
 					$("#feedbackHeader").html("Activity Completed!");
 					$("#feedbackText").html("");
 					munSetCompleted++;
@@ -459,7 +459,7 @@ function showFeedback(value, text){
 
 function closeFeedback(){
 	
-	$('#feedback').hide();
+	$('#feedback_32').hide();
 	var setXml = $(xml).find("set").eq(currentSet);
 	  var content= $(xml).find("content").eq(0);
 		//check all sets complete
@@ -469,7 +469,7 @@ function closeFeedback(){
 			if(parent.activityCompleted)
 							parent.activityCompleted(1,0);
 		    else {
-					$('#feedback').show();
+					$('#feedback_32').show();
 					$("#feedbackHeader").html("Activity Completed!");
 					$("#feedbackText").html("");
 					munSetCompleted++;
@@ -519,12 +519,12 @@ function playVideo(url, feedback){
 	  $( "#videoPlayer").unbind("timeupdate");
 	 if (checkVideoFormat()) {
 				if(feedback == "false") {
-						$( "#videoPlayer").bind('ended', function(e) {	$( "#videoPlayer").unbind("timeupdate"); $('#feedback').hide();});
+						$( "#videoPlayer").bind('ended', function(e) {	$( "#videoPlayer").unbind("timeupdate"); $('#feedback_32').hide();});
 						 $( "#videoPlayer").bind("timeupdate", function (e) {
 						                                                  if (this.currentTime == this.duration) {  
 																          		$( "#videoPlayer").unbind('ended'); 
-																		  			$('#feedback').hide();
-																					
+																		  			$('#feedback_32').hide();
+
 																		}
 					 });
 
@@ -533,8 +533,8 @@ function playVideo(url, feedback){
 				} else {
 				      $( "#videoPlayer").bind('ended', function(e) { $( "#videoPlayer").unbind("timeupdate"); showFeedback("correct", $(itemXML).find("feedback").text());});
 					 $( "#videoPlayer").bind("timeupdate", function (e) {
-						                                                  if (this.currentTime == this.duration) {  
-																          		$( "#videoPlayer").unbind('ended'); 
+						                                                  if (this.currentTime == this.duration) {
+																          		$( "#videoPlayer").unbind('ended');
 																		  			showFeedback("correct", $(itemXML).find("feedback").text());
 																					
 																		}
