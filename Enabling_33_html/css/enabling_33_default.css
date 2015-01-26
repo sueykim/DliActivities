@@ -2,8 +2,8 @@
 #activity_wrapper {
 	position:relative;
 	margin:-10px auto 0px auto;
-	width:910px; 
-	height:570px;
+	width:840px;/*910px; */
+	height:550px;
 	background: #f7f7f7; /* Old browsers */
 }
 #main{
@@ -76,9 +76,9 @@
 
 #contentEn{
 		position:absolute;
-	top:260px;
+	top:280px;  /*260px;*/
 	left:0px;
-		width:320px; 
+		width:307px; /*320px;*/
 	height:220px;
 	margin: 0px;
 }
@@ -112,7 +112,7 @@
 .video_button{
 	position:relative;
 	left:10px;
-	width:268px;
+	width:248px;
 	padding:15px 20px 15px 10px;
 	border-bottom:1px solid #999;
 	cursor:pointer;
@@ -133,7 +133,7 @@
 #videoContainer {
 	position: absolute;
 	left:0px;
-	top:10px;
+	top:30px; /*10px;*/
 	margin:0px;
 	padding:0px;
 	height: 240px;
@@ -172,9 +172,9 @@ background: #e6e6e6; /* Old browsers */
 
 #writing_area{
 	position:absolute;
-	top:10px;
-	left:340px;
-	width:539px;
+	top:30px; /*10px;*/
+	left:350px;
+	width:455px;/*539px;  */
 	height:400px;
 }
 
@@ -193,9 +193,9 @@ background: #e6e6e6; /* Old browsers */
 
 #brushHolder{
 	position:absolute;
-	top:430px;
+	top:450px;
 	left:340px;
-	width:539px;
+	width:455px; /*539px; */
 	height:50px;
 
 }
@@ -203,7 +203,7 @@ background: #e6e6e6; /* Old browsers */
 #brushSelection{
 	position:absolute;
 	top:9px;
-	left:50px;
+	left:10px;
 	width:275px;
 	height:32px;
 	background-image:url(../library/images/brushes.png);
@@ -241,7 +241,7 @@ background: #e6e6e6; /* Old browsers */
 #erase{
 	position:absolute;
 	top:11px;
-	left:350px;
+	left:320px;/*350px;*/
 	width:134px;
 	height:28px;
 	text-align:center;
@@ -251,7 +251,7 @@ background: #e6e6e6; /* Old browsers */
 }
 
 #playBtn {
-    top:210px;
+    top:230px;
     left:2px;
     width: 44px;
     height: 44px;
