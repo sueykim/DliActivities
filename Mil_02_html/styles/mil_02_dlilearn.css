@@ -210,7 +210,9 @@ html body {
 	left: 0px;
 	width: 840px;
 	height: 570px;
+	z-index:100;
 }
+
 
 #main {
 
