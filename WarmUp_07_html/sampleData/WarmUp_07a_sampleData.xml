@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <hs:content  target_language="Dari" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
   <hs:letters total="30">
      <hs:letter>
@@ -9,13 +9,13 @@
          <hs:desc><![CDATA[]]></hs:desc>
       </hs:letter>
      <hs:letter>
-         <hs:char>ب</hs:char>
+         <hs:char>B</hs:char>
          <!--<hs:char>B</hs:char>-->
          <hs:audio>ad_beard.mp3</hs:audio>
          <hs:name>bey</hs:name>
          <hs:desc><![CDATA[It represents the <b>b</b> sound in English, as in banana.]]></hs:desc>
-         <hs:example dir="rtl" aud="ad_beautiful.mp3" en="bey1"><![CDATA[آب ب]]></hs:example>
-         <hs:example dir="rtl" aud="ad_clothes.mp3" en="bey2"><![CDATA[باروت]]></hs:example>
+         <hs:example aud="ad_beautiful.mp3" en="bey1"><![CDATA[abcdabcd]]></hs:example>
+         <hs:example aud="ad_clothes.mp3" en="bey2"><![CDATA[abcdef]]></hs:example>
       </hs:letter>
      <hs:letter>
          <hs:char>د</hs:char>

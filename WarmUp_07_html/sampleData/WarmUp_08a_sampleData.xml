@@ -16,7 +16,6 @@
          <hs:final_image>alef_final.png</hs:final_image>
          <hs:example dir="rtl" audio="ad_beard.mp3" en_word="voice">alefd d d alef</hs:example>
          <hs:example dir="rtl" audio="ad_beautiful.mp3" en_word="load"><![CDATA[بار]]></hs:example>
-         <hs:example dir="rtl" audio="ad_clothes.mp3" en_word="weapon"><![CDATA[اسلحه]]></hs:example>
       </hs:letter>
      <hs:letter>
          <hs:char>be</hs:char>
@@ -27,7 +26,6 @@
          <hs:final_image>bey_final.png</hs:final_image>
          <hs:example dir="rtl" audio="ad_beautiful.mp3" en_word="water"><![CDATA[bey bey]]></hs:example>
          <hs:example dir="rtl" audio="ad_clothes.mp3" en_word="middle"><![CDATA[مابین]]></hs:example>
-         <hs:example dir="rtl" audio="ad_fat.mp3" en_word="gunpowder"><![CDATA[باروت]]></hs:example>
       </hs:letter>
 
      <hs:letter>
@@ -39,7 +37,6 @@
          <hs:final_image>tey_final.png</hs:final_image>
          <hs:example dir="rtl" audio="ad_clothes.mp3" en_word="hand"><![CDATA[دست]]></hs:example>
          <hs:example dir="rtl" audio="ad_fat.mp3" en_word="strong"><![CDATA[استوار]]></hs:example>
-         <hs:example dir="rtl" audio="ad_glasses.mp3" en_word="tank"><![CDATA[تانک]]></hs:example>
       </hs:letter>
      <hs:letter>
          <hs:char>ث</hs:char>
@@ -51,7 +48,6 @@
          <hs:final_image>sey_final.png</hs:final_image>
          <hs:example dir="rtl" audio="ad_fat.mp3" en_word="triangle"><![CDATA[مثلث]]></hs:example>
          <hs:example dir="rtl" audio="ad_glasses.mp3" en_word="example"><![CDATA[مثال]]></hs:example>
-         <hs:example dir="rtl" audio="ad_handsome.mp3" en_word="second"><![CDATA[ثانیه]]></hs:example>
       </hs:letter>
      <hs:letter>jee
          <hs:char>ج</hs:char>
@@ -63,7 +59,6 @@
          <hs:final_image>jeem_final.png</hs:final_image>
          <hs:example dir="rtl" audio="ad_glasses.mp3" en_word="five"><![CDATA[نج]]></hs:example>
          <hs:example dir="rtl" audio="ad_handsome.mp3" en_word="finger"><![CDATA[پنجه]]></hs:example>
-         <hs:example dir="rtl" audio="ad_man.mp3" en_word="war"><![CDATA[جنگ]]></hs:example>
       </hs:letter>
      <hs:letter>
          <hs:char>چ</hs:char>
@@ -75,7 +70,6 @@
          <hs:final_image>chey_final.png</hs:final_image>
          <hs:example dir="rtl" audio="ad_handsome.mp3" en_word="hollow"><![CDATA[پوچ]]></hs:example>
          <hs:example dir="rtl" audio="ad_man.mp3" en_word="flat tire"><![CDATA[نچر]]></hs:example>
-         <hs:example dir="rtl" audio="ad_mustache.mp3" en_word="four"><![CDATA[چهار]]></hs:example>
       </hs:letter>
      <hs:letter>
          <hs:char>ح</hs:char>
@@ -87,7 +81,6 @@
          <hs:final_image>hey_final.png</hs:final_image>
          <hs:example dir="rtl" audio="ad_man.mp3" en_word="penalty"><![CDATA[جریمهح]]></hs:example>
          <hs:example dir="rtl" audio="ad_mustache.mp3" en_word="spring"><![CDATA[بهحار]]></hs:example>
-         <hs:example dir="rtl" audio="ad_old.mp3" en_word="seven"><![CDATA[حهفت]]></hs:example>
       </hs:letter>
      <hs:letter>
          <hs:char>خ</hs:char>

@@ -210,6 +210,7 @@ body[mode="warmup_08a"] #idDesc{
     padding: 10px;
     height: 344px;
     overflow: auto;
+    direction: ltr;
 }
 
 #idRightCol{

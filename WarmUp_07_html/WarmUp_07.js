@@ -104,7 +104,8 @@ function loadLetter(index){
 	//Load fields
 	$("body").attr("audio", $(jItem.find("audio")).text())
 
-	if($(jItem.find("example")[0]).attr("dir").toLowerCase() == "rtl"){
+	if($(jItem.find("example")[0]).attr("dir") != undefined &&
+			$(jItem.find("example")[0]).attr("dir").toLowerCase() == "rtl"){
 		$("body").attr("dir", "rtl")
 	}else{
 		$("body").attr("dir", "ltr")
@@ -266,7 +267,7 @@ function parseXml(t_xml){
 	//Loop through all letters
 	$(t_xml).find("letter").each(function(l_i, l_v){
 		//Create letter for grid and load it
-		var jGridItemSnip = 	$($("#gridItemSnip").html())
+		var jGridItemSnip = $($("#gridItemSnip").html())
 		
 		if (isJapanese) {
 			jGridItemSnip.html(displayRubyTag($($(l_v).find("char")).text()))
@@ -274,15 +275,36 @@ function parseXml(t_xml){
 			jGridItemSnip.text($($(l_v).find("char")).text())
 		}
 		
-		jGridItemSnip.attr("onclick", "loadLetter(" + l_i + ")")
 		
+		if(jGridItemSnip.text().length == 0){
+			jGridItemSnip.attr("blankletter", "true")
+			jGridItemSnip.attr("visited", "true")
+		}else{
+			jGridItemSnip.attr("onclick", "loadLetter(" + l_i + ")")
+		}
+
 		$("#idCharGrid").append(jGridItemSnip)
 	})
 	
 	if($("body").attr("mode") == "warmup_07"
 			|| $("body").attr("mode") == "warmup_07a"){
-		loadLetter(0)
+		loadLetter(findFirstNonBlankLetterIndex())
 	}
 	$("body").attr("intro", "true")
 }
 
+function findFirstNonBlankLetterIndex(){
+	var index = -1
+	$("#idCharGrid > .gridItem").each(function(i,v){
+		if($(v).text().length > 0){
+			index = i
+			return false
+		}
+	})
+
+	if(index >= 0){
+		return index
+	}
+
+	alert("Error: All chars are blank")
+}
