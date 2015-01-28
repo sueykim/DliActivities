@@ -181,14 +181,21 @@ function playTheVideo(){
 	if(jItem != undefined){
 		var suffix = ""
 		
+		/*
 		if(jItem.find("phraseID").attr(languageId.substr(0,1) + "ms") == "true"){
-			suffix = languageId.substr(0,1) + "ms"
-		}else if(jItem.find("phraseID").attr("ams") == "true"){
-			suffix = "ams"
+				suffix = languageId.substr(0,1) + "ms"
+			}else if(jItem.find("phraseID").attr("ams") == "true"){
+				suffix = "ams"
 		}else if(jItem.find("phraseID").attr("frms") == "true"){
 			suffix = "frms"
 		}
-			
+		*/
+		jItem.find("phraseID").each(function() {
+			if ($(this.attributes)[0].value) {
+				suffix = $(this.attributes)[0].localName;
+			}
+		});
+		
 		var file_video = $(xml).find("gloss").attr("language_code")
 							+ jItem.find("phraseID").text()
 							+ "_" + suffix;
