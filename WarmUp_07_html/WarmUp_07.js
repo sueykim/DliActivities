@@ -71,7 +71,10 @@ var isJapanese = false;
 var disableHighlighting = false
 var jItem
 
+var startAct = 0    //// for mCustomScrollbar
 function loadLetter(index){ 
+	startAct++
+	
 	if($("body").attr("mode") == "warmup_08" 
 			|| $("body").attr("mode") == "warmup_08a"){
 		$("body").attr("intro", "false")
@@ -201,6 +204,11 @@ function loadLetter(index){
 		jExampleContainerSnip.attr("audio",audioText)
 	
 		$("#idExampleContainers").append(jExampleContainerSnip)
+		
+		if ($("body").attr("mode")== 'warmup_07a' && startAct != 1)  {     //// for mCustomScrollbar
+			$("#idDesc").mCustomScrollbar('destroy');
+			$("#idDesc").mCustomScrollbar();
+		}
 	})
 	
 	//Mark letter as being shown
