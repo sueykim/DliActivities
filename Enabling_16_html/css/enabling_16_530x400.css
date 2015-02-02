@@ -33,16 +33,16 @@ html, body {
 	left:0px;
 	/* width:850px; */
 	width:848px;
-	height: 400px;
+	height: 404px;
 	overflow:hidden;
 }
 #leftDiv {
 	position:relative;
 	margin:0px 10px 0px 10px;
 	padding:0px;
-	width:518px;
-	height: 400px;
-	background-image:url(../images/leftPanelBG.png);
+	width:534px;
+	height: 404px;
+	background-image:url(../images/leftPanelBG_534_404.png);
 	background-repeat:no-repeat;
 	float:left;
 	-webkit-border-radius:3px;
@@ -54,23 +54,23 @@ html, body {
 #imageHolder {
 	margin:0px;
 	padding:0px;
-	/* position:absolute; */
+	position:absolute;
 	width: 530px;
 	height: 400px;
-	left:69px;
-	top:0px;
+	left: 1px;
+	top:1px;
 	
 }
 #rightDiv {
 	position:relative;
 	margin:0px;
 	padding:0px;
-	width:273px;
-	height: 400px;
-	background-image:url(../images/rightPanelBG.png);
+	width:257px;
+	height: 404px;
+	background-image:url(../images/rightPanelBG_257_404.png);
 	background-repeat:no-repeat;
 	float:left;
-	background-size: 273px 400px;
+	background-size: 257px 404px;
 	-webkit-border-radius:3px;
 	-moz-border-radius:3px;
 	border-radius:3px;
@@ -100,7 +100,7 @@ html, body {
 	position:absolute;
 	width:196px;
 	height:52px;
-	left:41px;
+	left:30px;
 	top:12px;
 	cursor:pointer;
 	z-index:400;
@@ -111,7 +111,7 @@ html, body {
 	position:absolute;
 	width:196px;
 	height:52px;
-	left:41px;
+	left:30px;
 	top:12px;
 	background-image:url(../images/blank_btn.jpg);
 	background-repeat:no-repeat;
@@ -132,7 +132,7 @@ html, body {
 	position:absolute;
 	width:196px;
 	height:52px;
-	left:41px;
+	left:30px;
 	top:76px;
 	cursor:pointer;
 }
@@ -142,7 +142,7 @@ html, body {
 	position:absolute;
 	width:196px;
 	height:52px;
-	left:41px;
+	left:30px;
 	top:76px;
 }
 #totalRightNumber {
@@ -151,10 +151,10 @@ html, body {
 	position:absolute;
 	width:55px;
 	height:19px;
-	left: 182px;
-	top: 158px;
+	left: 172px;
+	top: 139px;
 	font-family:Arial, Helvetica, sans-serif;
-	font-size: 23px;
+	font-size: 20px;
 	color:#000000;
 }
 #toolBox {
@@ -162,9 +162,9 @@ html, body {
 	padding:0px;
 	position:absolute;
 	width:95px;
-	height: 108px;
-	left:91px;
-	top: 204px;
+	height: 91px;
+	left:83px;
+	top: 177px;
 }
 #setNumbers {
 	margin:0px;
@@ -172,7 +172,7 @@ html, body {
 	position:absolute;
 	width:196px;
 	height:52px;
-	left:41px;
+	left:30px;
 	top:283px;
 	display: none;
 }
@@ -272,7 +272,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	color:#444444;
 	top: 4px;
 	width: 780px;
-	height: 48px;
+	height: 40px;
 }
 .setCompleted {
 	margin: 30px 0px 0px 15px;
@@ -297,7 +297,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	/* width: 196px !important; */
 	width: 230px !important;
 	text-align: center;
-	margin-left: 10px;!important;
+	margin-left: -1px;!important;
 	margin-right: -13px !important;
 	font-size:18px;
 	font-weight:bold;
@@ -306,7 +306,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	
 	/* */
 	background-color: transparent;
-	left: 7px;
+	left: 0px;
 	margin-top: 0px;
 	
 	/*border: solid 1px #969696;*/
