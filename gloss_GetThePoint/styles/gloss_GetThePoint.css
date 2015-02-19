@@ -15,24 +15,39 @@ body{
 	overflow-x: hidden;
     font-family: Arial;
 	margin-left: 25px;
+	margin-top: 0px;
 }
 
 #answersToolbar > #audioHintsBtn,
+body:not([mode='VGP']) #collapseIntroBtn,
 #feedback:not([mode='reason']) #audioPlayerContainer2,
 #flashAudioPlayerDiv, #flashAudioPlayerDiv2,
-body:not([mode='VGP']) #videoContainer,
+body:not([mode='VGP']) #videoContainerContainer,
 #feedback[mode='instructions'][page='tl'] #en_instructions,
 #feedback[mode='instructions'][page='en'] #tl_instructions,
 body:not([mode='SUM']) #question,
+body[mode='SUM'] #introHeader,
 #feedback[mode='teachersNote'] #en_instructions,
 #feedback[mode='teachersNote'] #tl_instructions,
-body:not([mode='LGP']) #flashAudioPlayerDiv{
+body:not([mode='LGP']) #flashAudioPlayerDiv,
+.hidden{
     display: none;
 }
 
 body[mode='VGP'] #intro{
 	width: 480px;
-	float: left;
+	
+}
+
+
+body[mode='VGP'][show_intro="true"] #videoContainerContainer{
+    left: 0px;
+	
+}
+
+body[mode='VGP'][show_intro="true"] #intro{
+    opacity: 1;
+
 }
 
 #snippets{
@@ -146,8 +161,34 @@ body[mode='VGP'] #intro{
     top: 0px;
 }
 
+
+body[mode='VGP'] #intro{ 
+    position: absolute;
+    top: 0px;
+    left: 340px;
+    opacity: 0;
+}
+
 #intro{    
     /* background-color: green; */
+    /* position: absolute; */
+    /* display: inline-block; */
+    /* vertical-align: top; */
+    /* top: 0px; */
+    /* left: 340px; */
+    /* transition: opacity 1s; */
+    /* -webkit-transition: opacity 1s; */
+    opacity: 1; 
+}
+
+body[ready='true'] #intro{
+    transition: opacity 1s; 
+    -webkit-transition: opacity 1s; 
+}
+
+body[ready='true'] #videoContainerContainer{
+    transition: left 1s; 
+    -webkit-transition: left 1s;
 }
 
 #question{
@@ -155,7 +196,7 @@ body[mode='VGP'] #intro{
     clear: both;
     border: 0px solid black;
     margin-bottom: 10px;
-    width: 97%;
+    width: 806px;
     max-height: 283px;
     overflow: auto;
     border-radius: 2px;
@@ -182,10 +223,10 @@ body[mode='VGP'] #intro{
 #answersToolbar{
     /* background-color: rgb(130, 147, 162); */
     height: 51px;
-    width: auto;
-    margin-left: auto;
+    width: 95%;
+    /* margin-left: auto; */
     clear: both;
-    margin-right: auto;
+    /* margin-right: auto; */
     text-align: center;
 }
 
@@ -316,12 +357,30 @@ body[mode='VGP'] #intro{
     left: 361px;
 }
 
-#videoContainer{
+#videoContainerContainer{
     background-color: lavender;
     width: 300px;
     height: 217px;
-    float: left;
-    margin-right: 7px;
+    /* float: left; */
+    /* margin-right: 7px; */
+    position: relative;
+    /* display: inline-block; */
+    vertical-align: top;
+ /* For Safari 3.1 to 6.0 */
+    /* transition: left 1s; */
+    left: 242px;
+    z-index: 10;
+    /* -webkit-transition: left 1s; */
+}
+
+#videoContainer{
+    /* background-color: blue; */
+    width: 300px;
+    height: 217px;
+    /* vertical-align: top; */
+    /* left: 242px; */
+    z-index: 10;
+    position: absolute;
 }
 
 #tl_instructions,
@@ -358,7 +417,7 @@ body[mode='VGP'] #intro{
 	background-color: #97A1CC;
 }
 
-#videoContainer > embed{
+#videoContainerContainer embed{
 	width: 100%;
 	height: 100%;
 }
@@ -369,8 +428,16 @@ body[mode='VGP'] #intro{
     margin-bottom: 15px;
 }
 
+body[mode='VGP'] #introContainer{
+	height: 218px;
+}
+
 #introContainer{
-	width:95%;
+	width: 800px;
+	/* background-color: green; */
+	/* text-align: center; */
+	position: relative;
+	height: 105px;
 }
 
 #titleLabel{
@@ -394,6 +461,7 @@ body[mode='VGP'] #intro{
     height: 279px;
     margin-left: 15px;
     margin-top: 5px;
+    margin-right: 10px;
 }
 
 #clickGuard{
@@ -405,6 +473,7 @@ body[mode='VGP'] #intro{
 	top: 0px;
 	left: 0px;
 	opacity: .5;
+	z-index: 90;
 }
 
 #resetBtn:hover{
@@ -422,4 +491,60 @@ body[mode='VGP'] #intro{
 
 #typeText[state="intro"]{
 	color:darkgrey;
+}
+
+.answerLabel{
+	color:grey;
+}
+
+#introHeader{
+    color: grey;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+#collapseIntroBtn:hover{
+    width: 30px;
+	
+    height: 30px;
+    border: 2px solid grey;
+    border-radius: 2px;
+}
+
+#collapseIntroBtn{
+    background-image: url('../png/contentCollapseIcon.png');
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    left: 821px;
+    -webkit-transition: width .3s, height .3s, border-color .3s; /* For Safari 3.1 to 6.0 */
+    transition: width .3s, height .3s, border-color .3s;
+    background-size: contain;
+    border: 2px solid white;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px grey;
+    z-index: 20;
+}
+
+#introContent{
+}
+
+#playbtn:hover{
+    background-image: url('../../common/img/btn_play_on.png');
+}
+
+#playbtn{
+    background-image: url('../../common/img/btn_play_off.png');
+    background-repeat: no-repeat;
+    height: 52px;
+    vertical-align: middle;
+    /* background-position-x: 120px; */
+    /* background-position-y: 82px; */
+    /* background-color: red; */
+    width: 54px;
+    left: 120px;
+    top: 82px;;
+    position: absolute;
+    cursor: pointer;
+    z-index: 25;
 }

@@ -22,6 +22,7 @@ $(document).ready(function() {
 var jQREC;
 var disableSubDirectories = false
 var audioVideoMediaDir = ""
+var filename
 
 function parseXml(t_xml){
 	//Change to text and back to xml
@@ -68,14 +69,14 @@ function parseXml(t_xml){
 			
 			break;
 		case "VGP":
-			var filename = $(jQREC.find("> VIDEO_CLIP")[0]).text()
+			filename = $(jQREC.find("> VIDEO_CLIP")[0]).text()
 			
 			if(extractFileExt(filename) == "flv"){
 				forceVidType = "flash"
 			}
 			
-			loadVideoNoPlayYet("../gloss_GetThePoint/" + mediaPath + audioVideoMediaDir
-							, removeFileExt(filename))
+			//loadVideoNoPlayYet("../gloss_GetThePoint/" + mediaPath + audioVideoMediaDir
+			//				, removeFileExt(filename))
 
 			if(jQREC.find("> QText").text().length == 0){
 				$("#transcriptBtn").css("display", "none")
@@ -85,7 +86,7 @@ function parseXml(t_xml){
 	}
 	
 	//first line (to the right of the video window)
-	$("#intro").html(jQREC.find("> NOTE").text())
+	$("#introContent").html(jQREC.find("> NOTE").text())
 	
 	//Question text (SUM) - Transcript text (LGP)
 	$("#question").html(jQREC.find("> QText").text())
@@ -95,6 +96,13 @@ function parseXml(t_xml){
 	if(jQREC.find("> POP_UP").text().length == 0){
 		$("#teachersNoteBtn").css("display", "none")
 	}
+
+	setTimeout(setReady, 1000);
+}
+
+
+function setReady(){
+	$("body").attr("ready", "true")
 }
 
 var isJapanese = false
@@ -130,6 +138,11 @@ function generateStimulus(){
 				}else{
 					output += "<hr/>"
 				}
+				
+				var jAnswerLabel = $($("#answerLabel_snippet").html())
+				jAnswerLabel.text(jAnswerLabel.text() + (reasonIndex + 1))
+
+				output += $('<div>').append(jAnswerLabel).html()
 				
 				output += $('<div>').html($(v).text()).html()
 				break;
@@ -250,4 +263,21 @@ function startTyping(){
 		$("#typeText").text("")
 		$("#typeText").attr("state", "started")
 	}
+}
+
+function collapseIntroBtn_clicked(){
+	if($("body").attr("show_intro") != undefined &&
+			$("body").attr("show_intro") == "true"){
+		$("body").attr("show_intro","false")
+	}else{
+		$("body").attr("show_intro","true")
+	}
+	
+	//alert('clicked')
+}
+
+function playVideo(){
+	loadVideoNoPlayYet("../gloss_GetThePoint/" + mediaPath + audioVideoMediaDir
+					, removeFileExt(filename))
+	$("#playbtn").attr("class", "hidden")
 }

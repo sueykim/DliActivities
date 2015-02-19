@@ -35,13 +35,15 @@
 	<body>
 		<noscript>Activity cannot load. No Javascript support detected.</noscript>
 
-		<div id="main" class="noSelect">
+		<div id="main">
 			<div id="toolbar">
 				<div id="titleLabel"></div>
 				<div id="instructionsBtn" onclick="showFeedback('instructions')"></div>
 				<div id="teachersNoteBtn" onclick="showFeedback('teachersNote')"></div>
 			</div>
 			
+			<div id="collapseIntroBtn" onclick="collapseIntroBtn_clicked()"></div>
+					
 			<div id="audioPlayerContainer">
 				<div id="flashAudioPlayerDiv"></div>
 				<div id="htmlAudioPlayerDiv"></div>
@@ -49,8 +51,15 @@
 			</div>
 			
 			<div id="introContainer">
-				<div id="videoContainer"></div>
-				<div id="intro"></div>
+				<div id="videoContainerContainer">
+					<div id="playbtn" onclick="playVideo()"></div>
+					<div id="videoContainer">
+					</div>
+				</div>
+				<div id="intro">
+					<div id="introHeader">Additional Notes:</div>
+					<div id="introContent"></div>
+				</div>
 			</div>
 			
 			<div id="question"></div>
@@ -92,6 +101,9 @@
 		<div id="snippets">	
 			<div id="reasonBtn_snippet">
 				<div class="reasonBtn">Reason</div>
+			</div>
+			<div id="answerLabel_snippet">
+				<div class="answerLabel">Answer #</div>
 			</div>
 		</div>	
 	</body>
