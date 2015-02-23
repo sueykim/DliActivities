@@ -301,6 +301,14 @@ body[mode='warmup_08a'] .highlight{
 	cursor: pointer;
 }
 
+.gridItem[blankletter='true']{
+    cursor: default;
+}
+
+.gridItem[visited='true'][blankletter='true']{
+	background-color: #E6E6E6;
+}
+
 .gridItem[visited='true']{
 	background-color: #A8A5A5;
 }

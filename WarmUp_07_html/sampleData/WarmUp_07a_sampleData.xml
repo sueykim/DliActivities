@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hs:content  target_language="Dari" xmlns:hs="http://fieldsupport.dliflc.edu/products/headstart">
   <hs:letters total="30">
+      <hs:letter>
+         <hs:char>د</hs:char>
+         <!--<hs:char>C</hs:char>-->
+         <hs:audio>ad_beautiful.mp3</hs:audio>
+         <hs:name>daal</hs:name>
+         <hs:desc><![CDATA[The letter <b>daal</b> is similar to the English sound <b>d</b>, as in dog.
+                  The letter <b>daal</b> is similar to the English sound <b>d</b>, as in dog.
+                  The letter <b>daal</b> is similar to the English sound <b>d</b>, as in dog.
+                  The letter <b>daal</b> is similar to the English sound <b>d</b>, as in dog.
+                  The letter <b>daal</b> is similar to the English sound <b>d</b>, as in dog.
+                  The letter <b>daal</b> is similar to the English sound <b>d</b>, as in dog.
+                  The letter <b>daal</b> is similar to the English sound <b>d</b>, as in dog.
+                  The letter <b>daal</b> is similar to the English sound <b>d</b>, as in dog.]]></hs:desc>
+         <hs:example dir="rtl" aud="ad_clothes.mp3" en="daal1"><![CDATA[باد]]></hs:example>
+         <hs:example dir="rtl" aud="ad_fat.mp3" en="daal2"><![CDATA[گدا]]></hs:example>
+      </hs:letter>
      <hs:letter>
          <!--<hs:char>ا</hs:char>-->
          <hs:char></hs:char>
@@ -8,26 +24,36 @@
          <hs:name>alef</hs:name>
          <hs:desc><![CDATA[]]></hs:desc>
       </hs:letter>
+
      <hs:letter>
          <hs:char>B</hs:char>
          <!--<hs:char>B</hs:char>-->
          <hs:audio>ad_beard.mp3</hs:audio>
          <hs:name>bey</hs:name>
-         <hs:desc><![CDATA[It represents the <b>b</b> sound in English, as in banana.]]></hs:desc>
+         <hs:desc><![CDATA[It represents the <b>b</b> sound in English, as in banana.
+                       It represents the <b>b</b> sound in English, as in banana.
+                       It represents the <b>b</b> sound in English, as in banana.
+                       It represents the <b>b</b> sound in English, as in banana.
+                       It represents the <b>b</b> sound in English, as in banana.
+                       It represents the <b>b</b> sound in English, as in banana.
+                       It represents the <b>b</b> sound in English, as in banana.
+                       It represents the <b>b</b> sound in English, as in banana.
+                       It represents the <b>b</b> sound in English, as in banana.
+                       It represents the <b>b</b> sound in English, as in banana.
+                       It represents the <b>b</b> sound in English, as in banana.
+                       It represents the <b>b</b> sound in English, as in banana.
+                       It represents the <b>b</b> sound in English, as in banana.
+                       It represents the <b>b</b> sound in English, as in banana.
+                       It represents the <b>b</b> sound in English, as in banana.
+                       It represents the <b>b</b> sound in English, as in banana.
+                       It represents the <b>b</b> sound in English, as in banana.
+                       It represents the <b>b</b> sound in English, as in banana.
+                       It represents the <b>b</b> sound in English, as in banana.]]></hs:desc>
          <hs:example aud="ad_beautiful.mp3" en="bey1"><![CDATA[abcdabcd]]></hs:example>
          <hs:example aud="ad_clothes.mp3" en="bey2"><![CDATA[abcdef]]></hs:example>
       </hs:letter>
      <hs:letter>
-         <hs:char>د</hs:char>
-         <!--<hs:char>C</hs:char>-->
-         <hs:audio>ad_beautiful.mp3</hs:audio>
-         <hs:name>daal</hs:name>
-         <hs:desc><![CDATA[The letter <b>daal</b> is similar to the English sound <b>d</b>, as in dog.]]></hs:desc>
-         <hs:example dir="rtl" aud="ad_clothes.mp3" en="daal1"><![CDATA[باد]]></hs:example>
-         <hs:example dir="rtl" aud="ad_fat.mp3" en="daal2"><![CDATA[گدا]]></hs:example>
-      </hs:letter>
-     <hs:letter>
-         <hs:char>ف</hs:char>
+         <hs:char></hs:char>
          <!--<hs:char>D</hs:char>-->
          <hs:audio>ad_clothes.mp3</hs:audio>
          <hs:name>fey</hs:name>
