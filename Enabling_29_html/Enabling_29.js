@@ -164,7 +164,7 @@ function showFeedback(value, textInput){
 			if($("#videoContainer[video_file]").length > 0){
 				loadVideo(mediaPath, 
 						$("#videoContainer[video_file]").attr("video_file"), 
-						"Enabling_29");
+						"Enabling_29_html");
 				
 			}
 			break;

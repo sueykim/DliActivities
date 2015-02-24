@@ -10,18 +10,18 @@ function testVideoSupport(){
 var forceVidType = "";
 
 // Load video but not play yet
-function loadVideoNoPlayYet(path, videoName, activityName){
-	 loadVideo(path, videoName, activityName, false);
+function loadVideoNoPlayYet(path, videoName, activityDirName, disableSubDirectories){
+	 loadVideo(path, videoName, activityDirName, false, undefined, disableSubDirectories);
 }
 
-function loadVideo(path, videoName, activityName, play, gloss){
+function loadVideo(path, videoName, activityDirName, play, gloss, disableSubDirectories){
 	if(play == undefined){
 		play = true;
 	}
 	
 	var flashVideoPath = path;
-	if(activityName != undefined){
-		flashVideoPath = "../" + activityName + "_html/" + path;
+	if(activityDirName != undefined){
+		flashVideoPath = "../" + activityDirName + "/" + path;
 	}
 	
 	if(forceVidType.length > 0){
@@ -32,7 +32,7 @@ function loadVideo(path, videoName, activityName, play, gloss){
 					alert("Flash video not supported");	
 					break;
 				}else{			
-					loadFlashVideo("videoContainer", flashVideoPath, videoName);
+					loadFlashVideo("videoContainer", flashVideoPath, videoName, disableSubDirectories);
 				}
 				
 				break;
@@ -209,9 +209,9 @@ var videoFormats = {
 						}  
 					};
 
-function loadHTMLVideo(containerTagId, mediaPath, videoName, formatsArr, gloss){
+function loadHTMLVideo(containerTagId, mediaPath, videoName, formatsArr, gloss, disableSubDirectories){
         if(gloss == true)
-        	var videoTag = 	'<video id="videoTag" controls="controls" width="280" height="212"> ';
+        	var videoTag = 	'<video id="videoTag" controls="controls" > ';
         else
 	var videoTag = 	'<video id="videoTag"> ';
 	
@@ -227,10 +227,17 @@ function loadHTMLVideo(containerTagId, mediaPath, videoName, formatsArr, gloss){
 }
 
 
-function loadFlashVideo(containerTagId, mediaPath, videoName){
+function loadFlashVideo(containerTagId, mediaPath, videoName, disableSubDirectories){
+	var fileExt = "flv"
+
+	if(disableSubDirectories != undefined 
+			&& disableSubDirectories == true ){
+		fileExt = "./"
+	}
+
 	var flashEmbed = '<embed align="middle" wmode="transparent" src="../common/VideoCaption.swf" ' + 
 			'flashvars="videoSource=' + videoName + '.flv&amp;' + 
-			'mediaFilePath=' + mediaPath + '&amp;fileExt=flv&amp;minimal=true" ' +
+			'mediaFilePath=' + mediaPath + '&amp;fileExt=' + fileExt + '&amp;minimal=true" ' +
 			'id="VideoCaption" quality="high" bgcolor="#869ca7" name="VideoCaption" ' +
 			'allowscriptaccess="sameDomain" pluginspage="http://www.adobe.com/go/getflashplayer" ' + 
 			'type="application/x-shockwave-flash"> ';

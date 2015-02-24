@@ -415,7 +415,7 @@ function activityVideoPlay(){
 	showClickGuard();
 	
 	var file_video = $(jSection.find("video")).text();
-	loadVideoNoPlayYet(mediaPath, removeFileExt(file_video), "Enabling_07");
+	loadVideoNoPlayYet(mediaPath, removeFileExt(file_video), "Enabling_07_html");
 	
 	document.getElementById('videoTag').addEventListener('ended', activityVideoCompleted);
 	document.getElementById('videoTag').play();

@@ -302,7 +302,7 @@ function startUpNoWebGL(){
 	$("#canvas").css("display", "none")
 	var file_video = "video.mp4";
 	//alert(mediaPath)
-	loadVideoNoPlayYet("sampleData/", removeFileExt(file_video), "DiceGame");
+	loadVideoNoPlayYet("sampleData/", removeFileExt(file_video), "DiceGame_html");
 	document.getElementById('videoTag').addEventListener('ended', activityVideoCompleted);
 
 	//Check that the ended event was in fact set

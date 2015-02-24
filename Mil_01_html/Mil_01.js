@@ -147,7 +147,7 @@ function execute_select_item(tally){
 }
 function playTheVideo(){
 	var file_video = jItem.find("file_video").text();
-	loadVideo(mediaPath, removeFileExt(file_video), "Mil_01");
+	loadVideo(mediaPath, removeFileExt(file_video), "Mil_01_html");
 }
 
 var jItem;
@@ -155,7 +155,7 @@ var jItem;
 function activityVideoPlay(){
 	if(jItem != undefined){
 		var file_video = jItem.find("file_video").text();
-		loadVideo(mediaPath, removeFileExt(file_video), "Mil_01");
+		loadVideo(mediaPath, removeFileExt(file_video), "Mil_01_html");
 	}
 }
 var numItems 

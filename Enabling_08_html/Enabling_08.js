@@ -489,7 +489,7 @@ function activityVideoPlay(){
 	showClickGuard();
 	
 	var file_video = $(jSession.find("video")).text();
-	loadVideoNoPlayYet(mediaPath, removeFileExt(file_video), "Enabling_08");
+	loadVideoNoPlayYet(mediaPath, removeFileExt(file_video), "Enabling_08_html");
 	
 	document.getElementById('videoTag').addEventListener('ended', activityVideoCompleted);
 	document.getElementById('videoTag').play();
