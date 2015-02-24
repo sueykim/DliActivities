@@ -252,6 +252,8 @@ function closeFeedback(){
 	$("#tl_instructions").html("");
 
 	$("#clickGuard").css("display","none");
+
+	$("#audioPlayer2")[0].pause()
 }
 
 function resetTextArea(){
@@ -277,7 +279,16 @@ function collapseIntroBtn_clicked(){
 }
 
 function playVideo(){
-	loadVideoNoPlayYet("../gloss_GetThePoint/" + mediaPath + audioVideoMediaDir
-					, removeFileExt(filename))
+	var activityDirName = "gloss_GetThePoint"
+
+	if(params['mediaAbsolutePath'] != undefined){
+		activityDirName = undefined
+	}
+
+	loadVideoNoPlayYet(mediaPath + audioVideoMediaDir
+					, removeFileExt(filename)
+					, activityDirName
+					,disableSubDirectories)
+					
 	$("#playbtn").attr("class", "hidden")
 }

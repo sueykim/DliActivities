@@ -26,6 +26,7 @@ body:not([mode='VGP']) #videoContainerContainer,
 #feedback[mode='instructions'][page='tl'] #en_instructions,
 #feedback[mode='instructions'][page='en'] #tl_instructions,
 body:not([mode='SUM']) #question,
+body[mode='SUM'] #transcriptBtn,
 body[mode='SUM'] #introHeader,
 #feedback[mode='teachersNote'] #en_instructions,
 #feedback[mode='teachersNote'] #tl_instructions,
@@ -358,7 +359,7 @@ body[ready='true'] #videoContainerContainer{
 }
 
 #videoContainerContainer{
-    background-color: lavender;
+    background-color: rgb(144, 144, 144);
     width: 300px;
     height: 217px;
     /* float: left; */
@@ -370,6 +371,7 @@ body[ready='true'] #videoContainerContainer{
     /* transition: left 1s; */
     left: 242px;
     z-index: 10;
+    border-radius: 2px;
     /* -webkit-transition: left 1s; */
 }
 
@@ -437,7 +439,7 @@ body[mode='VGP'] #introContainer{
 	/* background-color: green; */
 	/* text-align: center; */
 	position: relative;
-	height: 105px;
+	/* height: 105px; */
 }
 
 #titleLabel{
@@ -448,13 +450,15 @@ body[mode='VGP'] #introContainer{
 #audioPlayerContainer2{
     /* background-color: lightseagreen; */
     width: 306px;
-    height: 32px;
+    height: 39px;
     /* position: absolute; */
-    bottom: 12px;
+    bottom: 14px;
+    margin-top: 5px;
+    margin-left: 14px;
 }
 
 #audioPlayer2{
-	background-color: white;
+	/* background-color: white; */
 }
 
 #feedbackTextContainer{
@@ -501,6 +505,7 @@ body[mode='VGP'] #introContainer{
     color: grey;
     font-size: 17px;
     margin-bottom: 5px;
+    display: none;
 }
 
 #collapseIntroBtn:hover{
