@@ -7,7 +7,7 @@ $(document).ready(function () {
 
 	cssFilename = "styles/WarmUp_02_default.css";
 	
-	// Values from URL parameters or default values for testing one more
+	// Values from URL parameters or default values for testing
 	var statusParameters = getPassedParameters();
 	if (!statusParameters) {
 		mediaPath 	= "sampleData/";
