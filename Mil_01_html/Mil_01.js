@@ -166,6 +166,8 @@ var answerAttemptsNum = 0;
 
 // To display ruby tag
 var isJapanese = false;
+//to make Hindi font larger
+var isHindi = false;
 
 function parseXml(t_xml){
 	var engHtml = "";
@@ -177,6 +179,9 @@ function parseXml(t_xml){
 	
 	// To display ruby tag
 	isJapanese = $(xml).find("content").attr("target_language") == "Japanese";
+	
+	//to make Hindi letters bigger
+	isHindi = $(xml).find("content").attr("target_language") == "Hindi";
 	
 	$(xml).find("item").each(function(){
 			engHtml = engHtml + ' <li onclick="listItemSelected(this, event)" class="ui-widget-content enw_li">' +
@@ -192,11 +197,15 @@ function parseXml(t_xml){
 			if($(this).find("lang_tl").text() == ""){
 				disableTranslation();
 			}else{
-				//transHtml = transHtml + ' <li class="ui-widget-content">' +
-				//		$(this).find("lang_tl").text() + '</li>';					
 				if (!isJapanese) {
-				transHtml = transHtml + ' <li onclick="listItemSelected(this, event)" class="ui-widget-content">' +
+				  if(isHindi){ //to make font larger
+                                     transHtml= transHtml + ' <li onclick="listItemSelected(this, event)" class="ui-widget-content" style="font-size:16px;">' +
 						$(this).find("lang_tl").text() + '</li>';
+				  }
+				  else{
+                                    transHtml = transHtml + ' <li onclick="listItemSelected(this, event)" class="ui-widget-content">' +
+						$(this).find("lang_tl").text() + '</li>';
+                                  }
 			}
 				else {
 					// To display ruby tag
