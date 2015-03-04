@@ -48,6 +48,8 @@ var hw_qtext="";
 
 // To display ruby tag
 var isJapanese = false;
+//to make Hindi font larger
+var isHindi = false;
 
 // For homework
 String.prototype.format = function () {
@@ -61,7 +63,9 @@ String.prototype.format = function () {
 function parseXml(t_xml){
 	// To display ruby tag
 	isJapanese = $(xml).find("content").attr("target_language") == "Japanese";
-	
+	//to make Hindi letters bigger
+        isHindi = $(xml).find("content").attr("target_language") == "Hindi";
+        
 	numItems = $(xml).find("item").length;
 	numSets = Math.ceil(numItems/3);
 	// true for homework and undefined for regular
@@ -152,8 +156,12 @@ function loadSet(value){
 		if (!isJapanese) {
 			if (TLdir == "rtl")
 				$("#ENtext" + i).html('<div style="width:95%;padding-right:7px;" dir="' + TLdir + '">' + TLtextAry[a] + '</div>');
-			else
-				$("#ENtext" + i).html(TLtextAry[a]);
+			else {
+			  if (isHindi)
+                            $("#ENtext" + i).html('<div style="font-size:14pt;">' + TLtextAry[a] + '</div>');
+			  else
+                            $("#ENtext" + i).html(TLtextAry[a]);
+			}
 		}
 		else {
 			// To display ruby tag
