@@ -87,9 +87,17 @@ function parseXml(t_xml){
 	
 	//first line (to the right of the video window)
 	$("#introContent").html(jQREC.find("> NOTE").text())
+
+	if(jQREC.find("> NOTE").attr("dir") == "rtl"){
+		$("#introContent").attr("dir", "rtl")
+	}
 	
 	//Question text (SUM) - Transcript text (LGP)
 	$("#question").html(jQREC.find("> QText").text())
+
+	if(jQREC.find("> QText").attr("dir") == "rtl"){
+		$("#question").attr("dir", "rtl")
+	}
 	
 	setTimeout(function(){showFeedback("instructions")}, 1000)
 
@@ -172,7 +180,10 @@ function showFeedback(value, textInput){
 	$("#feedbackBtn").text("X");
 	$("#feedbackBtn").show();
 	$('#feedback').attr("mode","")
-	
+	$("#feedbackText").attr("dir", "ltr")
+	$("#tl_instructions").attr("dir", "ltr")
+
+
 	var text = "";
 	if (!isJapanese) {
 		text = textInput;
@@ -187,6 +198,11 @@ function showFeedback(value, textInput){
 			$("#feedbackHeader").html("Teacher's Note");
 			$('#feedback').attr("mode","teachersNote")
 			$("#feedbackText").html(jQREC.find("> POP_UP").text())
+
+			if(jQREC.find("> POP_UP").attr("dir") == "rtl"){
+				$("#feedbackText").attr("dir", "rtl")
+			}
+
 			break;
 		case "instructions":
 			$("#feedbackHeader").html("Instructions");
@@ -194,17 +210,32 @@ function showFeedback(value, textInput){
 			setFeedbackPage("tl")
 			$("#feedbackText").html("<p class='centerInstructionSwitch'>(Click text to switch language)</p>")
 			$("#tl_instructions").html(jQREC.find("> FL_INST").text())
+
+			if(jQREC.find("> FL_INST").attr("dir") == "rtl"){
+				$("#tl_instructions").attr("dir", "rtl")
+			}
+
 			$("#en_instructions").html(jQREC.find("> XL_INST").text())
 			break;
 		case "guidelines":
 			$("#feedbackHeader").html("Guidelines");
 			$('#feedback').attr("mode","guidelines")
 			$("#feedbackText").html(jQREC.find("> AID").text())
+
+			if(jQREC.find("> AID").attr("dir") == "rtl"){
+				$("#feedbackText").attr("dir", "rtl")
+			}
+
 			break;
 		case "reason":
 			$("#feedbackHeader").html("Reason");
 			$('#feedback').attr("mode","reason")
 			$("#feedbackText").html($(jQREC.find("> FB")[textInput]).text())
+
+			
+			if($(jQREC.find("> FB")[textInput]).attr("dir") == "rtl"){
+				$("#feedbackText").attr("dir", "rtl")
+			}
 			
 			if(jQREC.find("> AUD_FB")[textInput] != undefined){
 				var file_audio = $(jQREC.find("> AUD_FB")[textInput]).text()
@@ -221,6 +252,11 @@ function showFeedback(value, textInput){
 			$("#feedbackHeader").html("Transcript");
 			$('#feedback').attr("mode","transcript")
 			$("#feedbackText").html(jQREC.find("> QText").text())
+
+			if(jQREC.find("> QText").attr("dir") == "rtl"){
+				$("#feedbackText").attr("dir", "rtl")
+			}
+			
 			break;
 	}
 
