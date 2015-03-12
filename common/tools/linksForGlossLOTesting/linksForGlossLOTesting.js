@@ -1,4 +1,6 @@
 var glossLOs_URL = "/glossLOs/"
+var glossLOs_Content_URL_prefix = "https://gloss.dliflc.edu/products/gloss/"
+
 $(document).ready(function() {
 
 
@@ -20,6 +22,7 @@ function ajax_error(jqXHR, textStatus, errorThrown){
 
 var LO_filename_Arr = []
 var LO_filename 
+var max = 0
 
 
 function glossLOIndex_result(t_text){
@@ -30,7 +33,7 @@ function glossLOIndex_result(t_text){
 	  LO_filename_Arr.push(myArray[1])
 	}
     
-    alert("Done parsing index page")
+    console.log("Done parsing index page")
 
 	for(i=0; i< LO_filename_Arr.length ; i++){
 		LO_filename = LO_filename_Arr[i]
@@ -43,6 +46,9 @@ function glossLOIndex_result(t_text){
 				success:  glossLO_result,
 				error:ajax_error
 			});
+		if(max > 0 && i == max){
+			break
+		} 
 	}
 
 
@@ -54,8 +60,8 @@ var outputPrefix = "gloss_GetThePoint.html?mediaAbsolutePath=true&audioVideoMedi
 function glossLO_result(t_xml){
 	var stepIndex=0
 
-	$(t_xml).find("QREC > A_Type").each(function(i,v){
-		var A_Type = $(v).text()
+	$(t_xml).find("QREC").each(function(i,v){
+		var A_Type = $(v).find("> A_Type").text()
 
 		switch(A_Type){
 			case "SUM":
@@ -64,7 +70,8 @@ function glossLO_result(t_xml){
 				
 				$("body").append("<a href='" 
 									+ outputPrefix
-									+ "&mediaPath=" + glossLOs_URL
+									+ "&mediaPath=" + glossLOs_Content_URL_prefix
+									+  LO_filename.substring(0,LO_filename.length - 4) + "/" 
 									+ "&xmlFilename=" + glossLOs_URL + LO_filename 
 									+ "&stepIndex=" + stepIndex
 									+ "'>" 
@@ -72,6 +79,9 @@ function glossLO_result(t_xml){
 									+ A_Type + " - "
 									+ LO_filename
 									+ "</a><br />\n")
+
+				console.log(new XMLSerializer().serializeToString(v))
+
 				break;
 		}
 
