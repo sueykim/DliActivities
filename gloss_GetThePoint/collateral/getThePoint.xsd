@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="DB">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="QREC"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QREC">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="A_Type"/>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element ref="ACTY_DESCRIPTION"/>
+          <xs:element ref="AID"/>
+          <xs:element ref="AUD_FB"/>
+          <xs:element ref="AUD_STIMULUS"/>
+          <xs:element ref="DEV_COMMENT"/>
+          <xs:element ref="FB"/>
+          <xs:element ref="FL_INST"/>
+          <xs:element ref="NOTE"/>
+          <xs:element ref="NUM_Q"/>
+          <xs:element ref="POP_UP"/>
+          <xs:element ref="PREP_AUD"/>
+          <xs:element ref="PREP_TEXT"/>
+          <xs:element ref="QText"/>
+          <xs:element ref="STIMULUS"/>
+          <xs:element ref="TECH_INST"/>
+          <xs:element ref="UPDATED"/>
+          <xs:element ref="VIDEO_CLIP"/>
+          <xs:element ref="XL_INST"/>
+        </xs:choice>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="OBJECTIVES"/>
+          <xs:element ref="TIME_OF_TASK"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="on" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="A_Type" type="xs:NCName"/>
+  <xs:element name="ACTY_DESCRIPTION">
+    <xs:complexType mixed="true">
+      <xs:attribute name="dir" type="xs:NCName"/>
+      <xs:attribute name="esbox" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AID">
+    <xs:complexType mixed="true">
+      <xs:attribute name="dir" type="xs:NCName"/>
+      <xs:attribute name="esbox" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AUD_FB" type="xs:string"/>
+  <xs:element name="AUD_STIMULUS" type="xs:string"/>
+  <xs:element name="DEV_COMMENT">
+    <xs:complexType mixed="true">
+      <xs:attribute name="dir" type="xs:NCName"/>
+      <xs:attribute name="esbox" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FB">
+    <xs:complexType mixed="true">
+      <xs:attribute name="dir" type="xs:NCName"/>
+      <xs:attribute name="esbox" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FL_INST">
+    <xs:complexType mixed="true">
+      <xs:attribute name="dir" type="xs:NCName"/>
+      <xs:attribute name="esbox" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NOTE">
+    <xs:complexType mixed="true">
+      <xs:attribute name="dir" type="xs:NCName"/>
+      <xs:attribute name="esbox" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NUM_Q" type="xs:NMTOKEN"/>
+  <xs:element name="POP_UP">
+    <xs:complexType mixed="true">
+      <xs:attribute name="dir" type="xs:NCName"/>
+      <xs:attribute name="esbox" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PREP_AUD" type="xs:string"/>
+  <xs:element name="PREP_TEXT">
+    <xs:complexType mixed="true">
+      <xs:attribute name="dir" type="xs:NCName"/>
+      <xs:attribute name="esbox" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QText">
+    <xs:complexType mixed="true">
+      <xs:attribute name="dir" type="xs:NCName"/>
+      <xs:attribute name="esbox" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="STIMULUS">
+    <xs:complexType mixed="true">
+      <xs:attribute name="dir" type="xs:NCName"/>
+      <xs:attribute name="esbox" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TECH_INST">
+    <xs:complexType mixed="true">
+      <xs:attribute name="dir" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UPDATED" type="xs:string"/>
+  <xs:element name="VIDEO_CLIP" type="xs:string"/>
+  <xs:element name="XL_INST">
+    <xs:complexType mixed="true">
+      <xs:attribute name="dir" type="xs:NCName"/>
+      <xs:attribute name="esbox" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OBJECTIVES">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="TIME_OF_TASK">
+    <xs:complexType/>
+  </xs:element>
+</xs:schema>

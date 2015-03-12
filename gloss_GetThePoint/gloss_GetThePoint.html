@@ -30,6 +30,9 @@
 		
 		<script src="../common/js/dli_video.js"></script>
 		
+		<link rel="stylesheet" type="text/css" href="../common/js/dli_audioPlayerControls/css/dli_audioPlayerControls.css" />
+		<script type="text/javascript" src="../common/js/dli_audioPlayerControls/dli_audioPlayerControls.js"></script>
+		
 		<script src="gloss_GetThePoint.js"></script>
 	</head>
 	<body>
@@ -50,6 +53,13 @@
 				<div id="embeddedAudioPlayerDiv"></div>
 			</div>
 			
+			<div id="audioPlayerControls"></div>
+			
+			<div id="secondaryAudioBtns">
+				<div id="primaryAudioBtn" onclick="primaryAudioBtnClick()">Primary Audio</div>
+				<div id="secondaryAudioBtn" onclick="secondaryAudioBtnClick()">Secondary Audio</div>
+			</div>
+
 			<div id="introContainer">
 				<div id="videoContainerContainer">
 					<div id="playbtn" onclick="playVideo()"></div>
@@ -82,7 +92,7 @@
 			<h2 id="feedbackHeader"></h2>
 			
 			<div id="feedbackTextContainer">
-				<p id="feedbackText"></p>
+				<p id="feedbackText" ></p>
 
 				<div id="tl_instructions" onclick="setFeedbackPage('en')"></div>
 				<div id="en_instructions" onclick="setFeedbackPage('tl')"></div>
@@ -94,6 +104,8 @@
 				<div id="htmlAudioPlayerDiv2"></div>
 				<div id="embeddedAudioPlayerDiv2"></div>
 			</div>
+			
+			<div id="audioPlayerControls2"></div>
 
 			<div id="feedbackBtn" onclick="{closeFeedback();}">X</div>
 		</div>

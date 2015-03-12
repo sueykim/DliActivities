@@ -51,6 +51,10 @@ function parseXml(t_xml){
 		$(v).text($(v).text().replace("<![CDATA[", "").replace("]]>", ""))
 	})
 	
+	var numQText = jQREC.find(" > NUM_Q").text()
+	if(numQText != undefined){
+		$("body").attr("secondaryAudio", "true")
+	}
 	
 	$("body").attr("mode", jQREC.find("A_Type").text())
 	
@@ -59,14 +63,12 @@ function parseXml(t_xml){
 			break;
 		case "LGP":
 			var file_audio = $(jQREC.find("> AUD_STIMULUS")[0]).text()
-			audio_play_file(removeFileExt(file_audio), mediaPath + audioVideoMediaDir, undefined, disableSubDirectories);
-			$("#audioPlayer").attr("controls","")
-			$("#audioPlayer")[0].pause()
-
+			loadMainAudio(file_audio)
+			
 			if(jQREC.find("> QText").text().length == 0){
 				$("#transcriptBtn").css("display", "none")
 			}
-			
+
 			break;
 		case "VGP":
 			filename = $(jQREC.find("> VIDEO_CLIP")[0]).text()
@@ -107,7 +109,6 @@ function parseXml(t_xml){
 
 	setTimeout(setReady, 1000);
 }
-
 
 function setReady(){
 	$("body").attr("ready", "true")
@@ -241,12 +242,13 @@ function showFeedback(value, textInput){
 				var file_audio = $(jQREC.find("> AUD_FB")[textInput]).text()
 				audio_play_file(removeFileExt(file_audio), mediaPath + audioVideoMediaDir,2, disableSubDirectories);
 				$("#audioPlayer2")[0].pause()
-				$("#audioPlayerContainer2").css("display", "block")
+				$("#audioPlayerControls2").css("display", "block")
 			}else{
-				$("#audioPlayerContainer2").css("display", "none")
+				$("#audioPlayerControls2").css("display", "none")
 			}
 			
-			$("#audioPlayer2").attr("controls","controls")
+			var controls2 = new DliAudioPlayerControls("audioPlayer2","audioPlayerControls2")
+			//$("#audioPlayer2").attr("controls","controls")
 			break;
 		case "transcript":
 			$("#feedbackHeader").html("Transcript");
@@ -327,4 +329,24 @@ function playVideo(){
 					,disableSubDirectories)
 					
 	$("#playbtn").attr("class", "hidden")
+}
+
+function primaryAudioBtnClick(){
+	var file_audio = $(jQREC.find("> AUD_STIMULUS")[0]).text()
+	loadMainAudio(file_audio)
+}
+
+function secondaryAudioBtnClick(){
+	var file_audio = $(jQREC.find("> AUD_STIMULUS")[1]).text()
+	loadMainAudio(file_audio)
+}
+
+function loadMainAudio(file_audio){
+	audio_play_file(removeFileExt(file_audio), mediaPath + audioVideoMediaDir, undefined, disableSubDirectories);
+	
+	$("#audioPlayer")[0].pause()
+
+	var controls1 = new DliAudioPlayerControls("audioPlayer","audioPlayerControls")
+
+	$("#audioPlayerControls").css("display", "block")
 }
