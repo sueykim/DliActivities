@@ -1,0 +1,142 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Default theme
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.jmp3_container {
+  background: #5A5A5A;
+  float: left;
+  clear: both;
+  font: 10px/14px Arial, Helvetica, sans-serif;
+  padding-right: 1px;
+  height: 35px;
+  width: 240px;
+  border-radius: 5px;
+}
+  .jmp3_container .jmp3_trackbar {
+    width: 150px; 
+    height: 30px;
+    margin: 0 5px;
+    display: block;
+    float: left;
+    position: relative;
+    background: url('../img/trackbar_notloaded.png') repeat-x left top;
+    z-index: 0;
+  
+    background-size: contain;
+    margin-top: 2px;
+}
+    .jmp3_container .jmp3_trackbar .jmp3_loaded {
+      width: 0; height: 16px;
+      display: block;
+      position: absolute;
+      left: 0; top: 0;
+      background: url('../img/trackbar_loaded.png') repeat-x left top;
+      z-index: 1;
+    }
+    .jmp3_container .jmp3_trackbar .jmp3_playhead {
+      width: 21px; 
+      height: 13px;
+      display: block;
+      position: absolute;
+      left: 0; top: 0;
+      /* background: url('../img/playhead.png') no-repeat left center; */
+      z-index: 2;
+    
+      background-size: contain;
+      background-color: rgb(226, 226, 226);
+      border-radius: 5px;
+      margin-top: 8px;
+      cursor: pointer;
+}
+  .jmp3_container .jmp3_play,
+  .jmp3_container .jmp3_pause,
+  .jmp3_container .jmp3_stop,
+  .jmp3_container .jmp3_infos,
+  .jmp3_container .jmp3_next,
+  .jmp3_container .jmp3_prev 
+  {
+    width: 16px; 
+    height: 16px;
+    display: block;
+    float: left;
+    text-indent: -9999px;
+  }
+  
+.jmp3_container .jmp3_play:hover {
+    opacity: 1;
+  
+}
+
+.jmp3_container .jmp3_pause:hover {
+    opacity: 1;
+  
+}
+  .jmp3_container .jmp3_play {
+    background: url('../img/play.png') no-repeat left top;
+  
+    width: 31px;
+    /* background-color: red; */
+    height: 26px;
+    margin-left: 10px;
+    background-size: contain;
+    margin-top: 4px;
+    opacity: .90;
+    cursor: pointer;
+}
+  .jmp3_container .jmp3_pause {
+    background: url('../img/pause.png') no-repeat left top;
+  
+    width: 31px;
+    height: 26px;
+    background-size: contain;
+    margin-top: 4px;
+    margin-left: 10px;
+    opacity: .9;
+    cursor: pointer;
+}
+  .jmp3_container .jmp3_stop {
+    background: url('../img/stop.png') no-repeat left top;
+  
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    margin-top: 2px;
+    margin-left: 2px;
+    display: none;
+}
+  .jmp3_container .jmp3_prev {
+    background: url('../img/prev.png') no-repeat left top;
+  
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    margin-top: 2px;
+    display: none;
+}
+  .jmp3_container .jmp3_next {
+    background: url('../img/next.png') no-repeat left top;
+  
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    margin-left: 4px;
+    margin-top: 2px;
+    margin-right: 4px;
+    display: none;
+}
+  .jmp3_container .jmp3_infos {
+    background: url('../img/infos.png') no-repeat left top;
+  
+    display: none;
+}
+  .jmp3_container .jmp3_timer {
+    color: white;
+    font-size: 13px;
+  
+    height: 25px;
+    font-weight: bold;
+    margin-top: 11px;
+}
+  .jmp3_container .jmp3_currentTrackDetails {
+    background: #fff;
+  }

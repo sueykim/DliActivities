@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+
+<link type="text/css" href="../../../common/css/smoothness/jquery-ui-1.8.20.custom.css" rel="stylesheet">
+<script type="text/javascript" src="../../../common/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../../../common/js/jquery-ui-1.8.20.custom.min.js"></script>
+<script src="../../../common/js/dli_audio.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../../../common/css/activityDefault.css" />
+
+<link rel="stylesheet" type="text/css" href="css/dli_audioPlayerControls.css" />
+<script type="text/javascript" src="dli_audioPlayerControls.js"></script>
+
+</head>
+
+<body>
+  <audio id="audioTag" controls width="0" height="0">
+    <source src="http://www.freshly-ground.com/data/audio/binaural/Mak.mp3" type="audio/mp3">
+  </audio>
+
+  <div id="player"></div>
+  
+  <audio id="audioTag2" controls width="0" height="0">
+    <source src="http://www.freshly-ground.com/data/audio/binaural/Frogs @ Yahoo!.mp3" type="audio/mp3">
+  </audio>
+
+  <div id="player2"></div> 
+
+<script type="text/javascript">
+  var controls1 = new DliAudioPlayerControls("audioTag","player")
+
+  var controls2 = new DliAudioPlayerControls("audioTag2","player2")
+</script>
+</body>
+</html>
