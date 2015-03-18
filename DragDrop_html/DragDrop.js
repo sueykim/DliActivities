@@ -50,6 +50,9 @@ var answerAttemptsNum = 0;
 // To display ruby tag
 var isJapanese = false;
 
+//for bigger Hindi font 
+var isHindi = false;
+
 function parseXml(t_xml){
 	numSets = $(xml).find("section").length;
 	
@@ -58,6 +61,9 @@ function parseXml(t_xml){
 
 	// To display ruby tag
 	isJapanese = $(xml).find("content").attr("target_language") == "Japanese";
+
+	// To display Hindi font bigger
+	isHindi = $(xml).find("content").attr("target_language") == "Hindi";
 	
 	//Randomize sets
 	$(xml).find("section").each(function(){
@@ -86,6 +92,10 @@ function loadSet(value){
 	$(".dropTarget").removeClass("dropped");
 	$(".playBtnD").css("display","none");
 
+	//to make Hindi font bigger 20150316 sue
+	if(isHindi)
+    	$('.dragBubbleText').css("font-size","16px");
+    	
 	setCompletedShown = false;
 
 	updateSetText();
@@ -192,9 +202,9 @@ function dropFunction(event, ui ) {
 	var dropTargetNumLookingFor = extractLastLetter(
 							$(ui.draggable.find(".dragBubbleText")[0]).attr("id"));
 		
-	//Play audio
-	var file_audio = $(jSection.find("file_audio")[dropTargetNumGot - 1]).text();
-	audio_play_file(removeFileExt(file_audio), mediaPath);
+	//Play audio Not to play the drop target audio -requested by Headstart Team 20150316 - sue
+	//var file_audio = $(jSection.find("file_audio")[dropTargetNumGot - 1]).text();
+	//audio_play_file(removeFileExt(file_audio), mediaPath);
 
 	if(dropTargetNumLookingFor == dropTargetNumGot){
 		//Show image
@@ -218,11 +228,14 @@ function dropFunction(event, ui ) {
 		//$(this).find(".dropTargetText").text(
 		//	ui.draggable.find(".dragBubbleText").text()
 		//)
-		// To display ruby tag
 
                 var wordItem = $(jSection.find("lang_tl")[dropTargetNumGot-1]).text()
+		// To display ruby tag revised by sk 20150228
+     		if(isJapanese)
+       			wordItem = displayRubyTag(wordItem)
 
-
+    		if(isHindi)
+      			wordItem = '<span style="font-size: 16px">' + wordItem + '</span>'
 
 		$(this).find(".dropTargetText").html(
 			wordItem )
@@ -264,11 +277,11 @@ function showFeedback(value, textInput){
 		
 	switch(value){
 		case "incorrect":
-			$("#feedbackHeader").html('<img src="../common/img/feedback_incorrect.png">');
+			$("#feedbackHeader").html('<img src="../common/img/feedback_incorrect.png" style="width:93px; heght:25px;">');
 			$("#feedbackText").html(text);
 			break;
 		case "correct":
-			$("#feedbackHeader").html('<img src="../common/img/feedback_correct.png">');
+			$("#feedbackHeader").html('<img src="../common/img/feedback_correct.png" style="width:81px; heght:25px;">');
 			$("#feedbackText").html(text);
 			break;
 		case "set_completed":
